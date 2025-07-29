@@ -11,23 +11,15 @@ pub struct GridView {
     >,
     pub _rowCount: i32,
     pub _availableCellsPerPrefabDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Queue_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                >,
-            >,
         >,
     >,
     pub _spawnedCellsPerPrefabDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                >,
-            >,
         >,
     >,
     pub _cellsEnumerator_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -77,9 +69,7 @@ impl crate::GlobalNamespace::GridView {
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -89,9 +79,7 @@ impl crate::GlobalNamespace::GridView {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >,
                         1usize,
                     >("GetActiveCellsForIdentifier")
@@ -104,9 +92,7 @@ impl crate::GlobalNamespace::GridView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (prefab))? };
         Ok(__cordl_ret.into())
     }
@@ -489,9 +475,7 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -501,9 +485,7 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -516,9 +498,7 @@ impl crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -598,34 +578,6 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     }
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    >,
-> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    >,
-> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -636,6 +588,34 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    >,
+> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GridView+GridViewCellsEnumerator")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    >,
+> for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

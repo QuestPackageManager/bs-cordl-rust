@@ -68,10 +68,8 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
     pub type WaypointConverter = crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter;
     pub fn BeatmapSaveDataAreSorted(
         beatmapSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -81,10 +79,8 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem,
                             >,
                         >),
                         bool,
@@ -167,9 +163,7 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
         beatmapJson: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -179,10 +173,8 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataBasicInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataBasicInfo,
                             >,
                         >,
                         1usize,
@@ -196,9 +188,7 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataBasicInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (beatmapJson))? };
         Ok(__cordl_ret.into())
     }
@@ -386,9 +376,7 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -418,10 +406,8 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapData,
                             >,
                         >,
                         9usize,
@@ -435,9 +421,7 @@ impl crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
@@ -1183,9 +1167,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConv
 pub struct BeatmapDataLoader_SpecialEventsFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
-        >,
+        crate::BeatmapSaveDataCommon::BeatmapEventType,
     >,
 }
 #[cfg(

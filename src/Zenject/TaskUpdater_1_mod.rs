@@ -3,16 +3,8 @@
 #[derive(Debug)]
 pub struct TaskUpdater_1<TTask: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _tasks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-        >,
-    >,
-    pub _queuedTasks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-        >,
-    >,
+    pub _tasks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
+    pub _queuedTasks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
     __cordl_phantom_TTask: std::marker::PhantomData<TTask>,
 }
 #[cfg(feature = "cordl_class_Zenject+TaskUpdater_1")]
@@ -160,11 +152,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
     }
     pub fn ClearRemovedTasks(
         &mut self,
-        tasks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-            >,
-        >,
+        tasks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TTask: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -175,13 +163,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ClearRemovedTasks")
@@ -200,7 +182,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
     }
     pub fn InsertTaskSorted(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
+        task: quest_hook::libil2cpp::Gc<TTask>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TTask: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -211,9 +193,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TTask>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InsertTaskSorted")
@@ -441,11 +421,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
     pub fn get_ActiveTasks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
     >
     where
         TTask: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -457,13 +433,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
-                                >,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
                         0usize,
                     >("get_ActiveTasks")
                     .unwrap_or_else(|e| {
@@ -474,21 +444,15 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_AllTasks(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
     >
     where
         TTask: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -500,13 +464,7 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
-                                >,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>>,
                         0usize,
                     >("get_AllTasks")
                     .unwrap_or_else(|e| {
@@ -517,11 +475,9 @@ impl<TTask: quest_hook::libil2cpp::Type> crate::Zenject::TaskUpdater_1<TTask> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::TaskUpdater_1_TaskInfo<TTask>>,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TTask>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

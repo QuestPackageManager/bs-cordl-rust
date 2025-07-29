@@ -14,10 +14,8 @@ pub struct EnvironmentTracksDefinitionSO {
         >,
     >,
     pub _eventBoxGroupPageInfos: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
         >,
     >,
 }
@@ -182,10 +180,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
             >,
         >,
     > {
@@ -196,10 +192,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
                             >,
                         >,
                         0usize,
@@ -213,10 +207,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -586,10 +578,8 @@ pub struct EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _eventBoxGroupTrackInfos: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
         >,
     >,
 }
@@ -697,10 +687,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
             >,
         >,
     > {
@@ -711,10 +699,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
                             >,
                         >,
                         0usize,
@@ -728,10 +714,8 @@ impl crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxG
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

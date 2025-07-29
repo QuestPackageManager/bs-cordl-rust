@@ -49,7 +49,7 @@ impl crate::System::Linq::Expressions::StackGuard {
     }
     pub fn RunOnEmptyStack<T1, T2>(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_2<T1, T2>>,
+        action: quest_hook::libil2cpp::Gc<T1, T2>,
         arg1: T1,
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -64,11 +64,7 @@ impl crate::System::Linq::Expressions::StackGuard {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Action_2<T1, T2>>,
-                            T1,
-                            T2,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T1, T2>, T1, T2),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("RunOnEmptyStack")
@@ -88,10 +84,8 @@ impl crate::System::Linq::Expressions::StackGuard {
     pub fn RunOnEmptyStackCore<R>(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                R,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            R,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<R>
@@ -106,12 +100,10 @@ impl crate::System::Linq::Expressions::StackGuard {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                    R,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
+                                R,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,

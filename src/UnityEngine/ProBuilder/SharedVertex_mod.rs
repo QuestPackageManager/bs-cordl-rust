@@ -136,20 +136,14 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -160,20 +154,16 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetSharedVertexLookup(
         sharedVertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -182,15 +172,11 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::SharedVertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::SharedVertex,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -209,9 +195,7 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         Ok(__cordl_ret.into())
     }
     pub fn GetSharedVerticesWithPositions(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        >,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -224,11 +208,7 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -253,10 +233,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         > = unsafe { cordl_method_info.invoke_unchecked((), (positions))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New_IEnumerable_1_0(
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+    pub fn New_Gc0(
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -295,12 +273,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         Ok(__cordl_ret.into())
     }
     pub fn RemoveAndShift(
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
-        remove: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        remove: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -314,12 +288,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -346,14 +316,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         Ok(__cordl_ret.into())
     }
     pub fn SetCoincident(
-        lookup: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-            >,
-        >,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        lookup: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32, i32>>,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -362,13 +326,9 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                                >,
+                                quest_hook::libil2cpp::Gc<i32, i32>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -413,12 +373,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         Ok(__cordl_ret.into())
     }
     pub fn SortedRemoveAndShift(
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
-        remove: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
+        remove: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -432,12 +388,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -492,11 +444,9 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToSharedVertices_IEnumerable_1_0(
+    pub fn ToSharedVertices_Gc0(
         lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -511,12 +461,7 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    i32,
-                                    i32,
-                                >,
-                            >,
+                            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
                         >),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
@@ -542,14 +487,8 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         > = unsafe { cordl_method_info.invoke_unchecked((), (lookup))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToSharedVertices_List_1_1(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<i32>,
-                >,
-            >,
-        >,
+    pub fn ToSharedVertices_Gc1(
+        list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -562,13 +501,7 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<i32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -620,20 +553,16 @@ impl crate::UnityEngine::ProBuilder::SharedVertex {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_0(
+    pub fn _ctor_Gc0(
         &mut self,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -798,38 +727,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Share
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
-impl AsRef<crate::System::Collections::Generic::ICollection_1<i32>>
-for crate::UnityEngine::ProBuilder::SharedVertex {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
-impl AsMut<crate::System::Collections::Generic::ICollection_1<i32>>
-for crate::UnityEngine::ProBuilder::SharedVertex {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::ICollection_1<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
-impl AsRef<crate::System::Collections::Generic::IEnumerable_1<i32>>
-for crate::UnityEngine::ProBuilder::SharedVertex {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
-impl AsMut<crate::System::Collections::Generic::IEnumerable_1<i32>>
-for crate::UnityEngine::ProBuilder::SharedVertex {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::SharedVertex {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -840,6 +737,34 @@ for crate::UnityEngine::ProBuilder::SharedVertex {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::SharedVertex {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsRef<quest_hook::libil2cpp::Gc<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsMut<quest_hook::libil2cpp::Gc<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsRef<quest_hook::libil2cpp::Gc<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+SharedVertex")]
+impl AsMut<quest_hook::libil2cpp::Gc<i32>>
+for crate::UnityEngine::ProBuilder::SharedVertex {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }

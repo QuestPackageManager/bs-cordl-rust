@@ -5,10 +5,7 @@ pub struct TextValueFieldTraits_2<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
-        TValueType,
-        TValueUxmlAttributeType,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType, TValueUxmlAttributeType>,
     pub m_IsReadOnly: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
@@ -71,10 +68,7 @@ for crate::UnityEngine::UIElements::TextValueFieldTraits_2<
     TValueType,
     TValueUxmlAttributeType,
 > {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
-        TValueType,
-        TValueUxmlAttributeType,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TValueType, TValueUxmlAttributeType>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

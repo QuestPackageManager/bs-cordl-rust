@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorConverter {
-    __cordl_parent: crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Color>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "cordl_class_BGLib+JsonExtension+ColorConverter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::ColorConverter {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::JsonExtension::ColorCo
 }
 #[cfg(feature = "BGLib+JsonExtension+ColorConverter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::ColorConverter {
-    type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Color>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

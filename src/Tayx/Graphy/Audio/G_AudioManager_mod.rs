@@ -8,9 +8,7 @@ pub struct G_AudioManager {
     >,
     pub m_audioDbText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     >,
     pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     pub m_audioGraph: quest_hook::libil2cpp::Gc<
@@ -22,9 +20,7 @@ pub struct G_AudioManager {
     pub m_audioText: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Audio::G_AudioText>,
     pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_childrenGameObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,

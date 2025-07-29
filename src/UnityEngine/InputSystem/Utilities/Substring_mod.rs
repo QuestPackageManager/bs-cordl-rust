@@ -729,11 +729,11 @@ impl crate::UnityEngine::InputSystem::Utilities::Substring {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsRef<
-    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -741,11 +741,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsMut<
-    crate::System::IComparable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -753,11 +753,11 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()
@@ -765,11 +765,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Substring")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::Substring>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
 > for crate::UnityEngine::InputSystem::Utilities::Substring {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::Substring,
     > {
         todo!()

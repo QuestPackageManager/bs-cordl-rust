@@ -13,13 +13,9 @@ pub struct EditAvatarColorViewController {
     >,
     pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _applyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::UnityEngine::Color>,
-    >,
-    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    pub _colorCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::UnityEngine::Color>,
-    >,
+    pub didChangeColorEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<bool>,
+    pub _colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     pub _initialColor: crate::UnityEngine::Color,
     pub _colorChanged: bool,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
@@ -257,18 +253,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn SetColorCallback(
         &mut self,
-        colorCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::UnityEngine::Color>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetColorCallback")
@@ -329,18 +321,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn add_didChangeColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::UnityEngine::Color>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didChangeColorEvent")
@@ -359,14 +347,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didFinishEvent")
@@ -406,18 +394,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn remove_didChangeColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::UnityEngine::Color>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didChangeColorEvent")
@@ -436,14 +420,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarColorViewContr
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didFinishEvent")

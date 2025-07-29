@@ -26,9 +26,7 @@ pub struct InputSettings {
     pub m_DisableRedundantEventsMerging: bool,
     pub m_ShortcutKeysConsumeInputs: bool,
     pub m_FeatureFlags: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings")]

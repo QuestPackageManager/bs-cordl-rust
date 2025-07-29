@@ -402,20 +402,20 @@ impl crate::UnityEngine::ProBuilder::IntVec2 {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec2")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec2>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec2>>
 for crate::UnityEngine::ProBuilder::IntVec2 {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec2> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec2> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec2")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec2>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec2>>
 for crate::UnityEngine::ProBuilder::IntVec2 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::IntVec2> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::IntVec2> {
         todo!()
     }
 }

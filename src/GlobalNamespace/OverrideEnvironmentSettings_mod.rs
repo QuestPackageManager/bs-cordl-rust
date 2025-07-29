@@ -6,10 +6,8 @@ pub struct OverrideEnvironmentSettings {
     pub didChangeOverrideSettingsEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _overrideEnvironments: bool,
     pub _data: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::EnvironmentType,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-        >,
+        crate::GlobalNamespace::EnvironmentType,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >,
 }
 #[cfg(feature = "cordl_class_OverrideEnvironmentSettings")]

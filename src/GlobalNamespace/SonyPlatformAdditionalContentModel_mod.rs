@@ -4,9 +4,7 @@
 pub struct SonyPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
     pub _entitlementsLabels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _semaphoreSlim: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim,
@@ -81,18 +79,14 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
     pub fn EnsureDataValidity(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("EnsureDataValidity")
                     .unwrap_or_else(|e| {
@@ -103,9 +97,9 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetLevelDataVersion(
@@ -139,11 +133,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -157,9 +147,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::BeatmapLevelDataVersion,
-                            >,
+                            crate::GlobalNamespace::BeatmapLevelDataVersion,
                         >,
                         2usize,
                     >("GetLevelDataVersionInternalAsync")
@@ -172,9 +160,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::BeatmapLevelDataVersion,
-            >,
+            crate::GlobalNamespace::BeatmapLevelDataVersion,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -183,11 +169,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -201,9 +183,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::EntitlementStatus,
-                            >,
+                            crate::GlobalNamespace::EntitlementStatus,
                         >,
                         2usize,
                     >("GetLevelEntitlementStatusInternalAsync")
@@ -216,9 +196,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelId, cancellationToken))?
         };
@@ -229,11 +207,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -247,9 +221,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::EntitlementStatus,
-                            >,
+                            crate::GlobalNamespace::EntitlementStatus,
                         >,
                         2usize,
                     >("GetPackEntitlementStatusInternalAsync")
@@ -262,9 +234,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementStatus,
-            >,
+            crate::GlobalNamespace::EntitlementStatus,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
         };
@@ -276,9 +246,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -293,10 +261,8 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         2usize,
@@ -310,9 +276,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (packId, cancellationToken))?
         };
@@ -430,11 +394,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IsPackBetterBuyThanLevelResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -448,9 +408,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-                            >,
+                            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
                         >,
                         2usize,
                     >("IsPackBetterBuyThanLevelAsync")
@@ -463,9 +421,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
         };
@@ -493,11 +449,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -511,9 +463,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::OpenProductStoreResult,
-                            >,
+                            crate::GlobalNamespace::OpenProductStoreResult,
                         >,
                         2usize,
                     >("OpenLevelPackProductStoreAsync")
@@ -526,9 +476,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelPackId, cancellationToken))?
         };
@@ -539,11 +487,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -557,9 +501,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::OpenProductStoreResult,
-                            >,
+                            crate::GlobalNamespace::OpenProductStoreResult,
                         >,
                         2usize,
                     >("OpenLevelProductStoreAsync")
@@ -572,9 +514,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelId, cancellationToken))?
         };
@@ -611,9 +551,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
-            >,
+            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -623,9 +561,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
-                            >,
+                            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
                         >,
                         1usize,
                     >("UpdateEntitlementsAsync")
@@ -638,9 +574,7 @@ impl crate::GlobalNamespace::SonyPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
-            >,
+            crate::GlobalNamespace::AdditionalContentModel_UpdateEntitlementsResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

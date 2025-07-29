@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitializationOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
@@ -55,7 +55,7 @@ for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperati
 #[cfg(feature = "UnityEngine+AddressableAssets+Initialization+InitializationOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::InitializationOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
         >,
@@ -170,10 +170,8 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     pub fn LoadContentCatalogInternal(
         &mut self,
         catalogs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         index: i32,
@@ -197,10 +195,8 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                 >,
                             >,
                             i32,
@@ -366,10 +362,8 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
             >,
         >,
         catalogs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         locMap: quest_hook::libil2cpp::Gc<
@@ -392,10 +386,8 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

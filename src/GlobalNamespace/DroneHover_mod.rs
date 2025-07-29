@@ -6,14 +6,10 @@ pub struct DroneHover {
     pub _hoverAreaPerAxis: crate::UnityEngine::Vector3,
     pub _speed: f32,
     pub _compoundSins: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DroneHover_SineLayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DroneHover_SineLayer>,
     >,
     pub _tiltTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _maxTiltAmount: f32,
     pub _tiltSpeed: f32,

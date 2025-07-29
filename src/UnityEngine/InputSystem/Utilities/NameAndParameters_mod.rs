@@ -137,9 +137,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         list: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-                >,
+                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -154,9 +152,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-                                    >,
+                                    crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
                                 >,
                             >,
                         ),
@@ -180,9 +176,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-            >,
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -192,9 +186,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-                            >,
+                            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
                         >,
                         1usize,
                     >("ParseMultiple")
@@ -207,9 +199,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-            >,
+            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
         > = unsafe { cordl_method_info.invoke_unchecked((), (text))? };
         Ok(__cordl_ret.into())
     }

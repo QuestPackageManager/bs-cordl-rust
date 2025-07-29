@@ -345,11 +345,7 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -358,9 +354,7 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::Playables::PlayableBinding,
-                            >,
+                            crate::UnityEngine::Playables::PlayableBinding,
                         >,
                         0usize,
                     >("get_outputs")
@@ -373,9 +367,7 @@ impl crate::UnityEngine::Timeline::BasicPlayableBehaviour {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
+            crate::UnityEngine::Playables::PlayableBinding,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

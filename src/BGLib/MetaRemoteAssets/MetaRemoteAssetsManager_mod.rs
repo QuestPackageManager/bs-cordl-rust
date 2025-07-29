@@ -8,9 +8,7 @@ pub struct MetaRemoteAssetsManager {
     pub _initializationCancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
     >,
-    pub _initializationTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<bool>,
-    >,
+    pub _initializationTask: quest_hook::libil2cpp::Gc<bool>,
     pub _updateCatalogTask: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task,
     >,
@@ -201,18 +199,14 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     pub fn InitializeInternalAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("InitializeInternalAsync")
                     .unwrap_or_else(|e| {
@@ -223,9 +217,9 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalIdTransformFunc(
@@ -371,18 +365,14 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     }
     pub fn WaitInitAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         0usize,
                     >("WaitInitAsync")
                     .unwrap_or_else(|e| {
@@ -393,9 +383,9 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn WebRequestOverride(

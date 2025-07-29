@@ -475,20 +475,20 @@ for crate::GlobalNamespace::Vector3Serializable {
     }
 }
 #[cfg(feature = "Vector3Serializable")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable>>
 for crate::GlobalNamespace::Vector3Serializable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable> {
         todo!()
     }
 }
 #[cfg(feature = "Vector3Serializable")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable>>
 for crate::GlobalNamespace::Vector3Serializable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::Vector3Serializable> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector3Serializable> {
         todo!()
     }
 }

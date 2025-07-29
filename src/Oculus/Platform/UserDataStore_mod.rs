@@ -43,10 +43,8 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
@@ -62,10 +60,8 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                             >,
                         >,
                         2usize,
@@ -79,10 +75,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
@@ -91,13 +85,9 @@ impl crate::Oculus::Platform::UserDataStore {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -108,16 +98,12 @@ impl crate::Oculus::Platform::UserDataStore {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -132,13 +118,9 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
@@ -148,13 +130,9 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -170,16 +148,12 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -194,13 +168,9 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
@@ -211,10 +181,8 @@ impl crate::Oculus::Platform::UserDataStore {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
@@ -233,10 +201,8 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                             >,
                         >,
                         3usize,
@@ -250,10 +216,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())
@@ -263,10 +227,8 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
@@ -282,10 +244,8 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                             >,
                         >,
                         2usize,
@@ -299,10 +259,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
@@ -311,13 +269,9 @@ impl crate::Oculus::Platform::UserDataStore {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -328,16 +282,12 @@ impl crate::Oculus::Platform::UserDataStore {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -352,13 +302,9 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
@@ -368,13 +314,9 @@ impl crate::Oculus::Platform::UserDataStore {
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -390,16 +332,12 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -414,13 +352,9 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key))? };
         Ok(__cordl_ret.into())
@@ -431,10 +365,8 @@ impl crate::Oculus::Platform::UserDataStore {
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         >,
     > {
@@ -453,10 +385,8 @@ impl crate::Oculus::Platform::UserDataStore {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
                             >,
                         >,
                         3usize,
@@ -470,10 +400,8 @@ impl crate::Oculus::Platform::UserDataStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID, key, value))? };
         Ok(__cordl_ret.into())

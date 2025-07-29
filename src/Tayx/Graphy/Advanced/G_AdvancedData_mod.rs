@@ -4,9 +4,7 @@
 pub struct G_AdvancedData {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     >,
     pub m_graphicsDeviceVersionText: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::Text,

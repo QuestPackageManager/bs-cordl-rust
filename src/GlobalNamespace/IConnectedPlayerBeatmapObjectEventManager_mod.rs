@@ -86,11 +86,7 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn add_connectedPlayerNoteWasCutEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteCutInfoNetSerializable,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -99,10 +95,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteCutInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteCutInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -124,10 +118,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn add_connectedPlayerNoteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteMissInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteMissInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,10 +129,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteMissInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteMissInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -162,10 +152,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn add_connectedPlayerNoteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -175,10 +163,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -200,10 +186,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn add_connectedPlayerObstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -213,10 +197,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -238,10 +220,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn add_connectedPlayerSliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -251,10 +231,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -281,11 +259,7 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn remove_connectedPlayerNoteWasCutEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteCutInfoNetSerializable,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -294,10 +268,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteCutInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteCutInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -319,10 +291,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn remove_connectedPlayerNoteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteMissInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteMissInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -332,10 +302,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteMissInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteMissInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -357,10 +325,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn remove_connectedPlayerNoteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -370,10 +336,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -395,10 +359,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn remove_connectedPlayerObstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -408,10 +370,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -433,10 +393,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
     pub fn remove_connectedPlayerSliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -446,10 +404,8 @@ impl crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SliderSpawnInfoNetSerializable,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

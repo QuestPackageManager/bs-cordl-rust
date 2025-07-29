@@ -43,10 +43,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
@@ -64,10 +62,8 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataFullComboSO {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

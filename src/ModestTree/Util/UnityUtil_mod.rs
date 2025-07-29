@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::ModestTree::Util::UnityUtil {
 impl crate::ModestTree::Util::UnityUtil {
     pub fn GetAllGameObjects() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -52,9 +50,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         0usize,
                     >("GetAllGameObjects")
@@ -67,17 +63,13 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllRootGameObjects() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -87,9 +79,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         0usize,
                     >("GetAllRootGameObjects")
@@ -102,9 +92,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -113,9 +101,7 @@ impl crate::ModestTree::Util::UnityUtil {
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -128,9 +114,7 @@ impl crate::ModestTree::Util::UnityUtil {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
                         >,
                         2usize,
                     >("GetComponentsInChildrenBottomUp")
@@ -143,9 +127,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (gameObject, includeInactive))?
         };
@@ -156,9 +138,7 @@ impl crate::ModestTree::Util::UnityUtil {
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -171,9 +151,7 @@ impl crate::ModestTree::Util::UnityUtil {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
                         >,
                         2usize,
                     >("GetComponentsInChildrenTopDown")
@@ -186,9 +164,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (gameObject, includeInactive))?
         };
@@ -223,9 +199,7 @@ impl crate::ModestTree::Util::UnityUtil {
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -235,9 +209,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         1usize,
                     >("GetDirectChildren")
@@ -250,9 +222,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
@@ -260,9 +230,7 @@ impl crate::ModestTree::Util::UnityUtil {
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -272,9 +240,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         1usize,
                     >("GetDirectChildrenAndSelf")
@@ -287,9 +253,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
@@ -297,9 +261,7 @@ impl crate::ModestTree::Util::UnityUtil {
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -309,9 +271,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         1usize,
                     >("GetParents")
@@ -324,9 +284,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (transform))? };
         Ok(__cordl_ret.into())
     }
@@ -334,9 +292,7 @@ impl crate::ModestTree::Util::UnityUtil {
         transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -346,9 +302,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         1usize,
                     >("GetParentsAndSelf")
@@ -361,9 +315,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (transform))? };
         Ok(__cordl_ret.into())
     }
@@ -395,11 +347,7 @@ impl crate::ModestTree::Util::UnityUtil {
         Ok(__cordl_ret.into())
     }
     pub fn get_AllLoadedScenes() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::SceneManagement::Scene,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -408,9 +356,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::SceneManagement::Scene,
-                            >,
+                            crate::UnityEngine::SceneManagement::Scene,
                         >,
                         0usize,
                     >("get_AllLoadedScenes")
@@ -423,18 +369,12 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::SceneManagement::Scene,
-            >,
+            crate::UnityEngine::SceneManagement::Scene,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AllScenes() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::SceneManagement::Scene,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -443,9 +383,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::SceneManagement::Scene,
-                            >,
+                            crate::UnityEngine::SceneManagement::Scene,
                         >,
                         0usize,
                     >("get_AllScenes")
@@ -458,9 +396,7 @@ impl crate::ModestTree::Util::UnityUtil {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::SceneManagement::Scene,
-            >,
+            crate::UnityEngine::SceneManagement::Scene,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

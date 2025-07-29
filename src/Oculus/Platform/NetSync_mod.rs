@@ -40,11 +40,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::NetSync {
 impl crate::Oculus::Platform::NetSync {
     pub fn SetConnectionStatusChangedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::NetSyncConnection,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -53,10 +49,8 @@ impl crate::Oculus::Platform::NetSync {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::NetSyncConnection,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::NetSyncConnection,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -77,10 +71,8 @@ impl crate::Oculus::Platform::NetSync {
     }
     pub fn SetSessionsChangedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,10 +82,8 @@ impl crate::Oculus::Platform::NetSync {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::NetSyncSessionsChangedNotification,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

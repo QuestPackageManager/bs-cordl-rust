@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderInt {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SliderInt")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::SliderInt {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Slid
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt {
-    type Target = crate::UnityEngine::UIElements::BaseSlider_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -357,7 +357,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Slide
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderInt_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SliderInt>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SliderInt_UxmlTraits>,
     >,
@@ -384,7 +384,7 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SliderInt>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SliderInt_UxmlTraits>,
     >;
@@ -443,7 +443,7 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderInt_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
     pub m_LowValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
@@ -457,9 +457,7 @@ pub struct SliderInt_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_Direction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::SliderDirection,
-        >,
+        crate::UnityEngine::UIElements::SliderDirection,
     >,
     pub m_Inverted: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -487,7 +485,7 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

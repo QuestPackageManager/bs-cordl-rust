@@ -10,10 +10,8 @@ pub struct SaberManager {
     >,
     pub _started: bool,
     pub didUpdateSaberPositionsEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
     >,
 }
 #[cfg(feature = "cordl_class_SaberManager")]
@@ -220,10 +218,8 @@ impl crate::GlobalNamespace::SaberManager {
     pub fn add_didUpdateSaberPositionsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -232,10 +228,8 @@ impl crate::GlobalNamespace::SaberManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -310,10 +304,8 @@ impl crate::GlobalNamespace::SaberManager {
     pub fn remove_didUpdateSaberPositionsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -322,10 +314,8 @@ impl crate::GlobalNamespace::SaberManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

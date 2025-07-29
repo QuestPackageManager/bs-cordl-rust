@@ -22,13 +22,9 @@ pub struct TextSegmentedControl {
         crate::HMUI::TextSegmentedControlCell,
     >,
     pub _texts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _disabledIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub _disabledIndexes: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_HMUI+TextSegmentedControl")]
 unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::TextSegmentedControl {
@@ -119,13 +115,9 @@ impl crate::HMUI::TextSegmentedControl {
     pub fn SetTexts(
         &mut self,
         texts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
-        disabledIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<i32>,
-        >,
+        disabledIndexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -134,15 +126,11 @@ impl crate::HMUI::TextSegmentedControl {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

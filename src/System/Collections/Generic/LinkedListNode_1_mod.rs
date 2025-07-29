@@ -3,15 +3,9 @@
 #[derive(Debug)]
 pub struct LinkedListNode_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub list: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<T>,
-    >,
-    pub next: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedListNode_1<T>,
-    >,
-    pub prev: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedListNode_1<T>,
-    >,
+    pub list: quest_hook::libil2cpp::Gc<T>,
+    pub next: quest_hook::libil2cpp::Gc<T>,
+    pub prev: quest_hook::libil2cpp::Gc<T>,
     pub item: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -95,10 +89,8 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_LinkedList_1_T1(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<T>,
-        >,
+    pub fn New_Gc_T1(
+        list: quest_hook::libil2cpp::Gc<T>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -124,11 +116,9 @@ impl<
             .invoke_void(".ctor", (value))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_LinkedList_1_T1(
+    pub fn _ctor_Gc_T1(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<T>,
-        >,
+        list: quest_hook::libil2cpp::Gc<T>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -140,12 +130,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedList_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -190,9 +175,7 @@ impl<
     }
     pub fn get_List(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedList_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -201,13 +184,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedList_1<T>,
-                        >,
-                        0usize,
-                    >("get_List")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_List")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -216,18 +193,14 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Next(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -236,13 +209,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<T>,
-                        >,
-                        0usize,
-                    >("get_Next")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_Next")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -251,18 +218,14 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Previous(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -273,9 +236,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_Previous")
                     .unwrap_or_else(|e| {
@@ -286,9 +247,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Value(&mut self) -> quest_hook::libil2cpp::Result<T>

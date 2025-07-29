@@ -39,6 +39,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusPlatformExtensions {
 }
 #[cfg(feature = "OculusPlatformExtensions")]
 impl crate::GlobalNamespace::OculusPlatformExtensions {
+    pub fn GetAwaiter_Gc0<T>(
+        oculusRequest: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            quest_hook::libil2cpp::Gc<T>,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<T>),
+                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+                            quest_hook::libil2cpp::Gc<T>,
+                        >,
+                        1usize,
+                    >("GetAwaiter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAwaiter", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
+            quest_hook::libil2cpp::Gc<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAwaiter_Request1(
         oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request>,
     ) -> quest_hook::libil2cpp::Result<
@@ -67,45 +102,6 @@ impl crate::GlobalNamespace::OculusPlatformExtensions {
             });
         let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
             quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetAwaiter_Request_1_0<T>(
-        oculusRequest: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
-        >,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<T>,
-                        >),
-                        crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Message_1<T>,
-                            >,
-                        >,
-                        1usize,
-                    >("GetAwaiter")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetAwaiter", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (oculusRequest))? };
         Ok(__cordl_ret.into())
     }

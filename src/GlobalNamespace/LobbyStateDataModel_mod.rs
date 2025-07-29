@@ -10,26 +10,18 @@ pub struct LobbyStateDataModel {
         crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     >,
     pub _connectedPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     >,
     pub _connectedPlayersById: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     >,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub playerConnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     >,
     pub playerDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     >,
 }
 #[cfg(feature = "cordl_class_LobbyStateDataModel")]
@@ -246,9 +238,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     pub fn add_playerConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -257,10 +247,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -282,9 +270,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     pub fn add_playerDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -293,10 +279,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -346,9 +330,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -358,10 +340,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >,
                         0usize,
@@ -375,9 +355,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -431,9 +409,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -443,10 +419,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >,
                         0usize,
@@ -460,18 +434,14 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_playerConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -480,10 +450,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -505,9 +473,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     pub fn remove_playerDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -516,10 +482,8 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

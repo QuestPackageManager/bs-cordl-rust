@@ -220,10 +220,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
             >,
         >,
     > {
@@ -234,10 +232,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
                             >,
                         >,
                         0usize,
@@ -251,10 +247,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::OptionalAvatarDataPacket,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

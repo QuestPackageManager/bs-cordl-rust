@@ -11,7 +11,7 @@ pub struct NamedColorListController {
         >,
     >,
     pub _value: i32,
-    pub valueChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub valueChangedEvent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_NamedColorListController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -230,14 +230,14 @@ impl crate::GlobalNamespace::NamedColorListController {
     }
     pub fn add_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_valueChangedEvent")
@@ -256,14 +256,14 @@ impl crate::GlobalNamespace::NamedColorListController {
     }
     pub fn remove_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_valueChangedEvent")
@@ -292,16 +292,16 @@ for crate::GlobalNamespace::NamedColorListController {
     }
 }
 #[cfg(feature = "NamedColorListController")]
-impl AsRef<crate::HMUI::IValueChanger_1<i32>>
+impl AsRef<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedColorListController {
-    fn as_ref(&self) -> &crate::HMUI::IValueChanger_1<i32> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "NamedColorListController")]
-impl AsMut<crate::HMUI::IValueChanger_1<i32>>
+impl AsMut<quest_hook::libil2cpp::Gc<i32>>
 for crate::GlobalNamespace::NamedColorListController {
-    fn as_mut(&mut self) -> &mut crate::HMUI::IValueChanger_1<i32> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
         unsafe { std::mem::transmute(self) }
     }
 }

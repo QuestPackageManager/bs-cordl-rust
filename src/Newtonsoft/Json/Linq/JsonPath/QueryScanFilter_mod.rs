@@ -46,18 +46,14 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
         settings: quest_hook::libil2cpp::Gc<
             crate::Newtonsoft::Json::Linq::JsonSelectSettings,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -70,10 +66,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter {
                                 crate::Newtonsoft::Json::Linq::JToken,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Newtonsoft::Json::Linq::JToken,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JToken,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -81,10 +75,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Linq::JToken,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JToken,
                             >,
                         >,
                         3usize,
@@ -98,9 +90,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::QueryScanFilter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (root, current, settings))?
         };

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarMeshPartSO {
-    __cordl_parent: crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO {
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarMeshPartSO")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO {
-    type Target = crate::BeatSaber::BeatAvatarSDK::AvatarPartSO_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

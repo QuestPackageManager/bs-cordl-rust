@@ -4,14 +4,10 @@
 pub struct PoolCleanupChecker {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _poolFactories: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
     >,
     pub _ignoredPools: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+PoolCleanupChecker")]
@@ -75,14 +71,10 @@ impl crate::Zenject::PoolCleanupChecker {
     }
     pub fn New(
         poolFactories: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
         >,
         ignoredPools: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -156,14 +148,10 @@ impl crate::Zenject::PoolCleanupChecker {
     pub fn _ctor(
         &mut self,
         poolFactories: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
         >,
         ignoredPools: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -173,14 +161,10 @@ impl crate::Zenject::PoolCleanupChecker {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

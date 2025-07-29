@@ -67,13 +67,9 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FromAssembliesContaining_IEnumerable_1_1(
+    pub fn FromAssembliesContaining_Gc1(
         &mut self,
-        types: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -81,9 +77,7 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -138,10 +132,8 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
     pub fn FromAssembliesWhere(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -150,12 +142,10 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::Assembly,
-                                >,
-                                bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::Assembly,
                             >,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -173,12 +163,10 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FromAssemblies_IEnumerable_1_1(
+    pub fn FromAssemblies_Gc1(
         &mut self,
         assemblies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -187,10 +175,8 @@ impl crate::Zenject::ConventionAssemblySelectionBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::Assembly,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::Assembly,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -7,9 +7,7 @@ pub struct LightWithIds {
         crate::GlobalNamespace::LightWithIdManager,
     >,
     pub _lightWithIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
     >,
     pub _isRegistered: bool,
     pub _childrenColorWasSet: bool,
@@ -75,11 +73,7 @@ impl crate::GlobalNamespace::LightWithIds {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -89,10 +83,8 @@ impl crate::GlobalNamespace::LightWithIds {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LightWithIds_LightWithId,
                             >,
                         >,
                         0usize,
@@ -106,11 +98,7 @@ impl crate::GlobalNamespace::LightWithIds {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -266,11 +254,7 @@ impl crate::GlobalNamespace::LightWithIds {
     pub fn SetNewLightsWithIds(
         &mut self,
         lightsWithIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -279,10 +263,8 @@ impl crate::GlobalNamespace::LightWithIds {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LightWithIds_LightWithId,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -372,11 +354,7 @@ impl crate::GlobalNamespace::LightWithIds {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -386,10 +364,8 @@ impl crate::GlobalNamespace::LightWithIds {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LightWithIds_LightWithId,
                             >,
                         >,
                         0usize,
@@ -403,11 +379,7 @@ impl crate::GlobalNamespace::LightWithIds {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightWithIds_LightWithId,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

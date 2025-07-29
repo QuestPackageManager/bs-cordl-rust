@@ -119,9 +119,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
     }
     pub fn add_atlasRegistered(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -130,10 +128,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::U2D::SpriteAtlas,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::U2D::SpriteAtlas,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -154,9 +150,7 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
     }
     pub fn remove_atlasRegistered(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::U2D::SpriteAtlas>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -165,10 +159,8 @@ impl crate::UnityEngine::U2D::SpriteAtlasManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::U2D::SpriteAtlas,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::U2D::SpriteAtlas,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

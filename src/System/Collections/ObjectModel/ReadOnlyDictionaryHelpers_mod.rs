@@ -42,9 +42,7 @@ for crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
 #[cfg(feature = "System+Collections+ObjectModel+ReadOnlyDictionaryHelpers")]
 impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
     pub fn CopyToNonGenericICollectionHelper<T>(
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
+        collection: quest_hook::libil2cpp::Gc<T>,
         array: quest_hook::libil2cpp::Gc<crate::System::Array>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -58,9 +56,7 @@ impl crate::System::Collections::ObjectModel::ReadOnlyDictionaryHelpers {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::ICollection_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::Array>,
                             i32,
                         ),

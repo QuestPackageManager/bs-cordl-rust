@@ -42,10 +42,8 @@ impl crate::Oculus::Platform::Avatar {
         options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::AvatarEditorOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AvatarEditorResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AvatarEditorResult,
             >,
         >,
     > {
@@ -58,10 +56,8 @@ impl crate::Oculus::Platform::Avatar {
                             crate::Oculus::Platform::AvatarEditorOptions,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AvatarEditorResult,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AvatarEditorResult,
                             >,
                         >,
                         1usize,
@@ -75,10 +71,8 @@ impl crate::Oculus::Platform::Avatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AvatarEditorResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AvatarEditorResult,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())

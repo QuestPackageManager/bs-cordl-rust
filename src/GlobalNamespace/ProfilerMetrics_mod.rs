@@ -11,9 +11,7 @@ pub struct ProfilerMetrics {
     pub _profilerRecorders: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::Unity::Profiling::ProfilerRecorder>,
     >,
-    pub _samples: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i64>,
-    >,
+    pub _samples: quest_hook::libil2cpp::Gc<i64>,
 }
 #[cfg(feature = "cordl_class_ProfilerMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ProfilerMetrics {
@@ -54,9 +52,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
     pub type ProfilerMetric = crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric;
     pub fn AddExposedMetrics(
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
-            >,
+            crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -65,9 +61,7 @@ impl crate::GlobalNamespace::ProfilerMetrics {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
-                            >,
+                            crate::GlobalNamespace::ProfilerMetrics_ProfilerMetric,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

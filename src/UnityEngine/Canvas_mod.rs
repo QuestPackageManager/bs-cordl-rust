@@ -444,7 +444,7 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn get_externBeginRenderOverlays() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        quest_hook::libil2cpp::Gc<i32>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -452,7 +452,7 @@ impl crate::UnityEngine::Canvas {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_externBeginRenderOverlays")
                     .unwrap_or_else(|e| {
@@ -463,13 +463,13 @@ impl crate::UnityEngine::Canvas {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_externEndRenderOverlays() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        quest_hook::libil2cpp::Gc<i32>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -477,7 +477,7 @@ impl crate::UnityEngine::Canvas {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_externEndRenderOverlays")
                     .unwrap_or_else(|e| {
@@ -488,13 +488,13 @@ impl crate::UnityEngine::Canvas {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
     pub fn get_externRenderOverlaysBefore() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        quest_hook::libil2cpp::Gc<i32, i32>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -502,7 +502,7 @@ impl crate::UnityEngine::Canvas {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+                        quest_hook::libil2cpp::Gc<i32, i32>,
                         0usize,
                     >("get_externRenderOverlaysBefore")
                     .unwrap_or_else(|e| {
@@ -513,7 +513,7 @@ impl crate::UnityEngine::Canvas {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
@@ -1072,14 +1072,14 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn set_externBeginRenderOverlays(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_externBeginRenderOverlays")
@@ -1097,14 +1097,14 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn set_externEndRenderOverlays(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_externEndRenderOverlays")
@@ -1122,14 +1122,14 @@ impl crate::UnityEngine::Canvas {
         Ok(__cordl_ret.into())
     }
     pub fn set_externRenderOverlaysBefore(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
+        value: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
+                        (quest_hook::libil2cpp::Gc<i32, i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_externRenderOverlaysBefore")

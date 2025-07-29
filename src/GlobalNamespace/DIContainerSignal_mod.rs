@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DIContainerSignal {
-    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::DIContainerS
 }
 #[cfg(feature = "DIContainerSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::DIContainerSignal {
-    type Target = crate::GlobalNamespace::GenericSignal_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

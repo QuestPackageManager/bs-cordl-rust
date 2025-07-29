@@ -438,24 +438,20 @@ impl crate::UnityEngine::InputSystem::Utilities::FourCC {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
-impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::FourCC>,
-> for crate::UnityEngine::InputSystem::Utilities::FourCC {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::FourCC>>
+for crate::UnityEngine::InputSystem::Utilities::FourCC {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::InputSystem::Utilities::FourCC,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::FourCC> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+FourCC")]
-impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::Utilities::FourCC>,
-> for crate::UnityEngine::InputSystem::Utilities::FourCC {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::FourCC>>
+for crate::UnityEngine::InputSystem::Utilities::FourCC {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::FourCC,
     > {
         todo!()

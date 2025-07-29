@@ -63,6 +63,42 @@ impl crate::UnityEngine::LightProbes {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CalculateInterpolatedLightAndOcclusionProbes_Gc_Gc_Gc1(
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        lightProbes: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+        >,
+        occlusionProbes: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Rendering::SphericalHarmonicsL2,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("CalculateInterpolatedLightAndOcclusionProbes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateInterpolatedLightAndOcclusionProbes", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (positions, lightProbes, occlusionProbes))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn CalculateInterpolatedLightAndOcclusionProbes_Il2CppArray_Il2CppArray_Il2CppArray0(
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -170,58 +206,6 @@ impl crate::UnityEngine::LightProbes {
                     (),
                     (positions, positionsCount, lightProbes, occlusionProbes),
                 )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn CalculateInterpolatedLightAndOcclusionProbes_List_1_List_1_List_1_1(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        lightProbes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::SphericalHarmonicsL2,
-            >,
-        >,
-        occlusionProbes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::SphericalHarmonicsL2,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("CalculateInterpolatedLightAndOcclusionProbes")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CalculateInterpolatedLightAndOcclusionProbes", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (positions, lightProbes, occlusionProbes))?
         };
         Ok(__cordl_ret.into())
     }

@@ -2,18 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsOverPerCoreLockedStacksArrayPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Buffers::ArrayPool_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub _bucketArraySizes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
     pub _buckets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-                    T,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
     >,
     pub _callbackCreated: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -57,7 +51,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
-    type Target = crate::System::Buffers::ArrayPool_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,13 +84,7 @@ impl<
     pub fn CreatePerCoreLockedStacks(
         &mut self,
         bucketIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-                T,
-            >,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -107,11 +95,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("CreatePerCoreLockedStacks")
                     .unwrap_or_else(|e| {
@@ -122,11 +106,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
-                T,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (bucketIndex))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (bucketIndex))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Gen2GcCallbackFunc(
@@ -708,13 +690,7 @@ pub struct TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _perCoreStacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
-                    T,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }

@@ -17,37 +17,19 @@ pub struct ReusableTreeViewItem {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub onPointerUp: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
     >,
-    pub onToggleValueChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-            >,
-        >,
-    >,
+    pub onToggleValueChanged: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
     pub m_Depth: i32,
     pub m_IndentWidth: f32,
     pub m_PointerUpCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
     >,
     pub m_ToggleValueChangedCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<bool>,
     >,
     pub m_ToggleGeometryChangedCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::GeometryChangedEvent,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableTreeViewItem")]
@@ -261,18 +243,14 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
     }
     pub fn OnToggleValueChanged(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnToggleValueChanged")
@@ -415,9 +393,7 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
     pub fn add_onPointerUp(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -426,10 +402,8 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::PointerUpEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::PointerUpEvent,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -450,26 +424,14 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
     }
     pub fn add_onToggleValueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_onToggleValueChanged")
@@ -518,9 +480,7 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
     pub fn remove_onPointerUp(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -529,10 +489,8 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::PointerUpEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::PointerUpEvent,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -553,26 +511,14 @@ impl crate::UnityEngine::UIElements::ReusableTreeViewItem {
     }
     pub fn remove_onToggleValueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_onToggleValueChanged")

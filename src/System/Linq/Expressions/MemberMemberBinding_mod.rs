@@ -4,9 +4,7 @@
 pub struct MemberMemberBinding {
     __cordl_parent: crate::System::Linq::Expressions::MemberBinding,
     pub _Bindings_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+MemberMemberBinding")]
@@ -48,11 +46,7 @@ impl crate::System::Linq::Expressions::MemberMemberBinding {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::MemberBinding,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,10 +56,8 @@ impl crate::System::Linq::Expressions::MemberMemberBinding {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::MemberBinding,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::MemberBinding,
                             >,
                         >,
                         0usize,
@@ -79,11 +71,7 @@ impl crate::System::Linq::Expressions::MemberMemberBinding {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::MemberBinding,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

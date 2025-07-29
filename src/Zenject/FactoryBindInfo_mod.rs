@@ -5,13 +5,11 @@ pub struct FactoryBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _FactoryType_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _ProviderFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     >,
     pub _Arguments_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        crate::Zenject::TypeValuePair,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+FactoryBindInfo")]
@@ -86,9 +84,7 @@ impl crate::Zenject::FactoryBindInfo {
     pub fn get_Arguments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -96,11 +92,7 @@ impl crate::Zenject::FactoryBindInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                         0usize,
                     >("get_Arguments")
                     .unwrap_or_else(|e| {
@@ -111,9 +103,9 @@ impl crate::Zenject::FactoryBindInfo {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_FactoryType(
@@ -145,10 +137,8 @@ impl crate::Zenject::FactoryBindInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -158,10 +148,8 @@ impl crate::Zenject::FactoryBindInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                         >,
                         0usize,
                     >("get_ProviderFunc")
@@ -174,29 +162,21 @@ impl crate::Zenject::FactoryBindInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Arguments(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_Arguments")
@@ -242,10 +222,8 @@ impl crate::Zenject::FactoryBindInfo {
     pub fn set_ProviderFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -254,10 +232,8 @@ impl crate::Zenject::FactoryBindInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

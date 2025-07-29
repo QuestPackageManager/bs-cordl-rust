@@ -384,9 +384,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
-            >,
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -396,9 +394,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
-                            >,
+                            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
                         >,
                         0usize,
                     >("get_controls")
@@ -411,9 +407,7 @@ impl crate::UnityEngine::InputSystem::InputBindingCompositeContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
-            >,
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext_PartBinding,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -598,28 +592,22 @@ impl<
 #[cfg(
     feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IComparer_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
     TValue,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IComparer_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         todo!()
     }
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+InputBindingCompositeContext+DefaultComparer_1"
 )]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IComparer_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::InputBindingCompositeContext_DefaultComparer_1<
     TValue,
 > {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         todo!()
     }
 }

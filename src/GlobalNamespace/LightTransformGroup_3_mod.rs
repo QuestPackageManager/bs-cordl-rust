@@ -11,19 +11,13 @@ pub struct LightTransformGroup_3<
     pub _mirrorY: bool,
     pub _mirrorZ: bool,
     pub _xTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _yTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub _zTransforms: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     __cordl_phantom_TX: std::marker::PhantomData<TX>,
     __cordl_phantom_TY: std::marker::PhantomData<TY>,
@@ -239,9 +233,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -259,9 +251,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         0usize,
                     >("get_xTransforms")
@@ -274,9 +264,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -284,9 +272,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -304,9 +290,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         0usize,
                     >("get_yTransforms")
@@ -319,9 +303,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -329,9 +311,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     >
     where
@@ -349,9 +329,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         0usize,
                     >("get_zTransforms")
@@ -364,9 +342,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -89,10 +89,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
             >,
         >,
     > {
@@ -110,10 +108,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
                             >,
                         >,
                         2usize,
@@ -127,10 +123,8 @@ impl crate::GlobalNamespace::X509CertificateUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
             >,
         > = unsafe {
             cordl_method_info

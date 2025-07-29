@@ -5,14 +5,10 @@ pub struct NatPunchModule {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
     pub _requestEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::LiteNetLib::NatPunchModule_RequestEventData,
-        >,
+        crate::LiteNetLib::NatPunchModule_RequestEventData,
     >,
     pub _successEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::LiteNetLib::NatPunchModule_SuccessEventData,
-        >,
+        crate::LiteNetLib::NatPunchModule_SuccessEventData,
     >,
     pub _cacheReader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
     pub _cacheWriter: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MockComboController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub comboDidChangeEvent: quest_hook::libil2cpp::Gc<i32>,
     pub comboBreakingEventHappenedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
@@ -98,14 +98,14 @@ impl crate::GlobalNamespace::MockComboController {
     }
     pub fn add_comboDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_comboDidChangeEvent")
@@ -150,14 +150,14 @@ impl crate::GlobalNamespace::MockComboController {
     }
     pub fn remove_comboDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_comboDidChangeEvent")

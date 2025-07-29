@@ -234,11 +234,7 @@ impl crate::GlobalNamespace::OVRAnchor {
         Ok(__cordl_ret.into())
     }
     pub fn FetchAnchors(
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
         queryInfo: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -247,11 +243,7 @@ impl crate::GlobalNamespace::OVRAnchor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::GlobalNamespace::OVRAnchor,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
                         ),
                         crate::GlobalNamespace::OVRTask_1<bool>,
@@ -270,15 +262,9 @@ impl crate::GlobalNamespace::OVRAnchor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_IEnumerable_1_IList_1_OVRSpace_StorageLocation_f64_2(
-        uuids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
-        >,
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+    pub fn FetchAnchorsAsync_Gc_Gc_OVRSpace_StorageLocation_f64_2(
+        uuids: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
@@ -288,16 +274,8 @@ impl crate::GlobalNamespace::OVRAnchor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::System::Guid,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::GlobalNamespace::OVRAnchor,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Guid>,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             crate::GlobalNamespace::OVRSpace_StorageLocation,
                             f64,
                         ),
@@ -317,12 +295,8 @@ impl crate::GlobalNamespace::OVRAnchor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_IList_1_OVRSpace_StorageLocation_i32_f64_1<T>(
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+    pub fn FetchAnchorsAsync_Gc_OVRSpace_StorageLocation_i32_f64_1<T>(
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         maxResults: i32,
         timeout: f64,
@@ -337,11 +311,7 @@ impl crate::GlobalNamespace::OVRAnchor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::GlobalNamespace::OVRAnchor,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             crate::GlobalNamespace::OVRSpace_StorageLocation,
                             i32,
                             f64,
@@ -363,13 +333,9 @@ impl crate::GlobalNamespace::OVRAnchor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FetchAnchorsAsync_OVRPlugin_SpaceComponentType_IList_1_OVRSpace_StorageLocation_i32_f64_0(
+    pub fn FetchAnchorsAsync_OVRPlugin_SpaceComponentType_Gc_OVRSpace_StorageLocation_i32_f64_0(
         _cordl_type: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-        anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::GlobalNamespace::OVRAnchor,
-            >,
-        >,
+        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         maxResults: i32,
         timeout: f64,
@@ -381,11 +347,7 @@ impl crate::GlobalNamespace::OVRAnchor {
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::GlobalNamespace::OVRAnchor,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             crate::GlobalNamespace::OVRSpace_StorageLocation,
                             i32,
                             f64,
@@ -448,10 +410,8 @@ impl crate::GlobalNamespace::OVRAnchor {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetQueryInfo_IEnumerable_1_f64_1(
-        uuids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
-        >,
+    pub fn GetQueryInfo_Gc_f64_1(
+        uuids: quest_hook::libil2cpp::Gc<crate::System::Guid>,
         location: crate::GlobalNamespace::OVRSpace_StorageLocation,
         timeout: f64,
     ) -> quest_hook::libil2cpp::Result<
@@ -463,11 +423,7 @@ impl crate::GlobalNamespace::OVRAnchor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::System::Guid,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Guid>,
                             crate::GlobalNamespace::OVRSpace_StorageLocation,
                             f64,
                         ),
@@ -761,18 +717,18 @@ impl AsMut<crate::System::IDisposable> for crate::GlobalNamespace::OVRAnchor {
     }
 }
 #[cfg(feature = "OVRAnchor")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>>
 for crate::GlobalNamespace::OVRAnchor {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor> {
         todo!()
     }
 }
 #[cfg(feature = "OVRAnchor")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>>
 for crate::GlobalNamespace::OVRAnchor {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRAnchor> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor> {
         todo!()
     }
 }

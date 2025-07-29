@@ -4,9 +4,7 @@
 pub struct BeatmapEventDataBoxGroupProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dirtyBoxGroups: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapEventDataBoxGroupProcessor")]
@@ -79,11 +77,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -92,10 +86,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventDataBoxGroup,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -117,11 +109,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     pub fn ProcessInsertedData(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -130,10 +118,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventDataBoxGroup,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -177,11 +163,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -191,10 +173,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventDataBoxGroup,
                             >,
                         >,
                         0usize,
@@ -208,11 +188,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -229,13 +205,13 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
 impl AsRef<
-    crate::GlobalNamespace::ISortedListItemProcessor_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     >,
 > for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ISortedListItemProcessor_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -243,13 +219,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapEventDataBoxGroupProcessor")]
 impl AsMut<
-    crate::GlobalNamespace::ISortedListItemProcessor_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     >,
 > for crate::GlobalNamespace::BeatmapEventDataBoxGroupProcessor {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ISortedListItemProcessor_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
     > {
         unsafe { std::mem::transmute(self) }

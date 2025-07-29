@@ -38,21 +38,17 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Core {
 }
 #[cfg(feature = "Oculus+Platform+Core")]
 impl crate::Oculus::Platform::Core {
-    pub fn AsyncInitialize_Dictionary_2_Il2CppString1(
+    pub fn AsyncInitialize_Gc_Il2CppString1(
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initConfigOptions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::Oculus::Platform::InitConfigOptions,
-                bool,
-            >,
+            crate::Oculus::Platform::InitConfigOptions,
+            bool,
         >,
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -66,20 +62,16 @@ impl crate::Oculus::Platform::Core {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    crate::Oculus::Platform::InitConfigOptions,
-                                    bool,
-                                >,
+                                crate::Oculus::Platform::InitConfigOptions,
+                                bool,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PlatformInitialize,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PlatformInitialize,
                             >,
                         >,
                         3usize,
@@ -93,10 +85,8 @@ impl crate::Oculus::Platform::Core {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = unsafe {
             cordl_method_info
@@ -108,10 +98,8 @@ impl crate::Oculus::Platform::Core {
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -122,10 +110,8 @@ impl crate::Oculus::Platform::Core {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PlatformInitialize,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PlatformInitialize,
                             >,
                         >,
                         1usize,
@@ -139,10 +125,8 @@ impl crate::Oculus::Platform::Core {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (appId))? };
         Ok(__cordl_ret.into())

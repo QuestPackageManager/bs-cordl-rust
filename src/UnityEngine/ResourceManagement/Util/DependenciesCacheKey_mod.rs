@@ -4,10 +4,8 @@
 pub struct DependenciesCacheKey {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Dependencies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     >,
     pub m_DependenciesHash: i32,
@@ -154,10 +152,8 @@ impl crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
     }
     pub fn New(
         dependencies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         dependenciesHash: i32,
@@ -171,10 +167,8 @@ impl crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
     pub fn _ctor(
         &mut self,
         dependencies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
         dependenciesHash: i32,
@@ -186,10 +180,8 @@ impl crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                 >,
                             >,
                             i32,
@@ -222,42 +214,6 @@ for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DependenciesCacheKey")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DependenciesCacheKey")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+DependenciesCacheKey")]
 impl AsRef<crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey>
 for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
     fn as_ref(
@@ -272,6 +228,42 @@ for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DependenciesCacheKey")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+DependenciesCacheKey")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::DependenciesCacheKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

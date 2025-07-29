@@ -9,9 +9,7 @@ pub struct PreviousColorPanelController {
         >,
     >,
     pub _button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::UnityEngine::Color>,
-    >,
+    pub colorWasSelectedEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _color: crate::UnityEngine::Color,
     pub _graphicsColor: crate::UnityEngine::Color,
@@ -200,18 +198,14 @@ impl crate::GlobalNamespace::PreviousColorPanelController {
     }
     pub fn add_colorWasSelectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::UnityEngine::Color>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_colorWasSelectedEvent")
@@ -230,18 +224,14 @@ impl crate::GlobalNamespace::PreviousColorPanelController {
     }
     pub fn remove_colorWasSelectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::UnityEngine::Color>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_colorWasSelectedEvent")

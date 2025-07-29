@@ -212,9 +212,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
         Ok(__cordl_ret.into())
     }
     pub fn SplitCurve(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
         t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -222,14 +220,7 @@ impl crate::GlobalNamespace::CubicBezierHelper {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            f32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>, f32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SplitCurve")

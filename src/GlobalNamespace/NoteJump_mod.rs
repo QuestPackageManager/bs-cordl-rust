@@ -25,14 +25,10 @@ pub struct NoteJump {
         crate::System::Action,
     >,
     pub noteJumpDidPassThreeQuartersEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
     >,
     pub noteJumpDidPassHalfEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub noteJumpDidUpdateProgressEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<f32>,
-    >,
+    pub noteJumpDidUpdateProgressEvent: quest_hook::libil2cpp::Gc<f32>,
     pub _randomRotations: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
@@ -286,9 +282,7 @@ impl crate::GlobalNamespace::NoteJump {
     pub fn add_noteJumpDidPassThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -297,9 +291,7 @@ impl crate::GlobalNamespace::NoteJump {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -345,14 +337,14 @@ impl crate::GlobalNamespace::NoteJump {
     }
     pub fn add_noteJumpDidUpdateProgressEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_noteJumpDidUpdateProgressEvent")
@@ -559,9 +551,7 @@ impl crate::GlobalNamespace::NoteJump {
     pub fn remove_noteJumpDidPassThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -570,9 +560,7 @@ impl crate::GlobalNamespace::NoteJump {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJump>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -618,14 +606,14 @@ impl crate::GlobalNamespace::NoteJump {
     }
     pub fn remove_noteJumpDidUpdateProgressEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_noteJumpDidUpdateProgressEvent")

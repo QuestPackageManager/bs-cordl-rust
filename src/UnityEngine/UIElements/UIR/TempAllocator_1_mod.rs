@@ -7,9 +7,7 @@ pub struct TempAllocator_1<T: quest_hook::libil2cpp::Type> {
     pub m_ExcessMaxCapacity: i32,
     pub m_Pool: crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
     pub m_Excess: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
-        >,
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1_Page<T>,
     >,
     pub m_NextExcessSize: i32,
     pub _disposed_k__BackingField: bool,

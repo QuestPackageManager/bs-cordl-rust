@@ -253,9 +253,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -265,10 +263,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::SignalAsset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::SignalAsset,
                             >,
                         >,
                         0usize,
@@ -282,9 +278,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -489,14 +483,10 @@ for crate::UnityEngine::Timeline::SignalReceiver {
 pub struct SignalReceiver_EventKeyValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Signals: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
     >,
     pub m_Events: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
@@ -688,9 +678,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -700,10 +688,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Events::UnityEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Events::UnityEvent,
                             >,
                         >,
                         0usize,
@@ -717,9 +703,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -727,9 +711,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -739,10 +721,8 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::SignalAsset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::SignalAsset,
                             >,
                         >,
                         0usize,
@@ -756,9 +736,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

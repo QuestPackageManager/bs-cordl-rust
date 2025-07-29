@@ -622,9 +622,7 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
     pub fn GetObjectParentFolder(
         parentObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         generatedMaterials: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -637,9 +635,7 @@ impl crate::HoudiniEngineUnity::HEU_EditorUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

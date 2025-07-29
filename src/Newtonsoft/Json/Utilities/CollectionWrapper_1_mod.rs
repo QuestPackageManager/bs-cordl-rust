@@ -4,9 +4,7 @@
 pub struct CollectionWrapper_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
-    pub _genericCollection: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::ICollection_1<T>,
-    >,
+    pub _genericCollection: quest_hook::libil2cpp::Gc<T>,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -175,9 +173,7 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -188,9 +184,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -201,9 +195,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsCompatibleObject(
@@ -235,10 +229,8 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_ICollection_1_1(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
+    pub fn New_Gc1(
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -718,11 +710,9 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ICollection_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -733,9 +723,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::ICollection_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -885,42 +873,6 @@ for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::ICollection>
 for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -959,6 +911,34 @@ for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IList>
 for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Utilities+CollectionWrapper_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::Newtonsoft::Json::Utilities::CollectionWrapper_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

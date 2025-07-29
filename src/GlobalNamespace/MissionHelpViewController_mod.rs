@@ -12,9 +12,7 @@ pub struct MissionHelpViewController {
         >,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpViewController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpViewController>,
     >,
     pub _missionHelp: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpSO>,
 }
@@ -196,11 +194,7 @@ impl crate::GlobalNamespace::MissionHelpViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionHelpViewController,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -209,10 +203,8 @@ impl crate::GlobalNamespace::MissionHelpViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionHelpViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionHelpViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -234,11 +226,7 @@ impl crate::GlobalNamespace::MissionHelpViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionHelpViewController,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionHelpViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -247,10 +235,8 @@ impl crate::GlobalNamespace::MissionHelpViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionHelpViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionHelpViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

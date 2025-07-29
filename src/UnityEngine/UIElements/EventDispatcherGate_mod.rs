@@ -238,11 +238,11 @@ for crate::UnityEngine::UIElements::EventDispatcherGate {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcherGate>,
 > for crate::UnityEngine::UIElements::EventDispatcherGate {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventDispatcherGate,
     > {
         todo!()
@@ -250,11 +250,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcherGate")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::EventDispatcherGate>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcherGate>,
 > for crate::UnityEngine::UIElements::EventDispatcherGate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventDispatcherGate,
     > {
         todo!()

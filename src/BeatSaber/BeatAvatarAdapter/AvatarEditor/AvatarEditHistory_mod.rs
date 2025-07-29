@@ -7,9 +7,7 @@ pub struct AvatarEditHistory {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disableNextSnapshotOverride: bool,
     pub _snapShots: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
-        >,
+        crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::EditAvatarHistorySnapshot,
     >,
     pub _currentDataId: i32,
 }

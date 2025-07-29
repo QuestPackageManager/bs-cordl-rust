@@ -19,9 +19,7 @@ pub struct OVRSceneLoader {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub loadedAssetBundles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AssetBundle>,
     >,
     pub currentSceneInfo: crate::GlobalNamespace::OVRSceneLoader_SceneInfo,
 }
@@ -357,9 +355,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRSceneLoader_SceneInfo {
     pub scenes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub version: i64,
 }
@@ -463,9 +459,7 @@ impl crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     pub fn _ctor(
         &mut self,
         sceneList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         currentSceneEpochVersion: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -476,10 +470,8 @@ impl crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             i64,

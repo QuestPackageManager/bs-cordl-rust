@@ -45,9 +45,7 @@ impl crate::System::Data::NameNode {
         &mut self,
         table: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -58,9 +56,7 @@ impl crate::System::Data::NameNode {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

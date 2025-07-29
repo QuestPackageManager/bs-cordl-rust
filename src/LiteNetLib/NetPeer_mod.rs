@@ -19,9 +19,7 @@ pub struct NetPeer {
     pub NextPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub PrevPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub _unreliableChannel: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     >,
     pub _channels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -37,14 +35,10 @@ pub struct NetPeer {
     pub _mtuMutex: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _fragmentId: u16,
     pub _holdedFragments: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u16,
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer_IncomingFragments>,
-        >,
+        u16,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer_IncomingFragments>,
     >,
-    pub _deliveredFramgnets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<u16, u16>,
-    >,
+    pub _deliveredFramgnets: quest_hook::libil2cpp::Gc<u16, u16>,
     pub _mergeData: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
     pub _mergePos: i32,
     pub _mergeCount: i32,

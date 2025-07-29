@@ -169,10 +169,8 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
     pub fn ProcessEffectCoroutine(
         &mut self,
         fadeElements: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -184,10 +182,8 @@ impl crate::GlobalNamespace::SliderIntensityEffect {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SliderIntensityEffect_FadeElement,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<

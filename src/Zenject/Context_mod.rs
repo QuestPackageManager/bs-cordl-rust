@@ -4,29 +4,19 @@
 pub struct Context {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
     pub _monoInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub _installerPrefabs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub _normalInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
     >,
     pub _normalInstallerTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+Context")]
@@ -118,14 +108,10 @@ impl crate::Zenject::Context {
     pub fn CheckInstallerPrefabTypes(
         &mut self,
         installers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
         installerPrefabs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -135,14 +121,10 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -164,9 +146,7 @@ impl crate::Zenject::Context {
     pub fn GetInjectableMonoBehaviours(
         &mut self,
         components: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -175,9 +155,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -199,9 +177,7 @@ impl crate::Zenject::Context {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -211,9 +187,7 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         0usize,
                     >("GetRootGameObjects")
@@ -226,9 +200,7 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -257,32 +229,22 @@ impl crate::Zenject::Context {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstallInstallers_List_1_List_1_List_1_List_1_List_1_1(
+    pub fn InstallInstallers_Gc_Gc_Gc_Gc_Gc1(
         &mut self,
         normalInstallers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
         >,
         normalInstallerTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
         scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
         installers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
         installerPrefabs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -292,31 +254,21 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::ScriptableObjectInstaller,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Zenject::ScriptableObjectInstaller,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -348,9 +300,7 @@ impl crate::Zenject::Context {
     pub fn InstallSceneBindings(
         &mut self,
         injectableMonoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -359,9 +309,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -489,9 +437,7 @@ impl crate::Zenject::Context {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -501,9 +447,7 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                         >,
                         0usize,
                     >("get_InstallerPrefabs")
@@ -516,9 +460,7 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -526,9 +468,7 @@ impl crate::Zenject::Context {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -538,9 +478,7 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                         >,
                         0usize,
                     >("get_Installers")
@@ -553,20 +491,14 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_NormalInstallerTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -575,9 +507,7 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         0usize,
                     >("get_NormalInstallerTypes")
@@ -590,9 +520,7 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -600,9 +528,7 @@ impl crate::Zenject::Context {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -612,9 +538,7 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
                         >,
                         0usize,
                     >("get_NormalInstallers")
@@ -627,9 +551,7 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -637,9 +559,7 @@ impl crate::Zenject::Context {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -649,10 +569,8 @@ impl crate::Zenject::Context {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::ScriptableObjectInstaller,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Zenject::ScriptableObjectInstaller,
                             >,
                         >,
                         0usize,
@@ -666,18 +584,14 @@ impl crate::Zenject::Context {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_InstallerPrefabs(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -686,9 +600,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -709,9 +621,7 @@ impl crate::Zenject::Context {
     pub fn set_Installers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -720,9 +630,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -742,11 +650,7 @@ impl crate::Zenject::Context {
     }
     pub fn set_NormalInstallerTypes(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -754,9 +658,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -777,9 +679,7 @@ impl crate::Zenject::Context {
     pub fn set_NormalInstallers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -788,9 +688,7 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InstallerBase>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -811,9 +709,7 @@ impl crate::Zenject::Context {
     pub fn set_ScriptableObjectInstallers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -822,10 +718,8 @@ impl crate::Zenject::Context {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::ScriptableObjectInstaller,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Zenject::ScriptableObjectInstaller,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

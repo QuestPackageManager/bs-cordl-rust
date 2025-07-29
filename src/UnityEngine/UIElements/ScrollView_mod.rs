@@ -58,14 +58,10 @@ pub struct ScrollView {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_CapturedTargetPointerMoveCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
     >,
     pub m_CapturedTargetPointerUpCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
     >,
     pub m_PostPointerUpAnimation: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
@@ -2416,7 +2412,7 @@ for crate::UnityEngine::UIElements::ScrollView_TouchScrollingResult {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollView_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView_UxmlTraits>,
     >,
@@ -2443,7 +2439,7 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+ScrollView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScrollView_UxmlTraits>,
     >;
@@ -2504,14 +2500,10 @@ for crate::UnityEngine::UIElements::ScrollView_UxmlFactory {
 pub struct ScrollView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
     pub m_ScrollViewMode: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollViewMode,
-        >,
+        crate::UnityEngine::UIElements::ScrollViewMode,
     >,
     pub m_NestedInteractionKind: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
-        >,
+        crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
     >,
     pub m_ShowHorizontal: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -2520,14 +2512,10 @@ pub struct ScrollView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_HorizontalScrollerVisibility: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollerVisibility,
-        >,
+        crate::UnityEngine::UIElements::ScrollerVisibility,
     >,
     pub m_VerticalScrollerVisibility: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollerVisibility,
-        >,
+        crate::UnityEngine::UIElements::ScrollerVisibility,
     >,
     pub m_HorizontalPageSize: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
@@ -2539,9 +2527,7 @@ pub struct ScrollView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
     pub m_TouchScrollBehavior: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
-        >,
+        crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
     >,
     pub m_ScrollDecelerationRate: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,

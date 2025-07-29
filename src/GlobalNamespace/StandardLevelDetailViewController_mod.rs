@@ -37,50 +37,38 @@ pub struct StandardLevelDetailViewController {
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
     >,
     pub didPressActionButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
     >,
     pub didPressOpenLevelPackButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub levelFavoriteStatusDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
-            bool,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
+        bool,
     >,
     pub didPressPracticeButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     >,
     pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
     >,
     pub didChangeContentEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelDetailViewController,
-            >,
-            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelDetailViewController,
         >,
+        crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
     >,
     pub _ownedObjectsEventBinder: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EventBinder,
@@ -94,9 +82,7 @@ pub struct StandardLevelDetailViewController {
     pub _canBuyPack: bool,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub _notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
     pub _contentIsOwnedAndReady: bool,
 }
@@ -639,10 +625,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn ShowLoadingAndDoSomething(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::System::Threading::CancellationToken,
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            crate::System::Threading::CancellationToken,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -651,11 +635,9 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                crate::System::Threading::CancellationToken,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
-                                >,
+                            crate::System::Threading::CancellationToken,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1010,12 +992,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_didChangeContentEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1024,12 +1004,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
+                            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1050,10 +1028,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1063,10 +1039,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1088,10 +1062,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_didPressActionButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1101,10 +1073,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1126,12 +1096,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_didPressOpenLevelPackButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1140,13 +1108,11 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevelPack,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevelPack,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1168,12 +1134,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_didPressPracticeButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1182,13 +1146,11 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1210,12 +1172,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn add_levelFavoriteStatusDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                bool,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1224,12 +1184,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1302,12 +1260,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_didChangeContentEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1316,12 +1272,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
+                            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1342,10 +1296,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1355,10 +1307,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1380,10 +1330,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_didPressActionButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1393,10 +1341,8 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1418,12 +1364,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_didPressOpenLevelPackButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1432,13 +1376,11 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevelPack,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevelPack,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1460,12 +1402,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_didPressPracticeButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1474,13 +1414,11 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1502,12 +1440,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn remove_levelFavoriteStatusDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                >,
-                bool,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelDetailViewController,
             >,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1516,12 +1452,10 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailViewController,
-                                >,
-                                bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailViewController,
                             >,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

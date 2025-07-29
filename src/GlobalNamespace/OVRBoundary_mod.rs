@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct OVRBoundary {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub cachedGeometryList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub cachedGeometryList: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
 }
 #[cfg(feature = "cordl_class_OVRBoundary")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRBoundary {

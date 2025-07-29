@@ -751,7 +751,7 @@ impl crate::UnityEngine::Font {
     }
     pub fn add_textureRebuilt(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -760,9 +760,7 @@ impl crate::UnityEngine::Font {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1008,7 +1006,7 @@ impl crate::UnityEngine::Font {
     }
     pub fn remove_textureRebuilt(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1017,9 +1015,7 @@ impl crate::UnityEngine::Font {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -7,17 +7,13 @@ pub struct DirectionalLightWithIdsGroupEntry {
         crate::GlobalNamespace::DirectionalLightWithIds,
     >,
     pub _groupLightData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
         >,
     >,
     pub _individualLightData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
         >,
     >,
     pub _excludedLightIds: quest_hook::libil2cpp::Gc<
@@ -96,10 +92,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
             >,
         >,
     > {
@@ -110,10 +104,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
                             >,
                         >,
                         0usize,
@@ -127,10 +119,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_GroupLightData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -166,10 +156,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
             >,
         >,
     > {
@@ -180,10 +168,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
                             >,
                         >,
                         0usize,
@@ -197,10 +183,8 @@ impl crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DirectionalLightWithIdsGroupEntry_LightIntensitiesWithId,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

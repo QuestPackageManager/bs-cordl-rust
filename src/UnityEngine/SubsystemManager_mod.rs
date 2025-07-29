@@ -39,12 +39,8 @@ impl std::ops::DerefMut for crate::UnityEngine::SubsystemManager {
 #[cfg(feature = "UnityEngine+SubsystemManager")]
 impl crate::UnityEngine::SubsystemManager {
     pub fn AddSubsystemSubset<TBaseTypeInList, TQueryType>(
-        copyFrom: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TBaseTypeInList>,
-        >,
-        copyTo: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TQueryType>,
-        >,
+        copyFrom: quest_hook::libil2cpp::Gc<TBaseTypeInList>,
+        copyTo: quest_hook::libil2cpp::Gc<TQueryType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TBaseTypeInList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -58,12 +54,8 @@ impl crate::UnityEngine::SubsystemManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<TBaseTypeInList>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<TQueryType>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TBaseTypeInList>,
+                            quest_hook::libil2cpp::Gc<TQueryType>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -107,9 +99,7 @@ impl crate::UnityEngine::SubsystemManager {
         Ok(__cordl_ret.into())
     }
     pub fn GetInstances<T>(
-        subsystems: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        subsystems: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -120,9 +110,7 @@ impl crate::UnityEngine::SubsystemManager {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetInstances")
@@ -169,9 +157,7 @@ impl crate::UnityEngine::SubsystemManager {
         Ok(__cordl_ret.into())
     }
     pub fn GetSubsystemDescriptors<T>(
-        descriptors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        descriptors: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -182,9 +168,7 @@ impl crate::UnityEngine::SubsystemManager {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetSubsystemDescriptors")
@@ -202,9 +186,7 @@ impl crate::UnityEngine::SubsystemManager {
         Ok(__cordl_ret.into())
     }
     pub fn GetSubsystems<T>(
-        subsystems: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        subsystems: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -215,9 +197,7 @@ impl crate::UnityEngine::SubsystemManager {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetSubsystems")

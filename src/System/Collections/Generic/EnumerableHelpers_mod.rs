@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::EnumerableHelpe
 #[cfg(feature = "System+Collections+Generic+EnumerableHelpers")]
 impl crate::System::Collections::Generic::EnumerableHelpers {
     pub fn ToArray_ByRefMut1<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
         length: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -57,9 +55,7 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -78,10 +74,8 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
         > = unsafe { cordl_method_info.invoke_unchecked((), (source, length))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToArray_IEnumerable_1_0<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn ToArray_Gc0<T>(
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -94,9 +88,7 @@ impl crate::System::Collections::Generic::EnumerableHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,
                     >("ToArray")

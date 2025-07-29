@@ -4,14 +4,10 @@
 pub struct EnvironmentShaderWarmupDebugger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderersThatWereNotRendered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     >,
     pub _materialsThatWereNotRendered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     >,
     pub _reusableStringBuilder: quest_hook::libil2cpp::Gc<
         crate::System::Text::StringBuilder,

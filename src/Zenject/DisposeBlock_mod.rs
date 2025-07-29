@@ -4,14 +4,10 @@
 pub struct DisposeBlock {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >,
     pub _objectPoolPairs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
-        >,
+        crate::Zenject::DisposeBlock_SpawnedObjectPoolPair,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+DisposeBlock")]
@@ -78,9 +74,7 @@ impl crate::Zenject::DisposeBlock {
     }
     pub fn AddRange<T>(
         &mut self,
-        disposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<T>,
-        >,
+        disposables: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -91,9 +85,7 @@ impl crate::Zenject::DisposeBlock {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddRange")
@@ -241,9 +233,7 @@ impl crate::Zenject::DisposeBlock {
     }
     pub fn SpawnList_1<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -252,13 +242,7 @@ impl crate::Zenject::DisposeBlock {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
-                        0usize,
-                    >("SpawnList")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("SpawnList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -267,19 +251,15 @@ impl crate::Zenject::DisposeBlock {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn SpawnList_IEnumerable_1_0<T>(
+    pub fn SpawnList_Gc0<T>(
         &mut self,
-        elements: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+        elements: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -289,12 +269,8 @@ impl crate::Zenject::DisposeBlock {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("SpawnList")
                     .unwrap_or_else(|e| {
@@ -305,9 +281,9 @@ impl crate::Zenject::DisposeBlock {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (elements))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (elements))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Spawn_8() -> quest_hook::libil2cpp::Result<
@@ -335,9 +311,9 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_1_0<T>(
+    pub fn Spawn_Gc0<T>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -347,11 +323,7 @@ impl crate::Zenject::DisposeBlock {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>),
-                        T,
-                        1usize,
-                    >("Spawn")
+                    .find_method::<(quest_hook::libil2cpp::Gc<T>), T, 1usize>("Spawn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -365,9 +337,9 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_2_TParam1_1<TValue, TParam1>(
+    pub fn Spawn_Gc_TParam1_1<TValue, TParam1>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_2<TParam1, TValue>>,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TValue>,
         p1: TParam1,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -381,12 +353,7 @@ impl crate::Zenject::DisposeBlock {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_2<TParam1, TValue>,
-                            >,
-                            TParam1,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TParam1, TValue>, TParam1),
                         TValue,
                         2usize,
                     >("Spawn")
@@ -403,11 +370,9 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_3_TParam1_TParam2_2<TValue, TParam1, TParam2>(
+    pub fn Spawn_Gc_TParam1_TParam2_2<TValue, TParam1, TParam2>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_3<TParam1, TParam2, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>,
         p1: TParam1,
         p2: TParam2,
     ) -> quest_hook::libil2cpp::Result<TValue>
@@ -425,9 +390,7 @@ impl crate::Zenject::DisposeBlock {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_3<TParam1, TParam2, TValue>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>,
                             TParam1,
                             TParam2,
                         ),
@@ -447,16 +410,9 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_4_TParam1_TParam2_TParam3_3<
-        TValue,
-        TParam1,
-        TParam2,
-        TParam3,
-    >(
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_3<TValue, TParam1, TParam2, TParam3>(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_4<TParam1, TParam2, TParam3, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TValue>,
         p1: TParam1,
         p2: TParam2,
         p3: TParam3,
@@ -477,14 +433,7 @@ impl crate::Zenject::DisposeBlock {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_4<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TValue,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TValue>,
                             TParam1,
                             TParam2,
                             TParam3,
@@ -505,7 +454,7 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_5_TParam1_TParam2_TParam3_TParam4_4<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_4<
         TValue,
         TParam1,
         TParam2,
@@ -513,9 +462,7 @@ impl crate::Zenject::DisposeBlock {
         TParam4,
     >(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_5<TParam1, TParam2, TParam3, TParam4, TValue>,
-        >,
+        pool: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TValue>,
         p1: TParam1,
         p2: TParam2,
         p3: TParam3,
@@ -540,13 +487,11 @@ impl crate::Zenject::DisposeBlock {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_5<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TParam4,
-                                    TValue,
-                                >,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TValue,
                             >,
                             TParam1,
                             TParam2,
@@ -569,7 +514,7 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_6_TParam1_TParam2_TParam3_TParam4_TParam5_5<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_5<
         TValue,
         TParam1,
         TParam2,
@@ -579,14 +524,12 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_6<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -615,14 +558,12 @@ impl crate::Zenject::DisposeBlock {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_6<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TParam4,
-                                    TParam5,
-                                    TValue,
-                                >,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TValue,
                             >,
                             TParam1,
                             TParam2,
@@ -646,7 +587,7 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_7_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_6<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_6<
         TValue,
         TParam1,
         TParam2,
@@ -657,15 +598,13 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -697,15 +636,13 @@ impl crate::Zenject::DisposeBlock {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_7<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TParam4,
-                                    TParam5,
-                                    TParam6,
-                                    TValue,
-                                >,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TValue,
                             >,
                             TParam1,
                             TParam2,
@@ -730,7 +667,7 @@ impl crate::Zenject::DisposeBlock {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Spawn_IMemoryPool_8_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_TParam7_7<
+    pub fn Spawn_Gc_TParam1_TParam2_TParam3_TParam4_TParam5_TParam6_TParam7_7<
         TValue,
         TParam1,
         TParam2,
@@ -742,16 +679,14 @@ impl crate::Zenject::DisposeBlock {
     >(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            crate::Zenject::IMemoryPool_8<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TValue,
         >,
         p1: TParam1,
         p2: TParam2,
@@ -786,16 +721,14 @@ impl crate::Zenject::DisposeBlock {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IMemoryPool_8<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TParam4,
-                                    TParam5,
-                                    TParam6,
-                                    TParam7,
-                                    TValue,
-                                >,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TValue,
                             >,
                             TParam1,
                             TParam2,
@@ -824,7 +757,7 @@ impl crate::Zenject::DisposeBlock {
     pub fn StoreSpawnedObject<T>(
         &mut self,
         obj: T,
-        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IDespawnableMemoryPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -835,12 +768,7 @@ impl crate::Zenject::DisposeBlock {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IDespawnableMemoryPool_1<T>,
-                            >,
-                        ),
+                        (T, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("StoreSpawnedObject")

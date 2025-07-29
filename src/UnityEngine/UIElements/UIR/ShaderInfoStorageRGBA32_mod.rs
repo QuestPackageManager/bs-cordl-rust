@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderInfoStorageRGBA32 {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<
-        crate::UnityEngine::Color32,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -28,9 +26,7 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBA32")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBA32 {
-    type Target = crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<
-        crate::UnityEngine::Color32,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

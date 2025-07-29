@@ -5,17 +5,13 @@ pub struct HEU_GeoGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _groupName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _subMeshesMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MeshData>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MeshData>,
     >,
     pub _sharedNormalIndices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VertexEntry>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VertexEntry>,
             >,
         >,
     >,
@@ -148,13 +144,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_GeoGro
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeoGroup {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -162,13 +158,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoGroup")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeoGroup {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     > {
         unsafe { std::mem::transmute(self) }

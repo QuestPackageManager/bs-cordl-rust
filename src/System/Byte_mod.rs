@@ -956,18 +956,6 @@ impl AsMut<crate::System::IComparable> for crate::System::Byte {
     }
 }
 #[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IComparable_1<u8>> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IComparable_1<u8> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IComparable_1<u8>> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<u8> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Byte")]
 impl AsRef<crate::System::IConvertible> for crate::System::Byte {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -976,18 +964,6 @@ impl AsRef<crate::System::IConvertible> for crate::System::Byte {
 #[cfg(feature = "System+Byte")]
 impl AsMut<crate::System::IConvertible> for crate::System::Byte {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Byte")]
-impl AsRef<crate::System::IEquatable_1<u8>> for crate::System::Byte {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<u8> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Byte")]
-impl AsMut<crate::System::IEquatable_1<u8>> for crate::System::Byte {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<u8> {
         todo!()
     }
 }
@@ -1012,6 +988,30 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::Byte {
 #[cfg(feature = "System+Byte")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::Byte {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Byte")]
+impl AsRef<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u8> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Byte")]
+impl AsMut<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u8> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Byte")]
+impl AsRef<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u8> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Byte")]
+impl AsMut<quest_hook::libil2cpp::Gc<u8>> for crate::System::Byte {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u8> {
         todo!()
     }
 }

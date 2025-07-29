@@ -1334,30 +1334,6 @@ impl AsMut<crate::System::IComparable> for crate::System::Guid {
     }
 }
 #[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IComparable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::Guid> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IComparable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::Guid> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Guid")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Guid> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Guid")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Guid>> for crate::System::Guid {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::Guid> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Guid")]
 impl AsRef<crate::System::IFormattable> for crate::System::Guid {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -1378,6 +1354,30 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::Guid {
 #[cfg(feature = "System+Guid")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::Guid {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Guid")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Guid> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Guid")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Guid> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Guid")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Guid> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Guid")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Guid>> for crate::System::Guid {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Guid> {
         todo!()
     }
 }

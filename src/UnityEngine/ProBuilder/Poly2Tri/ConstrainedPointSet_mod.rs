@@ -45,10 +45,8 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
 impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
         index: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -92,10 +90,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
     pub fn _ctor(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
         index: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -107,10 +103,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::ConstrainedPointSet {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

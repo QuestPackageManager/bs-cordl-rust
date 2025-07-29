@@ -13,21 +13,13 @@ pub struct UIRenderDevice {
     pub m_LargeMeshVertexCount: u32,
     pub m_IndexToVertexCountRatio: f32,
     pub m_DeferredFrees: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToFree,
         >,
     >,
     pub m_Updates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
         >,
     >,
     pub m_Fences: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -38,9 +30,7 @@ pub struct UIRenderDevice {
     pub m_NextUpdateID: u32,
     pub m_DrawStats: crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics,
     pub m_MeshHandles: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     >,
     pub m_DrawParams: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::DrawParams,
@@ -102,9 +92,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-            >,
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -116,9 +104,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                             crate::UnityEngine::UIElements::UIR::MeshHandle,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-                            >,
+                            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
                         >,
                         1usize,
                     >("ActiveUpdatesForMeshHandle")
@@ -131,9 +117,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
-            >,
+            crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (mesh))? };
         Ok(__cordl_ret.into())
     }
@@ -438,12 +422,8 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
     }
     pub fn DrawRanges<I, T>(
         &mut self,
-        ib: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
-        >,
-        vb: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
-        >,
+        ib: quest_hook::libil2cpp::Gc<I>,
+        vb: quest_hook::libil2cpp::Gc<T>,
         ranges: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::DrawBufferRange,
         >,
@@ -460,12 +440,8 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<I>,
+                            quest_hook::libil2cpp::Gc<T>,
                             crate::Unity::Collections::NativeSlice_1<
                                 crate::UnityEngine::UIElements::UIR::DrawBufferRange,
                             >,

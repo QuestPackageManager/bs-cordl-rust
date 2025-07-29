@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithShareMediaResult {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithShareMediaResult {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithShareMediaResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithShareMediaResult {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

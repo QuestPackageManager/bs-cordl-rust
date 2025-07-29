@@ -287,9 +287,7 @@ pub struct EnvironmentOverrideSettingsPanelController_Elements {
     pub environmentType: crate::GlobalNamespace::EnvironmentType,
     pub localizationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _environmentInfos_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >,
 }
 #[cfg(feature = "cordl_class_EnvironmentOverrideSettingsPanelController+Elements")]
@@ -361,9 +359,7 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -373,10 +369,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::EnvironmentInfoSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentInfoSO,
                             >,
                         >,
                         0usize,
@@ -390,18 +384,14 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_environmentInfos(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -410,10 +400,8 @@ impl crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::EnvironmentInfoSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentInfoSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

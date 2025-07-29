@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct DynamicProxyMetaObject_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObject,
-    pub _proxy: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-    >,
+    pub _proxy: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Utilities+DynamicProxyMetaObject_1")]
@@ -614,16 +612,12 @@ impl<
             crate::System::Dynamic::DynamicMetaObjectBinder,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
         fallbackResult: quest_hook::libil2cpp::Gc<
             crate::System::Dynamic::DynamicMetaObject,
         >,
-        fallbackInvoke: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T>,
-        >,
+        fallbackInvoke: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     >
@@ -644,20 +638,14 @@ impl<
                                 crate::System::Dynamic::DynamicMetaObjectBinder,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Dynamic::DynamicMetaObject,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::DynamicMetaObject,
@@ -694,9 +682,7 @@ impl<
                 quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
-        fallback: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T>,
-        >,
+        fallback: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     >
@@ -723,11 +709,7 @@ impl<
                                     >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::DynamicMetaObject,
@@ -757,13 +739,9 @@ impl<
             crate::System::Dynamic::DynamicMetaObjectBinder,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
-        fallback: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T>,
-        >,
+        fallback: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     >
@@ -784,17 +762,11 @@ impl<
                                 crate::System::Dynamic::DynamicMetaObjectBinder,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::DynamicMetaObject,
@@ -824,16 +796,10 @@ impl<
             crate::System::Dynamic::DynamicMetaObjectBinder,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
-        fallback: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T>,
-        >,
-        fallbackInvoke: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<T>,
-        >,
+        fallback: quest_hook::libil2cpp::Gc<T>,
+        fallbackInvoke: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
     >
@@ -854,22 +820,12 @@ impl<
                                 crate::System::Dynamic::DynamicMetaObjectBinder,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-                                    T,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxyMetaObject_1_Fallback<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Dynamic::DynamicMetaObject,
@@ -1052,9 +1008,7 @@ impl<
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     >
     where
@@ -1074,10 +1028,8 @@ impl<
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
                             >,
                         >,
                         1usize,
@@ -1091,9 +1043,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (args))? };
         Ok(__cordl_ret.into())
     }
@@ -1101,9 +1051,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >
     where
@@ -1117,10 +1065,8 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -1134,9 +1080,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1208,9 +1152,7 @@ impl<
             crate::System::Linq::Expressions::Expression,
         >,
         value: T,
-        proxy: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-        >,
+        proxy: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1228,9 +1170,7 @@ impl<
             crate::System::Linq::Expressions::Expression,
         >,
         value: T,
-        proxy: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-        >,
+        proxy: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1246,9 +1186,7 @@ impl<
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,

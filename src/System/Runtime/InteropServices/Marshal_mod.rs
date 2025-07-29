@@ -1934,7 +1934,7 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1943,7 +1943,7 @@ impl AsRef<
 > for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1954,7 +1954,7 @@ impl AsRef<
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1963,7 +1963,7 @@ impl AsMut<
 > for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::ValueTuple_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

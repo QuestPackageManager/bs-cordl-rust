@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Scroller {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
-    pub valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub valueChanged: quest_hook::libil2cpp::Gc<f32>,
     pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Slider,
     >,
@@ -83,10 +83,10 @@ impl crate::UnityEngine::UIElements::Scroller {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_f32_Action_1_SliderDirection1(
+    pub fn New_f32_f32_Gc_SliderDirection1(
         lowValue: f32,
         highValue: f32,
-        valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        valueChanged: quest_hook::libil2cpp::Gc<f32>,
         direction: crate::UnityEngine::UIElements::SliderDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -97,18 +97,14 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn OnSliderValueChange(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<f32>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ChangeEvent_1<f32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnSliderValueChange")
@@ -248,11 +244,11 @@ impl crate::UnityEngine::UIElements::Scroller {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_f32_Action_1_SliderDirection1(
+    pub fn _ctor_f32_f32_Gc_SliderDirection1(
         &mut self,
         lowValue: f32,
         highValue: f32,
-        valueChanged: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        valueChanged: quest_hook::libil2cpp::Gc<f32>,
         direction: crate::UnityEngine::UIElements::SliderDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -263,7 +259,7 @@ impl crate::UnityEngine::UIElements::Scroller {
                         (
                             f32,
                             f32,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+                            quest_hook::libil2cpp::Gc<f32>,
                             crate::UnityEngine::UIElements::SliderDirection,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -285,14 +281,14 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn add_valueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_valueChanged")
@@ -449,14 +445,14 @@ impl crate::UnityEngine::UIElements::Scroller {
     }
     pub fn remove_valueChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_valueChanged")
@@ -793,7 +789,7 @@ for crate::UnityEngine::UIElements::Scroller_ScrollerSlider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Scroller_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller_UxmlTraits>,
     >,
@@ -820,7 +816,7 @@ for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Scroller+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Scroller_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scroller_UxmlTraits>,
     >;
@@ -887,9 +883,7 @@ pub struct Scroller_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
     pub m_Direction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::SliderDirection,
-        >,
+        crate::UnityEngine::UIElements::SliderDirection,
     >,
     pub m_Value: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,

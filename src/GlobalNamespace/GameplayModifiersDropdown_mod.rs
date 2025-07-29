@@ -7,17 +7,11 @@ pub struct GameplayModifiersDropdown {
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<i32>,
-    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32>,
     pub _gameplayModifiersData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Tuple_2<
-                    crate::GlobalNamespace::GameplayModifierMask,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifierMask,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
 }
@@ -242,10 +236,8 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         value: crate::GlobalNamespace::GameplayModifierMask,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Tuple_2<
-                crate::GlobalNamespace::GameplayModifierMask,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            crate::GlobalNamespace::GameplayModifierMask,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -255,11 +247,9 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
                     .find_method::<
                         (crate::GlobalNamespace::GameplayModifierMask),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Tuple_2<
-                                crate::GlobalNamespace::GameplayModifierMask,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            crate::GlobalNamespace::GameplayModifierMask,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -273,23 +263,21 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Tuple_2<
-                crate::GlobalNamespace::GameplayModifierMask,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            crate::GlobalNamespace::GameplayModifierMask,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didSelectCellWithIdxEvent")
@@ -310,13 +298,9 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::GameplayModifierMask,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifierMask,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -327,14 +311,10 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifierMask,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::GlobalNamespace::GameplayModifierMask,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -349,27 +329,23 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::GameplayModifierMask,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifierMask,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didSelectCellWithIdxEvent")

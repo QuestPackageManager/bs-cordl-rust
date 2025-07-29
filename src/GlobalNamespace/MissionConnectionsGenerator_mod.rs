@@ -11,9 +11,7 @@ pub struct MissionConnectionsGenerator {
     >,
     pub _connectionsCanvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _missionNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     >,
 }
 #[cfg(feature = "cordl_class_MissionConnectionsGenerator")]
@@ -98,9 +96,7 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
         &mut self,
         missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         visitedNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -113,10 +109,8 @@ impl crate::GlobalNamespace::MissionConnectionsGenerator {
                                 crate::GlobalNamespace::MissionNode,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MissionNode,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionNode,
                                 >,
                             >,
                         ),

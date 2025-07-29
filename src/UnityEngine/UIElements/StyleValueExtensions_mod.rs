@@ -40,8 +40,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleValueExtensions
 #[cfg(feature = "UnityEngine+UIElements+StyleValueExtensions")]
 impl crate::UnityEngine::UIElements::StyleValueExtensions {
     pub fn CopyFrom<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-        other: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
+        other: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -52,14 +52,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("CopyFrom")
@@ -77,9 +70,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn DebugString<T>(
-        styleValue: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IStyleValue_1<T>,
-        >,
+        styleValue: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -92,9 +83,7 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::IStyleValue_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("DebugString")

@@ -228,11 +228,11 @@ impl crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
 }
 #[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
 > for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::SphericalHarmonicsL2,
     > {
         todo!()
@@ -240,11 +240,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::SphericalHarmonicsL2>,
 > for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::SphericalHarmonicsL2,
     > {
         todo!()

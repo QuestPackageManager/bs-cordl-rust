@@ -582,11 +582,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -597,14 +595,12 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                            crate::System::Collections::Generic::KeyValuePair_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         >,
@@ -619,11 +615,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -689,13 +683,13 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     >,
 > for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
         todo!()
@@ -703,13 +697,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     >,
 > for crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     > {
         todo!()

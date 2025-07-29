@@ -116,7 +116,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Popup
 #[repr(C)]
 #[derive(Debug)]
 pub struct PopupWindow_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow_UxmlTraits>,
     >,
@@ -143,7 +143,7 @@ for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+PopupWindow+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PopupWindow_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PopupWindow_UxmlTraits>,
     >;

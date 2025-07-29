@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EventBoxGroup_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup,
-    pub e: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub e: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+EventBoxGroup_1")]
@@ -62,9 +62,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
     pub fn New(
         beat: f32,
         groupId: i32,
-        eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        eventBoxes: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -80,9 +78,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         &mut self,
         beat: f32,
         groupId: i32,
-        eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        eventBoxes: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -93,13 +89,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            f32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                        ),
+                        (f32, i32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >(".ctor")
@@ -120,9 +110,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
         >,
     >
     where
@@ -136,10 +124,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::EventBox,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataVersion3::EventBox,
                             >,
                         >,
                         0usize,
@@ -153,19 +139,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::EventBox>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_eventBoxes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -176,9 +156,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_eventBoxes")
                     .unwrap_or_else(|e| {
@@ -189,9 +167,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatmapSaveDataVersion3::EventBoxGro
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

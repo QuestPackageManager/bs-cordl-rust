@@ -4,9 +4,7 @@
 pub struct MouseManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
     pub _activators_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-        >,
+        crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     >,
     pub m_currentActivator: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
 }
@@ -133,9 +131,7 @@ impl crate::UnityEngine::UIElements::MouseManipulator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-            >,
+            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -145,9 +141,7 @@ impl crate::UnityEngine::UIElements::MouseManipulator {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-                            >,
+                            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
                         >,
                         0usize,
                     >("get_activators")
@@ -160,18 +154,14 @@ impl crate::UnityEngine::UIElements::MouseManipulator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-            >,
+            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_activators(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-            >,
+            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -180,9 +170,7 @@ impl crate::UnityEngine::UIElements::MouseManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::ManipulatorActivationFilter,
-                            >,
+                            crate::UnityEngine::UIElements::ManipulatorActivationFilter,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

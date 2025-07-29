@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PreAssetEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PreAssetEventData>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PreAssetEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PreAssetEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PreAssetEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

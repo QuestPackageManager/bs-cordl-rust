@@ -2,12 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicNode_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BasicNode_1<T>>,
-    >,
-    pub next: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    pub next: quest_hook::libil2cpp::Gc<T>,
     pub data: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -50,9 +46,7 @@ for crate::UnityEngine::UIElements::UIR::BasicNode_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+UIR+BasicNode_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::BasicNode_1<T> {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::BasicNode_1<T>>,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,11 +64,7 @@ impl<
 > crate::UnityEngine::UIElements::UIR::BasicNode_1<T> {
     pub fn AppendTo(
         &mut self,
-        first: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
-            >,
-        >,
+        first: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -85,11 +75,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::BasicNode_1<T>,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AppendTo")

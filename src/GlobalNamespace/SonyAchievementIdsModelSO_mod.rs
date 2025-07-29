@@ -4,23 +4,17 @@
 pub struct SonyAchievementIdsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _achievementsIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
         >,
     >,
     pub _achievementIdToTrophyId: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
     pub _trophyIdToAchievementId: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_SonyAchievementIdsModelSO")]
@@ -210,10 +204,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
             >,
         >,
     > {
@@ -224,10 +216,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
                             >,
                         >,
                         0usize,
@@ -241,10 +231,8 @@ impl crate::GlobalNamespace::SonyAchievementIdsModelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyAchievementIdsModelSO_AchievementIdData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_WhenAllPromise {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
     pub m_tasks: quest_hook::libil2cpp::Gc<
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::Task_WhenAll
 }
 #[cfg(feature = "System+Threading+Tasks+Task+WhenAllPromise")]
 impl std::ops::Deref for crate::GlobalNamespace::Task_WhenAllPromise {
-    type Target = crate::System::Threading::Tasks::Task_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::VoidTaskResult,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

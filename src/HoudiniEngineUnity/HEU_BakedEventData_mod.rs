@@ -44,9 +44,7 @@ impl crate::HoudiniEngineUnity::HEU_BakedEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         isNewBake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -61,9 +59,7 @@ impl crate::HoudiniEngineUnity::HEU_BakedEventData {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         successful: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         isNewBake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,9 +74,7 @@ impl crate::HoudiniEngineUnity::HEU_BakedEventData {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                             bool,
                         ),

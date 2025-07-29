@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithApplicationVersion {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationVersion>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithApplicationVersion {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithApplicationVersion")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithApplicationVersion {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationVersion>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

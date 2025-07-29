@@ -39,10 +39,8 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::CollectionExten
 }
 #[cfg(feature = "System+Collections+Generic+CollectionExtensions")]
 impl crate::System::Collections::Generic::CollectionExtensions {
-    pub fn GetValueOrDefault_IReadOnlyDictionary_2_TKey0<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
-        >,
+    pub fn GetValueOrDefault_Gc_TKey0<TKey, TValue>(
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -56,15 +54,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
-                                    TKey,
-                                    TValue,
-                                >,
-                            >,
-                            TKey,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>, TKey),
                         TValue,
                         2usize,
                     >("GetValueOrDefault")
@@ -82,9 +72,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault_TValue1<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
         key: TKey,
         defaultValue: TValue,
     ) -> quest_hook::libil2cpp::Result<TValue>
@@ -99,16 +87,7 @@ impl crate::System::Collections::Generic::CollectionExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
-                                    TKey,
-                                    TValue,
-                                >,
-                            >,
-                            TKey,
-                            TValue,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>, TKey, TValue),
                         TValue,
                         3usize,
                     >("GetValueOrDefault")

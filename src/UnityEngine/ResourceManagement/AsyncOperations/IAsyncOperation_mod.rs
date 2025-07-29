@@ -73,9 +73,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -84,9 +82,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -107,9 +103,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -120,10 +114,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -225,9 +217,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
             crate::UnityEngine::ResourceManagement::ResourceManager,
         >,
         dependency: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        updateCallbacks: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DelegateList_1<f32>,
-        >,
+        updateCallbacks: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -239,9 +229,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                                 crate::UnityEngine::ResourceManagement::ResourceManager,
                             >,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::DelegateList_1<f32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<f32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -287,9 +275,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn add_CompletedTypeless(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -298,9 +284,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -321,9 +305,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn add_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -332,9 +314,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -562,9 +542,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -574,10 +552,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >,
                         0usize,
@@ -591,9 +567,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -617,9 +591,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn remove_CompletedTypeless(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -628,9 +600,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -651,9 +621,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn remove_Destroyed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -662,9 +630,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -685,10 +651,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
     pub fn set_OnDestroy(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -698,10 +662,8 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

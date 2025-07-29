@@ -46,14 +46,10 @@ impl crate::UnityEngine::Timeline::AudioTrack {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         timelineClips: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TimelineClip>,
         >,
         tree: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Timeline::IntervalTree_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -65,17 +61,13 @@ impl crate::UnityEngine::Timeline::AudioTrack {
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::TimelineClip,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TimelineClip,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::IntervalTree_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::RuntimeElement,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::RuntimeElement,
                                 >,
                             >,
                         ),
@@ -177,11 +169,7 @@ impl crate::UnityEngine::Timeline::AudioTrack {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -190,9 +178,7 @@ impl crate::UnityEngine::Timeline::AudioTrack {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::Playables::PlayableBinding,
-                            >,
+                            crate::UnityEngine::Playables::PlayableBinding,
                         >,
                         0usize,
                     >("get_outputs")
@@ -205,9 +191,7 @@ impl crate::UnityEngine::Timeline::AudioTrack {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
+            crate::UnityEngine::Playables::PlayableBinding,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

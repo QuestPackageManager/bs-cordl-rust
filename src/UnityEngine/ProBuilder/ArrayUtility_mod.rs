@@ -79,12 +79,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn AddOrAppend<T, K>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                T,
-                quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<K>>,
-            >,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<K>>,
         key: T,
         value: K,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -100,14 +95,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    T,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::List_1<K>,
-                                    >,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<K>>,
                             T,
                             K,
                         ),
@@ -128,14 +116,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn AddOrAppendRange<T, K>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                T,
-                quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<K>>,
-            >,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<K>>,
         key: T,
-        value: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<K>>,
+        value: quest_hook::libil2cpp::Gc<K>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -149,18 +132,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    T,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::List_1<K>,
-                                    >,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<K>>,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<K>,
-                            >,
+                            quest_hook::libil2cpp::Gc<K>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -218,13 +192,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn AllIndexesOf<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        lambda: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    >
+        list: quest_hook::libil2cpp::Gc<T>,
+        lambda: quest_hook::libil2cpp::Gc<T, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -235,14 +205,10 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<T, bool>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         2usize,
                     >("AllIndexesOf")
                     .unwrap_or_else(|e| {
@@ -253,9 +219,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (list, lambda))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, lambda))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Concat<T>(
@@ -376,15 +342,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn DistinctBy<TSource, TKey>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TKey>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-    >
+        source: quest_hook::libil2cpp::Gc<TSource>,
+        keySelector: quest_hook::libil2cpp::Gc<TSource, TKey>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TSource>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -397,16 +357,10 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TSource, TKey>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TSource>,
+                            quest_hook::libil2cpp::Gc<TSource, TKey>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TSource>,
                         2usize,
                     >("DistinctBy")
                     .unwrap_or_else(|e| {
@@ -417,17 +371,15 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, keySelector))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TSource> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, keySelector))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn Fill_Func_2_i32_0<T>(
-        ctor: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, T>>,
+    pub fn Fill_Gc_i32_0<T>(
+        ctor: quest_hook::libil2cpp::Gc<i32, T>,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -437,10 +389,8 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, T>>, i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<i32, T>, i32),
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Fill")
                     .unwrap_or_else(|e| {
@@ -451,9 +401,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (ctor, length))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (ctor, length))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Fill_T_i32_1<T>(
@@ -488,9 +438,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (val, length))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Fill_i32_Func_2_2<T>(
+    pub fn Fill_i32_Gc2<T>(
         count: i32,
-        ctor: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, T>>,
+        ctor: quest_hook::libil2cpp::Gc<i32, T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -503,7 +453,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, T>>),
+                        (i32, quest_hook::libil2cpp::Gc<i32, T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         2usize,
                     >("Fill")
@@ -521,11 +471,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
-        InList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-            >,
-        >,
+        InList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
         InValue: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -537,16 +483,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::List_1<T>,
-                                    >,
-                                >,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>, T),
                         i32,
                         2usize,
                     >("IndexOf")
@@ -564,9 +501,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn NearestIndexPriorToValue<T>(
-        sorted_list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<T>,
-        >,
+        sorted_list: quest_hook::libil2cpp::Gc<T>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -578,12 +513,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         i32,
                         2usize,
                     >("NearestIndexPriorToValue")
@@ -600,11 +530,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveAt_IList_1_IEnumerable_1_1<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+    pub fn RemoveAt_Gc_Gc1<T>(
+        list: quest_hook::libil2cpp::Gc<T>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -617,14 +545,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         2usize,
                     >("RemoveAt")
@@ -678,11 +599,9 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (arr, index))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_IEnumerable_1_1<T>(
+    pub fn Remove_Gc1<T>(
         arr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        val: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        val: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -699,9 +618,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         2usize,
@@ -757,10 +674,8 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         Ok(__cordl_ret.into())
     }
     pub fn SortedRemoveAt<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        sorted: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        list: quest_hook::libil2cpp::Gc<T>,
+        sorted: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -773,14 +688,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         2usize,
                     >("SortedRemoveAt")
@@ -797,10 +705,8 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (list, sorted))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_Dictionary_2_0<TKey, TValue>(
-        dict: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
+    pub fn ToString_Gc0<TKey, TValue>(
+        dict: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -815,12 +721,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                TKey,
-                                TValue,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("ToString")
@@ -837,10 +738,8 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (dict))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToString_IEnumerable_1_Il2CppString1<T>(
-        arr: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn ToString_Il2CppString1<T>(
+        arr: quest_hook::libil2cpp::Gc<T>,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -855,9 +754,7 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -876,6 +773,36 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (arr, separator))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValuesWithIndexes_Gc_Gc1<T>(
+        arr: quest_hook::libil2cpp::Gc<T>,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<i32>),
+                        quest_hook::libil2cpp::Gc<T>,
+                        2usize,
+                    >("ValuesWithIndexes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValuesWithIndexes", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (arr, indexes))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ValuesWithIndexes_Il2CppArray_Il2CppArray0<T>(
@@ -914,49 +841,6 @@ impl crate::UnityEngine::ProBuilder::ArrayUtility {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (arr, indexes))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ValuesWithIndexes_List_1_IList_1_1<T>(
-        arr: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
-                        2usize,
-                    >("ValuesWithIndexes")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValuesWithIndexes", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (arr, indexes))? };
         Ok(__cordl_ret.into())
     }

@@ -1836,13 +1836,11 @@ for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::PrimitiveValue>,
 > for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     > {
         todo!()
@@ -1850,13 +1848,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+PrimitiveValue")]
 impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::PrimitiveValue>,
 > for crate::UnityEngine::InputSystem::Utilities::PrimitiveValue {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     > {
         todo!()

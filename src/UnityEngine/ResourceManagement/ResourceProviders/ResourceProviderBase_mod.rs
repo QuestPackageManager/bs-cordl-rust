@@ -424,10 +424,8 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceProviderBase_BaseInitAsyncOp {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >,
-    pub m_CallBack: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    pub m_CallBack: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase+BaseInitAsyncOp"
@@ -456,9 +454,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderB
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase_BaseInitAsyncOp {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -499,14 +495,14 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
     pub fn Init(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        callback: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Init")

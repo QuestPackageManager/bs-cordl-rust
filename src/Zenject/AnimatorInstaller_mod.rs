@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimatorInstaller {
-    __cordl_parent: crate::Zenject::Installer_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         quest_hook::libil2cpp::Gc<crate::Zenject::AnimatorInstaller>,
     >,
@@ -29,7 +29,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::AnimatorInstaller {
 }
 #[cfg(feature = "Zenject+AnimatorInstaller")]
 impl std::ops::Deref for crate::Zenject::AnimatorInstaller {
-    type Target = crate::Zenject::Installer_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
         quest_hook::libil2cpp::Gc<crate::Zenject::AnimatorInstaller>,
     >;

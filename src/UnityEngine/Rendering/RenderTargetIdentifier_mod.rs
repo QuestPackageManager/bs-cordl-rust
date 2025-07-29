@@ -361,11 +361,11 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
 > for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
     > {
         todo!()
@@ -373,11 +373,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::RenderTargetIdentifier>,
 > for crate::UnityEngine::Rendering::RenderTargetIdentifier {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
     > {
         todo!()

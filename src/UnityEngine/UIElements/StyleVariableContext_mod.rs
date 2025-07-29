@@ -5,16 +5,10 @@ pub struct StyleVariableContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VariableHash: i32,
     pub m_Variables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleVariable,
-        >,
+        crate::UnityEngine::UIElements::StyleVariable,
     >,
-    pub m_SortedHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_SortedHash: quest_hook::libil2cpp::Gc<i32>,
+    pub m_UnsortedHash: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleVariableContext")]
 unsafe impl quest_hook::libil2cpp::Type

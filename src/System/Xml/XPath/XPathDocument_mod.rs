@@ -10,10 +10,8 @@ pub struct XPathDocument {
     pub nameTable: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNameTable>,
     pub hasLineInfo: bool,
     pub mapNmsp: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::MS::Internal::Xml::Cache::XPathNodeRef,
-            crate::MS::Internal::Xml::Cache::XPathNodeRef,
-        >,
+        crate::MS::Internal::Xml::Cache::XPathNodeRef,
+        crate::MS::Internal::Xml::Cache::XPathNodeRef,
     >,
 }
 #[cfg(feature = "cordl_class_System+Xml+XPath+XPathDocument")]

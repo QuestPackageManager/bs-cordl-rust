@@ -4,13 +4,9 @@
 pub struct RegexReplacement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _strings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
-    pub _rules: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub _rules: quest_hook::libil2cpp::Gc<i32>,
     pub _Pattern_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -57,10 +53,8 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub const WholeString: i32 = -4i32;
     pub fn GetOrCreate(
         replRef: quest_hook::libil2cpp::Gc<
-            crate::System::WeakReference_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Text::RegularExpressions::RegexReplacement,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Text::RegularExpressions::RegexReplacement,
             >,
         >,
         replacement: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -80,10 +74,8 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::WeakReference_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Text::RegularExpressions::RegexReplacement,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Text::RegularExpressions::RegexReplacement,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -216,9 +208,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub fn ReplacementImplRTL(
         &mut self,
         al: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         _cordl_match: quest_hook::libil2cpp::Gc<
             crate::System::Text::RegularExpressions::Match,
@@ -231,10 +221,8 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

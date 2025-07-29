@@ -118,13 +118,13 @@ for crate::HoudiniEngineUnity::Test_HAPI_TransformEuler {
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_TransformEuler")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_TransformEuler>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_TransformEuler {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_TransformEuler>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -132,13 +132,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_TransformEuler")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_TransformEuler>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_TransformEuler {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_TransformEuler>,
     > {
         unsafe { std::mem::transmute(self) }

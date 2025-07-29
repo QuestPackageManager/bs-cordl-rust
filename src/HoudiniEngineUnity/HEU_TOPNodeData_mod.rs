@@ -8,9 +8,7 @@ pub struct HEU_TOPNodeData {
     pub _parentName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _workResultParentGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _workResults: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPWorkResult>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPWorkResult>,
     >,
     pub _tags: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::TOPNodeTags>,
     pub _showResults: bool,

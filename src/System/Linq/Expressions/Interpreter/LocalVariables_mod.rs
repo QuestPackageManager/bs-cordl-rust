@@ -4,23 +4,15 @@
 pub struct LocalVariables {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variables: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
-            >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
         >,
     >,
     pub _closureVariables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
-            >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariable,
         >,
     >,
     pub _localCount: i32,
@@ -278,13 +270,11 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LocalVariable,
             >,
         >,
     > {
@@ -295,13 +285,11 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::ParameterExpression,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Interpreter::LocalVariable,
                             >,
                         >,
                         0usize,
@@ -315,13 +303,11 @@ impl crate::System::Linq::Expressions::Interpreter::LocalVariables {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LocalVariable,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -370,10 +356,8 @@ pub struct LocalVariables_VariableScope {
         crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
     >,
     pub ChildScopes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LocalVariables_VariableScope,
         >,
     >,
 }

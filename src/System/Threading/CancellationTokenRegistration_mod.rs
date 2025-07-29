@@ -309,11 +309,11 @@ for crate::System::Threading::CancellationTokenRegistration {
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
+    quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenRegistration>,
 > for crate::System::Threading::CancellationTokenRegistration {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenRegistration,
     > {
         todo!()
@@ -321,11 +321,11 @@ impl AsRef<
 }
 #[cfg(feature = "System+Threading+CancellationTokenRegistration")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::System::Threading::CancellationTokenRegistration>,
+    quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationTokenRegistration>,
 > for crate::System::Threading::CancellationTokenRegistration {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenRegistration,
     > {
         todo!()

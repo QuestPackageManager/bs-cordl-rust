@@ -457,9 +457,7 @@ impl crate::UnityEngine::ParticleSystem {
     }
     pub fn GetCustomParticleData(
         &mut self,
-        customData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        customData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
         streamIndex: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -468,11 +466,7 @@ impl crate::UnityEngine::ParticleSystem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                             crate::UnityEngine::ParticleSystemCustomData,
                         ),
                         i32,
@@ -1401,9 +1395,7 @@ impl crate::UnityEngine::ParticleSystem {
     }
     pub fn SetCustomParticleData(
         &mut self,
-        customData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        customData: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
         streamIndex: crate::UnityEngine::ParticleSystemCustomData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1412,11 +1404,7 @@ impl crate::UnityEngine::ParticleSystem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                             crate::UnityEngine::ParticleSystemCustomData,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2171,14 +2159,10 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TriggerSubEmitter_List_1_2(
+    pub fn TriggerSubEmitter_Gc2(
         &mut self,
         subEmitterIndex: i32,
-        particles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystem_Particle,
-            >,
-        >,
+        particles: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem_Particle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2188,9 +2172,7 @@ impl crate::UnityEngine::ParticleSystem {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::ParticleSystem_Particle,
-                                >,
+                                crate::UnityEngine::ParticleSystem_Particle,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -10220,21 +10202,11 @@ impl crate::UnityEngine::ParticleSystem_TrailModule {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ParticleSystem_Trails {
-    pub positions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub frontPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub backPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub positionCounts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub textureOffsets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub frontPositions: quest_hook::libil2cpp::Gc<i32>,
+    pub backPositions: quest_hook::libil2cpp::Gc<i32>,
+    pub positionCounts: quest_hook::libil2cpp::Gc<i32>,
+    pub textureOffsets: quest_hook::libil2cpp::Gc<f32>,
     pub maxTrailCount: i32,
     pub maxPositionsPerTrailCount: i32,
 }

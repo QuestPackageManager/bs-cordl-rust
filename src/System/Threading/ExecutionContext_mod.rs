@@ -17,15 +17,11 @@ pub struct ExecutionContext {
     >,
     pub _flags: crate::System::Threading::ExecutionContext_Flags,
     pub _localValues: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _localChangeNotifications: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::IAsyncLocal>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Threading+ExecutionContext")]

@@ -4,12 +4,8 @@
 pub struct BeatmapLevelDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _loadRequests: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelDataLoadRequest,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataLoadRequest>,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelDataLoader")]
@@ -52,9 +48,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assetBundlePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -69,9 +63,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
                             >,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         3usize,
                     >("CheckBeatmapLevelDataFromAssetBundleExistsAsync")
                     .unwrap_or_else(|e| {
@@ -82,9 +74,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (levelId, assetBundlePath, cancellationToken))?
         };
@@ -121,9 +111,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -144,10 +132,8 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IBeatmapLevelData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IBeatmapLevelData,
                             >,
                         >,
                         4usize,
@@ -161,9 +147,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(

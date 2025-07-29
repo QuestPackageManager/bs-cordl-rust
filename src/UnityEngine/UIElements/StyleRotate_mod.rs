@@ -359,44 +359,38 @@ impl crate::UnityEngine::UIElements::StyleRotate {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleRotate>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>>
 for crate::UnityEngine::UIElements::StyleRotate {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleRotate> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleRotate>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>>
 for crate::UnityEngine::UIElements::StyleRotate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleRotate> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Rotate>,
-> for crate::UnityEngine::UIElements::StyleRotate {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRotate>>
+for crate::UnityEngine::UIElements::StyleRotate {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Rotate,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRotate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleRotate")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Rotate>,
-> for crate::UnityEngine::UIElements::StyleRotate {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRotate>>
+for crate::UnityEngine::UIElements::StyleRotate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Rotate,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleRotate> {
         todo!()
     }
 }

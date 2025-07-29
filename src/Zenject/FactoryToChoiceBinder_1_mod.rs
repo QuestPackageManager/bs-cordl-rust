@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryToChoiceBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::FactoryFromBinder_1<TContract>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+FactoryToChoiceBinder_1")]
@@ -44,7 +44,7 @@ for crate::Zenject::FactoryToChoiceBinder_1<TContract> {
 #[cfg(feature = "Zenject+FactoryToChoiceBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactoryToChoiceBinder_1<TContract> {
-    type Target = crate::Zenject::FactoryFromBinder_1<TContract>;
+    type Target = quest_hook::libil2cpp::Gc<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,9 +77,7 @@ impl<
     }
     pub fn ToSelf(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinder_1<TContract>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -90,9 +88,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_1<TContract>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TContract>,
                         0usize,
                     >("ToSelf")
                     .unwrap_or_else(|e| {
@@ -103,16 +99,14 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_1<TContract>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn To_1<TConcrete>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryFromBinder_1<TConcrete>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TConcrete>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -125,9 +119,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_1<TConcrete>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TConcrete>,
                         0usize,
                     >("To")
                     .unwrap_or_else(|e| {
@@ -138,9 +130,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_1<TConcrete>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TConcrete> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn To_Type0(

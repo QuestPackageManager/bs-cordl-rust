@@ -1255,9 +1255,7 @@ impl crate::UnityEngine::Object {
     }
     pub fn InstantiateAsync_T0<T>(
         original: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1268,9 +1266,7 @@ impl crate::UnityEngine::Object {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1281,17 +1277,15 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (original))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (original))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_Transform1<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1302,9 +1296,7 @@ impl crate::UnityEngine::Object {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1315,9 +1307,9 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (original, parent))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (original, parent))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_Transform_Vector3_Quaternion3<T>(
@@ -1325,9 +1317,7 @@ impl crate::UnityEngine::Object {
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1343,9 +1333,7 @@ impl crate::UnityEngine::Object {
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         4usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1356,9 +1344,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, parent, position, rotation))?
         };
@@ -1368,9 +1354,7 @@ impl crate::UnityEngine::Object {
         original: T,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1381,9 +1365,7 @@ impl crate::UnityEngine::Object {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         3usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1394,9 +1376,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info.invoke_unchecked((), (original, position, rotation))?
         };
         Ok(__cordl_ret.into())
@@ -1404,9 +1384,7 @@ impl crate::UnityEngine::Object {
     pub fn InstantiateAsync_i32_4<T>(
         original: T,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1417,9 +1395,7 @@ impl crate::UnityEngine::Object {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1430,9 +1406,9 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (original, count))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (original, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_i32_ReadOnlySpan_1_ReadOnlySpan_1_7<T>(
@@ -1440,9 +1416,7 @@ impl crate::UnityEngine::Object {
         count: i32,
         positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
         rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1458,9 +1432,7 @@ impl crate::UnityEngine::Object {
                             crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
                             crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         4usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1471,9 +1443,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, positions, rotations))?
         };
@@ -1483,9 +1453,7 @@ impl crate::UnityEngine::Object {
         original: T,
         count: i32,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1500,9 +1468,7 @@ impl crate::UnityEngine::Object {
                             i32,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         3usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1513,9 +1479,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info.invoke_unchecked((), (original, count, parent))?
         };
         Ok(__cordl_ret.into())
@@ -1526,9 +1490,7 @@ impl crate::UnityEngine::Object {
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
         rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1545,9 +1507,7 @@ impl crate::UnityEngine::Object {
                             crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
                             crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         5usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1558,9 +1518,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, parent, positions, rotations))?
         };
@@ -1572,9 +1530,7 @@ impl crate::UnityEngine::Object {
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1591,9 +1547,7 @@ impl crate::UnityEngine::Object {
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         5usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1604,9 +1558,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, parent, position, rotation))?
         };
@@ -1617,9 +1569,7 @@ impl crate::UnityEngine::Object {
         count: i32,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1635,9 +1585,7 @@ impl crate::UnityEngine::Object {
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         4usize,
                     >("InstantiateAsync")
                     .unwrap_or_else(|e| {
@@ -1648,9 +1596,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, position, rotation))?
         };

@@ -254,10 +254,8 @@ impl crate::System::Net::Http::Headers::NameValueHeaderValue {
         lexer: quest_hook::libil2cpp::Gc<crate::System::Net::Http::Headers::Lexer>,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::NameValueHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueHeaderValue,
                 >,
             >,
         >,
@@ -274,10 +272,8 @@ impl crate::System::Net::Http::Headers::NameValueHeaderValue {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::NameValueHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::NameValueHeaderValue,
                                     >,
                                 >,
                             >,
@@ -306,10 +302,8 @@ impl crate::System::Net::Http::Headers::NameValueHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::NameValueHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueHeaderValue,
                 >,
             >,
         >,
@@ -326,10 +320,8 @@ impl crate::System::Net::Http::Headers::NameValueHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::NameValueHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::NameValueHeaderValue,
                                     >,
                                 >,
                             >,

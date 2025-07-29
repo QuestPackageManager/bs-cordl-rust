@@ -9,7 +9,7 @@ pub struct MonoMemoryPool_6<
     TParam5: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::MemoryPool_6<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -91,7 +91,7 @@ for crate::Zenject::MonoMemoryPool_6<
     TParam5,
     TValue,
 > {
-    type Target = crate::Zenject::MemoryPool_6<
+    type Target = quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,

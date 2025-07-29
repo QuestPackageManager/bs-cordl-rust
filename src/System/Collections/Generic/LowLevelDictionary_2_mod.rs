@@ -7,20 +7,11 @@ pub struct LowLevelDictionary_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-                    TKey,
-                    TValue,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
     >,
     pub _numEntries: i32,
     pub _version: i32,
-    pub _comparer: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-    >,
+    pub _comparer: quest_hook::libil2cpp::Gc<TKey>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -162,11 +153,7 @@ impl<
     pub fn Find(
         &mut self,
         key: TKey,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -179,12 +166,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-                                TKey,
-                                TValue,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TKey, TValue>,
                         1usize,
                     >("Find")
                     .unwrap_or_else(|e| {
@@ -195,9 +177,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetBucket(
@@ -242,11 +224,9 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_IEqualityComparer_1_1(
+    pub fn New_i32_Gc1(
         capacity: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -289,11 +269,7 @@ impl<
         &mut self,
         key: TKey,
         value: TValue,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -306,12 +282,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey, TValue),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
-                                TKey,
-                                TValue,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TKey, TValue>,
                         2usize,
                     >("UncheckedAdd")
                     .unwrap_or_else(|e| {
@@ -322,9 +293,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key, value))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_0(
@@ -354,12 +325,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_IEqualityComparer_1_1(
+    pub fn _ctor_i32_Gc1(
         &mut self,
         capacity: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -372,14 +341,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEqualityComparer_1<
-                                    TKey,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<TKey>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -667,13 +629,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
     TKey,
     TValue,
     T,
 > {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEqualityComparer_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -682,15 +644,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEqualityComparer_1<T>>
+> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
     TKey,
     TValue,
     T,
 > {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -704,9 +664,7 @@ pub struct LowLevelDictionary_2_Entry<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _key: TKey,
     pub _value: TValue,
-    pub _next: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue>,
-    >,
+    pub _next: quest_hook::libil2cpp::Gc<TKey, TValue>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }

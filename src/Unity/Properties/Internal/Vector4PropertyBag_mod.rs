@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector4PropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Vector4,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector4PropertyBag")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -28,9 +26,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::Vector4PropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Vector4,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,10 +90,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector4PropertyBag_WProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        crate::UnityEngine::Vector4,
-        f32,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -122,7 +115,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,10 +199,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector4PropertyBag_XProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        crate::UnityEngine::Vector4,
-        f32,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -234,7 +224,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -318,10 +308,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector4PropertyBag_YProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        crate::UnityEngine::Vector4,
-        f32,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -346,7 +333,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -430,10 +417,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector4PropertyBag_ZProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
-        crate::UnityEngine::Vector4,
-        f32,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -458,7 +442,7 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
-    type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -15,9 +15,7 @@ pub struct CountdownController {
     pub _gongSounded: bool,
     pub _countdownRunning: bool,
     pub _countdownElementControllerQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CountdownElementController>,
     >,
 }
 #[cfg(feature = "cordl_class_CountdownController")]

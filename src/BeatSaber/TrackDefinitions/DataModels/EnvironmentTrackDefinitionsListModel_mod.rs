@@ -6,11 +6,9 @@
 pub struct EnvironmentTrackDefinitionsListModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _environmentTracksTypeMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
-            >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
         >,
     >,
 }
@@ -61,10 +59,8 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
 impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
     pub fn New(
         environmentTrackDefinitions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -77,10 +73,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
     pub fn _ctor(
         &mut self,
         environmentTrackDefinitions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -90,10 +84,8 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitions
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

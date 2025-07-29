@@ -101,14 +101,152 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_1_TaskScheduler0(
+    pub fn ContinueWith_CancellationToken_TaskContinuationOptions_TaskScheduler4<
+        TNewResult,
+    >(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<TResult>,
+            TNewResult,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<TResult>,
+                                TNewResult,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                            crate::System::Threading::Tasks::TaskContinuationOptions,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::TaskScheduler,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<TNewResult>,
+                        4usize,
+                    >("ContinueWith")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContinueWith", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        continuationFunction,
+                        cancellationToken,
+                        continuationOptions,
+                        scheduler,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_Gc2<TNewResult>(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<TResult>,
+            TNewResult,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Gc<TResult>,
+                            TNewResult,
+                        >),
+                        quest_hook::libil2cpp::Gc<TNewResult>,
+                        1usize,
+                    >("ContinueWith")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContinueWith", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (continuationFunction))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_TaskContinuationOptions3<TNewResult>(
+        &mut self,
+        continuationFunction: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<TResult>,
+            TNewResult,
+        >,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<TResult>,
+                                TNewResult,
+                            >,
+                            crate::System::Threading::Tasks::TaskContinuationOptions,
+                        ),
+                        quest_hook::libil2cpp::Gc<TNewResult>,
+                        2usize,
+                    >("ContinueWith")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ContinueWith", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (continuationFunction, continuationOptions))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ContinueWith_TaskScheduler0(
         &mut self,
         continuationAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<TResult>,
         >,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
@@ -127,11 +265,7 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<TResult>,
-                                    >,
-                                >,
+                                quest_hook::libil2cpp::Gc<TResult>,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::Tasks::TaskScheduler,
@@ -155,14 +289,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_1_TaskScheduler_CancellationToken_TaskContinuationOptions1(
+    pub fn ContinueWith_TaskScheduler_CancellationToken_TaskContinuationOptions1(
         &mut self,
         continuationAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<TResult>,
         >,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
@@ -183,11 +313,7 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<TResult>,
-                                    >,
-                                >,
+                                quest_hook::libil2cpp::Gc<TResult>,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::Tasks::TaskScheduler,
@@ -222,19 +348,20 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Func_2_2<TNewResult>(
+    pub fn ContinueWith_TaskScheduler_CancellationToken_TaskContinuationOptions5<
+        TNewResult,
+    >(
         &mut self,
         continuationFunction: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-                TNewResult,
-            >,
+            quest_hook::libil2cpp::Gc<TResult>,
+            TNewResult,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
-    >
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TNewResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -246,81 +373,18 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task_1<TResult>,
-                                >,
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<TResult>,
                                 TNewResult,
                             >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TNewResult>,
-                        >,
-                        1usize,
-                    >("ContinueWith")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContinueWith", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TNewResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (continuationFunction))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_Func_2_CancellationToken_TaskContinuationOptions_TaskScheduler4<
-        TNewResult,
-    >(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-                TNewResult,
-            >,
-        >,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-        scheduler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskScheduler,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
-    >
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<TResult>,
-                                    >,
-                                    TNewResult,
-                                >,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                            crate::System::Threading::Tasks::TaskContinuationOptions,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::Tasks::TaskScheduler,
                             >,
+                            crate::System::Threading::CancellationToken,
+                            crate::System::Threading::Tasks::TaskContinuationOptions,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TNewResult>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TNewResult>,
                         4usize,
                     >("ContinueWith")
                     .unwrap_or_else(|e| {
@@ -331,141 +395,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TNewResult>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        continuationFunction,
-                        cancellationToken,
-                        continuationOptions,
-                        scheduler,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_Func_2_TaskContinuationOptions3<TNewResult>(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-                TNewResult,
-            >,
-        >,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
-    >
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<TResult>,
-                                    >,
-                                    TNewResult,
-                                >,
-                            >,
-                            crate::System::Threading::Tasks::TaskContinuationOptions,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TNewResult>,
-                        >,
-                        2usize,
-                    >("ContinueWith")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContinueWith", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TNewResult>,
-        > = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (continuationFunction, continuationOptions))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ContinueWith_Func_2_TaskScheduler_CancellationToken_TaskContinuationOptions5<
-        TNewResult,
-    >(
-        &mut self,
-        continuationFunction: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<TResult>,
-                >,
-                TNewResult,
-            >,
-        >,
-        scheduler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskScheduler,
-        >,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TNewResult>>,
-    >
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TNewResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<TResult>,
-                                    >,
-                                    TNewResult,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::Tasks::TaskScheduler,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                            crate::System::Threading::Tasks::TaskContinuationOptions,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TNewResult>,
-                        >,
-                        4usize,
-                    >("ContinueWith")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ContinueWith", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TNewResult>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TNewResult> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -638,8 +568,8 @@ impl<
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Func_1_CancellationToken4(
-        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+    pub fn New_Gc_CancellationToken4(
+        function: quest_hook::libil2cpp::Gc<TResult>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -652,8 +582,30 @@ impl<
             .invoke_void(".ctor", (function, cancellationToken))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Func_1_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
-        valueSelector: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+    pub fn New_Gc_Il2CppObject_CancellationToken_TaskCreationOptions5(
+        function: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            TResult,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (function, state, cancellationToken, creationOptions),
+            )?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Gc_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
+        valueSelector: quest_hook::libil2cpp::Gc<TResult>,
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -679,30 +631,6 @@ impl<
                     internalOptions,
                     scheduler,
                 ),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
-        function: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                TResult,
-            >,
-        >,
-        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (function, state, cancellationToken, creationOptions),
             )?;
         Ok(__cordl_object.into())
     }
@@ -749,18 +677,16 @@ impl<
             .invoke_void(".ctor", (canceled, result, creationOptions, ct))?;
         Ok(__cordl_object.into())
     }
-    pub fn StartNew_Func_1_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler0(
+    pub fn StartNew_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler0(
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        function: quest_hook::libil2cpp::Gc<TResult>,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -774,7 +700,7 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::Tasks::Task,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+                            quest_hook::libil2cpp::Gc<TResult>,
                             crate::System::Threading::CancellationToken,
                             crate::System::Threading::Tasks::TaskCreationOptions,
                             crate::System::Threading::Tasks::InternalTaskOptions,
@@ -782,9 +708,7 @@ impl<
                                 crate::System::Threading::Tasks::TaskScheduler,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TResult>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TResult>,
                         6usize,
                     >("StartNew")
                     .unwrap_or_else(|e| {
@@ -795,9 +719,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResult>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),
@@ -813,13 +735,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartNew_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler1(
+    pub fn StartNew_Il2CppObject_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler1(
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         function: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                TResult,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            TResult,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -828,9 +748,7 @@ impl<
         scheduler: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::TaskScheduler,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -845,12 +763,10 @@ impl<
                                 crate::System::Threading::Tasks::Task,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                    TResult,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
+                                TResult,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -862,9 +778,7 @@ impl<
                                 crate::System::Threading::Tasks::TaskScheduler,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<TResult>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TResult>,
                         7usize,
                     >("StartNew")
                     .unwrap_or_else(|e| {
@@ -875,9 +789,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TResult>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),
@@ -1009,9 +921,9 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Func_1_CancellationToken4(
+    pub fn _ctor_Gc_CancellationToken4(
         &mut self,
-        function: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        function: quest_hook::libil2cpp::Gc<TResult>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1024,7 +936,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+                            quest_hook::libil2cpp::Gc<TResult>,
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1043,9 +955,61 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Func_1_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
+    pub fn _ctor_Gc_Il2CppObject_CancellationToken_TaskCreationOptions5(
         &mut self,
-        valueSelector: quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+        function: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            TResult,
+        >,
+        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                TResult,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                            crate::System::Threading::Tasks::TaskCreationOptions,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (function, state, cancellationToken, creationOptions),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Gc_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler6(
+        &mut self,
+        valueSelector: quest_hook::libil2cpp::Gc<TResult>,
         parent: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -1064,7 +1028,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TResult>>,
+                            quest_hook::libil2cpp::Gc<TResult>,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Threading::Tasks::Task,
                             >,
@@ -1098,62 +1062,6 @@ impl<
                         internalOptions,
                         scheduler,
                     ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
-        &mut self,
-        function: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                TResult,
-            >,
-        >,
-        state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-        creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                    TResult,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            crate::System::Threading::CancellationToken,
-                            crate::System::Threading::Tasks::TaskCreationOptions,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (function, state, cancellationToken, creationOptions),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -1264,9 +1172,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn get_Factory() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
-        >,
+        quest_hook::libil2cpp::Gc<TResult>,
     >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1278,9 +1184,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TResult>,
                         0usize,
                     >("get_Factory")
                     .unwrap_or_else(|e| {
@@ -1291,9 +1195,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::TaskFactory_1<TResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Result(&mut self) -> quest_hook::libil2cpp::Result<TResult>

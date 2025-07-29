@@ -27,14 +27,10 @@ pub struct ResultsViewController {
         crate::GlobalNamespace::MenuDestination,
     >,
     pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
     >,
     pub restartButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
     >,
     pub _levelCompletionResults: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LevelCompletionResults,
@@ -372,9 +368,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn add_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -383,10 +377,8 @@ impl crate::GlobalNamespace::ResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -408,9 +400,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn add_restartButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -419,10 +409,8 @@ impl crate::GlobalNamespace::ResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -461,9 +449,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn remove_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -472,10 +458,8 @@ impl crate::GlobalNamespace::ResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -497,9 +481,7 @@ impl crate::GlobalNamespace::ResultsViewController {
     pub fn remove_restartButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -508,10 +490,8 @@ impl crate::GlobalNamespace::ResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

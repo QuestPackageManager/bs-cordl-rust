@@ -54,11 +54,7 @@ impl crate::GlobalNamespace::IndexFilter {
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::ValueTuple_3<i32, i32, i32>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -67,9 +63,7 @@ impl crate::GlobalNamespace::IndexFilter {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                crate::System::ValueTuple_3<i32, i32, i32>,
-                            >,
+                            crate::System::ValueTuple_3<i32, i32, i32>,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -82,28 +76,20 @@ impl crate::GlobalNamespace::IndexFilter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::ValueTuple_3<i32, i32, i32>,
-            >,
+            crate::System::ValueTuple_3<i32, i32, i32>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValues(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("GetValues")
                     .unwrap_or_else(|e| {
@@ -114,9 +100,9 @@ impl crate::GlobalNamespace::IndexFilter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New_IndexFilter_IndexFilterRandomType_i32_f32_IndexFilter_IndexFilterLimitAlsoAffectType1(
@@ -425,62 +411,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::IndexFilter {
     }
 }
 #[cfg(feature = "IndexFilter")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    >,
-> for crate::GlobalNamespace::IndexFilter {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IndexFilter")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    >,
-> for crate::GlobalNamespace::IndexFilter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IndexFilter")]
-impl AsRef<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    >,
-> for crate::GlobalNamespace::IndexFilter {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IndexFilter")]
-impl AsMut<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    >,
-> for crate::GlobalNamespace::IndexFilter {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::ValueTuple_3<i32, i32, i32>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IndexFilter")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::IndexFilter {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -491,6 +421,42 @@ for crate::GlobalNamespace::IndexFilter {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::IndexFilter {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>>>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>>>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>>>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IndexFilter")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>>>
+for crate::GlobalNamespace::IndexFilter {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::ValueTuple_3<i32, i32, i32>> {
         unsafe { std::mem::transmute(self) }
     }
 }

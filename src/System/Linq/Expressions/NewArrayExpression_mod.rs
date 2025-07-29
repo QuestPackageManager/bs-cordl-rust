@@ -5,9 +5,7 @@ pub struct NewArrayExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Type_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+NewArrayExpression")]
@@ -83,9 +81,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
         nodeType: crate::System::Linq::Expressions::ExpressionType,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
@@ -99,10 +95,8 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
                             crate::System::Linq::Expressions::ExpressionType,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
                         ),
@@ -129,9 +123,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
     pub fn New(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,9 +135,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
     pub fn Update(
         &mut self,
         expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::NewArrayExpression>,
@@ -156,10 +146,8 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -184,9 +172,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         expressions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -197,10 +183,8 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
                         ),
@@ -224,9 +208,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -236,10 +218,8 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
                             >,
                         >,
                         0usize,
@@ -253,9 +233,7 @@ impl crate::System::Linq::Expressions::NewArrayExpression {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

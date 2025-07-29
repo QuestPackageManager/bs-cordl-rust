@@ -16,15 +16,11 @@ pub struct ContentCatalogData {
     pub m_InstanceProviderData: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
     pub m_SceneProviderData: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
     pub m_ResourceProviderData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-        >,
+        crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
     >,
     pub m_Entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
         >,
     >,
     pub m_ProviderIds: quest_hook::libil2cpp::Gc<
@@ -250,10 +246,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
             >,
         >,
     > {
@@ -264,10 +258,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
                             >,
                         >,
                         0usize,
@@ -281,10 +273,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogDataEntry,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -551,9 +541,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-            >,
+            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -563,9 +551,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-                            >,
+                            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
                         >,
                         0usize,
                     >("get_ResourceProviderData")
@@ -578,9 +564,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-            >,
+            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -666,9 +650,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
     pub fn set_ResourceProviderData(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-            >,
+            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -677,9 +659,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
-                            >,
+                            crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1101,10 +1081,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
     > {
@@ -1115,10 +1093,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                             >,
                         >,
                         0usize,
@@ -1132,10 +1108,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

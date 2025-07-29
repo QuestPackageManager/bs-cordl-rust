@@ -9,13 +9,11 @@ pub struct MethodProviderWithContainer_4<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _method: quest_hook::libil2cpp::Gc<
-        crate::System::Func_5<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            TParam1,
-            TParam2,
-            TParam3,
-            TValue,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        TParam1,
+        TParam2,
+        TParam3,
+        TValue,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
@@ -98,16 +96,12 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -127,19 +121,13 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -198,13 +186,11 @@ impl<
     }
     pub fn New(
         method: quest_hook::libil2cpp::Gc<
-            crate::System::Func_5<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                TParam1,
-                TParam2,
-                TParam3,
-                TValue,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
+            TParam2,
+            TParam3,
+            TValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -226,13 +212,11 @@ impl<
     pub fn _ctor(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            crate::System::Func_5<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                TParam1,
-                TParam2,
-                TParam3,
-                TValue,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
+            TParam2,
+            TParam3,
+            TValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -251,13 +235,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_5<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TValue,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TValue,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -4,17 +4,11 @@
 pub struct ValueDropdownController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<i32, T>,
-    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32, T>,
     pub _namedValues: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Tuple_2<
-                    T,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            T,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -98,13 +92,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        T,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     >
@@ -119,14 +109,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                T,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        T,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -141,13 +127,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        T,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -325,7 +307,7 @@ impl<
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>,
+        value: quest_hook::libil2cpp::Gc<i32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -336,7 +318,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>),
+                        (quest_hook::libil2cpp::Gc<i32, T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didSelectCellWithIdxEvent")
@@ -388,13 +370,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        T,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     >
@@ -409,14 +387,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                T,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        T,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -431,20 +405,16 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        T,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                T,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>,
+        value: quest_hook::libil2cpp::Gc<i32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -455,7 +425,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, T>>),
+                        (quest_hook::libil2cpp::Gc<i32, T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didSelectCellWithIdxEvent")

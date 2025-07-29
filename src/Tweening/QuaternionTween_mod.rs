@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuaternionTween {
-    __cordl_parent: crate::Tweening::Tween_1<crate::UnityEngine::Quaternion>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
 }
 #[cfg(feature = "cordl_class_Tweening+QuaternionTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::QuaternionTween {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::QuaternionTween {
 }
 #[cfg(feature = "Tweening+QuaternionTween")]
 impl std::ops::Deref for crate::Tweening::QuaternionTween {
-    type Target = crate::Tweening::Tween_1<crate::UnityEngine::Quaternion>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,12 +71,10 @@ impl crate::Tweening::QuaternionTween {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Quaternion_Quaternion_Action_1_f32_EaseType_f32_1(
+    pub fn New_Quaternion_Quaternion_Gc_f32_EaseType_f32_1(
         fromValue: crate::UnityEngine::Quaternion,
         toValue: crate::UnityEngine::Quaternion,
-        onUpdate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Quaternion>,
-        >,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -111,13 +109,11 @@ impl crate::Tweening::QuaternionTween {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Quaternion_Quaternion_Action_1_f32_EaseType_f32_1(
+    pub fn _ctor_Quaternion_Quaternion_Gc_f32_EaseType_f32_1(
         &mut self,
         fromValue: crate::UnityEngine::Quaternion,
         toValue: crate::UnityEngine::Quaternion,
-        onUpdate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Quaternion>,
-        >,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -130,9 +126,7 @@ impl crate::Tweening::QuaternionTween {
                         (
                             crate::UnityEngine::Quaternion,
                             crate::UnityEngine::Quaternion,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<crate::UnityEngine::Quaternion>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,

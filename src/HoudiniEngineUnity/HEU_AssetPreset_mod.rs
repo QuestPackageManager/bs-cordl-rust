@@ -10,24 +10,16 @@ pub struct HEU_AssetPreset {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub _curveNames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _curvePresets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     >,
     pub inputPresets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
     >,
     pub volumeCachePresets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCachePreset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCachePreset>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_AssetPreset")]

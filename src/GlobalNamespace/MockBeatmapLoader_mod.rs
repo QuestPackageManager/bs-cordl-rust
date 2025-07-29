@@ -79,9 +79,7 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -96,10 +94,8 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MockBeatmapData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MockBeatmapData,
                             >,
                         >,
                         2usize,
@@ -113,9 +109,7 @@ impl crate::GlobalNamespace::MockBeatmapLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockBeatmapData>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (beatmap, cancellationToken))?
         };

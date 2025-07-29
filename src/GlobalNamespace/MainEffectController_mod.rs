@@ -8,9 +8,7 @@ pub struct MainEffectController {
     >,
     pub _fadeValue: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatSO>,
     pub afterImageEffectEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     >,
     pub _imageEffectController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ImageEffectController,
@@ -251,9 +249,7 @@ impl crate::GlobalNamespace::MainEffectController {
     pub fn add_afterImageEffectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -262,9 +258,7 @@ impl crate::GlobalNamespace::MainEffectController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -302,9 +296,7 @@ impl crate::GlobalNamespace::MainEffectController {
     pub fn remove_afterImageEffectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -313,9 +305,7 @@ impl crate::GlobalNamespace::MainEffectController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

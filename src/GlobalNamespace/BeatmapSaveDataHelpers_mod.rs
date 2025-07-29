@@ -71,11 +71,7 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
     pub fn GetVersionAsync(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::System::Version>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -84,9 +80,7 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Version>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Version>,
                         >,
                         1usize,
                     >("GetVersionAsync")
@@ -99,9 +93,7 @@ impl crate::GlobalNamespace::BeatmapSaveDataHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::System::Version>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Version>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (data))? };
         Ok(__cordl_ret.into())
     }

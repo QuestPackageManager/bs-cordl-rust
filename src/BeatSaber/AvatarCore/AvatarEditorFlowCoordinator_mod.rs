@@ -4,20 +4,14 @@
 pub struct AvatarEditorFlowCoordinator {
     __cordl_parent: crate::HMUI::FlowCoordinator,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
         >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
+        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
     >,
     pub didSetupEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-        >,
+        crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
     >,
     pub randomizeAllButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -229,15 +223,13 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
             >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            >,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -246,15 +238,13 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -275,9 +265,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn add_didSetupEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-            >,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -286,9 +274,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -335,15 +321,13 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
             >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            >,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -352,15 +336,13 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -381,9 +363,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
     pub fn remove_didSetupEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-            >,
+            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -392,9 +372,7 @@ impl crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
-                            >,
+                            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator_EditMode,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

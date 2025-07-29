@@ -13,9 +13,7 @@ pub struct SliderMeshController {
         crate::GlobalNamespace::SliderMeshConstructor,
     >,
     pub _pathsHolder: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PathsHolder>,
-    pub _reusableAnchorsList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub _reusableAnchorsList: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub _reusableControlPointsArray4: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,

@@ -940,24 +940,6 @@ impl crate::Unity::Mathematics::quaternion {
     }
 }
 #[cfg(feature = "Unity+Mathematics+quaternion")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::quaternion>>
-for crate::Unity::Mathematics::quaternion {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::quaternion> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+quaternion")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::quaternion>>
-for crate::Unity::Mathematics::quaternion {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::quaternion> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+quaternion")]
 impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::quaternion {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -966,6 +948,24 @@ impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::quaternio
 #[cfg(feature = "Unity+Mathematics+quaternion")]
 impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::quaternion {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+quaternion")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::quaternion>>
+for crate::Unity::Mathematics::quaternion {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::quaternion> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+quaternion")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::quaternion>>
+for crate::Unity::Mathematics::quaternion {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::quaternion> {
         todo!()
     }
 }

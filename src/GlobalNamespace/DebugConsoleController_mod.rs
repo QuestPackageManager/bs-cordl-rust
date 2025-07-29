@@ -4,15 +4,11 @@
 pub struct DebugConsoleController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub onNewMessageToOutput: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::LogType,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::UnityEngine::LogType,
     >,
     pub _stringsFromSTDIN: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
@@ -20,10 +16,8 @@ pub struct DebugConsoleController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub _commands: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
     >,
     pub _commandsExecutionTask: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task,
@@ -203,9 +197,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     pub fn FillDictOfCommands(
         &mut self,
         commandInstances: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -214,10 +206,8 @@ impl crate::GlobalNamespace::DebugConsoleController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ConsoleCommandBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ConsoleCommandBase,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -240,9 +230,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -252,10 +240,8 @@ impl crate::GlobalNamespace::DebugConsoleController {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ConsoleCommandBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ConsoleCommandBase,
                             >,
                         >,
                         0usize,
@@ -269,9 +255,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -309,10 +293,8 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -322,13 +304,11 @@ impl crate::GlobalNamespace::DebugConsoleController {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ConsoleCommandBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ConsoleCommandBase,
                             >,
                         >,
                         0usize,
@@ -342,10 +322,8 @@ impl crate::GlobalNamespace::DebugConsoleController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConsoleCommandBase>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -482,9 +460,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
         commandText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         messages: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-            >,
+            crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -499,9 +475,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
-                                >,
+                                crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

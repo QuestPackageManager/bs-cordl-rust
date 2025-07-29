@@ -9,9 +9,7 @@ pub struct XRDeviceDescriptor {
     pub characteristics: crate::UnityEngine::XR::InputDeviceCharacteristics,
     pub deviceId: i32,
     pub inputFeatures: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
-        >,
+        crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+XRDeviceDescriptor")]

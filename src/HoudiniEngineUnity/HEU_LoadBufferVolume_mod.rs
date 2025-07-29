@@ -5,11 +5,7 @@ pub struct HEU_LoadBufferVolume {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_LoadBufferBase,
     pub _tileIndex: i32,
     pub _splatLayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer>,
     >,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
@@ -27,14 +23,10 @@ pub struct HEU_LoadBufferVolume {
         crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
     >,
     pub _detailPrototypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
     >,
     pub _detailMaps: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _detailProperties: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_DetailProperties,

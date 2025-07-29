@@ -291,16 +291,16 @@ impl crate::UnityEngine::Pose {
     }
 }
 #[cfg(feature = "UnityEngine+Pose")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose>>
 for crate::UnityEngine::Pose {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Pose")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Pose>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose>>
 for crate::UnityEngine::Pose {
-    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Pose> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Pose> {
         todo!()
     }
 }

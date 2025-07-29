@@ -5,7 +5,7 @@ pub struct OVRPlatformMenu {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub inputCode: crate::GlobalNamespace::OVRInput_RawButton,
     pub shortPressHandler: crate::GlobalNamespace::OVRPlatformMenu_eHandler,
-    pub OnShortPress: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    pub OnShortPress: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "cordl_class_OVRPlatformMenu")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlatformMenu {

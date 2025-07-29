@@ -5,10 +5,8 @@ pub struct Interactable {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _interactable: bool,
     pub interactableChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-            bool,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+        bool,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+Interactable")]
@@ -76,10 +74,8 @@ impl crate::HMUI::Interactable {
     pub fn add_interactableChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -88,10 +84,8 @@ impl crate::HMUI::Interactable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-                                bool,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -129,10 +123,8 @@ impl crate::HMUI::Interactable {
     pub fn remove_interactableChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -141,10 +133,8 @@ impl crate::HMUI::Interactable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
-                                bool,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::Interactable>,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

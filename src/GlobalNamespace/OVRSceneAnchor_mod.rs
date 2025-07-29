@@ -70,9 +70,7 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
     }
     pub fn GetSceneAnchors(
         anchors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -81,10 +79,8 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::OVRSceneAnchor,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRSceneAnchor,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

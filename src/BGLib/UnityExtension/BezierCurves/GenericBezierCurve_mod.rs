@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericBezierCurve {
-    __cordl_parent: crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData,
         >,
@@ -30,7 +30,7 @@ for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
 }
 #[cfg(feature = "BGLib+UnityExtension+BezierCurves+GenericBezierCurve")]
 impl std::ops::Deref for crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurve {
-    type Target = crate::BGLib::UnityExtension::BezierCurves::BaseBezierCurve_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::BGLib::UnityExtension::BezierCurves::GenericBezierCurveData,
         >,

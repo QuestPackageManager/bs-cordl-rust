@@ -53,11 +53,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -83,10 +79,8 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGNet::Core::GameLift::PlayerSessionInfo,
                             >,
                         >,
                         7usize,
@@ -100,11 +94,7 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGNet::Core::GameLift::PlayerSessionInfo>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(

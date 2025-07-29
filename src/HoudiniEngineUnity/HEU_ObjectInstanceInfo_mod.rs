@@ -4,9 +4,7 @@
 pub struct HEU_ObjectInstanceInfo {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _instancedInputs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstancedInput>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstancedInput>,
     >,
     pub _partTarget: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
     pub _instancedObjectNodeID: i32,
@@ -14,9 +12,7 @@ pub struct HEU_ObjectInstanceInfo {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _instances: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
@@ -125,13 +121,13 @@ for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -139,13 +135,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ObjectInstanceInfo")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
     > {
         unsafe { std::mem::transmute(self) }

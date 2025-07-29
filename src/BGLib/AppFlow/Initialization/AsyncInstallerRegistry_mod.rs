@@ -4,14 +4,10 @@
 pub struct AsyncInstallerRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub monoInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::MonoInstaller>,
     >,
     pub scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
 }
 #[cfg(feature = "cordl_class_BGLib+AppFlow+Initialization+AsyncInstallerRegistry")]

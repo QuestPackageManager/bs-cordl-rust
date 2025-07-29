@@ -4,9 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InitalizationObjectsOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
     pub m_RtdOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData,
@@ -17,9 +15,7 @@ pub struct InitalizationObjectsOperation {
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
 }
@@ -50,9 +46,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObject
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        bool,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -187,9 +181,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjec
         &mut self,
         obj: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                >,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -200,9 +192,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjec
                     .find_method::<
                         (crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                                >,
+                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

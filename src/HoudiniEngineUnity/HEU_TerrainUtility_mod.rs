@@ -46,14 +46,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             quest_hook::libil2cpp::Il2CppObject,
         >,
         heightFields: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
         strengths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-        alphaMapIndices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        alphaMapIndices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -69,18 +65,14 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<f32>,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<f32>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<f32>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         6usize,
@@ -118,14 +110,10 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
             crate::HoudiniEngineUnity::HEU_DetailProperties,
         >,
         heuDetailPrototypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailPrototype>,
         >,
         convertedDetailMaps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -140,17 +128,13 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                                 crate::HoudiniEngineUnity::HEU_DetailProperties,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_DetailPrototype,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_DetailPrototype,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -220,9 +204,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         heightMapWidth: i32,
         heightMapHeight: i32,
         heightFields: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -236,10 +218,8 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<f32>,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<f32>,
                                 >,
                             >,
                         ),
@@ -779,11 +759,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TreePrototypeInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -799,10 +775,8 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                             i32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
                             >,
                         >,
                         3usize,
@@ -816,11 +790,7 @@ impl crate::HoudiniEngineUnity::HEU_TerrainUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_TreePrototypeInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TreePrototypeInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (session, geoID, partID))? };
         Ok(__cordl_ret.into())
     }

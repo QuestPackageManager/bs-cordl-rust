@@ -7998,11 +7998,9 @@ impl crate::UnityEngine::Physics {
     }
     pub fn add_ContactModifyEvent(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::PhysicsScene,
-                crate::Unity::Collections::NativeArray_1<
-                    crate::UnityEngine::ModifiableContactPair,
-                >,
+            crate::UnityEngine::PhysicsScene,
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ModifiableContactPair,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -8012,11 +8010,9 @@ impl crate::UnityEngine::Physics {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::PhysicsScene,
-                                crate::Unity::Collections::NativeArray_1<
-                                    crate::UnityEngine::ModifiableContactPair,
-                                >,
+                            crate::UnityEngine::PhysicsScene,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::ModifiableContactPair,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -8037,11 +8033,9 @@ impl crate::UnityEngine::Physics {
     }
     pub fn add_ContactModifyEventCCD(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::PhysicsScene,
-                crate::Unity::Collections::NativeArray_1<
-                    crate::UnityEngine::ModifiableContactPair,
-                >,
+            crate::UnityEngine::PhysicsScene,
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ModifiableContactPair,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -8051,11 +8045,9 @@ impl crate::UnityEngine::Physics {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::PhysicsScene,
-                                crate::Unity::Collections::NativeArray_1<
-                                    crate::UnityEngine::ModifiableContactPair,
-                                >,
+                            crate::UnityEngine::PhysicsScene,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::ModifiableContactPair,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -8733,11 +8725,9 @@ impl crate::UnityEngine::Physics {
     }
     pub fn remove_ContactModifyEvent(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::PhysicsScene,
-                crate::Unity::Collections::NativeArray_1<
-                    crate::UnityEngine::ModifiableContactPair,
-                >,
+            crate::UnityEngine::PhysicsScene,
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ModifiableContactPair,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -8747,11 +8737,9 @@ impl crate::UnityEngine::Physics {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::PhysicsScene,
-                                crate::Unity::Collections::NativeArray_1<
-                                    crate::UnityEngine::ModifiableContactPair,
-                                >,
+                            crate::UnityEngine::PhysicsScene,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::ModifiableContactPair,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -8772,11 +8760,9 @@ impl crate::UnityEngine::Physics {
     }
     pub fn remove_ContactModifyEventCCD(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::PhysicsScene,
-                crate::Unity::Collections::NativeArray_1<
-                    crate::UnityEngine::ModifiableContactPair,
-                >,
+            crate::UnityEngine::PhysicsScene,
+            crate::Unity::Collections::NativeArray_1<
+                crate::UnityEngine::ModifiableContactPair,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -8786,11 +8772,9 @@ impl crate::UnityEngine::Physics {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::PhysicsScene,
-                                crate::Unity::Collections::NativeArray_1<
-                                    crate::UnityEngine::ModifiableContactPair,
-                                >,
+                            crate::UnityEngine::PhysicsScene,
+                            crate::Unity::Collections::NativeArray_1<
+                                crate::UnityEngine::ModifiableContactPair,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -4,9 +4,7 @@
 pub struct LightRotationBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
     >,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _rotationDirection: f32,
@@ -59,9 +57,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
         rotationDistributionShouldAffectFirstBaseEvent: bool,
         rotationDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -99,9 +95,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -123,10 +117,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
                                 crate::GlobalNamespace::IBeatmapLightEventConverter,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventData,
                                 >,
                             >,
                         ),
@@ -172,9 +164,7 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
         rotationDistributionShouldAffectFirstBaseEvent: bool,
         rotationDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightRotationBaseDataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationBaseData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -195,10 +185,8 @@ impl crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
                             bool,
                             crate::GlobalNamespace::EaseType,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LightRotationBaseData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LightRotationBaseData,
                                 >,
                             >,
                         ),

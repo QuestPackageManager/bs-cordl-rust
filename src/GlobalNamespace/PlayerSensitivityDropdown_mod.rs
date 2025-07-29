@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSensitivityDropdown {
-    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSensitivityFlag,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::PlayerSensitivityDropdown {
 }
 #[cfg(feature = "PlayerSensitivityDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSensitivityDropdown {
-    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSensitivityFlag,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -47,13 +47,9 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::PlayerSensitivityFlag,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSensitivityFlag,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -64,14 +60,10 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerSensitivityFlag,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::GlobalNamespace::PlayerSensitivityFlag,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -86,13 +78,9 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::PlayerSensitivityFlag,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSensitivityFlag,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

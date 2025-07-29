@@ -3,44 +3,26 @@
 #[derive(Debug)]
 pub struct SpriteAsset {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextAsset,
-    pub m_NameLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
-    pub m_GlyphIndexLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<u32, i32>,
-    >,
+    pub m_NameLookup: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub m_GlyphIndexLookup: quest_hook::libil2cpp::Gc<u32, i32>,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
     pub m_SpriteAtlasTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub m_SpriteCharacterTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::TextCore::Text::SpriteCharacter,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
     >,
     pub m_SpriteCharacterLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::TextCore::Text::SpriteCharacter,
-            >,
-        >,
+        u32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteCharacter>,
     >,
     pub m_SpriteGlyphTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
     >,
     pub m_SpriteGlyphLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
-        >,
+        u32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
     >,
     pub fallbackSpriteAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
     >,
     pub m_IsSpriteAssetLookupTablesDirty: bool,
 }
@@ -230,13 +212,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SearchForSpriteByHashCodeInternal_List_1_0(
+    pub fn SearchForSpriteByHashCodeInternal_Gc0(
         spriteAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteAsset,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
         hashCode: i32,
         searchFallbacks: bool,
@@ -251,10 +229,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::TextCore::Text::SpriteAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::SpriteAsset,
                                 >,
                             >,
                             i32,
@@ -379,13 +355,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SearchForSpriteByUnicodeInternal_List_1_0(
+    pub fn SearchForSpriteByUnicodeInternal_Gc0(
         spriteAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteAsset,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
         >,
         unicode: u32,
         includeFallbacks: bool,
@@ -400,10 +372,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::TextCore::Text::SpriteAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::SpriteAsset,
                                 >,
                             >,
                             u32,
@@ -631,11 +601,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            u32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         >,
     > {
@@ -646,11 +614,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                u32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                                >,
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteCharacter,
                             >,
                         >,
                         0usize,
@@ -664,11 +630,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            u32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -677,10 +641,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         >,
     > {
@@ -691,10 +653,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteCharacter,
                             >,
                         >,
                         0usize,
@@ -708,10 +668,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -720,11 +678,7 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteGlyph,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -734,10 +688,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteGlyph,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteGlyph,
                             >,
                         >,
                         0usize,
@@ -751,11 +703,7 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteGlyph,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -815,11 +763,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
     pub fn set_spriteCharacterLookupTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            u32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -829,11 +775,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                u32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                                >,
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteCharacter,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -855,10 +799,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
     pub fn set_spriteCharacterTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::SpriteCharacter,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -868,10 +810,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteCharacter,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteCharacter,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -893,11 +833,7 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
     pub fn set_spriteGlyphTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::TextCore::Text::SpriteGlyph,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteGlyph>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -906,10 +842,8 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::SpriteGlyph,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::SpriteGlyph,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

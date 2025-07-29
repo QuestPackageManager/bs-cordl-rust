@@ -4,19 +4,13 @@
 pub struct HEU_ThreadManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tasks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
     >,
     pub _pendingAdd: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
     >,
     pub _pendingRemove: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ThreadedTask>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ThreadManager")]

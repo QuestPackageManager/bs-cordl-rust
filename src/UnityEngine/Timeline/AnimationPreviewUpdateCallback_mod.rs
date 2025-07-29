@@ -6,10 +6,8 @@ pub struct AnimationPreviewUpdateCallback {
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_Graph: crate::UnityEngine::Playables::PlayableGraph,
     pub m_PreviewComponents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Animations::IAnimationWindowPreview,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Animations::IAnimationWindowPreview,
         >,
     >,
 }

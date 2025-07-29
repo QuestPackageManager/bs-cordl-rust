@@ -46,9 +46,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -65,9 +63,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
                         >,
                         2usize,
                     >("LoadPreview")
@@ -80,9 +76,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (asyncLoader, beatmapLevel))?
         };
@@ -97,9 +91,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -116,9 +108,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
                         >,
                         2usize,
                     >("LoadSong")
@@ -131,9 +121,7 @@ impl crate::GlobalNamespace::AudioClipAsyncLoaderExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (asyncLoader, beatmapLevelData))?
         };

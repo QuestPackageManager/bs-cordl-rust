@@ -93,9 +93,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn AddEnumerable(
         &mut self,
-        enumerable: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        enumerable: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -106,9 +104,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddEnumerable")
@@ -127,9 +123,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn AddRange(
         &mut self,
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        collection: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -140,9 +134,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddRange")
@@ -191,11 +183,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn AsReadOnly(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -206,11 +194,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("AsReadOnly")
                     .unwrap_or_else(|e| {
@@ -221,9 +205,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BinarySearch_T1(&mut self, item: T) -> quest_hook::libil2cpp::Result<i32>
@@ -249,12 +233,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn BinarySearch_T_IComparer_1_2(
+    pub fn BinarySearch_T_Gc2(
         &mut self,
         item: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -265,12 +247,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
-                        ),
+                        (T, quest_hook::libil2cpp::Gc<T>),
                         i32,
                         2usize,
                     >("BinarySearch")
@@ -287,14 +264,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn BinarySearch_i32_i32_T_IComparer_1_0(
+    pub fn BinarySearch_i32_i32_T_Gc0(
         &mut self,
         index: i32,
         count: i32,
         item: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -305,14 +280,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            i32,
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
-                        ),
+                        (i32, i32, T, quest_hook::libil2cpp::Gc<T>),
                         i32,
                         4usize,
                     >("BinarySearch")
@@ -377,10 +345,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn ConvertAll<TOutput>(
         &mut self,
-        converter: quest_hook::libil2cpp::Gc<crate::System::Converter_2<T, TOutput>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TOutput>>,
-    >
+        converter: quest_hook::libil2cpp::Gc<T, TOutput>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TOutput>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -392,12 +358,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Converter_2<T, TOutput>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<TOutput>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T, TOutput>),
+                        quest_hook::libil2cpp::Gc<TOutput>,
                         1usize,
                     >("ConvertAll")
                     .unwrap_or_else(|e| {
@@ -408,9 +370,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TOutput>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (converter))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TOutput> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (converter))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CopyTo_Il2CppArray0(
@@ -513,7 +475,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn Exists(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -524,7 +486,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         bool,
                         1usize,
                     >("Exists")
@@ -543,7 +505,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn Find(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -553,11 +515,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
-                        T,
-                        1usize,
-                    >("Find")
+                    .find_method::<(quest_hook::libil2cpp::Gc<T>), T, 1usize>("Find")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -573,10 +531,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn FindAll(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -586,10 +542,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("FindAll")
                     .unwrap_or_else(|e| {
@@ -600,14 +554,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_match))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (_cordl_match))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_Predicate_1_0(
+    pub fn FindIndex_Gc0(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -618,7 +572,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         i32,
                         1usize,
                     >("FindIndex")
@@ -635,11 +589,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_i32_i32_Predicate_1_1(
+    pub fn FindIndex_i32_i32_Gc1(
         &mut self,
         startIndex: i32,
         count: i32,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -650,11 +604,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
-                        ),
+                        (i32, i32, quest_hook::libil2cpp::Gc<T>),
                         i32,
                         3usize,
                     >("FindIndex")
@@ -673,7 +623,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn FindLast(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -683,11 +633,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
-                        T,
-                        1usize,
-                    >("FindLast")
+                    .find_method::<(quest_hook::libil2cpp::Gc<T>), T, 1usize>("FindLast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -703,7 +649,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn ForEach(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        action: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -714,7 +660,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ForEach")
@@ -766,9 +712,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         &mut self,
         index: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -779,9 +723,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("GetRange")
                     .unwrap_or_else(|e| {
@@ -792,9 +734,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (index, count))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(&mut self, item: T) -> quest_hook::libil2cpp::Result<i32>
@@ -854,9 +796,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     pub fn InsertRange(
         &mut self,
         index: i32,
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        collection: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -867,12 +807,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("InsertRange")
@@ -929,10 +864,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IEnumerable_1_2(
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+    pub fn New_Gc2(
+        collection: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -982,7 +915,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn RemoveAll(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -993,7 +926,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         i32,
                         1usize,
                     >("RemoveAll")
@@ -1152,9 +1085,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Comparison_1_3(
+    pub fn Sort_Gc1(
         &mut self,
-        comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1165,41 +1098,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Sort")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparison))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Sort_IComparer_1_1(
-        &mut self,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IComparer_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Sort")
@@ -1216,13 +1115,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_i32_i32_IComparer_1_2(
+    pub fn Sort_Gc3(
         &mut self,
-        index: i32,
-        count: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparison: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1233,13 +1128,39 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Sort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (comparison))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_i32_i32_Gc2(
+        &mut self,
+        index: i32,
+        count: i32,
+        comparer: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, i32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("Sort")
@@ -1286,9 +1207,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1299,9 +1218,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<T>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -1313,9 +1230,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -1799,11 +1716,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_2(
+    pub fn _ctor_Gc2(
         &mut self,
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        collection: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1814,9 +1729,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1997,100 +1910,6 @@ for crate::System::Collections::Generic::List_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IList_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IList_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IList_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IList_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyList_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyList_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyList_1<T>>
-for crate::System::Collections::Generic::List_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Generic::List_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -2132,11 +1951,81 @@ for crate::System::Collections::Generic::List_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "cordl_class_System+Collections+Generic+List_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct List_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub _list: quest_hook::libil2cpp::Gc<T>,
     pub _index: i32,
     pub _version: i32,
     pub _current: T,
@@ -2386,7 +2275,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2397,9 +2286,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -2439,24 +2326,6 @@ impl<
     }
 }
 #[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Collections::Generic::List_1_Enumerator<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Collections::Generic::List_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::List_1_Enumerator<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -2481,6 +2350,20 @@ for crate::System::Collections::Generic::List_1_Enumerator<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Collections::Generic::List_1_Enumerator<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1_Enumerator<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::List_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }

@@ -4,20 +4,8 @@
 pub struct BaseListViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
     pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub itemsAdded: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
-    pub itemsRemoved: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseListViewController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -304,18 +292,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RaiseItemsAdded(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RaiseItemsAdded")
@@ -334,18 +318,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RaiseItemsRemoved(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RaiseItemsRemoved")
@@ -389,9 +369,7 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn RemoveFromArray(
         source: quest_hook::libil2cpp::Gc<crate::System::Array>,
-        indicesToRemove: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indicesToRemove: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Array>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -400,9 +378,7 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Array>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::Array>,
                         2usize,
@@ -446,20 +422,16 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveItems_List_1_0(
+    pub fn RemoveItems_Gc0(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RemoveItems")
@@ -575,26 +547,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn add_itemsAdded(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_itemsAdded")
@@ -613,26 +573,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn add_itemsRemoved(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_itemsRemoved")
@@ -706,26 +654,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn remove_itemsAdded(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_itemsAdded")
@@ -744,26 +680,14 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
     }
     pub fn remove_itemsRemoved(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<i32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_itemsRemoved")

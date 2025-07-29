@@ -4,9 +4,7 @@
 pub struct InstanceMethodCallExpressionN {
     __cordl_parent: crate::System::Linq::Expressions::InstanceMethodCallExpression,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+InstanceMethodCallExpressionN")]
@@ -82,9 +80,7 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpressionN {
             crate::System::Linq::Expressions::Expression,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -99,9 +95,7 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpressionN {
             crate::System::Linq::Expressions::Expression,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
@@ -116,10 +110,8 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpressionN {
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
                         ),
@@ -148,9 +140,7 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpressionN {
             crate::System::Linq::Expressions::Expression,
         >,
         args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -166,10 +156,8 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpressionN {
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Expression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
                                 >,
                             >,
                         ),

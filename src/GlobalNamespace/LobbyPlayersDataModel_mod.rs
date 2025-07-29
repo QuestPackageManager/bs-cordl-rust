@@ -22,10 +22,8 @@ pub struct LobbyPlayersDataModel {
         crate::GlobalNamespace::LobbyPlayerData,
     >,
     pub _playersData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LobbyPlayerData>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LobbyPlayerData>,
     >,
     pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
@@ -34,9 +32,7 @@ pub struct LobbyPlayersDataModel {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub didChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_LobbyPlayersDataModel")]
@@ -263,11 +259,9 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
             >,
         >,
     > {
@@ -278,14 +272,12 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::ILobbyPlayerData,
-                                    >,
+                            crate::System::Collections::Generic::KeyValuePair_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILobbyPlayerData,
                                 >,
                             >,
                         >,
@@ -300,11 +292,9 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1417,9 +1407,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     pub fn add_didChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1428,10 +1416,8 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1501,9 +1487,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1513,10 +1497,8 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -1530,9 +1512,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1540,9 +1520,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1552,10 +1530,8 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ILobbyPlayerData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ILobbyPlayerData,
                             >,
                         >,
                         0usize,
@@ -1569,9 +1545,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1632,9 +1606,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     pub fn remove_didChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1643,10 +1615,8 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1717,118 +1687,6 @@ for crate::GlobalNamespace::LobbyPlayersDataModel {
     }
 }
 #[cfg(feature = "LobbyPlayersDataModel")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
-impl AsRef<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
-impl AsMut<
-    crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
-impl AsRef<
-    crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
-impl AsMut<
-    crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-    >,
-> for crate::GlobalNamespace::LobbyPlayersDataModel {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LobbyPlayersDataModel")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::LobbyPlayersDataModel {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1853,6 +1711,118 @@ for crate::GlobalNamespace::LobbyPlayersDataModel {
 impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::LobbyPlayersDataModel {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LobbyPlayersDataModel")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+    >,
+> for crate::GlobalNamespace::LobbyPlayersDataModel {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILobbyPlayerData>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

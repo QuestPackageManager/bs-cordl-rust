@@ -282,14 +282,10 @@ for crate::GlobalNamespace::GameplayModifiers_PlayerSaveData_SongSpeed {
 pub struct PlayerSaveData {
     __cordl_parent: crate::GlobalNamespace::VersionSaveData,
     pub localPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_LocalPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_LocalPlayer>,
     >,
     pub guestPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_GuestPlayer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_GuestPlayer>,
     >,
 }
 #[cfg(feature = "cordl_class_PlayerSaveData")]
@@ -647,9 +643,7 @@ pub struct PlayerSaveData_ColorSchemesSettings {
     >,
     pub colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
     pub colorSchemes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_ColorScheme>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_ColorScheme>,
     >,
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+ColorSchemesSettings")]
@@ -694,11 +688,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         >,
         colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerSaveData_ColorScheme,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_ColorScheme>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -723,11 +713,7 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
         >,
         colorOverrideType: crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerSaveData_ColorScheme,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSaveData_ColorScheme>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -742,10 +728,8 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings {
                             >,
                             crate::GlobalNamespace::PlayerSaveData_ColorOverrideType,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::PlayerSaveData_ColorScheme,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayerSaveData_ColorScheme,
                                 >,
                             >,
                         ),
@@ -1003,23 +987,17 @@ pub struct PlayerSaveData_LocalPlayer {
         crate::GlobalNamespace::PlayerSaveData_PlayerAllOverallStatsData,
     >,
     pub levelsStatsData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerLevelStatsData,
         >,
     >,
     pub missionsStatsData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerSaveData_PlayerMissionStatsData,
         >,
     >,
     pub showedMissionHelpIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub colorSchemesSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSaveData_ColorSchemesSettings,
@@ -1028,9 +1006,7 @@ pub struct PlayerSaveData_LocalPlayer {
         crate::GlobalNamespace::PlayerSaveData_OverrideEnvironmentSettings,
     >,
     pub favoritesLevelIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub multiplayerModeSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSaveData_MultiplayerModeSettings,

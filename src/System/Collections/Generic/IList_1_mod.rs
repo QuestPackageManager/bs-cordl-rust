@@ -213,42 +213,6 @@ for crate::System::Collections::Generic::IList_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+IList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::System::Collections::Generic::IList_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+IList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
-for crate::System::Collections::Generic::IList_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+IList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::IList_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+IList_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::IList_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+IList_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Generic::IList_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -259,6 +223,34 @@ for crate::System::Collections::Generic::IList_1<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Generic::IList_1<T> {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+IList_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::IList_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+IList_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::IList_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+IList_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::IList_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+IList_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::IList_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

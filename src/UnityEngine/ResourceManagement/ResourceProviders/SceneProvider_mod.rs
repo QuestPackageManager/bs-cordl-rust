@@ -355,7 +355,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider_SceneOp {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >,
     pub m_ActivateOnLoad: bool,
@@ -367,9 +367,7 @@ pub struct SceneProvider_SceneOp {
     pub m_Priority: i32,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
     pub m_ResourceManager: quest_hook::libil2cpp::Gc<
@@ -403,7 +401,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -468,9 +466,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -479,9 +475,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -502,9 +496,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -515,10 +507,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -547,9 +537,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
         priority: i32,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                >,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -567,9 +555,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
                             i32,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                                    >,
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                                 >,
                             >,
                         ),
@@ -603,9 +589,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
         priority: i32,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                >,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -623,9 +607,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sc
                             i32,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                                    >,
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                                 >,
                             >,
                         ),
@@ -906,7 +888,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneProvider_UnloadSceneOp {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >,
     pub m_Instance: crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
@@ -942,7 +924,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

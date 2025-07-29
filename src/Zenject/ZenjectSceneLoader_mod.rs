@@ -102,14 +102,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Action_1_2(
+    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Gc2(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -125,9 +123,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -147,25 +143,19 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Action_1_Action_1_LoadSceneRelationship_Action_1_4(
+    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Gc_Gc_LoadSceneRelationship_Gc4(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindingsEarly: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -181,20 +171,14 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -224,14 +208,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Action_1_LoadSceneRelationship3(
+    pub fn LoadSceneAsync_Il2CppString_LoadSceneMode_Gc_LoadSceneRelationship3(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<
@@ -248,9 +230,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                         ),
@@ -331,14 +311,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_i32_LoadSceneMode_Action_1_7(
+    pub fn LoadSceneAsync_i32_LoadSceneMode_Gc7(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -352,9 +330,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -374,14 +350,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_i32_LoadSceneMode_Action_1_LoadSceneRelationship8(
+    pub fn LoadSceneAsync_i32_LoadSceneMode_Gc_LoadSceneRelationship8(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<
@@ -396,9 +370,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                         ),
@@ -422,20 +394,16 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadSceneAsync_i32_LoadSceneMode_Action_1_LoadSceneRelationship_Action_1_9(
+    pub fn LoadSceneAsync_i32_LoadSceneMode_Gc_LoadSceneRelationship_Gc9(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -449,15 +417,11 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
@@ -493,20 +457,14 @@ impl crate::Zenject::ZenjectSceneLoader {
         activateOnLoad: bool,
         priority: i32,
         extraBindingsEarly: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -526,20 +484,14 @@ impl crate::Zenject::ZenjectSceneLoader {
                             bool,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -633,14 +585,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Il2CppString_LoadSceneMode_Action_1_2(
+    pub fn LoadScene_Il2CppString_LoadSceneMode_Gc2(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -654,9 +604,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -676,14 +624,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Il2CppString_LoadSceneMode_Action_1_LoadSceneRelationship3(
+    pub fn LoadScene_Il2CppString_LoadSceneMode_Gc_LoadSceneRelationship3(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -698,9 +644,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                         ),
@@ -724,20 +668,16 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_Il2CppString_LoadSceneMode_Action_1_LoadSceneRelationship_Action_1_4(
+    pub fn LoadScene_Il2CppString_LoadSceneMode_Gc_LoadSceneRelationship_Gc4(
         &mut self,
         sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -751,15 +691,11 @@ impl crate::Zenject::ZenjectSceneLoader {
                             >,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -841,14 +777,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_i32_LoadSceneMode_Action_1_7(
+    pub fn LoadScene_i32_LoadSceneMode_Gc7(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -860,9 +794,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -882,14 +814,12 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_i32_LoadSceneMode_Action_1_LoadSceneRelationship8(
+    pub fn LoadScene_i32_LoadSceneMode_Gc_LoadSceneRelationship8(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -902,9 +832,7 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                         ),
@@ -928,20 +856,16 @@ impl crate::Zenject::ZenjectSceneLoader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadScene_i32_LoadSceneMode_Action_1_LoadSceneRelationship_Action_1_9(
+    pub fn LoadScene_i32_LoadSceneMode_Gc_LoadSceneRelationship_Gc9(
         &mut self,
         sceneIndex: i32,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -953,15 +877,11 @@ impl crate::Zenject::ZenjectSceneLoader {
                             i32,
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1004,19 +924,13 @@ impl crate::Zenject::ZenjectSceneLoader {
         &mut self,
         loadMode: crate::UnityEngine::SceneManagement::LoadSceneMode,
         extraBindingsEarly: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         extraBindings: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         extraBindingsLate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
         containerMode: crate::Zenject::LoadSceneRelationship,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1028,19 +942,13 @@ impl crate::Zenject::ZenjectSceneLoader {
                         (
                             crate::UnityEngine::SceneManagement::LoadSceneMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                             crate::Zenject::LoadSceneRelationship,
                         ),

@@ -14,9 +14,7 @@ pub struct ControllerProfilesModel {
     >,
     pub _selectedProfileIndex_k__BackingField: i32,
     pub _profiles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
     >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+GameSettings+ControllerProfilesModel")]
@@ -61,11 +59,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfile,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -75,10 +69,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::GameSettings::ControllerProfile,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::GameSettings::ControllerProfile,
                             >,
                         >,
                         0usize,
@@ -92,11 +84,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfile,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -104,10 +92,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     > {
@@ -118,10 +104,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
                             >,
                         >,
                         0usize,
@@ -135,10 +119,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -423,11 +405,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfile,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -437,10 +415,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::GameSettings::ControllerProfile,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::GameSettings::ControllerProfile,
                             >,
                         >,
                         0usize,
@@ -454,11 +430,7 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfile,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::GameSettings::ControllerProfile>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

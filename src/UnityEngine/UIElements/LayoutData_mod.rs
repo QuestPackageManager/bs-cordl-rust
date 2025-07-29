@@ -287,48 +287,38 @@ impl crate::UnityEngine::UIElements::LayoutData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::LayoutData>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData>>
 for crate::UnityEngine::UIElements::LayoutData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::LayoutData> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::LayoutData>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData>>
 for crate::UnityEngine::UIElements::LayoutData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::LayoutData> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::LayoutData,
-    >,
-> for crate::UnityEngine::UIElements::LayoutData {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData>>
+for crate::UnityEngine::UIElements::LayoutData {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::LayoutData,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LayoutData")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::LayoutData,
-    >,
-> for crate::UnityEngine::UIElements::LayoutData {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData>>
+for crate::UnityEngine::UIElements::LayoutData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
-        crate::UnityEngine::UIElements::LayoutData,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LayoutData> {
         todo!()
     }
 }

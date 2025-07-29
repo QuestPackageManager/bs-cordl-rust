@@ -30,18 +30,10 @@ pub struct ColumnMover {
         crate::UnityEngine::UIElements::ColumnLayout,
     >,
     pub activeChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::Internal::ColumnMover,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Internal::ColumnMover>,
     >,
     pub movingChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::Internal::ColumnMover,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Internal::ColumnMover>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Internal+ColumnMover")]
@@ -725,10 +717,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
     pub fn add_activeChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::ColumnMover,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -738,10 +728,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Internal::ColumnMover,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -763,10 +751,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
     pub fn add_movingChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::ColumnMover,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -776,10 +762,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Internal::ColumnMover,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -864,10 +848,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
     pub fn remove_activeChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::ColumnMover,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -877,10 +859,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Internal::ColumnMover,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -902,10 +882,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
     pub fn remove_movingChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::ColumnMover,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -915,10 +893,8 @@ impl crate::UnityEngine::UIElements::Internal::ColumnMover {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Internal::ColumnMover,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Internal::ColumnMover,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

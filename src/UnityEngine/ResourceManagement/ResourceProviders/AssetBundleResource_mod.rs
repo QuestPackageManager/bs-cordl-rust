@@ -114,9 +114,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -129,10 +127,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
                                 crate::UnityEngine::AsyncOperation,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::AsyncOperation,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::AsyncOperation,
                                 >,
                             >,
                         ),

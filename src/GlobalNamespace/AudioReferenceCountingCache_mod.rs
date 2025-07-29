@@ -2,12 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AudioReferenceCountingCache {
-    __cordl_parent: crate::GlobalNamespace::ReferenceCountingCache_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     >,
 }
@@ -33,12 +31,10 @@ for crate::GlobalNamespace::AudioReferenceCountingCache {
 }
 #[cfg(feature = "AudioReferenceCountingCache")]
 impl std::ops::Deref for crate::GlobalNamespace::AudioReferenceCountingCache {
-    type Target = crate::GlobalNamespace::ReferenceCountingCache_2<
+    type Target = quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

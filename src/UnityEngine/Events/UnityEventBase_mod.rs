@@ -315,9 +315,7 @@ impl crate::UnityEngine::Events::UnityEventBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -327,10 +325,8 @@ impl crate::UnityEngine::Events::UnityEventBase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Events::BaseInvokableCall,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Events::BaseInvokableCall,
                             >,
                         >,
                         0usize,
@@ -344,9 +340,7 @@ impl crate::UnityEngine::Events::UnityEventBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::BaseInvokableCall>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -5,17 +5,13 @@ pub struct LocalizationModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
     pub inputFiles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
     >,
     pub selectedCulture: quest_hook::libil2cpp::Gc<
         crate::System::Globalization::CultureInfo,
     >,
     pub _onChangeLanguage: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
     >,
 }
 #[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationModel")]
@@ -322,9 +318,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
         language: crate::BGLib::Polyglot::Language,
         inputFiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -404,9 +398,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         localization: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Localization>,
         language: crate::BGLib::Polyglot::Language,
         inputFiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -420,10 +412,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                             >,
                             crate::BGLib::Polyglot::Language,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BGLib::Polyglot::LocalizationAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGLib::Polyglot::LocalizationAsset,
                                 >,
                             >,
                         ),
@@ -447,9 +437,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn add__onChangeLanguage(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -458,10 +446,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BGLib::Polyglot::LocalizationModel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::Polyglot::LocalizationModel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -484,9 +470,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -496,10 +480,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -513,9 +495,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -523,9 +503,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -535,10 +513,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BGLib::Polyglot::LocalizationAsset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::Polyglot::LocalizationAsset,
                             >,
                         >,
                         0usize,
@@ -552,9 +528,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -562,9 +536,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -574,10 +546,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -591,9 +561,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -696,11 +664,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn get_SupportedLanguages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -708,11 +672,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                crate::BGLib::Polyglot::Language,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
                         0usize,
                     >("get_SupportedLanguages")
                     .unwrap_or_else(|e| {
@@ -723,11 +683,9 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_fallbackLanguage(
@@ -758,9 +716,7 @@ impl crate::BGLib::Polyglot::LocalizationModel {
     pub fn remove__onChangeLanguage(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationModel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -769,10 +725,8 @@ impl crate::BGLib::Polyglot::LocalizationModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BGLib::Polyglot::LocalizationModel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::Polyglot::LocalizationModel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

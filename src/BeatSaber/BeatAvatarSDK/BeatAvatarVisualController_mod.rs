@@ -40,11 +40,9 @@ pub struct BeatAvatarVisualController {
         crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
     >,
     pub _avatarPartHighlightSetters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
-            >,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate,
         >,
     >,
     pub _lightColor: crate::UnityEngine::Color,

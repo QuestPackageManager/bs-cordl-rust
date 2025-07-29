@@ -143,7 +143,7 @@ pub struct TMP_Text {
     pub m_mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub m_isVolumetricText: bool,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>>,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
     >,
     pub m_spriteAnimator: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAnimator>,
     pub m_flexibleHeight: f32,
@@ -4504,11 +4504,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn add_OnFontAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4517,13 +4515,11 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_3<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -4544,9 +4540,7 @@ impl crate::TMPro::TMP_Text {
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4555,9 +4549,7 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -4577,11 +4569,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn add_OnSpriteAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4590,13 +4580,11 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_3<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -6480,11 +6468,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn remove_OnFontAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6493,13 +6479,11 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_3<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -6520,9 +6504,7 @@ impl crate::TMPro::TMP_Text {
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6531,9 +6513,7 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -6553,11 +6533,9 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn remove_OnSpriteAssetRequest(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6566,13 +6544,11 @@ impl crate::TMPro::TMP_Text {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_3<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

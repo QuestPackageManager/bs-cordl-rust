@@ -131,11 +131,7 @@ impl<
         binder: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSiteBinder,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -148,9 +144,7 @@ impl<
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Runtime::CompilerServices::CallSiteBinder,
                         >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("Create")
                     .unwrap_or_else(|e| {
@@ -161,9 +155,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (binder))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (binder))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateCustomNoMatchDelegate(
@@ -232,11 +226,7 @@ impl<
     }
     pub fn CreateMatchMaker(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -247,9 +237,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("CreateMatchMaker")
                     .unwrap_or_else(|e| {
@@ -260,9 +248,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUpdateDelegate_0(&mut self) -> quest_hook::libil2cpp::Result<T>

@@ -26,10 +26,8 @@ pub struct ColorNoteVisuals {
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub didInitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
     >,
     pub _noteColor: crate::UnityEngine::Color,
 }
@@ -234,10 +232,8 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
     pub fn add_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -246,13 +242,11 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorNoteVisuals,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteControllerBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorNoteVisuals,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteControllerBase,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -274,10 +268,8 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
     pub fn remove_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorNoteVisuals>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -286,13 +278,11 @@ impl crate::GlobalNamespace::ColorNoteVisuals {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorNoteVisuals,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NoteControllerBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorNoteVisuals,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NoteControllerBase,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

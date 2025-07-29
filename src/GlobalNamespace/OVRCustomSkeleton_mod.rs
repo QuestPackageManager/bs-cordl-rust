@@ -4,9 +4,7 @@
 pub struct OVRCustomSkeleton {
     __cordl_parent: crate::GlobalNamespace::OVRSkeleton,
     pub _customBones_V2: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub retargetingType: crate::GlobalNamespace::OVRCustomSkeleton_RetargetingType,
 }
@@ -209,9 +207,7 @@ impl crate::GlobalNamespace::OVRCustomSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -221,9 +217,7 @@ impl crate::GlobalNamespace::OVRCustomSkeleton {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >,
                         0usize,
                     >("get_CustomBones")
@@ -236,9 +230,7 @@ impl crate::GlobalNamespace::OVRCustomSkeleton {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

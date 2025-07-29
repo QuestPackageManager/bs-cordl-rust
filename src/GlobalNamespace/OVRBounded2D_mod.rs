@@ -564,44 +564,38 @@ impl crate::GlobalNamespace::OVRBounded2D {
     }
 }
 #[cfg(feature = "OVRBounded2D")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded2D>,
-> for crate::GlobalNamespace::OVRBounded2D {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRBounded2D,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRBounded2D")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRBounded2D>,
-> for crate::GlobalNamespace::OVRBounded2D {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRBounded2D,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRBounded2D")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D>>
 for crate::GlobalNamespace::OVRBounded2D {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D> {
         todo!()
     }
 }
 #[cfg(feature = "OVRBounded2D")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D>>
 for crate::GlobalNamespace::OVRBounded2D {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRBounded2D> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded2D")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D>>
+for crate::GlobalNamespace::OVRBounded2D {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRBounded2D")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D>>
+for crate::GlobalNamespace::OVRBounded2D {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBounded2D> {
         todo!()
     }
 }

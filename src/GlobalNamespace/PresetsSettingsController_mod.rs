@@ -7,7 +7,7 @@ pub struct PresetsSettingsController {
     pub _limitNumberOfElements: bool,
     pub _numberOfElementsLimit: i32,
     pub _customIndex: i32,
-    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_PresetsSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -253,14 +253,14 @@ impl crate::GlobalNamespace::PresetsSettingsController {
     }
     pub fn add_valueDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_valueDidChangeEvent")
@@ -279,14 +279,14 @@ impl crate::GlobalNamespace::PresetsSettingsController {
     }
     pub fn remove_valueDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_valueDidChangeEvent")

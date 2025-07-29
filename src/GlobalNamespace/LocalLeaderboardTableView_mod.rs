@@ -49,10 +49,8 @@ impl crate::GlobalNamespace::LocalLeaderboardTableView {
     pub fn SetScores(
         &mut self,
         scores: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
             >,
         >,
         specialScorePos: i32,
@@ -65,10 +63,8 @@ impl crate::GlobalNamespace::LocalLeaderboardTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
                                 >,
                             >,
                             i32,

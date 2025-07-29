@@ -14,17 +14,11 @@ pub struct DropdownMenuAction {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub actionCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
     >,
     pub actionStatusCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::DropdownMenuAction,
-            >,
-            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
+        crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DropdownMenuAction")]
@@ -125,19 +119,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     pub fn New(
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         actionCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
         >,
         actionStatusCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::DropdownMenuAction,
             >,
+            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -184,19 +172,13 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         actionCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
         >,
         actionStatusCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::DropdownMenuAction,
             >,
+            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -210,19 +192,15 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::DropdownMenuAction,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::DropdownMenuAction,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::DropdownMenuAction,
-                                    >,
-                                    crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::DropdownMenuAction,
                                 >,
+                                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,

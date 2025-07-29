@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub m_CommandName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -45,7 +45,7 @@ for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+CommandEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::CommandEventBase_1<T> {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

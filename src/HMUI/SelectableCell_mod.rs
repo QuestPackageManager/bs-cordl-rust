@@ -5,20 +5,16 @@ pub struct SelectableCell {
     __cordl_parent: crate::HMUI::Interactable,
     pub _wasPressedSignal: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
     pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-            crate::HMUI::SelectableCell_TransitionType,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+        crate::HMUI::SelectableCell_TransitionType,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub highlightDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-            crate::HMUI::SelectableCell_TransitionType,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+        crate::HMUI::SelectableCell_TransitionType,
     >,
     pub nonInteractableCellWasPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
     >,
     pub _highlighted_k__BackingField: bool,
     pub _selected_k__BackingField: bool,
@@ -424,10 +420,8 @@ impl crate::HMUI::SelectableCell {
     pub fn add_highlightDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                crate::HMUI::SelectableCell_TransitionType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -436,10 +430,8 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                                crate::HMUI::SelectableCell_TransitionType,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+                            crate::HMUI::SelectableCell_TransitionType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -460,9 +452,7 @@ impl crate::HMUI::SelectableCell {
     pub fn add_nonInteractableCellWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -471,9 +461,7 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -494,11 +482,9 @@ impl crate::HMUI::SelectableCell {
     pub fn add_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                crate::HMUI::SelectableCell_TransitionType,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -507,12 +493,10 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                                crate::HMUI::SelectableCell_TransitionType,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+                            crate::HMUI::SelectableCell_TransitionType,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -568,10 +552,8 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_highlightDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                crate::HMUI::SelectableCell_TransitionType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -580,10 +562,8 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                                crate::HMUI::SelectableCell_TransitionType,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+                            crate::HMUI::SelectableCell_TransitionType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -604,9 +584,7 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_nonInteractableCellWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -615,9 +593,7 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -638,11 +614,9 @@ impl crate::HMUI::SelectableCell {
     pub fn remove_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                crate::HMUI::SelectableCell_TransitionType,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+            crate::HMUI::SelectableCell_TransitionType,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -651,12 +625,10 @@ impl crate::HMUI::SelectableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
-                                crate::HMUI::SelectableCell_TransitionType,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SelectableCell>,
+                            crate::HMUI::SelectableCell_TransitionType,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

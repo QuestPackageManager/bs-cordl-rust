@@ -453,20 +453,20 @@ impl crate::System::Threading::Tasks::ValueTask {
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ValueTask")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask>>
 for crate::System::Threading::Tasks::ValueTask {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask> {
         todo!()
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ValueTask")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask>>
 for crate::System::Threading::Tasks::ValueTask {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask> {
         todo!()
     }
 }
@@ -474,7 +474,7 @@ for crate::System::Threading::Tasks::ValueTask {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueTask_ValueTaskSourceAsTask {
-    __cordl_parent: crate::System::Threading::Tasks::Task_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::VoidTaskResult,
     >,
     pub _source: quest_hook::libil2cpp::Gc<
@@ -505,7 +505,7 @@ for crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
 #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
-    type Target = crate::System::Threading::Tasks::Task_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::VoidTaskResult,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

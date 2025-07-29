@@ -44,11 +44,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
         attributeType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -57,9 +53,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                         >,
                         2usize,
                     >("GetAttributes")
@@ -72,9 +66,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (attributeType, inherit))?
         };
@@ -84,11 +76,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
         &mut self,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -97,9 +85,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                         >,
                         1usize,
                     >("GetAttributes")
@@ -112,9 +98,7 @@ impl crate::Newtonsoft::Json::Serialization::IAttributeProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (inherit))? };
         Ok(__cordl_ret.into())
     }

@@ -75,9 +75,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
-        callbackFunction: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T>,
-        >,
+        callbackFunction: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >
@@ -95,11 +93,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::EventSystems::BaseEventData,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         3usize,
@@ -117,14 +111,12 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Execute_GameObject_ExecuteEvents_EventFunction_1_18<T>(
+    pub fn Execute_GameObject_Gc18<T>(
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::BaseEventData,
         >,
-        functor: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<T>,
-        >,
+        functor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -140,11 +132,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::EventSystems::BaseEventData,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         bool,
                         3usize,
@@ -831,9 +819,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
     pub fn GetEventChain(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         eventChain: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -844,9 +830,7 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -899,10 +883,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
     pub fn GetEventList<T>(
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IEventSystemHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IEventSystemHandler,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -918,10 +900,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::EventSystems::IEventSystemHandler,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::EventSystems::IEventSystemHandler,
                                 >,
                             >,
                         ),
@@ -1001,10 +981,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
     }
     pub fn get_beginDragHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IBeginDragHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IBeginDragHandler,
             >,
         >,
     > {
@@ -1015,10 +993,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IBeginDragHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IBeginDragHandler,
                             >,
                         >,
                         0usize,
@@ -1032,21 +1008,15 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IBeginDragHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IBeginDragHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_cancelHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ICancelHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1056,10 +1026,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::ICancelHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::ICancelHandler,
                             >,
                         >,
                         0usize,
@@ -1073,21 +1041,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ICancelHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ICancelHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_deselectHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IDeselectHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1097,10 +1057,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IDeselectHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IDeselectHandler,
                             >,
                         >,
                         0usize,
@@ -1114,19 +1072,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IDeselectHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDeselectHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dragHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1136,10 +1088,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IDragHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IDragHandler,
                             >,
                         >,
                         0usize,
@@ -1153,17 +1103,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDragHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_dropHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1173,10 +1119,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IDropHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IDropHandler,
                             >,
                         >,
                         0usize,
@@ -1190,19 +1134,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IDropHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_endDragHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IEndDragHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1212,10 +1150,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IEndDragHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IEndDragHandler,
                             >,
                         >,
                         0usize,
@@ -1229,20 +1165,14 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IEndDragHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IEndDragHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_initializePotentialDrag() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
             >,
         >,
     > {
@@ -1253,10 +1183,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
                             >,
                         >,
                         0usize,
@@ -1270,19 +1198,15 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IInitializePotentialDragHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_moveHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1292,10 +1216,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IMoveHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IMoveHandler,
                             >,
                         >,
                         0usize,
@@ -1309,18 +1231,14 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IMoveHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerClickHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerClickHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerClickHandler,
             >,
         >,
     > {
@@ -1331,10 +1249,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerClickHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerClickHandler,
                             >,
                         >,
                         0usize,
@@ -1348,20 +1264,16 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerClickHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerClickHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerDownHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerDownHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerDownHandler,
             >,
         >,
     > {
@@ -1372,10 +1284,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerDownHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerDownHandler,
                             >,
                         >,
                         0usize,
@@ -1389,20 +1299,16 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerDownHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerDownHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerEnterHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerEnterHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerEnterHandler,
             >,
         >,
     > {
@@ -1413,10 +1319,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerEnterHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerEnterHandler,
                             >,
                         >,
                         0usize,
@@ -1430,20 +1334,16 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerEnterHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerEnterHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerExitHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerExitHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerExitHandler,
             >,
         >,
     > {
@@ -1454,10 +1354,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerExitHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerExitHandler,
                             >,
                         >,
                         0usize,
@@ -1471,20 +1369,16 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerExitHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerExitHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerMoveHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerMoveHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerMoveHandler,
             >,
         >,
     > {
@@ -1495,10 +1389,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerMoveHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerMoveHandler,
                             >,
                         >,
                         0usize,
@@ -1512,20 +1404,16 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerMoveHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerMoveHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pointerUpHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerUpHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerUpHandler,
             >,
         >,
     > {
@@ -1536,10 +1424,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IPointerUpHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IPointerUpHandler,
                             >,
                         >,
                         0usize,
@@ -1553,21 +1439,15 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IPointerUpHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IPointerUpHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_scrollHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IScrollHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1577,10 +1457,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IScrollHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IScrollHandler,
                             >,
                         >,
                         0usize,
@@ -1594,21 +1472,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IScrollHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::IScrollHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ISelectHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1618,10 +1488,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::ISelectHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::ISelectHandler,
                             >,
                         >,
                         0usize,
@@ -1635,21 +1503,13 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ISelectHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISelectHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_submitHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ISubmitHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1659,10 +1519,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::ISubmitHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::ISubmitHandler,
                             >,
                         >,
                         0usize,
@@ -1676,20 +1534,14 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::ISubmitHandler,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::ISubmitHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_updateSelectedHandler() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
             >,
         >,
     > {
@@ -1700,10 +1552,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
                             >,
                         >,
                         0usize,
@@ -1717,10 +1567,8 @@ impl crate::UnityEngine::EventSystems::ExecuteEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::ExecuteEvents_EventFunction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::IUpdateSelectedHandler,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

@@ -15,15 +15,11 @@ pub struct HEU_HoudiniAsset {
     pub _alwaysOverwriteOnLoad: bool,
     pub _assetFileObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub _objectNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectNode>,
     >,
     pub _rootGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _materialCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
     >,
     pub _parameters: quest_hook::libil2cpp::Gc<
         crate::HoudiniEngineUnity::HEU_Parameters,
@@ -106,15 +102,11 @@ pub struct HEU_HoudiniAsset {
     pub _pauseCooking: bool,
     pub _curveEditorEnabled: bool,
     pub _curves: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     >,
     pub _curveDrawCollision: crate::HoudiniEngineUnity::HEU_Curve_CurveDrawCollision,
     pub _curveDrawColliders: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     >,
     pub _curveDrawLayerMask: crate::UnityEngine::LayerMask,
     pub _curveProjectMaxDistance: f32,
@@ -124,25 +116,17 @@ pub struct HEU_HoudiniAsset {
     pub _curveFrameSelectedNodes: bool,
     pub _curveFrameSelectedNodeDistance: f32,
     pub _inputNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     >,
     pub _handles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
     >,
     pub _handlesEnabled: bool,
     pub _volumeCaches: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
     >,
     pub _attributeStores: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     >,
     pub _editableNodesToolsEnabled: bool,
     pub _toolsInfo: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ToolsInfo>,
@@ -284,14 +268,10 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn AddDownstreamConnection(
         &mut self,
         receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
-                bool,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+            bool,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -301,16 +281,12 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-                                >,
-                                bool,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                    >,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -444,9 +420,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         inputPresets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
         >,
         bAddMissingInputsToRecookPreset: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -460,10 +434,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                                 crate::HoudiniEngineUnity::HEU_SessionBase,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_InputPreset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_InputPreset,
                                 >,
                             >,
                             bool,
@@ -516,11 +488,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn ApplyVolumeCachePresets(
         &mut self,
         volumeCachePresets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCachePreset>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -529,10 +497,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
                             >,
                         >),
                         bool,
@@ -1780,9 +1746,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1792,10 +1756,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_AttributesStore,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_AttributesStore,
                             >,
                         >,
                         0usize,
@@ -1809,18 +1771,14 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetClonableParts(
         &mut self,
         clonableParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PartData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1829,10 +1787,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_PartData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_PartData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1910,9 +1866,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1922,9 +1876,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
                         >,
                         0usize,
                     >("GetCurveDrawColliders")
@@ -1937,9 +1889,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1972,9 +1922,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1984,10 +1932,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_Curve,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_Curve,
                             >,
                         >,
                         0usize,
@@ -2001,9 +1947,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2056,9 +2000,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2068,10 +2010,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_Handle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_Handle,
                             >,
                         >,
                         0usize,
@@ -2085,9 +2025,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2183,9 +2121,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2195,10 +2131,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_InputNode,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_InputNode,
                             >,
                         >,
                         0usize,
@@ -2212,9 +2146,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2308,9 +2240,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2320,10 +2250,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_MaterialData,
                             >,
                         >,
                         0usize,
@@ -2337,9 +2265,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2377,9 +2303,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2389,10 +2313,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_InputNode,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_InputNode,
                             >,
                         >,
                         0usize,
@@ -2406,9 +2328,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2507,9 +2427,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn GetOutput(
         &mut self,
         outputs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2518,10 +2436,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_GeneratedOutput,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneratedOutput,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2543,9 +2459,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn GetOutputGameObjects(
         &mut self,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2554,9 +2468,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2577,9 +2489,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn GetOutputGeoNodes(
         &mut self,
         outputGeoNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoNode>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2588,10 +2498,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_GeoNode,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeoNode,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2758,9 +2666,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2770,10 +2676,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_VolumeCache,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_VolumeCache,
                             >,
                         >,
                         0usize,
@@ -2787,9 +2691,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCache>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3002,9 +2904,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
         bSuccess: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         isNewBake: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3016,9 +2916,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                         (
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                             bool,
                         ),
@@ -3043,9 +2941,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
         bCookSuccess: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3056,9 +2952,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                         (
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -3081,9 +2975,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         &mut self,
         bCookSuccess: bool,
         outputObjects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3094,9 +2986,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                         (
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -3390,9 +3280,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
         >,
         bSuccess: bool,
         outputs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3406,9 +3294,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -3527,11 +3413,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn PopulateObjectInstanceInfos(
         &mut self,
         objInstanceInfos: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3540,10 +3422,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3862,14 +3742,10 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn RemoveDownstreamConnection(
         &mut self,
         receiver: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_3<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
-                bool,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
+            bool,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3879,16 +3755,12 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_HoudiniAsset,
-                                >,
-                                bool,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                    >,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_HoudiniAsset,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -6519,13 +6391,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Houdin
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     >,
 > for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -6533,13 +6405,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     >,
 > for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     > {
         unsafe { std::mem::transmute(self) }

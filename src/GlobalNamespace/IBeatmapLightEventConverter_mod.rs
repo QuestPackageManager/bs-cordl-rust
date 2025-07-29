@@ -42,9 +42,7 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
     pub fn ConvertBasicBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -59,10 +57,8 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventData,
                                 >,
                             >,
                             i32,
@@ -101,9 +97,7 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
     pub fn ConvertLightColorBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -124,10 +118,8 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventData,
                                 >,
                             >,
                             i32,
@@ -178,9 +170,7 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
     pub fn ConvertLightRotationBeatmapEvent(
         &mut self,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
         >,
         subtypeIdentifier: i32,
         _cordl_time: f32,
@@ -200,10 +190,8 @@ impl crate::GlobalNamespace::IBeatmapLightEventConverter {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventData,
                                 >,
                             >,
                             i32,

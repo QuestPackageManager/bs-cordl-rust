@@ -4,18 +4,12 @@
 pub struct MouseBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
-    pub _scrollBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
-        >,
-    >,
+    pub _scrollBindings: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<f32>>,
     pub _buttonBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::ValueTuple_3<
-                crate::HMUI::MouseBinder_ButtonType,
-                crate::HMUI::MouseBinder_MouseEventType,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
-            >,
+        crate::System::ValueTuple_3<
+            crate::HMUI::MouseBinder_ButtonType,
+            crate::HMUI::MouseBinder_MouseEventType,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
         >,
     >,
 }
@@ -95,16 +89,10 @@ impl crate::HMUI::MouseBinder {
     pub fn AddButtonBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_3<
-                        crate::HMUI::MouseBinder_ButtonType,
-                        crate::HMUI::MouseBinder_MouseEventType,
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction,
-                        >,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::HMUI::MouseBinder_ButtonType,
+                crate::HMUI::MouseBinder_MouseEventType,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,15 +102,11 @@ impl crate::HMUI::MouseBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::HMUI::MouseBinder_ButtonType,
+                                crate::HMUI::MouseBinder_MouseEventType,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_3<
-                                        crate::HMUI::MouseBinder_ButtonType,
-                                        crate::HMUI::MouseBinder_MouseEventType,
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::Events::UnityAction,
-                                        >,
-                                    >,
+                                    crate::UnityEngine::Events::UnityAction,
                                 >,
                             >,
                         >),
@@ -144,16 +128,14 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn AddScrollBinding(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
+        action: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<f32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddScrollBinding")
@@ -172,24 +154,14 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn AddScrollBindings(
         &mut self,
-        bindingData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
-            >,
-        >,
+        bindingData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Events::UnityAction_1<f32>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddScrollBindings")
@@ -321,16 +293,14 @@ impl crate::HMUI::MouseBinder {
     }
     pub fn RemoveScrollBinding(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction_1<f32>>,
+        action: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<f32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RemoveScrollBinding")

@@ -4,17 +4,13 @@
 pub struct PointSet {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Points_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         >,
     >,
     pub _Triangles_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
         >,
     >,
 }
@@ -86,10 +82,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn AddTriangles(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,10 +93,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -148,10 +140,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     }
     pub fn New(
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -194,10 +184,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn _ctor(
         &mut self,
         points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,10 +195,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -233,10 +219,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     > {
@@ -247,10 +231,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
                         >,
                         0usize,
@@ -264,10 +246,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -276,10 +256,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     > {
@@ -290,10 +268,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
                         >,
                         0usize,
@@ -307,10 +283,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -345,10 +319,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn set_Points(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -358,10 +330,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -383,10 +353,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
     pub fn set_Triangles(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -396,10 +364,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointSet {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -8,11 +8,9 @@ pub struct PrefabBindingFinalizer {
     >,
     pub _prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     pub _providerFactory: quest_hook::libil2cpp::Gc<
-        crate::System::Func_3<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+PrefabBindingFinalizer")]
@@ -53,9 +51,7 @@ impl crate::Zenject::PrefabBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         concreteTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -66,9 +62,7 @@ impl crate::Zenject::PrefabBindingFinalizer {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -120,11 +114,9 @@ impl crate::Zenject::PrefabBindingFinalizer {
         >,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         providerFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -170,11 +162,9 @@ impl crate::Zenject::PrefabBindingFinalizer {
         >,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         providerFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IPrefabInstantiator>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -189,13 +179,11 @@ impl crate::Zenject::PrefabBindingFinalizer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Zenject::IPrefabInstantiator,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::IPrefabInstantiator,
                                 >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

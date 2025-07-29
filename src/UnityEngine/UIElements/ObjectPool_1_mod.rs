@@ -3,11 +3,9 @@
 #[derive(Debug)]
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<T>,
-    >,
+    pub m_Stack: quest_hook::libil2cpp::Gc<T>,
     pub m_MaxSize: i32,
-    pub CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub CreateFunc: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ObjectPool_1")]
@@ -85,7 +83,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ObjectPool_
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        CreateFunc: quest_hook::libil2cpp::Gc<T>,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -147,7 +145,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ObjectPool_
     }
     pub fn _ctor(
         &mut self,
-        CreateFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        CreateFunc: quest_hook::libil2cpp::Gc<T>,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -159,7 +157,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ObjectPool_
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>, i32),
+                        (quest_hook::libil2cpp::Gc<T>, i32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

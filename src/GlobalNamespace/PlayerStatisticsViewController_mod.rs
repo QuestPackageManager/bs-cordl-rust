@@ -385,10 +385,8 @@ pub struct PlayerStatisticsViewController_StatsScopeData {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _playerOverallStatsDataFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
         >,
     >,
 }
@@ -493,10 +491,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         playerOverallStatsDataFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -510,10 +506,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
                                 >,
                             >,
                         ),
@@ -537,10 +531,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     > {
@@ -551,10 +543,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
                             >,
                         >,
                         0usize,
@@ -568,10 +558,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -606,10 +594,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     pub fn set_playerOverallStatsDataFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -619,10 +605,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

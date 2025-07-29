@@ -14,10 +14,8 @@ pub struct EndPointListener {
     >,
     pub secure: bool,
     pub unregistered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
-            quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
+        quest_hook::libil2cpp::Gc<crate::System::Net::HttpConnection>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Net+EndPointListener")]

@@ -40,8 +40,8 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::Observab
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+Observable")]
 impl crate::UnityEngine::InputSystem::Utilities::Observable {
     pub fn Call<TValue>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
+        action: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >
@@ -55,10 +55,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TValue>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<TValue>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
                         2usize,
@@ -77,8 +75,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         Ok(__cordl_ret.into())
     }
     pub fn CallOnce<TValue>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
+        action: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >
@@ -92,10 +90,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TValue>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<TValue>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
                         2usize,
@@ -113,17 +109,13 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ForDevice_IObservable_1_1<TDevice>(
+    pub fn ForDevice_Gc1<TDevice>(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     >
     where
@@ -136,14 +128,10 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::IObservable_1<
-                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::IObservable_1<
-                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >,
                         1usize,
                     >("ForDevice")
@@ -156,24 +144,18 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
     pub fn ForDevice_InputDevice0(
         source: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
         device: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -183,18 +165,14 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<
-                                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::InputSystem::InputDevice,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::IObservable_1<
-                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >,
                         2usize,
                     >("ForDevice")
@@ -207,18 +185,14 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
         > = unsafe { cordl_method_info.invoke_unchecked((), (source, device))? };
         Ok(__cordl_ret.into())
     }
     pub fn Select<TSource, TResult>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-        filter: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
-    >
+        source: quest_hook::libil2cpp::Gc<TSource>,
+        filter: quest_hook::libil2cpp::Gc<TSource, TResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -231,14 +205,10 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TSource, TResult>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TSource>,
+                            quest_hook::libil2cpp::Gc<TSource, TResult>,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+                        quest_hook::libil2cpp::Gc<TResult>,
                         2usize,
                     >("Select")
                     .unwrap_or_else(|e| {
@@ -249,24 +219,15 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<TResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, filter))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, filter))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SelectMany<TSource, TResult>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-        filter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                TSource,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                >,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
-    >
+        source: quest_hook::libil2cpp::Gc<TSource>,
+        filter: quest_hook::libil2cpp::Gc<TSource, quest_hook::libil2cpp::Gc<TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -279,19 +240,13 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
+                            quest_hook::libil2cpp::Gc<TSource>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    TSource,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                                    >,
-                                >,
+                                TSource,
+                                quest_hook::libil2cpp::Gc<TResult>,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TResult>>,
+                        quest_hook::libil2cpp::Gc<TResult>,
                         2usize,
                     >("SelectMany")
                     .unwrap_or_else(|e| {
@@ -302,17 +257,15 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<TResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, filter))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, filter))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Take<TValue>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -322,13 +275,8 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TValue>,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+                        (quest_hook::libil2cpp::Gc<TValue>, i32),
+                        quest_hook::libil2cpp::Gc<TValue>,
                         2usize,
                     >("Take")
                     .unwrap_or_else(|e| {
@@ -339,17 +287,15 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, count))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Where<TValue>(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-    >
+        source: quest_hook::libil2cpp::Gc<TValue>,
+        predicate: quest_hook::libil2cpp::Gc<TValue, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -360,14 +306,10 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TValue>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TValue, bool>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<TValue, bool>,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
+                        quest_hook::libil2cpp::Gc<TValue>,
                         2usize,
                     >("Where")
                     .unwrap_or_else(|e| {
@@ -378,9 +320,9 @@ impl crate::UnityEngine::InputSystem::Utilities::Observable {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::IObservable_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, predicate))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, predicate))?
+        };
         Ok(__cordl_ret.into())
     }
 }

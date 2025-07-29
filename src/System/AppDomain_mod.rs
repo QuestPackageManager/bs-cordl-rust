@@ -17,10 +17,8 @@ pub struct AppDomain {
         crate::System::UnhandledExceptionEventHandler,
     >,
     pub FirstChanceException: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
         >,
     >,
     pub _domain_manager: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -32,9 +30,7 @@ pub struct AppDomain {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub compatibility_switch: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_System+AppDomain")]

@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvertVector3Processor {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<
-        crate::UnityEngine::Vector3,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub invertX: bool,
     pub invertY: bool,
     pub invertZ: bool,
@@ -32,9 +30,7 @@ for crate::UnityEngine::InputSystem::Processors::InvertVector3Processor {
 #[cfg(feature = "UnityEngine+InputSystem+Processors+InvertVector3Processor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::InvertVector3Processor {
-    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
-        crate::UnityEngine::Vector3,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

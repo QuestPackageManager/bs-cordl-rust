@@ -74,10 +74,8 @@ impl crate::GlobalNamespace::INoteMirrorable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         >,
     > {
@@ -88,10 +86,8 @@ impl crate::GlobalNamespace::INoteMirrorable {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
                             >,
                         >,
                         0usize,
@@ -105,10 +101,8 @@ impl crate::GlobalNamespace::INoteMirrorable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -446,13 +446,11 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::GameplayServerConfiguration,
-    >,
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayServerConfiguration>,
 > for crate::GlobalNamespace::GameplayServerConfiguration {
     fn as_ref(
         &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayServerConfiguration,
     > {
         todo!()
@@ -460,13 +458,11 @@ impl AsRef<
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::GameplayServerConfiguration,
-    >,
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayServerConfiguration>,
 > for crate::GlobalNamespace::GameplayServerConfiguration {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayServerConfiguration,
     > {
         todo!()
@@ -474,11 +470,11 @@ impl AsMut<
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::GlobalNamespace::GameplayServerConfiguration>,
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayServerConfiguration>,
 > for crate::GlobalNamespace::GameplayServerConfiguration {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayServerConfiguration,
     > {
         todo!()
@@ -486,11 +482,11 @@ impl AsRef<
 }
 #[cfg(feature = "GameplayServerConfiguration")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::GlobalNamespace::GameplayServerConfiguration>,
+    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayServerConfiguration>,
 > for crate::GlobalNamespace::GameplayServerConfiguration {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayServerConfiguration,
     > {
         todo!()

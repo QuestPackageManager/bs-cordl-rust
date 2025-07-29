@@ -7,9 +7,7 @@ pub struct HEU_Shelf {
     pub _shelfPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _defaultShelf: bool,
     pub _tools: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ShelfToolData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ShelfToolData>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_Shelf")]

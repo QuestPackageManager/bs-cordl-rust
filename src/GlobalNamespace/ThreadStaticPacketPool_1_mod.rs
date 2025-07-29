@@ -57,9 +57,7 @@ for crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::ThreadStaticPacketPool_1<T> {
-    pub fn get_pool() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PacketPool_1<T>>,
-    >
+    pub fn get_pool() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -70,9 +68,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PacketPool_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_pool")
                     .unwrap_or_else(|e| {
@@ -83,9 +79,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketPool_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

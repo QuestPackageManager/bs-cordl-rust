@@ -24,9 +24,7 @@ pub struct TMP_Settings {
     pub m_autoSizeTextContainer: bool,
     pub m_IsTextObjectScaleStatic: bool,
     pub m_fallbackFontAssets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >,
     pub m_matchMaterialPreset: bool,
     pub m_defaultSpriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
@@ -87,20 +85,14 @@ impl crate::TMPro::TMP_Settings {
     pub type LineBreakingTable = crate::TMPro::TMP_Settings_LineBreakingTable;
     pub fn GetCharacters(
         file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, char>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, char>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<i32, char>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32, char>,
                         1usize,
                     >("GetCharacters")
                     .unwrap_or_else(|e| {
@@ -111,9 +103,9 @@ impl crate::TMPro::TMP_Settings {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, char>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (file))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, char> = unsafe {
+            cordl_method_info.invoke_unchecked((), (file))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFontAsset() -> quest_hook::libil2cpp::Result<
@@ -694,11 +686,7 @@ impl crate::TMPro::TMP_Settings {
         Ok(__cordl_ret.into())
     }
     pub fn get_fallbackFontAssets() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -707,9 +695,7 @@ impl crate::TMPro::TMP_Settings {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                         >,
                         0usize,
                     >("get_fallbackFontAssets")
@@ -722,9 +708,7 @@ impl crate::TMPro::TMP_Settings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -1157,12 +1141,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
 #[derive(Debug)]
 pub struct TMP_Settings_LineBreakingTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub leadingCharacters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, char>,
-    >,
-    pub followingCharacters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, char>,
-    >,
+    pub leadingCharacters: quest_hook::libil2cpp::Gc<i32, char>,
+    pub followingCharacters: quest_hook::libil2cpp::Gc<i32, char>,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Settings+LineBreakingTable")]
 unsafe impl quest_hook::libil2cpp::Type

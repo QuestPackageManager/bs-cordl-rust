@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithPidList {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PidList>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::MessageWith
 }
 #[cfg(feature = "Oculus+Platform+MessageWithPidList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithPidList {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PidList>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

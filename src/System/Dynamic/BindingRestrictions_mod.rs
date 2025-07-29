@@ -354,14 +354,10 @@ for crate::System::Dynamic::BindingRestrictions_BindingRestrictionsProxy {
 pub struct BindingRestrictions_TestBuilder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unique: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Dynamic::BindingRestrictions>,
     >,
     pub _tests: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
-        >,
+        crate::System::Dynamic::TestBuilder_BindingRestrictions_AndNode,
     >,
 }
 #[cfg(feature = "cordl_class_System+Dynamic+BindingRestrictions+TestBuilder")]

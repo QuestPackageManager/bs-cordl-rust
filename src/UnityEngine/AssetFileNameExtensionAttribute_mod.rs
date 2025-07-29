@@ -7,9 +7,7 @@ pub struct AssetFileNameExtensionAttribute {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _otherExtensions_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+AssetFileNameExtensionAttribute")]

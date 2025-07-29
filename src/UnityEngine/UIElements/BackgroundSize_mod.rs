@@ -495,22 +495,20 @@ impl crate::UnityEngine::UIElements::BackgroundSize {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundSize")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundSize>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize>>
 for crate::UnityEngine::UIElements::BackgroundSize {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundSize> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundSize")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundSize>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize>>
 for crate::UnityEngine::UIElements::BackgroundSize {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::BackgroundSize,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize> {
         todo!()
     }
 }

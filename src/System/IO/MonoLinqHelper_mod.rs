@@ -39,9 +39,7 @@ impl std::ops::DerefMut for crate::System::IO::MonoLinqHelper {
 #[cfg(feature = "System+IO+MonoLinqHelper")]
 impl crate::System::IO::MonoLinqHelper {
     pub fn ToArray<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -54,9 +52,7 @@ impl crate::System::IO::MonoLinqHelper {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,
                     >("ToArray")

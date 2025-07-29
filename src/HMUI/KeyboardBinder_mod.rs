@@ -6,25 +6,17 @@ pub struct KeyboardBinder {
     pub _enabled_k__BackingField: bool,
     pub _shouldClearBindings: bool,
     pub _newBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::ValueTuple_3<
-                crate::UnityEngine::KeyCode,
-                crate::HMUI::KeyboardBinder_KeyBindingType,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Events::UnityAction_1<bool>,
-                >,
-            >,
+        crate::System::ValueTuple_3<
+            crate::UnityEngine::KeyCode,
+            crate::HMUI::KeyboardBinder_KeyBindingType,
+            quest_hook::libil2cpp::Gc<bool>,
         >,
     >,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::ValueTuple_3<
-                crate::UnityEngine::KeyCode,
-                crate::HMUI::KeyboardBinder_KeyBindingType,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Events::UnityAction_1<bool>,
-                >,
-            >,
+        crate::System::ValueTuple_3<
+            crate::UnityEngine::KeyCode,
+            crate::HMUI::KeyboardBinder_KeyBindingType,
+            quest_hook::libil2cpp::Gc<bool>,
         >,
     >,
 }
@@ -68,7 +60,7 @@ impl crate::HMUI::KeyboardBinder {
         &mut self,
         keyCode: crate::UnityEngine::KeyCode,
         keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        action: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -78,7 +70,7 @@ impl crate::HMUI::KeyboardBinder {
                         (
                             crate::UnityEngine::KeyCode,
                             crate::HMUI::KeyboardBinder_KeyBindingType,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                            quest_hook::libil2cpp::Gc<bool>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -99,14 +91,10 @@ impl crate::HMUI::KeyboardBinder {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_3<
-                        crate::UnityEngine::KeyCode,
-                        crate::HMUI::KeyboardBinder_KeyBindingType,
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                quest_hook::libil2cpp::Gc<bool>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -116,14 +104,10 @@ impl crate::HMUI::KeyboardBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_3<
-                                        crate::UnityEngine::KeyCode,
-                                        crate::HMUI::KeyboardBinder_KeyBindingType,
-                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                                    >,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::KeyCode,
+                                crate::HMUI::KeyboardBinder_KeyBindingType,
+                                quest_hook::libil2cpp::Gc<bool>,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -220,27 +204,12 @@ impl crate::HMUI::KeyboardBinder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_KeyCode_KeyboardBinder_KeyBindingType_Action_1_1(
-        keycode: crate::UnityEngine::KeyCode,
-        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (keycode, keyBindingType, action))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_List_1_2(
+    pub fn New_Gc2(
         bindingData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_3<
-                        crate::UnityEngine::KeyCode,
-                        crate::HMUI::KeyboardBinder_KeyBindingType,
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                quest_hook::libil2cpp::Gc<bool>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -248,6 +217,17 @@ impl crate::HMUI::KeyboardBinder {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindingData))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_KeyCode_KeyboardBinder_KeyBindingType_Gc1(
+        keycode: crate::UnityEngine::KeyCode,
+        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
+        action: quest_hook::libil2cpp::Gc<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (keycode, keyBindingType, action))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -271,49 +251,13 @@ impl crate::HMUI::KeyboardBinder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_KeyCode_KeyboardBinder_KeyBindingType_Action_1_1(
-        &mut self,
-        keycode: crate::UnityEngine::KeyCode,
-        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            crate::UnityEngine::KeyCode,
-                            crate::HMUI::KeyboardBinder_KeyBindingType,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keycode, keyBindingType, action))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_List_1_2(
+    pub fn _ctor_Gc2(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_3<
-                        crate::UnityEngine::KeyCode,
-                        crate::HMUI::KeyboardBinder_KeyBindingType,
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::KeyCode,
+                crate::HMUI::KeyboardBinder_KeyBindingType,
+                quest_hook::libil2cpp::Gc<bool>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -323,14 +267,10 @@ impl crate::HMUI::KeyboardBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_3<
-                                        crate::UnityEngine::KeyCode,
-                                        crate::HMUI::KeyboardBinder_KeyBindingType,
-                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-                                    >,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::KeyCode,
+                                crate::HMUI::KeyboardBinder_KeyBindingType,
+                                quest_hook::libil2cpp::Gc<bool>,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -346,6 +286,38 @@ impl crate::HMUI::KeyboardBinder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (bindingData))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_KeyCode_KeyboardBinder_KeyBindingType_Gc1(
+        &mut self,
+        keycode: crate::UnityEngine::KeyCode,
+        keyBindingType: crate::HMUI::KeyboardBinder_KeyBindingType,
+        action: quest_hook::libil2cpp::Gc<bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::KeyCode,
+                            crate::HMUI::KeyboardBinder_KeyBindingType,
+                            quest_hook::libil2cpp::Gc<bool>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keycode, keyBindingType, action))?
         };
         Ok(__cordl_ret.into())
     }

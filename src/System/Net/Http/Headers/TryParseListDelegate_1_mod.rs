@@ -64,9 +64,7 @@ impl<
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minimalCount: i32,
-        result: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-        >,
+        result: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -82,11 +80,7 @@ impl<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<T>,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
                         ),
                         bool,
                         3usize,

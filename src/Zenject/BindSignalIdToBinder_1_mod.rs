@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindSignalIdToBinder_1<TSignal: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::BindSignalToBinder_1<TSignal>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TSignal>,
     __cordl_phantom_TSignal: std::marker::PhantomData<TSignal>,
 }
 #[cfg(feature = "cordl_class_Zenject+BindSignalIdToBinder_1")]
@@ -44,7 +44,7 @@ for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
 #[cfg(feature = "Zenject+BindSignalIdToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
-    type Target = crate::Zenject::BindSignalToBinder_1<TSignal>;
+    type Target = quest_hook::libil2cpp::Gc<TSignal>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,9 +77,7 @@ impl<
     pub fn WithId(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindSignalToBinder_1<TSignal>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TSignal>>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -90,9 +88,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::BindSignalToBinder_1<TSignal>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TSignal>,
                         1usize,
                     >("WithId")
                     .unwrap_or_else(|e| {
@@ -103,9 +99,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalToBinder_1<TSignal>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TSignal> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (identifier))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(

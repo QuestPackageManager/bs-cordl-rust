@@ -31,14 +31,10 @@ pub struct NoteCutSoundEffectManager {
     >,
     pub _handleWrongSaberTypeAsGood_k__BackingField: bool,
     pub _randomLongCutSoundPicker: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RandomObjectPicker_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     >,
     pub _randomShortCutSoundPicker: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RandomObjectPicker_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     >,
     pub _prevNoteATime: f32,
     pub _prevNoteBTime: f32,
@@ -51,9 +47,7 @@ pub struct NoteCutSoundEffectManager {
     pub _beatAlignOffset: f32,
     pub _useTestAudioClips: bool,
     pub _noteCutSoundEffectPoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
     >,
 }
 #[cfg(feature = "cordl_class_NoteCutSoundEffectManager")]

@@ -450,7 +450,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataRowCollectio
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRowCollection_DataRowTree {
-    __cordl_parent: crate::System::Data::RBTree_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     >,
 }
@@ -476,7 +476,7 @@ for crate::System::Data::DataRowCollection_DataRowTree {
 }
 #[cfg(feature = "System+Data+DataRowCollection+DataRowTree")]
 impl std::ops::Deref for crate::System::Data::DataRowCollection_DataRowTree {
-    type Target = crate::System::Data::RBTree_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

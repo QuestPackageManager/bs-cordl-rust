@@ -52,9 +52,7 @@ impl crate::GlobalNamespace::ProcessPort {
         targetPort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -64,10 +62,8 @@ impl crate::GlobalNamespace::ProcessPort {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ProcessPort,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ProcessPort,
                             >,
                         >,
                         1usize,
@@ -81,9 +77,7 @@ impl crate::GlobalNamespace::ProcessPort {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProcessPort>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (targetPort))? };
         Ok(__cordl_ret.into())
     }

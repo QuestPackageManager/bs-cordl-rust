@@ -7,19 +7,13 @@ pub struct MultiColumnCollectionHeader {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub m_SortingEnabled: bool,
     pub m_SortedColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::SortColumnDescription,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescription>,
     >,
     pub m_SortDescriptions: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::SortColumnDescriptions,
     >,
     pub m_OldSortedColumnStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState,
-        >,
+        crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_SortedColumnState,
     >,
     pub m_SortingUpdatesTemporarilyDisabled: bool,
     pub m_ViewState: quest_hook::libil2cpp::Gc<
@@ -28,11 +22,9 @@ pub struct MultiColumnCollectionHeader {
     pub m_ApplyingViewState: bool,
     pub m_DoLayoutScheduled: bool,
     pub _columnDataMap_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
-            >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
         >,
     >,
     pub _columnLayout_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -47,15 +39,13 @@ pub struct MultiColumnCollectionHeader {
     pub _columns_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Columns,
     >,
-    pub columnResized: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
+    pub columnResized: quest_hook::libil2cpp::Gc<i32, f32>,
     pub columnSortingChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub contextMenuPopulateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-            >,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
         >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub viewDataRestored: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
@@ -183,10 +173,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -845,10 +833,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -865,10 +851,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                                 crate::UnityEngine::UIElements::SortColumnDescriptions,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::SortColumnDescription,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::SortColumnDescription,
                                 >,
                             >,
                         ),
@@ -891,14 +875,14 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     }
     pub fn add_columnResized(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
+        value: quest_hook::libil2cpp::Gc<i32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
+                        (quest_hook::libil2cpp::Gc<i32, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_columnResized")
@@ -944,12 +928,10 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     pub fn add_contextMenuPopulateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                >,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
             >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -958,13 +940,11 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Column,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Column,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1042,11 +1022,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
-                >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
             >,
         >,
     > {
@@ -1057,13 +1035,11 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Column,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Column,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
                             >,
                         >,
                         0usize,
@@ -1077,11 +1053,9 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
-                >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1223,10 +1197,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     > {
@@ -1237,10 +1209,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::SortColumnDescription,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::SortColumnDescription,
                             >,
                         >,
                         0usize,
@@ -1254,10 +1224,8 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1281,14 +1249,14 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     }
     pub fn remove_columnResized(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
+        value: quest_hook::libil2cpp::Gc<i32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
+                        (quest_hook::libil2cpp::Gc<i32, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_columnResized")
@@ -1334,12 +1302,10 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     pub fn remove_contextMenuPopulateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                >,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
             >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1348,13 +1314,11 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Column,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Column,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1870,16 +1834,10 @@ pub struct MultiColumnCollectionHeader_ViewState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HasPersistedData: bool,
     pub m_SortDescriptions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::SortColumnDescription,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescription>,
     >,
     pub m_OrderedColumnStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState,
-        >,
+        crate::UnityEngine::UIElements::Internal::ViewState_MultiColumnCollectionHeader_ColumnState,
     >,
 }
 #[cfg(

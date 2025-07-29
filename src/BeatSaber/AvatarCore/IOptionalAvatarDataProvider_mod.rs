@@ -68,7 +68,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn add_dataDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -77,9 +77,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -105,12 +103,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn get_currentData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<u32, crate::BeatSaber::AvatarCore::OptionalAvatarData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -119,10 +112,8 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                u32,
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
+                            u32,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >,
                         0usize,
                     >("get_currentData")
@@ -135,10 +126,8 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
+            u32,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -162,7 +151,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
     pub fn remove_dataDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::OptionalAvatarData>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -171,9 +160,7 @@ impl crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -11,10 +11,8 @@ pub struct JsonSchemaGenerator {
         crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     >,
     pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Schema::JsonSchemaGenerator_TypeSchema,
         >,
     >,
     pub _currentSchema: quest_hook::libil2cpp::Gc<

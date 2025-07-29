@@ -9,10 +9,8 @@ pub struct FileBrowserTableView {
     >,
     pub _cellHeight: f32,
     pub didSelectRow: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
     >,
     pub _items: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -330,10 +328,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
     pub fn add_didSelectRow(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -342,13 +338,11 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FileBrowserTableView,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FileBrowserItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FileBrowserTableView,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FileBrowserItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -370,10 +364,8 @@ impl crate::GlobalNamespace::FileBrowserTableView {
     pub fn remove_didSelectRow(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserTableView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileBrowserItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -382,13 +374,11 @@ impl crate::GlobalNamespace::FileBrowserTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FileBrowserTableView,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FileBrowserItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FileBrowserTableView,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FileBrowserItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

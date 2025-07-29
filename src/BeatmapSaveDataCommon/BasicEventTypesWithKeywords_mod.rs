@@ -4,10 +4,8 @@
 pub struct BasicEventTypesWithKeywords {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub d: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
         >,
     >,
 }
@@ -52,10 +50,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
     pub type BasicEventTypesForKeyword = crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword;
     pub fn New(
         data: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -68,10 +64,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
     pub fn _ctor(
         &mut self,
         data: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,10 +75,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -107,10 +99,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
             >,
         >,
     > {
@@ -121,10 +111,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
                             >,
                         >,
                         0usize,
@@ -138,10 +126,8 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -165,11 +151,7 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
 pub struct BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub k: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub e: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
-        >,
-    >,
+    pub e: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::BeatmapEventType>,
 }
 #[cfg(
     feature = "cordl_class_BeatmapSaveDataCommon+BasicEventTypesWithKeywords+BasicEventTypesForKeyword"
@@ -219,9 +201,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
     pub fn New(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         eventTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -234,9 +214,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
         &mut self,
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         eventTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -249,9 +227,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::BeatmapSaveDataCommon::BeatmapEventType,
-                                >,
+                                crate::BeatmapSaveDataCommon::BeatmapEventType,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -273,11 +249,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
     pub fn get_eventTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::BeatmapEventType>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -286,9 +258,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::BeatmapSaveDataCommon::BeatmapEventType,
-                            >,
+                            crate::BeatmapSaveDataCommon::BeatmapEventType,
                         >,
                         0usize,
                     >("get_eventTypes")
@@ -301,9 +271,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

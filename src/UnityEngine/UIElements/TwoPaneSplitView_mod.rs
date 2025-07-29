@@ -514,7 +514,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TwoPaneSplitView_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TwoPaneSplitView>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits,
@@ -543,7 +543,7 @@ for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+TwoPaneSplitView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TwoPaneSplitView>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::TwoPaneSplitView_UxmlTraits,
@@ -613,9 +613,7 @@ pub struct TwoPaneSplitView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
     pub m_Orientation: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation,
-        >,
+        crate::UnityEngine::UIElements::TwoPaneSplitViewOrientation,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TwoPaneSplitView+UxmlTraits")]

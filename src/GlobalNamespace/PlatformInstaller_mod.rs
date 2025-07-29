@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInstaller {
-    __cordl_parent: crate::Zenject::Installer_3<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
@@ -35,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInst
 }
 #[cfg(feature = "PlatformInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
-    type Target = crate::Zenject::Installer_3<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,

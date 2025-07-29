@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Control {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     pub _x_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
@@ -34,9 +32,7 @@ for crate::UnityEngine::InputSystem::Controls::Vector2Control {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+Vector2Control")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::Vector2Control {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

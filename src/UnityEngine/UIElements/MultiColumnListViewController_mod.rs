@@ -191,10 +191,8 @@ impl crate::UnityEngine::UIElements::MultiColumnListViewController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -295,10 +293,8 @@ impl crate::UnityEngine::UIElements::MultiColumnListViewController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -315,10 +311,8 @@ impl crate::UnityEngine::UIElements::MultiColumnListViewController {
                                 crate::UnityEngine::UIElements::SortColumnDescriptions,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::SortColumnDescription,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::SortColumnDescription,
                                 >,
                             >,
                         ),

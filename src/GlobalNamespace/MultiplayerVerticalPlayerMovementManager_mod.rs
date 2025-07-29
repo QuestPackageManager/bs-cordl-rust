@@ -22,19 +22,15 @@ pub struct MultiplayerVerticalPlayerMovementManager {
         crate::GlobalNamespace::MultiplayerController,
     >,
     pub _reusablePlayersList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
         >,
     >,
     pub _currentSpeedsDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
-            >,
-            f32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
         >,
+        f32,
     >,
     pub _lastFrameBaseScore: f32,
 }

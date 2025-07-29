@@ -112,13 +112,13 @@ for crate::HoudiniEngineUnity::HEU_DetailProperties {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_DetailProperties")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     >,
 > for crate::HoudiniEngineUnity::HEU_DetailProperties {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -126,13 +126,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_DetailProperties")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     >,
 > for crate::HoudiniEngineUnity::HEU_DetailProperties {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_DetailProperties>,
     > {
         unsafe { std::mem::transmute(self) }

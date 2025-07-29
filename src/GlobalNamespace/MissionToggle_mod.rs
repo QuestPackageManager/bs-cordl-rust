@@ -17,9 +17,7 @@ pub struct MissionToggle {
     pub _invertColor: crate::UnityEngine::Color,
     pub _highlightColor: crate::UnityEngine::Color,
     pub selectionDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
     >,
     pub _selected: bool,
     pub _highlighted: bool,
@@ -363,9 +361,7 @@ impl crate::GlobalNamespace::MissionToggle {
     pub fn add_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -374,10 +370,8 @@ impl crate::GlobalNamespace::MissionToggle {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionToggle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionToggle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -450,9 +444,7 @@ impl crate::GlobalNamespace::MissionToggle {
     pub fn remove_selectionDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionToggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -461,10 +453,8 @@ impl crate::GlobalNamespace::MissionToggle {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionToggle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionToggle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

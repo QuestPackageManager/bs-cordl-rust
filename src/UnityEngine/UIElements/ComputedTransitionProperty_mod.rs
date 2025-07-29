@@ -5,7 +5,7 @@ pub struct ComputedTransitionProperty {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub durationMs: i32,
     pub delayMs: i32,
-    pub easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    pub easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ComputedTransitionProperty")]
 unsafe impl quest_hook::libil2cpp::Type

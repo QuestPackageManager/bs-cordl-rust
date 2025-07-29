@@ -12,25 +12,17 @@ pub struct VRInputModule {
     >,
     pub _useMouseForPressInput_k__BackingField: bool,
     pub onProcessMousePressEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub pointerDidClickEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub _pointerData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub _componentList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     >,
     pub _mouseState: quest_hook::libil2cpp::Gc<crate::VRUIControls::MouseState>,
 }
@@ -556,9 +548,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn add_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -567,9 +557,7 @@ impl crate::VRUIControls::VRInputModule {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -590,11 +578,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn add_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -603,10 +587,8 @@ impl crate::VRUIControls::VRInputModule {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -672,9 +654,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn remove_onProcessMousePressEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -683,9 +663,7 @@ impl crate::VRUIControls::VRInputModule {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -706,11 +684,7 @@ impl crate::VRUIControls::VRInputModule {
     pub fn remove_pointerDidClickEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -719,10 +693,8 @@ impl crate::VRUIControls::VRInputModule {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

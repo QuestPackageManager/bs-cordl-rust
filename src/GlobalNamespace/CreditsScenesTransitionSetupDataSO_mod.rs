@@ -4,10 +4,8 @@
 pub struct CreditsScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
         >,
     >,
 }
@@ -98,10 +96,8 @@ impl crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,10 +107,8 @@ impl crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -136,10 +130,8 @@ impl crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,10 +141,8 @@ impl crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -4,9 +4,7 @@
 pub struct SpecialEventsFilter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventTypesToFilter: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
-        >,
+        crate::BeatmapSaveDataCommon::BeatmapEventType,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoaderVersion4+SpecialEventsFilter")]

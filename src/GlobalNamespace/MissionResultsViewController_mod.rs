@@ -29,18 +29,10 @@ pub struct MissionResultsViewController {
         crate::GlobalNamespace::SongPreviewPlayer,
     >,
     pub continueButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionResultsViewController,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionResultsViewController>,
     >,
     pub retryButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionResultsViewController,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionResultsViewController>,
     >,
     pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
     pub _missionCompletionResults: quest_hook::libil2cpp::Gc<
@@ -318,10 +310,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn add_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionResultsViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -331,10 +321,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -356,10 +344,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn add_retryButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionResultsViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -369,10 +355,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -394,10 +378,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn remove_continueButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionResultsViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -407,10 +389,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -432,10 +412,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
     pub fn remove_retryButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionResultsViewController,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionResultsViewController,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -445,10 +423,8 @@ impl crate::GlobalNamespace::MissionResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionResultsViewController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionResultsViewController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

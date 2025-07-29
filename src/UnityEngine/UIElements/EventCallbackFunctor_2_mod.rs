@@ -6,9 +6,7 @@ pub struct EventCallbackFunctor_2<
     TCallbackArgs: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    pub m_Callback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-    >,
+    pub m_Callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
     pub m_EventTypeId: i64,
     pub _userArgs_k__BackingField: TCallbackArgs,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
@@ -156,9 +154,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
@@ -177,9 +173,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
@@ -196,12 +190,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_2<
-                                    TEventType,
-                                    TCallbackArgs,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
                             TCallbackArgs,
                             crate::UnityEngine::UIElements::CallbackPhase,
                             crate::UnityEngine::UIElements::InvokePolicy,

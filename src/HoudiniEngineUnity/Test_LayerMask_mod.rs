@@ -114,13 +114,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Layer
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_LayerMask")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LayerMask>,
     >,
 > for crate::HoudiniEngineUnity::Test_LayerMask {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LayerMask>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -128,13 +128,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_LayerMask")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LayerMask>,
     >,
 > for crate::HoudiniEngineUnity::Test_LayerMask {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_LayerMask>,
     > {
         unsafe { std::mem::transmute(self) }

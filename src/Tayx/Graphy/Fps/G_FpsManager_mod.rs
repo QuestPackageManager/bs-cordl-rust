@@ -5,14 +5,10 @@ pub struct G_FpsManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_fpsGraphGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_nonBasicTextGameObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_backgroundImages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     >,
     pub m_graphyManager: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     pub m_fpsGraph: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsGraph>,
@@ -20,9 +16,7 @@ pub struct G_FpsManager {
     pub m_fpsText: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsText>,
     pub m_rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_childrenGameObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
     pub m_previousModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,
     pub m_currentModuleState: crate::Tayx::Graphy::GraphyManager_ModuleState,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizedTextMeshProUGUI {
-    __cordl_parent: crate::BGLib::Polyglot::LocalizedTextComponent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::BGLib::Polyglot::LocalizedTextMeshProUGUI {
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizedTextMeshProUGUI")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizedTextMeshProUGUI {
-    type Target = crate::BGLib::Polyglot::LocalizedTextComponent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

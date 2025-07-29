@@ -42,11 +42,9 @@ impl crate::UnityEngine::Mesh {
     pub type MeshData = crate::UnityEngine::Mesh_MeshData;
     #[cfg(feature = "UnityEngine+Mesh+MeshDataArray")]
     pub type MeshDataArray = crate::UnityEngine::Mesh_MeshDataArray;
-    pub fn AcquireReadOnlyMeshData_Il2CppArray1(
+    pub fn AcquireReadOnlyMeshData_Gc2(
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Mesh_MeshDataArray> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -55,9 +53,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                         >),
                         crate::UnityEngine::Mesh_MeshDataArray,
                         1usize,
@@ -75,9 +71,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AcquireReadOnlyMeshData_List_1_2(
+    pub fn AcquireReadOnlyMeshData_Il2CppArray1(
         meshes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
             >,
         >,
@@ -88,7 +84,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                             >,
                         >),
@@ -218,12 +214,10 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyAndDisposeWritableMeshData_Il2CppArray1(
+    pub fn ApplyAndDisposeWritableMeshData_Gc2(
         data: crate::UnityEngine::Mesh_MeshDataArray,
         meshes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         >,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -235,9 +229,7 @@ impl crate::UnityEngine::Mesh {
                         (
                             crate::UnityEngine::Mesh_MeshDataArray,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                             >,
                             crate::UnityEngine::Rendering::MeshUpdateFlags,
                         ),
@@ -257,10 +249,10 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyAndDisposeWritableMeshData_List_1_2(
+    pub fn ApplyAndDisposeWritableMeshData_Il2CppArray1(
         data: crate::UnityEngine::Mesh_MeshDataArray,
         meshes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
             >,
         >,
@@ -274,7 +266,7 @@ impl crate::UnityEngine::Mesh {
                         (
                             crate::UnityEngine::Mesh_MeshDataArray,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                                 >,
                             >,
@@ -1101,22 +1093,16 @@ impl crate::UnityEngine::Mesh {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetBindposes_List_1_1(
+    pub fn GetBindposes_Gc1(
         &mut self,
-        bindposes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
-        >,
+        bindposes: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Matrix4x4,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetBindposes")
@@ -1534,20 +1520,14 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetBoneWeights(
         &mut self,
-        boneWeights: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::BoneWeight>,
-        >,
+        boneWeights: quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::BoneWeight,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetBoneWeights")
@@ -1683,22 +1663,16 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetColors_List_1_0(
+    pub fn GetColors_Gc0(
         &mut self,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-        >,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetColors")
@@ -1715,22 +1689,16 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetColors_List_1_1(
+    pub fn GetColors_Gc1(
         &mut self,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Color32,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetColors")
@@ -1992,11 +1960,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetIndices_List_1_i32_2(
+    pub fn GetIndices_Gc_i32_2(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2004,12 +1970,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, i32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetIndices")
@@ -2026,11 +1987,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetIndices_List_1_i32__cordl_bool3(
+    pub fn GetIndices_Gc_i32__cordl_bool3(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2039,13 +1998,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, i32, bool),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("GetIndices")
@@ -2063,11 +2016,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetIndices_List_1_i32__cordl_bool4(
+    pub fn GetIndices_Gc_i32__cordl_bool4(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<u16>,
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2076,13 +2027,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::Gc<u16>, i32, bool),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("GetIndices")
@@ -2163,11 +2108,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetListForChannel_List_1_i32_VertexAttribute_i32_0<T>(
+    pub fn GetListForChannel_Gc_i32_VertexAttribute_i32_0<T>(
         &mut self,
-        buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        buffer: quest_hook::libil2cpp::Gc<T>,
         capacity: i32,
         channel: crate::UnityEngine::Rendering::VertexAttribute,
         dim: i32,
@@ -2182,9 +2125,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             crate::UnityEngine::Rendering::VertexAttribute,
                             i32,
@@ -2207,9 +2148,7 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetListForChannel_VertexAttributeFormat1<T>(
         &mut self,
-        buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        buffer: quest_hook::libil2cpp::Gc<T>,
         capacity: i32,
         channel: crate::UnityEngine::Rendering::VertexAttribute,
         dim: i32,
@@ -2225,9 +2164,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             crate::UnityEngine::Rendering::VertexAttribute,
                             i32,
@@ -2303,20 +2240,14 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetNormals(
         &mut self,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetNormals")
@@ -2397,20 +2328,14 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetTangents(
         &mut self,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetTangents")
@@ -2627,11 +2552,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTriangles_List_1_i32_2(
+    pub fn GetTriangles_Gc_i32_2(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
         submesh: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2639,12 +2562,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, i32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetTriangles")
@@ -2661,11 +2579,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTriangles_List_1_i32__cordl_bool3(
+    pub fn GetTriangles_Gc_i32__cordl_bool3(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2674,13 +2590,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, i32, bool),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("GetTriangles")
@@ -2698,11 +2608,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTriangles_List_1_i32__cordl_bool4(
+    pub fn GetTriangles_Gc_i32__cordl_bool4(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
+        triangles: quest_hook::libil2cpp::Gc<u16>,
         submesh: i32,
         applyBaseVertex: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2711,13 +2619,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::Gc<u16>, i32, bool),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("GetTriangles")
@@ -2848,7 +2750,7 @@ impl crate::UnityEngine::Mesh {
     pub fn GetUVsImpl<T>(
         &mut self,
         uvIndex: i32,
-        uvs: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        uvs: quest_hook::libil2cpp::Gc<T>,
         dim: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2860,13 +2762,7 @@ impl crate::UnityEngine::Mesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            i32,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<T>, i32),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("GetUVsImpl")
@@ -2883,26 +2779,17 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUVs_i32_List_1_0(
+    pub fn GetUVs_i32_Gc0(
         &mut self,
         channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
-        >,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetUVs")
@@ -2919,26 +2806,17 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUVs_i32_List_1_1(
+    pub fn GetUVs_i32_Gc1(
         &mut self,
         channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetUVs")
@@ -2955,26 +2833,17 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUVs_i32_List_1_2(
+    pub fn GetUVs_i32_Gc2(
         &mut self,
         channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetUVs")
@@ -3238,9 +3107,7 @@ impl crate::UnityEngine::Mesh {
     pub fn GetVertexAttributesList(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
-            >,
+            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3249,9 +3116,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
-                            >,
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
                         >),
                         i32,
                         1usize,
@@ -3306,12 +3171,10 @@ impl crate::UnityEngine::Mesh {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVertexAttributes_Il2CppArray1(
+    pub fn GetVertexAttributes_Gc2(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
-            >,
+            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3320,9 +3183,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::UnityEngine::Rendering::VertexAttributeDescriptor,
-                            >,
+                            crate::UnityEngine::Rendering::VertexAttributeDescriptor,
                         >),
                         i32,
                         1usize,
@@ -3340,10 +3201,10 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVertexAttributes_List_1_2(
+    pub fn GetVertexAttributes_Il2CppArray1(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Il2CppArray<
                 crate::UnityEngine::Rendering::VertexAttributeDescriptor,
             >,
         >,
@@ -3354,7 +3215,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
+                            quest_hook::libil2cpp::Il2CppArray<
                                 crate::UnityEngine::Rendering::VertexAttributeDescriptor,
                             >,
                         >),
@@ -3454,20 +3315,14 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetVertices(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetVertices")
@@ -4651,6 +4506,186 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetColors_Gc0(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColors_Gc6(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColors_Gc_i32_i32_1(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>, i32, i32),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColors_Gc_i32_i32_7(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColors_Gc_i32_i32_MeshUpdateFlags2(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColors_Gc_i32_i32_MeshUpdateFlags8(
+        &mut self,
+        inColors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetColors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColors", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inColors, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetColors_Il2CppArray3(
         &mut self,
         inColors: quest_hook::libil2cpp::Gc<
@@ -4869,226 +4904,6 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetColors_List_1_0(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetColors_List_1_6(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Color32,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetColors_List_1_i32_i32_1(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetColors_List_1_i32_i32_7(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetColors_List_1_i32_i32_MeshUpdateFlags2(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetColors_List_1_i32_i32_MeshUpdateFlags8(
-        &mut self,
-        inColors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetColors")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColors", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inColors, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetColors_NativeArray_1_12<T>(
         &mut self,
         inColors: crate::Unity::Collections::NativeArray_1<T>,
@@ -5189,9 +5004,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetIndexBufferData_Il2CppArray1<T>(
+    pub fn SetIndexBufferData_Gc2<T>(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        data: quest_hook::libil2cpp::Gc<T>,
         dataStart: i32,
         meshBufferStart: i32,
         count: i32,
@@ -5207,9 +5022,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             i32,
@@ -5235,9 +5048,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetIndexBufferData_List_1_2<T>(
+    pub fn SetIndexBufferData_Il2CppArray1<T>(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         dataStart: i32,
         meshBufferStart: i32,
         count: i32,
@@ -5254,7 +5067,7 @@ impl crate::UnityEngine::Mesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
+                                quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             i32,
                             i32,
@@ -5455,6 +5268,190 @@ impl crate::UnityEngine::Mesh {
                         indices,
                         arrayStart,
                         arraySize,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetIndices_Gc_MeshTopology__cordl_bool_i32_10(
+        &mut self,
+        indices: quest_hook::libil2cpp::Gc<u16>,
+        topology: crate::UnityEngine::MeshTopology,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<u16>,
+                            crate::UnityEngine::MeshTopology,
+                            i32,
+                            bool,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetIndices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIndices", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetIndices_Gc_MeshTopology__cordl_bool_i32_8(
+        &mut self,
+        indices: quest_hook::libil2cpp::Gc<i32>,
+        topology: crate::UnityEngine::MeshTopology,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<i32>,
+                            crate::UnityEngine::MeshTopology,
+                            i32,
+                            bool,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetIndices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIndices", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (indices, topology, submesh, calculateBounds, baseVertex),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetIndices_Gc_i32_MeshTopology_i32__cordl_bool_i32_11(
+        &mut self,
+        indices: quest_hook::libil2cpp::Gc<u16>,
+        indicesStart: i32,
+        indicesLength: i32,
+        topology: crate::UnityEngine::MeshTopology,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<u16>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::MeshTopology,
+                            i32,
+                            bool,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >("SetIndices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIndices", 7usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetIndices_Gc_i32_MeshTopology_i32__cordl_bool_i32_9(
+        &mut self,
+        indices: quest_hook::libil2cpp::Gc<i32>,
+        indicesStart: i32,
+        indicesLength: i32,
+        topology: crate::UnityEngine::MeshTopology,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<i32>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::MeshTopology,
+                            i32,
+                            bool,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >("SetIndices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetIndices", 7usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        indices,
+                        indicesStart,
+                        indicesLength,
+                        topology,
+                        submesh,
                         calculateBounds,
                         baseVertex,
                     ),
@@ -5725,206 +5722,6 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetIndices_List_1_MeshTopology__cordl_bool_i32_10(
-        &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
-        topology: crate::UnityEngine::MeshTopology,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetIndices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetIndices", 5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (indices, topology, submesh, calculateBounds, baseVertex),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetIndices_List_1_MeshTopology__cordl_bool_i32_8(
-        &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        topology: crate::UnityEngine::MeshTopology,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetIndices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetIndices", 5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (indices, topology, submesh, calculateBounds, baseVertex),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetIndices_List_1_i32_MeshTopology_i32__cordl_bool_i32_11(
-        &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
-        indicesStart: i32,
-        indicesLength: i32,
-        topology: crate::UnityEngine::MeshTopology,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetIndices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetIndices", 7usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indices,
-                        indicesStart,
-                        indicesLength,
-                        topology,
-                        submesh,
-                        calculateBounds,
-                        baseVertex,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetIndices_List_1_i32_MeshTopology_i32__cordl_bool_i32_9(
-        &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        indicesStart: i32,
-        indicesLength: i32,
-        topology: crate::UnityEngine::MeshTopology,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::MeshTopology,
-                            i32,
-                            bool,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        7usize,
-                    >("SetIndices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetIndices", 7usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        indices,
-                        indicesStart,
-                        indicesLength,
-                        topology,
-                        submesh,
-                        calculateBounds,
-                        baseVertex,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetIndices_NativeArray_1_MeshTopology__cordl_bool_i32_6<T>(
         &mut self,
         indices: crate::Unity::Collections::NativeArray_1<T>,
@@ -6025,12 +5822,10 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetListForChannel_List_1_i32_MeshUpdateFlags1<T>(
+    pub fn SetListForChannel_Gc_i32_MeshUpdateFlags1<T>(
         &mut self,
         channel: crate::UnityEngine::Rendering::VertexAttribute,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        values: quest_hook::libil2cpp::Gc<T>,
         start: i32,
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -6046,9 +5841,7 @@ impl crate::UnityEngine::Mesh {
                     .find_method::<
                         (
                             crate::UnityEngine::Rendering::VertexAttribute,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -6070,14 +5863,12 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetListForChannel_VertexAttributeFormat_List_1_i32_i32_MeshUpdateFlags0<T>(
+    pub fn SetListForChannel_VertexAttributeFormat_Gc_i32_i32_MeshUpdateFlags0<T>(
         &mut self,
         channel: crate::UnityEngine::Rendering::VertexAttribute,
         format: crate::UnityEngine::Rendering::VertexAttributeFormat,
         dim: i32,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        values: quest_hook::libil2cpp::Gc<T>,
         start: i32,
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -6095,9 +5886,7 @@ impl crate::UnityEngine::Mesh {
                             crate::UnityEngine::Rendering::VertexAttribute,
                             crate::UnityEngine::Rendering::VertexAttributeFormat,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -6174,6 +5963,98 @@ impl crate::UnityEngine::Mesh {
                         flags,
                     ),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNormals_Gc0(
+        &mut self,
+        inNormals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetNormals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormals", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inNormals))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNormals_Gc_i32_i32_1(
+        &mut self,
+        inNormals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetNormals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormals", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inNormals, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNormals_Gc_i32_i32_MeshUpdateFlags2(
+        &mut self,
+        inNormals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetNormals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNormals", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inNormals, start, length, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6264,116 +6145,6 @@ impl crate::UnityEngine::Mesh {
                         (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetNormals")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetNormals", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inNormals, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetNormals_List_1_0(
-        &mut self,
-        inNormals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetNormals")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetNormals", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inNormals))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetNormals_List_1_i32_i32_1(
-        &mut self,
-        inNormals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetNormals")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetNormals", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inNormals, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetNormals_List_1_i32_i32_MeshUpdateFlags2(
-        &mut self,
-        inNormals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
                                     crate::UnityEngine::Vector3,
                                 >,
                             >,
@@ -6675,6 +6446,78 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetSubMeshes_Gc_MeshUpdateFlags3(
+        &mut self,
+        desc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::SubMeshDescriptor,
+        >,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Rendering::SubMeshDescriptor,
+                            >,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetSubMeshes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSubMeshes", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (desc, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetSubMeshes_Gc_i32_i32_MeshUpdateFlags2(
+        &mut self,
+        desc: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Rendering::SubMeshDescriptor,
+        >,
+        start: i32,
+        count: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Rendering::SubMeshDescriptor,
+                            >,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetSubMeshes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetSubMeshes", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (desc, start, count, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetSubMeshes_Il2CppArray_MeshUpdateFlags1(
         &mut self,
         desc: quest_hook::libil2cpp::Gc<
@@ -6732,86 +6575,6 @@ impl crate::UnityEngine::Mesh {
                         (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Rendering::SubMeshDescriptor,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetSubMeshes")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSubMeshes", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (desc, start, count, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetSubMeshes_List_1_MeshUpdateFlags3(
-        &mut self,
-        desc: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::SubMeshDescriptor,
-            >,
-        >,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Rendering::SubMeshDescriptor,
-                                >,
-                            >,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetSubMeshes")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetSubMeshes", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (desc, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetSubMeshes_List_1_i32_i32_MeshUpdateFlags2(
-        &mut self,
-        desc: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::SubMeshDescriptor,
-            >,
-        >,
-        start: i32,
-        count: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
                                     crate::UnityEngine::Rendering::SubMeshDescriptor,
                                 >,
                             >,
@@ -6907,6 +6670,98 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetTangents_Gc0(
+        &mut self,
+        inTangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetTangents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTangents", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inTangents))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTangents_Gc_i32_i32_1(
+        &mut self,
+        inTangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetTangents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTangents", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inTangents, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTangents_Gc_i32_i32_MeshUpdateFlags2(
+        &mut self,
+        inTangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetTangents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTangents", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inTangents, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetTangents_Il2CppArray3(
         &mut self,
         inTangents: quest_hook::libil2cpp::Gc<
@@ -6994,116 +6849,6 @@ impl crate::UnityEngine::Mesh {
                         (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetTangents")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTangents", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inTangents, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetTangents_List_1_0(
-        &mut self,
-        inTangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetTangents")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTangents", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inTangents))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetTangents_List_1_i32_i32_1(
-        &mut self,
-        inTangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetTangents")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTangents", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inTangents, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetTangents_List_1_i32_i32_MeshUpdateFlags2(
-        &mut self,
-        inTangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
                                     crate::UnityEngine::Vector4,
                                 >,
                             >,
@@ -7275,6 +7020,212 @@ impl crate::UnityEngine::Mesh {
                         trianglesArrayLength,
                         start,
                         length,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc6(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
+        submesh: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<i32>, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (triangles, submesh))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc__cordl_bool7(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
+        submesh: i32,
+        calculateBounds: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<i32>, i32, bool),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (triangles, submesh, calculateBounds))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc__cordl_bool_i32_10(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<u16>,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<u16>, i32, bool, i32),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc__cordl_bool_i32_8(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<i32>, i32, bool, i32),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (triangles, submesh, calculateBounds, baseVertex),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc_i32_i32__cordl_bool_i32_11(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<u16>,
+        trianglesStart: i32,
+        trianglesLength: i32,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<u16>, i32, i32, i32, bool, i32),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
+                        calculateBounds,
+                        baseVertex,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTriangles_Gc_i32_i32__cordl_bool_i32_9(
+        &mut self,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
+        trianglesStart: i32,
+        trianglesLength: i32,
+        submesh: i32,
+        calculateBounds: bool,
+        baseVertex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<i32>, i32, i32, i32, bool, i32),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("SetTriangles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTriangles", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        triangles,
+                        trianglesStart,
+                        trianglesLength,
+                        submesh,
                         calculateBounds,
                         baseVertex,
                     ),
@@ -7531,127 +7482,93 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1_6(
+    pub fn SetUVs_Gc0(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        submesh: i32,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("SetTriangles")
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (triangles, submesh))?
+            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1__cordl_bool7(
+    pub fn SetUVs_Gc1(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        submesh: i32,
-        calculateBounds: bool,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                            i32,
-                            bool,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetTriangles")
+                        2usize,
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 3usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (triangles, submesh, calculateBounds))?
+            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1__cordl_bool_i32_10(
+    pub fn SetUVs_Gc2(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
-                            i32,
-                            bool,
-                            i32,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetTriangles")
+                        2usize,
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (triangles, submesh, calculateBounds, baseVertex),
-                )?
+            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1__cordl_bool_i32_8(
+    pub fn SetUVs_Gc_i32_i32_3(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        start: i32,
+        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7659,43 +7576,33 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
                             i32,
-                            bool,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                            i32,
                             i32,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
-                    >("SetTriangles")
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 4usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (triangles, submesh, calculateBounds, baseVertex),
-                )?
+            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1_i32_i32__cordl_bool_i32_11(
+    pub fn SetUVs_Gc_i32_i32_5(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u16>,
-        >,
-        trianglesStart: i32,
-        trianglesLength: i32,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7703,52 +7610,33 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u16>,
-                            >,
                             i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
                             i32,
-                            i32,
-                            bool,
                             i32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("SetTriangles")
+                        4usize,
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        triangles,
-                        trianglesStart,
-                        trianglesLength,
-                        submesh,
-                        calculateBounds,
-                        baseVertex,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetTriangles_List_1_i32_i32__cordl_bool_i32_9(
+    pub fn SetUVs_Gc_i32_i32_7(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
-        trianglesStart: i32,
-        trianglesLength: i32,
-        submesh: i32,
-        calculateBounds: bool,
-        baseVertex: i32,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        start: i32,
+        length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7756,39 +7644,135 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
                             i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                             i32,
-                            i32,
-                            bool,
                             i32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("SetTriangles")
+                        4usize,
+                    >("SetUVs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTriangles", 6usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUVs_Gc_i32_i32_MeshUpdateFlags4(
+        &mut self,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetUVs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        triangles,
-                        trianglesStart,
-                        trianglesLength,
-                        submesh,
-                        calculateBounds,
-                        baseVertex,
-                    ),
-                )?
+                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUVs_Gc_i32_i32_MeshUpdateFlags6(
+        &mut self,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetUVs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUVs_Gc_i32_i32_MeshUpdateFlags8(
+        &mut self,
+        channel: i32,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetUVs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
+                            5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8149,363 +8133,6 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetUVs_List_1_0(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_1(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_2(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_3(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_5(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_7(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (channel, uvs, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags4(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector2,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags6(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetUVs_List_1_i32_i32_MeshUpdateFlags8(
-        &mut self,
-        channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("SetUVs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetUVs",
-                            5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (channel, uvs, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetUVs_NativeArray_1_18<T>(
         &mut self,
         channel: i32,
@@ -8653,11 +8280,11 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetUvsImpl_List_1_0<T>(
+    pub fn SetUvsImpl_Gc0<T>(
         &mut self,
         uvIndex: i32,
         dim: i32,
-        uvs: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        uvs: quest_hook::libil2cpp::Gc<T>,
         start: i32,
         length: i32,
         flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -8674,9 +8301,7 @@ impl crate::UnityEngine::Mesh {
                         (
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             crate::UnityEngine::Rendering::MeshUpdateFlags,
@@ -8698,9 +8323,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetVertexBufferData_Il2CppArray1<T>(
+    pub fn SetVertexBufferData_Gc2<T>(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        data: quest_hook::libil2cpp::Gc<T>,
         dataStart: i32,
         meshBufferStart: i32,
         count: i32,
@@ -8717,9 +8342,7 @@ impl crate::UnityEngine::Mesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             i32,
@@ -8746,9 +8369,9 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetVertexBufferData_List_1_2<T>(
+    pub fn SetVertexBufferData_Il2CppArray1<T>(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         dataStart: i32,
         meshBufferStart: i32,
         count: i32,
@@ -8766,7 +8389,7 @@ impl crate::UnityEngine::Mesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
+                                quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             i32,
                             i32,
@@ -8979,6 +8602,98 @@ impl crate::UnityEngine::Mesh {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetVertices_Gc0(
+        &mut self,
+        inVertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVertices", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inVertices))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetVertices_Gc_i32_i32_1(
+        &mut self,
+        inVertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVertices", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inVertices, start, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetVertices_Gc_i32_i32_MeshUpdateFlags2(
+        &mut self,
+        inVertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        start: i32,
+        length: i32,
+        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            i32,
+                            i32,
+                            crate::UnityEngine::Rendering::MeshUpdateFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVertices", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inVertices, start, length, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetVertices_Il2CppArray3(
         &mut self,
         inVertices: quest_hook::libil2cpp::Gc<
@@ -9066,116 +8781,6 @@ impl crate::UnityEngine::Mesh {
                         (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                            crate::UnityEngine::Rendering::MeshUpdateFlags,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("SetVertices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVertices", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inVertices, start, length, flags))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetVertices_List_1_0(
-        &mut self,
-        inVertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetVertices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVertices", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inVertices))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetVertices_List_1_i32_i32_1(
-        &mut self,
-        inVertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            i32,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetVertices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVertices", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inVertices, start, length))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetVertices_List_1_i32_i32_MeshUpdateFlags2(
-        &mut self,
-        inVertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        start: i32,
-        length: i32,
-        flags: crate::UnityEngine::Rendering::MeshUpdateFlags,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
                                     crate::UnityEngine::Vector3,
                                 >,
                             >,

@@ -40,10 +40,8 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Contracts::Contract {
 #[cfg(feature = "System+Diagnostics+Contracts+Contract")]
 impl crate::System::Diagnostics::Contracts::Contract {
     pub fn ForAll<T>(
-        collection: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        collection: quest_hook::libil2cpp::Gc<T>,
+        predicate: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -54,12 +52,7 @@ impl crate::System::Diagnostics::Contracts::Contract {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         bool,
                         2usize,
                     >("ForAll")

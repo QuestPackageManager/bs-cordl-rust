@@ -7,25 +7,13 @@ pub struct SelectAvatarSystemCell {
         crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     >,
     pub didSetAvatarSystemPreferredEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
     pub didRequestEditOfAvatarEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
     pub didRequestCreationOfAvatarEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::IAvatarSystemMetadata>,
     >,
     pub _loadedAvatarSystemMetadata: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
@@ -352,10 +340,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn add_didRequestCreationOfAvatarEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -365,10 +351,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -390,10 +374,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn add_didRequestEditOfAvatarEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -403,10 +385,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -428,10 +408,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn add_didSetAvatarSystemPreferredEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -441,10 +419,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -466,10 +442,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn remove_didRequestCreationOfAvatarEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -479,10 +453,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -504,10 +476,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn remove_didRequestEditOfAvatarEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -517,10 +487,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -542,10 +510,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
     pub fn remove_didSetAvatarSystemPreferredEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -555,10 +521,8 @@ impl crate::GlobalNamespace::SelectAvatarSystemCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

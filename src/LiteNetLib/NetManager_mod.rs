@@ -6,14 +6,10 @@ pub struct NetManager {
     pub _socket: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetSocket>,
     pub _logicThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _netEventsQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
     >,
     pub _netEventsPool: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetEvent>,
     >,
     pub _netEventListener: quest_hook::libil2cpp::Gc<
         crate::LiteNetLib::INetEventListener,
@@ -22,16 +18,12 @@ pub struct NetManager {
         crate::LiteNetLib::IDeliveryEventListener,
     >,
     pub _peersDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     >,
     pub _requestsDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::ConnectionRequest>,
     >,
     pub _peersLock: quest_hook::libil2cpp::Gc<
         crate::System::Threading::ReaderWriterLockSlim,
@@ -39,9 +31,7 @@ pub struct NetManager {
     pub _headPeer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub _connectedPeersCount: i32,
     pub _connectedPeerListCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     >,
     pub _peersArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -52,9 +42,7 @@ pub struct NetManager {
         crate::LiteNetLib::Layers::PacketLayerBase,
     >,
     pub _lastPeerId: i32,
-    pub _peerIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<i32>,
-    >,
+    pub _peerIds: quest_hook::libil2cpp::Gc<i32>,
     pub _channelsCount: u8,
     pub NetPacketPool: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacketPool>,
     pub UnconnectedMessagesEnabled: bool,
@@ -869,9 +857,7 @@ impl crate::LiteNetLib::NetManager {
     pub fn GetPeersNonAlloc(
         &mut self,
         peers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         >,
         peerState: crate::LiteNetLib::ConnectionState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -882,9 +868,7 @@ impl crate::LiteNetLib::NetManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
                             >,
                             crate::LiteNetLib::ConnectionState,
                         ),
@@ -2068,11 +2052,7 @@ impl crate::LiteNetLib::NetManager {
     pub fn System_Collections_Generic_IEnumerable_LiteNetLib_NetPeer__GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2081,9 +2061,7 @@ impl crate::LiteNetLib::NetManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
                         >,
                         0usize,
                     >(
@@ -2099,9 +2077,7 @@ impl crate::LiteNetLib::NetManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2249,11 +2225,7 @@ impl crate::LiteNetLib::NetManager {
     pub fn get_ConnectedPeerList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2262,9 +2234,7 @@ impl crate::LiteNetLib::NetManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
                         >,
                         0usize,
                     >("get_ConnectedPeerList")
@@ -2277,9 +2247,7 @@ impl crate::LiteNetLib::NetManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2410,34 +2378,6 @@ impl AsMut<crate::LiteNetLib::INetSocketListener> for crate::LiteNetLib::NetMana
     }
 }
 #[cfg(feature = "LiteNetLib+NetManager")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    >,
-> for crate::LiteNetLib::NetManager {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LiteNetLib+NetManager")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    >,
-> for crate::LiteNetLib::NetManager {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LiteNetLib+NetManager")]
 impl AsRef<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetManager {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
@@ -2446,6 +2386,30 @@ impl AsRef<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetMa
 #[cfg(feature = "LiteNetLib+NetManager")]
 impl AsMut<crate::System::Collections::IEnumerable> for crate::LiteNetLib::NetManager {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
+> for crate::LiteNetLib::NetManager {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
+> for crate::LiteNetLib::NetManager {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2587,13 +2551,11 @@ for crate::LiteNetLib::NetManager_IPEndPointComparer {
 }
 #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>>,
 > for crate::LiteNetLib::NetManager_IPEndPointComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2601,13 +2563,11 @@ impl AsRef<
 }
 #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>>,
 > for crate::LiteNetLib::NetManager_IPEndPointComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2858,34 +2818,6 @@ impl crate::LiteNetLib::NetManager_NetPeerEnumerator {
     }
 }
 #[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    >,
-> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    >,
-> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -2910,6 +2842,30 @@ for crate::LiteNetLib::NetManager_NetPeerEnumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::LiteNetLib::NetManager_NetPeerEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
+> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "LiteNetLib+NetManager+NetPeerEnumerator")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>>,
+> for crate::LiteNetLib::NetManager_NetPeerEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
+    > {
         todo!()
     }
 }

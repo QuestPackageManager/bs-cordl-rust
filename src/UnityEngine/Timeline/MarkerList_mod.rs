@@ -3,14 +3,10 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MarkerList {
     pub m_Objects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     >,
     pub m_Cache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
     >,
     pub m_CacheDirty: bool,
     pub m_HasNotifications: bool,
@@ -250,9 +246,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -262,10 +256,8 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::IMarker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::IMarker,
                             >,
                         >,
                         0usize,
@@ -279,9 +271,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -289,9 +279,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -301,10 +289,8 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ScriptableObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ScriptableObject,
                             >,
                         >,
                         0usize,
@@ -318,9 +304,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -535,9 +519,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -547,10 +529,8 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::IMarker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::IMarker,
                             >,
                         >,
                         0usize,
@@ -564,9 +544,7 @@ impl crate::UnityEngine::Timeline::MarkerList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

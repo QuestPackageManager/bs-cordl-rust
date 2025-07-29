@@ -154,11 +154,7 @@ impl crate::System::Data::TypeLimiter {
     pub fn GetPreviouslyDeclaredDataTypes_DataSet1(
         dataSet: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -167,9 +163,7 @@ impl crate::System::Data::TypeLimiter {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         1usize,
                     >("GetPreviouslyDeclaredDataTypes")
@@ -182,20 +176,14 @@ impl crate::System::Data::TypeLimiter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (dataSet))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPreviouslyDeclaredDataTypes_DataTable0(
         dataTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -204,9 +192,7 @@ impl crate::System::Data::TypeLimiter {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         1usize,
                     >("GetPreviouslyDeclaredDataTypes")
@@ -219,9 +205,7 @@ impl crate::System::Data::TypeLimiter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (dataTable))? };
         Ok(__cordl_ret.into())
     }
@@ -295,9 +279,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
 pub struct TypeLimiter_Scope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_allowedTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
     pub m_previousScope: quest_hook::libil2cpp::Gc<
         crate::System::Data::TypeLimiter_Scope,
@@ -412,9 +394,7 @@ impl crate::System::Data::TypeLimiter_Scope {
     pub fn New(
         previousScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
         allowedTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -427,9 +407,7 @@ impl crate::System::Data::TypeLimiter_Scope {
         &mut self,
         previousScope: quest_hook::libil2cpp::Gc<crate::System::Data::TypeLimiter_Scope>,
         allowedTypes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -442,9 +420,7 @@ impl crate::System::Data::TypeLimiter_Scope {
                                 crate::System::Data::TypeLimiter_Scope,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

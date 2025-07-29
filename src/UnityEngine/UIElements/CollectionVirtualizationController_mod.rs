@@ -391,10 +391,8 @@ impl crate::UnityEngine::UIElements::CollectionVirtualizationController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ReusableCollectionItem,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         >,
     > {
@@ -405,10 +403,8 @@ impl crate::UnityEngine::UIElements::CollectionVirtualizationController {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ReusableCollectionItem,
                             >,
                         >,
                         0usize,
@@ -422,10 +418,8 @@ impl crate::UnityEngine::UIElements::CollectionVirtualizationController {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ReusableCollectionItem,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

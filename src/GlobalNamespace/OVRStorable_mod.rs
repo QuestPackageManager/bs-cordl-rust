@@ -458,44 +458,34 @@ impl crate::GlobalNamespace::OVRStorable {
     }
 }
 #[cfg(feature = "OVRStorable")]
-impl AsRef<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRStorable>,
-> for crate::GlobalNamespace::OVRStorable {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRStorable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRStorable")]
-impl AsMut<
-    crate::GlobalNamespace::IOVRAnchorComponent_1<crate::GlobalNamespace::OVRStorable>,
-> for crate::GlobalNamespace::OVRStorable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
-        crate::GlobalNamespace::OVRStorable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRStorable")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable>>
 for crate::GlobalNamespace::OVRStorable {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable> {
         todo!()
     }
 }
 #[cfg(feature = "OVRStorable")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable>>
 for crate::GlobalNamespace::OVRStorable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRStorable> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRStorable")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable>>
+for crate::GlobalNamespace::OVRStorable {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRStorable")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable>>
+for crate::GlobalNamespace::OVRStorable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRStorable> {
         todo!()
     }
 }

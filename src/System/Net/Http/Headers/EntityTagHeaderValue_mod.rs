@@ -234,10 +234,8 @@ impl crate::System::Net::Http::Headers::EntityTagHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::EntityTagHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::EntityTagHeaderValue,
                 >,
             >,
         >,
@@ -254,10 +252,8 @@ impl crate::System::Net::Http::Headers::EntityTagHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::EntityTagHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::EntityTagHeaderValue,
                                     >,
                                 >,
                             >,

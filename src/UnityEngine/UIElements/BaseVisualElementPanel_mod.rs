@@ -4,11 +4,7 @@
 pub struct BaseVisualElementPanel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub panelDisposed: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::BaseVisualElementPanel,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     >,
     pub m_UIElementsBridge: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIElementsBridge,
@@ -38,15 +34,13 @@ pub struct BaseVisualElementPanel {
     >,
     pub atlasChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub updateMaterial: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     >,
     pub hierarchyChanged: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::HierarchyEvent,
     >,
     pub beforeUpdate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseVisualElementPanel")]
@@ -456,9 +450,7 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
         &mut self,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -471,10 +463,8 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
                         (
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
                         ),
@@ -881,10 +871,8 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
     pub fn add_panelDisposed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::BaseVisualElementPanel,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -894,10 +882,8 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1700,10 +1686,8 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
     pub fn remove_panelDisposed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::BaseVisualElementPanel,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1713,10 +1697,8 @@ impl crate::UnityEngine::UIElements::BaseVisualElementPanel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

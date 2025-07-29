@@ -73,14 +73,12 @@ impl crate::UnityEngine::UIElements::IGenericMenu {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddItem_Action_1_Il2CppObject1(
+    pub fn AddItem_Gc_Il2CppObject1(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isChecked: bool,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,10 +93,8 @@ impl crate::UnityEngine::UIElements::IGenericMenu {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

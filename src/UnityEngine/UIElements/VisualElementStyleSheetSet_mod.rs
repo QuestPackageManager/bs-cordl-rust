@@ -259,13 +259,11 @@ impl crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
 impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementStyleSheetSet>,
 > for crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
     > {
         todo!()
@@ -273,13 +271,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElementStyleSheetSet")]
 impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementStyleSheetSet>,
 > for crate::UnityEngine::UIElements::VisualElementStyleSheetSet {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElementStyleSheetSet,
     > {
         todo!()

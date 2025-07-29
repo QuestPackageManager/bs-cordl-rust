@@ -316,9 +316,7 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
 pub struct TexturePacker_JsonArray_SpriteDataObject {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
-        >,
+        crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
     >,
     pub meta: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta,
 }

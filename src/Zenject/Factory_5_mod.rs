@@ -8,7 +8,7 @@ pub struct Factory_5<
     TParam4: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::PlaceholderFactory_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -69,13 +69,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::Factory_5<TParam1, TParam2, TParam3, TParam4, TValue> {
-    type Target = crate::Zenject::PlaceholderFactory_5<
-        TParam1,
-        TParam2,
-        TParam3,
-        TParam4,
-        TValue,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

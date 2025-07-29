@@ -5,9 +5,7 @@ pub struct SetupDragAndDropArgs {
     pub draggedElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub selectedIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >,
+    pub selectedIds: quest_hook::libil2cpp::Gc<i32>,
     pub startDragArgs: crate::UnityEngine::UIElements::StartDragArgs,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+SetupDragAndDropArgs")]
@@ -112,9 +110,7 @@ impl crate::UnityEngine::UIElements::SetupDragAndDropArgs {
         draggedElement: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
         >,
-        selectedIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        selectedIds: quest_hook::libil2cpp::Gc<i32>,
         startDragArgs: crate::UnityEngine::UIElements::StartDragArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -126,9 +122,7 @@ impl crate::UnityEngine::UIElements::SetupDragAndDropArgs {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                             crate::UnityEngine::UIElements::StartDragArgs,
                         ),
                         quest_hook::libil2cpp::Void,

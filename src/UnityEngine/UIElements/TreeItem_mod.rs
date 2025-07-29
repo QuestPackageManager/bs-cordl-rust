@@ -4,9 +4,7 @@
 pub struct TreeItem {
     pub _id_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,
-    pub _childrenIds_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >,
+    pub _childrenIds_k__BackingField: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeItem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::TreeItem {
@@ -107,22 +105,14 @@ impl crate::UnityEngine::UIElements::TreeItem {
         &mut self,
         id: i32,
         parentId: i32,
-        childrenIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        childrenIds: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                        ),
+                        (i32, i32, quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >(".ctor")
@@ -141,20 +131,14 @@ impl crate::UnityEngine::UIElements::TreeItem {
     }
     pub fn get_childrenIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_childrenIds")
                     .unwrap_or_else(|e| {
@@ -165,9 +149,9 @@ impl crate::UnityEngine::UIElements::TreeItem {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasChildren(&mut self) -> quest_hook::libil2cpp::Result<bool> {

@@ -6,10 +6,8 @@ pub struct TerrainMap {
     pub m_patchSize: crate::UnityEngine::Vector3,
     pub m_errorCode: crate::UnityEngine::TerrainUtils::TerrainMapStatusCode,
     pub m_terrainTiles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-        >,
+        crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TerrainUtils+TerrainMap")]
@@ -79,12 +77,10 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFromPlacement_Terrain_Predicate_1__cordl_bool0(
+    pub fn CreateFromPlacement_Terrain_Gc__cordl_bool0(
         originTerrain: quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
         filter: quest_hook::libil2cpp::Gc<
-            crate::System::Predicate_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
         >,
         fullValidation: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -98,9 +94,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Predicate_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
                             >,
                             bool,
                         ),
@@ -125,13 +119,11 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateFromPlacement_Vector2_Vector2_Predicate_1__cordl_bool1(
+    pub fn CreateFromPlacement_Vector2_Vector2_Gc__cordl_bool1(
         gridOrigin: crate::UnityEngine::Vector2,
         gridSize: crate::UnityEngine::Vector2,
         filter: quest_hook::libil2cpp::Gc<
-            crate::System::Predicate_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
         >,
         fullValidation: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -146,9 +138,7 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                             crate::UnityEngine::Vector2,
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Predicate_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
                             >,
                             bool,
                         ),
@@ -320,10 +310,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -333,10 +321,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-                            >,
+                            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
                         >,
                         0usize,
                     >("get_terrainTiles")
@@ -349,10 +335,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::UnityEngine::TerrainUtils::TerrainTileCoord,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
-            >,
+            crate::UnityEngine::TerrainUtils::TerrainTileCoord,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Terrain>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

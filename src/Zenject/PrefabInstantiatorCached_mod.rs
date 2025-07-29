@@ -70,9 +70,7 @@ impl crate::Zenject::PrefabInstantiatorCached {
     pub fn Instantiate(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
@@ -86,11 +84,7 @@ impl crate::Zenject::PrefabInstantiatorCached {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
@@ -174,9 +168,7 @@ impl crate::Zenject::PrefabInstantiatorCached {
     pub fn get_ExtraArguments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -184,11 +176,7 @@ impl crate::Zenject::PrefabInstantiatorCached {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::Zenject::TypeValuePair,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                         0usize,
                     >("get_ExtraArguments")
                     .unwrap_or_else(|e| {
@@ -199,9 +187,9 @@ impl crate::Zenject::PrefabInstantiatorCached {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_GameObjectCreationParameters(

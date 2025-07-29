@@ -857,13 +857,13 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     > {
         todo!()
@@ -871,13 +871,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     > {
         todo!()
@@ -893,15 +893,11 @@ pub struct JsonParser_JsonValue {
     pub integerValue: i64,
     pub stringValue: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
     pub arrayValue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-        >,
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
     pub objectValue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
     pub anyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
@@ -1209,45 +1205,6 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Dictionary_2_6(
-        obj: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-                            >,
-                        >),
-                        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-                        1usize,
-                    >("op_Implicit")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Implicit", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
-            cordl_method_info.invoke_unchecked((), (obj))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn op_Implicit_Enum7(
         val: quest_hook::libil2cpp::Gc<crate::System::Enum>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1272,6 +1229,72 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
             cordl_method_info.invoke_unchecked((), (val))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Gc5(
+        array: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+                        >),
+                        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Gc6(
+        obj: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+                        >),
+                        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1326,41 +1349,6 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             });
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
             cordl_method_info.invoke_unchecked((), (str))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn op_Implicit_List_1_5(
-        array: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-                            >,
-                        >),
-                        crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
-                        1usize,
-                    >("op_Implicit")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Implicit", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue = unsafe {
-            cordl_method_info.invoke_unchecked((), (array))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1477,13 +1465,13 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     > {
         todo!()
@@ -1491,13 +1479,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
 > for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     > {
         todo!()

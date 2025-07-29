@@ -4,9 +4,7 @@
 pub struct EventCallbackListPool {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventCallbackList>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackListPool")]

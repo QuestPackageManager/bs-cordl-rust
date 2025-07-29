@@ -4,10 +4,8 @@
 pub struct CompositeExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
     pub _Expressions_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
         >,
     >,
 }
@@ -126,10 +124,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
             >,
         >,
     > {
@@ -140,10 +136,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
                             >,
                         >,
                         0usize,
@@ -157,10 +151,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -168,10 +160,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
     pub fn set_Expressions(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,10 +171,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::CompositeExpression {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

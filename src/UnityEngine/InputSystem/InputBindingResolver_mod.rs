@@ -36,9 +36,7 @@ pub struct InputBindingResolver {
     >,
     pub m_IsControlOnlyResolve: bool,
     pub m_Parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
-        >,
+        crate::UnityEngine::InputSystem::Utilities::NameAndParameters,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputBindingResolver")]

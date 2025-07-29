@@ -22,28 +22,20 @@ pub struct PlayerInputManager {
     pub m_JoinActionDelegateHooked: bool,
     pub m_UnpairedDeviceUsedDelegateHooked: bool,
     pub m_JoinActionDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_UnpairedDeviceUsedDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     >,
     pub m_PlayerJoinedCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     >,
     pub m_PlayerLeftCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     >,
 }
@@ -584,9 +576,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn add_onPlayerJoined(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -595,10 +585,8 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::PlayerInput,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::PlayerInput,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -620,9 +608,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn add_onPlayerLeft(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -631,10 +617,8 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::PlayerInput,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::PlayerInput,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1025,9 +1009,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn remove_onPlayerJoined(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1036,10 +1018,8 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::PlayerInput,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::PlayerInput,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1061,9 +1041,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
     pub fn remove_onPlayerLeft(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1072,10 +1050,8 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::PlayerInput,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::PlayerInput,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1270,7 +1246,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerJoinedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
@@ -1299,7 +1275,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerJoinedEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -1362,7 +1338,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerJoinedEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerInputManager_PlayerLeftEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >,
 }
@@ -1391,7 +1367,7 @@ for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInputManager+PlayerLeftEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::PlayerInputManager_PlayerLeftEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceTexture3D {
-    __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
-    type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture3D>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

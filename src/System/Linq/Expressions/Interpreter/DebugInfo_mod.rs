@@ -290,7 +290,7 @@ for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IComparer_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -298,7 +298,7 @@ impl AsRef<
 > for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -308,7 +308,7 @@ impl AsRef<
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+DebugInfo+DebugInfoComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IComparer_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,
@@ -316,7 +316,7 @@ impl AsMut<
 > for crate::System::Linq::Expressions::Interpreter::DebugInfo_DebugInfoComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::System::Linq::Expressions::Interpreter::DebugInfo,
         >,

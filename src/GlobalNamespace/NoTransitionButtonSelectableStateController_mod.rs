@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoTransitionButtonSelectableStateController {
-    __cordl_parent: crate::GlobalNamespace::SelectableStateController_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
     >,
 }
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
 #[cfg(feature = "NoTransitionButtonSelectableStateController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::NoTransitionButtonSelectableStateController {
-    type Target = crate::GlobalNamespace::SelectableStateController_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

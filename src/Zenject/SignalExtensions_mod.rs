@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::Zenject::SignalExtensions {
 impl crate::Zenject::SignalExtensions {
     pub fn BindSignal<TSignal>(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindSignalIdToBinder_1<TSignal>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TSignal>>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -53,9 +51,7 @@ impl crate::Zenject::SignalExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::BindSignalIdToBinder_1<TSignal>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TSignal>,
                         1usize,
                     >("BindSignal")
                     .unwrap_or_else(|e| {
@@ -66,9 +62,9 @@ impl crate::Zenject::SignalExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::BindSignalIdToBinder_1<TSignal>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (container))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TSignal> = unsafe {
+            cordl_method_info.invoke_unchecked((), (container))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDefaultSignalDeclarationBindInfo(

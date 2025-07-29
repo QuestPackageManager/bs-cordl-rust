@@ -4,13 +4,9 @@
 pub struct StylePropertyReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
-    pub m_ValueCount: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_ValueCount: quest_hook::libil2cpp::Gc<i32>,
     pub m_Resolver: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleVariableResolver,
     >,
@@ -786,11 +782,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     }
     pub fn ReadListEasingFunction(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::EasingFunction,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -800,9 +792,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::EasingFunction,
-                                >,
+                                crate::UnityEngine::UIElements::EasingFunction,
                             >,
                             i32,
                         ),
@@ -825,9 +815,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     pub fn ReadListStylePropertyName(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
+            crate::UnityEngine::UIElements::StylePropertyName,
         >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -838,9 +826,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::StylePropertyName,
-                                >,
+                                crate::UnityEngine::UIElements::StylePropertyName,
                             >,
                             i32,
                         ),
@@ -862,11 +848,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
     }
     pub fn ReadListTimeValue(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
+        list: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -876,9 +858,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::TimeValue,
-                                >,
+                                crate::UnityEngine::UIElements::TimeValue,
                             >,
                             i32,
                         ),

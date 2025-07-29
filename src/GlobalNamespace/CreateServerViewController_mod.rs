@@ -11,7 +11,8 @@ pub struct CreateServerViewController {
         crate::GlobalNamespace::CreateServerFormController,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<bool, crate::GlobalNamespace::CreateServerFormData>,
+        bool,
+        crate::GlobalNamespace::CreateServerFormData,
     >,
     pub _multiplayerModeSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerModeSettings,
@@ -220,7 +221,8 @@ impl crate::GlobalNamespace::CreateServerViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<bool, crate::GlobalNamespace::CreateServerFormData>,
+            bool,
+            crate::GlobalNamespace::CreateServerFormData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -229,10 +231,8 @@ impl crate::GlobalNamespace::CreateServerViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                bool,
-                                crate::GlobalNamespace::CreateServerFormData,
-                            >,
+                            bool,
+                            crate::GlobalNamespace::CreateServerFormData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -282,7 +282,8 @@ impl crate::GlobalNamespace::CreateServerViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<bool, crate::GlobalNamespace::CreateServerFormData>,
+            bool,
+            crate::GlobalNamespace::CreateServerFormData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -291,10 +292,8 @@ impl crate::GlobalNamespace::CreateServerViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                bool,
-                                crate::GlobalNamespace::CreateServerFormData,
-                            >,
+                            bool,
+                            crate::GlobalNamespace::CreateServerFormData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

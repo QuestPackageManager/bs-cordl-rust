@@ -2,18 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButtonGroup {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
     pub m_RadioButtons: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
     >,
     pub m_RadioButtonValueChangedCallback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<bool>,
     >,
     pub m_RadioButtonContainer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -41,7 +35,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup {
-    type Target = crate::UnityEngine::UIElements::BaseField_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,12 +59,10 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_List_1_1(
+    pub fn New_Il2CppString_Gc1(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         radioButtonChoices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -81,18 +73,14 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
     }
     pub fn RadioButtonValueChangedCallback(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-        >,
+        evt: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RadioButtonValueChangedCallback")
@@ -241,13 +229,11 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_List_1_1(
+    pub fn _ctor_Il2CppString_Gc1(
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         radioButtonChoices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -260,10 +246,8 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         ),
@@ -315,9 +299,7 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
     pub fn set_choices(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -326,10 +308,8 @@ impl crate::UnityEngine::UIElements::RadioButtonGroup {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -377,7 +357,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButtonGroup_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButtonGroup>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits,
@@ -406,7 +386,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButtonGroup>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits,
@@ -468,7 +448,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButtonGroup_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
@@ -500,7 +480,7 @@ for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,

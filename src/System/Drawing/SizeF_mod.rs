@@ -254,18 +254,18 @@ impl crate::System::Drawing::SizeF {
     }
 }
 #[cfg(feature = "System+Drawing+SizeF")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::SizeF>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::SizeF>>
 for crate::System::Drawing::SizeF {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::SizeF> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::SizeF> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+SizeF")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::SizeF>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::SizeF>>
 for crate::System::Drawing::SizeF {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::SizeF> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::SizeF> {
         todo!()
     }
 }

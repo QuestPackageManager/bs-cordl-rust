@@ -165,10 +165,8 @@ impl crate::System::Net::Http::Headers::ProductInfoHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::ProductInfoHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::ProductInfoHeaderValue,
                 >,
             >,
         >,
@@ -185,10 +183,8 @@ impl crate::System::Net::Http::Headers::ProductInfoHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::ProductInfoHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::ProductInfoHeaderValue,
                                     >,
                                 >,
                             >,

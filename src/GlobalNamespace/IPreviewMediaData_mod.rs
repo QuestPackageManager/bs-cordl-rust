@@ -41,11 +41,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
     pub fn GetCoverSpriteAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -54,9 +50,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                         >,
                         0usize,
                     >("GetCoverSpriteAsync")
@@ -69,9 +63,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -79,9 +71,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -91,9 +81,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
                         >,
                         0usize,
                     >("GetPreviewAudioClip")
@@ -106,9 +94,7 @@ impl crate::GlobalNamespace::IPreviewMediaData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -52,14 +52,10 @@ pub struct StandardLevelDetailView {
         crate::GlobalNamespace::BeatmapLevelsEntitlementModel,
     >,
     pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
     >,
     pub didFavoriteToggleChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     >,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
@@ -584,16 +580,12 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetContent_BeatmapLevel_BeatmapDifficultyMask_HashSet_1_BeatmapDifficulty_BeatmapCharacteristicSO_PlayerData0(
+    pub fn SetContent_BeatmapLevel_BeatmapDifficultyMask_Gc_BeatmapDifficulty_BeatmapCharacteristicSO_PlayerData0(
         &mut self,
         level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
         defaultDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         defaultBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
@@ -612,10 +604,8 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                             >,
                             crate::GlobalNamespace::BeatmapDifficultyMask,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
                                 >,
                             >,
                             crate::GlobalNamespace::BeatmapDifficulty,
@@ -815,11 +805,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailView,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -828,10 +814,8 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailView,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailView,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -853,9 +837,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn add_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -864,9 +846,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -966,11 +946,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelDetailView,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardLevelDetailView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -979,10 +955,8 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelDetailView,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardLevelDetailView,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1004,9 +978,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     pub fn remove_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1015,9 +987,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

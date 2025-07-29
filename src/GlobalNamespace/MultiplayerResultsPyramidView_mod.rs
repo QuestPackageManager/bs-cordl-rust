@@ -17,11 +17,9 @@ pub struct MultiplayerResultsPyramidView {
         crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory,
     >,
     pub _avatarsDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
-            >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
         >,
     >,
     pub _resultAvatarDirectors: quest_hook::libil2cpp::Gc<
@@ -83,9 +81,7 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
     pub fn PrespawnAvatars(
         &mut self,
         activePlayers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -94,10 +90,8 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -119,10 +113,8 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
     pub fn SetupResults(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
         badgeStartTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -135,10 +127,8 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

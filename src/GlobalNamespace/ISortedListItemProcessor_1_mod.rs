@@ -62,9 +62,7 @@ impl<
 > crate::GlobalNamespace::ISortedListItemProcessor_1<T> {
     pub fn ProcessBeforeDeleteData(
         &mut self,
-        nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        >,
+        nodeToDelete: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -75,9 +73,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ProcessBeforeDeleteData")
@@ -96,9 +92,7 @@ impl<
     }
     pub fn ProcessInsertedData(
         &mut self,
-        insertedNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<T>,
-        >,
+        insertedNode: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -109,9 +103,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ProcessInsertedData")

@@ -3,12 +3,10 @@
 #[derive(Debug)]
 pub struct ThreadLocal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub m_valueFactory: quest_hook::libil2cpp::Gc<T>,
     pub m_idComplement: i32,
     pub m_initialized: bool,
-    pub m_linkedSlot: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    >,
+    pub m_linkedSlot: quest_hook::libil2cpp::Gc<T>,
     pub m_trackAllValues: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -297,7 +295,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
     }
     pub fn Initialize(
         &mut self,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
         trackAllValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -309,7 +307,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::ThreadLocal_1<T> 
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>, bool),
+                        (quest_hook::libil2cpp::Gc<T>, bool),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("Initialize")
@@ -700,9 +698,7 @@ for crate::System::Threading::ThreadLocal_1_FinalizationHelper<T> {
 pub struct ThreadLocal_1_IdManager<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_nextIdToTry: i32,
-    pub m_freeIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<bool>,
-    >,
+    pub m_freeIds: quest_hook::libil2cpp::Gc<bool>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+IdManager")]
@@ -861,12 +857,8 @@ for crate::System::Threading::ThreadLocal_1_IdManager<T> {
 #[derive(Debug)]
 pub struct ThreadLocal_1_LinkedSlot<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub Next: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    >,
-    pub Previous: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    >,
+    pub Next: quest_hook::libil2cpp::Gc<T>,
+    pub Previous: quest_hook::libil2cpp::Gc<T>,
     pub SlotArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::System::Threading::ThreadLocal_1_LinkedSlotVolatile<T>,
@@ -1002,9 +994,7 @@ for crate::System::Threading::ThreadLocal_1_LinkedSlot<T> {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct ThreadLocal_1_LinkedSlotVolatile<T: quest_hook::libil2cpp::Type> {
-    pub Value: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::ThreadLocal_1_LinkedSlot<T>,
-    >,
+    pub Value: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_System+Threading+ThreadLocal_1+LinkedSlotVolatile")]

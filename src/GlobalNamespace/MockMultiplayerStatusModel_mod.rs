@@ -47,9 +47,7 @@ impl crate::GlobalNamespace::MockMultiplayerStatusModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -59,10 +57,8 @@ impl crate::GlobalNamespace::MockMultiplayerStatusModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerStatusData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerStatusData,
                             >,
                         >,
                         1usize,
@@ -76,9 +72,7 @@ impl crate::GlobalNamespace::MockMultiplayerStatusModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

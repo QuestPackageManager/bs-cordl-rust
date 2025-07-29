@@ -318,7 +318,7 @@ impl<
     P1: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::Zenject::IFactory_3<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         P1,
         T,
@@ -326,7 +326,7 @@ impl<
 > for crate::Zenject::PrefabFactory_2<P1, T> {
     fn as_ref(
         &self,
-    ) -> &crate::Zenject::IFactory_3<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         P1,
         T,
@@ -339,7 +339,7 @@ impl<
     P1: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::Zenject::IFactory_3<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         P1,
         T,
@@ -347,7 +347,7 @@ impl<
 > for crate::Zenject::PrefabFactory_2<P1, T> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Zenject::IFactory_3<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         P1,
         T,

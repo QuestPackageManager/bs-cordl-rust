@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLivestreamingVideoStats {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::LivestreamingVideoStats,
         >,
@@ -30,7 +30,7 @@ for crate::Oculus::Platform::MessageWithLivestreamingVideoStats {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLivestreamingVideoStats")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLivestreamingVideoStats {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::LivestreamingVideoStats,
         >,

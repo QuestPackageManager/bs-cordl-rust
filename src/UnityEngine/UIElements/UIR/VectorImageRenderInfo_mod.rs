@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VectorImageRenderInfo {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
         >,
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+VectorImageRenderInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
         >,

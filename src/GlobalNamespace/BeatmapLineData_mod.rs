@@ -4,9 +4,7 @@
 pub struct BeatmapLineData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapObjectsData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLineData")]
@@ -73,11 +71,9 @@ impl crate::GlobalNamespace::BeatmapLineData {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_List_1_1(
+    pub fn New_Gc1(
         beatmapObjectData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -95,12 +91,10 @@ impl crate::GlobalNamespace::BeatmapLineData {
             .invoke_void(".ctor", (initialCapacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_List_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         beatmapObjectData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -109,10 +103,8 @@ impl crate::GlobalNamespace::BeatmapLineData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapObjectData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -157,9 +149,7 @@ impl crate::GlobalNamespace::BeatmapLineData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -169,10 +159,8 @@ impl crate::GlobalNamespace::BeatmapLineData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapObjectData,
                             >,
                         >,
                         0usize,
@@ -186,9 +174,7 @@ impl crate::GlobalNamespace::BeatmapLineData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -173,11 +173,11 @@ impl crate::UnityEngine::Rendering::BatchPackedCullingViewID {
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
 > for crate::UnityEngine::Rendering::BatchPackedCullingViewID {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::BatchPackedCullingViewID,
     > {
         todo!()
@@ -185,11 +185,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchPackedCullingViewID")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchPackedCullingViewID>,
 > for crate::UnityEngine::Rendering::BatchPackedCullingViewID {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::BatchPackedCullingViewID,
     > {
         todo!()

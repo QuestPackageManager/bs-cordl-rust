@@ -4,21 +4,12 @@
 pub struct OptionalAvatarDataSyncHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didChangeOptionalAvatarDataEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            crate::BeatSaber::AvatarCore::OptionalAvatarData,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        crate::BeatSaber::AvatarCore::OptionalAvatarData,
     >,
     pub _latestOptionalAvatarDataDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Dictionary_2<
-                    u32,
-                    crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<u32, crate::BeatSaber::AvatarCore::OptionalAvatarData>,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerSessionManager,
@@ -204,10 +195,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
         >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Dictionary_2<
-                    u32,
-                    crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                >,
+                u32,
+                crate::BeatSaber::AvatarCore::OptionalAvatarData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -222,10 +211,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        u32,
-                                        crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                                    >,
+                                    u32,
+                                    crate::BeatSaber::AvatarCore::OptionalAvatarData,
                                 >,
                             >,
                         ),
@@ -278,10 +265,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn add_didChangeOptionalAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -290,12 +275,10 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -316,10 +299,8 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
     pub fn remove_didChangeOptionalAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -328,12 +309,10 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

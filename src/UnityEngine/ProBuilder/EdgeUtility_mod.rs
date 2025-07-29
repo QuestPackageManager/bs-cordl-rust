@@ -242,17 +242,9 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
     }
     pub fn GetSharedVertexHandleEdges(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -264,16 +256,10 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
                                 crate::UnityEngine::ProBuilder::Edge,
                             >,
-                        >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
                         2usize,
                     >("GetSharedVertexHandleEdges")
                     .unwrap_or_else(|e| {
@@ -285,19 +271,13 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, edges))? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
         edge: crate::UnityEngine::ProBuilder::Edge,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -310,9 +290,7 @@ impl crate::UnityEngine::ProBuilder::EdgeUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
                             >,
                             crate::UnityEngine::ProBuilder::Edge,
                         ),

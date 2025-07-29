@@ -19,9 +19,7 @@ pub struct EventBase {
         crate::UnityEngine::UIElements::IEventHandler,
     >,
     pub _skipElements_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
     >,
     pub _propagationPhase_k__BackingField: crate::UnityEngine::UIElements::PropagationPhase,
     pub m_CurrentTarget: quest_hook::libil2cpp::Gc<
@@ -989,9 +987,7 @@ impl crate::UnityEngine::UIElements::EventBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1001,10 +997,8 @@ impl crate::UnityEngine::UIElements::EventBase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::IEventHandler,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::IEventHandler,
                             >,
                         >,
                         0usize,
@@ -1018,9 +1012,7 @@ impl crate::UnityEngine::UIElements::EventBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IEventHandler>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

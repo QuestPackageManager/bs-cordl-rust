@@ -4,19 +4,13 @@
 pub struct TutorialBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _tutorialNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >,
     pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,
     >,
     pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
@@ -361,9 +355,7 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -373,10 +365,8 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController,
                             >,
                         >,
                         0usize,
@@ -390,9 +380,7 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

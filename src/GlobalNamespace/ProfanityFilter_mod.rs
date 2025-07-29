@@ -62,20 +62,14 @@ impl crate::GlobalNamespace::ProfanityFilter {
     }
     pub fn GetLookalikeLetters(
         c: char,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<char>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (char),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<char>,
-                        >,
+                        quest_hook::libil2cpp::Gc<char>,
                         1usize,
                     >("GetLookalikeLetters")
                     .unwrap_or_else(|e| {
@@ -86,9 +80,9 @@ impl crate::GlobalNamespace::ProfanityFilter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<char>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<char> = unsafe {
+            cordl_method_info.invoke_unchecked((), (c))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsProfane(
@@ -119,9 +113,7 @@ impl crate::GlobalNamespace::ProfanityFilter {
     }
     pub fn New(
         wordList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -133,9 +125,7 @@ impl crate::GlobalNamespace::ProfanityFilter {
     pub fn _ctor(
         &mut self,
         wordList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -144,10 +134,8 @@ impl crate::GlobalNamespace::ProfanityFilter {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -182,10 +170,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ProfanityFilt
 pub struct ProfanityFilter_TrieNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            char,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfanityFilter_TrieNode>,
-        >,
+        char,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ProfanityFilter_TrieNode>,
     >,
     pub _shortestWord: i32,
 }

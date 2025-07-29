@@ -4,15 +4,11 @@
 pub struct TextStyleSheet {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_StyleList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
     >,
     pub m_StyleLookupDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
@@ -213,9 +209,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -225,10 +219,8 @@ impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TextCore::Text::TextStyle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::TextStyle,
                             >,
                         >,
                         0usize,
@@ -242,9 +234,7 @@ impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

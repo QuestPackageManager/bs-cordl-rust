@@ -11,9 +11,7 @@ pub struct BaseField_1<TValueType: quest_hook::libil2cpp::Type> {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_Value: TValueType,
-    pub onValidateValue: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<TValueType, TValueType>,
-    >,
+    pub onValidateValue: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
     pub _labelElement_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Label,
     >,
@@ -706,7 +704,7 @@ impl<
     }
     pub fn add_onValidateValue(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TValueType>>,
+        value: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -717,9 +715,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<TValueType, TValueType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TValueType, TValueType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_onValidateValue")
@@ -931,7 +927,7 @@ impl<
     }
     pub fn remove_onValidateValue(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TValueType>>,
+        value: quest_hook::libil2cpp::Gc<TValueType, TValueType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -942,9 +938,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<TValueType, TValueType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TValueType, TValueType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_onValidateValue")
@@ -1177,22 +1171,18 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType>>
+> AsRef<quest_hook::libil2cpp::Gc<TValueType>>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType>>
+> AsMut<quest_hook::libil2cpp::Gc<TValueType>>
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<TValueType> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1316,9 +1306,7 @@ impl<
         choicesFromBag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >
     where
@@ -1332,10 +1320,8 @@ impl<
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -1349,9 +1335,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (choicesFromBag))? };
         Ok(__cordl_ret.into())
     }

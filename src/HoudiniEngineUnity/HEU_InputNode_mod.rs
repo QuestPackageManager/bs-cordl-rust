@@ -7,19 +7,13 @@ pub struct HEU_InputNode {
     pub _inputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
     pub _pendingInputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
     pub _inputObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
     >,
-    pub _inputObjectsConnectedAssetIDs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub _inputObjectsConnectedAssetIDs: quest_hook::libil2cpp::Gc<i32>,
     pub _inputAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _connectedInputAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _inputAssetInfos: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
     >,
     pub _nodeID: i32,
     pub _inputIndex: i32,
@@ -1384,9 +1378,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1396,10 +1388,8 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_InputObjectInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_InputObjectInfo,
                             >,
                         >,
                         0usize,
@@ -1413,9 +1403,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1852,13 +1840,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_InputN
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InputNode {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1866,13 +1854,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputNode")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InputNode {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     > {
         unsafe { std::mem::transmute(self) }

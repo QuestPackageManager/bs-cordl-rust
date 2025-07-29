@@ -506,20 +506,20 @@ impl crate::Unity::Mathematics::Geometry::MinMaxAABB {
     }
 }
 #[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::Geometry::MinMaxAABB> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+Geometry+MinMaxAABB")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::Geometry::MinMaxAABB>>
 for crate::Unity::Mathematics::Geometry::MinMaxAABB {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::Unity::Mathematics::Geometry::MinMaxAABB,
     > {
         todo!()

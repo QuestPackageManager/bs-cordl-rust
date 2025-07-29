@@ -15,34 +15,23 @@ pub struct OVRSceneRoom {
         >,
     >,
     pub _walls: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
     >,
-    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<crate::System::Guid, i32>,
-    >,
+    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<crate::System::Guid, i32>,
     pub _wallOrderComparer: quest_hook::libil2cpp::Gc<
-        crate::System::Comparison_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
     >,
     pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     pub _sceneManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRSceneManager,
     >,
-    pub _uuidToQuery: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<crate::System::Guid>,
-    >,
-    pub _roomAnchors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
-    >,
+    pub _uuidToQuery: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+    pub _roomAnchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
     pub _taskCount: i32,
-    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
-    >,
+    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<bool>,
     pub _onAnchorLocalizationCompleted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<bool, crate::GlobalNamespace::OVRAnchor>,
+        bool,
+        crate::GlobalNamespace::OVRAnchor,
     >,
 }
 #[cfg(feature = "cordl_class_OVRSceneRoom")]

@@ -43,11 +43,7 @@ impl crate::Oculus::Platform::Achievements {
         count: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,10 +58,8 @@ impl crate::Oculus::Platform::Achievements {
                             u64,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementUpdate,
                             >,
                         >,
                         2usize,
@@ -79,11 +73,7 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name, count))? };
         Ok(__cordl_ret.into())
     }
@@ -92,11 +82,7 @@ impl crate::Oculus::Platform::Achievements {
         fields: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -113,10 +99,8 @@ impl crate::Oculus::Platform::Achievements {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementUpdate,
                             >,
                         >,
                         2usize,
@@ -130,20 +114,14 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name, fields))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllDefinitions() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         >,
     > {
@@ -154,10 +132,8 @@ impl crate::Oculus::Platform::Achievements {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementDefinitionList,
                             >,
                         >,
                         0usize,
@@ -171,20 +147,16 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllProgress() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         >,
     > {
@@ -195,10 +167,8 @@ impl crate::Oculus::Platform::Achievements {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementProgressList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementProgressList,
                             >,
                         >,
                         0usize,
@@ -212,10 +182,8 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -228,10 +196,8 @@ impl crate::Oculus::Platform::Achievements {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         >,
     > {
@@ -248,10 +214,8 @@ impl crate::Oculus::Platform::Achievements {
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementDefinitionList,
                             >,
                         >,
                         1usize,
@@ -265,10 +229,8 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
@@ -279,10 +241,8 @@ impl crate::Oculus::Platform::Achievements {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         >,
     > {
@@ -295,10 +255,8 @@ impl crate::Oculus::Platform::Achievements {
                             crate::Oculus::Platform::Models::AchievementDefinitionList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementDefinitionList,
                             >,
                         >,
                         1usize,
@@ -312,10 +270,8 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -326,10 +282,8 @@ impl crate::Oculus::Platform::Achievements {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         >,
     > {
@@ -342,10 +296,8 @@ impl crate::Oculus::Platform::Achievements {
                             crate::Oculus::Platform::Models::AchievementProgressList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementProgressList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementProgressList,
                             >,
                         >,
                         1usize,
@@ -359,10 +311,8 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -375,10 +325,8 @@ impl crate::Oculus::Platform::Achievements {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         >,
     > {
@@ -395,10 +343,8 @@ impl crate::Oculus::Platform::Achievements {
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementProgressList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementProgressList,
                             >,
                         >,
                         1usize,
@@ -412,10 +358,8 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (names))? };
         Ok(__cordl_ret.into())
@@ -424,11 +368,7 @@ impl crate::Oculus::Platform::Achievements {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -438,10 +378,8 @@ impl crate::Oculus::Platform::Achievements {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementUpdate,
                             >,
                         >,
                         1usize,
@@ -455,11 +393,7 @@ impl crate::Oculus::Platform::Achievements {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementUpdate,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementUpdate>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
     }

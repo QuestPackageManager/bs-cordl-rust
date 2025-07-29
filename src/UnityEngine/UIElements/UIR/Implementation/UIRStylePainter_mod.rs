@@ -7,9 +7,7 @@ pub struct UIRStylePainter {
         crate::UnityEngine::UIElements::UIR::RenderChain,
     >,
     pub m_Entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
-        >,
+        crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
     >,
     pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_VectorImageManager: quest_hook::libil2cpp::Gc<
@@ -21,26 +19,16 @@ pub struct UIRStylePainter {
     pub m_StencilRef: i32,
     pub m_ClipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub m_SVGBackgroundEntryIndex: i32,
-    pub m_VertsPool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
-            crate::UnityEngine::UIElements::Vertex,
-        >,
-    >,
-    pub m_IndicesPool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
-    >,
+    pub m_VertsPool: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
+    pub m_IndicesPool: quest_hook::libil2cpp::Gc<u16>,
     pub m_MeshWriteDataPool: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
     >,
     pub m_NextMeshWriteDataPoolItem: i32,
     pub m_RepeatRectUVList: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
-                >,
+                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_RepeatRectUV,
             >,
         >,
     >,
@@ -1182,9 +1170,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
-            >,
+            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1194,9 +1180,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
-                            >,
+                            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
                         >,
                         0usize,
                     >("get_entries")
@@ -1209,9 +1193,7 @@ impl crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
-            >,
+            crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -11,14 +11,10 @@ pub struct CanvasUpdateRegistry {
         >,
     >,
     pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::Collections::IndexedSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
     >,
     pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::Collections::IndexedSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+CanvasUpdateRegistry")]

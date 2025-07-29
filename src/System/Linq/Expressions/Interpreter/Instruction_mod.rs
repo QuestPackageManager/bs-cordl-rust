@@ -105,11 +105,9 @@ impl crate::System::Linq::Expressions::Interpreter::Instruction {
         &mut self,
         instructionIndex: i32,
         cookie: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+        labelIndexer: quest_hook::libil2cpp::Gc<i32, i32>,
         objects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,12 +122,10 @@ impl crate::System::Linq::Expressions::Interpreter::Instruction {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),

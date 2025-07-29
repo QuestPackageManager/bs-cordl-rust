@@ -114,20 +114,14 @@ impl crate::UnityEngine::UI::CoroutineTween::ColorTween {
     pub type ColorTweenMode = crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenMode;
     pub fn AddOnChangedCallback(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<crate::UnityEngine::Color>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddOnChangedCallback")
@@ -483,7 +477,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTween_ColorTweenCallback {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback"
@@ -510,7 +504,7 @@ for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+ColorTween+ColorTweenCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::CoroutineTween::ColorTween_ColorTweenCallback {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Color>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

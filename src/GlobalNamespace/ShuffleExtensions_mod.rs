@@ -39,16 +39,12 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ShuffleExtensions {
 #[cfg(feature = "ShuffleExtensions")]
 impl crate::GlobalNamespace::ShuffleExtensions {
     pub fn PickRandomElementsWithTombstone<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
         limit: i32,
         count: i32,
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
         tombstone: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -59,17 +55,13 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<crate::System::Random>,
                             T,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         5usize,
                     >("PickRandomElementsWithTombstone")
                     .unwrap_or_else(|e| {
@@ -80,22 +72,16 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (source, limit, count, random, tombstone))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Shuffle<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -106,14 +92,10 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::Random>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Shuffle")
                     .unwrap_or_else(|e| {
@@ -124,13 +106,13 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, random))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (source, random))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ShuffleInPlace<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
         random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -143,9 +125,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::Random>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -165,14 +145,10 @@ impl crate::GlobalNamespace::ShuffleExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn TakeWithTombstone<T>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        source: quest_hook::libil2cpp::Gc<T>,
         limit: i32,
         tombstone: T,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -182,16 +158,8 @@ impl crate::GlobalNamespace::ShuffleExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            i32,
-                            T,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<T>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>, i32, T),
+                        quest_hook::libil2cpp::Gc<T>,
                         3usize,
                     >("TakeWithTombstone")
                     .unwrap_or_else(|e| {
@@ -202,27 +170,17 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
             cordl_method_info.invoke_unchecked((), (source, limit, tombstone))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn ZipSkipTombstone(
-        collection1: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-        collection2: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        collection1: quest_hook::libil2cpp::Gc<i32>,
+        collection2: quest_hook::libil2cpp::Gc<i32>,
         collection2Tombstone: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::ValueTuple_2<i32, i32>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -230,19 +188,11 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<i32>,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::ValueTuple_2<i32, i32>,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
                         3usize,
                     >("ZipSkipTombstone")
                     .unwrap_or_else(|e| {
@@ -254,9 +204,7 @@ impl crate::GlobalNamespace::ShuffleExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::ValueTuple_2<i32, i32>,
-            >,
+            crate::System::ValueTuple_2<i32, i32>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (collection1, collection2, collection2Tombstone))?

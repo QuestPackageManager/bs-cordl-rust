@@ -4,10 +4,8 @@
 pub struct JSONObject {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_Dict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
     >,
     pub _cordl_inline: bool,
 }
@@ -254,9 +252,7 @@ impl crate::OVRSimpleJSON::JSONObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -266,9 +262,7 @@ impl crate::OVRSimpleJSON::JSONObject {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
                         >,
                         0usize,
                     >("get_Children")
@@ -281,9 +275,7 @@ impl crate::OVRSimpleJSON::JSONObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

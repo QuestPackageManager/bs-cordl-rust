@@ -45,10 +45,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfileFileModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
             >,
         >,
     > {
@@ -59,10 +57,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfileFileModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
                             >,
                         >,
                         0usize,
@@ -76,10 +72,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfileFileModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfilesSaveData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

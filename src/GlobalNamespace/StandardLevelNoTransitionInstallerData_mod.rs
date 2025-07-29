@@ -4,23 +4,17 @@
 pub struct StandardLevelNoTransitionInstallerData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
     >,
     pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _colorScheme: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
     >,
     pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >,
     pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,

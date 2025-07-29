@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoseControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::XR::PoseState,
     >,
     pub _isTracked_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -46,7 +46,7 @@ for crate::UnityEngine::InputSystem::XR::PoseControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+PoseControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::PoseControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::XR::PoseState,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

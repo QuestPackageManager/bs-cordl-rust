@@ -5,10 +5,8 @@ pub struct ResourceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ResourceSets: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _resourceSets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceSet>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::System::Resources::ResourceSet>,
     >,
     pub MainAssembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     pub _neutralResourcesCulture: quest_hook::libil2cpp::Gc<

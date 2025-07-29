@@ -420,70 +420,6 @@ impl crate::GlobalNamespace::StandardScoreSyncState {
     }
 }
 #[cfg(feature = "StandardScoreSyncState")]
-impl AsRef<
-    crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::StandardScoreSyncState,
-    >,
-> for crate::GlobalNamespace::StandardScoreSyncState {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::StandardScoreSyncState,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "StandardScoreSyncState")]
-impl AsMut<
-    crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::StandardScoreSyncState,
-    >,
-> for crate::GlobalNamespace::StandardScoreSyncState {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
-        crate::GlobalNamespace::StandardScoreSyncState,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "StandardScoreSyncState")]
-impl AsRef<
-    crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::StandardScoreSyncState,
-        crate::GlobalNamespace::StandardScoreSyncState_Score,
-        i32,
-    >,
-> for crate::GlobalNamespace::StandardScoreSyncState {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::StandardScoreSyncState,
-        crate::GlobalNamespace::StandardScoreSyncState_Score,
-        i32,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "StandardScoreSyncState")]
-impl AsMut<
-    crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::StandardScoreSyncState,
-        crate::GlobalNamespace::StandardScoreSyncState_Score,
-        i32,
-    >,
-> for crate::GlobalNamespace::StandardScoreSyncState {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IStateTable_3<
-        crate::GlobalNamespace::StandardScoreSyncState,
-        crate::GlobalNamespace::StandardScoreSyncState_Score,
-        i32,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "StandardScoreSyncState")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncState {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
@@ -494,6 +430,60 @@ for crate::GlobalNamespace::StandardScoreSyncState {
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncState {
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StandardScoreSyncState,
+        crate::GlobalNamespace::StandardScoreSyncState_Score,
+        i32,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
+for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
+        todo!()
+    }
+}
+#[cfg(feature = "StandardScoreSyncState")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
+for crate::GlobalNamespace::StandardScoreSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
         todo!()
     }
 }

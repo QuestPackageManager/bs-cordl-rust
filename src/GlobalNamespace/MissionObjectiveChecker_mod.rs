@@ -7,14 +7,10 @@ pub struct MissionObjectiveChecker {
         crate::GlobalNamespace::MissionObjectiveTypeSO,
     >,
     pub statusDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
     >,
     pub checkedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
     >,
     pub _status: crate::GlobalNamespace::MissionObjectiveChecker_Status,
     pub _checkedValue: i32,
@@ -142,11 +138,7 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
     pub fn add_checkedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionObjectiveChecker,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -155,10 +147,8 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionObjectiveChecker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionObjectiveChecker,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -180,11 +170,7 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
     pub fn add_statusDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionObjectiveChecker,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -193,10 +179,8 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionObjectiveChecker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionObjectiveChecker,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -337,11 +321,7 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
     pub fn remove_checkedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionObjectiveChecker,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -350,10 +330,8 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionObjectiveChecker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionObjectiveChecker,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -375,11 +353,7 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
     pub fn remove_statusDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionObjectiveChecker,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveChecker>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -388,10 +362,8 @@ impl crate::GlobalNamespace::MissionObjectiveChecker {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionObjectiveChecker,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionObjectiveChecker,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

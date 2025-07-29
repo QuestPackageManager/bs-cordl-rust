@@ -4,12 +4,10 @@
 pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_IsDisposed: bool,
-    pub m_Pool: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<T>,
-    >,
+    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
     pub desiredSize: i32,
-    pub constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    pub destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub constructor: quest_hook::libil2cpp::Gc<T>,
+    pub destructor: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ObjectPool_1")]
@@ -193,8 +191,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
     pub fn New(
         initialSize: i32,
         desiredSize: i32,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-        destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
+        destructor: quest_hook::libil2cpp::Gc<T>,
         lazyInitialization: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -214,8 +212,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
         &mut self,
         initialSize: i32,
         desiredSize: i32,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-        destructor: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
+        destructor: quest_hook::libil2cpp::Gc<T>,
         lazyInitialization: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -230,8 +228,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::ProBuilder::ObjectPool_
                         (
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<T>,
                             bool,
                         ),
                         quest_hook::libil2cpp::Void,

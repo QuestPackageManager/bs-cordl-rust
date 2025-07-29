@@ -39,9 +39,7 @@ impl std::ops::DerefMut for crate::Unity::Properties::PropertyBag {
 #[cfg(feature = "Unity+Properties+PropertyBag")]
 impl crate::Unity::Properties::PropertyBag {
     pub fn Register<TContainer>(
-        propertyBag: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::PropertyBag_1<TContainer>,
-        >,
+        propertyBag: quest_hook::libil2cpp::Gc<TContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -52,9 +50,7 @@ impl crate::Unity::Properties::PropertyBag {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::PropertyBag_1<TContainer>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TContainer>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Register")

@@ -14,40 +14,24 @@ pub struct BasicBeatmapObjectManager {
     >,
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     pub _basicGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
     >,
     pub _burstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
     >,
     pub _burstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BurstSliderGameNoteController,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >,
     pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombNoteController>,
     >,
     pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _sliderNotePoolContainersDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::SliderController_LengthType,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MemoryPoolContainer_1<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
-                >,
-            >,
+        crate::GlobalNamespace::SliderController_LengthType,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
         >,
     >,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
@@ -461,9 +445,7 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -473,10 +455,8 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController,
                             >,
                         >,
                         0usize,
@@ -490,9 +470,7 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

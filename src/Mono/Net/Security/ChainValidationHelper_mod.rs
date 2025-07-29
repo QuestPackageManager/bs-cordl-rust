@@ -4,9 +4,7 @@
 pub struct ChainValidationHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<
-        crate::System::WeakReference_1<
-            quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::Security::SslStream>,
     >,
     pub settings: quest_hook::libil2cpp::Gc<
         crate::Mono::Security::Interface::MonoTlsSettings,

@@ -4623,7 +4623,7 @@ for crate::UnityEngine::UI::InputField_EditState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_EndEditEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -4649,7 +4649,7 @@ for crate::UnityEngine::UI::InputField_EndEditEvent {
 }
 #[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -4892,7 +4892,7 @@ for crate::UnityEngine::UI::InputField_LineType {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnChangeEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -4918,7 +4918,7 @@ for crate::UnityEngine::UI::InputField_OnChangeEvent {
 }
 #[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -5173,7 +5173,7 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_SubmitEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -5199,7 +5199,7 @@ for crate::UnityEngine::UI::InputField_SubmitEvent {
 }
 #[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

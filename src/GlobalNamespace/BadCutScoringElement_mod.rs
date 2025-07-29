@@ -200,7 +200,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BadCutScoring
 #[repr(C)]
 #[derive(Debug)]
 pub struct BadCutScoringElement_Pool {
-    __cordl_parent: crate::GlobalNamespace::ScoringElement_Pool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,
     >,
 }
@@ -226,7 +226,7 @@ for crate::GlobalNamespace::BadCutScoringElement_Pool {
 }
 #[cfg(feature = "BadCutScoringElement+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement_Pool {
-    type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

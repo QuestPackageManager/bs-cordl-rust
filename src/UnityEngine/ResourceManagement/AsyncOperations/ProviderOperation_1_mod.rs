@@ -4,37 +4,25 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProviderOperation_1<TObject: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TObject>,
     pub m_ReleaseDependenciesOnFailure: bool,
     pub m_CompletionCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_4<
-            i32,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        bool,
+        quest_hook::libil2cpp::Gc<crate::System::Exception>,
     >,
     pub m_GetDepCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            i32,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
-            >,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
-    pub m_GetProgressCallback: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
+    pub m_GetProgressCallback: quest_hook::libil2cpp::Gc<f32>,
     pub m_GetDownloadProgressCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-        >,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
     >,
-    pub m_WaitForCompletionCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<bool>,
-    >,
+    pub m_WaitForCompletionCallback: quest_hook::libil2cpp::Gc<bool>,
     pub m_ProviderCompletedCalled: bool,
     pub m_DownloadStatus: crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
     pub m_Provider: quest_hook::libil2cpp::Gc<
@@ -42,9 +30,7 @@ pub struct ProviderOperation_1<TObject: quest_hook::libil2cpp::Type> {
     >,
     pub m_DepOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     >,
     pub m_Location: quest_hook::libil2cpp::Gc<
@@ -105,9 +91,7 @@ impl<TObject: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::ProviderOperation_1<
     TObject,
 > {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        TObject,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TObject>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,12 +161,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetDependencies_IList_1_1(
+    pub fn GetDependencies_Gc0(
         &mut self,
-        dstList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+        deps: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -195,10 +177,42 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetDependencies")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDependencies", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (deps))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDependencies_Gc1(
+        &mut self,
+        dstList: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -214,44 +228,6 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (dstList))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetDependencies_List_1_0(
-        &mut self,
-        deps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("GetDependencies")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDependencies", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (deps))?
         };
         Ok(__cordl_ret.into())
     }
@@ -286,9 +262,7 @@ impl<
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -303,10 +277,8 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -338,9 +310,7 @@ impl<
         >,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                >,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -365,9 +335,7 @@ impl<
                             >,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                                    >,
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                                 >,
                             >,
                         ),
@@ -400,9 +368,7 @@ impl<
         >,
         depOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                >,
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             >,
         >,
         releaseDependenciesOnFailure: bool,
@@ -428,9 +394,7 @@ impl<
                             >,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-                                    >,
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
                                 >,
                             >,
                             bool,
@@ -553,9 +517,7 @@ impl<
     pub fn SetDownloadProgressCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-            >,
+            crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -568,9 +530,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
-                            >,
+                            crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -590,7 +550,7 @@ impl<
     }
     pub fn SetProgressCallback(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
+        callback: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -601,7 +561,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetProgressCallback")
@@ -620,7 +580,7 @@ impl<
     }
     pub fn SetWaitForCompletionCallback(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        callback: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -631,7 +591,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetWaitForCompletionCallback")

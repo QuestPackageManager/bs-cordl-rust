@@ -225,7 +225,7 @@ for crate::Oculus::Platform::Message_1_Callback<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback<T> {
     pub fn BeginInvoke(
         &mut self,
-        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
+        message: quest_hook::libil2cpp::Gc<T>,
         callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
         object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
@@ -241,9 +241,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Message_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -297,7 +295,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
     }
     pub fn Invoke(
         &mut self,
-        message: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Message_1<T>>,
+        message: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -308,9 +306,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Oculus::Platform::Message_1_Callback
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Invoke")

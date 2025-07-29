@@ -7,9 +7,7 @@ pub struct MultiplayerMockSettings {
         crate::GlobalNamespace::MockPlayerSettings,
     >,
     pub _otherPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
     >,
     pub _quickplayServer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MockServerSettings,
@@ -173,9 +171,7 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -185,10 +181,8 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MockPlayerSettings,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MockPlayerSettings,
                             >,
                         >,
                         0usize,
@@ -202,9 +196,7 @@ impl crate::GlobalNamespace::MultiplayerMockSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -49,10 +49,8 @@ impl std::ops::DerefMut for crate::BeatSaber::GameSettings::ControllerProfilesSa
 impl crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
     pub fn New(
         profiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -65,10 +63,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
     pub fn _ctor(
         &mut self,
         profiles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,10 +74,8 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSaveData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::GameSettings::ControllerProfileSaveData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::GameSettings::ControllerProfileSaveData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -4,9 +4,7 @@
 pub struct GUILayoutGroup {
     __cordl_parent: crate::UnityEngine::GUILayoutEntry,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUILayoutEntry>,
     >,
     pub isVertical: bool,
     pub resetCoords: bool,

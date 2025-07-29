@@ -594,13 +594,11 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn MarkEdge_List_1_1(
+    pub fn MarkEdge_Gc1(
         &mut self,
         tList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -610,10 +608,8 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -5,14 +5,10 @@ pub struct OrderedEnumerable_2<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Linq::OrderedEnumerable_1<TElement>,
-    pub parent: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::OrderedEnumerable_1<TElement>,
-    >,
-    pub keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
-    pub comparer: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IComparer_1<TKey>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TElement>,
+    pub parent: quest_hook::libil2cpp::Gc<TElement>,
+    pub keySelector: quest_hook::libil2cpp::Gc<TElement, TKey>,
+    pub comparer: quest_hook::libil2cpp::Gc<TKey>,
     pub descending: bool,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -61,7 +57,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::OrderedEnumerable_2<TElement, TKey> {
-    type Target = crate::System::Linq::OrderedEnumerable_1<TElement>;
+    type Target = quest_hook::libil2cpp::Gc<TElement>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -82,12 +78,8 @@ impl<
 > crate::System::Linq::OrderedEnumerable_2<TElement, TKey> {
     pub fn GetEnumerableSorter(
         &mut self,
-        next: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::EnumerableSorter_1<TElement>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::EnumerableSorter_1<TElement>>,
-    >
+        next: quest_hook::libil2cpp::Gc<TElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -99,12 +91,8 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Linq::EnumerableSorter_1<TElement>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Linq::EnumerableSorter_1<TElement>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<TElement>),
+                        quest_hook::libil2cpp::Gc<TElement>,
                         1usize,
                     >("GetEnumerableSorter")
                     .unwrap_or_else(|e| {
@@ -115,19 +103,15 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::EnumerableSorter_1<TElement>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (next))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (next))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TElement>,
-        >,
-        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TKey>,
-        >,
+        source: quest_hook::libil2cpp::Gc<TElement>,
+        keySelector: quest_hook::libil2cpp::Gc<TElement, TKey>,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
         descending: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -144,13 +128,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TElement>,
-        >,
-        keySelector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TKey>>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TKey>,
-        >,
+        source: quest_hook::libil2cpp::Gc<TElement>,
+        keySelector: quest_hook::libil2cpp::Gc<TElement, TKey>,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
         descending: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -165,15 +145,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TElement>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TElement, TKey>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<TKey>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TElement>,
+                            quest_hook::libil2cpp::Gc<TElement, TKey>,
+                            quest_hook::libil2cpp::Gc<TKey>,
                             bool,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPropertyBag_1<TElement: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Unity::Properties::IndexedCollectionPropertyBag_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         TElement,
     >,
@@ -47,7 +47,7 @@ for crate::Unity::Properties::ArrayPropertyBag_1<TElement> {
 #[cfg(feature = "Unity+Properties+ArrayPropertyBag_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ArrayPropertyBag_1<TElement> {
-    type Target = crate::Unity::Properties::IndexedCollectionPropertyBag_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         TElement,
     >;

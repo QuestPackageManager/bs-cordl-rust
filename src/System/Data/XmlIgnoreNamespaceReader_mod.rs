@@ -4,9 +4,7 @@
 pub struct XmlIgnoreNamespaceReader {
     __cordl_parent: crate::System::Xml::XmlNodeReader,
     pub _namespacesToIgnore: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Data+XmlIgnoreNamespaceReader")]

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NodePoseSyncStateManager {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::NodePoseSyncStateManager {
 }
 #[cfg(feature = "NodePoseSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::NodePoseSyncStateManager {
-    type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -187,10 +187,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
             >,
         >,
     > {
@@ -201,10 +199,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IPacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
                             >,
                         >,
                         0usize,
@@ -218,10 +214,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateDeltaNetSerializable,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -327,10 +321,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
             >,
         >,
     > {
@@ -341,10 +333,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IPacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
                             >,
                         >,
                         0usize,
@@ -358,10 +348,8 @@ impl crate::GlobalNamespace::NodePoseSyncStateManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NodePoseSyncStateNetSerializable,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -393,7 +381,7 @@ for crate::GlobalNamespace::NodePoseSyncStateManager {
 }
 #[cfg(feature = "NodePoseSyncStateManager")]
 impl AsRef<
-    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -407,7 +395,7 @@ impl AsRef<
 > for crate::GlobalNamespace::NodePoseSyncStateManager {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -423,7 +411,7 @@ impl AsRef<
 }
 #[cfg(feature = "NodePoseSyncStateManager")]
 impl AsMut<
-    crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -437,7 +425,7 @@ impl AsMut<
 > for crate::GlobalNamespace::NodePoseSyncStateManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::INodePoseSyncStateManager_5<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,

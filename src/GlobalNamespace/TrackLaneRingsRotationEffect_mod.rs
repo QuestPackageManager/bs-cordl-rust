@@ -11,22 +11,16 @@ pub struct TrackLaneRingsRotationEffect {
     pub _startupRotationPropagationSpeed: i32,
     pub _startupRotationFlexySpeed: f32,
     pub _activeRingRotationEffects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
         >,
     >,
     pub _ringRotationEffectsPool: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TrackLaneRingsRotationEffect_RingRotationEffect,
         >,
     >,
-    pub ringRotationEffectsToDelete: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub ringRotationEffectsToDelete: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_TrackLaneRingsRotationEffect")]
 unsafe impl quest_hook::libil2cpp::Type

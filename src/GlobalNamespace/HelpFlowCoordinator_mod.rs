@@ -22,9 +22,7 @@ pub struct HelpFlowCoordinator {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
     >,
 }
 #[cfg(feature = "cordl_class_HelpFlowCoordinator")]
@@ -261,9 +259,7 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -272,10 +268,8 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::HelpFlowCoordinator,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::HelpFlowCoordinator,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -297,9 +291,7 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -308,10 +300,8 @@ impl crate::GlobalNamespace::HelpFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::HelpFlowCoordinator,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::HelpFlowCoordinator,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

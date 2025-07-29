@@ -42,10 +42,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
     pub fn GetBestQuadConnection(
         wing: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         connections: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::UnityEngine::ProBuilder::EdgeLookup,
-                f32,
-            >,
+            crate::UnityEngine::ProBuilder::EdgeLookup,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
@@ -60,10 +58,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
                                 crate::UnityEngine::ProBuilder::WingedEdge,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    crate::UnityEngine::ProBuilder::EdgeLookup,
-                                    f32,
-                                >,
+                                crate::UnityEngine::ProBuilder::EdgeLookup,
+                                f32,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
@@ -124,16 +120,12 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
     pub fn ToQuads(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         smoothing: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -146,19 +138,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >,
                         3usize,
@@ -172,9 +160,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::QuadUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, faces, smoothing))? };
         Ok(__cordl_ret.into())
     }

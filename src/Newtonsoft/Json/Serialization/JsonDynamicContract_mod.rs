@@ -7,55 +7,31 @@ pub struct JsonDynamicContract {
         crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
     >,
     pub _PropertyNameResolver_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _callSiteGetters: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::CompilerServices::CallSite_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Func_3<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::CallSite,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        >,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     >,
     pub _callSiteSetters: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::CompilerServices::CallSite_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Func_4<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::CallSite,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                        >,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     >,
@@ -99,16 +75,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Func_3<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite,
-                        >,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -119,19 +91,15 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Func_3<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Runtime::CompilerServices::CallSite,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
-                                    >,
+                                    crate::System::Runtime::CompilerServices::CallSite,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         >,
@@ -146,16 +114,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Func_3<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite,
-                        >,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
@@ -164,17 +128,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Func_4<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite,
-                        >,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     > {
@@ -185,22 +145,18 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Func_4<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Runtime::CompilerServices::CallSite,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
-                                    >,
+                                    crate::System::Runtime::CompilerServices::CallSite,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         >,
@@ -215,17 +171,13 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Func_4<
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSite,
-                        >,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    >,
+                    crate::System::Runtime::CompilerServices::CallSite,
                 >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())
@@ -384,10 +336,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -397,13 +347,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -417,20 +365,16 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_PropertyNameResolver(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -439,13 +383,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

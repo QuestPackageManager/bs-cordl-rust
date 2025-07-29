@@ -6,7 +6,7 @@ pub struct PlaceholderFactory_3<
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::PlaceholderFactoryBase_1<TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -57,7 +57,7 @@ impl<
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::PlaceholderFactory_3<TParam1, TParam2, TValue> {
-    type Target = crate::Zenject::PlaceholderFactoryBase_1<TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -232,11 +232,7 @@ impl<
     pub fn get_ParamTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -253,9 +249,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         0usize,
                     >("get_ParamTypes")
@@ -268,9 +262,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -316,9 +308,9 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IFactory_3<TParam1, TParam2, TValue>>
+> AsRef<quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>>
 for crate::Zenject::PlaceholderFactory_3<TParam1, TParam2, TValue> {
-    fn as_ref(&self) -> &crate::Zenject::IFactory_3<TParam1, TParam2, TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -327,9 +319,9 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IFactory_3<TParam1, TParam2, TValue>>
+> AsMut<quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>>
 for crate::Zenject::PlaceholderFactory_3<TParam1, TParam2, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory_3<TParam1, TParam2, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

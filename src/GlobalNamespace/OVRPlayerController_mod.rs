@@ -18,7 +18,7 @@ pub struct OVRPlayerController {
     pub useProfileData: bool,
     pub CameraHeight: f32,
     pub TransformUpdated: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub Teleported: bool,
     pub CameraUpdated: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -615,9 +615,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
     pub fn add_TransformUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -626,9 +624,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -718,9 +714,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
     pub fn remove_TransformUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -729,9 +723,7 @@ impl crate::GlobalNamespace::OVRPlayerController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

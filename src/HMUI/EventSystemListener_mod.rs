@@ -4,14 +4,10 @@
 pub struct EventSystemListener {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub pointerDidEnterEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
     pub pointerDidExitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+EventSystemListener")]
@@ -139,11 +135,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn add_pointerDidEnterEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -152,10 +144,8 @@ impl crate::HMUI::EventSystemListener {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -177,11 +167,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn add_pointerDidExitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -190,10 +176,8 @@ impl crate::HMUI::EventSystemListener {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -215,11 +199,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn remove_pointerDidEnterEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -228,10 +208,8 @@ impl crate::HMUI::EventSystemListener {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -253,11 +231,7 @@ impl crate::HMUI::EventSystemListener {
     pub fn remove_pointerDidExitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::PointerEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -266,10 +240,8 @@ impl crate::HMUI::EventSystemListener {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::PointerEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

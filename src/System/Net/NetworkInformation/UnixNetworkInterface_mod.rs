@@ -8,9 +8,7 @@ pub struct UnixNetworkInterface {
     >,
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub addresses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     >,
     pub macAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub _cordl_type: crate::System::Net::NetworkInformation::NetworkInterfaceType,

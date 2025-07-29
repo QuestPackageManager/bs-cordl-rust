@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Field {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseCompositeField_3<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Vector2,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
         f32,
@@ -30,7 +30,7 @@ for crate::UnityEngine::UIElements::Vector2Field {
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2Field")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2Field {
-    type Target = crate::UnityEngine::UIElements::BaseCompositeField_3<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Vector2,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
         f32,
@@ -183,7 +183,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Vecto
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Field_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector2Field>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Vector2Field_UxmlTraits,
@@ -212,7 +212,7 @@ for crate::UnityEngine::UIElements::Vector2Field_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2Field+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2Field_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vector2Field>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Vector2Field_UxmlTraits,
@@ -273,9 +273,7 @@ for crate::UnityEngine::UIElements::Vector2Field_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Field_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     pub m_XValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -305,9 +303,7 @@ for crate::UnityEngine::UIElements::Vector2Field_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+Vector2Field+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Vector2Field_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

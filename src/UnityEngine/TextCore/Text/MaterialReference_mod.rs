@@ -125,9 +125,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                 >,
             >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -146,9 +144,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                                     >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         i32,
                         4usize,
@@ -187,9 +183,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                 >,
             >,
         >,
-        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        materialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -208,9 +202,7 @@ impl crate::UnityEngine::TextCore::Text::MaterialReference {
                                     >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         i32,
                         4usize,

@@ -16,9 +16,7 @@ pub struct MultiplayerSpectatorController {
         crate::GlobalNamespace::FadeInOutController,
     >,
     pub spectatingSpotDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     >,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _currentSpot: quest_hook::libil2cpp::Gc<
@@ -343,11 +341,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
     pub fn add_spectatingSpotDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -356,10 +350,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -410,11 +402,7 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
     pub fn remove_spectatingSpotDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -423,10 +411,8 @@ impl crate::GlobalNamespace::MultiplayerSpectatorController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

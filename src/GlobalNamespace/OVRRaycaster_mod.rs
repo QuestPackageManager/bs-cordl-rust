@@ -7,9 +7,7 @@ pub struct OVRRaycaster {
     pub sortOrder: i32,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::OVRRaycaster_RaycastHit,
-        >,
+        crate::GlobalNamespace::OVRRaycaster_RaycastHit,
     >,
 }
 #[cfg(feature = "cordl_class_OVRRaycaster")]
@@ -79,9 +77,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::GlobalNamespace::OVRRaycaster_RaycastHit,
-            >,
+            crate::GlobalNamespace::OVRRaycaster_RaycastHit,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -93,9 +89,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
                             crate::UnityEngine::Ray,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::GlobalNamespace::OVRRaycaster_RaycastHit,
-                                >,
+                                crate::GlobalNamespace::OVRRaycaster_RaycastHit,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -203,9 +197,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -218,9 +210,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -239,15 +229,13 @@ impl crate::GlobalNamespace::OVRRaycaster {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_PointerEventData_List_1_1(
+    pub fn Raycast_PointerEventData_Gc1(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -260,9 +248,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -287,9 +273,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
         ray: crate::UnityEngine::Ray,
         checkForBlocking: bool,
@@ -304,9 +288,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                             crate::UnityEngine::Ray,
                             bool,

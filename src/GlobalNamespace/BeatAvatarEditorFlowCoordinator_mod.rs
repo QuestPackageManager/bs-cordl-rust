@@ -22,10 +22,8 @@ pub struct BeatAvatarEditorFlowCoordinator {
         crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
     >,
     pub _parameterChangedAnimationCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            quest_hook::libil2cpp::Gc<crate::System::Action>,
-        >,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
     pub _coloredAvatarPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     pub _originalColorOfColoredPart: crate::UnityEngine::Color,
@@ -203,9 +201,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
     }
     pub fn HandleBeatAvatarViewControllerDidRequestColorChange(
         &mut self,
-        colorCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        colorCallback: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
         currentColor: crate::UnityEngine::Color,
         editPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
         uvSegment: i32,
@@ -216,9 +212,7 @@ impl crate::GlobalNamespace::BeatAvatarEditorFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<crate::UnityEngine::Color>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
                             crate::UnityEngine::Color,
                             crate::BeatSaber::BeatAvatarSDK::AvatarPart,
                             i32,

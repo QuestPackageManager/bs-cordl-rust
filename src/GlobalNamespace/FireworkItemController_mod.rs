@@ -33,9 +33,7 @@ pub struct FireworkItemController {
         >,
     >,
     pub _randomAudioPicker: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RandomObjectPicker_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
     >,
     pub _directionalLight: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DirectionalLight,
@@ -43,9 +41,7 @@ pub struct FireworkItemController {
     pub _directionalLightIntensity: f32,
     pub _initialized: bool,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >,
 }
 #[cfg(feature = "cordl_class_FireworkItemController")]
@@ -286,9 +282,7 @@ impl crate::GlobalNamespace::FireworkItemController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -297,10 +291,8 @@ impl crate::GlobalNamespace::FireworkItemController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FireworkItemController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FireworkItemController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -322,9 +314,7 @@ impl crate::GlobalNamespace::FireworkItemController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -333,10 +323,8 @@ impl crate::GlobalNamespace::FireworkItemController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FireworkItemController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FireworkItemController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -512,7 +500,7 @@ for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >,
 }
@@ -538,7 +526,7 @@ for crate::GlobalNamespace::FireworkItemController_Pool {
 }
 #[cfg(feature = "FireworkItemController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::FireworkItemController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

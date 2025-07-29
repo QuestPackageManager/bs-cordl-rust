@@ -288,7 +288,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BestFitAllocator_Block {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,
@@ -331,7 +331,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,
@@ -408,7 +408,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BestFitAllocator_BlockPool {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,
@@ -437,7 +437,7 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,

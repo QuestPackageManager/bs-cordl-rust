@@ -153,9 +153,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         _cordl_self: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
         >,
     >
     where
@@ -172,9 +170,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                         >),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::IEquivable_1<T>,
-                                >,
+                                quest_hook::libil2cpp::Gc<T>,
                             >,
                         >,
                         1usize,
@@ -188,19 +184,13 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertList<T, U>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<U>>,
-    >
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<U>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -212,12 +202,8 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<U>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Gc<U>,
                         1usize,
                     >("ConvertList")
                     .unwrap_or_else(|e| {
@@ -228,21 +214,15 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<U>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<U> = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ConvertListToEquivable<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -253,16 +233,8 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::IEquivable_1<T>,
-                                >,
-                            >,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
                         1usize,
                     >("ConvertListToEquivable")
                     .unwrap_or_else(|e| {
@@ -273,11 +245,9 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::IEquivable_1<T>>,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>> = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DecomposeToPosition(
@@ -356,13 +326,9 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         Ok(__cordl_ret.into())
     }
     pub fn Filter<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
+        predicate: quest_hook::libil2cpp::Gc<T, bool>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -373,14 +339,10 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<T, bool>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Filter")
                     .unwrap_or_else(|e| {
@@ -391,16 +353,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self, predicate))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_self, predicate))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IsEquivalentList<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
-        other: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
+        other: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -411,14 +371,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         bool,
                         2usize,
                     >("IsEquivalentList")
@@ -436,9 +389,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         Ok(__cordl_ret.into())
     }
     pub fn IsValidIndex<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -450,12 +401,7 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, i32),
                         bool,
                         2usize,
                     >("IsValidIndex")
@@ -473,13 +419,9 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
         Ok(__cordl_ret.into())
     }
     pub fn Map<T, R>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, R>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<R>>,
-    >
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
+        selector: quest_hook::libil2cpp::Gc<T, R>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<R>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -491,15 +433,8 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, R>>,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<R>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T, R>),
+                        quest_hook::libil2cpp::Gc<R>,
                         2usize,
                     >("Map")
                     .unwrap_or_else(|e| {
@@ -510,16 +445,14 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<R>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self, selector))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<R> = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_self, selector))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Reduce<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
-        func: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, T>>,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
+        func: quest_hook::libil2cpp::Gc<T, T, T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -531,10 +464,8 @@ impl crate::HoudiniEngineUnity::HEU_Extensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, T>>,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<T, T, T>,
                         ),
                         T,
                         2usize,

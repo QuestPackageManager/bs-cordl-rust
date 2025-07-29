@@ -280,7 +280,7 @@ for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -288,7 +288,7 @@ impl AsRef<
 > for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -298,7 +298,7 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerationSettings")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -306,7 +306,7 @@ impl AsMut<
 > for crate::UnityEngine::TextCore::Text::TextGenerationSettings {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,

@@ -4,11 +4,7 @@
 pub struct RuntimeVariablesExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _Variables_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+RuntimeVariablesExpression")]
@@ -51,10 +47,8 @@ impl crate::System::Linq::Expressions::RuntimeVariablesExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
     > {
@@ -65,10 +59,8 @@ impl crate::System::Linq::Expressions::RuntimeVariablesExpression {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::ParameterExpression,
                             >,
                         >,
                         0usize,
@@ -82,10 +74,8 @@ impl crate::System::Linq::Expressions::RuntimeVariablesExpression {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -4,24 +4,16 @@
 pub struct SerializationEvents {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _onSerializingMethods: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     >,
     pub _onSerializedMethods: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     >,
     pub _onDeserializingMethods: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     >,
     pub _onDeserializedMethods: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+SerializationEvents")]
@@ -65,9 +57,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
             crate::System::Runtime::Serialization::SerializationEventHandler,
         >,
         methods: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -87,10 +77,8 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
                                 crate::System::Runtime::Serialization::SerializationEventHandler,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::MethodInfo,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::MethodInfo,
                                 >,
                             >,
                         ),
@@ -202,9 +190,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -217,10 +203,8 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::MethodInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MethodInfo,
                             >,
                         >,
                         2usize,
@@ -234,9 +218,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (attribute, t))? };
         Ok(__cordl_ret.into())
     }
@@ -244,9 +226,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         context: crate::System::Runtime::Serialization::StreamingContext,
         methods: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -260,10 +240,8 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
                             >,
                             crate::System::Runtime::Serialization::StreamingContext,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Reflection::MethodInfo,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::MethodInfo,
                                 >,
                             >,
                         ),

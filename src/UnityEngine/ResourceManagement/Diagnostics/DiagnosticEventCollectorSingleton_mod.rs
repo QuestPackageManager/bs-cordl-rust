@@ -4,26 +4,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticEventCollectorSingleton {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton,
         >,
     >,
     pub m_CreatedEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-        >,
+        i32,
+        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     >,
     pub m_UnhandledEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-        >,
+        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     >,
     pub s_EventHandlers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DelegateList_1<
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-        >,
+        crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
     >,
     pub m_lastTickSent: f32,
     pub m_lastFrame: i32,
@@ -56,7 +50,7 @@ for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollecto
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton {
-    type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollectorSingleton,
         >,
@@ -159,12 +153,10 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterEventHandler_Action_1_1(
+    pub fn RegisterEventHandler_Gc1(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-            >,
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -173,9 +165,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                            >,
+                            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -195,9 +185,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     }
     pub fn RegisterEventHandler__cordl_bool__cordl_bool0(
         handler: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-            >,
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
         >,
         _cordl_register: bool,
         create: bool,
@@ -209,9 +197,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                                >,
+                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
                             >,
                             bool,
                             bool,
@@ -235,9 +221,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn UnregisterEventHandler(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-            >,
+            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -246,9 +230,7 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
-                            >,
+                            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

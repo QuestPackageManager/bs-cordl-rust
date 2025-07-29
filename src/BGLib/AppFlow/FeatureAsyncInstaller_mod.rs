@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FeatureAsyncInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::BGLib::AppFlow::FeatureAsyncInstaller {
 }
 #[cfg(feature = "BGLib+AppFlow+FeatureAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::AppFlow::FeatureAsyncInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -72,9 +72,7 @@ impl crate::BGLib::AppFlow::FeatureAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         scriptableObjectInstallers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ScriptableObjectInstaller>,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -87,10 +85,8 @@ impl crate::BGLib::AppFlow::FeatureAsyncInstaller {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Zenject::ScriptableObjectInstaller,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::ScriptableObjectInstaller,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

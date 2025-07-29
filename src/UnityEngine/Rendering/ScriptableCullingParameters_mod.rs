@@ -269,13 +269,11 @@ impl crate::UnityEngine::Rendering::ScriptableCullingParameters {
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Rendering::ScriptableCullingParameters,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ScriptableCullingParameters>,
 > for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::ScriptableCullingParameters,
     > {
         todo!()
@@ -283,13 +281,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableCullingParameters")]
 impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Rendering::ScriptableCullingParameters,
-    >,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::ScriptableCullingParameters>,
 > for crate::UnityEngine::Rendering::ScriptableCullingParameters {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::ScriptableCullingParameters,
     > {
         todo!()

@@ -14,9 +14,7 @@ pub struct PSVRHelper {
     >,
     pub controllersDidDisconnectEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _didGetNodeStatesThisFrame: bool,
-    pub _nodeStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::XR::XRNodeState>,
-    >,
+    pub _nodeStates: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRNodeState>,
     pub _hasInputFocus: bool,
     pub _hasVrFocus: bool,
     pub _isMounted: bool,

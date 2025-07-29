@@ -10,10 +10,8 @@ pub struct DropdownWithTableView {
     pub _numberOfVisibleCells: i32,
     pub _hideOnSelection: bool,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+        i32,
     >,
     pub _selectedIndex_k__BackingField: i32,
 }
@@ -393,10 +391,8 @@ impl crate::HMUI::DropdownWithTableView {
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -405,12 +401,10 @@ impl crate::HMUI::DropdownWithTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HMUI::DropdownWithTableView,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HMUI::DropdownWithTableView,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -492,10 +486,8 @@ impl crate::HMUI::DropdownWithTableView {
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::DropdownWithTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -504,12 +496,10 @@ impl crate::HMUI::DropdownWithTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HMUI::DropdownWithTableView,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HMUI::DropdownWithTableView,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

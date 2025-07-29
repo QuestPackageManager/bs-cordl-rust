@@ -42,9 +42,7 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorDynamicContext {
 impl crate::Zenject::SubContainerCreatorDynamicContext {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -53,11 +51,7 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -106,9 +100,7 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
     }
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         parentContext: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -119,11 +111,7 @@ impl crate::Zenject::SubContainerCreatorDynamicContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

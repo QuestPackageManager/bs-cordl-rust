@@ -6,15 +6,9 @@ pub struct SortedList_2<
     TBase: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<TBase>,
-    >,
-    pub _sortedListDataProcessor: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
-    >,
-    pub _lastUsedNode: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-    >,
+    pub _items: quest_hook::libil2cpp::Gc<TBase>,
+    pub _sortedListDataProcessor: quest_hook::libil2cpp::Gc<TBase>,
+    pub _lastUsedNode: quest_hook::libil2cpp::Gc<TBase>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }
@@ -77,9 +71,7 @@ impl<
 > crate::GlobalNamespace::SortedList_2<T, TBase> {
     pub fn InsertInternal(
         &mut self,
-        newItem: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        >,
+        newItem: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -92,9 +84,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TBase>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InsertInternal")
@@ -111,11 +101,9 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Insert_LinkedListNode_1_1(
+    pub fn Insert_Gc1(
         &mut self,
-        newNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        >,
+        newNode: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -128,9 +116,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TBase>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Insert")
@@ -150,11 +136,7 @@ impl<
     pub fn Insert_TBase0(
         &mut self,
         newItem: TBase,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TBase>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -167,9 +149,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TBase),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TBase>,
                         1usize,
                     >("Insert")
                     .unwrap_or_else(|e| {
@@ -180,15 +160,13 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (newItem))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TBase> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newItem))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
-        >,
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -204,9 +182,7 @@ impl<
     }
     pub fn Remove(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        >,
+        node: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -219,9 +195,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TBase>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Remove")
@@ -240,9 +214,7 @@ impl<
     }
     pub fn TouchLastUsedNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-        >,
+        node: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -255,9 +227,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<TBase>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TBase>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("TouchLastUsedNode")
@@ -276,9 +246,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
-        >,
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<TBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -291,9 +259,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TBase>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -335,11 +301,7 @@ impl<
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<TBase>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TBase>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -352,9 +314,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedList_1<TBase>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TBase>,
                         0usize,
                     >("get_items")
                     .unwrap_or_else(|e| {
@@ -365,9 +325,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<TBase>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TBase> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -387,9 +347,9 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
-> AsRef<crate::GlobalNamespace::ISortedList_1<TBase>>
+> AsRef<quest_hook::libil2cpp::Gc<TBase>>
 for crate::GlobalNamespace::SortedList_2<T, TBase> {
-    fn as_ref(&self) -> &crate::GlobalNamespace::ISortedList_1<TBase> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TBase> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -397,9 +357,9 @@ for crate::GlobalNamespace::SortedList_2<T, TBase> {
 impl<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
-> AsMut<crate::GlobalNamespace::ISortedList_1<TBase>>
+> AsMut<quest_hook::libil2cpp::Gc<TBase>>
 for crate::GlobalNamespace::SortedList_2<T, TBase> {
-    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::ISortedList_1<TBase> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TBase> {
         unsafe { std::mem::transmute(self) }
     }
 }

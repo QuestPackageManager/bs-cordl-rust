@@ -8,18 +8,10 @@ pub struct MultiplayerResultsData {
         crate::GlobalNamespace::MultiplayerPlayerResultsData,
     >,
     pub _otherPlayersData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     >,
     pub _allPlayersSortedData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerResultsData")]
@@ -63,11 +55,9 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayersResultData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
         badgesProvider: quest_hook::libil2cpp::Gc<
@@ -99,11 +89,9 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         otherPlayersResultData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
         badgesProvider: quest_hook::libil2cpp::Gc<
@@ -126,13 +114,11 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                                 crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -172,10 +158,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     > {
@@ -186,10 +170,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerPlayerResultsData,
                             >,
                         >,
                         0usize,
@@ -203,10 +185,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -271,10 +251,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     > {
@@ -285,10 +263,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerPlayerResultsData,
                             >,
                         >,
                         0usize,
@@ -302,10 +278,8 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

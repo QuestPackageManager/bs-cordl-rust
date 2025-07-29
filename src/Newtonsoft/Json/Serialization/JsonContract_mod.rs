@@ -13,38 +13,28 @@ pub struct JsonContract {
     pub IsSealed: bool,
     pub IsInstantiable: bool,
     pub _onDeserializedCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::SerializationCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
         >,
     >,
     pub _onDeserializingCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::SerializationCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
         >,
     >,
     pub _onSerializedCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::SerializationCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
         >,
     >,
     pub _onSerializingCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::SerializationCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationCallback,
         >,
     >,
     pub _onErrorCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
         >,
     >,
     pub _createdType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -57,9 +47,7 @@ pub struct JsonContract {
         crate::Newtonsoft::Json::JsonConverter,
     >,
     pub _DefaultCreator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _DefaultCreatorNonPublic_k__BackingField: bool,
 }
@@ -427,9 +415,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -439,10 +425,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >,
                         0usize,
@@ -456,9 +440,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -539,10 +521,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         >,
     > {
@@ -553,10 +533,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::SerializationCallback,
                             >,
                         >,
                         0usize,
@@ -570,10 +548,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -582,10 +558,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         >,
     > {
@@ -596,10 +570,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::SerializationCallback,
                             >,
                         >,
                         0usize,
@@ -613,10 +585,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -625,10 +595,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
             >,
         >,
     > {
@@ -639,10 +607,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
                             >,
                         >,
                         0usize,
@@ -656,10 +622,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -668,10 +632,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         >,
     > {
@@ -682,10 +644,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::SerializationCallback,
                             >,
                         >,
                         0usize,
@@ -699,10 +659,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -711,10 +669,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         >,
     > {
@@ -725,10 +681,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::SerializationCallback,
                             >,
                         >,
                         0usize,
@@ -742,10 +696,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::SerializationCallback,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -832,9 +784,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     pub fn set_DefaultCreator(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -843,10 +793,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

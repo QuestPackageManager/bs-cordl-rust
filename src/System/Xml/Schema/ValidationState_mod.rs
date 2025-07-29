@@ -32,9 +32,7 @@ pub struct ValidationState {
     >,
     pub AllElementsSet: quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::BitSet>,
     pub RunningPositions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::RangePositionInfo,
-        >,
+        crate::System::Xml::Schema::RangePositionInfo,
     >,
     pub TooComplex: bool,
 }

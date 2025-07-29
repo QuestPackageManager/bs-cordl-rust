@@ -131,13 +131,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Gradi
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     >,
 > for crate::HoudiniEngineUnity::Test_Gradient {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -145,13 +145,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     >,
 > for crate::HoudiniEngineUnity::Test_Gradient {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -159,13 +159,13 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     >,
 > for crate::HoudiniEngineUnity::Test_Gradient {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -173,13 +173,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     >,
 > for crate::HoudiniEngineUnity::Test_Gradient {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
     > {
         unsafe { std::mem::transmute(self) }

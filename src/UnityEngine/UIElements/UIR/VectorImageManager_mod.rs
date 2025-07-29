@@ -5,11 +5,9 @@ pub struct VectorImageManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_Registered: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
-            >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VectorImage>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::VectorImageRenderInfo,
         >,
     >,
     pub m_RenderInfoPool: quest_hook::libil2cpp::Gc<

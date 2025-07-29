@@ -4,9 +4,7 @@
 pub struct StyleValueCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StyleValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StyleValue,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleValueCollection")]

@@ -4,9 +4,7 @@
 pub struct MidiTrack {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Index: i32,
-    pub MidiEvents: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::MidiParser::MidiEvent>,
-    >,
+    pub MidiEvents: quest_hook::libil2cpp::Gc<crate::MidiParser::MidiEvent>,
 }
 #[cfg(feature = "cordl_class_MidiParser+MidiTrack")]
 unsafe impl quest_hook::libil2cpp::Type for crate::MidiParser::MidiTrack {

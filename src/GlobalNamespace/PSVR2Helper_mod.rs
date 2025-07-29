@@ -14,17 +14,13 @@ pub struct PSVR2Helper {
     >,
     pub _defaultPose: crate::UnityEngine::Pose,
     pub _controllers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::XR::XRNode,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
-        >,
+        crate::UnityEngine::XR::XRNode,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
     >,
     pub _controllersWithRumble: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::XR::XRNode,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
-            >,
+        crate::UnityEngine::XR::XRNode,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::XR::XRControllerWithRumble,
         >,
     >,
     pub _pauseGameAction: quest_hook::libil2cpp::Gc<
@@ -36,9 +32,7 @@ pub struct PSVR2Helper {
     pub _menuButtonDown: bool,
     pub _menuButtonDownThisFrame: bool,
     pub _maximumHapticFrequencyLimits: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
-        >,
+        crate::GlobalNamespace::PSVR2Helper_HeadsetHapticFrequencyLimit,
     >,
     pub controllersDidChangeReferenceEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,

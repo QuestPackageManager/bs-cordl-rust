@@ -5,9 +5,7 @@ pub struct TimelineAsset {
     __cordl_parent: crate::UnityEngine::Playables::PlayableAsset,
     pub m_Version: i32,
     pub m_Tracks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
     >,
     pub m_FixedDuration: f64,
     pub m_CacheOutputTracks: quest_hook::libil2cpp::Gc<
@@ -16,9 +14,7 @@ pub struct TimelineAsset {
         >,
     >,
     pub m_CacheRootTracks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
     >,
     pub m_CacheFlattenedTracks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -82,9 +78,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         allTracks: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,10 +93,8 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::Timeline::TrackAsset,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::TrackAsset,
                                     >,
                                 >,
                             >,
@@ -591,9 +583,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -603,10 +593,8 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::TrackAsset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TrackAsset,
                             >,
                         >,
                         0usize,
@@ -620,9 +608,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -660,9 +646,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -672,10 +656,8 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::TrackAsset,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::Timeline::TrackAsset,
                             >,
                         >,
                         0usize,
@@ -689,9 +671,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1222,11 +1202,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1235,9 +1211,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::Playables::PlayableBinding,
-                            >,
+                            crate::UnityEngine::Playables::PlayableBinding,
                         >,
                         0usize,
                     >("get_outputs")
@@ -1250,9 +1224,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Playables::PlayableBinding,
-            >,
+            crate::UnityEngine::Playables::PlayableBinding,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1277,9 +1249,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1289,10 +1259,8 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ScriptableObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ScriptableObject,
                             >,
                         >,
                         0usize,
@@ -1306,9 +1274,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

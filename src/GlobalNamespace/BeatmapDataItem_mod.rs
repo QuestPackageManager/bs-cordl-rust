@@ -337,13 +337,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapDataIt
 }
 #[cfg(feature = "BeatmapDataItem")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     >,
 > for crate::GlobalNamespace::BeatmapDataItem {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -351,13 +351,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapDataItem")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     >,
 > for crate::GlobalNamespace::BeatmapDataItem {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
         unsafe { std::mem::transmute(self) }

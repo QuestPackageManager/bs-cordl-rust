@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::LanguagePack {
 impl crate::Oculus::Platform::LanguagePack {
     pub fn GetCurrent() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -52,10 +50,8 @@ impl crate::Oculus::Platform::LanguagePack {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AssetDetails,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AssetDetails,
                             >,
                         >,
                         0usize,
@@ -69,9 +65,7 @@ impl crate::Oculus::Platform::LanguagePack {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -79,10 +73,8 @@ impl crate::Oculus::Platform::LanguagePack {
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AssetFileDownloadResult,
             >,
         >,
     > {
@@ -93,10 +85,8 @@ impl crate::Oculus::Platform::LanguagePack {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AssetFileDownloadResult,
                             >,
                         >,
                         1usize,
@@ -110,10 +100,8 @@ impl crate::Oculus::Platform::LanguagePack {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AssetFileDownloadResult,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (tag))? };
         Ok(__cordl_ret.into())

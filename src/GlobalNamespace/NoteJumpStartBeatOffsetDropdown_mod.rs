@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpStartBeatOffsetDropdown {
-    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "cordl_class_NoteJumpStartBeatOffsetDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
 }
 #[cfg(feature = "NoteJumpStartBeatOffsetDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
-    type Target = crate::GlobalNamespace::ValueDropdownController_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,13 +43,9 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        f32,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                f32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -60,14 +56,10 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                f32,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        f32,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -82,13 +74,9 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        f32,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                f32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

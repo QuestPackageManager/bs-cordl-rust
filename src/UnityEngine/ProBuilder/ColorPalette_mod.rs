@@ -4,9 +4,7 @@
 pub struct ColorPalette {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _current_k__BackingField: crate::UnityEngine::Color,
-    pub m_Colors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
-    >,
+    pub m_Colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ColorPalette")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -52,20 +50,14 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
     }
     pub fn SetColors(
         &mut self,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<crate::UnityEngine::Color>,
-        >,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetColors")
@@ -170,11 +162,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
     pub fn get_colors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Color,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -182,11 +170,7 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
                         0usize,
                     >("get_colors")
                     .unwrap_or_else(|e| {
@@ -197,11 +181,9 @@ impl crate::UnityEngine::ProBuilder::ColorPalette {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Color,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_current(

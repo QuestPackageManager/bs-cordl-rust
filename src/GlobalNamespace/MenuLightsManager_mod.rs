@@ -13,9 +13,7 @@ pub struct MenuLightsManager {
         crate::Tweening::TimeTweeningManager,
     >,
     pub _preset: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuLightsPresetSO>,
-    pub _originalColors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, crate::UnityEngine::Color>,
-    >,
+    pub _originalColors: quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>,
     pub _animationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
     pub _alphaMultiplier: f32,
 }

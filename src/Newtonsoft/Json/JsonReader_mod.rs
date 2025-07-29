@@ -17,11 +17,7 @@ pub struct JsonReader {
     pub _dateFormatString: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Newtonsoft::Json::JsonPosition,
-        >,
-    >,
+    pub _stack: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonPosition>,
     pub _CloseInput_k__BackingField: bool,
     pub _SupportMultipleContent_k__BackingField: bool,
 }
@@ -234,18 +230,14 @@ impl crate::Newtonsoft::Json::JsonReader {
     pub fn MoveToContentAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("MoveToContentAsync")
                     .unwrap_or_else(|e| {
@@ -256,26 +248,22 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn MoveToContentFromNonContentAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("MoveToContentFromNonContentAsync")
                     .unwrap_or_else(|e| {
@@ -286,9 +274,9 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -436,18 +424,14 @@ impl crate::Newtonsoft::Json::JsonReader {
     pub fn ReadAndMoveToContentAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("ReadAndMoveToContentAsync")
                     .unwrap_or_else(|e| {
@@ -458,25 +442,21 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadArrayElementIntoByteArrayReportDone(
         &mut self,
-        buffer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u8>,
-        >,
+        buffer: quest_hook::libil2cpp::Gc<u8>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<u8>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<u8>),
                         bool,
                         1usize,
                     >("ReadArrayElementIntoByteArrayReportDone")
@@ -527,9 +507,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -539,10 +517,8 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
                             >,
                         >,
                         1usize,
@@ -556,9 +532,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -591,9 +565,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<bool>>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -601,11 +573,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<bool>,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<bool>>,
                         1usize,
                     >("ReadAsBooleanAsync")
                     .unwrap_or_else(|e| {
@@ -616,9 +584,9 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<bool>>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<bool>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsBytes(
@@ -655,9 +623,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -667,10 +633,8 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<u8>,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
                             >,
                         >,
                         1usize,
@@ -684,9 +648,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -721,11 +683,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::DateTime>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<crate::System::DateTime>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -734,9 +692,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<crate::System::DateTime>,
-                            >,
+                            crate::System::Nullable_1<crate::System::DateTime>,
                         >,
                         1usize,
                     >("ReadAsDateTimeAsync")
@@ -749,9 +705,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::DateTime>,
-            >,
+            crate::System::Nullable_1<crate::System::DateTime>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -787,9 +741,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::DateTimeOffset>,
-            >,
+            crate::System::Nullable_1<crate::System::DateTimeOffset>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -799,9 +751,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<crate::System::DateTimeOffset>,
-                            >,
+                            crate::System::Nullable_1<crate::System::DateTimeOffset>,
                         >,
                         1usize,
                     >("ReadAsDateTimeOffsetAsync")
@@ -814,9 +764,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::DateTimeOffset>,
-            >,
+            crate::System::Nullable_1<crate::System::DateTimeOffset>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -851,11 +799,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::Decimal>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<crate::System::Decimal>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -864,9 +808,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<crate::System::Decimal>,
-                            >,
+                            crate::System::Nullable_1<crate::System::Decimal>,
                         >,
                         1usize,
                     >("ReadAsDecimalAsync")
@@ -879,9 +821,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::Nullable_1<crate::System::Decimal>,
-            >,
+            crate::System::Nullable_1<crate::System::Decimal>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -914,9 +854,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<f64>>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<f64>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -924,11 +862,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<f64>,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<f64>>,
                         1usize,
                     >("ReadAsDoubleAsync")
                     .unwrap_or_else(|e| {
@@ -939,9 +873,9 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<f64>>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<f64>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsInt32(
@@ -973,9 +907,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -983,11 +915,7 @@ impl crate::Newtonsoft::Json::JsonReader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::Nullable_1<i32>,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>>,
                         1usize,
                     >("ReadAsInt32Async")
                     .unwrap_or_else(|e| {
@@ -998,9 +926,9 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsString(
@@ -1035,9 +963,7 @@ impl crate::Newtonsoft::Json::JsonReader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1047,10 +973,8 @@ impl crate::Newtonsoft::Json::JsonReader {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -1064,27 +988,21 @@ impl crate::Newtonsoft::Json::JsonReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn ReadAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -1095,9 +1013,9 @@ impl crate::Newtonsoft::Json::JsonReader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadBooleanString(

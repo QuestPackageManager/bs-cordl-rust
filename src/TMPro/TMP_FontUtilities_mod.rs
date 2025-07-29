@@ -38,11 +38,9 @@ impl std::ops::DerefMut for crate::TMPro::TMP_FontUtilities {
 }
 #[cfg(feature = "TMPro+TMP_FontUtilities")]
 impl crate::TMPro::TMP_FontUtilities {
-    pub fn SearchForCharacterInternal_List_1_1(
+    pub fn SearchForCharacterInternal_Gc1(
         fonts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
         unicode: u32,
         character: quest_hook::libil2cpp::ByRefMut<
@@ -58,9 +56,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                             >,
                             u32,
                             quest_hook::libil2cpp::ByRefMut<
@@ -120,11 +116,9 @@ impl crate::TMPro::TMP_FontUtilities {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SearchForCharacter_List_1_1(
+    pub fn SearchForCharacter_Gc1(
         fonts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         >,
         unicode: u32,
         character: quest_hook::libil2cpp::ByRefMut<
@@ -140,9 +134,7 @@ impl crate::TMPro::TMP_FontUtilities {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                             >,
                             u32,
                             quest_hook::libil2cpp::ByRefMut<

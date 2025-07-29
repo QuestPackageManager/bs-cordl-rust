@@ -4,10 +4,8 @@
 pub struct SubContainerCreatorByInstanceGetter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subcontainerGetter: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByInstanceGetter")]
@@ -47,9 +45,7 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByInstanceGetter 
 impl crate::Zenject::SubContainerCreatorByInstanceGetter {
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -60,11 +56,7 @@ impl crate::Zenject::SubContainerCreatorByInstanceGetter {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -85,10 +77,8 @@ impl crate::Zenject::SubContainerCreatorByInstanceGetter {
     }
     pub fn New(
         subcontainerGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,10 +90,8 @@ impl crate::Zenject::SubContainerCreatorByInstanceGetter {
     pub fn _ctor(
         &mut self,
         subcontainerGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -112,10 +100,8 @@ impl crate::Zenject::SubContainerCreatorByInstanceGetter {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

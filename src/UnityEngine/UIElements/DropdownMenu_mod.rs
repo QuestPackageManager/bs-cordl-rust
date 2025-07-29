@@ -4,9 +4,7 @@
 pub struct DropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MenuItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
     >,
     pub m_DropdownMenuEventInfo: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::DropdownMenuEventInfo,
@@ -51,11 +49,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
         >,
         status: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,10 +63,8 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::DropdownMenuAction,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::DropdownMenuAction,
                                 >,
                             >,
                             crate::UnityEngine::UIElements::DropdownMenuAction_Status,
@@ -93,23 +85,17 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AppendAction_Func_2_Il2CppObject0(
+    pub fn AppendAction_Gc_Il2CppObject0(
         &mut self,
         actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
         >,
         actionStatusCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuAction,
-                >,
-                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::DropdownMenuAction,
             >,
+            crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
         userData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,19 +109,15 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::DropdownMenuAction,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::DropdownMenuAction,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::DropdownMenuAction,
-                                    >,
-                                    crate::UnityEngine::UIElements::DropdownMenuAction_Status,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::DropdownMenuAction,
                                 >,
+                                crate::UnityEngine::UIElements::DropdownMenuAction_Status,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -223,11 +205,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuItem,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -237,10 +215,8 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::DropdownMenuItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::DropdownMenuItem,
                             >,
                         >,
                         0usize,
@@ -254,11 +230,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::DropdownMenuItem,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuItem>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftNetworkPlayerModel {
-    __cordl_parent: crate::GlobalNamespace::NetworkPlayerModel_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >,
     pub _gameLiftPlayerSessionProvider: quest_hook::libil2cpp::Gc<
@@ -37,7 +37,7 @@ for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
 }
 #[cfg(feature = "GameLiftNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftNetworkPlayerModel {
-    type Target = crate::GlobalNamespace::NetworkPlayerModel_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -60,11 +60,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameLiftConnectionManager,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -83,10 +79,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectionInitParams_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameLiftConnectionManager,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameLiftConnectionManager,
                             >,
                         >,
                         4usize,
@@ -100,11 +94,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameLiftConnectionManager,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (selectionMask, configuration, secret, code))?
@@ -117,11 +107,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameLiftConnectionManager,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -134,10 +120,8 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                             crate::GlobalNamespace::GameplayServerConfiguration,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectionInitParams_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameLiftConnectionManager,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameLiftConnectionManager,
                             >,
                         >,
                         2usize,
@@ -151,11 +135,7 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameLiftConnectionManager,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameLiftConnectionManager>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (selectionMask, configuration))?
         };
@@ -173,16 +153,10 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
         localSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         localConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         onSuccess: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        crate::GlobalNamespace::PublicServerInfo,
-                    >,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PublicServerInfo>,
         >,
         onFailure: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
+            crate::GlobalNamespace::ConnectionFailedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -194,18 +168,12 @@ impl crate::GlobalNamespace::GameLiftNetworkPlayerModel {
                             crate::GlobalNamespace::BeatmapLevelSelectionMask,
                             crate::GlobalNamespace::GameplayServerConfiguration,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::IReadOnlyList_1<
-                                            crate::GlobalNamespace::PublicServerInfo,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PublicServerInfo,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::GlobalNamespace::ConnectionFailedReason,
-                                >,
+                                crate::GlobalNamespace::ConnectionFailedReason,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

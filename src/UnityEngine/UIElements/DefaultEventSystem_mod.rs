@@ -361,10 +361,8 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
     pub fn SendFocusBasedEvent<TArg>(
         &mut self,
         evtFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                TArg,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-            >,
+            TArg,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
         arg: TArg,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -379,11 +377,9 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    TArg,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::EventBase,
-                                    >,
+                                TArg,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::EventBase,
                                 >,
                             >,
                             TArg,
@@ -461,12 +457,10 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
         pointerId: i32,
         targetDisplay: crate::System::Nullable_1<i32>,
         evtFactory: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<
-                crate::UnityEngine::Vector3,
-                crate::UnityEngine::Vector3,
-                TArg,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-            >,
+            crate::UnityEngine::Vector3,
+            crate::UnityEngine::Vector3,
+            TArg,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
         >,
         arg: TArg,
         deselectIfNoTarget: bool,
@@ -486,13 +480,11 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem {
                             i32,
                             crate::System::Nullable_1<i32>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_4<
-                                    crate::UnityEngine::Vector3,
-                                    crate::UnityEngine::Vector3,
-                                    TArg,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::EventBase,
-                                    >,
+                                crate::UnityEngine::Vector3,
+                                crate::UnityEngine::Vector3,
+                                TArg,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::EventBase,
                                 >,
                             >,
                             TArg,

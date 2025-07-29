@@ -18,9 +18,7 @@ pub struct SocketAsyncResult {
         >,
     >,
     pub Port: i32,
-    pub Buffers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<crate::System::ArraySegment_1<u8>>,
-    >,
+    pub Buffers: quest_hook::libil2cpp::Gc<crate::System::ArraySegment_1<u8>>,
     pub ReuseSocket: bool,
     pub CurrentAddress: i32,
     pub AcceptedSocket: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::Socket>,

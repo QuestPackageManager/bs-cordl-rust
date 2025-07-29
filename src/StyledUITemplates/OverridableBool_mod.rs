@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableBool {
-    __cordl_parent: crate::StyledUITemplates::OverridableData_1<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "cordl_class_StyledUITemplates+OverridableBool")]
 unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::OverridableBool {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::Overridabl
 }
 #[cfg(feature = "StyledUITemplates+OverridableBool")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableBool {
-    type Target = crate::StyledUITemplates::OverridableData_1<bool>;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

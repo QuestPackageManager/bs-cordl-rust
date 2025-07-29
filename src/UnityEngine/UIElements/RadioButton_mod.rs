@@ -387,7 +387,7 @@ for crate::UnityEngine::UIElements::RadioButton {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton_UxmlTraits>,
     >,
@@ -414,7 +414,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RadioButton_UxmlTraits>,
     >;
@@ -473,7 +473,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RadioButton_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         bool,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -505,7 +505,7 @@ for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButton+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButton_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         bool,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,

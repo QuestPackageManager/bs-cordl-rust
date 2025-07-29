@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
     pub clamp: crate::UnityEngine::InputSystem::Controls::AxisControl_Clamp,
     pub clampMin: f32,
     pub clampMax: f32,
@@ -37,7 +37,7 @@ for crate::UnityEngine::InputSystem::Controls::AxisControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+AxisControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::AxisControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

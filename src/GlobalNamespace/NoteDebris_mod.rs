@@ -15,9 +15,7 @@ pub struct NoteDebris {
     pub _elapsedTime: f32,
     pub _lifeTime: f32,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
     >,
 }
 #[cfg(feature = "cordl_class_NoteDebris")]
@@ -203,11 +201,7 @@ impl crate::GlobalNamespace::NoteDebris {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -217,10 +211,8 @@ impl crate::GlobalNamespace::NoteDebris {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::INoteDebrisDidFinishEvent,
                             >,
                         >,
                         0usize,
@@ -234,11 +226,7 @@ impl crate::GlobalNamespace::NoteDebris {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::INoteDebrisDidFinishEvent,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteDebrisDidFinishEvent>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -256,7 +244,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteDebris {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteDebris_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     >,
 }
@@ -281,7 +269,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::NoteDebris_P
 }
 #[cfg(feature = "NoteDebris+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebris_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

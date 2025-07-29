@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSyncSessionList {
-    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSession>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::Models::NetSyncSessionList {
 }
 #[cfg(feature = "Oculus+Platform+Models+NetSyncSessionList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::NetSyncSessionList {
-    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::NetSyncSession>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

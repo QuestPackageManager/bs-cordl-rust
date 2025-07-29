@@ -4,27 +4,21 @@
 pub struct SonyLevelProductCollectionModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelIdToProductData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
-            >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     >,
     pub _levelPackIdToProductData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
-            >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     >,
     pub _levelPackRedirectionData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
-            >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
         >,
     >,
 }
@@ -173,9 +167,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
     }
     pub fn New(
         sonyLevelProductPacksSOs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLevelProductPackSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLevelProductPackSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -187,9 +179,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
     pub fn _ctor(
         &mut self,
         sonyLevelProductPacksSOs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLevelProductPackSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLevelProductPackSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,10 +188,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SonyLevelProductPackSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SonyLevelProductPackSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -642,10 +630,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
             >,
         >,
     > {
@@ -656,10 +642,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
                             >,
                         >,
                         0usize,
@@ -673,10 +657,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -757,17 +739,17 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl AsRef<
-    crate::GlobalNamespace::ILevelPackProductData_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     >,
 > for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ILevelPackProductData_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     > {
         unsafe { std::mem::transmute(self) }
@@ -775,17 +757,17 @@ impl AsRef<
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl AsMut<
-    crate::GlobalNamespace::ILevelPackProductData_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     >,
 > for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ILevelPackProductData_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
         >,
     > {
         unsafe { std::mem::transmute(self) }
@@ -793,17 +775,17 @@ impl AsMut<
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     >,
 > for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     > {
         unsafe { std::mem::transmute(self) }
@@ -811,17 +793,17 @@ impl AsRef<
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     >,
 > for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
+            crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
         >,
     > {
         unsafe { std::mem::transmute(self) }

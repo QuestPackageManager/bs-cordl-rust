@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Tween {
-    __cordl_parent: crate::Tweening::Tween_1<crate::UnityEngine::Vector2>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
 }
 #[cfg(feature = "cordl_class_Tweening+Vector2Tween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::Vector2Tween {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::Vector2Tween {
 }
 #[cfg(feature = "Tweening+Vector2Tween")]
 impl std::ops::Deref for crate::Tweening::Vector2Tween {
-    type Target = crate::Tweening::Tween_1<crate::UnityEngine::Vector2>;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -71,12 +71,10 @@ impl crate::Tweening::Vector2Tween {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Vector2_Vector2_Action_1_f32_EaseType_f32_1(
+    pub fn New_Vector2_Vector2_Gc_f32_EaseType_f32_1(
         fromValue: crate::UnityEngine::Vector2,
         toValue: crate::UnityEngine::Vector2,
-        onUpdate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Vector2>,
-        >,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -111,13 +109,11 @@ impl crate::Tweening::Vector2Tween {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Vector2_Vector2_Action_1_f32_EaseType_f32_1(
+    pub fn _ctor_Vector2_Vector2_Gc_f32_EaseType_f32_1(
         &mut self,
         fromValue: crate::UnityEngine::Vector2,
         toValue: crate::UnityEngine::Vector2,
-        onUpdate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Vector2>,
-        >,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -130,9 +126,7 @@ impl crate::Tweening::Vector2Tween {
                         (
                             crate::UnityEngine::Vector2,
                             crate::UnityEngine::Vector2,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<crate::UnityEngine::Vector2>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,

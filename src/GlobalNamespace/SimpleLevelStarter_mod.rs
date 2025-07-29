@@ -4,9 +4,7 @@
 pub struct SimpleLevelStarter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
     >,
     pub _beatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,

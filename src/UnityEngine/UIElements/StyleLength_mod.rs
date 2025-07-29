@@ -457,44 +457,38 @@ impl crate::UnityEngine::UIElements::StyleLength {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleLength>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::StyleLength {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleLength> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleLength>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::StyleLength {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleLength> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Length>,
-> for crate::UnityEngine::UIElements::StyleLength {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleLength>>
+for crate::UnityEngine::UIElements::StyleLength {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Length,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleLength> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleLength")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Length>,
-> for crate::UnityEngine::UIElements::StyleLength {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleLength>>
+for crate::UnityEngine::UIElements::StyleLength {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Length,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleLength> {
         todo!()
     }
 }

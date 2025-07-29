@@ -22,9 +22,7 @@ pub struct VirtualMouseInput {
     pub m_SystemMouse: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Mouse>,
     pub m_AfterInputUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ButtonActionTriggeredDelegate: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-        >,
+        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_LastTime: f64,
     pub m_LastStickValue: crate::UnityEngine::Vector2,
@@ -202,9 +200,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
     pub fn SetActionCallback(
         field: crate::UnityEngine::InputSystem::InputActionProperty,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-            >,
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
         >,
         install: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -216,9 +212,7 @@ impl crate::UnityEngine::InputSystem::UI::VirtualMouseInput {
                         (
                             crate::UnityEngine::InputSystem::InputActionProperty,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-                                >,
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
                             >,
                             bool,
                         ),

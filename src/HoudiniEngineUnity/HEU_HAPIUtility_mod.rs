@@ -1693,9 +1693,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
     }
     pub fn SetAnimationCurveTangentModes(
         animCurve: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
-        tangentValues: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        tangentValues: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1706,9 +1704,7 @@ impl crate::HoudiniEngineUnity::HEU_HAPIUtility {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::AnimationCurve,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

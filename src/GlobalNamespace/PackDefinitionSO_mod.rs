@@ -15,9 +15,7 @@ pub struct PackDefinitionSO {
     >,
     pub _tags: crate::GlobalNamespace::PackDefinitionSO_Tags,
     pub _packPromoInfoReference: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
     >,
     pub _perceivedLoudnessPerLevel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PerceivedLoudnessSO,
@@ -375,9 +373,7 @@ impl crate::GlobalNamespace::PackDefinitionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -387,10 +383,8 @@ impl crate::GlobalNamespace::PackDefinitionSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PackPromoInfoSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PackPromoInfoSO,
                             >,
                         >,
                         0usize,
@@ -404,9 +398,7 @@ impl crate::GlobalNamespace::PackDefinitionSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

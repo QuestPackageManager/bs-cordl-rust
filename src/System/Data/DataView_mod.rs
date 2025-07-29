@@ -10,16 +10,12 @@ pub struct DataView {
     pub _locked: bool,
     pub _index: quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     pub _findIndexes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
     >,
     pub _sort: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _comparison: quest_hook::libil2cpp::Gc<
-        crate::System::Comparison_1<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     >,
     pub _rowFilter: quest_hook::libil2cpp::Gc<crate::System::Data::IFilter>,
     pub _recordStates: crate::System::Data::DataViewRowState,
@@ -41,16 +37,12 @@ pub struct DataView {
     pub _fInitInProgress: bool,
     pub _fEndInitInProgress: bool,
     pub _rowViewCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
     >,
     pub _rowViewBuffer: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataRowView>,
     >,
     pub _dvListener: quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
     pub _objectID: i32,
@@ -2291,9 +2283,7 @@ impl crate::System::Data::DataView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Comparison_1<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2303,9 +2293,7 @@ impl crate::System::Data::DataView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Comparison_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
                         >,
                         0usize,
                     >("get_SortComparison")
@@ -2318,9 +2306,7 @@ impl crate::System::Data::DataView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Comparison_1<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2587,13 +2573,11 @@ for crate::System::Data::DataView_DataRowReferenceComparer {
 }
 #[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>>,
 > for crate::System::Data::DataView_DataRowReferenceComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2601,13 +2585,11 @@ impl AsRef<
 }
 #[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
-    >,
+    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>>,
 > for crate::System::Data::DataView_DataRowReferenceComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
     > {
         unsafe { std::mem::transmute(self) }

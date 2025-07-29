@@ -5,16 +5,10 @@ pub struct SceneSelection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-    pub m_Vertices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
-    pub m_Edges: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::ProBuilder::Edge>,
-    >,
+    pub m_Vertices: quest_hook::libil2cpp::Gc<i32>,
+    pub m_Edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     pub m_Faces: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     >,
     pub vertex: i32,
     pub edge: crate::UnityEngine::ProBuilder::Edge,
@@ -204,11 +198,9 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
             .invoke_void(".ctor", (mesh, face))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ProBuilderMesh_List_1_4(
+    pub fn New_ProBuilderMesh_Gc4(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        vertexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        vertexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -216,13 +208,9 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
             .invoke_void(".ctor", (mesh, vertexes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ProBuilderMesh_List_1_5(
+    pub fn New_ProBuilderMesh_Gc5(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -230,12 +218,10 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
             .invoke_void(".ctor", (mesh, edges))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ProBuilderMesh_List_1_6(
+    pub fn New_ProBuilderMesh_Gc6(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -453,12 +439,10 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ProBuilderMesh_List_1_4(
+    pub fn _ctor_ProBuilderMesh_Gc4(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        vertexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        vertexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -469,9 +453,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -489,14 +471,10 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ProBuilderMesh_List_1_5(
+    pub fn _ctor_ProBuilderMesh_Gc5(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -508,9 +486,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -529,13 +505,11 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ProBuilderMesh_List_1_6(
+    pub fn _ctor_ProBuilderMesh_Gc6(
         &mut self,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -548,10 +522,8 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),
@@ -606,11 +578,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
     pub fn get_edges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -618,11 +586,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
                         0usize,
                     >("get_edges")
                     .unwrap_or_else(|e| {
@@ -634,9 +598,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -644,9 +606,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -656,10 +616,8 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >,
                         0usize,
@@ -673,26 +631,20 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_vertexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_vertexes")
                     .unwrap_or_else(|e| {
@@ -703,9 +655,9 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn op_Equality(
@@ -776,11 +728,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
     }
     pub fn set_edges(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -788,9 +736,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
+                            crate::UnityEngine::ProBuilder::Edge,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -811,9 +757,7 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
     pub fn set_faces(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -822,10 +766,8 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -846,18 +788,14 @@ impl crate::UnityEngine::ProBuilder::SceneSelection {
     }
     pub fn set_vertexes(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_vertexes")
@@ -887,13 +825,13 @@ for crate::UnityEngine::ProBuilder::SceneSelection {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SceneSelection")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SceneSelection>,
     >,
 > for crate::UnityEngine::ProBuilder::SceneSelection {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SceneSelection>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -901,13 +839,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SceneSelection")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SceneSelection>,
     >,
 > for crate::UnityEngine::ProBuilder::SceneSelection {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SceneSelection>,
     > {
         unsafe { std::mem::transmute(self) }

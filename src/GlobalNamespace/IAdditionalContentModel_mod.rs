@@ -44,11 +44,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IsPackBetterBuyThanLevelResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -62,9 +58,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-                            >,
+                            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
                         >,
                         2usize,
                     >("IsPackBetterBuyThanLevelAsync")
@@ -77,9 +71,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
-            >,
+            crate::GlobalNamespace::IsPackBetterBuyThanLevelResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelPackId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -88,11 +80,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -106,9 +94,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::OpenProductStoreResult,
-                            >,
+                            crate::GlobalNamespace::OpenProductStoreResult,
                         >,
                         2usize,
                     >("OpenLevelPackProductStoreAsync")
@@ -121,9 +107,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelPackId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -132,11 +116,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OpenProductStoreResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -150,9 +130,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::OpenProductStoreResult,
-                            >,
+                            crate::GlobalNamespace::OpenProductStoreResult,
                         >,
                         2usize,
                     >("OpenLevelProductStoreAsync")
@@ -165,9 +143,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::OpenProductStoreResult,
-            >,
+            crate::GlobalNamespace::OpenProductStoreResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }

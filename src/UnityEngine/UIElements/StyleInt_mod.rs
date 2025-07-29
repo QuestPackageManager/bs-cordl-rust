@@ -347,34 +347,32 @@ impl crate::UnityEngine::UIElements::StyleInt {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleInt")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleInt>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleInt>>
 for crate::UnityEngine::UIElements::StyleInt {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleInt> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleInt> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleInt")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleInt>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleInt>>
 for crate::UnityEngine::UIElements::StyleInt {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleInt> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleInt> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleInt")]
-impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<i32>>
-for crate::UnityEngine::UIElements::StyleInt {
-    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyleValue_1<i32> {
+impl AsRef<quest_hook::libil2cpp::Gc<i32>> for crate::UnityEngine::UIElements::StyleInt {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleInt")]
-impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<i32>>
-for crate::UnityEngine::UIElements::StyleInt {
-    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<i32> {
+impl AsMut<quest_hook::libil2cpp::Gc<i32>> for crate::UnityEngine::UIElements::StyleInt {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
         todo!()
     }
 }

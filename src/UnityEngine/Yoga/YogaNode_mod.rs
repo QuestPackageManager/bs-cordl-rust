@@ -7,9 +7,7 @@ pub struct YogaNode {
     pub _config: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaConfig>,
     pub _parent: quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
     pub _children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     >,
     pub _measureFunction: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Yoga::MeasureFunction,
@@ -185,9 +183,7 @@ impl crate::UnityEngine::Yoga::YogaNode {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -197,11 +193,7 @@ impl crate::UnityEngine::Yoga::YogaNode {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Yoga::YogaNode,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -214,9 +206,7 @@ impl crate::UnityEngine::Yoga::YogaNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1886,34 +1876,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Yoga::YogaNode {
     }
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaNode")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-    >,
-> for crate::UnityEngine::Yoga::YogaNode {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-    >,
-> for crate::UnityEngine::Yoga::YogaNode {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::Yoga::YogaNode {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1924,6 +1886,34 @@ for crate::UnityEngine::Yoga::YogaNode {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::Yoga::YogaNode {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+    >,
+> for crate::UnityEngine::Yoga::YogaNode {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Yoga+YogaNode")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+    >,
+> for crate::UnityEngine::Yoga::YogaNode {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

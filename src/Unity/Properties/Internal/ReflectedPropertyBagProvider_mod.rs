@@ -75,9 +75,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         >,
     >
     where
@@ -91,10 +89,8 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<TElement>,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<TElement>,
                             >,
                         >,
                         0usize,
@@ -108,22 +104,14 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TElement>>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateDictionaryPropertyBag<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -138,14 +126,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        TKey,
-                                        TValue,
-                                    >,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TKey, TValue>,
                         >,
                         0usize,
                     >("CreateDictionaryPropertyBag")
@@ -158,24 +139,14 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<TKey, TValue>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateHashSetPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::HashSet_1<TElement>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TElement>>,
     >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -187,13 +158,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::HashSet_1<TElement>,
-                                >,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TElement>>,
                         0usize,
                     >("CreateHashSetPropertyBag")
                     .unwrap_or_else(|e| {
@@ -205,19 +170,13 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::HashSet_1<TElement>,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<TElement>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateIndexedCollectionPropertyBag<TList, TElement>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TList>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TList>>
     where
         TList: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -230,9 +189,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TList>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TList>,
                         0usize,
                     >("CreateIndexedCollectionPropertyBag")
                     .unwrap_or_else(|e| {
@@ -243,16 +200,14 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TList>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TList> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateKeyValueCollectionPropertyBag<TDictionary, TKey, TValue>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TDictionary>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TDictionary>>
     where
         TDictionary: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -267,9 +222,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TDictionary>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TDictionary>,
                         0usize,
                     >("CreateKeyValueCollectionPropertyBag")
                     .unwrap_or_else(|e| {
@@ -280,18 +233,16 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TDictionary>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TDictionary> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateKeyValuePairPropertyBag<TKey, TValue>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         >,
     >
     where
@@ -307,11 +258,9 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    TKey,
-                                    TValue,
-                                >,
+                            crate::System::Collections::Generic::KeyValuePair_2<
+                                TKey,
+                                TValue,
                             >,
                         >,
                         0usize,
@@ -325,22 +274,14 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateListPropertyBag<TElement>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<TElement>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TElement>>,
     >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -352,13 +293,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<TElement>,
-                                >,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TElement>>,
                         0usize,
                     >("CreateListPropertyBag")
                     .unwrap_or_else(|e| {
@@ -370,20 +305,14 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<TElement>,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<TElement>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateProperty<TContainer, TValue>(
         &mut self,
         member: quest_hook::libil2cpp::Gc<crate::Unity::Properties::IMemberInfo>,
-        propertyBag: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::Internal::ReflectedPropertyBag_1<TContainer>,
-        >,
+        propertyBag: quest_hook::libil2cpp::Gc<TContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -400,11 +329,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                             quest_hook::libil2cpp::Gc<
                                 crate::Unity::Properties::IMemberInfo,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::Unity::Properties::Internal::ReflectedPropertyBag_1<
-                                    TContainer,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TContainer>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -424,9 +349,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     }
     pub fn CreatePropertyBag_1<TContainer>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TContainer>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContainer>>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -437,9 +360,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TContainer>,
                         0usize,
                     >("CreatePropertyBag")
                     .unwrap_or_else(|e| {
@@ -450,9 +371,9 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreatePropertyBag_Type0(
@@ -487,9 +408,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
     }
     pub fn CreateSetPropertyBag<TSet, TValue>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TSet>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TSet>>
     where
         TSet: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -502,9 +421,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TSet>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TSet>,
                         0usize,
                     >("CreateSetPropertyBag")
                     .unwrap_or_else(|e| {
@@ -515,18 +432,16 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TSet>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TSet> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyMembers(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -536,10 +451,8 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::MemberInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MemberInfo,
                             >,
                         >,
                         1usize,
@@ -553,9 +466,7 @@ impl crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }

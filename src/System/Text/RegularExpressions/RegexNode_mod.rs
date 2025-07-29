@@ -5,9 +5,7 @@ pub struct RegexNode {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NType: i32,
     pub Children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexNode>,
     >,
     pub Str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Ch: char,

@@ -18,13 +18,9 @@ pub struct TMP_Dropdown {
     pub m_Dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Blocker: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Items: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
     >,
-    pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<
-        crate::TMPro::TweenRunner_1<crate::TMPro::FloatTween>,
-    >,
+    pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<crate::TMPro::FloatTween>,
     pub validTemplate: bool,
     pub m_Coroutine: quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
 }
@@ -76,9 +72,7 @@ impl crate::TMPro::TMP_Dropdown {
         selected: bool,
         itemTemplate: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
         items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_DropdownItem>,
@@ -97,10 +91,8 @@ impl crate::TMPro::TMP_Dropdown {
                                 crate::TMPro::TMP_Dropdown_DropdownItem,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::TMPro::TMP_Dropdown_DropdownItem,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::TMPro::TMP_Dropdown_DropdownItem,
                                 >,
                             >,
                         ),
@@ -125,12 +117,10 @@ impl crate::TMPro::TMP_Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_List_1_0(
+    pub fn AddOptions_Gc0(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -139,10 +129,8 @@ impl crate::TMPro::TMP_Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::TMPro::TMP_Dropdown_OptionData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::TMPro::TMP_Dropdown_OptionData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -161,12 +149,10 @@ impl crate::TMPro::TMP_Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_List_1_1(
+    pub fn AddOptions_Gc1(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -175,10 +161,8 @@ impl crate::TMPro::TMP_Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -197,12 +181,10 @@ impl crate::TMPro::TMP_Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_List_1_2(
+    pub fn AddOptions_Gc2(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -211,9 +193,7 @@ impl crate::TMPro::TMP_Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1114,9 +1094,7 @@ impl crate::TMPro::TMP_Dropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1126,10 +1104,8 @@ impl crate::TMPro::TMP_Dropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::TMPro::TMP_Dropdown_OptionData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::TMPro::TMP_Dropdown_OptionData,
                             >,
                         >,
                         0usize,
@@ -1143,9 +1119,7 @@ impl crate::TMPro::TMP_Dropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1381,9 +1355,7 @@ impl crate::TMPro::TMP_Dropdown {
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1392,10 +1364,8 @@ impl crate::TMPro::TMP_Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::TMPro::TMP_Dropdown_OptionData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::TMPro::TMP_Dropdown_OptionData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1562,7 +1532,7 @@ for crate::TMPro::TMP_Dropdown {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Dropdown_DropdownEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+DropdownEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownEvent {
@@ -1585,7 +1555,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Dropdown_DropdownE
 }
 #[cfg(feature = "TMPro+TMP_Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_Dropdown_DropdownEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2336,9 +2306,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Dropdown_OptionData
 pub struct TMP_Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Options: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
     >,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Dropdown+OptionDataList")]
@@ -2407,9 +2375,7 @@ impl crate::TMPro::TMP_Dropdown_OptionDataList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2419,10 +2385,8 @@ impl crate::TMPro::TMP_Dropdown_OptionDataList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::TMPro::TMP_Dropdown_OptionData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::TMPro::TMP_Dropdown_OptionData,
                             >,
                         >,
                         0usize,
@@ -2436,18 +2400,14 @@ impl crate::TMPro::TMP_Dropdown_OptionDataList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Dropdown_OptionData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2456,10 +2416,8 @@ impl crate::TMPro::TMP_Dropdown_OptionDataList {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::TMPro::TMP_Dropdown_OptionData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::TMPro::TMP_Dropdown_OptionData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

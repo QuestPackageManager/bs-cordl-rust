@@ -49,12 +49,10 @@ pub struct OVRCameraRig {
         crate::UnityEngine::Transform,
     >,
     pub UpdatedAnchors: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
     >,
     pub TrackingSpaceChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     >,
     pub usePerEyeCameras: bool,
     pub useFixedUpdateForTracking: bool,
@@ -526,9 +524,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
     pub fn add_TrackingSpaceChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -537,9 +533,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -560,9 +554,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
     pub fn add_UpdatedAnchors(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -571,10 +563,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::OVRCameraRig,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRCameraRig,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1055,9 +1045,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
     pub fn remove_TrackingSpaceChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1066,9 +1054,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1089,9 +1075,7 @@ impl crate::GlobalNamespace::OVRCameraRig {
     pub fn remove_UpdatedAnchors(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRCameraRig>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1100,10 +1084,8 @@ impl crate::GlobalNamespace::OVRCameraRig {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::OVRCameraRig,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRCameraRig,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

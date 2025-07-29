@@ -5,9 +5,7 @@
 #[derive(Debug)]
 pub struct DefaultMultiColumnTreeViewController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::MultiColumnTreeViewController,
-    pub m_TreeDataController: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TreeDataController_1<T>,
-    >,
+    pub m_TreeDataController: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -69,14 +67,8 @@ impl<
 > crate::UnityEngine::UIElements::DefaultMultiColumnTreeViewController_1<T> {
     pub fn GetAllItemIds(
         &mut self,
-        rootIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    >
+        rootIds: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -86,12 +78,8 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<i32>),
+                        quest_hook::libil2cpp::Gc<i32>,
                         1usize,
                     >("GetAllItemIds")
                     .unwrap_or_else(|e| {
@@ -102,19 +90,15 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (rootIds))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (rootIds))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetChildrenIds(
         &mut self,
         id: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -125,9 +109,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         1usize,
                     >("GetChildrenIds")
                     .unwrap_or_else(|e| {
@@ -138,9 +120,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetItemForIndex(
@@ -288,10 +270,8 @@ impl<
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -308,9 +288,7 @@ impl<
     pub fn SetRootItems(
         &mut self,
         items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-            >,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -323,9 +301,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-                            >,
+                            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -350,10 +326,8 @@ impl<
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::SortColumnDescription,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::SortColumnDescription,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -374,10 +348,8 @@ impl<
                                 crate::UnityEngine::UIElements::SortColumnDescriptions,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::SortColumnDescription,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::SortColumnDescription,
                                 >,
                             >,
                         ),
@@ -431,11 +403,7 @@ impl<
     }
     pub fn get_treeDataController(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeDataController_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -446,9 +414,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TreeDataController_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_treeDataController")
                     .unwrap_or_else(|e| {
@@ -459,9 +425,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TreeDataController_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_itemsSource(

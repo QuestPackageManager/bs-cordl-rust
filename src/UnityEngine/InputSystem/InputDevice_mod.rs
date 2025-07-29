@@ -258,9 +258,7 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         startOffset: u32,
         sizeInBits: u32,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -274,10 +272,8 @@ impl crate::UnityEngine::InputSystem::InputDevice {
                             u32,
                             u32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         ),
@@ -328,14 +324,12 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn DumpControlTree_InputDevice_ControlBitRangeNode_u32_List_1_0(
+    pub fn DumpControlTree_InputDevice_ControlBitRangeNode_u32_Gc0(
         &mut self,
         parentNode: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         startOffset: u32,
         output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -347,10 +341,8 @@ impl crate::UnityEngine::InputSystem::InputDevice {
                             crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
                             u32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         ),

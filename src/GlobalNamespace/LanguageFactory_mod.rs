@@ -163,18 +163,18 @@ impl AsMut<crate::Zenject::IFactory> for crate::GlobalNamespace::LanguageFactory
     }
 }
 #[cfg(feature = "LanguageFactory")]
-impl AsRef<crate::Zenject::IFactory_1<crate::BGLib::Polyglot::Language>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>>
 for crate::GlobalNamespace::LanguageFactory {
-    fn as_ref(&self) -> &crate::Zenject::IFactory_1<crate::BGLib::Polyglot::Language> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "LanguageFactory")]
-impl AsMut<crate::Zenject::IFactory_1<crate::BGLib::Polyglot::Language>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>>
 for crate::GlobalNamespace::LanguageFactory {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Zenject::IFactory_1<crate::BGLib::Polyglot::Language> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> {
         unsafe { std::mem::transmute(self) }
     }
 }

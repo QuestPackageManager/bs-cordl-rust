@@ -7,17 +7,11 @@ pub struct ClaimsIdentity {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub m_instanceClaims: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
     >,
     pub m_externalClaims: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::Collection_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<
-                    quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     >,
     pub m_nameType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -307,11 +301,9 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IEnumerable_1_1(
+    pub fn New_Gc1(
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -320,14 +312,12 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             .invoke_void(".ctor", (claims))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString2(
+    pub fn New_IIdentity_Gc_Il2CppString_Il2CppString_Il2CppString2(
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::IIdentity,
         >,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
         authenticationType: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -344,14 +334,12 @@ impl crate::System::Security::Claims::ClaimsIdentity {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
+    pub fn New_IIdentity_Gc_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::IIdentity,
         >,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
         authenticationType: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -490,9 +478,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
     pub fn SafeAddClaims(
         &mut self,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -501,10 +487,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Security::Claims::Claim,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Claims::Claim,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -599,12 +583,10 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -613,10 +595,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Security::Claims::Claim,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Claims::Claim,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -635,15 +615,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString2(
+    pub fn _ctor_IIdentity_Gc_Il2CppString_Il2CppString_Il2CppString2(
         &mut self,
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::IIdentity,
         >,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
         authenticationType: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -661,10 +639,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                                 crate::System::Security::Principal::IIdentity,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Security::Claims::Claim,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Security::Claims::Claim,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -697,15 +673,13 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IIdentity_IEnumerable_1_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
+    pub fn _ctor_IIdentity_Gc_Il2CppString_Il2CppString_Il2CppString__cordl_bool3(
         &mut self,
         identity: quest_hook::libil2cpp::Gc<
             crate::System::Security::Principal::IIdentity,
         >,
         claims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
         authenticationType: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -724,10 +698,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                                 crate::System::Security::Principal::IIdentity,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Security::Claims::Claim,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Security::Claims::Claim,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -862,9 +834,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -874,10 +844,8 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Security::Claims::Claim,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Security::Claims::Claim,
                             >,
                         >,
                         0usize,
@@ -891,9 +859,7 @@ impl crate::System::Security::Claims::ClaimsIdentity {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::Claim>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

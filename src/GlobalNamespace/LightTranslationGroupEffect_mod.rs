@@ -10,11 +10,9 @@ pub struct LightTranslationGroupEffect {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _transformMask: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                crate::UnityEngine::Vector3,
-            >,
+        crate::System::ValueTuple_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::UnityEngine::Vector3,
         >,
     >,
     pub _xTranslationTween: quest_hook::libil2cpp::Gc<crate::Tweening::FloatTween>,
@@ -141,10 +139,8 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
         mirrored: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightTranslationBeatmapEventData,
             >,
         >,
     > {
@@ -160,10 +156,8 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataCallback_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LightTranslationBeatmapEventData,
                             >,
                         >,
                         4usize,
@@ -177,10 +171,8 @@ impl crate::GlobalNamespace::LightTranslationGroupEffect {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LightTranslationBeatmapEventData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LightTranslationBeatmapEventData,
             >,
         > = unsafe {
             cordl_method_info

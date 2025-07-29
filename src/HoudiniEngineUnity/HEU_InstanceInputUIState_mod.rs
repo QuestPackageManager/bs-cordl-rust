@@ -143,13 +143,13 @@ for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstanceInputUIState>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstanceInputUIState>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -157,13 +157,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InstanceInputUIState")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstanceInputUIState>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InstanceInputUIState {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InstanceInputUIState>,
     > {
         unsafe { std::mem::transmute(self) }

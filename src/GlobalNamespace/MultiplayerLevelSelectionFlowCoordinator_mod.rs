@@ -12,10 +12,8 @@ pub struct MultiplayerLevelSelectionFlowCoordinator {
         crate::GlobalNamespace::ILobbyGameStateController,
     >,
     pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
         >,
     >,
     pub didFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -396,10 +394,8 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -409,10 +405,8 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -681,10 +675,8 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -694,10 +686,8 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

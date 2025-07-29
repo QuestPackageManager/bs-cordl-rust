@@ -205,42 +205,6 @@ for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    >,
-> for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
 impl AsRef<crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey>
 for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     fn as_ref(
@@ -255,6 +219,42 @@ for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ResourceManagement+Util+LocationCacheKey")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::LocationCacheKey {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -44,9 +44,7 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
         TContainer,
     >;
     pub fn AddPropertyBag<TContainer>(
-        propertyBag: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-        >,
+        propertyBag: quest_hook::libil2cpp::Gc<TContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -57,9 +55,7 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TContainer>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddPropertyBag")
@@ -77,7 +73,7 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyBag_0<TContainer>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Properties::IPropertyBag_1<TContainer>>,
+        quest_hook::libil2cpp::Gc<TContainer>,
     >
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -89,9 +85,7 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TContainer>,
                         0usize,
                     >("GetPropertyBag")
                     .unwrap_or_else(|e| {
@@ -102,9 +96,9 @@ impl crate::Unity::Properties::Internal::PropertyBagStore {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::IPropertyBag_1<TContainer>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPropertyBag_Type1(

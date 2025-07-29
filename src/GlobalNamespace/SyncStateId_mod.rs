@@ -471,48 +471,34 @@ impl crate::GlobalNamespace::SyncStateId {
     }
 }
 #[cfg(feature = "SyncStateId")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::SyncStateId,
-    >,
-> for crate::GlobalNamespace::SyncStateId {
-    fn as_ref(
-        &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::SyncStateId,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "SyncStateId")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::SyncStateId,
-    >,
-> for crate::GlobalNamespace::SyncStateId {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::SyncStateId,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "SyncStateId")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId>>
 for crate::GlobalNamespace::SyncStateId {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId> {
         todo!()
     }
 }
 #[cfg(feature = "SyncStateId")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId>>
 for crate::GlobalNamespace::SyncStateId {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::SyncStateId> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId> {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId>>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId> {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId>>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SyncStateId> {
         todo!()
     }
 }

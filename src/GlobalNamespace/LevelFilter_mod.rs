@@ -140,9 +140,7 @@ impl crate::GlobalNamespace::LevelFilter {
     }
     pub fn FilterLevelByText(
         levels: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
         searchTerms: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -151,9 +149,7 @@ impl crate::GlobalNamespace::LevelFilter {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -163,10 +159,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapLevel,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -178,10 +172,8 @@ impl crate::GlobalNamespace::LevelFilter {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
                             >,
                         >,
                         2usize,
@@ -195,17 +187,13 @@ impl crate::GlobalNamespace::LevelFilter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (levels, searchTerms))? };
         Ok(__cordl_ret.into())
     }
-    pub fn FilterLevelsAsync_IEnumerable_1_1(
+    pub fn FilterLevelsAsync_Gc1(
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
         filter: crate::GlobalNamespace::LevelFilter,
         playerDataModel: quest_hook::libil2cpp::Gc<
@@ -217,11 +205,9 @@ impl crate::GlobalNamespace::LevelFilter {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                    >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                 >,
             >,
         >,
@@ -233,10 +219,8 @@ impl crate::GlobalNamespace::LevelFilter {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapLevel,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
                                 >,
                             >,
                             crate::GlobalNamespace::LevelFilter,
@@ -249,12 +233,10 @@ impl crate::GlobalNamespace::LevelFilter {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapLevel,
-                                        >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevel,
                                     >,
                                 >,
                             >,
@@ -270,11 +252,9 @@ impl crate::GlobalNamespace::LevelFilter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                    >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                 >,
             >,
         > = unsafe {
@@ -308,11 +288,9 @@ impl crate::GlobalNamespace::LevelFilter {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                    >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                 >,
             >,
         >,
@@ -340,12 +318,10 @@ impl crate::GlobalNamespace::LevelFilter {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapLevel,
-                                        >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevel,
                                     >,
                                 >,
                             >,
@@ -361,11 +337,9 @@ impl crate::GlobalNamespace::LevelFilter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Il2CppArray<
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                    >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
                 >,
             >,
         > = unsafe {

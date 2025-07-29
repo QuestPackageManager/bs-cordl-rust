@@ -74,10 +74,8 @@ impl crate::Oculus::Platform::PlatformInternal {
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -93,10 +91,8 @@ impl crate::Oculus::Platform::PlatformInternal {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PlatformInitialize,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PlatformInitialize,
                             >,
                         >,
                         2usize,
@@ -110,10 +106,8 @@ impl crate::Oculus::Platform::PlatformInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (appID, accessToken))? };
         Ok(__cordl_ret.into())
@@ -202,10 +196,8 @@ impl std::ops::DerefMut for crate::Oculus::Platform::PlatformInternal_HTTP {
 impl crate::Oculus::Platform::PlatformInternal_HTTP {
     pub fn SetHttpTransferUpdateCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::HttpTransferUpdate,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::HttpTransferUpdate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -215,10 +207,8 @@ impl crate::Oculus::Platform::PlatformInternal_HTTP {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::HttpTransferUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::HttpTransferUpdate,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -449,11 +439,7 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LinkedAccountList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -467,10 +453,8 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LinkedAccountList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LinkedAccountList,
                             >,
                         >,
                         1usize,
@@ -484,11 +468,7 @@ impl crate::Oculus::Platform::PlatformInternal_Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LinkedAccountList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LinkedAccountList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (providers))? };
         Ok(__cordl_ret.into())
     }

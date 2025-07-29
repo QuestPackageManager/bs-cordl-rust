@@ -102,10 +102,8 @@ impl crate::Unity::Properties::TypeUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CheckCanBeInstantiated_TypeUtility_ITypeConstructor_1_0<T>(
-        constructor: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-        >,
+    pub fn CheckCanBeInstantiated_Gc0<T>(
+        constructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -116,9 +114,7 @@ impl crate::Unity::Properties::TypeUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("CheckCanBeInstantiated")
@@ -198,9 +194,7 @@ impl crate::Unity::Properties::TypeUtility {
         Ok(__cordl_ret.into())
     }
     pub fn CreateTypeConstructor_1<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-        >,
+        quest_hook::libil2cpp::Gc<T>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -212,9 +206,7 @@ impl crate::Unity::Properties::TypeUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("CreateTypeConstructor")
                     .unwrap_or_else(|e| {
@@ -225,9 +217,9 @@ impl crate::Unity::Properties::TypeUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn CreateTypeConstructor_Type0(
@@ -285,9 +277,7 @@ impl crate::Unity::Properties::TypeUtility {
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeConstructor_1<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-        >,
+        quest_hook::libil2cpp::Gc<T>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -299,9 +289,7 @@ impl crate::Unity::Properties::TypeUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("GetTypeConstructor")
                     .unwrap_or_else(|e| {
@@ -312,9 +300,9 @@ impl crate::Unity::Properties::TypeUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeConstructor_Type0(
@@ -346,13 +334,9 @@ impl crate::Unity::Properties::TypeUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTypeDisplayName_IReadOnlyList_1_ByRefMut1(
+    pub fn GetTypeDisplayName_Gc_ByRefMut1(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        args: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
         argIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -365,9 +349,7 @@ impl crate::Unity::Properties::TypeUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
@@ -522,7 +504,7 @@ impl crate::Unity::Properties::TypeUtility {
         Ok(__cordl_ret.into())
     }
     pub fn SetExplicitInstantiationMethod<T>(
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -533,7 +515,7 @@ impl crate::Unity::Properties::TypeUtility {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetExplicitInstantiationMethod")
@@ -957,7 +939,7 @@ impl<
     }
     pub fn SetExplicitConstructor(
         &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -968,7 +950,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetExplicitConstructor")
@@ -1294,11 +1276,9 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
 #[derive(Debug)]
 pub struct TypeUtility_TypeConstructor_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_ExplicitConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    pub m_ImplicitConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    pub m_OverrideConstructor: quest_hook::libil2cpp::Gc<
-        crate::Unity::Properties::IConstructor_1<T>,
-    >,
+    pub m_ExplicitConstructor: quest_hook::libil2cpp::Gc<T>,
+    pub m_ImplicitConstructor: quest_hook::libil2cpp::Gc<T>,
+    pub m_OverrideConstructor: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+TypeUtility+TypeConstructor_1")]
@@ -1436,7 +1416,7 @@ impl<
     }
     pub fn SetExplicitConstructor(
         &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1447,7 +1427,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetExplicitConstructor")
@@ -1636,22 +1616,16 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
-    fn as_ref(&self) -> &crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::Unity::Properties::TypeUtility_ITypeConstructor_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

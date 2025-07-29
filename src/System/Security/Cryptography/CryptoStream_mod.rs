@@ -476,9 +476,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -492,9 +490,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         4usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -505,9 +501,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };
@@ -520,9 +514,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
         useAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -537,9 +529,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                             crate::System::Threading::CancellationToken,
                             bool,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         5usize,
                     >("ReadAsyncCore")
                     .unwrap_or_else(|e| {
@@ -550,9 +540,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -567,9 +555,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -583,9 +569,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         4usize,
                     >("ReadAsyncInternal")
                     .unwrap_or_else(|e| {
@@ -596,9 +580,7 @@ impl crate::System::Security::Cryptography::CryptoStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i32>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };

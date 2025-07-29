@@ -4,9 +4,7 @@
 pub struct OVRManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub disabledCameras: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     >,
     pub prevTimeScale: f32,
     pub useRecommendedMSAALevel: bool,
@@ -71,9 +69,7 @@ pub struct OVRManager {
     pub controllerDrivenHandPosesType: crate::GlobalNamespace::OVRManager_ControllerDrivenHandPosesType,
     pub _isSupportedPlatform_k__BackingField: bool,
     pub eventListeners: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager_EventListener>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRManager_EventListener>,
     >,
 }
 #[cfg(feature = "cordl_class_OVRManager")]
@@ -2945,14 +2941,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_DisplayRefreshRateChanged(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>),
+                        (quest_hook::libil2cpp::Gc<f32, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_DisplayRefreshRateChanged")
@@ -3145,14 +3141,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_SceneCaptureComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>),
+                        (quest_hook::libil2cpp::Gc<u64, bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_SceneCaptureComplete")
@@ -3171,10 +3167,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_ShareSpacesComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3183,10 +3177,8 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                u64,
-                                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3206,12 +3198,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceEraseComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-            >,
+            u64,
+            bool,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3220,12 +3210,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                bool,
-                                crate::System::Guid,
-                                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-                            >,
+                            u64,
+                            bool,
+                            crate::System::Guid,
+                            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3245,10 +3233,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceListSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3257,10 +3243,8 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                u64,
-                                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3279,14 +3263,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_SpaceQueryComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>),
+                        (quest_hook::libil2cpp::Gc<u64, bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_SpaceQueryComplete")
@@ -3304,14 +3288,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_SpaceQueryResults(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+        value: quest_hook::libil2cpp::Gc<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>),
+                        (quest_hook::libil2cpp::Gc<u64>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_SpaceQueryResults")
@@ -3330,12 +3314,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                crate::GlobalNamespace::OVRSpace,
-                bool,
-                crate::System::Guid,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpace,
+            bool,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3344,12 +3326,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                crate::GlobalNamespace::OVRSpace,
-                                bool,
-                                crate::System::Guid,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpace,
+                            bool,
+                            crate::System::Guid,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3369,14 +3349,12 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpaceSetComponentStatusComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_6<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                bool,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3385,14 +3363,12 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_6<
-                                u64,
-                                bool,
-                                crate::GlobalNamespace::OVRSpace,
-                                crate::System::Guid,
-                                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                                bool,
-                            >,
+                            u64,
+                            bool,
+                            crate::GlobalNamespace::OVRSpace,
+                            crate::System::Guid,
+                            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3412,12 +3388,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn add_SpatialAnchorCreateComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3426,12 +3400,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                bool,
-                                crate::GlobalNamespace::OVRSpace,
-                                crate::System::Guid,
-                            >,
+                            u64,
+                            bool,
+                            crate::GlobalNamespace::OVRSpace,
+                            crate::System::Guid,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -4728,14 +4700,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_DisplayRefreshRateChanged(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<f32, f32>>),
+                        (quest_hook::libil2cpp::Gc<f32, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_DisplayRefreshRateChanged")
@@ -4928,14 +4900,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_SceneCaptureComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>),
+                        (quest_hook::libil2cpp::Gc<u64, bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_SceneCaptureComplete")
@@ -4954,10 +4926,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_ShareSpacesComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4966,10 +4936,8 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                u64,
-                                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -4989,12 +4957,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceEraseComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-            >,
+            u64,
+            bool,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5003,12 +4969,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                bool,
-                                crate::System::Guid,
-                                crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
-                            >,
+                            u64,
+                            bool,
+                            crate::System::Guid,
+                            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -5028,10 +4992,8 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceListSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                u64,
-                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5040,10 +5002,8 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                u64,
-                                crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpatialAnchor_OperationResult,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -5062,14 +5022,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_SpaceQueryComplete(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>,
+        value: quest_hook::libil2cpp::Gc<u64, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<u64, bool>>),
+                        (quest_hook::libil2cpp::Gc<u64, bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_SpaceQueryComplete")
@@ -5087,14 +5047,14 @@ impl crate::GlobalNamespace::OVRManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_SpaceQueryResults(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>,
+        value: quest_hook::libil2cpp::Gc<u64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<u64>>),
+                        (quest_hook::libil2cpp::Gc<u64>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_SpaceQueryResults")
@@ -5113,12 +5073,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceSaveComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                crate::GlobalNamespace::OVRSpace,
-                bool,
-                crate::System::Guid,
-            >,
+            u64,
+            crate::GlobalNamespace::OVRSpace,
+            bool,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5127,12 +5085,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                crate::GlobalNamespace::OVRSpace,
-                                bool,
-                                crate::System::Guid,
-                            >,
+                            u64,
+                            crate::GlobalNamespace::OVRSpace,
+                            bool,
+                            crate::System::Guid,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -5152,14 +5108,12 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpaceSetComponentStatusComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_6<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                bool,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5168,14 +5122,12 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_6<
-                                u64,
-                                bool,
-                                crate::GlobalNamespace::OVRSpace,
-                                crate::System::Guid,
-                                crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-                                bool,
-                            >,
+                            u64,
+                            bool,
+                            crate::GlobalNamespace::OVRSpace,
+                            crate::System::Guid,
+                            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -5195,12 +5147,10 @@ impl crate::GlobalNamespace::OVRManager {
     }
     pub fn remove_SpatialAnchorCreateComplete(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_4<
-                u64,
-                bool,
-                crate::GlobalNamespace::OVRSpace,
-                crate::System::Guid,
-            >,
+            u64,
+            bool,
+            crate::GlobalNamespace::OVRSpace,
+            crate::System::Guid,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5209,12 +5159,10 @@ impl crate::GlobalNamespace::OVRManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_4<
-                                u64,
-                                bool,
-                                crate::GlobalNamespace::OVRSpace,
-                                crate::System::Guid,
-                            >,
+                            u64,
+                            bool,
+                            crate::GlobalNamespace::OVRSpace,
+                            crate::System::Guid,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

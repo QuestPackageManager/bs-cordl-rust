@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct WhereObservable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-    pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
+    pub m_Source: quest_hook::libil2cpp::Gc<TValue>,
+    pub m_Predicate: quest_hook::libil2cpp::Gc<TValue, bool>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+WhereObservable_1")]
@@ -67,8 +67,8 @@ impl<
         TValue,
     >;
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
+        predicate: quest_hook::libil2cpp::Gc<TValue, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -82,7 +82,7 @@ impl<
     }
     pub fn Subscribe(
         &mut self,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >
@@ -95,7 +95,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>),
+                        (quest_hook::libil2cpp::Gc<TValue>),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
                         1usize,
                     >("Subscribe")
@@ -114,8 +114,8 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TValue>>,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, bool>>,
+        source: quest_hook::libil2cpp::Gc<TValue>,
+        predicate: quest_hook::libil2cpp::Gc<TValue, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -127,12 +127,8 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TValue>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TValue, bool>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<TValue, bool>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -162,16 +158,16 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue> {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObservable_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue> {
-    fn as_ref(&self) -> &crate::System::IObservable_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObservable_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IObservable_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -180,10 +176,8 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue> {
 #[derive(Debug)]
 pub struct WhereObservable_1_Where<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observable: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue>,
-    >,
-    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+    pub m_Observable: quest_hook::libil2cpp::Gc<TValue>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Utilities+WhereObservable_1+Where")]
@@ -242,10 +236,8 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> {
     pub fn New(
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue>,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observable: quest_hook::libil2cpp::Gc<TValue>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -348,10 +340,8 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<TValue>,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+        observable: quest_hook::libil2cpp::Gc<TValue>,
+        observer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -363,12 +353,8 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::Utilities::WhereObservable_1<
-                                    TValue,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TValue>>,
+                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<TValue>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -398,16 +384,16 @@ for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> 
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1+Where")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::IObserver_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> {
-    fn as_ref(&self) -> &crate::System::IObserver_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+WhereObservable_1+Where")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IObserver_1<TValue>>
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
 for crate::UnityEngine::InputSystem::Utilities::WhereObservable_1_Where<TValue> {
-    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

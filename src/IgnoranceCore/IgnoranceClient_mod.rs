@@ -18,34 +18,22 @@ pub struct IgnoranceClient {
     >,
     pub RootCertificate: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Incoming: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceIncomingPacket,
-        >,
+        crate::IgnoranceCore::IgnoranceIncomingPacket,
     >,
     pub Outgoing: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceOutgoingPacket,
-        >,
+        crate::IgnoranceCore::IgnoranceOutgoingPacket,
     >,
     pub Commands: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceCommandPacket,
-        >,
+        crate::IgnoranceCore::IgnoranceCommandPacket,
     >,
     pub ConnectionEvents: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceConnectionEvent,
-        >,
+        crate::IgnoranceCore::IgnoranceConnectionEvent,
     >,
     pub DisconnectionEvents: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceConnectionEvent,
-        >,
+        crate::IgnoranceCore::IgnoranceConnectionEvent,
     >,
     pub StatusUpdates: quest_hook::libil2cpp::Gc<
-        crate::IgnoranceThirdparty::RingBuffer_1<
-            crate::IgnoranceCore::IgnoranceClientStats,
-        >,
+        crate::IgnoranceCore::IgnoranceClientStats,
     >,
     pub CeaseOperation: bool,
     pub WorkerThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,

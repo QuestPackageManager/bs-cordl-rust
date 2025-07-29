@@ -3,9 +3,7 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct CancellationCallbackCoreWorkArguments {
     pub _currArrayFragment: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::SparselyPopulatedArrayFragment_1<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
     >,
     pub _currArrayIndex: i32,
 }
@@ -109,11 +107,7 @@ impl crate::System::Threading::CancellationCallbackCoreWorkArguments {
     pub fn _ctor(
         &mut self,
         currArrayFragment: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::SparselyPopulatedArrayFragment_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::CancellationCallbackInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::CancellationCallbackInfo>,
         >,
         currArrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,10 +118,8 @@ impl crate::System::Threading::CancellationCallbackCoreWorkArguments {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::SparselyPopulatedArrayFragment_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::CancellationCallbackInfo,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::CancellationCallbackInfo,
                                 >,
                             >,
                             i32,

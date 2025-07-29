@@ -11,10 +11,8 @@ pub struct PerformanceConfigurationChecks {
     pub playerConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig,
     pub levelConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig,
     pub invalid: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
     >,
 }
 #[cfg(feature = "cordl_class_PerformanceConfigurationChecks")]

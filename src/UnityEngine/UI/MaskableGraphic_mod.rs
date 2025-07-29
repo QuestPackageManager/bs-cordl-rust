@@ -663,7 +663,7 @@ for crate::UnityEngine::UI::MaskableGraphic {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaskableGraphic_CullStateChangedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -687,7 +687,7 @@ for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
 }
 #[cfg(feature = "UnityEngine+UI+MaskableGraphic+CullStateChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::MaskableGraphic_CullStateChangedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -19,9 +19,7 @@ pub struct Selectable {
     pub _isPointerDown_k__BackingField: bool,
     pub _hasSelection_k__BackingField: bool,
     pub m_CanvasGroupCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Selectable")]
@@ -989,9 +987,7 @@ impl crate::UnityEngine::UI::Selectable {
     }
     pub fn get_allSelectables() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1001,11 +997,7 @@ impl crate::UnityEngine::UI::Selectable {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UI::Selectable,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
                         >,
                         0usize,
                     >("get_allSelectables")
@@ -1018,9 +1010,7 @@ impl crate::UnityEngine::UI::Selectable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Selectable>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

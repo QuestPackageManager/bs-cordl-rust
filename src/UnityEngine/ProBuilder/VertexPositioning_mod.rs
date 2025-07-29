@@ -184,9 +184,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
     }
     pub fn TranslateVerticesInternal(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,9 +196,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                             crate::UnityEngine::Vector3,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -219,11 +215,9 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_0(
+    pub fn TranslateVertices_ProBuilderMesh_Gc_Vector3_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -235,9 +229,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                             crate::UnityEngine::Vector3,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -256,13 +248,9 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_1(
+    pub fn TranslateVertices_ProBuilderMesh_Gc_Vector3_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -275,9 +263,7 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
                             >,
                             crate::UnityEngine::Vector3,
                         ),
@@ -297,12 +283,10 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TranslateVertices_ProBuilderMesh_IEnumerable_1_Vector3_2(
+    pub fn TranslateVertices_ProBuilderMesh_Gc_Vector3_2(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         offset: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -316,10 +300,8 @@ impl crate::UnityEngine::ProBuilder::VertexPositioning {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                             crate::UnityEngine::Vector3,

@@ -405,13 +405,13 @@ for crate::StyledUITemplates::ColorOverrideOption {
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     >,
 > for crate::StyledUITemplates::ColorOverrideOption {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -419,13 +419,13 @@ impl AsRef<
 }
 #[cfg(feature = "StyledUITemplates+ColorOverrideOption")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     >,
 > for crate::StyledUITemplates::ColorOverrideOption {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::StyledUITemplates::ColorOverrideOption>,
     > {
         unsafe { std::mem::transmute(self) }

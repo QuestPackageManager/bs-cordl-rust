@@ -97,14 +97,10 @@ for crate::UnityEngine::SpatialTracking::TrackedPoseDriverDataDescription {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TrackedPoseDriverDataDescription_PoseData {
     pub PoseNames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub Poses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
-        >,
+        crate::UnityEngine::SpatialTracking::TrackedPoseDriver_TrackedPose,
     >,
 }
 #[cfg(

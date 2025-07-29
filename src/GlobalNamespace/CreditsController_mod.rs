@@ -27,9 +27,7 @@ pub struct CreditsController {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub _packDefinitions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _didFinish: bool,
@@ -275,9 +273,7 @@ impl crate::GlobalNamespace::CreditsController {
     pub fn SpawnAllCredits(
         &mut self,
         musicPackCredits: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -286,9 +282,7 @@ impl crate::GlobalNamespace::CreditsController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -309,9 +303,7 @@ impl crate::GlobalNamespace::CreditsController {
     pub fn SpawnCredits(
         &mut self,
         creditsToSpawn: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
         initialHeight: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -322,9 +314,7 @@ impl crate::GlobalNamespace::CreditsController {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                             f32,
                         ),

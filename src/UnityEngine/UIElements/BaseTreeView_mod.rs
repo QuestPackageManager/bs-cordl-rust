@@ -4,9 +4,7 @@
 pub struct BaseTreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_AutoExpand: bool,
-    pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseTreeView")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -392,20 +390,16 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectionById_IEnumerable_1_1(
+    pub fn SetSelectionById_Gc1(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetSelectionById")
@@ -450,9 +444,7 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn SetSelectionInternalById(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        ids: quest_hook::libil2cpp::Gc<i32>,
         sendNotification: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -460,12 +452,7 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, bool),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetSelectionInternalById")
@@ -600,18 +587,14 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn get_expandedItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_expandedItemIds")
                     .unwrap_or_else(|e| {
@@ -622,9 +605,9 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_itemsSource(
@@ -711,18 +694,14 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
     }
     pub fn set_expandedItemIds(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_expandedItemIds")

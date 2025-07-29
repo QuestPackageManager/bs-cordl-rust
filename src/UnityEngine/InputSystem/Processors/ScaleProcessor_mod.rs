@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleProcessor {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
     pub factor: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Processors+ScaleProcessor")]
@@ -27,7 +27,7 @@ for crate::UnityEngine::InputSystem::Processors::ScaleProcessor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Processors::ScaleProcessor {
-    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

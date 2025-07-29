@@ -8,20 +8,14 @@ pub struct RectMask2D {
     >,
     pub m_RectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub m_MaskableTargets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::MaskableGraphic>,
     >,
     pub m_ClipTargets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClippable>,
     >,
     pub m_ShouldRecalculateClipRects: bool,
     pub m_Clippers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
     >,
     pub m_LastClipRectCanvasSpace: crate::UnityEngine::Rect,
     pub m_ForceClip: bool,

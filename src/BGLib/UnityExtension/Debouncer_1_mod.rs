@@ -3,11 +3,9 @@
 #[derive(Debug)]
 pub struct Debouncer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub _callback: quest_hook::libil2cpp::Gc<T>,
     pub _debounceDelaySeconds: f32,
-    pub _debounceQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<T>,
-    >,
+    pub _debounceQueue: quest_hook::libil2cpp::Gc<T>,
     pub _nextCallbackTime: f32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -137,7 +135,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        callback: quest_hook::libil2cpp::Gc<T>,
         debounceDelaySeconds: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -175,7 +173,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        callback: quest_hook::libil2cpp::Gc<T>,
         debounceDelaySeconds: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -187,7 +185,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::UnityExtension::Debouncer_1<T
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>, f32),
+                        (quest_hook::libil2cpp::Gc<T>, f32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

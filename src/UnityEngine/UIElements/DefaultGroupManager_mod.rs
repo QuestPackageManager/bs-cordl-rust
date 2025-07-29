@@ -4,9 +4,7 @@
 pub struct DefaultGroupManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_GroupOptions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IGroupBoxOption>,
     >,
     pub m_SelectedOption: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IGroupBoxOption,

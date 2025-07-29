@@ -13,9 +13,7 @@ pub struct BeatLine {
     pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::VariableMovementDataProvider,
     >,
-    pub _highlightTimes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub _highlightTimes: quest_hook::libil2cpp::Gc<f32>,
     pub _color: crate::UnityEngine::Color,
     pub _rotation: f32,
 }
@@ -236,7 +234,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatLine {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatLine_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
     >,
 }
@@ -261,7 +259,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatLine_Poo
 }
 #[cfg(feature = "BeatLine+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatLine_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatLine>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

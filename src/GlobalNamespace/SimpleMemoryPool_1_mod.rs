@@ -3,13 +3,9 @@
 #[derive(Debug)]
 pub struct SimpleMemoryPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activeElements: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<T>,
-    >,
-    pub _inactiveElements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
-    pub _createNewItemFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+    pub _activeElements: quest_hook::libil2cpp::Gc<T>,
+    pub _inactiveElements: quest_hook::libil2cpp::Gc<T>,
+    pub _createNewItemFunc: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_SimpleMemoryPool_1")]
@@ -90,7 +86,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
     }
     pub fn New(
         startCapacity: i32,
-        createNewItemFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        createNewItemFunc: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -126,7 +122,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
     pub fn _ctor(
         &mut self,
         startCapacity: i32,
-        createNewItemFunc: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        createNewItemFunc: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -137,7 +133,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
+                        (i32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -156,9 +152,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -167,13 +161,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >,
-                        0usize,
-                    >("get_items")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_items")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -182,9 +170,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SimpleMemoryPool_1<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

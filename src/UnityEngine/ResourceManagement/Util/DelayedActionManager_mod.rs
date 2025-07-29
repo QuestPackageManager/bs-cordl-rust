@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DelayedActionManager {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::DelayedActionManager,
         >,
@@ -10,24 +10,16 @@ pub struct DelayedActionManager {
     pub m_Actions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-                >,
+                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
             >,
         >,
     >,
     pub m_DelayedActions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<
-            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-        >,
+        crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
     >,
     pub m_NodeCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::LinkedListNode_1<
-                    crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
         >,
     >,
     pub m_CollectionIndex: i32,
@@ -56,7 +48,7 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
-    type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::DelayedActionManager,
         >,
@@ -216,9 +208,7 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-            >,
+            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -230,9 +220,7 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
                             crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-                            >,
+                            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
                         >,
                         1usize,
                     >("GetNode")
@@ -245,9 +233,7 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
-            >,
+            crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_DelegateInfo,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (del))? };
         Ok(__cordl_ret.into())
     }

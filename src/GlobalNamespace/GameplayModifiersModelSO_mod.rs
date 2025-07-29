@@ -52,11 +52,9 @@ pub struct GameplayModifiersModelSO {
         crate::GlobalNamespace::GameplayModifierParamsSO,
     >,
     pub _gameplayModifierGetters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
-            >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
         >,
     >,
 }
@@ -101,12 +99,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn CreateGameplayModifiers(
         &mut self,
         valueGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
@@ -117,12 +111,10 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                                >,
-                                bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifierParamsSO,
                             >,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::GameplayModifiers,
@@ -149,11 +141,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -165,10 +153,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                             crate::GlobalNamespace::GameplayModifiers,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifierParamsSO,
                             >,
                         >,
                         1usize,
@@ -182,11 +168,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (gameplayModifiers))? };
         Ok(__cordl_ret.into())
     }
@@ -224,11 +206,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
         multipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -240,10 +218,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::GameplayModifierParamsSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifierParamsSO,
                                 >,
                             >,
                             f32,
@@ -307,12 +283,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn GetSongSpeedFromValueGetter(
         &mut self,
         valueGetter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::GameplayModifiers_SongSpeed,
@@ -323,12 +295,10 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                                >,
-                                bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifierParamsSO,
                             >,
+                            bool,
                         >),
                         crate::GlobalNamespace::GameplayModifiers_SongSpeed,
                         1usize,
@@ -349,11 +319,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
     pub fn GetTotalMultiplier(
         &mut self,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -364,10 +330,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::GameplayModifierParamsSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifierParamsSO,
                                 >,
                             >,
                             f32,
@@ -392,11 +356,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         gameplayModifiersModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiersModelSO,
@@ -411,10 +371,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::GameplayModifierParamsSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifierParamsSO,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -446,11 +404,7 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
         maxMultipliedScore: i32,
         modifierParams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
         >,
         energy: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -462,10 +416,8 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::GameplayModifierParamsSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifierParamsSO,
                                 >,
                             >,
                             f32,
@@ -540,13 +492,9 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
             >,
         >,
     > {
@@ -557,13 +505,11 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifierParamsSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
                             >,
                         >,
                         0usize,
@@ -577,13 +523,9 @@ impl crate::GlobalNamespace::GameplayModifiersModelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifierParamsSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::GameplayModifiersModelSO_GameplayModifierBoolGetter,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

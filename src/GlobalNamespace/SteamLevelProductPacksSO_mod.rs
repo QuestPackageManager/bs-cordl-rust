@@ -197,7 +197,7 @@ for crate::GlobalNamespace::SteamLevelProductPacksSO {
 }
 #[cfg(feature = "SteamLevelProductPacksSO")]
 impl AsRef<
-    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -208,7 +208,7 @@ impl AsRef<
 > for crate::GlobalNamespace::SteamLevelProductPacksSO {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -221,7 +221,7 @@ impl AsRef<
 }
 #[cfg(feature = "SteamLevelProductPacksSO")]
 impl AsMut<
-    crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -232,7 +232,7 @@ impl AsMut<
 > for crate::GlobalNamespace::SteamLevelProductPacksSO {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::ILevelPackProductDataContainer_2<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelPackProductData,
         >,

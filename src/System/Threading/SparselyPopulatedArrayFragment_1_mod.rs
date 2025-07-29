@@ -5,12 +5,8 @@ pub struct SparselyPopulatedArrayFragment_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _elements: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     pub _freeCount: i32,
-    pub _next: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    >,
-    pub _prev: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    >,
+    pub _next: quest_hook::libil2cpp::Gc<T>,
+    pub _prev: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_System+Threading+SparselyPopulatedArrayFragment_1")]
@@ -68,11 +64,9 @@ for crate::System::Threading::SparselyPopulatedArrayFragment_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Threading::SparselyPopulatedArrayFragment_1<T> {
-    pub fn New_SparselyPopulatedArrayFragment_1_1(
+    pub fn New_Gc1(
         _cordl_size: i32,
-        prev: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-        >,
+        prev: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -124,12 +118,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_SparselyPopulatedArrayFragment_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         _cordl_size: i32,
-        prev: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-        >,
+        prev: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -140,14 +132,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::SparselyPopulatedArrayFragment_1<
-                                    T,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -236,11 +221,7 @@ impl<
     }
     pub fn get_Prev(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -249,13 +230,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-                        >,
-                        0usize,
-                    >("get_Prev")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_Prev")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -264,9 +239,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

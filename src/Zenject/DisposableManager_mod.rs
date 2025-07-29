@@ -4,16 +4,10 @@
 pub struct DisposableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Zenject::DisposableManager_DisposableInfo,
-        >,
+        crate::Zenject::DisposableManager_DisposableInfo,
     >,
     pub _lateDisposables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::DisposableManager_LateDisposableInfo,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DisposableManager_LateDisposableInfo>,
     >,
     pub _disposed: bool,
     pub _lateDisposed: bool,
@@ -213,33 +207,21 @@ impl crate::Zenject::DisposableManager {
     }
     pub fn New(
         disposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
         lateDisposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
         >,
         latePriorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -343,33 +325,21 @@ impl crate::Zenject::DisposableManager {
     pub fn _ctor(
         &mut self,
         disposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
         lateDisposables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
         >,
         latePriorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -380,33 +350,21 @@ impl crate::Zenject::DisposableManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                                quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::ModestTree::Util::ValuePair_2<
-                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                            i32,
-                                        >,
-                                    >,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::ILateDisposable>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::ModestTree::Util::ValuePair_2<
-                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                            i32,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
                                 >,
                             >,
                         ),

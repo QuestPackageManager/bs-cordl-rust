@@ -39,29 +39,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AsyncHelper {
 #[cfg(feature = "AsyncHelper")]
 impl crate::GlobalNamespace::AsyncHelper {
     pub fn AnyTaskTrueNonAlloc(
-        tasks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+        tasks: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task_1<bool>,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>),
+                        quest_hook::libil2cpp::Gc<bool>,
                         1usize,
                     >("AnyTaskTrueNonAlloc")
                     .unwrap_or_else(|e| {
@@ -72,16 +58,14 @@ impl crate::GlobalNamespace::AsyncHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (tasks))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+            cordl_method_info.invoke_unchecked((), (tasks))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn RunSync_Func_1_0(
+    pub fn RunSync_Gc0(
         asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -90,10 +74,8 @@ impl crate::GlobalNamespace::AsyncHelper {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -112,12 +94,8 @@ impl crate::GlobalNamespace::AsyncHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RunSync_Func_1_1<T>(
-        asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
-            >,
-        >,
+    pub fn RunSync_Gc1<T>(
+        asyncTask: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -128,13 +106,7 @@ impl crate::GlobalNamespace::AsyncHelper {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task_1<T>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>),
                         T,
                         1usize,
                     >("RunSync")

@@ -96,9 +96,7 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
     pub fn OnCompleted(
         &mut self,
         continuation: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         token: i16,
@@ -111,10 +109,8 @@ impl crate::System::Threading::Tasks::Sources::IValueTaskSource {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

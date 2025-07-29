@@ -3,12 +3,8 @@
 #[derive(Debug)]
 pub struct Listeners_1<TElem: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _listeners: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<TElem>,
-    >,
-    pub _filter: quest_hook::libil2cpp::Gc<
-        crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
-    >,
+    pub _listeners: quest_hook::libil2cpp::Gc<TElem>,
+    pub _filter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
     pub _objectID: i32,
     pub _listenerReaderCount: i32,
     __cordl_phantom_TElem: std::marker::PhantomData<TElem>,
@@ -129,9 +125,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
     }
     pub fn New(
         ObjectID: i32,
-        notifyFilter: quest_hook::libil2cpp::Gc<
-            crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
-        >,
+        notifyFilter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -148,9 +142,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
         arg1: T1,
         arg2: T2,
         arg3: T3,
-        action: quest_hook::libil2cpp::Gc<
-            crate::System::Data::Listeners_1_Action_4<TElem, TElem, T1, T2, T3>,
-        >,
+        action: quest_hook::libil2cpp::Gc<TElem, TElem, T1, T2, T3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -171,15 +163,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
                             T1,
                             T2,
                             T3,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Data::Listeners_1_Action_4<
-                                    TElem,
-                                    TElem,
-                                    T1,
-                                    T2,
-                                    T3,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TElem, TElem, T1, T2, T3>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -260,9 +244,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
     pub fn _ctor(
         &mut self,
         ObjectID: i32,
-        notifyFilter: quest_hook::libil2cpp::Gc<
-            crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
-        >,
+        notifyFilter: quest_hook::libil2cpp::Gc<TElem, TElem, bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -273,12 +255,7 @@ impl<TElem: quest_hook::libil2cpp::Type> crate::System::Data::Listeners_1<TElem>
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Data::Listeners_1_Func_2<TElem, TElem, bool>,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<TElem, TElem, bool>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

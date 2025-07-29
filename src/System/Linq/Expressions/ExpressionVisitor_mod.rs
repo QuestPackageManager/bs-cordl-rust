@@ -161,17 +161,11 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         > = unsafe { cordl_method_info.invoke_unchecked((), (before, after))? };
         Ok(__cordl_ret.into())
     }
-    pub fn VisitAndConvert_ReadOnlyCollection_1_1<T>(
+    pub fn VisitAndConvert_Gc1<T>(
         &mut self,
-        nodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
+        nodes: quest_hook::libil2cpp::Gc<T>,
         callerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -182,20 +176,12 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("VisitAndConvert")
                     .unwrap_or_else(|e| {
@@ -206,9 +192,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (nodes, callerName))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nodes, callerName))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn VisitAndConvert_T0<T>(
@@ -693,9 +679,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression_1<T>,
-        >,
+        node: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >
@@ -708,9 +692,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Linq::Expressions::Expression_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
                         >,
@@ -1083,18 +1065,14 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Visit_ReadOnlyCollection_1_1(
+    pub fn Visit_Gc1(
         &mut self,
         nodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1103,17 +1081,13 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Linq::Expressions::Expression,
                             >,
                         >,
                         1usize,
@@ -1127,22 +1101,14 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (nodes))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Visit_ReadOnlyCollection_1_Func_2_2<T>(
-        nodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-        elementVisitor: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+    pub fn Visit_Gc_Gc2<T>(
+        nodes: quest_hook::libil2cpp::Gc<T>,
+        elementVisitor: quest_hook::libil2cpp::Gc<T, T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1152,19 +1118,8 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                    T,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                T,
-                            >,
-                        >,
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T, T>),
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Visit")
                     .unwrap_or_else(|e| {
@@ -1175,9 +1130,9 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (nodes, elementVisitor))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (nodes, elementVisitor))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -266,9 +266,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -279,9 +277,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<T>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -293,9 +289,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Stack_
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -533,44 +529,6 @@ for crate::System::Collections::Generic::Stack_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+Stack_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::Stack_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
-for crate::System::Collections::Generic::Stack_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
-for crate::System::Collections::Generic::Stack_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
-for crate::System::Collections::Generic::Stack_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Generic::Stack_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -598,13 +556,39 @@ for crate::System::Collections::Generic::Stack_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
+#[cfg(feature = "System+Collections+Generic+Stack_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Stack_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Stack_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Stack_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "cordl_class_System+Collections+Generic+Stack_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct Stack_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<T>,
-    >,
+    pub _stack: quest_hook::libil2cpp::Gc<T>,
     pub _version: i32,
     pub _index: i32,
     pub _currentElement: T,
@@ -862,7 +846,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        stack: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Stack_1<T>>,
+        stack: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -873,9 +857,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Stack_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -915,24 +897,6 @@ impl<
     }
 }
 #[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -957,6 +921,20 @@ for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Stack_1+Enumerator")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Collections::Generic::Stack_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }

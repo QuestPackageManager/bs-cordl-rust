@@ -6,11 +6,9 @@
 pub struct InstanceProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_InstanceObjectToPrefabHandle: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
         >,
     >,
 }

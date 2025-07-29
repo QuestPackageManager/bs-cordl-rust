@@ -4,36 +4,24 @@
 pub struct BeatmapObjectsInTimeRowProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentTimeSliceColorNotes: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+    >,
+    pub _currentTimeSliceAllNotesAndSliders: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+    >,
+    pub _currentTimeSliceNotesByColorType: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ColorType,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         >,
     >,
-    pub _currentTimeSliceAllNotesAndSliders: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-        >,
-    >,
-    pub _currentTimeSliceNotesByColorType: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::ColorType,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                >,
-            >,
-        >,
-    >,
     pub _unprocessedSliderTails: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
     >,
     pub _notesInColumnsReusableProcessingListOfLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
             >,
         >,
     >,
@@ -85,9 +73,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub fn HandleCurrentNewTimeSliceAllNotesAndSlidersDidStartNewTimeSlice(
         &mut self,
         allObjectsTimeSlice: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -96,10 +82,8 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -122,9 +106,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub fn HandleCurrentTimeSliceAllNotesAndSlidersDidFinishTimeSlice(
         &mut self,
         allObjectsTimeSlice: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
         nextTimeSliceTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -135,10 +117,8 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapDataItem,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
                                 >,
                             >,
                             f32,
@@ -164,9 +144,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub fn HandleCurrentTimeSliceColorNotesDidAddItem(
         &mut self,
         timeSliceContainer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         >,
         noteData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -177,9 +155,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
                             >,
                             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
                         ),
@@ -202,9 +178,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub fn HandleCurrentTimeSliceColorNotesDidFinishTimeSlice(
         &mut self,
         currentTimeSlice: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         >,
         nextTimeSliceTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -215,9 +189,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
                             >,
                             f32,
                         ),
@@ -241,9 +213,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
     pub fn HandlePerColorTypeTimeSliceContainerDidFinishTimeSlice(
         &mut self,
         timeSliceContainer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
         >,
         nextTimeSliceTime: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -254,9 +224,7 @@ impl crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
                             >,
                             f32,
                         ),
@@ -619,37 +587,14 @@ pub struct BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
     pub _time_k__BackingField: f32,
     pub _previousTimeSliceTime_k__BackingField: f32,
     pub didFinishTimeSliceEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                    T,
-                >,
-            >,
-            f32,
-        >,
+        quest_hook::libil2cpp::Gc<T>,
+        f32,
     >,
     pub didStartNewTimeSliceEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                    T,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<T>,
     >,
-    pub didAddItemEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                    T,
-                >,
-            >,
-            T,
-        >,
-    >,
-    pub _items: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<T>,
-    >,
+    pub didAddItemEvent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, T>,
+    pub _items: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_BeatmapObjectsInTimeRowProcessor+TimeSliceContainer_1")]
@@ -864,16 +809,7 @@ impl<
     }
     pub fn add_didAddItemEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-                T,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -884,16 +820,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                                T,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didAddItemEvent")
@@ -912,16 +839,7 @@ impl<
     }
     pub fn add_didFinishTimeSliceEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-                f32,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -932,16 +850,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                                f32,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didFinishTimeSliceEvent")
@@ -960,15 +869,7 @@ impl<
     }
     pub fn add_didStartNewTimeSliceEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -979,15 +880,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didStartNewTimeSliceEvent")
@@ -1006,11 +899,7 @@ impl<
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1019,13 +908,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                        >,
-                        0usize,
-                    >("get_items")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_items")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1034,9 +917,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_previousTimeSliceTime(&mut self) -> quest_hook::libil2cpp::Result<f32>
@@ -1083,16 +966,7 @@ impl<
     }
     pub fn remove_didAddItemEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-                T,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1103,16 +977,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                                T,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didAddItemEvent")
@@ -1131,16 +996,7 @@ impl<
     }
     pub fn remove_didFinishTimeSliceEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-                f32,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1151,16 +1007,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                                f32,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didFinishTimeSliceEvent")
@@ -1179,15 +1026,7 @@ impl<
     }
     pub fn remove_didStartNewTimeSliceEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                        T,
-                    >,
-                >,
-            >,
-        >,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1198,15 +1037,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor_TimeSliceContainer_1<
-                                        T,
-                                    >,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didStartNewTimeSliceEvent")

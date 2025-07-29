@@ -8,7 +8,7 @@ pub struct SelectLanguageViewController {
         crate::GlobalNamespace::LanguageSettingsController,
     >,
     pub didChangeLanguageEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+        crate::BGLib::Polyglot::Language,
     >,
     pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
@@ -181,18 +181,14 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn add_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didChangeLanguageEvent")
@@ -237,18 +233,14 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     }
     pub fn remove_didChangeLanguageEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didChangeLanguageEvent")

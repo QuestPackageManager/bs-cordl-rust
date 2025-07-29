@@ -168,13 +168,9 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn GetDistinctIndices(
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -183,15 +179,11 @@ impl crate::UnityEngine::ProBuilder::Face {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -211,13 +203,9 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn GetIndices(
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -226,15 +214,11 @@ impl crate::UnityEngine::ProBuilder::Face {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -310,10 +294,8 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke_void(".ctor", (other))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IEnumerable_1_1(
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+    pub fn New_Gc1(
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -321,10 +303,8 @@ impl crate::UnityEngine::ProBuilder::Face {
             .invoke_void(".ctor", (indices))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+    pub fn New_Gc_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
+        triangles: quest_hook::libil2cpp::Gc<i32>,
         submeshIndex: i32,
         u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
         smoothing: i32,
@@ -382,18 +362,14 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn SetIndexes(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetIndexes")
@@ -620,20 +596,16 @@ impl crate::UnityEngine::ProBuilder::Face {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -650,11 +622,9 @@ impl crate::UnityEngine::ProBuilder::Face {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
+    pub fn _ctor_Gc_i32_AutoUnwrapSettings_i32_i32_i32__cordl_bool3(
         &mut self,
-        triangles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        triangles: quest_hook::libil2cpp::Gc<i32>,
         submeshIndex: i32,
         u: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
         smoothing: i32,
@@ -668,9 +638,7 @@ impl crate::UnityEngine::ProBuilder::Face {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                             i32,
                             crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
                             i32,
@@ -763,22 +731,14 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn get_distinctIndexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                i32,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_distinctIndexes")
                     .unwrap_or_else(|e| {
@@ -789,9 +749,9 @@ impl crate::UnityEngine::ProBuilder::Face {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_distinctIndexesInternal(
@@ -826,11 +786,7 @@ impl crate::UnityEngine::ProBuilder::Face {
     pub fn get_edges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -838,11 +794,7 @@ impl crate::UnityEngine::ProBuilder::Face {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
                         0usize,
                     >("get_edges")
                     .unwrap_or_else(|e| {
@@ -854,9 +806,7 @@ impl crate::UnityEngine::ProBuilder::Face {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -895,22 +845,14 @@ impl crate::UnityEngine::ProBuilder::Face {
     }
     pub fn get_indexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                i32,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_indexes")
                     .unwrap_or_else(|e| {
@@ -921,9 +863,9 @@ impl crate::UnityEngine::ProBuilder::Face {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_indexesInternal(

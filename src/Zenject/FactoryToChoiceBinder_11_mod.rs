@@ -14,7 +14,7 @@ pub struct FactoryToChoiceBinder_11<
     TParam10: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryFromBinder_11<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -140,7 +140,7 @@ for crate::Zenject::FactoryToChoiceBinder_11<
     TParam10,
     TContract,
 > {
-    type Target = crate::Zenject::FactoryFromBinder_11<
+    type Target = quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -253,19 +253,17 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_11<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TParam8,
-                TParam9,
-                TParam10,
-                TConcrete,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TConcrete,
         >,
     >
     where
@@ -301,19 +299,17 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_11<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TParam7,
-                                TParam8,
-                                TParam9,
-                                TParam10,
-                                TConcrete,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                            TParam10,
+                            TConcrete,
                         >,
                         0usize,
                     >("To")
@@ -326,19 +322,17 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_11<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TParam8,
-                TParam9,
-                TParam10,
-                TConcrete,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TConcrete,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -346,19 +340,17 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_11<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TParam8,
-                TParam9,
-                TParam10,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
         >,
     >
     where
@@ -392,19 +384,17 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_11<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TParam7,
-                                TParam8,
-                                TParam9,
-                                TParam10,
-                                TContract,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TParam8,
+                            TParam9,
+                            TParam10,
+                            TContract,
                         >,
                         0usize,
                     >("ToSelf")
@@ -417,19 +407,17 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_11<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TParam8,
-                TParam9,
-                TParam10,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TParam8,
+            TParam9,
+            TParam10,
+            TContract,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

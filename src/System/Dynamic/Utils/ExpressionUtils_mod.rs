@@ -186,16 +186,8 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ReturnReadOnly<T>(
-        collection: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+        collection: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -205,16 +197,8 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                T,
-                            >,
-                        >,
+                        (quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>),
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("ReturnReadOnly")
                     .unwrap_or_else(|e| {
@@ -225,20 +209,14 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (collection))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (collection))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SameElements<T>(
-        replacement: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<T>,
-            >,
-        >,
-        current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        replacement: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        current: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -251,13 +229,9 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IEnumerable_1<T>,
-                                >,
+                                quest_hook::libil2cpp::Gc<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         bool,
                         2usize,
@@ -276,12 +250,8 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn SameElementsInCollection<T>(
-        replacement: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ICollection_1<T>,
-        >,
-        current: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        replacement: quest_hook::libil2cpp::Gc<T>,
+        current: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -292,14 +262,7 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::ICollection_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         bool,
                         2usize,
                     >("SameElementsInCollection")
@@ -430,11 +393,7 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
         nodeKind: crate::System::Linq::Expressions::ExpressionType,
         arguments: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Linq::Expressions::Expression,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
             >,
         >,
         methodParamName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -451,10 +410,8 @@ impl crate::System::Dynamic::Utils::ExpressionUtils {
                             crate::System::Linq::Expressions::ExpressionType,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Linq::Expressions::Expression,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Expression,
                                     >,
                                 >,
                             >,

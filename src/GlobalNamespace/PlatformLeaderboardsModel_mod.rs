@@ -1094,7 +1094,7 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -1102,7 +1102,7 @@ impl AsRef<
 > for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -1112,7 +1112,7 @@ impl AsRef<
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -1120,7 +1120,7 @@ impl AsMut<
 > for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,

@@ -19,11 +19,9 @@ pub struct GameObjectIntSwitchEventEffect {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _valueToListMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
-            >,
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameObjectIntSwitchEventEffect_GameObjectValueList,
         >,
     >,
     pub _previousActiveIdx: i32,

@@ -3,17 +3,13 @@
 #[derive(Debug)]
 pub struct BeatmapCallbacksController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub willStartProcessingCallbacksThisFrameEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<f32>,
-    >,
+    pub willStartProcessingCallbacksThisFrameEvent: quest_hook::libil2cpp::Gc<f32>,
     pub didProcessAllCallbacksThisFrameEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
     pub _callbacksInTimes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            f32,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
-        >,
+        f32,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
     >,
     pub _beatmapData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IReadonlyBeatmapData,
@@ -70,11 +66,9 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
     type ICallCallbacksBehavior = crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior;
     #[cfg(feature = "BeatmapCallbacksController+InitData")]
     pub type InitData = crate::GlobalNamespace::BeatmapCallbacksController_InitData;
-    pub fn AddBeatmapCallback_BeatmapDataCallback_1_1<T>(
+    pub fn AddBeatmapCallback_Gc1<T>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
     >
@@ -87,9 +81,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BeatmapDataCallbackWrapper,
                         >,
@@ -108,11 +100,9 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (callback))? };
         Ok(__cordl_ret.into())
     }
-    pub fn AddBeatmapCallback_BeatmapDataCallback_1_Il2CppArray2<T>(
+    pub fn AddBeatmapCallback_Gc_Il2CppArray2<T>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
         beatmapDataSubtypeIdentifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
         >,
@@ -129,9 +119,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<i32>,
                             >,
@@ -157,12 +145,10 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddBeatmapCallback_f32_BeatmapDataCallback_1_0<T>(
+    pub fn AddBeatmapCallback_f32_Gc0<T>(
         &mut self,
         aheadTime: f32,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
     >
@@ -175,12 +161,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-                            >,
-                        ),
+                        (f32, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BeatmapDataCallbackWrapper,
                         >,
@@ -199,12 +180,10 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (aheadTime, callback))? };
         Ok(__cordl_ret.into())
     }
-    pub fn AddBeatmapCallback_f32_BeatmapDataCallback_1_Il2CppArray3<T>(
+    pub fn AddBeatmapCallback_f32_Gc_Il2CppArray3<T>(
         &mut self,
         aheadTime: f32,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<T>,
         beatmapDataSubtypeIdentifiers: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<i32>,
         >,
@@ -222,9 +201,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
                     .find_method::<
                         (
                             f32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataCallback_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<i32>,
                             >,
@@ -280,9 +257,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
             crate::GlobalNamespace::BeatmapEventData,
         >,
         node: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -295,10 +270,8 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
                                 crate::GlobalNamespace::BeatmapEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedListNode_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapDataItem,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
                                 >,
                             >,
                         ),
@@ -354,9 +327,7 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
             crate::GlobalNamespace::BeatmapEventData,
         >,
         nodeToRemove: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -369,10 +340,8 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
                                 crate::GlobalNamespace::BeatmapEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedListNode_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapDataItem,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
                                 >,
                             >,
                         ),
@@ -573,14 +542,14 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
     }
     pub fn add_willStartProcessingCallbacksThisFrameEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_willStartProcessingCallbacksThisFrameEvent")
@@ -665,14 +634,14 @@ impl crate::GlobalNamespace::BeatmapCallbacksController {
     }
     pub fn remove_willStartProcessingCallbacksThisFrameEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_willStartProcessingCallbacksThisFrameEvent")
@@ -831,10 +800,8 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
     pub fn Replay(
         &mut self,
         callbacksInTimes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                f32,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
-            >,
+            f32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -843,11 +810,9 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                f32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::CallbacksInTime,
-                                >,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::CallbacksInTime,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -924,13 +889,8 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
 pub struct BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _replayState: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-        >,
+        crate::System::ValueTuple_2<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     >,
 }
 #[cfg(
@@ -1020,10 +980,8 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWit
     pub fn Replay(
         &mut self,
         callbacksInTimes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                f32,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
-            >,
+            f32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1032,11 +990,9 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWit
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                f32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::CallbacksInTime,
-                                >,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::CallbacksInTime,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1191,10 +1147,8 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
     pub fn Replay(
         &mut self,
         callbacksInTimes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                f32,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
-            >,
+            f32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CallbacksInTime>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1203,11 +1157,9 @@ impl crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                f32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::CallbacksInTime,
-                                >,
+                            f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::CallbacksInTime,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

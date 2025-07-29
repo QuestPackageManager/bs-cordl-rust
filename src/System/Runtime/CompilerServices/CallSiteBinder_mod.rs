@@ -4,10 +4,8 @@
 pub struct CallSiteBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Cache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+CallSiteBinder")]
@@ -57,10 +55,8 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
             >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::ParameterExpression,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
             >,
         >,
         returnLabel: quest_hook::libil2cpp::Gc<
@@ -83,10 +79,8 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::ParameterExpression,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::ParameterExpression,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -115,9 +109,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn BindCore<T>(
         &mut self,
-        site: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
+        site: quest_hook::libil2cpp::Gc<T>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -134,9 +126,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<
@@ -163,9 +153,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn BindDelegate<T>(
         &mut self,
-        site: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        >,
+        site: quest_hook::libil2cpp::Gc<T>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -182,9 +170,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<
@@ -241,11 +227,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn GetRuleCache<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -256,9 +238,7 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("GetRuleCache")
                     .unwrap_or_else(|e| {
@@ -269,9 +249,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -283,12 +263,8 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     }
     pub fn Stitch<T>(
         binding: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-        signature: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression_1<T>>,
-    >
+        signature: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -302,15 +278,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Linq::Expressions::Expression,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-                                    T,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Linq::Expressions::Expression_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Stitch")
                     .unwrap_or_else(|e| {
@@ -321,9 +291,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Expression_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (binding, signature))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (binding, signature))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -393,11 +363,7 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
 pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
     >,
     pub ReturnLabel: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::LabelTarget,
@@ -495,11 +461,7 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        >,
-    >
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -510,11 +472,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_Instance")
                     .unwrap_or_else(|e| {
@@ -525,9 +483,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

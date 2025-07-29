@@ -57,9 +57,7 @@ impl std::ops::DerefMut for crate::System::Net::WebProxy {
 impl crate::System::Net::WebProxy {
     pub fn AreAllBypassed(
         proxies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         checkFirstOnly: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -70,10 +68,8 @@ impl crate::System::Net::WebProxy {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             bool,

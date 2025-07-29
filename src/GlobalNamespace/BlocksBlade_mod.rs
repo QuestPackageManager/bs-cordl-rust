@@ -15,9 +15,7 @@ pub struct BlocksBlade {
     pub _maxElementLength: f32,
     pub _color_k__BackingField: crate::UnityEngine::Color,
     pub _elements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade_Element>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BlocksBlade_Element>,
     >,
     pub _positions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,

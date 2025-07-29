@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct SimpleScriptableObjectsPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<T>,
-    >,
+    pub _pool: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_SimpleScriptableObjectsPool_1")]

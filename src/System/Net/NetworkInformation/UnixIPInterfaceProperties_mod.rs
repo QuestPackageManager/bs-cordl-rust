@@ -7,9 +7,7 @@ pub struct UnixIPInterfaceProperties {
         crate::System::Net::NetworkInformation::UnixNetworkInterface,
     >,
     pub addresses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Net+NetworkInformation+UnixIPInterfaceProperties")]
@@ -54,9 +52,7 @@ impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::UnixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -71,9 +67,7 @@ impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::UnixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -86,9 +80,7 @@ impl crate::System::Net::NetworkInformation::UnixIPInterfaceProperties {
                                 crate::System::Net::NetworkInformation::UnixNetworkInterface,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

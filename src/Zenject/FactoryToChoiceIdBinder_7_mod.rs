@@ -10,7 +10,7 @@ pub struct FactoryToChoiceIdBinder_7<
     TParam6: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_7<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -100,7 +100,7 @@ for crate::Zenject::FactoryToChoiceIdBinder_7<
     TParam6,
     TContract,
 > {
-    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_7<
+    type Target = quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -186,15 +186,13 @@ impl<
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         >,
     >
     where
@@ -220,15 +218,13 @@ impl<
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryArgumentsToChoiceBinder_7<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TContract,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TContract,
                         >,
                         1usize,
                     >("WithId")
@@ -241,15 +237,13 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_7<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TContract,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
         Ok(__cordl_ret.into())
     }

@@ -125,9 +125,7 @@ impl crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_
 pub struct OVRVirtualKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub CommitText: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub Backspace: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub Enter: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -170,13 +168,9 @@ pub struct OVRVirtualKeyboard {
     pub isKeyboardCreated_: bool,
     pub keyboardSpace_: u64,
     pub virtualKeyboardTextures_: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u64,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                >,
-            >,
+        u64,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     >,
     pub virtualKeyboardScene_: crate::GlobalNamespace::OVRGLTFScene,
@@ -188,10 +182,8 @@ pub struct OVRVirtualKeyboard {
         crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride,
     >,
     pub _inputSources: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRVirtualKeyboard_IInputSource,
         >,
     >,
     pub ignoreTextCommmitFieldOnValueChanged_: bool,
@@ -1154,9 +1146,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
     pub fn add_CommitText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1165,10 +1155,8 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1348,9 +1336,7 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
     pub fn remove_CommitText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1359,10 +1345,8 @@ impl crate::GlobalNamespace::OVRVirtualKeyboard {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2214,14 +2198,10 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InputSource {
 pub struct OVRVirtualKeyboard_InteractorRootTransformOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub applyQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
-        >,
+        crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
     >,
     pub revertQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Queue_1<
-            crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
-        >,
+        crate::GlobalNamespace::InteractorRootTransformOverride_OVRVirtualKeyboard_InteractorRootOverrideData,
     >,
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboard+InteractorRootTransformOverride")]

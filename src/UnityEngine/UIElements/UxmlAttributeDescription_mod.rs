@@ -64,11 +64,9 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
         converterFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                T,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            T,
+            T,
         >,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -87,13 +85,11 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
                             >,
                             crate::UnityEngine::UIElements::CreationContext,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    T,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
+                                T,
+                                T,
                             >,
                             T,
                         ),
@@ -126,11 +122,9 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
         converterFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                T,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            T,
+            T,
         >,
         defaultValue: T,
         value: quest_hook::libil2cpp::ByRefMut<T>,
@@ -150,13 +144,11 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
                             >,
                             crate::UnityEngine::UIElements::CreationContext,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    T,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
+                                T,
+                                T,
                             >,
                             T,
                             quest_hook::libil2cpp::ByRefMut<T>,
@@ -295,9 +287,7 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
     pub fn set_obsoleteNames(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -306,10 +296,8 @@ impl crate::UnityEngine::UIElements::UxmlAttributeDescription {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -40,12 +40,8 @@ impl std::ops::DerefMut for crate::System::Net::Http::Headers::CollectionExtensi
 #[cfg(feature = "System+Net+Http+Headers+CollectionExtensions")]
 impl crate::System::Net::Http::Headers::CollectionExtensions {
     pub fn SequenceEqual<TSource>(
-        first: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TSource>,
-        >,
-        second: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TSource>,
-        >,
+        first: quest_hook::libil2cpp::Gc<TSource>,
+        second: quest_hook::libil2cpp::Gc<TSource>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -57,12 +53,8 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<TSource>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TSource>,
+                            quest_hook::libil2cpp::Gc<TSource>,
                         ),
                         bool,
                         2usize,
@@ -82,10 +74,8 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
     }
     pub fn SetValue(
         parameters: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::NameValueHeaderValue,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
             >,
         >,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -98,10 +88,8 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Net::Http::Headers::NameValueHeaderValue,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::Http::Headers::NameValueHeaderValue,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -128,7 +116,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToString<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -141,9 +129,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("ToString")
@@ -161,7 +147,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToStringBuilder<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -174,9 +160,7 @@ impl crate::System::Net::Http::Headers::CollectionExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
                         ),
                         quest_hook::libil2cpp::Void,

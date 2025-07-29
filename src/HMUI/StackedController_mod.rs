@@ -41,9 +41,7 @@ impl crate::HMUI::StackedController {
     pub fn LayoutViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -52,9 +50,7 @@ impl crate::HMUI::StackedController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

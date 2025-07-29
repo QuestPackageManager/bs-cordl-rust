@@ -8,15 +8,11 @@ pub struct LocalDataStoreMgr {
     >,
     pub m_FirstAvailableSlot: i32,
     pub m_ManagedLocalDataStores: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStore>,
     >,
     pub m_KeyToSlotMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreSlot>,
     >,
     pub m_CookieGenerator: i64,
 }

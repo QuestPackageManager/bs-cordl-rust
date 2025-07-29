@@ -9,9 +9,7 @@ pub struct HEU_PDGAssetLink {
     pub _assetID: i32,
     pub _heu: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
     pub _topNetworks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
     >,
     pub _topNetworkNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -537,9 +535,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     pub fn GetTOPNetworkByName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         topNetworks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNetworkData>,
@@ -554,10 +550,8 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_TOPNetworkData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_TOPNetworkData,
                                 >,
                             >,
                         ),
@@ -612,9 +606,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     pub fn GetTOPNodeByName(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         topNodes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
@@ -629,10 +621,8 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_TOPNodeData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_TOPNodeData,
                                 >,
                             >,
                         ),
@@ -833,14 +823,12 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn NotifyAssetCooked_HEU_HoudiniAsset__cordl_bool_List_1_0(
+    pub fn NotifyAssetCooked_HEU_HoudiniAsset__cordl_bool_Gc0(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         bSuccess: bool,
         generatedOutputs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -854,9 +842,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

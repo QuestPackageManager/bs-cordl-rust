@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZenjectManagersInstaller {
-    __cordl_parent: crate::Zenject::Installer_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenjectManagersInsta
 }
 #[cfg(feature = "Zenject+ZenjectManagersInstaller")]
 impl std::ops::Deref for crate::Zenject::ZenjectManagersInstaller {
-    type Target = crate::Zenject::Installer_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectManagersInstaller>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

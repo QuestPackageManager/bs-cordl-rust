@@ -4,11 +4,7 @@
 pub struct BaseVisualTreeUpdater {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub panelChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::BaseVisualElementPanel,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseVisualElementPanel>,
     >,
     pub m_Panel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVisualElementPanel,
@@ -180,10 +176,8 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
     pub fn add_panelChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::BaseVisualElementPanel,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -193,10 +187,8 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -301,10 +293,8 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
     pub fn remove_panelChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::BaseVisualElementPanel,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -314,10 +304,8 @@ impl crate::UnityEngine::UIElements::BaseVisualTreeUpdater {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseVisualElementPanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

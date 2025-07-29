@@ -175,9 +175,9 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_1_0(
+    pub fn ContinueWith_Gc0(
         &mut self,
-        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        onCompleted: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -188,7 +188,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>),
+                        (quest_hook::libil2cpp::Gc<TResult>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ContinueWith")
@@ -205,9 +205,9 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ContinueWith_Action_2_T1<T>(
+    pub fn ContinueWith_T1<T>(
         &mut self,
-        onCompleted: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        onCompleted: quest_hook::libil2cpp::Gc<TResult, T>,
         state: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -221,12 +221,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<TResult, T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TResult, T>, T),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ContinueWith")
@@ -437,9 +432,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
     }
     pub fn SetIncrementalResultCallback<TIncrementalResult>(
         &mut self,
-        onIncrementalResultAvailable: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<TIncrementalResult>,
-        >,
+        onIncrementalResultAvailable: quest_hook::libil2cpp::Gc<TIncrementalResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -452,9 +445,7 @@ impl<TResult: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVRTask_1<TRe
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<TIncrementalResult>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TIncrementalResult>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetIncrementalResultCallback")
@@ -820,22 +811,22 @@ for crate::GlobalNamespace::OVRTask_1<TResult> {
 #[cfg(feature = "OVRTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>>>
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>> {
         todo!()
     }
 }
 #[cfg(feature = "OVRTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>>>
 for crate::GlobalNamespace::OVRTask_1<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTask_1<TResult>> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTask_1<TResult>> {
         todo!()
     }
 }
@@ -1087,7 +1078,7 @@ for crate::GlobalNamespace::OVRTask_1_Awaiter<TResult> {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRTask_1_Callback<TResult: quest_hook::libil2cpp::Type> {
-    pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+    pub _delegate: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "cordl_class_OVRTask_1+Callback")]
@@ -1204,7 +1195,7 @@ impl<
 > crate::GlobalNamespace::OVRTask_1_Callback<TResult> {
     pub fn Add(
         taskId: crate::System::Guid,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1215,10 +1206,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            crate::System::Guid,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
-                        ),
+                        (crate::System::Guid, quest_hook::libil2cpp::Gc<TResult>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("Add")
@@ -1347,7 +1335,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1358,7 +1346,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TResult>>),
+                        (quest_hook::libil2cpp::Gc<TResult>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1823,7 +1811,7 @@ pub struct OVRTask_1_CallbackWithState_1<
     T: quest_hook::libil2cpp::Type,
 > {
     pub _data: T,
-    pub _delegate: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+    pub _delegate: quest_hook::libil2cpp::Gc<TResult, T>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -1964,7 +1952,7 @@ impl<
     pub fn Add(
         taskId: crate::System::Guid,
         data: T,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        callback: quest_hook::libil2cpp::Gc<TResult, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1977,13 +1965,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            crate::System::Guid,
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<TResult, T>,
-                            >,
-                        ),
+                        (crate::System::Guid, T, quest_hook::libil2cpp::Gc<TResult, T>),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("Add")
@@ -2121,7 +2103,7 @@ impl<
     pub fn _ctor(
         &mut self,
         data: T,
-        delegate: quest_hook::libil2cpp::Gc<crate::System::Action_2<TResult, T>>,
+        delegate: quest_hook::libil2cpp::Gc<TResult, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2134,12 +2116,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<TResult, T>,
-                            >,
-                        ),
+                        (T, quest_hook::libil2cpp::Gc<TResult, T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -2327,7 +2304,7 @@ impl<
     }
     pub fn Set(
         taskId: crate::System::Guid,
-        subscriber: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        subscriber: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2340,10 +2317,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            crate::System::Guid,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-                        ),
+                        (crate::System::Guid, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("Set")

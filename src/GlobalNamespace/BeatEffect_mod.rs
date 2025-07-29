@@ -21,9 +21,7 @@ pub struct BeatEffect {
         crate::UnityEngine::AnimationCurve,
     >,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
     >,
     pub _animationDuration: f32,
     pub _elapsedTime: f32,
@@ -152,11 +150,7 @@ impl crate::GlobalNamespace::BeatEffect {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -166,10 +160,8 @@ impl crate::GlobalNamespace::BeatEffect {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IBeatEffectDidFinishEvent,
                             >,
                         >,
                         0usize,
@@ -183,11 +175,7 @@ impl crate::GlobalNamespace::BeatEffect {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ILazyCopyHashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IBeatEffectDidFinishEvent,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatEffectDidFinishEvent>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -205,7 +193,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatEffect_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
     >,
 }
@@ -230,7 +218,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatEffect_P
 }
 #[cfg(feature = "BeatEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatEffect_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

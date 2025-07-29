@@ -7,19 +7,13 @@ pub struct VisualTreeStyleUpdaterTraversal {
         crate::UnityEngine::UIElements::StyleVariableContext,
     >,
     pub m_UpdateList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub m_ParentList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub m_TempMatchResults: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
     >,
     pub _currentPixelsPerPoint_k__BackingField: f32,
     pub m_StyleMatchingContext: quest_hook::libil2cpp::Gc<
@@ -29,9 +23,7 @@ pub struct VisualTreeStyleUpdaterTraversal {
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
     >,
     pub m_AnimatedProperties: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeStyleUpdaterTraversal")]
@@ -262,9 +254,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
             crate::UnityEngine::UIElements::VisualElement,
         >,
         matchingSelectors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::ComputedStyle> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -277,9 +267,7 @@ impl crate::UnityEngine::UIElements::VisualTreeStyleUpdaterTraversal {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
-                                >,
+                                crate::UnityEngine::UIElements::StyleSheets::SelectorMatchRecord,
                             >,
                         ),
                         crate::UnityEngine::UIElements::ComputedStyle,

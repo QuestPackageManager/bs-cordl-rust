@@ -5,11 +5,7 @@ pub struct DictionaryPool_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::StaticMemoryPool_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -53,11 +49,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::DictionaryPool_2<TKey, TValue> {
-    type Target = crate::Zenject::StaticMemoryPool_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,9 +82,7 @@ impl<
         Ok(__cordl_object.into())
     }
     pub fn OnDespawned(
-        items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
+        items: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -105,12 +95,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                TKey,
-                                TValue,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnDespawned")
@@ -128,9 +113,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn OnSpawned(
-        items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-        >,
+        items: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -143,12 +126,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                TKey,
-                                TValue,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnSpawned")
@@ -191,7 +169,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DictionaryPool_2<TKey, TValue>>,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -205,9 +183,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::DictionaryPool_2<TKey, TValue>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TKey, TValue>,
                         0usize,
                     >("get_Instance")
                     .unwrap_or_else(|e| {
@@ -218,9 +194,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::DictionaryPool_2<TKey, TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -16,9 +16,7 @@ pub struct GameEnergyUIPanel {
         crate::GlobalNamespace::IGameEnergyCounter,
     >,
     pub _batteryLifeSegments: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     >,
     pub _activeBatteryLifeSegmentsCount: i32,
     pub _energyBarRectTransform: quest_hook::libil2cpp::Gc<

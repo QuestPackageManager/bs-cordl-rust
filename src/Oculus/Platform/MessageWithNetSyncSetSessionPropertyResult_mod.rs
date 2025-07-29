@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithNetSyncSetSessionPropertyResult {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
         >,
@@ -35,7 +35,7 @@ for crate::Oculus::Platform::MessageWithNetSyncSetSessionPropertyResult {
 #[cfg(feature = "Oculus+Platform+MessageWithNetSyncSetSessionPropertyResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithNetSyncSetSessionPropertyResult {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::NetSyncSetSessionPropertyResult,
         >,

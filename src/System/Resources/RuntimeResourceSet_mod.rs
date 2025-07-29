@@ -4,19 +4,15 @@
 pub struct RuntimeResourceSet {
     __cordl_parent: crate::System::Resources::ResourceSet,
     pub _resCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Resources::ResourceLocator,
     >,
     pub _defaultReader: quest_hook::libil2cpp::Gc<
         crate::System::Resources::ResourceReader,
     >,
     pub _caseInsensitiveTable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Resources::ResourceLocator,
     >,
     pub _haveReadFromReader: bool,
 }
@@ -325,10 +321,8 @@ impl crate::System::Resources::RuntimeResourceSet {
         resLocation: crate::System::Resources::ResourceLocator,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         copyOfCache: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::System::Resources::ResourceLocator,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
         >,
         keyInWrongCase: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -345,12 +339,10 @@ impl crate::System::Resources::RuntimeResourceSet {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    crate::System::Resources::ResourceLocator,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
+                                crate::System::Resources::ResourceLocator,
                             >,
                             bool,
                         ),

@@ -6,9 +6,7 @@
 pub struct StylePropertyValueMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher,
     pub m_Values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
 }
 #[cfg(
@@ -56,9 +54,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
             crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
         >,
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleSheets::MatchResult,
@@ -73,9 +69,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
                                 crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-                                >,
+                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
                             >,
                         ),
                         crate::UnityEngine::UIElements::StyleSheets::MatchResult,

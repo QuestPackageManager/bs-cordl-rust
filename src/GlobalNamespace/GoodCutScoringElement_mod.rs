@@ -302,7 +302,7 @@ for crate::GlobalNamespace::GoodCutScoringElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GoodCutScoringElement_Pool {
-    __cordl_parent: crate::GlobalNamespace::ScoringElement_Pool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GoodCutScoringElement>,
     >,
 }
@@ -328,7 +328,7 @@ for crate::GlobalNamespace::GoodCutScoringElement_Pool {
 }
 #[cfg(feature = "GoodCutScoringElement+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::GoodCutScoringElement_Pool {
-    type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GoodCutScoringElement>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

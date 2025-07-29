@@ -22,10 +22,8 @@ pub struct XmlTreeGen {
     pub _dsElement: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     pub _constraintSeparator: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlElement>,
     pub _targetConverter: quest_hook::libil2cpp::Gc<
-        crate::System::Converter_2<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_System+Data+XmlTreeGen")]
@@ -1057,17 +1055,15 @@ impl crate::System::Data::XmlTreeGen {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Save_DataSet_DataTable_XmlWriter__cordl_bool_Converter_2_4(
+    pub fn Save_DataSet_DataTable_XmlWriter__cordl_bool_Gc4(
         &mut self,
         ds: quest_hook::libil2cpp::Gc<crate::System::Data::DataSet>,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         xw: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         writeHierarchy: bool,
         multipleTargetConverter: quest_hook::libil2cpp::Gc<
-            crate::System::Converter_2<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1081,11 +1077,9 @@ impl crate::System::Data::XmlTreeGen {
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Converter_2<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         ),

@@ -197,12 +197,10 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                T,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            T,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        constructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -216,14 +214,12 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                         (
                             crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    T,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::IConnectedPlayer,
-                                    >,
+                                T,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -246,9 +242,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
         subSerializer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -259,10 +253,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                         (
                             crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::IConnectedPlayer,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
                                 >,
                             >,
                         ),
@@ -607,9 +599,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
         &mut self,
         serializerType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
         subSerializer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -620,10 +610,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                         (
                             crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPacketSubSerializer_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::IConnectedPlayer,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
                                 >,
                             >,
                         ),
@@ -671,9 +659,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     }
     pub fn add_connectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -681,9 +667,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
+                            crate::GlobalNamespace::ConnectionFailedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -704,9 +688,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn add_connectionOwnerStateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -715,10 +697,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -739,9 +719,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     }
     pub fn add_disconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -749,9 +727,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -772,9 +748,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn add_playerAvatarChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -783,10 +757,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -808,9 +780,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn add_playerConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -819,10 +789,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -844,9 +812,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn add_playerDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -855,10 +821,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -880,9 +844,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn add_playerStateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -891,10 +853,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -965,9 +925,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -977,10 +935,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >,
                         0usize,
@@ -994,9 +950,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1241,9 +1195,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     }
     pub fn remove_connectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1251,9 +1203,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
+                            crate::GlobalNamespace::ConnectionFailedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1274,9 +1224,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn remove_connectionOwnerStateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1285,10 +1233,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1309,9 +1255,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     }
     pub fn remove_disconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1319,9 +1263,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1342,9 +1284,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn remove_playerAvatarChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1353,10 +1293,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1378,9 +1316,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn remove_playerConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1389,10 +1325,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1414,9 +1348,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn remove_playerDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1425,10 +1357,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1450,9 +1380,7 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
     pub fn remove_playerStateChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1461,10 +1389,8 @@ impl crate::GlobalNamespace::IMultiplayerSessionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnectedPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

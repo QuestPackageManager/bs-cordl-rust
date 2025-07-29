@@ -7,11 +7,9 @@ pub struct NetPacketProcessor {
         crate::LiteNetLib::Utils::NetSerializer,
     >,
     pub _callbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            u64,
-            quest_hook::libil2cpp::Gc<
-                crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate,
-            >,
+        u64,
+        quest_hook::libil2cpp::Gc<
+            crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate,
         >,
     >,
     pub _netDataWriter: quest_hook::libil2cpp::Gc<
@@ -283,19 +281,45 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterNestedType_Action_2_Func_2_1<T>(
+    pub fn RegisterNestedType_Gc2<T>(
+        &mut self,
+        constructor: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RegisterNestedType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterNestedType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (constructor))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterNestedType_Gc_Gc1<T>(
         &mut self,
         writeDelegate: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            T,
         >,
         readDelegate: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -309,20 +333,16 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataWriter,
-                                    >,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataWriter,
                                 >,
+                                T,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataReader,
-                                    >,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataReader,
                                 >,
+                                T,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -338,36 +358,6 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (writeDelegate, readDelegate))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterNestedType_Func_1_2<T>(
-        &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RegisterNestedType")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterNestedType", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (constructor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -536,43 +526,15 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeNetSerializable_Action_1_3<T>(
+    pub fn SubscribeNetSerializable_Gc0<T, TUserData>(
         &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        onReceive: quest_hook::libil2cpp::Gc<T, TUserData>,
+        packetConstructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SubscribeNetSerializable")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubscribeNetSerializable", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (onReceive))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SubscribeNetSerializable_Action_1_Func_1_1<T>(
-        &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        packetConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+        TUserData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -581,8 +543,8 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T, TUserData>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -600,14 +562,13 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeNetSerializable_Action_2_2<T, TUserData>(
+    pub fn SubscribeNetSerializable_Gc1<T>(
         &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_2<T, TUserData>>,
+        onReceive: quest_hook::libil2cpp::Gc<T>,
+        packetConstructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TUserData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -615,47 +576,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<T, TUserData>,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SubscribeNetSerializable")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubscribeNetSerializable", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (onReceive))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SubscribeNetSerializable_Action_2_Func_1_0<T, TUserData>(
-        &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_2<T, TUserData>>,
-        packetConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TUserData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<T, TUserData>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SubscribeNetSerializable")
@@ -672,39 +593,9 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeReusable_Action_1_0<T>(
+    pub fn SubscribeNetSerializable_Gc2<T, TUserData>(
         &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SubscribeReusable")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SubscribeReusable", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (onReceive))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SubscribeReusable_Action_2_1<T, TUserData>(
-        &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_2<T, TUserData>>,
+        onReceive: quest_hook::libil2cpp::Gc<T, TUserData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -717,9 +608,67 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<T, TUserData>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T, TUserData>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SubscribeNetSerializable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeNetSerializable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (onReceive))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubscribeNetSerializable_Gc3<T>(
+        &mut self,
+        onReceive: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SubscribeNetSerializable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeNetSerializable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (onReceive))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SubscribeReusable_Gc0<T>(
+        &mut self,
+        onReceive: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SubscribeReusable")
@@ -736,10 +685,42 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Subscribe_Action_1_0<T>(
+    pub fn SubscribeReusable_Gc1<T, TUserData>(
         &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-        packetConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        onReceive: quest_hook::libil2cpp::Gc<T, TUserData>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TUserData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<T, TUserData>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SubscribeReusable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubscribeReusable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (onReceive))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Subscribe_Gc_Gc0<T>(
+        &mut self,
+        onReceive: quest_hook::libil2cpp::Gc<T>,
+        packetConstructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -750,10 +731,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("Subscribe")
@@ -770,10 +748,10 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Subscribe_Action_2_1<T, TUserData>(
+    pub fn Subscribe_Gc_Gc1<T, TUserData>(
         &mut self,
-        onReceive: quest_hook::libil2cpp::Gc<crate::System::Action_2<T, TUserData>>,
-        packetConstructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        onReceive: quest_hook::libil2cpp::Gc<T, TUserData>,
+        packetConstructor: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -787,10 +765,8 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<T, TUserData>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T, TUserData>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

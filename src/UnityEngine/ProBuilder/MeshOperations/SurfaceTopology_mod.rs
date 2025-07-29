@@ -44,20 +44,12 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
     pub fn BreakFaceIntoTris(
         face: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::FaceRebuildData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -70,21 +62,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                                 crate::UnityEngine::ProBuilder::Face,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Vertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::FaceRebuildData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::FaceRebuildData,
                             >,
                         >,
                         3usize,
@@ -98,20 +84,14 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::FaceRebuildData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (face, vertices, lookup))? };
         Ok(__cordl_ret.into())
     }
     pub fn ConformNormals(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ActionResult>,
@@ -126,10 +106,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),
@@ -246,10 +224,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         edge: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         flag: bool,
         flags: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-                bool,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -263,12 +239,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
-                                    bool,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
+                                bool,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -287,21 +261,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetWindingOrder_IList_1_2(
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+    pub fn GetWindingOrder_Gc2(
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::WindingOrder> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector2,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>),
                         crate::UnityEngine::ProBuilder::WindingOrder,
                         1usize,
                     >("GetWindingOrder")
@@ -318,15 +286,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetWindingOrder_IList_1_IList_1_1(
+    pub fn GetWindingOrder_Gc_Gc1(
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::WindingOrder> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -335,15 +299,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Vertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         crate::UnityEngine::ProBuilder::WindingOrder,
                         2usize,
@@ -397,9 +357,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
     pub fn MatchNormal(
         source: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -413,9 +371,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::Face,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -436,9 +392,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
     pub fn ToTriangles(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -457,10 +411,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::SurfaceTopology {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),

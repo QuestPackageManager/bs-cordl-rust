@@ -327,7 +327,7 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
         >,
@@ -335,7 +335,7 @@ impl AsRef<
 > for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
         >,
@@ -345,7 +345,7 @@ impl AsRef<
 }
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
         >,
@@ -353,7 +353,7 @@ impl AsMut<
 > for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement,
         >,

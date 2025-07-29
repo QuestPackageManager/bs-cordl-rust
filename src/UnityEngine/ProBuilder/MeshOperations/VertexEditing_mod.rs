@@ -68,30 +68,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     }
     pub fn ExplodeVertex(
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
         edgeAndCommonIndex: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::WingedEdge,
-                    >,
-                    i32,
-                >,
+            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+                i32,
             >,
         >,
         distance: f32,
         appendedVertices: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Dictionary_2<
-                    i32,
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Collections::Generic::List_1<i32>,
-                    >,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<i32, quest_hook::libil2cpp::Gc<i32>>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
@@ -103,31 +90,23 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Vertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ProBuilder::WingedEdge,
-                                        >,
-                                        i32,
+                                crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::WingedEdge,
                                     >,
+                                    i32,
                                 >,
                             >,
                             f32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::Dictionary_2<
-                                        i32,
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Collections::Generic::List_1<i32>,
-                                        >,
-                                    >,
+                                    i32,
+                                    quest_hook::libil2cpp::Gc<i32>,
                                 >,
                             >,
                         ),
@@ -221,11 +200,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SplitVertices_IEnumerable_1_1(
+    pub fn SplitVertices_Gc1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -236,9 +213,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -258,9 +233,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
     }
     pub fn WeldVertices(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
         neighborRadius: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
@@ -274,9 +247,7 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::VertexEditing {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                             f32,
                         ),
                         quest_hook::libil2cpp::Gc<

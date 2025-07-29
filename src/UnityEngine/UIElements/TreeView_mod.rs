@@ -4,26 +4,18 @@
 pub struct TreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseTreeView,
     pub m_MakeItem: quest_hook::libil2cpp::Gc<
-        crate::System::Func_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
     pub m_BindItem: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        i32,
     >,
     pub _unbindItem_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        i32,
     >,
     pub _destroyItem_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeView")]
@@ -119,17 +111,13 @@ impl crate::UnityEngine::UIElements::TreeView {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Func_1_Action_2_1(
+    pub fn New_Gc_Gc1(
         makeItem: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
         bindItem: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -159,18 +147,14 @@ impl crate::UnityEngine::UIElements::TreeView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Func_1_Action_2_1(
+    pub fn _ctor_Gc_Gc1(
         &mut self,
         makeItem: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
         bindItem: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -180,19 +164,15 @@ impl crate::UnityEngine::UIElements::TreeView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
-                                    >,
-                                    i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
                                 >,
+                                i32,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -215,10 +195,8 @@ impl crate::UnityEngine::UIElements::TreeView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -228,12 +206,10 @@ impl crate::UnityEngine::UIElements::TreeView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            i32,
                         >,
                         0usize,
                     >("get_bindItem")
@@ -246,10 +222,8 @@ impl crate::UnityEngine::UIElements::TreeView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -257,9 +231,7 @@ impl crate::UnityEngine::UIElements::TreeView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -269,10 +241,8 @@ impl crate::UnityEngine::UIElements::TreeView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
                         >,
                         0usize,
@@ -286,9 +256,7 @@ impl crate::UnityEngine::UIElements::TreeView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -296,9 +264,7 @@ impl crate::UnityEngine::UIElements::TreeView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -308,10 +274,8 @@ impl crate::UnityEngine::UIElements::TreeView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
                         >,
                         0usize,
@@ -325,9 +289,7 @@ impl crate::UnityEngine::UIElements::TreeView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -335,10 +297,8 @@ impl crate::UnityEngine::UIElements::TreeView {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -348,12 +308,10 @@ impl crate::UnityEngine::UIElements::TreeView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            i32,
                         >,
                         0usize,
                     >("get_unbindItem")
@@ -366,20 +324,16 @@ impl crate::UnityEngine::UIElements::TreeView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_bindItem(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -388,12 +342,10 @@ impl crate::UnityEngine::UIElements::TreeView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -414,9 +366,7 @@ impl crate::UnityEngine::UIElements::TreeView {
     pub fn set_makeItem(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -425,10 +375,8 @@ impl crate::UnityEngine::UIElements::TreeView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -461,7 +409,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TreeV
 #[repr(C)]
 #[derive(Debug)]
 pub struct TreeView_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView_UxmlTraits>,
     >,
@@ -488,7 +436,7 @@ for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+TreeView+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TreeView_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TreeView_UxmlTraits>,
     >;

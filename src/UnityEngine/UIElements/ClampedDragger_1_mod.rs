@@ -8,9 +8,7 @@ pub struct ClampedDragger_1<T: quest_hook::libil2cpp::Type> {
     pub _dragDirection_k__BackingField: crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection<
         T,
     >,
-    pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BaseSlider_1<T>,
-    >,
+    pub _slider_k__BackingField: quest_hook::libil2cpp::Gc<T>,
     pub _startMousePosition_k__BackingField: crate::UnityEngine::Vector2,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -72,9 +70,7 @@ impl<
     #[cfg(feature = "UnityEngine+UIElements+ClampedDragger_1+DragDirection")]
     pub type DragDirection = crate::UnityEngine::UIElements::ClampedDragger_1_DragDirection;
     pub fn New(
-        slider: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseSlider_1<T>,
-        >,
+        slider: quest_hook::libil2cpp::Gc<T>,
         clickHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         dragHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -202,9 +198,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        slider: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BaseSlider_1<T>,
-        >,
+        slider: quest_hook::libil2cpp::Gc<T>,
         clickHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
         dragHandler: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -218,9 +212,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::BaseSlider_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                         ),
@@ -482,7 +474,7 @@ impl<
     }
     pub fn set_slider(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseSlider_1<T>>,
+        value: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -493,9 +485,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::BaseSlider_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_slider")

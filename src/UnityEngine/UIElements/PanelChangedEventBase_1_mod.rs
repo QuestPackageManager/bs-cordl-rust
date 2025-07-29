@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PanelChangedEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub _originPanel_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IPanel,
     >,
@@ -50,7 +50,7 @@ for crate::UnityEngine::UIElements::PanelChangedEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+PanelChangedEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::PanelChangedEventBase_1<T> {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

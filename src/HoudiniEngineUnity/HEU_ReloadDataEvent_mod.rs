@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ReloadDataEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ReloadEventData>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::HoudiniEngineUnity::HEU_ReloadDataEvent {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ReloadDataEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ReloadDataEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ReloadEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

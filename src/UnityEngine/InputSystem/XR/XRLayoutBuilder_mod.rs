@@ -168,9 +168,7 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
     pub fn IsPoseControl(
         &mut self,
         features: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
-            >,
+            crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
         >,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -181,9 +179,7 @@ impl crate::UnityEngine::InputSystem::XR::XRLayoutBuilder {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
-                                >,
+                                crate::UnityEngine::InputSystem::XR::XRFeatureDescriptor,
                             >,
                             i32,
                         ),

@@ -46,11 +46,7 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         connectMergeID: quest_hook::libil2cpp::ByRefMut<i32>,
         inputAssetInfos: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_InputHDAInfo,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
             >,
         >,
         bKeepWorldTransform: bool,
@@ -71,10 +67,8 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
                             quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::HoudiniEngineUnity::HEU_InputHDAInfo,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_InputHDAInfo,
                                     >,
                                 >,
                             >,
@@ -114,15 +108,11 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
         connectMergeID: quest_hook::libil2cpp::ByRefMut<i32>,
         inputObjects: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_InputObjectInfo,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputObjectInfo>,
             >,
         >,
         inputObjectsConnectedAssetIDs: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+            quest_hook::libil2cpp::Gc<i32>,
         >,
         inputNode: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputNode>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -139,17 +129,13 @@ impl crate::HoudiniEngineUnity::HEU_InputUtility {
                             quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::HoudiniEngineUnity::HEU_InputObjectInfo,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_InputObjectInfo,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<i32>,
-                                >,
+                                quest_hook::libil2cpp::Gc<i32>,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::HoudiniEngineUnity::HEU_InputNode,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientImageViewStateTransition {
-    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::GradientImageViewStateTransition {
 }
 #[cfg(feature = "GradientImageViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::GradientImageViewStateTransition {
-    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HMUI::ImageView>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -236,9 +236,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
         &mut self,
         startColor: crate::UnityEngine::Color,
         endColor: crate::UnityEngine::Color,
-        tweenAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::Color>,
-        >,
+        tweenAction: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
         onCompleteAction: quest_hook::libil2cpp::Gc<crate::System::Action>,
         transitionTiming: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::TransitionTimingSO,
@@ -255,9 +253,7 @@ impl crate::GlobalNamespace::GradientImageViewStateTransition {
                         (
                             crate::UnityEngine::Color,
                             crate::UnityEngine::Color,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<crate::UnityEngine::Color>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::TransitionTimingSO,

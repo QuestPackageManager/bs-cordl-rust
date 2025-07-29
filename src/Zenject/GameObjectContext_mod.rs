@@ -73,9 +73,7 @@ impl crate::Zenject::GameObjectContext {
     pub fn GetInjectableMonoBehaviours(
         &mut self,
         monoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -84,9 +82,7 @@ impl crate::Zenject::GameObjectContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -108,9 +104,7 @@ impl crate::Zenject::GameObjectContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -120,9 +114,7 @@ impl crate::Zenject::GameObjectContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                         >,
                         0usize,
                     >("GetRootGameObjects")
@@ -135,18 +127,14 @@ impl crate::Zenject::GameObjectContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn InstallBindings(
         &mut self,
         injectableMonoBehaviours: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -155,9 +143,7 @@ impl crate::Zenject::GameObjectContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

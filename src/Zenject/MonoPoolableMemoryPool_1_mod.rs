@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoPoolableMemoryPool_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::MemoryPool_1<TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValue>,
     pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -45,7 +45,7 @@ for crate::Zenject::MonoPoolableMemoryPool_1<TValue> {
 #[cfg(feature = "Zenject+MonoPoolableMemoryPool_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MonoPoolableMemoryPool_1<TValue> {
-    type Target = crate::Zenject::MemoryPool_1<TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

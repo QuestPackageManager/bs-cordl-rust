@@ -111,18 +111,14 @@ impl crate::UnityEngine::UI::CoroutineTween::FloatTween {
     pub type FloatTweenCallback = crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback;
     pub fn AddOnChangedCallback(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<f32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<f32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddOnChangedCallback")
@@ -409,7 +405,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatTween_FloatTweenCallback {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback"
@@ -436,7 +432,7 @@ for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
 #[cfg(feature = "UnityEngine+UI+CoroutineTween+FloatTween+FloatTweenCallback")]
 impl std::ops::Deref
 for crate::UnityEngine::UI::CoroutineTween::FloatTween_FloatTweenCallback {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

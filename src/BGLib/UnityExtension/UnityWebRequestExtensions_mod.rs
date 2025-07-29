@@ -80,11 +80,7 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::UnityEngine::Networking::UnityWebRequest_Result,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest_Result>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -98,9 +94,7 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::UnityEngine::Networking::UnityWebRequest_Result,
-                            >,
+                            crate::UnityEngine::Networking::UnityWebRequest_Result,
                         >,
                         2usize,
                     >("SendWebRequestAsync")
@@ -113,9 +107,7 @@ impl crate::BGLib::UnityExtension::UnityWebRequestExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::UnityEngine::Networking::UnityWebRequest_Result,
-            >,
+            crate::UnityEngine::Networking::UnityWebRequest_Result,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (request, cancellationToken))?
         };

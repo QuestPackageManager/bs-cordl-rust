@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalStringComparer {
-    __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::System::Collections::Generic::InternalStringComparer {
 }
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
 impl std::ops::Deref for crate::System::Collections::Generic::InternalStringComparer {
-    type Target = crate::System::Collections::Generic::EqualityComparer_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

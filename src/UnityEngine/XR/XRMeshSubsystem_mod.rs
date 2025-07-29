@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRMeshSubsystem {
-    __cordl_parent: crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<Blacklisted>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRMeshSubsystem")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRMeshSubsystem {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::XR::XRMeshSubsys
 }
 #[cfg(feature = "UnityEngine+XR+XRMeshSubsystem")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRMeshSubsystem {
-    type Target = crate::UnityEngine::IntegratedSubsystem_1<Blacklisted>;
+    type Target = quest_hook::libil2cpp::Gc<Blacklisted>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::UnityEngine::XR::XRMeshSubsystem {
         &mut self,
         result: crate::UnityEngine::XR::MeshGenerationResult,
         onMeshGenerationComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::UnityEngine::XR::MeshGenerationResult>,
+            crate::UnityEngine::XR::MeshGenerationResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -55,9 +55,7 @@ impl crate::UnityEngine::XR::XRMeshSubsystem {
                         (
                             crate::UnityEngine::XR::MeshGenerationResult,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::UnityEngine::XR::MeshGenerationResult,
-                                >,
+                                crate::UnityEngine::XR::MeshGenerationResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -15,11 +15,7 @@ pub struct Allocator2D {
         >,
     >,
     pub m_Areas: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Area>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+Allocator2D")]
@@ -65,10 +61,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     pub type Row = crate::UnityEngine::UIElements::UIR::Allocator2D_Row;
     pub fn BuildAreas(
         areas: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
             >,
         >,
         minSize: crate::UnityEngine::Vector2Int,
@@ -81,10 +75,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
                                 >,
                             >,
                             crate::UnityEngine::Vector2Int,
@@ -154,10 +146,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
     }
     pub fn ComputeMaxAllocSize(
         areas: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
             >,
         >,
         rowHeightBias: i32,
@@ -169,10 +159,8 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::UIR::Allocator2D_Area,
                                 >,
                             >,
                             i32,
@@ -550,7 +538,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Row {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     >,
     pub rect: crate::UnityEngine::RectInt,
@@ -587,7 +575,7 @@ for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Row {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Allocator2D_Row>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

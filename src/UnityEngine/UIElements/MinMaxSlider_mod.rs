@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     pub _dragElement_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -14,9 +12,7 @@ pub struct MinMaxSlider {
     pub _dragMaxThumb_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
-    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-    >,
+    pub _clampedDragger_k__BackingField: quest_hook::libil2cpp::Gc<f32>,
     pub m_DragElementStartPos: crate::UnityEngine::Vector2,
     pub m_ValueStartPos: crate::UnityEngine::Vector2,
     pub m_DragMinThumbRect: crate::UnityEngine::Rect,
@@ -47,9 +43,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider {
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider {
-    type Target = crate::UnityEngine::UIElements::BaseField_1<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -534,18 +528,14 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
     }
     pub fn get_clampedDragger(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClampedDragger_1<f32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<f32>,
                         0usize,
                     >("get_clampedDragger")
                     .unwrap_or_else(|e| {
@@ -556,9 +546,9 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_dragElement(
@@ -739,18 +729,14 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
     }
     pub fn set_clampedDragger(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-        >,
+        value: quest_hook::libil2cpp::Gc<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ClampedDragger_1<f32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_clampedDragger")
@@ -1089,7 +1075,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_DragState {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MinMaxSlider>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits,
@@ -1118,7 +1104,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MinMaxSlider>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits,
@@ -1179,9 +1165,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MinMaxSlider_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Vector2,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     pub m_MinValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
     >,
@@ -1217,9 +1201,7 @@ for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+MinMaxSlider+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MinMaxSlider_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        crate::UnityEngine::Vector2,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

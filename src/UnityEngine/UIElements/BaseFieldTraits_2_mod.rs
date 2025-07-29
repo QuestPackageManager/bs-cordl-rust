@@ -5,7 +5,7 @@ pub struct BaseFieldTraits_2<
     TValueType: quest_hook::libil2cpp::Type,
     TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
     pub m_Value: TValueUxmlAttributeType,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TValueUxmlAttributeType: std::marker::PhantomData<
@@ -63,7 +63,7 @@ for crate::UnityEngine::UIElements::BaseFieldTraits_2<
     TValueType,
     TValueUxmlAttributeType,
 > {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>;
+    type Target = quest_hook::libil2cpp::Gc<TValueType>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

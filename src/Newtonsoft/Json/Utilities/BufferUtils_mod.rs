@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Utilities::BufferUtils {
 #[cfg(feature = "Newtonsoft+Json+Utilities+BufferUtils")]
 impl crate::Newtonsoft::Json::Utilities::BufferUtils {
     pub fn EnsureBufferSize(
-        bufferPool: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::IArrayPool_1<char>,
-        >,
+        bufferPool: quest_hook::libil2cpp::Gc<char>,
         _cordl_size: i32,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -54,9 +52,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::IArrayPool_1<char>,
-                            >,
+                            quest_hook::libil2cpp::Gc<char>,
                             i32,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<char>,
@@ -83,9 +79,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         Ok(__cordl_ret.into())
     }
     pub fn RentBuffer(
-        bufferPool: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::IArrayPool_1<char>,
-        >,
+        bufferPool: quest_hook::libil2cpp::Gc<char>,
         minSize: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
@@ -95,12 +89,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::IArrayPool_1<char>,
-                            >,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<char>, i32),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<char>,
                         >,
@@ -120,9 +109,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ReturnBuffer(
-        bufferPool: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::IArrayPool_1<char>,
-        >,
+        bufferPool: quest_hook::libil2cpp::Gc<char>,
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -131,9 +118,7 @@ impl crate::Newtonsoft::Json::Utilities::BufferUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::IArrayPool_1<char>,
-                            >,
+                            quest_hook::libil2cpp::Gc<char>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<char>,
                             >,

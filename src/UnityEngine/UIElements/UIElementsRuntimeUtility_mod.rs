@@ -192,9 +192,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn GetSortedPlayerPanels() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -204,10 +202,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Panel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Panel,
                             >,
                         >,
                         0usize,
@@ -221,9 +217,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -705,11 +699,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn add_onCreatePanel(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseRuntimePanel,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -718,10 +708,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseRuntimePanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseRuntimePanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -811,11 +799,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
     }
     pub fn remove_onCreatePanel(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::BaseRuntimePanel,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BaseRuntimePanel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -824,10 +808,8 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::BaseRuntimePanel,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseRuntimePanel,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

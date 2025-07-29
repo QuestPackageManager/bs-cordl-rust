@@ -48,12 +48,10 @@ pub struct SearchFilterParamsViewController {
     >,
     pub _currentSearchFilter: crate::GlobalNamespace::LevelFilter,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SearchFilterParamsViewController,
-            >,
-            crate::GlobalNamespace::LevelFilter,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SearchFilterParamsViewController,
         >,
+        crate::GlobalNamespace::LevelFilter,
     >,
 }
 #[cfg(feature = "cordl_class_SearchFilterParamsViewController")]
@@ -383,12 +381,10 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SearchFilterParamsViewController,
-                >,
-                crate::GlobalNamespace::LevelFilter,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SearchFilterParamsViewController,
             >,
+            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -397,12 +393,10 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SearchFilterParamsViewController,
-                                >,
-                                crate::GlobalNamespace::LevelFilter,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SearchFilterParamsViewController,
                             >,
+                            crate::GlobalNamespace::LevelFilter,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -423,12 +417,10 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::SearchFilterParamsViewController,
-                >,
-                crate::GlobalNamespace::LevelFilter,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SearchFilterParamsViewController,
             >,
+            crate::GlobalNamespace::LevelFilter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -437,12 +429,10 @@ impl crate::GlobalNamespace::SearchFilterParamsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::SearchFilterParamsViewController,
-                                >,
-                                crate::GlobalNamespace::LevelFilter,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SearchFilterParamsViewController,
                             >,
+                            crate::GlobalNamespace::LevelFilter,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -6,12 +6,8 @@ pub struct ReferenceCountingCache_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _items: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-    >,
-    pub _referencesCount: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<TKey, i32>,
-    >,
+    pub _items: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _referencesCount: quest_hook::libil2cpp::Gc<TKey, i32>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -283,11 +279,7 @@ impl<
     }
     pub fn get_values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -300,9 +292,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TValue>,
                         0usize,
                     >("get_values")
                     .unwrap_or_else(|e| {
@@ -313,9 +303,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -336,11 +326,9 @@ for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue>>
+> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
 for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -348,11 +336,9 @@ for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue>>
+> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
 for crate::GlobalNamespace::ReferenceCountingCache_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IReferenceCountingCache_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -48,11 +48,7 @@ impl crate::GlobalNamespace::AutoRecord {
         trackOrientation: crate::UnityEngine::Quaternion,
         handFrames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::BeatSaber::RecPlay::PoseFrame,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::RecPlay::PoseFrame>,
             >,
         >,
         lastCutDirections: quest_hook::libil2cpp::Gc<
@@ -73,9 +69,7 @@ impl crate::GlobalNamespace::AutoRecord {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::List_1<
-                                            crate::BeatSaber::RecPlay::PoseFrame,
-                                        >,
+                                        crate::BeatSaber::RecPlay::PoseFrame,
                                     >,
                                 >,
                             >,
@@ -121,11 +115,7 @@ impl crate::GlobalNamespace::AutoRecord {
         trackOrientation: crate::UnityEngine::Quaternion,
         handFrames: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        crate::BeatSaber::RecPlay::PoseFrame,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::RecPlay::PoseFrame>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,9 +135,7 @@ impl crate::GlobalNamespace::AutoRecord {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::List_1<
-                                            crate::BeatSaber::RecPlay::PoseFrame,
-                                        >,
+                                        crate::BeatSaber::RecPlay::PoseFrame,
                                     >,
                                 >,
                             >,

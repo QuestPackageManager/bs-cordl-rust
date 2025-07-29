@@ -39,34 +39,16 @@ impl std::ops::DerefMut for crate::UnityEngine::CanvasRenderer {
 }
 #[cfg(feature = "UnityEngine+CanvasRenderer")]
 impl crate::UnityEngine::CanvasRenderer {
-    pub fn AddUIVertexStream_List_1_List_1_1(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv2S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv3S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+    pub fn AddUIVertexStream_Gc_Gc1(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv2S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv3S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -74,51 +56,15 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                         ),
                         quest_hook::libil2cpp::Void,
                         9usize,
@@ -140,28 +86,14 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddUIVertexStream_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+    pub fn AddUIVertexStream_Gc_Gc_Gc_Gc_Gc_Gc_Gc0(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -169,41 +101,13 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                         ),
                         quest_hook::libil2cpp::Void,
                         7usize,
@@ -326,37 +230,17 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateUIVertexStream_List_1_List_1_1(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv2S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv3S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+    pub fn CreateUIVertexStream_Gc_Gc1(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv2S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv3S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -364,54 +248,16 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         10usize,
@@ -444,31 +290,15 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateUIVertexStream_List_1_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+    pub fn CreateUIVertexStream_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc0(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -476,44 +306,14 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         8usize,
@@ -1050,6 +850,32 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetVertices_Gc0(
+        &mut self,
+        vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetVertices")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVertices", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (vertices))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetVertices_Il2CppArray_i32_1(
         &mut self,
         vertices: quest_hook::libil2cpp::Gc<
@@ -1083,38 +909,6 @@ impl crate::UnityEngine::CanvasRenderer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (vertices, _cordl_size))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetVertices_List_1_0(
-        &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIVertex,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SetVertices")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVertices", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (vertices))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1216,37 +1010,17 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SplitUIVertexStreams_List_1_List_1_1(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv2S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv3S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+    pub fn SplitUIVertexStreams_Gc_Gc1(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv2S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv3S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1254,54 +1028,16 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         10usize,
@@ -1334,31 +1070,15 @@ impl crate::UnityEngine::CanvasRenderer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SplitUIVertexStreams_List_1_List_1_List_1_List_1_List_1_List_1_List_1_List_1_0(
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        colors: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
-        >,
-        uv0S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        uv1S: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        normals: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-        >,
-        tangents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+    pub fn SplitUIVertexStreams_Gc_Gc_Gc_Gc_Gc_Gc_Gc_Gc0(
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+        uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1366,44 +1086,14 @@ impl crate::UnityEngine::CanvasRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIVertex,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Color32,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         8usize,

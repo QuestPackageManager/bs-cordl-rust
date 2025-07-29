@@ -6,9 +6,7 @@ pub struct CanStartDragArgs {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub id: i32,
-    pub selectedIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<i32>,
-    >,
+    pub selectedIds: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CanStartDragArgs")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -113,9 +111,7 @@ impl crate::UnityEngine::UIElements::CanStartDragArgs {
             crate::UnityEngine::UIElements::VisualElement,
         >,
         id: i32,
-        selectedIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        selectedIds: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -127,9 +123,7 @@ impl crate::UnityEngine::UIElements::CanStartDragArgs {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,

@@ -39,8 +39,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConstructorStringExtensions 
 }
 #[cfg(feature = "ConstructorStringExtensions")]
 impl crate::GlobalNamespace::ConstructorStringExtensions {
-    pub fn ToConstructorString_List_1_3<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub fn ToConstructorString_Gc3<T>(
+        list: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -53,9 +53,7 @@ impl crate::GlobalNamespace::ConstructorStringExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("ToConstructorString")

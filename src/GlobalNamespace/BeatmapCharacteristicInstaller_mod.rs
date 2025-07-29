@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCharacteristicInstaller {
-    __cordl_parent: crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
         >,
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
 }
 #[cfg(feature = "BeatmapCharacteristicInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCharacteristicInstaller {
-    type Target = crate::BGLib::AppFlow::Initialization::ScriptableObjectReferenceAsyncInstaller_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicCollectionSO,
         >,

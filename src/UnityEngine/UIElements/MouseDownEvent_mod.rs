@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseDownEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::MouseDownEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseDownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseDownEvent {
-    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -95,9 +95,7 @@ impl crate::UnityEngine::UI::MaskUtilities {
     pub fn GetRectMasksForClip(
         clipper: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
         masks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -110,10 +108,8 @@ impl crate::UnityEngine::UI::MaskUtilities {
                                 crate::UnityEngine::UI::RectMask2D,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UI::RectMask2D,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::RectMask2D,
                                 >,
                             >,
                         ),

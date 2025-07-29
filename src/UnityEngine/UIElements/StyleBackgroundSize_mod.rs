@@ -362,12 +362,30 @@ impl crate::UnityEngine::UIElements::StyleBackgroundSize {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize>>
+for crate::UnityEngine::UIElements::StyleBackgroundSize {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize>>
+for crate::UnityEngine::UIElements::StyleBackgroundSize {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundSize> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleBackgroundSize>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleBackgroundSize>,
 > for crate::UnityEngine::UIElements::StyleBackgroundSize {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleBackgroundSize,
     > {
         todo!()
@@ -375,40 +393,12 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleBackgroundSize>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleBackgroundSize>,
 > for crate::UnityEngine::UIElements::StyleBackgroundSize {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleBackgroundSize,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::BackgroundSize,
-    >,
-> for crate::UnityEngine::UIElements::StyleBackgroundSize {
-    fn as_ref(
-        &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::BackgroundSize,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StyleBackgroundSize")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::BackgroundSize,
-    >,
-> for crate::UnityEngine::UIElements::StyleBackgroundSize {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::BackgroundSize,
     > {
         todo!()
     }

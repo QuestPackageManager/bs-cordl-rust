@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoneControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Bone,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::Bone>,
     pub _parentBoneIndex_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::IntegerControl,
     >,
@@ -37,9 +35,7 @@ for crate::UnityEngine::InputSystem::XR::BoneControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+BoneControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::BoneControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Bone,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::Bone>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -40,18 +40,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PingUtility {
 impl crate::GlobalNamespace::PingUtility {
     pub fn PingAsync(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i64>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i64>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<i64>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i64>,
                         1usize,
                     >("PingAsync")
                     .unwrap_or_else(|e| {
@@ -62,9 +58,9 @@ impl crate::GlobalNamespace::PingUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<i64>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (url))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i64> = unsafe {
+            cordl_method_info.invoke_unchecked((), (url))?
+        };
         Ok(__cordl_ret.into())
     }
 }

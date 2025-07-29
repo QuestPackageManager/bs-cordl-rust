@@ -4,9 +4,7 @@
 pub struct PoolableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _poolables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
     >,
     pub _isSpawned: bool,
 }
@@ -50,13 +48,9 @@ impl crate::Zenject::PoolableManager {
         &mut self,
         poolable: quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::Zenject::PoolableManager_PoolableInfo> {
@@ -68,13 +62,9 @@ impl crate::Zenject::PoolableManager {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::ModestTree::Util::ValuePair_2<
-                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                            i32,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
                                 >,
                             >,
                         ),
@@ -96,18 +86,12 @@ impl crate::Zenject::PoolableManager {
     }
     pub fn New(
         poolables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -232,18 +216,12 @@ impl crate::Zenject::PoolableManager {
     pub fn _ctor(
         &mut self,
         poolables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -254,18 +232,12 @@ impl crate::Zenject::PoolableManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IPoolable>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::ModestTree::Util::ValuePair_2<
-                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                            i32,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
                                 >,
                             >,
                         ),

@@ -864,13 +864,13 @@ impl AsMut<crate::System::IComparable> for crate::UnityEngine::ProBuilder::SemVe
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     >,
 > for crate::UnityEngine::ProBuilder::SemVer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -878,13 +878,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     >,
 > for crate::UnityEngine::ProBuilder::SemVer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -892,13 +892,13 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     >,
 > for crate::UnityEngine::ProBuilder::SemVer {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -906,13 +906,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SemVer")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     >,
 > for crate::UnityEngine::ProBuilder::SemVer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SemVer>,
     > {
         unsafe { std::mem::transmute(self) }

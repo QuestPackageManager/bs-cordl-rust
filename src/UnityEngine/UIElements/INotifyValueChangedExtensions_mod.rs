@@ -41,16 +41,8 @@ for crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
 #[cfg(feature = "UnityEngine+UIElements+INotifyValueChangedExtensions")]
 impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
     pub fn RegisterValueChangedCallback<T>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-        >,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-                >,
-            >,
-        >,
+        control: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -62,16 +54,8 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-                                    >,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
                         ),
                         bool,
                         2usize,
@@ -90,16 +74,8 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn UnregisterValueChangedCallback<T>(
-        control: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-        >,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-                >,
-            >,
-        >,
+        control: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -111,16 +87,8 @@ impl crate::UnityEngine::UIElements::INotifyValueChangedExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::INotifyValueChanged_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::ChangeEvent_1<T>,
-                                    >,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
                         ),
                         bool,
                         2usize,

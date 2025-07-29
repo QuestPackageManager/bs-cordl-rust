@@ -4,9 +4,7 @@
 pub struct ListLogger {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _messages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
     >,
 }
 #[cfg(feature = "cordl_class_ListLogger")]
@@ -317,9 +315,7 @@ impl crate::GlobalNamespace::ListLogger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -329,10 +325,8 @@ impl crate::GlobalNamespace::ListLogger {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ListLogger_LogMessage,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ListLogger_LogMessage,
                             >,
                         >,
                         0usize,
@@ -346,9 +340,7 @@ impl crate::GlobalNamespace::ListLogger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ListLogger_LogMessage>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

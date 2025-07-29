@@ -3,15 +3,9 @@
 #[derive(Debug)]
 pub struct TMP_ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<T>,
-    >,
-    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_1<T>,
-    >,
-    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_1<T>,
-    >,
+    pub m_Stack: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActionOnGet: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActionOnRelease: quest_hook::libil2cpp::Gc<T>,
     pub _countAll_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -87,12 +81,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        actionOnGet: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<T>,
-        >,
-        actionOnRelease: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<T>,
-        >,
+        actionOnGet: quest_hook::libil2cpp::Gc<T>,
+        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -132,12 +122,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        actionOnGet: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<T>,
-        >,
-        actionOnRelease: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<T>,
-        >,
+        actionOnGet: quest_hook::libil2cpp::Gc<T>,
+        actionOnRelease: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -148,14 +134,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ObjectPool_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Events::UnityAction_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Events::UnityAction_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

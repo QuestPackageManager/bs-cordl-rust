@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableFloat {
-    __cordl_parent: crate::StyledUITemplates::OverridableData_1<f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
 }
 #[cfg(feature = "cordl_class_StyledUITemplates+OverridableFloat")]
 unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::OverridableFloat {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::StyledUITemplates::Overridabl
 }
 #[cfg(feature = "StyledUITemplates+OverridableFloat")]
 impl std::ops::Deref for crate::StyledUITemplates::OverridableFloat {
-    type Target = crate::StyledUITemplates::OverridableData_1<f32>;
+    type Target = quest_hook::libil2cpp::Gc<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

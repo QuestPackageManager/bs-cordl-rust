@@ -127,9 +127,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -140,9 +138,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
                         (
                             crate::UnityEngine::Rendering::ScriptableRenderContext,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -231,13 +227,11 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Render_Il2CppArray0(
+    pub fn Render_Gc1(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -248,9 +242,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
                         (
                             crate::UnityEngine::Rendering::ScriptableRenderContext,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -269,11 +261,11 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Render_List_1_1(
+    pub fn Render_Il2CppArray0(
         &mut self,
         context: crate::UnityEngine::Rendering::ScriptableRenderContext,
         cameras: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
             >,
         >,
@@ -286,7 +278,7 @@ impl crate::UnityEngine::Rendering::RenderPipeline {
                         (
                             crate::UnityEngine::Rendering::ScriptableRenderContext,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                                 >,
                             >,

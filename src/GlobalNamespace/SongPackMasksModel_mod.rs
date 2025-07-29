@@ -9,16 +9,12 @@ pub struct SongPackMasksModel {
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub _songPackSerializedNameToMaskInfoDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
     >,
     pub _songPackMaskToSerializedNameDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::GlobalNamespace::SongPackMask,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        crate::GlobalNamespace::SongPackMask,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_SongPackMasksModel")]

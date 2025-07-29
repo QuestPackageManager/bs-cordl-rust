@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplayModifierInfoListItemsList {
-    __cordl_parent: crate::HMUI::UIItemsList_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierInfoListItem>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::GameplayModifierInfoListItemsList {
 }
 #[cfg(feature = "GameplayModifierInfoListItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifierInfoListItemsList {
-    type Target = crate::HMUI::UIItemsList_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierInfoListItem>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

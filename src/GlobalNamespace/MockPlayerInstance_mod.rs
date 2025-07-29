@@ -57,9 +57,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MockPlayerInstance {
 impl crate::GlobalNamespace::MockPlayerInstance {
     pub fn ConnectToServer<T>(
         &mut self,
-        connectionInitParams: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-        >,
+        connectionInitParams: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -70,9 +68,7 @@ impl crate::GlobalNamespace::MockPlayerInstance {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ConnectToServer")
@@ -263,9 +259,7 @@ impl crate::GlobalNamespace::MockPlayerInstance {
     pub fn WhenReadyAsync(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -276,10 +270,8 @@ impl crate::GlobalNamespace::MockPlayerInstance {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

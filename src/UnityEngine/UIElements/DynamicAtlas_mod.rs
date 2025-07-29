@@ -4,11 +4,9 @@
 pub struct DynamicAtlas {
     __cordl_parent: crate::UnityEngine::UIElements::AtlasBase,
     pub m_Database: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
-            >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
         >,
     >,
     pub m_PointPage: quest_hook::libil2cpp::Gc<
@@ -19,9 +17,7 @@ pub struct DynamicAtlas {
     >,
     pub m_ColorSpace: crate::UnityEngine::ColorSpace,
     pub m_Panels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
     >,
     pub m_MinAtlasSize: i32,
     pub m_MaxAtlasSize: i32,
@@ -583,7 +579,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Dynam
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicAtlas_TextureInfo {
-    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
         >,
@@ -617,7 +613,7 @@ for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
-    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
         >,

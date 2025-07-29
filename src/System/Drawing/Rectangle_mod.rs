@@ -293,18 +293,18 @@ impl crate::System::Drawing::Rectangle {
     }
 }
 #[cfg(feature = "System+Drawing+Rectangle")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Rectangle>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::Rectangle>>
 for crate::System::Drawing::Rectangle {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Rectangle> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::Rectangle> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+Rectangle")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Rectangle>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::Rectangle>>
 for crate::System::Drawing::Rectangle {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Rectangle> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::Rectangle> {
         todo!()
     }
 }

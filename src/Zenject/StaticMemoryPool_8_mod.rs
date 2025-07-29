@@ -11,18 +11,16 @@ pub struct StaticMemoryPool_8<
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::StaticMemoryPoolBase_1<TValue>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TValue>,
     pub _onSpawnMethod: quest_hook::libil2cpp::Gc<
-        crate::System::Action_8<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TValue,
-        >,
+        TParam1,
+        TParam2,
+        TParam3,
+        TParam4,
+        TParam5,
+        TParam6,
+        TParam7,
+        TValue,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
@@ -116,7 +114,7 @@ for crate::Zenject::StaticMemoryPool_8<
     TParam7,
     TValue,
 > {
-    type Target = crate::Zenject::StaticMemoryPoolBase_1<TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -168,18 +166,16 @@ impl<
 > {
     pub fn New(
         onSpawnMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_8<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TValue,
         >,
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -258,18 +254,16 @@ impl<
     pub fn _ctor(
         &mut self,
         onSpawnMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_8<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TValue,
         >,
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -296,18 +290,16 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_8<
-                                    TParam1,
-                                    TParam2,
-                                    TParam3,
-                                    TParam4,
-                                    TParam5,
-                                    TParam6,
-                                    TParam7,
-                                    TValue,
-                                >,
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TValue,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
+                            quest_hook::libil2cpp::Gc<TValue>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -328,16 +320,14 @@ impl<
     pub fn set_OnSpawnMethod(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_8<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TParam5,
-                TParam6,
-                TParam7,
-                TValue,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TParam5,
+            TParam6,
+            TParam7,
+            TValue,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -364,16 +354,14 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_8<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TParam5,
-                                TParam6,
-                                TParam7,
-                                TValue,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TParam5,
+                            TParam6,
+                            TParam7,
+                            TValue,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -418,56 +406,6 @@ for crate::Zenject::StaticMemoryPool_8<
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "Zenject+StaticMemoryPool_8")]
-impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
-for crate::Zenject::StaticMemoryPool_8<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TValue,
-> {
-    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Zenject+StaticMemoryPool_8")]
-impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
-for crate::Zenject::StaticMemoryPool_8<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TValue,
-> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+StaticMemoryPool_8")]
@@ -531,7 +469,7 @@ impl<
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::Zenject::IMemoryPool_8<
+    quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -554,7 +492,7 @@ for crate::Zenject::StaticMemoryPool_8<
 > {
     fn as_ref(
         &self,
-    ) -> &crate::Zenject::IMemoryPool_8<
+    ) -> &quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -578,7 +516,7 @@ impl<
     TParam7: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::Zenject::IMemoryPool_8<
+    quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -601,7 +539,7 @@ for crate::Zenject::StaticMemoryPool_8<
 > {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::Zenject::IMemoryPool_8<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -611,6 +549,56 @@ for crate::Zenject::StaticMemoryPool_8<
         TParam7,
         TValue,
     > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPool_8")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TParam5: quest_hook::libil2cpp::Type,
+    TParam6: quest_hook::libil2cpp::Type,
+    TParam7: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+for crate::Zenject::StaticMemoryPool_8<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TParam5,
+    TParam6,
+    TParam7,
+    TValue,
+> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPool_8")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TParam5: quest_hook::libil2cpp::Type,
+    TParam6: quest_hook::libil2cpp::Type,
+    TParam7: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::Zenject::StaticMemoryPool_8<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TParam5,
+    TParam6,
+    TParam7,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

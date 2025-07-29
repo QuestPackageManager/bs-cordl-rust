@@ -6,10 +6,8 @@ pub struct NetSerializer {
     pub _writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
     pub _maxStringLength: i32,
     pub _registeredTypes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_CustomType>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_CustomType>,
     >,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer")]
@@ -271,9 +269,7 @@ impl crate::LiteNetLib::Utils::NetSerializer {
     }
     pub fn RegisterInternal<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -284,9 +280,7 @@ impl crate::LiteNetLib::Utils::NetSerializer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("RegisterInternal")
                     .unwrap_or_else(|e| {
@@ -297,9 +291,9 @@ impl crate::LiteNetLib::Utils::NetSerializer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterNestedType_0<T>(
@@ -331,19 +325,45 @@ impl crate::LiteNetLib::Utils::NetSerializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterNestedType_Action_2_Func_2_2<T>(
+    pub fn RegisterNestedType_Gc1<T>(
+        &mut self,
+        constructor: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<T>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RegisterNestedType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterNestedType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (constructor))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterNestedType_Gc_Gc2<T>(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            T,
         >,
         reader: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -357,20 +377,16 @@ impl crate::LiteNetLib::Utils::NetSerializer {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataWriter,
-                                    >,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataWriter,
                                 >,
+                                T,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataReader,
-                                    >,
-                                    T,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataReader,
                                 >,
+                                T,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -386,36 +402,6 @@ impl crate::LiteNetLib::Utils::NetSerializer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (writer, reader))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterNestedType_Func_1_1<T>(
-        &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RegisterNestedType")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterNestedType", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (constructor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -546,7 +532,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetSerializ
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_BoolSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, bool>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
@@ -588,7 +574,7 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, bool>;
+    type Target = quest_hook::libil2cpp::Gc<T, bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -797,7 +783,7 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_ByteSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u8>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, u8>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
@@ -839,7 +825,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u8>;
+    type Target = quest_hook::libil2cpp::Gc<T, u8>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1048,10 +1034,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_CharSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
-        T,
-        char,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, char>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
@@ -1093,10 +1076,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
-        T,
-        char,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<T, char>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1235,11 +1215,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
 pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-            >,
-        >,
+        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<T>>,
     >,
     pub _membersCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -1300,13 +1276,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
     pub fn New(
-        serializers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                >,
-            >,
-        >,
+        serializers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1392,13 +1362,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        serializers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                >,
-            >,
-        >,
+        serializers: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1409,13 +1373,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                                >,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1486,9 +1444,7 @@ impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer_CustomType {
 impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
     pub fn Get<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1497,13 +1453,7 @@ impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                        >,
-                        0usize,
-                    >("Get")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1512,9 +1462,9 @@ impl crate::LiteNetLib::Utils::NetSerializer_CustomType {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1561,7 +1511,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomType {
 #[derive(Debug)]
 pub struct NetSerializer_CustomTypeClass_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
-    pub _constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+    pub _constructor: quest_hook::libil2cpp::Gc<TProperty>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
@@ -1621,9 +1571,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
     pub fn Get<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1634,13 +1582,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                        >,
-                        0usize,
-                    >("Get")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1649,13 +1591,13 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+        constructor: quest_hook::libil2cpp::Gc<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1669,7 +1611,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+        constructor: quest_hook::libil2cpp::Gc<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1680,7 +1622,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>),
+                        (quest_hook::libil2cpp::Gc<TProperty>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1714,16 +1656,12 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
 pub struct NetSerializer_CustomTypeStatic_1<TProperty: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_CustomType,
     pub _writer: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-            TProperty,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+        TProperty,
     >,
     pub _reader: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-            TProperty,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        TProperty,
     >,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
@@ -1784,9 +1722,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
     pub fn Get<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1797,13 +1733,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                        >,
-                        0usize,
-                    >("Get")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1812,23 +1742,19 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         writer: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            TProperty,
         >,
         reader: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            TProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -1844,16 +1770,12 @@ impl<
     pub fn _ctor(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            TProperty,
         >,
         reader: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            TProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1867,20 +1789,16 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataWriter,
-                                    >,
-                                    TProperty,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataWriter,
                                 >,
+                                TProperty,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataReader,
-                                    >,
-                                    TProperty,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataReader,
                                 >,
+                                TProperty,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1974,9 +1892,7 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
     pub fn Get<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         TProperty: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1987,13 +1903,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-                        >,
-                        0usize,
-                    >("Get")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("Get")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -2002,9 +1912,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -2056,7 +1966,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_DoubleSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, f64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
@@ -2098,7 +2008,7 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f64>;
+    type Target = quest_hook::libil2cpp::Gc<T, f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2307,7 +2217,7 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_EnumByteSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     pub Property: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
     pub PropertyType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -2351,7 +2261,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2504,7 +2414,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_EnumIntSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
@@ -2546,7 +2456,7 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2702,11 +2612,8 @@ pub struct NetSerializer_FastCallClass_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >,
-    pub _constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TClass, TProperty>,
+    pub _constructor: quest_hook::libil2cpp::Gc<TProperty>,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
@@ -2755,10 +2662,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TClass, TProperty>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2779,7 +2683,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
     pub fn New(
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+        constructor: quest_hook::libil2cpp::Gc<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2947,7 +2851,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>,
+        constructor: quest_hook::libil2cpp::Gc<TProperty>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TClass: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2960,7 +2864,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<TProperty>>),
+                        (quest_hook::libil2cpp::Gc<TProperty>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -2998,10 +2902,7 @@ pub struct NetSerializer_FastCallSpecificAuto_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TClass, TProperty>,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
 }
@@ -3050,10 +2951,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProperty> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TClass, TProperty>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3360,20 +3258,16 @@ pub struct NetSerializer_FastCallSpecific_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCall_1<TClass>,
-    pub Getter: quest_hook::libil2cpp::Gc<crate::System::Func_2<TClass, TProperty>>,
-    pub Setter: quest_hook::libil2cpp::Gc<crate::System::Action_2<TClass, TProperty>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TClass>,
+    pub Getter: quest_hook::libil2cpp::Gc<TClass, TProperty>,
+    pub Setter: quest_hook::libil2cpp::Gc<TClass, TProperty>,
     pub GetterArr: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            TClass,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
-        >,
+        TClass,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
     >,
     pub SetterArr: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            TClass,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
-        >,
+        TClass,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TProperty>>,
     >,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
@@ -3423,7 +3317,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<TClass>;
+    type Target = quest_hook::libil2cpp::Gc<TClass>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3628,21 +3522,14 @@ pub struct NetSerializer_FastCallStatic_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TClass, TProperty>,
+    pub _writer: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
         TProperty,
     >,
-    pub _writer: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-            TProperty,
-        >,
-    >,
     pub _reader: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-            TProperty,
-        >,
+        quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+        TProperty,
     >,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
@@ -3692,10 +3579,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TClass, TProperty>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3717,16 +3601,12 @@ impl<
 > crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> {
     pub fn New(
         write: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            TProperty,
         >,
         read: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            TProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -3896,16 +3776,12 @@ impl<
     pub fn _ctor(
         &mut self,
         write: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
+            TProperty,
         >,
         read: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                TProperty,
-            >,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            TProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -3921,20 +3797,16 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataWriter,
-                                    >,
-                                    TProperty,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataWriter,
                                 >,
+                                TProperty,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::LiteNetLib::Utils::NetDataReader,
-                                    >,
-                                    TProperty,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::LiteNetLib::Utils::NetDataReader,
                                 >,
+                                TProperty,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -3974,10 +3846,7 @@ pub struct NetSerializer_FastCallStruct_2<
     TClass: quest_hook::libil2cpp::Type,
     TProperty: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TClass, TProperty>,
     pub _p: TProperty,
     __cordl_phantom_TClass: std::marker::PhantomData<TClass>,
     __cordl_phantom_TProperty: std::marker::PhantomData<TProperty>,
@@ -4027,10 +3896,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
-        TClass,
-        TProperty,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TClass, TProperty>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4550,7 +4416,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_FloatSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, f32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
@@ -4592,7 +4458,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f32>;
+    type Target = quest_hook::libil2cpp::Gc<T, f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4801,7 +4667,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_IPEndPointSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         T,
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     >,
@@ -4846,7 +4712,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<
+    type Target = quest_hook::libil2cpp::Gc<
         T,
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     >;
@@ -4994,7 +4860,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_IntSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, i32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
@@ -5036,7 +4902,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i32>;
+    type Target = quest_hook::libil2cpp::Gc<T, i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5245,7 +5111,7 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_LongSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, i64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
@@ -5287,7 +5153,7 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i64>;
+    type Target = quest_hook::libil2cpp::Gc<T, i64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5496,7 +5362,7 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_SByteSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i8>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, i8>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
@@ -5538,7 +5404,7 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i8>;
+    type Target = quest_hook::libil2cpp::Gc<T, i8>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5747,7 +5613,7 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_ShortSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i16>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, i16>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
@@ -5789,7 +5655,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i16>;
+    type Target = quest_hook::libil2cpp::Gc<T, i16>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5998,7 +5864,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_StringSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         T,
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
@@ -6044,7 +5910,7 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
+    type Target = quest_hook::libil2cpp::Gc<
         T,
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
@@ -6261,7 +6127,7 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_UIntSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, u32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
@@ -6303,7 +6169,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u32>;
+    type Target = quest_hook::libil2cpp::Gc<T, u32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6512,7 +6378,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_ULongSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u64>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, u64>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
@@ -6554,7 +6420,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u64>;
+    type Target = quest_hook::libil2cpp::Gc<T, u64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6763,7 +6629,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_UShortSerializer_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u16>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T, u16>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
@@ -6805,7 +6671,7 @@ for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
-    type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u16>;
+    type Target = quest_hook::libil2cpp::Gc<T, u16>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

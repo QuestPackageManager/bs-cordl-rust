@@ -31,13 +31,9 @@ pub struct XSDSchema {
     pub _schemaTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _expressions: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _tableDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
+        quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-                >,
-            >,
         >,
     >,
     pub _udSimpleTypes: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -85,9 +81,7 @@ impl crate::System::Data::XSDSchema {
     pub fn AddTablesToList(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         >,
         dt: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -98,9 +92,7 @@ impl crate::System::Data::XSDSchema {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
                         ),

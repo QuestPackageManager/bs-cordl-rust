@@ -359,44 +359,38 @@ impl crate::UnityEngine::UIElements::StyleScale {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>>
 for crate::UnityEngine::UIElements::StyleScale {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>>
 for crate::UnityEngine::UIElements::StyleScale {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleScale> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
-impl AsRef<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Scale>,
-> for crate::UnityEngine::UIElements::StyleScale {
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleScale>>
+for crate::UnityEngine::UIElements::StyleScale {
     fn as_ref(
         &self,
-    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Scale,
-    > {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleScale> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleScale")]
-impl AsMut<
-    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Scale>,
-> for crate::UnityEngine::UIElements::StyleScale {
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleScale>>
+for crate::UnityEngine::UIElements::StyleScale {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
-        crate::UnityEngine::UIElements::Scale,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleScale> {
         todo!()
     }
 }

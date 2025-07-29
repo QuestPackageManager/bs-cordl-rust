@@ -154,34 +154,6 @@ impl crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
-    >,
-> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
-    >,
-> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
 impl AsRef<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
@@ -192,6 +164,34 @@ for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
 impl AsMut<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Playables+MaterialEffectPlayable")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    >,
+> for crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Playables::MaterialEffectPlayable,
+    > {
         todo!()
     }
 }

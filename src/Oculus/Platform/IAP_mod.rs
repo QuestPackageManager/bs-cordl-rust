@@ -69,9 +69,7 @@ impl crate::Oculus::Platform::IAP {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -83,10 +81,8 @@ impl crate::Oculus::Platform::IAP {
                             crate::Oculus::Platform::Models::ProductList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ProductList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ProductList,
                             >,
                         >,
                         1usize,
@@ -100,9 +96,7 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -110,9 +104,7 @@ impl crate::Oculus::Platform::IAP {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -124,10 +116,8 @@ impl crate::Oculus::Platform::IAP {
                             crate::Oculus::Platform::Models::PurchaseList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PurchaseList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PurchaseList,
                             >,
                         >,
                         1usize,
@@ -141,9 +131,7 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -155,9 +143,7 @@ impl crate::Oculus::Platform::IAP {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -173,10 +159,8 @@ impl crate::Oculus::Platform::IAP {
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ProductList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ProductList,
                             >,
                         >,
                         1usize,
@@ -190,17 +174,13 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (skus))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetViewerPurchases() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -210,10 +190,8 @@ impl crate::Oculus::Platform::IAP {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PurchaseList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PurchaseList,
                             >,
                         >,
                         0usize,
@@ -227,17 +205,13 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetViewerPurchasesDurableCache() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -247,10 +221,8 @@ impl crate::Oculus::Platform::IAP {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PurchaseList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PurchaseList,
                             >,
                         >,
                         0usize,
@@ -264,9 +236,7 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::PurchaseList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -274,9 +244,7 @@ impl crate::Oculus::Platform::IAP {
         sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -286,10 +254,8 @@ impl crate::Oculus::Platform::IAP {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::Purchase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::Purchase,
                             >,
                         >,
                         1usize,
@@ -303,9 +269,7 @@ impl crate::Oculus::Platform::IAP {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Purchase>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (sku))? };
         Ok(__cordl_ret.into())
     }

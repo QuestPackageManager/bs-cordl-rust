@@ -153,9 +153,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
-            >,
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -165,9 +163,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
-                            >,
+                            crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
                         >,
                         0usize,
                     >("GetStackTraceDebugInfo")
@@ -180,9 +176,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
-            >,
+            crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

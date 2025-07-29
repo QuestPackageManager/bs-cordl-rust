@@ -28,17 +28,13 @@ pub struct MultiplayerLocalActivePlayerFacade {
         crate::GlobalNamespace::BeatmapCallbacksUpdater,
     >,
     pub playerDidFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
     pub playerNetworkDidFailedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
 }
@@ -307,10 +303,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     pub fn add_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -320,10 +314,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -345,10 +337,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     pub fn add_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -358,10 +348,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -499,10 +487,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     pub fn remove_playerDidFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -512,10 +498,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -537,10 +521,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     pub fn remove_playerNetworkDidFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -550,10 +532,8 @@ impl crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerLevelCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -635,7 +615,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLocalActivePlayerFacade_Factory {
-    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
@@ -665,7 +645,7 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
 #[cfg(feature = "MultiplayerLocalActivePlayerFacade+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
-    type Target = crate::Zenject::PlaceholderFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,

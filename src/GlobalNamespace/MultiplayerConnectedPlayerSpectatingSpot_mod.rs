@@ -13,11 +13,9 @@ pub struct MultiplayerConnectedPlayerSpectatingSpot {
         crate::GlobalNamespace::MultiplayerSpectatingSpotManager,
     >,
     pub hasBeenRemovedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
     >,
-    pub isObservedChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub isObservedChangedEvent: quest_hook::libil2cpp::Gc<bool>,
     pub _observable_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerObservable,
     >,
@@ -276,11 +274,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     pub fn add_hasBeenRemovedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -289,10 +283,8 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -313,14 +305,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     }
     pub fn add_isObservedChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_isObservedChangedEvent")
@@ -413,11 +405,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     pub fn remove_hasBeenRemovedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -426,10 +414,8 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -450,14 +436,14 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSpectatingSpot {
     }
     pub fn remove_isObservedChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_isObservedChangedEvent")

@@ -278,60 +278,6 @@ impl<
     TParam7: quest_hook::libil2cpp::Type,
     TParam8: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
-for crate::Zenject::IMemoryPool_9<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TValue,
-> {
-    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Zenject+IMemoryPool_9")]
-impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
-for crate::Zenject::IMemoryPool_9<
-    TParam1,
-    TParam2,
-    TParam3,
-    TParam4,
-    TParam5,
-    TParam6,
-    TParam7,
-    TParam8,
-    TValue,
-> {
-    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Zenject+IMemoryPool_9")]
-impl<
-    TParam1: quest_hook::libil2cpp::Type,
-    TParam2: quest_hook::libil2cpp::Type,
-    TParam3: quest_hook::libil2cpp::Type,
-    TParam4: quest_hook::libil2cpp::Type,
-    TParam5: quest_hook::libil2cpp::Type,
-    TParam6: quest_hook::libil2cpp::Type,
-    TParam7: quest_hook::libil2cpp::Type,
-    TParam8: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::Zenject::IMemoryPool>
 for crate::Zenject::IMemoryPool_9<
     TParam1,
@@ -372,6 +318,60 @@ for crate::Zenject::IMemoryPool_9<
     TValue,
 > {
     fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+IMemoryPool_9")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TParam5: quest_hook::libil2cpp::Type,
+    TParam6: quest_hook::libil2cpp::Type,
+    TParam7: quest_hook::libil2cpp::Type,
+    TParam8: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+for crate::Zenject::IMemoryPool_9<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TParam5,
+    TParam6,
+    TParam7,
+    TParam8,
+    TValue,
+> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+IMemoryPool_9")]
+impl<
+    TParam1: quest_hook::libil2cpp::Type,
+    TParam2: quest_hook::libil2cpp::Type,
+    TParam3: quest_hook::libil2cpp::Type,
+    TParam4: quest_hook::libil2cpp::Type,
+    TParam5: quest_hook::libil2cpp::Type,
+    TParam6: quest_hook::libil2cpp::Type,
+    TParam7: quest_hook::libil2cpp::Type,
+    TParam8: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::Zenject::IMemoryPool_9<
+    TParam1,
+    TParam2,
+    TParam3,
+    TParam4,
+    TParam5,
+    TParam6,
+    TParam7,
+    TParam8,
+    TValue,
+> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

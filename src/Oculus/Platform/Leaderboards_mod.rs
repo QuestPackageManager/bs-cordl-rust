@@ -42,11 +42,7 @@ impl crate::Oculus::Platform::Leaderboards {
         leaderboardName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -56,10 +52,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardList,
                             >,
                         >,
                         1usize,
@@ -73,11 +67,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (leaderboardName))? };
         Ok(__cordl_ret.into())
     }
@@ -88,10 +78,8 @@ impl crate::Oculus::Platform::Leaderboards {
         startAt: crate::Oculus::Platform::LeaderboardStartAt,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
@@ -109,10 +97,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             crate::Oculus::Platform::LeaderboardStartAt,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >,
                         4usize,
@@ -126,10 +112,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = unsafe {
             cordl_method_info
@@ -143,10 +127,8 @@ impl crate::Oculus::Platform::Leaderboards {
         afterRank: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
@@ -163,10 +145,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             u64,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >,
                         3usize,
@@ -180,10 +160,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (leaderboardName, limit, afterRank))?
@@ -197,10 +175,8 @@ impl crate::Oculus::Platform::Leaderboards {
         userIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
@@ -220,10 +196,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >,
                         4usize,
@@ -237,10 +211,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = unsafe {
             cordl_method_info
@@ -254,10 +226,8 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
@@ -270,10 +240,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             crate::Oculus::Platform::Models::LeaderboardEntryList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >,
                         1usize,
@@ -287,10 +255,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -299,11 +265,7 @@ impl crate::Oculus::Platform::Leaderboards {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -315,10 +277,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             crate::Oculus::Platform::Models::LeaderboardList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardList,
                             >,
                         >,
                         1usize,
@@ -332,11 +292,7 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardList,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LeaderboardList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -346,10 +302,8 @@ impl crate::Oculus::Platform::Leaderboards {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     > {
@@ -362,10 +316,8 @@ impl crate::Oculus::Platform::Leaderboards {
                             crate::Oculus::Platform::Models::LeaderboardEntryList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >,
                         1usize,
@@ -379,10 +331,8 @@ impl crate::Oculus::Platform::Leaderboards {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -392,9 +342,7 @@ impl crate::Oculus::Platform::Leaderboards {
         score: i64,
         extraData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         forceUpdate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -410,9 +358,7 @@ impl crate::Oculus::Platform::Leaderboards {
                             >,
                             bool,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         4usize,
                     >("WriteEntry")
                     .unwrap_or_else(|e| {
@@ -423,9 +369,7 @@ impl crate::Oculus::Platform::Leaderboards {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<bool>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (leaderboardName, score, extraData, forceUpdate))?
         };
@@ -437,9 +381,7 @@ impl crate::Oculus::Platform::Leaderboards {
         supplementaryMetric: i64,
         extraData: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         forceUpdate: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Request_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -456,9 +398,7 @@ impl crate::Oculus::Platform::Leaderboards {
                             >,
                             bool,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         5usize,
                     >("WriteEntryWithSupplementaryMetric")
                     .unwrap_or_else(|e| {
@@ -469,9 +409,7 @@ impl crate::Oculus::Platform::Leaderboards {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<bool>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),

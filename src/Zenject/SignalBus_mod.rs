@@ -7,17 +7,13 @@ pub struct SignalBus {
         crate::Zenject::SignalSubscription_Pool,
     >,
     pub _localDeclarationMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::Zenject::BindingId,
-            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
-        >,
+        crate::Zenject::BindingId,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
     pub _parentBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     pub _subscriptionMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::Zenject::SignalSubscriptionId,
-            quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
-        >,
+        crate::Zenject::SignalSubscriptionId,
+        quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
     >,
     pub _settings: quest_hook::libil2cpp::Gc<
         crate::Zenject::ZenjectSettings_SignalSettings,
@@ -435,9 +431,7 @@ impl crate::Zenject::SignalBus {
     }
     pub fn New(
         signalDeclarations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         >,
         parentBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
         zenjectSettings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
@@ -501,10 +495,10 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeId_Il2CppObject_Action_1_1<TSignal>(
+    pub fn SubscribeId_Il2CppObject_Gc1<TSignal>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -519,7 +513,7 @@ impl crate::Zenject::SignalBus {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                            quest_hook::libil2cpp::Gc<TSignal>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -537,14 +531,12 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeId_Type_Il2CppObject_Action_1_2(
+    pub fn SubscribeId_Type_Il2CppObject_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -558,10 +550,8 @@ impl crate::Zenject::SignalBus {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -581,14 +571,12 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeInternal_BindingId_Il2CppObject_Action_1_1(
+    pub fn SubscribeInternal_BindingId_Il2CppObject_Gc1(
         &mut self,
         signalId: crate::Zenject::BindingId,
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -602,10 +590,8 @@ impl crate::Zenject::SignalBus {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -625,13 +611,11 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeInternal_SignalSubscriptionId_Action_1_2(
+    pub fn SubscribeInternal_SignalSubscriptionId_Gc2(
         &mut self,
         id: crate::Zenject::SignalSubscriptionId,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -642,10 +626,8 @@ impl crate::Zenject::SignalBus {
                         (
                             crate::Zenject::SignalSubscriptionId,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -665,15 +647,13 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SubscribeInternal_Type_Il2CppObject_Il2CppObject_Action_1_0(
+    pub fn SubscribeInternal_Type_Il2CppObject_Il2CppObject_Gc0(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         token: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -690,10 +670,8 @@ impl crate::Zenject::SignalBus {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -744,9 +722,9 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Subscribe_Action_1_1<TSignal>(
+    pub fn Subscribe_Gc1<TSignal>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -757,7 +735,7 @@ impl crate::Zenject::SignalBus {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                        (quest_hook::libil2cpp::Gc<TSignal>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Subscribe")
@@ -774,13 +752,11 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Subscribe_Type_Action_1_2(
+    pub fn Subscribe_Type_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -791,10 +767,8 @@ impl crate::Zenject::SignalBus {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -1031,10 +1005,10 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryUnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
+    pub fn TryUnsubscribeId_Il2CppObject_Gc3<TSignal>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1049,7 +1023,7 @@ impl crate::Zenject::SignalBus {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                            quest_hook::libil2cpp::Gc<TSignal>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -1101,14 +1075,12 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryUnsubscribeId_Type_Il2CppObject_Action_1_2(
+    pub fn TryUnsubscribeId_Type_Il2CppObject_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1122,10 +1094,8 @@ impl crate::Zenject::SignalBus {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -1175,9 +1145,9 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryUnsubscribe_Action_1_3<TSignal>(
+    pub fn TryUnsubscribe_Gc3<TSignal>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1188,7 +1158,7 @@ impl crate::Zenject::SignalBus {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                        (quest_hook::libil2cpp::Gc<TSignal>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("TryUnsubscribe")
@@ -1235,13 +1205,11 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryUnsubscribe_Type_Action_1_2(
+    pub fn TryUnsubscribe_Type_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1252,10 +1220,8 @@ impl crate::Zenject::SignalBus {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -1311,10 +1277,10 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
+    pub fn UnsubscribeId_Il2CppObject_Gc3<TSignal>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1329,7 +1295,7 @@ impl crate::Zenject::SignalBus {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                            quest_hook::libil2cpp::Gc<TSignal>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -1381,14 +1347,12 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UnsubscribeId_Type_Il2CppObject_Action_1_2(
+    pub fn UnsubscribeId_Type_Il2CppObject_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1402,10 +1366,8 @@ impl crate::Zenject::SignalBus {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -1555,9 +1517,9 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Unsubscribe_Action_1_3<TSignal>(
+    pub fn Unsubscribe_Gc3<TSignal>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+        callback: quest_hook::libil2cpp::Gc<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1568,7 +1530,7 @@ impl crate::Zenject::SignalBus {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
+                        (quest_hook::libil2cpp::Gc<TSignal>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Unsubscribe")
@@ -1615,13 +1577,11 @@ impl crate::Zenject::SignalBus {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Unsubscribe_Type_Action_1_2(
+    pub fn Unsubscribe_Type_Gc2(
         &mut self,
         signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1632,10 +1592,8 @@ impl crate::Zenject::SignalBus {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         ),
@@ -1720,9 +1678,7 @@ impl crate::Zenject::SignalBus {
     pub fn _ctor(
         &mut self,
         signalDeclarations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         >,
         parentBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
         zenjectSettings: quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,
@@ -1741,9 +1697,7 @@ impl crate::Zenject::SignalBus {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::ZenjectSettings>,

@@ -13,18 +13,14 @@ pub struct LevelFailedTextOverride {
     pub _beatmapLevelPacks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPackSO>,
             >,
         >,
     >,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
-                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
             >,
         >,
     >,

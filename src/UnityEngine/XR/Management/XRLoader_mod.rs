@@ -81,11 +81,7 @@ impl crate::UnityEngine::XR::Management::XRLoader {
         &mut self,
         buildingPlayer: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::GraphicsDeviceType,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::GraphicsDeviceType>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -94,9 +90,7 @@ impl crate::UnityEngine::XR::Management::XRLoader {
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Rendering::GraphicsDeviceType,
-                            >,
+                            crate::UnityEngine::Rendering::GraphicsDeviceType,
                         >,
                         1usize,
                     >("GetSupportedGraphicsDeviceTypes")
@@ -109,9 +103,7 @@ impl crate::UnityEngine::XR::Management::XRLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::Rendering::GraphicsDeviceType,
-            >,
+            crate::UnityEngine::Rendering::GraphicsDeviceType,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (buildingPlayer))? };
         Ok(__cordl_ret.into())
     }

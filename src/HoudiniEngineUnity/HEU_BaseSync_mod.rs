@@ -10,17 +10,13 @@ pub struct HEU_BaseSync {
     pub _syncing: bool,
     pub _deleteParent: bool,
     pub _generatedOutputs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
     pub _outputCacheDirectory: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _outputCacheFilePaths: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _generateOptions: crate::HoudiniEngineUnity::HEU_GenerateOptions,
     pub _log: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -368,11 +364,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         instancerBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferInstancer>,
         >,
         loadData: quest_hook::libil2cpp::Gc<
             crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData,
@@ -386,10 +378,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -454,10 +444,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
         >,
         idBuffersMap: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -471,11 +459,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
                                 crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-                                    >,
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferBase,
                                 >,
                             >,
                         ),
@@ -538,10 +524,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
         >,
         idBuffersMap: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
         >,
         instanceRootTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -556,11 +540,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
                                 crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferBase,
-                                    >,
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferBase,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -589,9 +571,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         meshBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -602,10 +582,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
                                 >,
                             >,
                         ),
@@ -659,11 +637,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
         &mut self,
         cookNodeId: i32,
         terrainBuffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -674,10 +648,8 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
                                 >,
                             >,
                         ),

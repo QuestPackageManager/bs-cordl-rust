@@ -12,9 +12,7 @@ pub struct PlatformAuthenticationTokenProvider {
     pub _platform: crate::GlobalNamespace::AuthenticationToken_Platform,
     pub _cachedXPlatformAccessToken: crate::GlobalNamespace::XPlatformAccessTokenData,
     pub _xPlatformAccessTokenTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
-        >,
+        crate::GlobalNamespace::XPlatformAccessTokenData,
     >,
     pub _xPlatformTokenRetryDelayExpiration: f32,
 }
@@ -57,11 +55,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -70,9 +64,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::AuthenticationToken,
-                            >,
+                            crate::GlobalNamespace::AuthenticationToken,
                         >,
                         0usize,
                     >("GetAuthenticationToken")
@@ -85,9 +77,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::AuthenticationToken,
-            >,
+            crate::GlobalNamespace::AuthenticationToken,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -124,11 +114,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
         cancellationToken: crate::System::Threading::CancellationToken,
         skipCacheRead: bool,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -137,9 +123,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     .find_method::<
                         (crate::System::Threading::CancellationToken, bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::XPlatformAccessTokenData,
-                            >,
+                            crate::GlobalNamespace::XPlatformAccessTokenData,
                         >,
                         2usize,
                     >("GetXPlatformAccessToken")
@@ -152,9 +136,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (cancellationToken, skipCacheRead))?
         };
@@ -176,11 +158,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -189,9 +167,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::XPlatformAccessTokenData,
-                            >,
+                            crate::GlobalNamespace::XPlatformAccessTokenData,
                         >,
                         1usize,
                     >("RequestXPlatformAccessToken")
@@ -204,9 +180,7 @@ impl crate::GlobalNamespace::PlatformAuthenticationTokenProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

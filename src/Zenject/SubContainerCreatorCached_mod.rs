@@ -43,9 +43,7 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorCached {
 impl crate::Zenject::SubContainerCreatorCached {
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
-        >,
+        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -56,11 +54,7 @@ impl crate::Zenject::SubContainerCreatorCached {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Zenject::TypeValuePair,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,

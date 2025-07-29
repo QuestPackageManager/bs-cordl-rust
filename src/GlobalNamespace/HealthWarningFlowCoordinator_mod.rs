@@ -48,10 +48,8 @@ pub struct HealthWarningFlowCoordinator {
     >,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     pub _viewControllerTitles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
     pub _openedWithLanguage: crate::BGLib::Polyglot::Language,

@@ -17,12 +17,10 @@ pub struct MultiplayerModeSelectionViewController {
         crate::GlobalNamespace::INetworkConfig,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-            >,
-            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController,
         >,
+        crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerModeSelectionViewController")]
@@ -282,12 +280,10 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-                >,
-                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
             >,
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -296,12 +292,10 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-                                >,
-                                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
                             >,
+                            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -322,12 +316,10 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-                >,
-                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
             >,
+            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -336,12 +328,10 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerModeSelectionViewController,
-                                >,
-                                crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerModeSelectionViewController,
                             >,
+                            crate::GlobalNamespace::MultiplayerModeSelectionViewController_MenuButton,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

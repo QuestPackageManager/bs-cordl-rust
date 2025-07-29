@@ -4,34 +4,20 @@
 pub struct SpriteAsyncLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lruCache: quest_hook::libil2cpp::Gc<
-        crate::BGLib::DotnetExtension::Collections::LRUCache_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _referenceCountingCache: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ReferenceCountingCache_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Threading::Tasks::Task_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     >,
     pub _loadFunc: quest_hook::libil2cpp::Gc<
-        crate::System::Func_3<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Threading::CancellationToken,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Threading::Tasks::Task_1<
-                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Threading::CancellationToken,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     >,
     pub _destroyFunc: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
 #[cfg(feature = "cordl_class_SpriteAsyncLoader")]
@@ -117,9 +103,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
     pub fn DestroySpriteTask(
         &mut self,
         spriteTask: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -128,9 +112,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -186,11 +168,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -199,9 +177,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                         >,
                         1usize,
                     >("LoadSpriteAsync")
@@ -214,28 +190,20 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (path))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         loadFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::System::Threading::CancellationToken,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::CancellationToken,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
             >,
         >,
         destroyFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
         cacheSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -245,16 +213,12 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
             .invoke_void(".ctor", (loadFunc, destroyFunc, cacheSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn UnloadSprite_IReferenceCountingCache_2_Il2CppString1(
+    pub fn UnloadSprite_Gc_Il2CppString1(
         &mut self,
         cache: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IReferenceCountingCache_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
             >,
         >,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -266,15 +230,11 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IReferenceCountingCache_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<
-                                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -326,20 +286,14 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
     pub fn _ctor(
         &mut self,
         loadFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::System::Threading::CancellationToken,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::Tasks::Task_1<
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::CancellationToken,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
             >,
         >,
         destroyFunc: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         >,
         cacheSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -350,22 +304,16 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    crate::System::Threading::CancellationToken,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task_1<
-                                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::System::Threading::CancellationToken,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                             >,
                             i32,
                         ),

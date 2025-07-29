@@ -8,9 +8,7 @@ pub struct InvokableCall_4<
     T4: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::Events::BaseInvokableCall,
-    pub Delegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Events::UnityAction_4<T1, T2, T3, T4>,
-    >,
+    pub Delegate: quest_hook::libil2cpp::Gc<T1, T2, T3, T4>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
     __cordl_phantom_T2: std::marker::PhantomData<T2>,
     __cordl_phantom_T3: std::marker::PhantomData<T3>,

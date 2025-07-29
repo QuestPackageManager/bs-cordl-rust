@@ -443,11 +443,11 @@ impl<
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
 for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
     > {
         todo!()
@@ -457,11 +457,11 @@ for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
 for crate::IntervalTree::RangeValuePair_2<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
     > {
         todo!()

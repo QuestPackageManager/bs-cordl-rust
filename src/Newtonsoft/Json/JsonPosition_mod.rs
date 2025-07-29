@@ -100,11 +100,7 @@ for crate::Newtonsoft::Json::JsonPosition {
 #[cfg(feature = "Newtonsoft+Json+JsonPosition")]
 impl crate::Newtonsoft::Json::JsonPosition {
     pub fn BuildPath(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Newtonsoft::Json::JsonPosition,
-            >,
-        >,
+        positions: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonPosition>,
         currentPosition: crate::System::Nullable_1<crate::Newtonsoft::Json::JsonPosition>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -116,9 +112,7 @@ impl crate::Newtonsoft::Json::JsonPosition {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Newtonsoft::Json::JsonPosition,
-                                >,
+                                crate::Newtonsoft::Json::JsonPosition,
                             >,
                             crate::System::Nullable_1<
                                 crate::Newtonsoft::Json::JsonPosition,

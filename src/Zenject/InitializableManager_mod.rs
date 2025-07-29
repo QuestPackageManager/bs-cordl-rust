@@ -4,11 +4,7 @@
 pub struct InitializableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _initializables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::InitializableManager_InitializableInfo,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::InitializableManager_InitializableInfo>,
     >,
     pub _hasInitialized: bool,
 }
@@ -124,18 +120,12 @@ impl crate::Zenject::InitializableManager {
     }
     pub fn New(
         initializables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -210,18 +200,12 @@ impl crate::Zenject::InitializableManager {
     pub fn _ctor(
         &mut self,
         initializables: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::ModestTree::Util::ValuePair_2<
-                        quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        i32,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -232,18 +216,12 @@ impl crate::Zenject::InitializableManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IInitializable>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::ModestTree::Util::ValuePair_2<
-                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                            i32,
-                                        >,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    i32,
                                 >,
                             >,
                         ),

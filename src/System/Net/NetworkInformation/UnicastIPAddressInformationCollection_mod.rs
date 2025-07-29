@@ -6,10 +6,8 @@
 pub struct UnicastIPAddressInformationCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub addresses: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::ObjectModel::Collection_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
         >,
     >,
 }
@@ -179,10 +177,8 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
             >,
         >,
     > {
@@ -193,10 +189,8 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
                             >,
                         >,
                         0usize,
@@ -210,10 +204,8 @@ impl crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollecti
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -383,78 +375,6 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollectio
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsRef<
-    crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsMut<
-    crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::ICollection_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -465,6 +385,78 @@ for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollectio
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

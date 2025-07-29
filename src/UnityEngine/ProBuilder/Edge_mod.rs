@@ -171,24 +171,17 @@ impl crate::UnityEngine::ProBuilder::Edge {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Contains_i32_Dictionary_2_2(
+    pub fn Contains_i32_Gc2(
         &mut self,
         index: i32,
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<i32, i32>),
                         bool,
                         2usize,
                     >("Contains")
@@ -231,12 +224,10 @@ impl crate::UnityEngine::ProBuilder::Edge {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Equals_Edge_Dictionary_2_2(
+    pub fn Equals_Edge_Gc2(
         &mut self,
         other: crate::UnityEngine::ProBuilder::Edge,
-        lookup: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
+        lookup: quest_hook::libil2cpp::Gc<i32, i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -245,9 +236,7 @@ impl crate::UnityEngine::ProBuilder::Edge {
                     .find_method::<
                         (
                             crate::UnityEngine::ProBuilder::Edge,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
                         ),
                         bool,
                         2usize,
@@ -309,14 +298,8 @@ impl crate::UnityEngine::ProBuilder::Edge {
         Ok(__cordl_ret.into())
     }
     pub fn GetIndices(
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -325,13 +308,9 @@ impl crate::UnityEngine::ProBuilder::Edge {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -619,20 +598,20 @@ impl crate::UnityEngine::ProBuilder::Edge {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Edge")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>>
 for crate::UnityEngine::ProBuilder::Edge {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Edge")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>>
 for crate::UnityEngine::ProBuilder::Edge {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Edge> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge> {
         todo!()
     }
 }

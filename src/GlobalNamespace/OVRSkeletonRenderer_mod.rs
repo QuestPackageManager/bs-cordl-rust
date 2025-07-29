@@ -20,17 +20,13 @@ pub struct OVRSkeletonRenderer {
         crate::UnityEngine::Material,
     >,
     pub _boneVisualizations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization,
         >,
     >,
     pub _capsuleVisualizations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization,
         >,
     >,
     pub _ovrSkeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,

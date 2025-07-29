@@ -161,9 +161,7 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
             crate::UnityEngine::TextCore::Text::FontAsset,
         >,
         fontAssets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
         >,
         includeFallbacks: bool,
         fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
@@ -183,10 +181,8 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                                 crate::UnityEngine::TextCore::Text::FontAsset,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::TextCore::Text::FontAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::FontAsset,
                                 >,
                             >,
                             bool,

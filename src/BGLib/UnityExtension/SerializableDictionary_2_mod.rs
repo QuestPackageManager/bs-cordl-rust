@@ -5,13 +5,9 @@ pub struct SerializableDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
-    pub keys: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<TKey>,
-    >,
-    pub values: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<TValue>,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub keys: quest_hook::libil2cpp::Gc<TKey>,
+    pub values: quest_hook::libil2cpp::Gc<TValue>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -60,7 +56,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::BGLib::UnityExtension::SerializableDictionary_2<TKey, TValue> {
-    type Target = crate::System::Collections::Generic::Dictionary_2<TKey, TValue>;
+    type Target = quest_hook::libil2cpp::Gc<TKey, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

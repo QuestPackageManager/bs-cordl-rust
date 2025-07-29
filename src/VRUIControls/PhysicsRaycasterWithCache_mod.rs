@@ -4,9 +4,7 @@
 pub struct PhysicsRaycasterWithCache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedRaycasts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
-        >,
+        crate::VRUIControls::PhysicsRaycasterWithCache_CachedRaycast,
     >,
     pub _lastFrameCount: i32,
 }

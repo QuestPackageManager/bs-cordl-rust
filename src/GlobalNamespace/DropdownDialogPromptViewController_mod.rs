@@ -15,7 +15,7 @@ pub struct DropdownDialogPromptViewController {
         >,
     >,
     pub _didFinishAction: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
+        crate::System::ValueTuple_2<i32, i32>,
     >,
     pub _dropdownValues: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
             >,
         >,
         didFinishAction: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
+            crate::System::ValueTuple_2<i32, i32>,
         >,
         buttonTexts: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -171,9 +171,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::System::ValueTuple_2<i32, i32>,
-                                >,
+                                crate::System::ValueTuple_2<i32, i32>,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
@@ -266,9 +264,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
     }
     pub fn add__didFinishAction(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -276,9 +272,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::System::ValueTuple_2<i32, i32>,
-                            >,
+                            crate::System::ValueTuple_2<i32, i32>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -315,9 +309,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
     }
     pub fn remove__didFinishAction(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::System::ValueTuple_2<i32, i32>>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -325,9 +317,7 @@ impl crate::GlobalNamespace::DropdownDialogPromptViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::System::ValueTuple_2<i32, i32>,
-                            >,
+                            crate::System::ValueTuple_2<i32, i32>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

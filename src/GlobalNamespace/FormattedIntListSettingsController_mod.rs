@@ -9,12 +9,10 @@ pub struct FormattedIntListSettingsController {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub valueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::FormattedIntListSettingsController,
-            >,
-            i32,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FormattedIntListSettingsController,
         >,
+        i32,
     >,
     pub _value: i32,
 }
@@ -195,12 +193,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
     pub fn add_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::FormattedIntListSettingsController,
-                >,
-                i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::FormattedIntListSettingsController,
             >,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -209,12 +205,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FormattedIntListSettingsController,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FormattedIntListSettingsController,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -235,12 +229,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
     pub fn remove_valueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::FormattedIntListSettingsController,
-                >,
-                i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::FormattedIntListSettingsController,
             >,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -249,12 +241,10 @@ impl crate::GlobalNamespace::FormattedIntListSettingsController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FormattedIntListSettingsController,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::FormattedIntListSettingsController,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

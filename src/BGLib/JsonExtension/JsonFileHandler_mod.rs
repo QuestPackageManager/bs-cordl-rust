@@ -223,9 +223,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
         beforeSerialize: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -246,10 +244,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                                 crate::Newtonsoft::Json::JsonSerializerSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Newtonsoft::Json::JsonTextWriter,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonTextWriter,
                                 >,
                             >,
                         ),
@@ -277,9 +273,7 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
             crate::Newtonsoft::Json::JsonSerializerSettings,
         >,
         beforeSerialize: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonTextWriter>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -298,10 +292,8 @@ impl crate::BGLib::JsonExtension::JsonFileHandler {
                                 crate::Newtonsoft::Json::JsonSerializerSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::Newtonsoft::Json::JsonTextWriter,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonTextWriter,
                                 >,
                             >,
                         ),

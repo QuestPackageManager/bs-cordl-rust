@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphyDebugger {
-    __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger>,
     >,
     pub m_debugPackets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
     >,
     pub m_fpsMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Fps::G_FpsMonitor>,
     pub m_ramMonitor: quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::Ram::G_RamMonitor>,
@@ -37,7 +35,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyDebugger 
 }
 #[cfg(feature = "Tayx+Graphy+GraphyDebugger")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyDebugger {
-    type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -148,6 +146,120 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn AddNewDebugPacket_i32_Gc_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Action2(
+        &mut self,
+        newId: i32,
+        newDebugConditions: quest_hook::libil2cpp::Gc<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
+        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
+        newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        newDebugBreak: bool,
+        newCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+                            >,
+                            crate::Tayx::Graphy::GraphyDebugger_MessageType,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("AddNewDebugPacket")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddNewDebugPacket", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        newId,
+                        newDebugConditions,
+                        newMessageType,
+                        newMessage,
+                        newDebugBreak,
+                        newCallback,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddNewDebugPacket_i32_Gc_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Gc4(
+        &mut self,
+        newId: i32,
+        newDebugConditions: quest_hook::libil2cpp::Gc<
+            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+        >,
+        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
+        newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        newDebugBreak: bool,
+        newCallbacks: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
+                            >,
+                            crate::Tayx::Graphy::GraphyDebugger_MessageType,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >("AddNewDebugPacket")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddNewDebugPacket", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        newId,
+                        newDebugConditions,
+                        newMessageType,
+                        newMessage,
+                        newDebugBreak,
+                        newCallbacks,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Action1(
         &mut self,
         newId: i32,
@@ -199,7 +311,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Il2CppString__cordl_bool_List_1_3(
+    pub fn AddNewDebugPacket_i32_GraphyDebugger_DebugCondition_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Gc3(
         &mut self,
         newId: i32,
         newDebugCondition: crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
@@ -207,9 +319,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         newDebugBreak: bool,
         newCallbacks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -226,9 +336,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Action>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -249,132 +357,6 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                     (
                         newId,
                         newDebugCondition,
-                        newMessageType,
-                        newMessage,
-                        newDebugBreak,
-                        newCallbacks,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_Il2CppString__cordl_bool_Action2(
-        &mut self,
-        newId: i32,
-        newDebugConditions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-            >,
-        >,
-        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
-        newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        newDebugBreak: bool,
-        newCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-                                >,
-                            >,
-                            crate::Tayx::Graphy::GraphyDebugger_MessageType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("AddNewDebugPacket")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddNewDebugPacket", 6usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        newId,
-                        newDebugConditions,
-                        newMessageType,
-                        newMessage,
-                        newDebugBreak,
-                        newCallback,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn AddNewDebugPacket_i32_List_1_GraphyDebugger_MessageType_Il2CppString__cordl_bool_List_1_4(
-        &mut self,
-        newId: i32,
-        newDebugConditions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-            >,
-        >,
-        newMessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
-        newMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        newDebugBreak: bool,
-        newCallbacks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-                                >,
-                            >,
-                            crate::Tayx::Graphy::GraphyDebugger_MessageType,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Action>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("AddNewDebugPacket")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AddNewDebugPacket", 6usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        newId,
-                        newDebugConditions,
                         newMessageType,
                         newMessage,
                         newDebugBreak,
@@ -470,11 +452,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
         packetId: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -484,10 +462,8 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
                             >,
                         >,
                         1usize,
@@ -501,11 +477,7 @@ impl crate::Tayx::Graphy::GraphyDebugger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Tayx::Graphy::GraphyDebugger_DebugPacket,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyDebugger_DebugPacket>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (packetId))? };
         Ok(__cordl_ret.into())
     }
@@ -1001,9 +973,7 @@ pub struct GraphyDebugger_DebugPacket {
     pub ExecuteSleepTime: f32,
     pub ConditionEvaluation: crate::Tayx::Graphy::GraphyDebugger_ConditionEvaluation,
     pub DebugConditions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
-        >,
+        crate::Tayx::Graphy::GraphyDebugger_DebugCondition,
     >,
     pub MessageType: crate::Tayx::Graphy::GraphyDebugger_MessageType,
     pub Message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1014,9 +984,7 @@ pub struct GraphyDebugger_DebugPacket {
     pub DebugBreak: bool,
     pub UnityEvents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityEvent>,
     pub Callbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Action>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Action>,
     >,
     pub canBeChecked: bool,
     pub executed: bool,

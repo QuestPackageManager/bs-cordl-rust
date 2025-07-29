@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::LowLevel::FontEngine {
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontEngine")]
 impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
     pub fn GenericListToMarshallingArray<T>(
-        srcList: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
-        >,
+        srcList: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
         dstArray: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -58,9 +56,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<T>,
-                                >,
+                                quest_hook::libil2cpp::Gc<T>,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
@@ -156,9 +152,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         Ok(__cordl_ret.into())
     }
     pub fn GetGlyphPairAdjustmentRecords(
-        glyphIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u32>,
-        >,
+        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
         recordCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -173,9 +167,7 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<u32>,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
@@ -702,14 +694,10 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         padding: i32,
         packingMode: crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
         freeGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         >,
         usedGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         >,
         renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -727,14 +715,10 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                             i32,
                             crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::TextCore::GlyphRect,
-                                >,
+                                crate::UnityEngine::TextCore::GlyphRect,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::TextCore::GlyphRect,
-                                >,
+                                crate::UnityEngine::TextCore::GlyphRect,
                             >,
                             crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -862,20 +846,14 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
         Ok(__cordl_ret.into())
     }
     pub fn TryAddGlyphsToTexture(
-        glyphIndexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<u32>,
-        >,
+        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
         padding: i32,
         packingMode: crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
         freeGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         >,
         usedGlyphRects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::TextCore::GlyphRect,
-            >,
+            crate::UnityEngine::TextCore::GlyphRect,
         >,
         renderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
         texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -893,20 +871,14 @@ impl crate::UnityEngine::TextCore::LowLevel::FontEngine {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<u32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<u32>,
                             i32,
                             crate::UnityEngine::TextCore::LowLevel::GlyphPackingMode,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::TextCore::GlyphRect,
-                                >,
+                                crate::UnityEngine::TextCore::GlyphRect,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::TextCore::GlyphRect,
-                                >,
+                                crate::UnityEngine::TextCore::GlyphRect,
                             >,
                             crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,

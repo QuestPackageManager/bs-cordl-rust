@@ -7,9 +7,7 @@ pub struct HEU_HoudiniAssetRoot {
         crate::HoudiniEngineUnity::HEU_HoudiniAsset,
     >,
     pub _bakeTargets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_HoudiniAssetRoot")]

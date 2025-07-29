@@ -10,10 +10,8 @@ pub struct HSVPanelController {
         crate::GlobalNamespace::ColorHueSlider,
     >,
     pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            crate::UnityEngine::Color,
-            crate::GlobalNamespace::ColorChangeUIEventType,
-        >,
+        crate::UnityEngine::Color,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
     pub _hsvColor: crate::UnityEngine::Vector3,
 }
@@ -249,10 +247,8 @@ impl crate::GlobalNamespace::HSVPanelController {
     pub fn add_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::Color,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -261,10 +257,8 @@ impl crate::GlobalNamespace::HSVPanelController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::Color,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
-                            >,
+                            crate::UnityEngine::Color,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -306,10 +300,8 @@ impl crate::GlobalNamespace::HSVPanelController {
     pub fn remove_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                crate::UnityEngine::Color,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -318,10 +310,8 @@ impl crate::GlobalNamespace::HSVPanelController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                crate::UnityEngine::Color,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
-                            >,
+                            crate::UnityEngine::Color,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

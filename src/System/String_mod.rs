@@ -1081,9 +1081,7 @@ impl crate::System::String {
     pub fn Create<TState>(
         length: i32,
         state: TState,
-        action: quest_hook::libil2cpp::Gc<
-            crate::System::Buffers::SpanAction_2<char, TState>,
-        >,
+        action: quest_hook::libil2cpp::Gc<char, TState>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -1096,13 +1094,7 @@ impl crate::System::String {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            i32,
-                            TState,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Buffers::SpanAction_2<char, TState>,
-                            >,
-                        ),
+                        (i32, TState, quest_hook::libil2cpp::Gc<char, TState>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         3usize,
                     >("Create")
@@ -3265,12 +3257,10 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn JoinCore_IEnumerable_1_0<T>(
+    pub fn JoinCore_Gc0<T>(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         separatorLength: i32,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        values: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -3288,9 +3278,7 @@ impl crate::System::String {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         3usize,
@@ -3365,11 +3353,9 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_IEnumerable_1_3<T>(
+    pub fn Join_Il2CppString_Gc3<T>(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<T>,
-        >,
+        values: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >
@@ -3386,9 +3372,7 @@ impl crate::System::String {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         2usize,
@@ -3406,12 +3390,10 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (separator, values))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_IEnumerable_1_4(
+    pub fn Join_Il2CppString_Gc4(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3426,10 +3408,8 @@ impl crate::System::String {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         ),
@@ -5202,20 +5182,14 @@ impl crate::System::String {
     }
     pub fn System_Collections_Generic_IEnumerable_System_Char__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<char>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<char>,
-                        >,
+                        quest_hook::libil2cpp::Gc<char>,
                         0usize,
                     >(
                         "System.Collections.Generic.IEnumerable<System.Char>.GetEnumerator",
@@ -5229,9 +5203,9 @@ impl crate::System::String {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<char>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<char> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -7013,22 +6987,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::String {
     }
 }
 #[cfg(feature = "System+String")]
-impl AsRef<crate::System::Collections::Generic::IEnumerable_1<char>>
-for crate::System::String {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<char> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+String")]
-impl AsMut<crate::System::Collections::Generic::IEnumerable_1<char>>
-for crate::System::String {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<char> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+String")]
 impl AsRef<crate::System::Collections::IEnumerable> for crate::System::String {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
@@ -7065,34 +7023,6 @@ impl AsMut<crate::System::IComparable> for crate::System::String {
     }
 }
 #[cfg(feature = "System+String")]
-impl AsRef<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::String {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+String")]
-impl AsMut<
-    crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::String {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+String")]
 impl AsRef<crate::System::IConvertible> for crate::System::String {
     fn as_ref(&self) -> &crate::System::IConvertible {
         unsafe { std::mem::transmute(self) }
@@ -7105,14 +7035,26 @@ impl AsMut<crate::System::IConvertible> for crate::System::String {
     }
 }
 #[cfg(feature = "System+String")]
+impl AsRef<quest_hook::libil2cpp::Gc<char>> for crate::System::String {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<quest_hook::libil2cpp::Gc<char>> for crate::System::String {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 > for crate::System::String {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -7120,13 +7062,41 @@ impl AsRef<
 }
 #[cfg(feature = "System+String")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 > for crate::System::String {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::String {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+String")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::String {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }

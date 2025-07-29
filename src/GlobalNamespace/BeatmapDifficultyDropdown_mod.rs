@@ -4,17 +4,11 @@
 pub struct BeatmapDifficultyDropdown {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _simpleTextDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<i32>,
-    >,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32>,
     pub _beatmapDifficultyData: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Tuple_2<
-                    crate::GlobalNamespace::BeatmapDifficultyMask,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                >,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapDifficultyMask,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
     pub _includeAllDifficulties_k__BackingField: bool,
@@ -237,14 +231,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didSelectCellWithIdxEvent")
@@ -265,13 +259,9 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::BeatmapDifficultyMask,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapDifficultyMask,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -282,14 +272,10 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDifficultyMask,
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Tuple_2<
-                                        crate::GlobalNamespace::BeatmapDifficultyMask,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -304,13 +290,9 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Tuple_2<
-                        crate::GlobalNamespace::BeatmapDifficultyMask,
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapDifficultyMask,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -334,14 +316,14 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        value: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didSelectCellWithIdxEvent")

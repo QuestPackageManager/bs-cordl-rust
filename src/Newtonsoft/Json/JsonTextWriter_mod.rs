@@ -18,9 +18,7 @@ pub struct JsonTextWriter {
     pub _writeBuffer: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,
     >,
-    pub _arrayPool: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::IArrayPool_1<char>,
-    >,
+    pub _arrayPool: quest_hook::libil2cpp::Gc<char>,
     pub _indentChars: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<char>,
     >,
@@ -5530,18 +5528,14 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
     }
     pub fn get_ArrayPool(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IArrayPool_1<char>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Newtonsoft::Json::IArrayPool_1<char>,
-                        >,
+                        quest_hook::libil2cpp::Gc<char>,
                         0usize,
                     >("get_ArrayPool")
                     .unwrap_or_else(|e| {
@@ -5552,9 +5546,9 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::IArrayPool_1<char>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<char> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_Base64Encoder(
@@ -5656,16 +5650,14 @@ impl crate::Newtonsoft::Json::JsonTextWriter {
     }
     pub fn set_ArrayPool(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::IArrayPool_1<char>>,
+        value: quest_hook::libil2cpp::Gc<char>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::Newtonsoft::Json::IArrayPool_1<char>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<char>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_ArrayPool")

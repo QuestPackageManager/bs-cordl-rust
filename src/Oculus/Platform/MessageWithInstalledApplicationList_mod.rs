@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithInstalledApplicationList {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::InstalledApplicationList,
         >,
@@ -30,7 +30,7 @@ for crate::Oculus::Platform::MessageWithInstalledApplicationList {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithInstalledApplicationList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithInstalledApplicationList {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::InstalledApplicationList,
         >,

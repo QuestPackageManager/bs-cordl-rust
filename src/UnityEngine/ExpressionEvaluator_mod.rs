@@ -463,9 +463,7 @@ impl crate::UnityEngine::ExpressionEvaluator {
     }
     pub fn NeedToPop(
         operatorStack: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Stack_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         newOperator: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ExpressionEvaluator_Operator,
@@ -478,10 +476,8 @@ impl crate::UnityEngine::ExpressionEvaluator {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Stack_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

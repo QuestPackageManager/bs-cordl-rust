@@ -546,9 +546,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -558,10 +556,8 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Converters::IXmlNode,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Converters::IXmlNode,
                             >,
                         >,
                         0usize,
@@ -575,9 +571,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

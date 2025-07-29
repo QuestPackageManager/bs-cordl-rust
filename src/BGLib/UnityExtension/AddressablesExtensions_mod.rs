@@ -76,9 +76,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
     }
     pub fn LoadContent<T>(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -89,9 +87,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("LoadContent")
                     .unwrap_or_else(|e| {
@@ -102,9 +98,9 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (label))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentAsync<T>(
@@ -112,13 +108,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
             crate::UnityEngine::AddressableAssets::IKeyEvaluator,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<T>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -132,13 +122,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                         (quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::AddressableAssets::IKeyEvaluator,
                         >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<T>,
-                                >,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
                         1usize,
                     >("LoadContentAsync")
                     .unwrap_or_else(|e| {
@@ -149,20 +133,16 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<T>,
-                >,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>> = unsafe {
+            cordl_method_info.invoke_unchecked((), (label))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn LoadContentOperation<T>(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+            quest_hook::libil2cpp::Gc<T>,
         >,
     >
     where
@@ -176,9 +156,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         >,
                         1usize,
                     >("LoadContentOperation")
@@ -191,7 +169,7 @@ impl crate::BGLib::UnityExtension::AddressablesExtensions {
                     })
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+            quest_hook::libil2cpp::Gc<T>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (label))? };
         Ok(__cordl_ret.into())
     }

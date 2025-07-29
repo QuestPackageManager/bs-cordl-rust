@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ControllerProfileInstaller {
-    __cordl_parent: crate::Zenject::Installer_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::BeatSaber::GameSettings::ControllerProfileInstaller,
         >,
@@ -30,7 +30,7 @@ for crate::BeatSaber::GameSettings::ControllerProfileInstaller {
 }
 #[cfg(feature = "BeatSaber+GameSettings+ControllerProfileInstaller")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::ControllerProfileInstaller {
-    type Target = crate::Zenject::Installer_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::BeatSaber::GameSettings::ControllerProfileInstaller,
         >,

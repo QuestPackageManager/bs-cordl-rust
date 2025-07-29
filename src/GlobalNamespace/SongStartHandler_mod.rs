@@ -13,15 +13,11 @@ pub struct SongStartHandler {
         crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     >,
     pub _readyPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub _started: bool,
     pub _startTime: i64,
-    pub setSongStartSyncTimeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<i64>,
-    >,
+    pub setSongStartSyncTimeEvent: quest_hook::libil2cpp::Gc<i64>,
 }
 #[cfg(feature = "cordl_class_SongStartHandler")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SongStartHandler {
@@ -335,14 +331,14 @@ impl crate::GlobalNamespace::SongStartHandler {
     }
     pub fn add_setSongStartSyncTimeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
+        value: quest_hook::libil2cpp::Gc<i64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
+                        (quest_hook::libil2cpp::Gc<i64>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_setSongStartSyncTimeEvent")
@@ -378,14 +374,14 @@ impl crate::GlobalNamespace::SongStartHandler {
     }
     pub fn remove_setSongStartSyncTimeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
+        value: quest_hook::libil2cpp::Gc<i64>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
+                        (quest_hook::libil2cpp::Gc<i64>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_setSongStartSyncTimeEvent")

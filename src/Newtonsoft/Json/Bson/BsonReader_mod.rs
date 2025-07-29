@@ -5,10 +5,8 @@ pub struct BsonReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _reader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     pub _stack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::Bson::BsonReader_ContainerContext,
         >,
     >,
     pub _byteBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,

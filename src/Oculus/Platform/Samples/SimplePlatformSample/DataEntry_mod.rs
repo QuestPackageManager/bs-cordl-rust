@@ -167,10 +167,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn achievementDefinitionCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementDefinitionList,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,10 +178,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementDefinitionList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementDefinitionList,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -231,10 +227,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn achievementProgressCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::AchievementProgressList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::AchievementProgressList,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -244,10 +238,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::AchievementProgressList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::AchievementProgressList,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -466,9 +458,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn getFriendsCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -477,10 +467,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserList,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -604,9 +592,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn getUserCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -615,10 +601,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::User,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::User,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -665,10 +649,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn leaderboardGetCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LeaderboardEntryList,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -678,10 +660,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LeaderboardEntryList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LeaderboardEntryList,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -809,9 +789,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     pub fn userProofCallback(
         &mut self,
         msg: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -820,10 +798,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserProof,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserProof,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

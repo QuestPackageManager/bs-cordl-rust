@@ -173,10 +173,8 @@ impl crate::BeatSaber::AvatarCore::Avatar {
     pub fn UpdateAvatarFromOptionalDataList(
         &mut self,
         optionalData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                u32,
-                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-            >,
+            u32,
+            crate::BeatSaber::AvatarCore::OptionalAvatarData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -185,10 +183,8 @@ impl crate::BeatSaber::AvatarCore::Avatar {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                u32,
-                                crate::BeatSaber::AvatarCore::OptionalAvatarData,
-                            >,
+                            u32,
+                            crate::BeatSaber::AvatarCore::OptionalAvatarData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

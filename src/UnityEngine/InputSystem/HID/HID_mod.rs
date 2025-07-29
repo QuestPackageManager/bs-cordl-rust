@@ -996,14 +996,10 @@ pub struct HID_HIDDeviceDescriptorBuilder {
     pub m_CurrentReportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
     pub m_CurrentReportOffsetInBits: i32,
     pub m_Elements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
-        >,
+        crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
     >,
     pub m_Collections: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
-        >,
+        crate::UnityEngine::InputSystem::HID::HID_HIDCollectionDescriptor,
     >,
     pub m_InputReportSize: i32,
     pub m_OutputReportSize: i32,

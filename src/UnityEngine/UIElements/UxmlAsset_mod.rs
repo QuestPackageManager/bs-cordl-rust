@@ -8,9 +8,7 @@ pub struct UxmlAsset {
     pub m_OrderInDocument: i32,
     pub m_ParentId: i32,
     pub m_Properties: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlAsset")]

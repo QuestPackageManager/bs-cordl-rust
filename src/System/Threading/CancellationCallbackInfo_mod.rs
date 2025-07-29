@@ -4,9 +4,7 @@
 pub struct CancellationCallbackInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Callback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub StateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub TargetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -105,9 +103,7 @@ impl crate::System::Threading::CancellationCallbackInfo {
     }
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -134,9 +130,7 @@ impl crate::System::Threading::CancellationCallbackInfo {
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -153,10 +147,8 @@ impl crate::System::Threading::CancellationCallbackInfo {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

@@ -174,20 +174,20 @@ impl crate::UnityEngine::Rendering::CoreCameraValues {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CoreCameraValues>>
 for crate::UnityEngine::Rendering::CoreCameraValues {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CoreCameraValues> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+CoreCameraValues")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::CoreCameraValues>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CoreCameraValues>>
 for crate::UnityEngine::Rendering::CoreCameraValues {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::CoreCameraValues,
     > {
         todo!()

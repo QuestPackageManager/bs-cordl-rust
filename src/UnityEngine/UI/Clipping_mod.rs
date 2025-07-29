@@ -40,9 +40,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::Clipping {
 impl crate::UnityEngine::UI::Clipping {
     pub fn FindCullAndClipWorldRect(
         rectMaskParents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::RectMask2D>,
         >,
         validRect: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
@@ -53,10 +51,8 @@ impl crate::UnityEngine::UI::Clipping {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UI::RectMask2D,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::RectMask2D,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<bool>,

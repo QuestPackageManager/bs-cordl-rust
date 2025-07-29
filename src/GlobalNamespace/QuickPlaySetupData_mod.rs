@@ -104,17 +104,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
 pub struct QuickPlaySetupData_QuickPlaySongPacksOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub predefinedPackIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
         >,
     >,
     pub localizedCustomPacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack,
         >,
     >,
 }
@@ -219,9 +215,7 @@ pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack {
         >,
     >,
     pub packIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
 #[cfg(

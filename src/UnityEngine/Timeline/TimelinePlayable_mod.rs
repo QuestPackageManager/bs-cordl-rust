@@ -4,33 +4,23 @@
 pub struct TimelinePlayable {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_IntervalTree: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::IntervalTree_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
     >,
     pub m_ActiveClips: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
     >,
     pub m_CurrentListOfActiveClips: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
     >,
     pub m_ActiveBit: i32,
     pub m_EvaluateCallbacks: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Timeline::ITimelineEvaluateCallback,
         >,
     >,
     pub m_PlayableCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            crate::UnityEngine::Playables::Playable,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
+        crate::UnityEngine::Playables::Playable,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+TimelinePlayable")]
@@ -109,9 +99,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         timelinePlayable: crate::UnityEngine::Playables::Playable,
         tracks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         autoRebalance: bool,
@@ -126,10 +114,8 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                             crate::UnityEngine::Playables::PlayableGraph,
                             crate::UnityEngine::Playables::Playable,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::TrackAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TrackAsset,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -161,9 +147,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         timelinePlayable: crate::UnityEngine::Playables::Playable,
         tracks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         createOutputs: bool,
@@ -177,10 +161,8 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                             crate::UnityEngine::Playables::PlayableGraph,
                             crate::UnityEngine::Playables::Playable,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::TrackAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TrackAsset,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -209,9 +191,7 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
     pub fn Create(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         tracks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::TrackAsset>,
         >,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         autoRebalance: bool,
@@ -229,10 +209,8 @@ impl crate::UnityEngine::Timeline::TimelinePlayable {
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Timeline::TrackAsset,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::TrackAsset,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,

@@ -41,9 +41,7 @@ impl std::ops::DerefMut for crate::BeatSaber::AvatarCore::IAvatarPoseDataProvide
 impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     pub fn add_poseDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarPoseData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -51,9 +49,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::AvatarPoseData,
-                            >,
+                            crate::BeatSaber::AvatarCore::AvatarPoseData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -103,9 +99,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
     }
     pub fn remove_poseDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarPoseData>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -113,9 +107,7 @@ impl crate::BeatSaber::AvatarCore::IAvatarPoseDataProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::BeatSaber::AvatarCore::AvatarPoseData,
-                            >,
+                            crate::BeatSaber::AvatarCore::AvatarPoseData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

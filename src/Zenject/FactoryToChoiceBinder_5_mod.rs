@@ -8,7 +8,7 @@ pub struct FactoryToChoiceBinder_5<
     TParam4: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryFromBinder_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -84,7 +84,7 @@ for crate::Zenject::FactoryToChoiceBinder_5<
     TParam4,
     TContract,
 > {
-    type Target = crate::Zenject::FactoryFromBinder_5<
+    type Target = quest_hook::libil2cpp::Gc<
         TParam1,
         TParam2,
         TParam3,
@@ -154,15 +154,7 @@ impl<
     pub fn To<TConcrete>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TConcrete,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TConcrete>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -185,13 +177,11 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_5<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TConcrete,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TConcrete,
                         >,
                         0usize,
                     >("To")
@@ -204,28 +194,18 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TConcrete,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TConcrete,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ToSelf(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TContract,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -246,13 +226,11 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryFromBinder_5<
-                                TParam1,
-                                TParam2,
-                                TParam3,
-                                TParam4,
-                                TContract,
-                            >,
+                            TParam1,
+                            TParam2,
+                            TParam3,
+                            TParam4,
+                            TContract,
                         >,
                         0usize,
                     >("ToSelf")
@@ -265,13 +243,11 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryFromBinder_5<
-                TParam1,
-                TParam2,
-                TParam3,
-                TParam4,
-                TContract,
-            >,
+            TParam1,
+            TParam2,
+            TParam3,
+            TParam4,
+            TContract,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -4,9 +4,7 @@
 pub struct BpmTimeProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpmChangeDataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
-        >,
+        crate::GlobalNamespace::BpmTimeProcessor_BpmChangeData,
     >,
     pub currentBpmChangesDataIdx: i32,
 }
@@ -105,13 +103,11 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke_void(".ctor", (audioSaveData))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_IReadOnlyList_1_0(
+    pub fn New_f32_Gc0(
         startBpm: f32,
         events: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -121,14 +117,10 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
             .invoke_void(".ctor", (startBpm, events))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_f32_IReadOnlyList_1_1(
+    pub fn New_f32_Gc1(
         startBpm: f32,
         bpmEventsSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -188,14 +180,12 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_IReadOnlyList_1_0(
+    pub fn _ctor_f32_Gc0(
         &mut self,
         startBpm: f32,
         events: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,10 +197,8 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
                         (
                             f32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
                                 >,
                             >,
                         ),
@@ -230,15 +218,11 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_f32_IReadOnlyList_1_1(
+    pub fn _ctor_f32_Gc1(
         &mut self,
         startBpm: f32,
         bpmEventsSaveData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BpmChangeEventData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -249,10 +233,8 @@ impl crate::GlobalNamespace::BpmTimeProcessor {
                         (
                             f32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::BpmChangeEventData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::BpmChangeEventData,
                                 >,
                             >,
                         ),

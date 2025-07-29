@@ -17,9 +17,7 @@ pub struct UIDocument {
         crate::UnityEngine::UIElements::UIDocumentList,
     >,
     pub m_ChildrenContentCopy: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
     >,
     pub sourceAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualTreeAsset,

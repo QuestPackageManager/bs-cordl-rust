@@ -434,20 +434,20 @@ impl crate::UnityEngine::UIElements::Translate {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Translate")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Translate>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>>
 for crate::UnityEngine::UIElements::Translate {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Translate> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Translate")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Translate>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>>
 for crate::UnityEngine::UIElements::Translate {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Translate> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate> {
         todo!()
     }
 }

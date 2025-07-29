@@ -6,9 +6,7 @@ pub struct PlayerConnection {
     pub m_PlayerEditorConnectionEvents: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Networking::PlayerConnection::PlayerEditorConnectionEvents,
     >,
-    pub m_connectedPlayers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_connectedPlayers: quest_hook::libil2cpp::Gc<i32>,
     pub m_IsInitilized: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+PlayerConnection+PlayerConnection")]
@@ -275,10 +273,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         &mut self,
         messageId: crate::System::Guid,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -290,10 +286,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                         (
                             crate::System::Guid,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Events::UnityAction_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
                                 >,
                             >,
                         ),
@@ -315,18 +309,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn RegisterConnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RegisterConnection")
@@ -345,18 +335,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn RegisterDisconnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RegisterDisconnection")
@@ -441,10 +427,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
         &mut self,
         messageId: crate::System::Guid,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -456,10 +440,8 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
                         (
                             crate::System::Guid,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Events::UnityAction_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Networking::PlayerConnection::MessageEventArgs,
                                 >,
                             >,
                         ),
@@ -481,18 +463,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn UnregisterConnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UnregisterConnection")
@@ -511,18 +489,14 @@ impl crate::UnityEngine::Networking::PlayerConnection::PlayerConnection {
     }
     pub fn UnregisterDisconnection(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Events::UnityAction_1<i32>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Events::UnityAction_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UnregisterDisconnection")

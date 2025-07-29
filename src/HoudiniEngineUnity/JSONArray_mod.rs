@@ -4,9 +4,7 @@
 pub struct JSONArray {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
     pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
     >,
     pub _cordl_inline: bool,
 }
@@ -227,9 +225,7 @@ impl crate::HoudiniEngineUnity::JSONArray {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -239,10 +235,8 @@ impl crate::HoudiniEngineUnity::JSONArray {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::JSONNode,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::JSONNode,
                             >,
                         >,
                         0usize,
@@ -256,9 +250,7 @@ impl crate::HoudiniEngineUnity::JSONArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

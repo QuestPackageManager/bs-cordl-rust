@@ -9,9 +9,7 @@ pub struct VRGraphicRaycaster {
     >,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub _raycastResults: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-        >,
+        crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
     >,
     pub _curvedCanvasSettingsHelper: quest_hook::libil2cpp::Gc<
         crate::HMUI::CurvedCanvasSettingsHelper,
@@ -88,9 +86,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -103,9 +99,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -130,9 +124,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
         hitDistance: f32,
         curvedUIRadius: f32,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-            >,
+            crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -146,9 +138,7 @@ impl crate::VRUIControls::VRGraphicRaycaster {
                             f32,
                             f32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
-                                >,
+                                crate::VRUIControls::VRGraphicRaycaster_VRGraphicRaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

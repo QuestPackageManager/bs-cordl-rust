@@ -4,15 +4,11 @@
 pub struct XmlSchemaObjectTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub table: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::XmlSchemaObject>,
     >,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+XmlSchemaObjectTable")]
@@ -512,9 +508,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType {
 pub struct XmlSchemaObjectTable_ValuesCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
     pub _cordl_size: i32,
 }
@@ -613,9 +607,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     }
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -628,9 +620,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -641,9 +631,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-                                >,
+                                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
                             >,
                             i32,
                         ),
@@ -812,9 +800,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -828,9 +814,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -842,9 +826,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-                                >,
+                                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
                             >,
                             i32,
                             crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -991,9 +973,7 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 pub struct XmlSchemaObjectTable_XSOEnumerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-        >,
+        crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
     >,
     pub enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
     pub currentIndex: i32,
@@ -1058,9 +1038,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     }
     pub fn New(
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -1095,9 +1073,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     pub fn _ctor(
         &mut self,
         entries: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-            >,
+            crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
         >,
         _cordl_size: i32,
         enumType: crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,
@@ -1109,9 +1085,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
-                                >,
+                                crate::System::Xml::Schema::XmlSchemaObjectTable_XmlSchemaObjectEntry,
                             >,
                             i32,
                             crate::System::Xml::Schema::XmlSchemaObjectTable_EnumeratorType,

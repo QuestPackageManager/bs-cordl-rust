@@ -49,10 +49,8 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::GlobalNamespace::Interop_ErrorInfo,
-                crate::GlobalNamespace::Interop_ErrorInfo,
-            >,
+            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::GlobalNamespace::Interop_ErrorInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -67,10 +65,8 @@ impl crate::GlobalNamespace::Interop {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
                             >,
                         ),
                         i32,
@@ -95,10 +91,8 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::GlobalNamespace::Interop_ErrorInfo,
-                crate::GlobalNamespace::Interop_ErrorInfo,
-            >,
+            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::GlobalNamespace::Interop_ErrorInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<i64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -113,10 +107,8 @@ impl crate::GlobalNamespace::Interop {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
                             >,
                         ),
                         i64,
@@ -234,10 +226,8 @@ impl crate::GlobalNamespace::Interop {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isDirectory: bool,
         errorRewriter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::GlobalNamespace::Interop_ErrorInfo,
-                crate::GlobalNamespace::Interop_ErrorInfo,
-            >,
+            crate::GlobalNamespace::Interop_ErrorInfo,
+            crate::GlobalNamespace::Interop_ErrorInfo,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -252,10 +242,8 @@ impl crate::GlobalNamespace::Interop {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                    crate::GlobalNamespace::Interop_ErrorInfo,
-                                >,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
+                                crate::GlobalNamespace::Interop_ErrorInfo,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -194,9 +194,7 @@ impl crate::System::MonoCustomAttrs {
         inheritedOnly: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -212,10 +210,8 @@ impl crate::System::MonoCustomAttrs {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::CustomAttributeData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::CustomAttributeData,
                             >,
                         >,
                         3usize,
@@ -229,9 +225,7 @@ impl crate::System::MonoCustomAttrs {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (obj, attributeType, inheritedOnly))?
         };
@@ -288,9 +282,7 @@ impl crate::System::MonoCustomAttrs {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -306,10 +298,8 @@ impl crate::System::MonoCustomAttrs {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::CustomAttributeData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::CustomAttributeData,
                             >,
                         >,
                         3usize,
@@ -323,9 +313,7 @@ impl crate::System::MonoCustomAttrs {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (obj, attributeType, inherit))?
         };
@@ -338,9 +326,7 @@ impl crate::System::MonoCustomAttrs {
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -355,10 +341,8 @@ impl crate::System::MonoCustomAttrs {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::CustomAttributeData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::CustomAttributeData,
                             >,
                         >,
                         2usize,
@@ -372,9 +356,7 @@ impl crate::System::MonoCustomAttrs {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::CustomAttributeData>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (obj, inherit))? };
         Ok(__cordl_ret.into())
     }

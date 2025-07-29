@@ -4,9 +4,7 @@
 pub struct MouseState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trackedButtons: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::VRUIControls::ButtonState>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::VRUIControls::ButtonState>,
     >,
 }
 #[cfg(feature = "cordl_class_VRUIControls+MouseState")]

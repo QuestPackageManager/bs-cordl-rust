@@ -131,13 +131,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Textu
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Texture2D")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     >,
 > for crate::HoudiniEngineUnity::Test_Texture2D {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -145,13 +145,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Texture2D")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     >,
 > for crate::HoudiniEngineUnity::Test_Texture2D {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -159,13 +159,13 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Texture2D")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     >,
 > for crate::HoudiniEngineUnity::Test_Texture2D {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -173,13 +173,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Texture2D")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     >,
 > for crate::HoudiniEngineUnity::Test_Texture2D {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Texture2D>,
     > {
         unsafe { std::mem::transmute(self) }

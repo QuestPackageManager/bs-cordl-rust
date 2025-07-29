@@ -211,11 +211,7 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
     }
     pub fn get_bloomPrePassAfterBlurList() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -225,10 +221,8 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BloomPrePassNonLightPass,
                             >,
                         >,
                         0usize,
@@ -242,21 +236,13 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_bloomPrePassBeforeBlurList() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -266,10 +252,8 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BloomPrePassNonLightPass,
                             >,
                         >,
                         0usize,
@@ -283,11 +267,7 @@ impl crate::GlobalNamespace::BloomPrePassNonLightPass {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassNonLightPass,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassNonLightPass>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

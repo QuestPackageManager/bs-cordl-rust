@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityWebRequestOperation {
-    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     >,
     pub m_UWR: quest_hook::libil2cpp::Gc<
@@ -38,7 +38,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOper
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::UnityWebRequestOperation {
-    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Networking::UnityWebRequest>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -67,13 +67,13 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitializedCore_ByRefMut_ByRefMut_Func_1_2<T>(
+    pub fn EnsureInitializedCore_ByRefMut_ByRefMut_Gc2<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
         initialized: quest_hook::libil2cpp::ByRefMut<bool>,
         syncLock: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -92,7 +92,7 @@ impl crate::System::Threading::LazyInitializer {
                                     quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         4usize,
@@ -111,12 +111,12 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitializedCore_ByRefMut_Func_1_3<T>(
+    pub fn EnsureInitializedCore_ByRefMut_Gc3<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
         syncLock: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -134,7 +134,7 @@ impl crate::System::Threading::LazyInitializer {
                                     quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         3usize,
@@ -152,9 +152,9 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitializedCore_Func_1_1<T>(
+    pub fn EnsureInitializedCore_Gc1<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -167,7 +167,7 @@ impl crate::System::Threading::LazyInitializer {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         2usize,
@@ -214,13 +214,13 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitialized_ByRefMut_ByRefMut_Func_1_2<T>(
+    pub fn EnsureInitialized_ByRefMut_ByRefMut_Gc2<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
         initialized: quest_hook::libil2cpp::ByRefMut<bool>,
         syncLock: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -239,7 +239,7 @@ impl crate::System::Threading::LazyInitializer {
                                     quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         4usize,
@@ -258,12 +258,12 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitialized_ByRefMut_Func_1_3<T>(
+    pub fn EnsureInitialized_ByRefMut_Gc3<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
         syncLock: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -281,7 +281,7 @@ impl crate::System::Threading::LazyInitializer {
                                     quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         3usize,
@@ -299,9 +299,9 @@ impl crate::System::Threading::LazyInitializer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnsureInitialized_Func_1_1<T>(
+    pub fn EnsureInitialized_Gc1<T>(
         target: quest_hook::libil2cpp::ByRefMut<T>,
-        valueFactory: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+        valueFactory: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -314,7 +314,7 @@ impl crate::System::Threading::LazyInitializer {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         2usize,

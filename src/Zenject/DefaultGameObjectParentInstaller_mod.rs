@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller {
-    __cordl_parent: crate::Zenject::Installer_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Zenject::DefaultGameObjectParentInstaller>,
     >,
@@ -30,7 +30,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
-    type Target = crate::Zenject::Installer_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Zenject::DefaultGameObjectParentInstaller>,
     >;

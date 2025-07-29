@@ -10,11 +10,7 @@ pub struct LightTranslationGroupEffectManager {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _lightTranslationGroupEffects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LightTranslationGroupEffect,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightTranslationGroupEffect>,
     >,
 }
 #[cfg(feature = "cordl_class_LightTranslationGroupEffectManager")]

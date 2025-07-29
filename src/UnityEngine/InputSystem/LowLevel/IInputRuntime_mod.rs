@@ -242,9 +242,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -254,9 +252,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
                         >,
                         0usize,
                     >("get_onBeforeUpdate")
@@ -269,9 +265,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -279,10 +273,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -292,11 +284,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -310,25 +300,21 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_onPlayerFocusChanged(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                        quest_hook::libil2cpp::Gc<bool>,
                         0usize,
                     >("get_onPlayerFocusChanged")
                     .unwrap_or_else(|e| {
@@ -339,7 +325,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -348,10 +334,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                bool,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+            bool,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -361,10 +345,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                                bool,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+                            bool,
                         >,
                         0usize,
                     >("get_onShouldRunUpdate")
@@ -377,10 +359,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                bool,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+            bool,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -546,9 +526,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     pub fn set_onBeforeUpdate(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -557,9 +535,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -580,10 +556,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     pub fn set_onDeviceDiscovered(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -592,11 +566,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -617,14 +589,14 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     }
     pub fn set_onPlayerFocusChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_onPlayerFocusChanged")
@@ -644,10 +616,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     pub fn set_onShouldRunUpdate(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                bool,
-            >,
+            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+            bool,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -656,10 +626,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
-                                bool,
-                            >,
+                            crate::UnityEngine::InputSystem::LowLevel::InputUpdateType,
+                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

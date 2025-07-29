@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct EnableOnVisible {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    pub VisibilityChangedEvent: quest_hook::libil2cpp::Gc<bool>,
     pub _components: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
@@ -145,14 +145,14 @@ impl crate::GlobalNamespace::EnableOnVisible {
     }
     pub fn add_VisibilityChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_VisibilityChangedEvent")
@@ -171,14 +171,14 @@ impl crate::GlobalNamespace::EnableOnVisible {
     }
     pub fn remove_VisibilityChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_VisibilityChangedEvent")

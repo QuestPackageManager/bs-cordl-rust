@@ -104,9 +104,7 @@ impl crate::System::Net::Http::HttpMessageInvoker {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -121,10 +119,8 @@ impl crate::System::Net::Http::HttpMessageInvoker {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Net::Http::HttpResponseMessage,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Http::HttpResponseMessage,
                             >,
                         >,
                         2usize,
@@ -138,9 +134,7 @@ impl crate::System::Net::Http::HttpMessageInvoker {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (request, cancellationToken))?
         };

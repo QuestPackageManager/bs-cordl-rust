@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationBeatmapEventDataProcessor {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightTranslationBeatmapEventData,
         >,
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
 #[cfg(feature = "LightTranslationBeatmapEventDataProcessor")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
-    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightTranslationBeatmapEventData,
         >,
@@ -59,9 +59,7 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -70,10 +68,8 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -95,9 +91,7 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -106,10 +100,8 @@ impl crate::GlobalNamespace::LightTranslationBeatmapEventDataProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -4,9 +4,7 @@
 pub struct EventSystem {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_SystemInputModules: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseInputModule>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseInputModule>,
     >,
     pub m_CurrentInputModule: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::BaseInputModule,
@@ -240,9 +238,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         raycastResults: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -255,9 +251,7 @@ impl crate::UnityEngine::EventSystems::EventSystem {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

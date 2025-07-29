@@ -6,15 +6,8 @@ pub struct SelectManyObservable_2<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-    pub m_Filter: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            TSource,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<TResult>,
-            >,
-        >,
-    >,
+    pub m_Source: quest_hook::libil2cpp::Gc<TSource>,
+    pub m_Filter: quest_hook::libil2cpp::Gc<TSource, quest_hook::libil2cpp::Gc<TResult>>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -98,15 +91,8 @@ impl<
         TResult,
     >;
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-        filter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                TSource,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                >,
-            >,
-        >,
+        source: quest_hook::libil2cpp::Gc<TSource>,
+        filter: quest_hook::libil2cpp::Gc<TSource, quest_hook::libil2cpp::Gc<TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -122,7 +108,7 @@ impl<
     }
     pub fn Subscribe(
         &mut self,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>,
+        observer: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
     >
@@ -137,7 +123,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>),
+                        (quest_hook::libil2cpp::Gc<TResult>),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
                         1usize,
                     >("Subscribe")
@@ -156,15 +142,8 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<crate::System::IObservable_1<TSource>>,
-        filter: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                TSource,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                >,
-            >,
-        >,
+        source: quest_hook::libil2cpp::Gc<TSource>,
+        filter: quest_hook::libil2cpp::Gc<TSource, quest_hook::libil2cpp::Gc<TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -178,16 +157,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
+                            quest_hook::libil2cpp::Gc<TSource>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::IObservable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    TSource,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                                    >,
-                                >,
+                                TSource,
+                                quest_hook::libil2cpp::Gc<TResult>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -227,12 +200,12 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IObservable_1<TResult>>
+> AsRef<quest_hook::libil2cpp::Gc<TResult>>
 for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
     TSource,
     TResult,
 > {
-    fn as_ref(&self) -> &crate::System::IObservable_1<TResult> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -240,12 +213,12 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IObservable_1<TResult>>
+> AsMut<quest_hook::libil2cpp::Gc<TResult>>
 for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
     TSource,
     TResult,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::IObservable_1<TResult> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TResult> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -259,13 +232,8 @@ pub struct SelectManyObservable_2_Select<
     TResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Observable: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
-            TSource,
-            TResult,
-        >,
-    >,
-    pub m_Observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>,
+    pub m_Observable: quest_hook::libil2cpp::Gc<TSource, TResult>,
+    pub m_Observer: quest_hook::libil2cpp::Gc<TResult>,
     __cordl_phantom_TSource: std::marker::PhantomData<TSource>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -349,13 +317,8 @@ impl<
     TResult,
 > {
     pub fn New(
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
-                TSource,
-                TResult,
-            >,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>,
+        observable: quest_hook::libil2cpp::Gc<TSource, TResult>,
+        observer: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -466,13 +429,8 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        observable: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
-                TSource,
-                TResult,
-            >,
-        >,
-        observer: quest_hook::libil2cpp::Gc<crate::System::IObserver_1<TResult>>,
+        observable: quest_hook::libil2cpp::Gc<TSource, TResult>,
+        observer: quest_hook::libil2cpp::Gc<TResult>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -486,15 +444,8 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
-                                    TSource,
-                                    TResult,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::IObserver_1<TResult>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TSource, TResult>,
+                            quest_hook::libil2cpp::Gc<TResult>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -535,12 +486,12 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IObserver_1<TSource>>
+> AsRef<quest_hook::libil2cpp::Gc<TSource>>
 for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
     TSource,
     TResult,
 > {
-    fn as_ref(&self) -> &crate::System::IObserver_1<TSource> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TSource> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -548,12 +499,12 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
 impl<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IObserver_1<TSource>>
+> AsMut<quest_hook::libil2cpp::Gc<TSource>>
 for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
     TSource,
     TResult,
 > {
-    fn as_mut(&mut self) -> &mut crate::System::IObserver_1<TSource> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TSource> {
         unsafe { std::mem::transmute(self) }
     }
 }

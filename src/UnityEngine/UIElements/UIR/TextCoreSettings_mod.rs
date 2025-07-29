@@ -178,11 +178,11 @@ impl crate::UnityEngine::UIElements::UIR::TextCoreSettings {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
 > for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     > {
         todo!()
@@ -190,11 +190,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+TextCoreSettings")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::TextCoreSettings>,
 > for crate::UnityEngine::UIElements::UIR::TextCoreSettings {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     > {
         todo!()

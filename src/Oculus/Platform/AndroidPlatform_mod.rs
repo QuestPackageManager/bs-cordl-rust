@@ -43,10 +43,8 @@ impl crate::Oculus::Platform::AndroidPlatform {
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         >,
     > {
@@ -57,10 +55,8 @@ impl crate::Oculus::Platform::AndroidPlatform {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::PlatformInitialize,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::PlatformInitialize,
                             >,
                         >,
                         1usize,
@@ -74,10 +70,8 @@ impl crate::Oculus::Platform::AndroidPlatform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::PlatformInitialize,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::PlatformInitialize,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (appId))? };
         Ok(__cordl_ret.into())

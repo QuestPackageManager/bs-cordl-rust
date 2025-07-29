@@ -8,7 +8,7 @@ pub struct KeyedFactory_5<
     TParam2: quest_hook::libil2cpp::Type,
     TParam3: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::KeyedFactoryBase_2<TBase, TKey>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TBase, TKey>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
@@ -63,7 +63,7 @@ impl<
     TParam3: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::KeyedFactory_5<TBase, TKey, TParam1, TParam2, TParam3> {
-    type Target = crate::Zenject::KeyedFactoryBase_2<TBase, TKey>;
+    type Target = quest_hook::libil2cpp::Gc<TBase, TKey>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -269,11 +269,7 @@ impl<
     pub fn get_ProvidedTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     >
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -294,9 +290,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         0usize,
                     >("get_ProvidedTypes")
@@ -309,9 +303,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

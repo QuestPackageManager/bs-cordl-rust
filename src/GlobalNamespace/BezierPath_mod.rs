@@ -4,13 +4,9 @@
 pub struct BezierPath {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bezierPathWasModifiedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub _points: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
-    >,
+    pub _points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     pub _controlMode: crate::GlobalNamespace::BezierPath_ControlMode,
-    pub _perAnchorNormalsAngle: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<f32>,
-    >,
+    pub _perAnchorNormalsAngle: quest_hook::libil2cpp::Gc<f32>,
     pub _neighbourDistances: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
@@ -414,22 +410,14 @@ impl crate::GlobalNamespace::BezierPath {
     }
     pub fn UpdateByAnchorPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UpdateByAnchorPoints")
@@ -448,22 +436,14 @@ impl crate::GlobalNamespace::BezierPath {
     }
     pub fn UpdateControlPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UpdateControlPoints")

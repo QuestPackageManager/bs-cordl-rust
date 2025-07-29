@@ -7,12 +7,8 @@ pub struct DefaultContractResolver {
         crate::Newtonsoft::Json::DefaultJsonNameTable,
     >,
     pub _contractCache: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::JsonContract,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonContract>,
     >,
     pub _DefaultMembersSearchFlags_k__BackingField: crate::System::Reflection::BindingFlags,
     pub _SerializeCompilerGeneratedMembers_k__BackingField: bool,
@@ -138,10 +134,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
             >,
         >,
     > {
@@ -159,10 +153,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::JsonProperty,
                             >,
                         >,
                         2usize,
@@ -176,10 +168,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (constructor, memberProperties))?
@@ -446,10 +436,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         memberSerialization: crate::Newtonsoft::Json::MemberSerialization,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
             >,
         >,
     > {
@@ -463,10 +451,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                             crate::Newtonsoft::Json::MemberSerialization,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Serialization::JsonProperty,
                             >,
                         >,
                         2usize,
@@ -480,10 +466,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Newtonsoft::Json::Serialization::JsonProperty,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (_cordl_type, memberSerialization))?
@@ -578,9 +562,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         member: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Predicate_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -592,10 +574,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                             crate::System::Reflection::MemberInfo,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Predicate_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >,
                         1usize,
@@ -609,9 +589,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Predicate_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (member))? };
         Ok(__cordl_ret.into())
     }
@@ -709,46 +687,36 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         onSerializing: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
                 >,
             >,
         >,
         onSerialized: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
                 >,
             >,
         >,
         onDeserializing: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
                 >,
             >,
         >,
         onDeserialized: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::SerializationCallback,
                 >,
             >,
         >,
         onError: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
                 >,
             >,
         >,
@@ -762,46 +730,36 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Newtonsoft::Json::Serialization::SerializationCallback,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::SerializationCallback,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::SerializationErrorCallback,
                                     >,
                                 >,
                             >,
@@ -837,11 +795,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -850,9 +804,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
                         >,
                         1usize,
                     >("GetClassHierarchyForType")
@@ -865,9 +817,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
@@ -903,9 +853,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         createdType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -915,10 +863,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >,
                         1usize,
@@ -932,9 +878,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (createdType))? };
         Ok(__cordl_ret.into())
     }
@@ -1098,9 +1042,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1110,10 +1052,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::MemberInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Reflection::MemberInfo,
                             >,
                         >,
                         1usize,
@@ -1127,9 +1067,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (objectType))? };
         Ok(__cordl_ret.into())
     }
@@ -2208,11 +2146,9 @@ pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _e: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IEnumerable_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                TEnumeratorKey,
-                TEnumeratorValue,
-            >,
+        crate::System::Collections::Generic::KeyValuePair_2<
+            TEnumeratorKey,
+            TEnumeratorValue,
         >,
     >,
     __cordl_phantom_TEnumeratorKey: std::marker::PhantomData<TEnumeratorKey>,
@@ -2307,11 +2243,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     >
@@ -2328,14 +2262,12 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
-                                    >,
+                            crate::System::Collections::Generic::KeyValuePair_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
                                 >,
                             >,
                         >,
@@ -2350,22 +2282,18 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         e: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    TEnumeratorKey,
-                    TEnumeratorValue,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                TEnumeratorKey,
+                TEnumeratorValue,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -2419,11 +2347,9 @@ impl<
     pub fn _ctor(
         &mut self,
         e: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    TEnumeratorKey,
-                    TEnumeratorValue,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                TEnumeratorKey,
+                TEnumeratorValue,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -2439,11 +2365,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    TEnumeratorKey,
-                                    TEnumeratorValue,
-                                >,
+                            crate::System::Collections::Generic::KeyValuePair_2<
+                                TEnumeratorKey,
+                                TEnumeratorValue,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2487,64 +2411,6 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
 impl<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
->
-for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
-    TEnumeratorKey,
-    TEnumeratorValue,
-> {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
-)]
-impl<
-    TEnumeratorKey: quest_hook::libil2cpp::Type,
-    TEnumeratorValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
->
-for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
-    TEnumeratorKey,
-    TEnumeratorValue,
-> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
-)]
-impl<
-    TEnumeratorKey: quest_hook::libil2cpp::Type,
-    TEnumeratorValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
     TEnumeratorKey,
@@ -2566,6 +2432,64 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     TEnumeratorValue,
 > {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "Newtonsoft+Json+Serialization+DefaultContractResolver+EnumerableDictionaryWrapper_2"
+)]
+impl<
+    TEnumeratorKey: quest_hook::libil2cpp::Type,
+    TEnumeratorValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+>
+for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDictionaryWrapper_2<
+    TEnumeratorKey,
+    TEnumeratorValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

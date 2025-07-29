@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ActionInstaller {
-    __cordl_parent: crate::Zenject::Installer_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>,
     >,
     pub _installMethod: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
+        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+ActionInstaller")]
@@ -30,7 +30,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ActionInstaller {
 }
 #[cfg(feature = "Zenject+ActionInstaller")]
 impl std::ops::Deref for crate::Zenject::ActionInstaller {
-    type Target = crate::Zenject::Installer_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Zenject::ActionInstaller>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -72,9 +72,7 @@ impl crate::Zenject::ActionInstaller {
     }
     pub fn New(
         installMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -148,9 +146,7 @@ impl crate::Zenject::ActionInstaller {
     pub fn _ctor(
         &mut self,
         installMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -159,9 +155,7 @@ impl crate::Zenject::ActionInstaller {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

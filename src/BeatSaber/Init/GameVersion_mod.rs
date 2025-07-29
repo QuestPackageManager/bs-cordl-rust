@@ -259,13 +259,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::Init::GameVersion {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     >,
 > for crate::BeatSaber::Init::GameVersion {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -273,13 +273,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     >,
 > for crate::BeatSaber::Init::GameVersion {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -287,13 +287,13 @@ impl AsMut<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     >,
 > for crate::BeatSaber::Init::GameVersion {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -301,13 +301,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     >,
 > for crate::BeatSaber::Init::GameVersion {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -635,42 +635,38 @@ impl crate::BeatSaber::Init::GameVersion_BuildInfo {
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
-impl AsRef<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_BuildInfo>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo>>
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_BuildInfo> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
-impl AsMut<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_BuildInfo>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo>>
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        crate::BeatSaber::Init::GameVersion_BuildInfo,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
-impl AsRef<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_BuildInfo>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo>>
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_BuildInfo> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+BuildInfo")]
-impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_BuildInfo>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo>>
 for crate::BeatSaber::Init::GameVersion_BuildInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::BeatSaber::Init::GameVersion_BuildInfo,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_BuildInfo> {
         todo!()
     }
 }
@@ -1000,38 +996,38 @@ impl crate::BeatSaber::Init::GameVersion_Content {
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
-impl AsRef<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Content>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content>>
 for crate::BeatSaber::Init::GameVersion_Content {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Content> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
-impl AsMut<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Content>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content>>
 for crate::BeatSaber::Init::GameVersion_Content {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Content> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
-impl AsRef<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Content>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content>>
 for crate::BeatSaber::Init::GameVersion_Content {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Content> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Content")]
-impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Content>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content>>
 for crate::BeatSaber::Init::GameVersion_Content {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Content> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Content> {
         todo!()
     }
 }
@@ -1387,40 +1383,38 @@ impl crate::BeatSaber::Init::GameVersion_Metadata {
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
-impl AsRef<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Metadata>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata>>
 for crate::BeatSaber::Init::GameVersion_Metadata {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Metadata> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
-impl AsMut<crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_Metadata>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata>>
 for crate::BeatSaber::Init::GameVersion_Metadata {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
-        crate::BeatSaber::Init::GameVersion_Metadata,
-    > {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
-impl AsRef<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Metadata>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata>>
 for crate::BeatSaber::Init::GameVersion_Metadata {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Metadata> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata> {
         todo!()
     }
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+Metadata")]
-impl AsMut<crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Metadata>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata>>
 for crate::BeatSaber::Init::GameVersion_Metadata {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_Metadata> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_Metadata> {
         todo!()
     }
 }
@@ -1731,11 +1725,11 @@ impl crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 impl AsRef<
-    crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
+    quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
 > for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
         todo!()
@@ -1743,11 +1737,11 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 impl AsMut<
-    crate::System::IComparable_1<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
+    quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
 > for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
         todo!()
@@ -1755,11 +1749,11 @@ impl AsMut<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
+    quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
 > for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
         todo!()
@@ -1767,11 +1761,11 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+Init+GameVersion+PreReleaseLabel")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
+    quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion_PreReleaseLabel>,
 > for crate::BeatSaber::Init::GameVersion_PreReleaseLabel {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::BeatSaber::Init::GameVersion_PreReleaseLabel,
     > {
         todo!()

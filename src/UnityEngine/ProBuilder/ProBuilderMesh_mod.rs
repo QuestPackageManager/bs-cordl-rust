@@ -15,29 +15,21 @@ pub struct ProBuilderMesh {
         >,
     >,
     pub m_CacheValid: crate::UnityEngine::ProBuilder::ProBuilderMesh_CacheValidState,
-    pub m_SharedVertexLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
+    pub m_SharedVertexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     pub m_SharedTextures: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
     >,
-    pub m_SharedTextureLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
+    pub m_SharedTextureLookup: quest_hook::libil2cpp::Gc<i32, i32>,
     pub m_Positions: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
     pub m_Textures0: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
     >,
-    pub m_Textures2: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
-    pub m_Textures3: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-    >,
+    pub m_Textures2: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+    pub m_Textures3: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     pub m_Tangents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
@@ -71,12 +63,8 @@ pub struct ProBuilderMesh {
     pub m_SelectedCacheDirty: bool,
     pub m_SelectedSharedVerticesCount: i32,
     pub m_SelectedCoincidentVertexCount: i32,
-    pub m_SelectedSharedVertices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
-    pub m_SelectedCoincidentVertices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub m_SelectedSharedVertices: quest_hook::libil2cpp::Gc<i32>,
+    pub m_SelectedCoincidentVertices: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -386,16 +374,10 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Create_IEnumerable_1_IEnumerable_1_1(
-        positions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+    pub fn Create_Gc_Gc1(
+        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
@@ -406,16 +388,10 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),
@@ -437,31 +413,21 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         > = unsafe { cordl_method_info.invoke_unchecked((), (positions, faces))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Create_IList_1_IList_1_IList_1_IList_1_IList_1_2(
+    pub fn Create_Gc_Gc_Gc_Gc_Gc2(
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         sharedVertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
         sharedTextures: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
         materials: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
@@ -473,37 +439,27 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Vertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::SharedVertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::SharedVertex,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::SharedVertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::SharedVertex,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
@@ -732,25 +688,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCoincidentVertices_IEnumerable_1_0(
+    pub fn GetCoincidentVertices_Gc0(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-    > {
+        vertices: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<i32>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<i32>),
+                        quest_hook::libil2cpp::Gc<i32>,
                         1usize,
                     >("GetCoincidentVertices")
                     .unwrap_or_else(|e| {
@@ -761,21 +709,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (vertices))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (vertices))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCoincidentVertices_IEnumerable_1_List_1_1(
+    pub fn GetCoincidentVertices_Gc_Gc1(
         &mut self,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
-        coincident: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        coincident: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -784,15 +728,11 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -810,16 +750,10 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCoincidentVertices_IEnumerable_1_List_1_2(
+    pub fn GetCoincidentVertices_Gc_Gc2(
         &mut self,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
-        coincident: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        coincident: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -828,13 +762,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::ProBuilder::Edge,
-                                >,
+                                crate::UnityEngine::ProBuilder::Edge,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -852,28 +782,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCoincidentVertices_IEnumerable_1_List_1_3(
+    pub fn GetCoincidentVertices_Gc_Gc3(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-        coincident: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
+        coincident: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<i32>, quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetCoincidentVertices")
@@ -890,24 +809,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCoincidentVertices_i32_List_1_4(
+    pub fn GetCoincidentVertices_i32_Gc4(
         &mut self,
         vertex: i32,
-        coincident: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<i32>,
-        >,
+        coincident: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<i32>,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetCoincidentVertices")
@@ -1051,23 +963,15 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn GetSharedVertexHandles(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<i32>>,
-    > {
+        vertices: quest_hook::libil2cpp::Gc<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<i32>,
-                        >,
+                        (quest_hook::libil2cpp::Gc<i32>),
+                        quest_hook::libil2cpp::Gc<i32>,
                         1usize,
                     >("GetSharedVertexHandles")
                     .unwrap_or_else(|e| {
@@ -1078,9 +982,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (vertices))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (vertices))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTangents(
@@ -1116,26 +1020,17 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUVs_List_1_0(
+    pub fn GetUVs_Gc0(
         &mut self,
         channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetUVs")
@@ -1156,11 +1051,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
         channel: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Vector2,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1168,11 +1059,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                crate::UnityEngine::Vector2,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
                         1usize,
                     >("GetUVs")
                     .unwrap_or_else(|e| {
@@ -1183,11 +1070,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::Vector2,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (channel))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (channel))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetUnusedTextureGroup(
@@ -1212,9 +1097,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn GetVertices(
         &mut self,
-        indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<i32>,
-        >,
+        indexes: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1227,9 +1110,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -1257,9 +1138,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn GetVerticesInList(
         &mut self,
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1268,10 +1147,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Vertex,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1532,15 +1409,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn RebuildWithPositionsAndFaces(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::Vector3,
-            >,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1549,16 +1420,10 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::Vector3,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),
@@ -1682,9 +1547,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn RefreshUV(
         &mut self,
         facesToRefresh: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1693,10 +1556,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1824,9 +1685,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn SetMaterial(
         &mut self,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
         material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1837,10 +1696,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -1863,11 +1720,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn SetSelectedEdges(
         &mut self,
-        edges: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1875,9 +1728,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
+                            crate::UnityEngine::ProBuilder::Edge,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1895,12 +1746,10 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectedFaces_IEnumerable_1_0(
+    pub fn SetSelectedFaces_Gc0(
         &mut self,
         selected: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1909,10 +1758,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1931,20 +1778,16 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetSelectedFaces_IEnumerable_1_1(
+    pub fn SetSelectedFaces_Gc1(
         &mut self,
-        selected: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        selected: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetSelectedFaces")
@@ -1963,18 +1806,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn SetSelectedVertices(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetSelectedVertices")
@@ -1994,9 +1833,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn SetSharedTextures(
         &mut self,
         indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2005,12 +1842,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    i32,
-                                    i32,
-                                >,
-                            >,
+                            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2031,9 +1863,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn SetSharedVertices(
         &mut self,
         indexes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
-            >,
+            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2042,12 +1872,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    i32,
-                                    i32,
-                                >,
-                            >,
+                            crate::System::Collections::Generic::KeyValuePair_2<i32, i32>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2067,18 +1892,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn SetTexturesCoincident(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetTexturesCoincident")
@@ -2098,23 +1919,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn SetUVs(
         &mut self,
         channel: i32,
-        uvs: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::Vector4,
-                                >,
-                            >,
-                        ),
+                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetUVs")
@@ -2134,9 +1946,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn SetVertices(
         &mut self,
         vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
         >,
         applyMesh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2147,10 +1957,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Vertex,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
                                 >,
                             >,
                             bool,
@@ -2173,18 +1981,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn SetVerticesCoincident(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        vertices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetVerticesCoincident")
@@ -2273,20 +2077,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn _SetSelectedFaces_b__246_0(
         &mut self,
         x: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         1usize,
                     >("<SetSelectedFaces>b__246_0")
                     .unwrap_or_else(|e| {
@@ -2297,20 +2095,16 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (x))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _SetSelectedFaces_b__246_1(
         &mut self,
         x: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2318,11 +2112,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
                         1usize,
                     >("<SetSelectedFaces>b__246_1")
                     .unwrap_or_else(|e| {
@@ -2334,9 +2124,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (x))? };
         Ok(__cordl_ret.into())
     }
@@ -2389,9 +2177,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn add_componentHasBeenReset(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2400,10 +2186,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2424,9 +2208,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn add_componentWillBeDestroyed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2435,10 +2217,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2459,9 +2239,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn add_elementSelectionChanged(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2470,10 +2248,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2494,9 +2270,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn add_meshWasInitialized(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2505,10 +2279,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2529,9 +2301,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn add_meshWillBeDestroyed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2540,10 +2310,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2565,9 +2333,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_colors(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Color>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2575,11 +2341,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
                         0usize,
                     >("get_colors")
                     .unwrap_or_else(|e| {
@@ -2590,9 +2352,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Color>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_colorsInternal(
@@ -2664,9 +2426,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2676,10 +2436,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >,
                         0usize,
@@ -2693,9 +2451,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2890,9 +2646,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_normals(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2900,11 +2654,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
                         0usize,
                     >("get_normals")
                     .unwrap_or_else(|e| {
@@ -2915,9 +2665,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_normalsInternal(
@@ -2956,9 +2706,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_positions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2966,11 +2714,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
                         0usize,
                     >("get_positions")
                     .unwrap_or_else(|e| {
@@ -2981,9 +2725,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_positionsInternal(
@@ -3103,20 +2847,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn get_selectedCoincidentVertices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_selectedCoincidentVertices")
                     .unwrap_or_else(|e| {
@@ -3127,9 +2865,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedEdgeCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -3152,11 +2890,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_selectedEdges(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3164,11 +2898,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                crate::UnityEngine::ProBuilder::Edge,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
                         0usize,
                     >("get_selectedEdges")
                     .unwrap_or_else(|e| {
@@ -3180,9 +2910,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                crate::UnityEngine::ProBuilder::Edge,
-            >,
+            crate::UnityEngine::ProBuilder::Edge,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3238,22 +2966,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn get_selectedFaceIndexes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                i32,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_selectedFaceIndexes")
                     .unwrap_or_else(|e| {
@@ -3264,9 +2984,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedFaceIndicesInternal(
@@ -3368,20 +3088,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn get_selectedSharedVertices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_selectedSharedVertices")
                     .unwrap_or_else(|e| {
@@ -3392,9 +3106,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedSharedVerticesCount(
@@ -3435,22 +3149,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn get_selectedVertices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                i32,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_selectedVertices")
                     .unwrap_or_else(|e| {
@@ -3461,27 +3167,21 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_sharedTextureLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32, i32>,
                         0usize,
                     >("get_sharedTextureLookup")
                     .unwrap_or_else(|e| {
@@ -3492,9 +3192,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_sharedTextures(
@@ -3538,20 +3238,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn get_sharedVertexLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        >,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32, i32>,
                         0usize,
                     >("get_sharedVertexLookup")
                     .unwrap_or_else(|e| {
@@ -3562,18 +3256,16 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_sharedVertices(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3583,10 +3275,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::SharedVertex,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::SharedVertex,
                             >,
                         >,
                         0usize,
@@ -3600,9 +3290,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3648,9 +3336,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_tangents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3658,11 +3344,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                         0usize,
                     >("get_tangents")
                     .unwrap_or_else(|e| {
@@ -3673,9 +3355,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_tangentsInternal(
@@ -3714,9 +3396,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn get_textures(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3724,11 +3404,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector2,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
                         0usize,
                     >("get_textures")
                     .unwrap_or_else(|e| {
@@ -3739,17 +3415,15 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_textures2Internal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3757,11 +3431,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                         0usize,
                     >("get_textures2Internal")
                     .unwrap_or_else(|e| {
@@ -3772,17 +3442,15 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_textures3Internal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3790,11 +3458,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
                         0usize,
                     >("get_textures3Internal")
                     .unwrap_or_else(|e| {
@@ -3805,9 +3469,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_texturesInternal(
@@ -3942,9 +3606,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn remove_componentHasBeenReset(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3953,10 +3615,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3977,9 +3637,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn remove_componentWillBeDestroyed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3988,10 +3646,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4012,9 +3668,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn remove_elementSelectionChanged(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4023,10 +3677,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4047,9 +3699,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn remove_meshWasInitialized(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4058,10 +3708,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4082,9 +3730,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn remove_meshWillBeDestroyed(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4093,10 +3739,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4117,20 +3761,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_colors(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Color>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Color,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_colors")
@@ -4180,9 +3818,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn set_faces(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4191,10 +3827,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::Face,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4309,20 +3943,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_positions(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector3,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_positions")
@@ -4586,9 +4214,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     pub fn set_sharedVertices(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4597,10 +4223,8 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::SharedVertex,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::SharedVertex,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -4657,20 +4281,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_tangents(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_tangents")
@@ -4721,20 +4339,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_textures(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::Vector2,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_textures")
@@ -4753,20 +4365,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_textures2Internal(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_textures2Internal")
@@ -4785,20 +4391,14 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
     }
     pub fn set_textures3Internal(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_textures3Internal")

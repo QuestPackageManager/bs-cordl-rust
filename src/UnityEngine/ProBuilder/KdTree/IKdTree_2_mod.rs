@@ -212,11 +212,7 @@ impl<
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-                >,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
         >,
     >
     where
@@ -238,12 +234,7 @@ impl<
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<
-                                        TKey,
-                                        TValue,
-                                    >,
-                                >,
+                                quest_hook::libil2cpp::Gc<TKey, TValue>,
                             >,
                         >,
                         2usize,
@@ -257,11 +248,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-                >,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (point, count))? };
         Ok(__cordl_ret.into())
     }
@@ -272,11 +259,7 @@ impl<
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-                >,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
         >,
     >
     where
@@ -299,12 +282,7 @@ impl<
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<
-                                        TKey,
-                                        TValue,
-                                    >,
-                                >,
+                                quest_hook::libil2cpp::Gc<TKey, TValue>,
                             >,
                         >,
                         3usize,
@@ -318,11 +296,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-                >,
-            >,
+            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TKey, TValue>>,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (center, radius, count))?
         };
@@ -488,48 +462,6 @@ for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
-    >,
-> for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+IKdTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
-    >,
-> for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::KdTree::KdTreeNode_2<TKey, TValue>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+KdTree+IKdTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -543,6 +475,30 @@ impl<
 > AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+IKdTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>>
+for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+KdTree+IKdTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>>
+for crate::UnityEngine::ProBuilder::KdTree::IKdTree_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>> {
         unsafe { std::mem::transmute(self) }
     }
 }

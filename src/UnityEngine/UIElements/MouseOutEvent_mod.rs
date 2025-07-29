@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseOutEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseOutEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::MouseOutEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+MouseOutEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MouseOutEvent {
-    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseOutEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

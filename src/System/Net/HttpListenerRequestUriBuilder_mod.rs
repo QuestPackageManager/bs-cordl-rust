@@ -9,9 +9,7 @@ pub struct HttpListenerRequestUriBuilder {
     pub cookedUriPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub cookedUriQuery: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub requestUriString: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-    pub rawOctets: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<u8>,
-    >,
+    pub rawOctets: quest_hook::libil2cpp::Gc<u8>,
     pub rawPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
 }
@@ -115,9 +113,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     }
     pub fn AppendOctetsPercentEncoded(
         target: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        octets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u8>,
-        >,
+        octets: quest_hook::libil2cpp::Gc<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -128,9 +124,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Text::StringBuilder,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<u8>,
-                            >,
+                            quest_hook::libil2cpp::Gc<u8>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -331,9 +325,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         Ok(__cordl_ret.into())
     }
     pub fn GetOctetsAsString(
-        octets: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u8>,
-        >,
+        octets: quest_hook::libil2cpp::Gc<u8>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -342,9 +334,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<u8>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<u8>),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("GetOctetsAsString")

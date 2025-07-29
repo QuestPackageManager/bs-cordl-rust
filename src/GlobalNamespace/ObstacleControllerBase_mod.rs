@@ -7,15 +7,11 @@ pub struct ObstacleControllerBase {
         crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
     pub didInitEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
     >,
     pub didStartDissolvingEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
-            f32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+        f32,
     >,
 }
 #[cfg(feature = "cordl_class_ObstacleControllerBase")]
@@ -148,9 +144,7 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn add_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -159,10 +153,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleControllerBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleControllerBase,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -184,12 +176,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn add_didStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ObstacleControllerBase,
-                >,
-                f32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,12 +186,10 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleControllerBase,
-                                >,
-                                f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleControllerBase,
                             >,
+                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -224,9 +210,7 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn remove_didInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -235,10 +219,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleControllerBase,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleControllerBase,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -260,12 +242,8 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
     pub fn remove_didStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::ObstacleControllerBase,
-                >,
-                f32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleControllerBase>,
+            f32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -274,12 +252,10 @@ impl crate::GlobalNamespace::ObstacleControllerBase {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleControllerBase,
-                                >,
-                                f32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleControllerBase,
                             >,
+                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

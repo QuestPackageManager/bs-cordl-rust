@@ -62,7 +62,7 @@ impl<
 > crate::GlobalNamespace::ICubeNoteControllerInitializable_1<T> {
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        value: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,7 +73,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_cubeNoteControllerDidInitEvent")
@@ -97,7 +97,7 @@ impl<
     }
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        value: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -108,7 +108,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_cubeNoteControllerDidInitEvent")

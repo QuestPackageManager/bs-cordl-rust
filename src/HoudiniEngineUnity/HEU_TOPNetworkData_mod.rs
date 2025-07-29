@@ -6,9 +6,7 @@ pub struct HEU_TOPNetworkData {
     pub _nodeID: i32,
     pub _nodeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _topNodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_TOPNodeData>,
     >,
     pub _topNodeNames: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

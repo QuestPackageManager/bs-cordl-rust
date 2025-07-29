@@ -473,13 +473,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoringElemen
 }
 #[cfg(feature = "ScoringElement")]
 impl AsRef<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
     >,
 > for crate::GlobalNamespace::ScoringElement {
     fn as_ref(
         &self,
-    ) -> &crate::System::IComparable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -487,13 +487,13 @@ impl AsRef<
 }
 #[cfg(feature = "ScoringElement")]
 impl AsMut<
-    crate::System::IComparable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
     >,
 > for crate::GlobalNamespace::ScoringElement {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IComparable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -503,7 +503,7 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoringElement_Pool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::MemoryPool_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_ScoringElement+Pool_1")]
@@ -542,7 +542,7 @@ for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
 #[cfg(feature = "ScoringElement+Pool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ScoringElement_Pool_1<T> {
-    type Target = crate::Zenject::MemoryPool_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

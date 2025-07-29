@@ -12,9 +12,7 @@ pub struct MissionObjectivesGameUIController {
         crate::GlobalNamespace::MissionObjectiveCheckersManager,
     >,
     pub _missionObjectiveGameUIViews: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveGameUIView>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjectiveGameUIView>,
     >,
 }
 #[cfg(feature = "cordl_class_MissionObjectivesGameUIController")]

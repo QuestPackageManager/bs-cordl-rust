@@ -4,11 +4,9 @@
 pub struct LabelScopeInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _labels: quest_hook::libil2cpp::Gc<
-        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LabelInfo,
-            >,
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::LabelInfo,
         >,
     >,
     pub Kind: crate::System::Linq::Expressions::Interpreter::LabelScopeKind,

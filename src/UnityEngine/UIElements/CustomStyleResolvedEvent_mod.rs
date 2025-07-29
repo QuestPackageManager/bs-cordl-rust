@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomStyleResolvedEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
         >,
@@ -30,7 +30,7 @@ for crate::UnityEngine::UIElements::CustomStyleResolvedEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+CustomStyleResolvedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::CustomStyleResolvedEvent {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::CustomStyleResolvedEvent,
         >,

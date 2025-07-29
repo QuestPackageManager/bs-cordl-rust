@@ -148,7 +148,7 @@ for crate::GlobalNamespace::PlayerNameEqualityComparer {
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 impl AsRef<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -156,7 +156,7 @@ impl AsRef<
 > for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn as_ref(
         &self,
-    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -166,7 +166,7 @@ impl AsRef<
 }
 #[cfg(feature = "PlayerNameEqualityComparer")]
 impl AsMut<
-    crate::System::Collections::Generic::IEqualityComparer_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,
@@ -174,7 +174,7 @@ impl AsMut<
 > for crate::GlobalNamespace::PlayerNameEqualityComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore,
         >,

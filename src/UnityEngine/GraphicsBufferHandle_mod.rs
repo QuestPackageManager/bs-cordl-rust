@@ -170,20 +170,20 @@ impl crate::UnityEngine::GraphicsBufferHandle {
     }
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle>>
 for crate::UnityEngine::GraphicsBufferHandle {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+GraphicsBufferHandle")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle>>
 for crate::UnityEngine::GraphicsBufferHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::GraphicsBufferHandle> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBufferHandle> {
         todo!()
     }
 }

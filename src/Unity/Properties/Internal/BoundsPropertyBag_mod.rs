@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Bounds,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>,
 }
 #[cfg(feature = "cordl_class_Unity+Properties+Internal+BoundsPropertyBag")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -28,9 +26,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
-        crate::UnityEngine::Bounds,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +88,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_CenterProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >,
@@ -122,7 +118,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;
@@ -213,7 +209,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoundsPropertyBag_ExtentsProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >,
@@ -243,7 +239,7 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;

@@ -4,9 +4,7 @@
 pub struct RaycastUITopLevelChecker {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub results: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::EventSystems::RaycastResult,
-        >,
+        crate::UnityEngine::EventSystems::RaycastResult,
     >,
     pub _canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
 }

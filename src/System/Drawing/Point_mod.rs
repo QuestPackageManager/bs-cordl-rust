@@ -254,18 +254,18 @@ impl crate::System::Drawing::Point {
     }
 }
 #[cfg(feature = "System+Drawing+Point")]
-impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Point>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::Point>>
 for crate::System::Drawing::Point {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Point> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::Point> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+Point")]
-impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Point>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::Point>>
 for crate::System::Drawing::Point {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Point> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::Point> {
         todo!()
     }
 }

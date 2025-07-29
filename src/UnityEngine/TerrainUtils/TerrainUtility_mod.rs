@@ -91,10 +91,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
         onlyAutoConnectedTerrains: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -104,11 +102,9 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::TerrainUtils::TerrainMap,
-                                >,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TerrainUtils::TerrainMap,
                             >,
                         >,
                         1usize,
@@ -122,10 +118,8 @@ impl crate::UnityEngine::TerrainUtils::TerrainUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                i32,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
-            >,
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TerrainUtils::TerrainMap>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (onlyAutoConnectedTerrains))?
         };

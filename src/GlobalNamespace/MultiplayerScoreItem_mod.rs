@@ -8,12 +8,8 @@ pub struct MultiplayerScoreItem {
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::TimeTweeningManager,
     >,
-    pub _nameColorTween: quest_hook::libil2cpp::Gc<
-        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    >,
-    pub _scoreColorTween: quest_hook::libil2cpp::Gc<
-        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
-    >,
+    pub _nameColorTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    pub _scoreColorTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "cordl_class_MultiplayerScoreItem")]
 unsafe impl quest_hook::libil2cpp::Type

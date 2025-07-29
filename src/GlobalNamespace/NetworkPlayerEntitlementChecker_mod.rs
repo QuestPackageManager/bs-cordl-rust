@@ -56,11 +56,7 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementsStatus,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementsStatus>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -69,9 +65,7 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::EntitlementsStatus,
-                            >,
+                            crate::GlobalNamespace::EntitlementsStatus,
                         >,
                         1usize,
                     >("GetEntitlementStatus")
@@ -84,9 +78,7 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::EntitlementsStatus,
-            >,
+            crate::GlobalNamespace::EntitlementsStatus,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId))? };
         Ok(__cordl_ret.into())
     }

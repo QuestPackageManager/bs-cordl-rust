@@ -4,16 +4,12 @@
 pub struct TableViewWithDetailCell {
     __cordl_parent: crate::HMUI::TableView,
     pub didSelectContentCellEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+        i32,
     >,
     pub didDeselectContentCellEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+        i32,
     >,
     pub _dataSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TableViewWithDetailCell_IDataSource,
@@ -226,12 +222,8 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
     pub fn add_didDeselectContentCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::TableViewWithDetailCell,
-                >,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -240,12 +232,10 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::TableViewWithDetailCell,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TableViewWithDetailCell,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -266,12 +256,8 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
     pub fn add_didSelectContentCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::TableViewWithDetailCell,
-                >,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -280,12 +266,10 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::TableViewWithDetailCell,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TableViewWithDetailCell,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -337,12 +321,8 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
     pub fn remove_didDeselectContentCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::TableViewWithDetailCell,
-                >,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -351,12 +331,10 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::TableViewWithDetailCell,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TableViewWithDetailCell,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -377,12 +355,8 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
     pub fn remove_didSelectContentCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::TableViewWithDetailCell,
-                >,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TableViewWithDetailCell>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -391,12 +365,10 @@ impl crate::GlobalNamespace::TableViewWithDetailCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::TableViewWithDetailCell,
-                                >,
-                                i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TableViewWithDetailCell,
                             >,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

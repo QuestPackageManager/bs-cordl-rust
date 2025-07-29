@@ -425,7 +425,7 @@ for crate::GlobalNamespace::TutorialNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialNoteController_Pool {
-    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >,
 }
@@ -451,7 +451,7 @@ for crate::GlobalNamespace::TutorialNoteController_Pool {
 }
 #[cfg(feature = "TutorialNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialNoteController_Pool {
-    type Target = crate::Zenject::MonoMemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TutorialNoteController>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

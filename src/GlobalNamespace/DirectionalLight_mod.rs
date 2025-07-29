@@ -114,9 +114,7 @@ impl crate::GlobalNamespace::DirectionalLight {
     }
     pub fn get_lights() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -126,10 +124,8 @@ impl crate::GlobalNamespace::DirectionalLight {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DirectionalLight,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DirectionalLight,
                             >,
                         >,
                         0usize,
@@ -143,9 +139,7 @@ impl crate::GlobalNamespace::DirectionalLight {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DirectionalLight>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

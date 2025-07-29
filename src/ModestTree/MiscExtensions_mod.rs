@@ -39,8 +39,8 @@ impl std::ops::DerefMut for crate::ModestTree::MiscExtensions {
 #[cfg(feature = "ModestTree+MiscExtensions")]
 impl crate::ModestTree::MiscExtensions {
     pub fn AllocFreeAddRange<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        items: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
+        items: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -51,14 +51,7 @@ impl crate::ModestTree::MiscExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AllocFreeAddRange")
@@ -119,9 +112,7 @@ impl crate::ModestTree::MiscExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn GetValueAndRemove<TKey, TVal>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TVal>,
-        >,
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TVal>,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TVal>
     where
@@ -135,15 +126,7 @@ impl crate::ModestTree::MiscExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IDictionary_2<
-                                    TKey,
-                                    TVal,
-                                >,
-                            >,
-                            TKey,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TKey, TVal>, TKey),
                         TVal,
                         2usize,
                     >("GetValueAndRemove")
@@ -161,7 +144,7 @@ impl crate::ModestTree::MiscExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -173,12 +156,7 @@ impl crate::ModestTree::MiscExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         i32,
                         2usize,
                     >("IndexOf")
@@ -197,9 +175,7 @@ impl crate::ModestTree::MiscExtensions {
     }
     pub fn Join(
         values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -212,10 +188,8 @@ impl crate::ModestTree::MiscExtensions {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -238,10 +212,8 @@ impl crate::ModestTree::MiscExtensions {
         > = unsafe { cordl_method_info.invoke_unchecked((), (values, separator))? };
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveWithConfirm_HashSet_1_T3<T>(
-        set: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<T>,
-        >,
+    pub fn RemoveWithConfirm_T0<T>(
+        list: quest_hook::libil2cpp::Gc<T>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -253,12 +225,67 @@ impl crate::ModestTree::MiscExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RemoveWithConfirm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, item))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveWithConfirm_T1<T>(
+        list: quest_hook::libil2cpp::Gc<T>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<T>, T),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RemoveWithConfirm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveWithConfirm", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (list, item))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RemoveWithConfirm_T3<T>(
+        set: quest_hook::libil2cpp::Gc<T>,
+        item: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("RemoveWithConfirm")
@@ -275,10 +302,8 @@ impl crate::ModestTree::MiscExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RemoveWithConfirm_IDictionary_2_TKey2<TKey, TVal>(
-        dictionary: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IDictionary_2<TKey, TVal>,
-        >,
+    pub fn RemoveWithConfirm_TKey2<TKey, TVal>(
+        dictionary: quest_hook::libil2cpp::Gc<TKey, TVal>,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -292,15 +317,7 @@ impl crate::ModestTree::MiscExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IDictionary_2<
-                                    TKey,
-                                    TVal,
-                                >,
-                            >,
-                            TKey,
-                        ),
+                        (quest_hook::libil2cpp::Gc<TKey, TVal>, TKey),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("RemoveWithConfirm")
@@ -314,78 +331,6 @@ impl crate::ModestTree::MiscExtensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (dictionary, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RemoveWithConfirm_IList_1_T0<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<T>,
-                            >,
-                            T,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RemoveWithConfirm")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveWithConfirm", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, item))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RemoveWithConfirm_LinkedList_1_T1<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedList_1<T>,
-        >,
-        item: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedList_1<T>,
-                            >,
-                            T,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RemoveWithConfirm")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RemoveWithConfirm", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, item))?
         };
         Ok(__cordl_ret.into())
     }

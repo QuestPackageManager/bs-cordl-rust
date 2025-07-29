@@ -13,9 +13,7 @@ pub struct SelectRegionViewController {
         >,
     >,
     pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::SelectRegionViewController_Region,
-        >,
+        crate::GlobalNamespace::SelectRegionViewController_Region,
     >,
 }
 #[cfg(feature = "cordl_class_SelectRegionViewController")]
@@ -198,9 +196,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
     pub fn add_didPressContinueButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
+            crate::GlobalNamespace::SelectRegionViewController_Region,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -209,9 +205,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::SelectRegionViewController_Region,
-                            >,
+                            crate::GlobalNamespace::SelectRegionViewController_Region,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -232,9 +226,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
     pub fn remove_didPressContinueButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
+            crate::GlobalNamespace::SelectRegionViewController_Region,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -243,9 +235,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::SelectRegionViewController_Region,
-                            >,
+                            crate::GlobalNamespace::SelectRegionViewController_Region,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

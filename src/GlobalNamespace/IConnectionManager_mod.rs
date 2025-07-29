@@ -121,9 +121,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     }
     pub fn Init<T>(
         &mut self,
-        initParams: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-        >,
+        initParams: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -133,13 +131,7 @@ impl crate::GlobalNamespace::IConnectionManager {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectionInitParams_1<T>,
-                        >),
-                        bool,
-                        1usize,
-                    >("Init")
+                    .find_method::<(quest_hook::libil2cpp::Gc<T>), bool, 1usize>("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -253,9 +245,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn add_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -264,10 +254,8 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -289,10 +277,8 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn add_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -301,12 +287,10 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                crate::GlobalNamespace::DisconnectedReason,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -326,9 +310,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     }
     pub fn add_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -336,9 +318,7 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
+                            crate::GlobalNamespace::ConnectionFailedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -358,9 +338,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     }
     pub fn add_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -368,9 +346,7 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -417,11 +393,9 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn add_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -430,15 +404,13 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                                crate::BGNet::Core::DeliveryMethod,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NetDataReader,
+                            >,
+                            crate::BGNet::Core::DeliveryMethod,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -646,9 +618,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn remove_onConnectionConnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -657,10 +627,8 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -682,10 +650,8 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn remove_onConnectionDisconnectedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-                crate::GlobalNamespace::DisconnectedReason,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -694,12 +660,10 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                crate::GlobalNamespace::DisconnectedReason,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -719,9 +683,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     }
     pub fn remove_onConnectionFailedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::ConnectionFailedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectionFailedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -729,9 +691,7 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::ConnectionFailedReason,
-                            >,
+                            crate::GlobalNamespace::ConnectionFailedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -751,9 +711,7 @@ impl crate::GlobalNamespace::IConnectionManager {
     }
     pub fn remove_onDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -761,9 +719,7 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::DisconnectedReason,
-                            >,
+                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -810,11 +766,9 @@ impl crate::GlobalNamespace::IConnectionManager {
     pub fn remove_onReceivedDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
-                quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-                crate::BGNet::Core::DeliveryMethod,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnection>,
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+            crate::BGNet::Core::DeliveryMethod,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -823,15 +777,13 @@ impl crate::GlobalNamespace::IConnectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnection,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::LiteNetLib::Utils::NetDataReader,
-                                >,
-                                crate::BGNet::Core::DeliveryMethod,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IConnection,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::LiteNetLib::Utils::NetDataReader,
+                            >,
+                            crate::BGNet::Core::DeliveryMethod,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

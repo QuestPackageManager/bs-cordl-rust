@@ -4,17 +4,13 @@
 pub struct VisualElementAnimationSystem {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_Animations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
         >,
     >,
     pub m_IterationList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
         >,
     >,
     pub m_HasNewAnimations: bool,
@@ -129,10 +125,8 @@ impl crate::UnityEngine::UIElements::VisualElementAnimationSystem {
     pub fn RegisterAnimations(
         &mut self,
         anims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -142,10 +136,8 @@ impl crate::UnityEngine::UIElements::VisualElementAnimationSystem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -197,10 +189,8 @@ impl crate::UnityEngine::UIElements::VisualElementAnimationSystem {
     pub fn UnregisterAnimations(
         &mut self,
         anims: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -210,10 +200,8 @@ impl crate::UnityEngine::UIElements::VisualElementAnimationSystem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Experimental::IValueAnimationUpdate,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

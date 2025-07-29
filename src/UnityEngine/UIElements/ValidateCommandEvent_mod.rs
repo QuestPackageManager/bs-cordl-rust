@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidateCommandEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::CommandEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ValidateCommandEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::ValidateCommandEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+ValidateCommandEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ValidateCommandEvent {
-    type Target = crate::UnityEngine::UIElements::CommandEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ValidateCommandEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

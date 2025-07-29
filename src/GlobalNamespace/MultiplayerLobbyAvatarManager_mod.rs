@@ -12,18 +12,14 @@ pub struct MultiplayerLobbyAvatarManager {
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
     pub _playerIdToAvatarMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLobbyAvatarController,
-            >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLobbyAvatarController,
         >,
     >,
     pub _inProgressDespawnAnimations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLobbyAvatarController,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLobbyAvatarController,
         >,
     >,
 }

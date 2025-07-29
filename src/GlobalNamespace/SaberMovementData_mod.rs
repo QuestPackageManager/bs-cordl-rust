@@ -9,11 +9,7 @@ pub struct SaberMovementData {
         >,
     >,
     pub _dataProcessors: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LazyCopyHashSet_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ISaberMovementDataProcessor,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISaberMovementDataProcessor>,
     >,
     pub _nextAddIndex: i32,
     pub _validCount: i32,

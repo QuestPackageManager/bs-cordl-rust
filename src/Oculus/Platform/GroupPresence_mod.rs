@@ -67,9 +67,7 @@ impl crate::Oculus::Platform::GroupPresence {
         options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::InviteOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -81,10 +79,8 @@ impl crate::Oculus::Platform::GroupPresence {
                             crate::Oculus::Platform::InviteOptions,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::UserList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::UserList,
                             >,
                         >,
                         1usize,
@@ -98,9 +94,7 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
     }
@@ -110,10 +104,8 @@ impl crate::Oculus::Platform::GroupPresence {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::ApplicationInviteList,
             >,
         >,
     > {
@@ -126,10 +118,8 @@ impl crate::Oculus::Platform::GroupPresence {
                             crate::Oculus::Platform::Models::ApplicationInviteList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ApplicationInviteList,
                             >,
                         >,
                         1usize,
@@ -143,20 +133,16 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::ApplicationInviteList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSentInvites() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::ApplicationInviteList,
             >,
         >,
     > {
@@ -167,10 +153,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::ApplicationInviteList,
                             >,
                         >,
                         0usize,
@@ -184,10 +168,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::ApplicationInviteList,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::ApplicationInviteList,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -196,10 +178,8 @@ impl crate::Oculus::Platform::GroupPresence {
         options: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::InviteOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::InvitePanelResultInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::InvitePanelResultInfo,
             >,
         >,
     > {
@@ -212,10 +192,8 @@ impl crate::Oculus::Platform::GroupPresence {
                             crate::Oculus::Platform::InviteOptions,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::InvitePanelResultInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::InvitePanelResultInfo,
                             >,
                         >,
                         1usize,
@@ -229,10 +207,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::InvitePanelResultInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::InvitePanelResultInfo,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (options))? };
         Ok(__cordl_ret.into())
@@ -276,10 +252,8 @@ impl crate::Oculus::Platform::GroupPresence {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::RejoinDialogResult,
             >,
         >,
     > {
@@ -300,10 +274,8 @@ impl crate::Oculus::Platform::GroupPresence {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::RejoinDialogResult,
                             >,
                         >,
                         3usize,
@@ -317,10 +289,8 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::RejoinDialogResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::RejoinDialogResult,
             >,
         > = unsafe {
             cordl_method_info
@@ -364,11 +334,7 @@ impl crate::Oculus::Platform::GroupPresence {
         userIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SendInvitesResult,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -380,10 +346,8 @@ impl crate::Oculus::Platform::GroupPresence {
                             quest_hook::libil2cpp::Il2CppArray<u64>,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::SendInvitesResult,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::SendInvitesResult,
                             >,
                         >,
                         1usize,
@@ -397,11 +361,7 @@ impl crate::Oculus::Platform::GroupPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SendInvitesResult,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userIDs))? };
         Ok(__cordl_ret.into())
     }
@@ -492,10 +452,8 @@ impl crate::Oculus::Platform::GroupPresence {
     }
     pub fn SetInvitationsSentNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -505,10 +463,8 @@ impl crate::Oculus::Platform::GroupPresence {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::LaunchInvitePanelFlowResult,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -556,10 +512,8 @@ impl crate::Oculus::Platform::GroupPresence {
     }
     pub fn SetJoinIntentReceivedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -569,10 +523,8 @@ impl crate::Oculus::Platform::GroupPresence {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::GroupPresenceJoinIntent,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -593,10 +545,8 @@ impl crate::Oculus::Platform::GroupPresence {
     }
     pub fn SetLeaveIntentReceivedNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -606,10 +556,8 @@ impl crate::Oculus::Platform::GroupPresence {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::GroupPresenceLeaveIntent,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

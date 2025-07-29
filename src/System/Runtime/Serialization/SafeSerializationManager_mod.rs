@@ -4,9 +4,7 @@
 pub struct SafeSerializationManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_serializedStates: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub m_savedSerializationInfo: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::SerializationInfo,
@@ -14,10 +12,8 @@ pub struct SafeSerializationManager {
     pub m_realObject: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_realType: quest_hook::libil2cpp::Gc<crate::System::RuntimeType>,
     pub SerializeObjectState: quest_hook::libil2cpp::Gc<
-        crate::System::EventHandler_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::SafeSerializationEventArgs,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::Serialization::SafeSerializationEventArgs,
         >,
     >,
 }

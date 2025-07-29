@@ -77,9 +77,7 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
             crate::GlobalNamespace::IStandaloneMonobehavior,
         >,
         action: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -94,10 +92,8 @@ impl crate::GlobalNamespace::StandaloneMonobehaviorExtensions {
                                 crate::GlobalNamespace::IStandaloneMonobehavior,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
                                 >,
                             >,
                         ),

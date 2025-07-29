@@ -7,14 +7,10 @@ pub struct LRUCache_2<
 > {
     pub entryLimit: i32,
     pub cache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            TKey,
-            crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
-        >,
+        TKey,
+        crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     >,
-    pub lru: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedList_1<TKey>,
-    >,
+    pub lru: quest_hook::libil2cpp::Gc<TKey>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -255,9 +251,7 @@ pub struct LRUCache_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub lruNode: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::LinkedListNode_1<TKey>,
-    >,
+    pub lruNode: quest_hook::libil2cpp::Gc<TKey>,
     pub Value: TValue,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -463,13 +457,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     >,
 > for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     > {
         todo!()
@@ -480,13 +474,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     >,
 > for crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue> {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::Util::LRUCache_2_Entry<TKey, TValue>,
     > {
         todo!()

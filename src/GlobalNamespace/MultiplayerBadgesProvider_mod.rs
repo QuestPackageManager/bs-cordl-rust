@@ -60,10 +60,8 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
     pub fn SelectBadgesAndPutThemIntoResults(
         &mut self,
         playerResults: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,10 +71,8 @@ impl crate::GlobalNamespace::MultiplayerBadgesProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerPlayerResultsData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

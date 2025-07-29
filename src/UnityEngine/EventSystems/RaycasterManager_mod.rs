@@ -70,11 +70,7 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
     }
     pub fn GetRaycasters() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::BaseRaycaster,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseRaycaster>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -84,10 +80,8 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::EventSystems::BaseRaycaster,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::BaseRaycaster,
                             >,
                         >,
                         0usize,
@@ -101,11 +95,7 @@ impl crate::UnityEngine::EventSystems::RaycasterManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::EventSystems::BaseRaycaster,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseRaycaster>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

@@ -820,9 +820,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetActiveTrailVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -831,9 +829,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ParticleSystemVertexStream,
-                            >,
+                            crate::UnityEngine::ParticleSystemVertexStream,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -854,9 +850,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn GetActiveVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -865,9 +859,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ParticleSystemVertexStream,
-                            >,
+                            crate::UnityEngine::ParticleSystemVertexStream,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1044,9 +1036,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetActiveTrailVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1055,9 +1045,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ParticleSystemVertexStream,
-                            >,
+                            crate::UnityEngine::ParticleSystemVertexStream,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1078,9 +1066,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
     pub fn SetActiveVertexStreams(
         &mut self,
         streams: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::ParticleSystemVertexStream,
-            >,
+            crate::UnityEngine::ParticleSystemVertexStream,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1089,9 +1075,7 @@ impl crate::UnityEngine::ParticleSystemRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::ParticleSystemVertexStream,
-                            >,
+                            crate::UnityEngine::ParticleSystemVertexStream,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAttributeOverridesFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,
@@ -31,7 +31,7 @@ for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAttributeOverridesFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAttributeOverridesFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlAttributeOverridesTraits,

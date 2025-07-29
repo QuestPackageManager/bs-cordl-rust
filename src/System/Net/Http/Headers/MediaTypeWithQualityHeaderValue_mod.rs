@@ -53,10 +53,8 @@ impl crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
                 >,
             >,
         >,
@@ -73,10 +71,8 @@ impl crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::MediaTypeWithQualityHeaderValue,
                                     >,
                                 >,
                             >,

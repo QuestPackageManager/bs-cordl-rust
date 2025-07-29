@@ -5,20 +5,16 @@ pub struct BeatmapCharacteristicSegmentedControlController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _segmentedControl: quest_hook::libil2cpp::Gc<crate::HMUI::IconSegmentedControl>,
     pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
     pub _selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
     pub _currentlyAvailableBeatmapCharacteristics: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapCharacteristicSegmentedControlController")]
@@ -138,21 +134,13 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn SetData(
         &mut self,
         beatmapCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
         selectedBeatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
         notAllowedCharacteristics: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -162,20 +150,16 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BeatmapCharacteristicSO,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
                                 >,
                             >,
                         ),
@@ -227,14 +211,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -243,13 +223,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCharacteristicSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -300,14 +278,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -316,13 +290,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCharacteristicSegmentedControlController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCharacteristicSO,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

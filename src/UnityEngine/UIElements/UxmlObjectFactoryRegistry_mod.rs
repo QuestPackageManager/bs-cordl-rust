@@ -122,10 +122,8 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
         fullTypeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         factoryList: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                 >,
             >,
         >,
@@ -141,10 +139,8 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                                     >,
                                 >,
                             >,
@@ -167,14 +163,10 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
     }
     pub fn get_factories() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-                        >,
-                    >,
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                 >,
             >,
         >,
@@ -186,16 +178,12 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-                                        >,
-                                    >,
+                                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                                 >,
                             >,
                         >,
@@ -210,14 +198,10 @@ impl crate::UnityEngine::UIElements::UxmlObjectFactoryRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::List_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
-                        >,
-                    >,
+                    crate::UnityEngine::UIElements::IBaseUxmlObjectFactory,
                 >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };

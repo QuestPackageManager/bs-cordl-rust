@@ -401,16 +401,12 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         nodeID: i32,
         instancerParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::HoudiniEngineUnity::HAPI_PartInfo,
-            >,
+            crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
         instancerBuffers: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
                 >,
             >,
         >,
@@ -426,16 +422,12 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                             >,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                >,
+                                crate::HoudiniEngineUnity::HAPI_PartInfo,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
                                     >,
                                 >,
                             >,
@@ -464,11 +456,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         nodeID: i32,
-        meshParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::HoudiniEngineUnity::HAPI_PartInfo,
-            >,
-        >,
+        meshParts: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         bSplitPoints: bool,
         bUseLODGroups: bool,
         bGenerateUVs: bool,
@@ -476,11 +464,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         bGenerateNormals: bool,
         meshBuffers: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
-                    >,
-                >,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -495,9 +479,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                             >,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                >,
+                                crate::HoudiniEngineUnity::HAPI_PartInfo,
                             >,
                             bool,
                             bool,
@@ -506,10 +488,8 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                             bool,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_LoadBufferMesh,
                                     >,
                                 >,
                             >,
@@ -642,22 +622,14 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         &mut self,
         session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
         nodeID: i32,
-        volumeParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::HoudiniEngineUnity::HAPI_PartInfo,
-            >,
-        >,
+        volumeParts: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         scatterInstancerParts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::HoudiniEngineUnity::HAPI_PartInfo,
-            >,
+            crate::HoudiniEngineUnity::HAPI_PartInfo,
         >,
         volumeBuffers: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
                 >,
             >,
         >,
@@ -673,21 +645,15 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                             >,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                >,
+                                crate::HoudiniEngineUnity::HAPI_PartInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                >,
+                                crate::HoudiniEngineUnity::HAPI_PartInfo,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
                                     >,
                                 >,
                             >,
@@ -754,11 +720,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     pub fn GetLoadBufferVolumeFromTileIndex(
         tileIndex: i32,
         buffers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
@@ -771,10 +733,8 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_LoadBufferVolume,
                                 >,
                             >,
                         ),
@@ -1093,39 +1053,19 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         &mut self,
         nodeID: i32,
         meshParts: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         >,
         volumeParts: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         >,
         instancerParts: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         >,
         curveParts: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         >,
         scatterInstancerParts: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::HoudiniEngineUnity::HAPI_PartInfo,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HAPI_PartInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1137,37 +1077,27 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                    >,
+                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                    >,
+                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                    >,
+                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                    >,
+                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::HoudiniEngineUnity::HAPI_PartInfo,
-                                    >,
+                                    crate::HoudiniEngineUnity::HAPI_PartInfo,
                                 >,
                             >,
                         ),
@@ -1850,17 +1780,13 @@ pub struct HEU_ThreadedTaskLoadGeo_HEU_LoadData {
     pub _logStr: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _session: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_SessionBase>,
     pub _loadedObjects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject,
         >,
     >,
     pub _idBuffersMap: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferBase>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData")]
@@ -1951,19 +1877,13 @@ pub struct HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
     pub _objectNodeID: i32,
     pub _displayNodeID: i32,
     pub _terrainBuffers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferVolume>,
     >,
     pub _meshBuffers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferMesh>,
     >,
     pub _instancerBuffers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferInstancer>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_LoadBufferInstancer>,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadObject")]

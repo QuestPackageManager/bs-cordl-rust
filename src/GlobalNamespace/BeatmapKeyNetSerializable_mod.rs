@@ -472,13 +472,13 @@ for crate::GlobalNamespace::BeatmapKeyNetSerializable {
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >,
 > for crate::GlobalNamespace::BeatmapKeyNetSerializable {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -486,13 +486,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapKeyNetSerializable")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >,
 > for crate::GlobalNamespace::BeatmapKeyNetSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     > {
         unsafe { std::mem::transmute(self) }

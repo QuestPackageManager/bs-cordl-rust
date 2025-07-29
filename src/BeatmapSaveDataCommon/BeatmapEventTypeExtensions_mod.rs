@@ -40,11 +40,7 @@ impl std::ops::DerefMut for crate::BeatmapSaveDataCommon::BeatmapEventTypeExtens
 #[cfg(feature = "BeatmapSaveDataCommon+BeatmapEventTypeExtensions")]
 impl crate::BeatmapSaveDataCommon::BeatmapEventTypeExtensions {
     pub fn GetSpecialEventTypes() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::BeatmapEventType>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -53,9 +49,7 @@ impl crate::BeatmapSaveDataCommon::BeatmapEventTypeExtensions {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::HashSet_1<
-                                crate::BeatmapSaveDataCommon::BeatmapEventType,
-                            >,
+                            crate::BeatmapSaveDataCommon::BeatmapEventType,
                         >,
                         0usize,
                     >("GetSpecialEventTypes")
@@ -68,9 +62,7 @@ impl crate::BeatmapSaveDataCommon::BeatmapEventTypeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                crate::BeatmapSaveDataCommon::BeatmapEventType,
-            >,
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

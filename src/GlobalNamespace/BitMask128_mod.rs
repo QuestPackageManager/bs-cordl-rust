@@ -670,66 +670,50 @@ impl crate::GlobalNamespace::BitMask128 {
     }
 }
 #[cfg(feature = "BitMask128")]
-impl AsRef<crate::GlobalNamespace::IBitMask_1<crate::GlobalNamespace::BitMask128>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
 for crate::GlobalNamespace::BitMask128 {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IBitMask_1<crate::GlobalNamespace::BitMask128> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
         todo!()
     }
 }
 #[cfg(feature = "BitMask128")]
-impl AsMut<crate::GlobalNamespace::IBitMask_1<crate::GlobalNamespace::BitMask128>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
 for crate::GlobalNamespace::BitMask128 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IBitMask_1<crate::GlobalNamespace::BitMask128> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
         todo!()
     }
 }
 #[cfg(feature = "BitMask128")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::BitMask128,
-    >,
-> for crate::GlobalNamespace::BitMask128 {
-    fn as_ref(
-        &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::BitMask128,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "BitMask128")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::BitMask128,
-    >,
-> for crate::GlobalNamespace::BitMask128 {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        crate::GlobalNamespace::BitMask128,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "BitMask128")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::BitMask128>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
 for crate::GlobalNamespace::BitMask128 {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::BitMask128> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
         todo!()
     }
 }
 #[cfg(feature = "BitMask128")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::BitMask128>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
 for crate::GlobalNamespace::BitMask128 {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::BitMask128> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
+        todo!()
+    }
+}
+#[cfg(feature = "BitMask128")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
+for crate::GlobalNamespace::BitMask128 {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
+        todo!()
+    }
+}
+#[cfg(feature = "BitMask128")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128>>
+for crate::GlobalNamespace::BitMask128 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMask128> {
         todo!()
     }
 }

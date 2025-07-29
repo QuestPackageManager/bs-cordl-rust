@@ -17,9 +17,7 @@ pub struct AutoSetupController {
         crate::UnityEngine::UI::Toggle,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
@@ -289,9 +287,7 @@ impl crate::GlobalNamespace::AutoSetupController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -300,10 +296,8 @@ impl crate::GlobalNamespace::AutoSetupController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::AutoSetupData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AutoSetupData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -325,9 +319,7 @@ impl crate::GlobalNamespace::AutoSetupController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AutoSetupData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -336,10 +328,8 @@ impl crate::GlobalNamespace::AutoSetupController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::AutoSetupData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AutoSetupData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

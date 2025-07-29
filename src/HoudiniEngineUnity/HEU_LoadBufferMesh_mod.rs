@@ -7,9 +7,7 @@ pub struct HEU_LoadBufferMesh {
         crate::HoudiniEngineUnity::HEU_GenerateGeoCache,
     >,
     pub _LODGroupMeshes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeoGroup>,
     >,
     pub _defaultMaterialKey: i32,
     pub _bGenerateUVs: bool,

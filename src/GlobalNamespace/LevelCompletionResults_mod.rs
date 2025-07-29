@@ -421,34 +421,6 @@ for crate::GlobalNamespace::LevelCompletionResults {
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
-impl AsRef<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-    >,
-> for crate::GlobalNamespace::LevelCompletionResults {
-    fn as_ref(
-        &self,
-    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LevelCompletionResults")]
-impl AsMut<
-    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-    >,
-> for crate::GlobalNamespace::LevelCompletionResults {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "LevelCompletionResults")]
 impl AsRef<crate::System::IComparable>
 for crate::GlobalNamespace::LevelCompletionResults {
     fn as_ref(&self) -> &crate::System::IComparable {
@@ -459,6 +431,34 @@ for crate::GlobalNamespace::LevelCompletionResults {
 impl AsMut<crate::System::IComparable>
 for crate::GlobalNamespace::LevelCompletionResults {
     fn as_mut(&mut self) -> &mut crate::System::IComparable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    >,
+> for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    >,
+> for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -7,22 +7,16 @@ pub struct StyleVariableResolver {
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher,
     >,
     pub m_ResolvedValues: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-        >,
+        crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
     pub m_ResolvedVarStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_Property: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleProperty,
     >,
     pub m_ContextStack: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<
-            crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
-        >,
+        crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
     >,
     pub m_CurrentContext: crate::UnityEngine::UIElements::StyleVariableResolver_ResolveContext,
     pub _variableContext_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -487,9 +481,7 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -499,9 +491,7 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-                            >,
+                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
                         >,
                         0usize,
                     >("get_resolvedValues")
@@ -514,9 +504,7 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
-            >,
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -28,10 +28,10 @@ pub struct ObstacleSaberSparkleEffectManager {
         >,
     >,
     pub sparkleEffectDidStartEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+        crate::GlobalNamespace::SaberType,
     >,
     pub sparkleEffectDidEndEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::SaberType>,
+        crate::GlobalNamespace::SaberType,
     >,
 }
 #[cfg(feature = "cordl_class_ObstacleSaberSparkleEffectManager")]
@@ -200,9 +200,7 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     pub fn IntersectSaberWithObstacles(
         saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         obstacles: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
         intersectObstacleSurface: quest_hook::libil2cpp::ByRefMut<bool>,
         hit: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Pose>,
@@ -215,10 +213,8 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
                         (
                             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::ObstacleController,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<bool>,
@@ -313,18 +309,14 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn add_sparkleEffectDidEndEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_sparkleEffectDidEndEvent")
@@ -343,18 +335,14 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn add_sparkleEffectDidStartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_sparkleEffectDidStartEvent")
@@ -373,18 +361,14 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn remove_sparkleEffectDidEndEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_sparkleEffectDidEndEvent")
@@ -403,18 +387,14 @@ impl crate::GlobalNamespace::ObstacleSaberSparkleEffectManager {
     }
     pub fn remove_sparkleEffectDidStartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-        >,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::GlobalNamespace::SaberType>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_sparkleEffectDidStartEvent")

@@ -3,10 +3,8 @@
 #[derive(Debug)]
 pub struct MemoryPoolBase_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _inactiveItems: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Stack_1<TContract>,
-    >,
-    pub _factory: quest_hook::libil2cpp::Gc<crate::Zenject::IFactory_1<TContract>>,
+    pub _inactiveItems: quest_hook::libil2cpp::Gc<TContract>,
+    pub _factory: quest_hook::libil2cpp::Gc<TContract>,
     pub _settings: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolSettings>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _activeCount: i32,
@@ -112,7 +110,7 @@ impl<
     }
     pub fn Construct(
         &mut self,
-        factory: quest_hook::libil2cpp::Gc<crate::Zenject::IFactory_1<TContract>>,
+        factory: quest_hook::libil2cpp::Gc<TContract>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         settings: quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolSettings>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -126,9 +124,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::IFactory_1<TContract>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TContract>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::MemoryPoolSettings>,
                         ),
@@ -698,11 +694,7 @@ impl<
     }
     pub fn get_InactiveItems(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TContract>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -713,9 +705,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TContract>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TContract>,
                         0usize,
                     >("get_InactiveItems")
                     .unwrap_or_else(|e| {
@@ -726,9 +716,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TContract>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_ItemType(

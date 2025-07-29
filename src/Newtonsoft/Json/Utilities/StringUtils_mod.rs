@@ -105,14 +105,10 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ForgivingCaseSensitiveFind<TSource>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
+        source: quest_hook::libil2cpp::Gc<TSource>,
         valueSelector: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                TSource,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            TSource,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         testValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<TSource>
@@ -126,15 +122,11 @@ impl crate::Newtonsoft::Json::Utilities::StringUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
+                            quest_hook::libil2cpp::Gc<TSource>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    TSource,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                TSource,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

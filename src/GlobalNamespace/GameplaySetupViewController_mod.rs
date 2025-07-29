@@ -25,10 +25,8 @@ pub struct GameplaySetupViewController {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub _panels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::GameplaySetupViewController_Panel,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplaySetupViewController_Panel,
         >,
     >,
     pub _activePanelIdx: i32,

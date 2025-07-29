@@ -39,10 +39,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ListExtensions {
 #[cfg(feature = "ListExtensions")]
 impl crate::GlobalNamespace::ListExtensions {
     pub fn FindIndex<T>(
-        list: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -53,12 +51,7 @@ impl crate::GlobalNamespace::ListExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
                         i32,
                         2usize,
                     >("FindIndex")
@@ -76,9 +69,7 @@ impl crate::GlobalNamespace::ListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
+        _cordl_self: quest_hook::libil2cpp::Gc<T>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -90,12 +81,7 @@ impl crate::GlobalNamespace::ListExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         i32,
                         2usize,
                     >("IndexOf")
@@ -113,9 +99,7 @@ impl crate::GlobalNamespace::ListExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn InsertIntoSortedListFromEnd<T>(
-        sortedList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<T>,
-        >,
+        sortedList: quest_hook::libil2cpp::Gc<T>,
         newItem: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -127,12 +111,7 @@ impl crate::GlobalNamespace::ListExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("InsertIntoSortedListFromEnd")

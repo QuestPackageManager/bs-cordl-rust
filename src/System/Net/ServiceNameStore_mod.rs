@@ -4,9 +4,7 @@
 pub struct ServiceNameStore {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub serviceNames: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub serviceNameCollection: quest_hook::libil2cpp::Gc<
         crate::System::Security::Authentication::ExtendedProtection::ServiceNameCollection,

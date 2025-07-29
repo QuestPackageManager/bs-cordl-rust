@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct BezierSplineEvaluator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _segments: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::BezierCurve>,
-    >,
+    pub _segments: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierCurve>,
     pub _currentSegmentIndex: i32,
 }
 #[cfg(feature = "cordl_class_BezierSplineEvaluator")]

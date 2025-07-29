@@ -141,12 +141,10 @@ impl crate::System::Net::WebConnectionTunnel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::ValueTuple_3<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    i32,
-                >,
+            crate::System::ValueTuple_3<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                i32,
             >,
         >,
     > {
@@ -160,16 +158,14 @@ impl crate::System::Net::WebConnectionTunnel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::ValueTuple_3<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Net::WebHeaderCollection,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppArray<u8>,
-                                    >,
-                                    i32,
+                            crate::System::ValueTuple_3<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::WebHeaderCollection,
                                 >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<u8>,
+                                >,
+                                i32,
                             >,
                         >,
                         2usize,
@@ -183,12 +179,10 @@ impl crate::System::Net::WebConnectionTunnel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::ValueTuple_3<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-                    i32,
-                >,
+            crate::System::ValueTuple_3<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebHeaderCollection>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+                i32,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (stream, cancellationToken))?

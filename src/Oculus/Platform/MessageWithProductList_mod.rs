@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithProductList {
-    __cordl_parent: crate::Oculus::Platform::Message_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithProductList {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithProductList")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithProductList {
-    type Target = crate::Oculus::Platform::Message_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ProductList>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

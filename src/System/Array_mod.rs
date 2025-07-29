@@ -56,11 +56,7 @@ impl crate::System::Array {
     pub type SorterObjectArray = crate::System::Array_SorterObjectArray;
     pub fn AsReadOnly<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -73,11 +69,7 @@ impl crate::System::Array {
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<T>,
                         >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         1usize,
                     >("AsReadOnly")
                     .unwrap_or_else(|e| {
@@ -88,9 +80,9 @@ impl crate::System::Array {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (array))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn BinarySearch_Array_Il2CppObject0(
@@ -269,12 +261,10 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn BinarySearch_Il2CppArray_T_IComparer_1_5<T>(
+    pub fn BinarySearch_Il2CppArray_T_Gc5<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         value: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -290,9 +280,7 @@ impl crate::System::Array {
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         3usize,
@@ -349,14 +337,12 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn BinarySearch_Il2CppArray_i32_i32_T_IComparer_1_7<T>(
+    pub fn BinarySearch_Il2CppArray_i32_i32_T_Gc7<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         index: i32,
         length: i32,
         value: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -374,9 +360,7 @@ impl crate::System::Array {
                             i32,
                             i32,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         5usize,
@@ -571,7 +555,7 @@ impl crate::System::Array {
     }
     pub fn ConvertAll<TInput, TOutput>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TInput>>,
-        converter: quest_hook::libil2cpp::Gc<crate::System::Converter_2<TInput, TOutput>>,
+        converter: quest_hook::libil2cpp::Gc<TInput, TOutput>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TOutput>>,
     >
@@ -590,9 +574,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TInput>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Converter_2<TInput, TOutput>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TInput, TOutput>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<TOutput>,
@@ -1092,7 +1074,7 @@ impl crate::System::Array {
     }
     pub fn Exists<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1107,7 +1089,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         bool,
                         2usize,
@@ -1237,7 +1219,7 @@ impl crate::System::Array {
     }
     pub fn Find<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1252,7 +1234,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         2usize,
@@ -1272,7 +1254,7 @@ impl crate::System::Array {
     }
     pub fn FindAll<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -1289,7 +1271,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         2usize,
@@ -1307,9 +1289,9 @@ impl crate::System::Array {
         > = unsafe { cordl_method_info.invoke_unchecked((), (array, _cordl_match))? };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_Predicate_1_0<T>(
+    pub fn FindIndex_Gc0<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1324,7 +1306,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         2usize,
@@ -1342,10 +1324,10 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_i32_Predicate_1_1<T>(
+    pub fn FindIndex_i32_Gc1<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         startIndex: i32,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1361,7 +1343,7 @@ impl crate::System::Array {
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         3usize,
@@ -1379,11 +1361,11 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_i32_i32_Predicate_1_2<T>(
+    pub fn FindIndex_i32_i32_Gc2<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         startIndex: i32,
         count: i32,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1400,7 +1382,7 @@ impl crate::System::Array {
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         4usize,
@@ -1421,7 +1403,7 @@ impl crate::System::Array {
     }
     pub fn FindLast<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1436,7 +1418,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         T,
                         2usize,
@@ -1454,9 +1436,9 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindLastIndex_Predicate_1_0<T>(
+    pub fn FindLastIndex_Gc0<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1471,7 +1453,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         2usize,
@@ -1489,10 +1471,10 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindLastIndex_i32_Predicate_1_1<T>(
+    pub fn FindLastIndex_i32_Gc1<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         startIndex: i32,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1508,7 +1490,7 @@ impl crate::System::Array {
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         3usize,
@@ -1526,11 +1508,11 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindLastIndex_i32_i32_Predicate_1_2<T>(
+    pub fn FindLastIndex_i32_i32_Gc2<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         startIndex: i32,
         count: i32,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1547,7 +1529,7 @@ impl crate::System::Array {
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         4usize,
@@ -1568,7 +1550,7 @@ impl crate::System::Array {
     }
     pub fn ForEach<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        action: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1583,7 +1565,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -2542,9 +2524,7 @@ impl crate::System::Array {
     }
     pub fn InternalArray__IEnumerable_GetEnumerator<T>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2555,9 +2535,7 @@ impl crate::System::Array {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("InternalArray__IEnumerable_GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -2568,9 +2546,9 @@ impl crate::System::Array {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalArray__IReadOnlyCollection_get_Count(
@@ -3836,9 +3814,9 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Il2CppArray_Comparison_1_12<T>(
+    pub fn Sort_Il2CppArray_Gc10<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -3853,46 +3831,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("Sort")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (array, comparison))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Sort_Il2CppArray_IComparer_1_10<T>(
-        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -3907,6 +3846,41 @@ impl crate::System::Array {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (array, comparer))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_Gc12<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        comparison: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<T>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Sort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (array, comparison))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3949,12 +3923,10 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Il2CppArray_Il2CppArray_IComparer_1_15<TKey, TValue>(
+    pub fn Sort_Il2CppArray_Il2CppArray_Gc15<TKey, TValue>(
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TKey>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -3974,9 +3946,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TValue>,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<TKey>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TKey>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -4037,14 +4007,12 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Il2CppArray_Il2CppArray_i32_i32_IComparer_1_16<TKey, TValue>(
+    pub fn Sort_Il2CppArray_Il2CppArray_i32_i32_Gc16<TKey, TValue>(
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
         items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
         index: i32,
         length: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<TKey>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -4066,9 +4034,7 @@ impl crate::System::Array {
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<TKey>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TKey>,
                         ),
                         quest_hook::libil2cpp::Void,
                         5usize,
@@ -4124,13 +4090,11 @@ impl crate::System::Array {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Il2CppArray_i32_i32_IComparer_1_11<T>(
+    pub fn Sort_Il2CppArray_i32_i32_Gc11<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         index: i32,
         length: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -4147,9 +4111,7 @@ impl crate::System::Array {
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -4562,7 +4524,7 @@ impl crate::System::Array {
     }
     pub fn TrueForAll<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+        _cordl_match: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -4577,7 +4539,7 @@ impl crate::System::Array {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         bool,
                         2usize,
@@ -5456,24 +5418,6 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
     }
 }
 #[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Array_EmptyInternalEnumerator_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Array_EmptyInternalEnumerator_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -5498,6 +5442,20 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Array_EmptyInternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -5781,24 +5739,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Array_InternalEnumerator_1<T
     }
 }
 #[cfg(feature = "System+Array+InternalEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Array_InternalEnumerator_1<T> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
-impl<
-    T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
-for crate::System::Array_InternalEnumerator_1<T> {
-    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Array+InternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Array_InternalEnumerator_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -5823,6 +5763,20 @@ for crate::System::Array_InternalEnumerator_1<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Array_InternalEnumerator_1<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Array+InternalEnumerator_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+for crate::System::Array_InternalEnumerator_1<T> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }

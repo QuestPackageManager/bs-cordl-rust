@@ -16,9 +16,7 @@ pub struct LightColorGroupEffectManager {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _lightColorGroupEffects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorGroupEffect>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorGroupEffect>,
     >,
 }
 #[cfg(feature = "cordl_class_LightColorGroupEffectManager")]
@@ -160,9 +158,7 @@ impl crate::GlobalNamespace::LightColorGroupEffectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -172,11 +168,7 @@ impl crate::GlobalNamespace::LightColorGroupEffectManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightGroup,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
                         >,
                         0usize,
                     >("get_lightGroups")
@@ -189,9 +181,7 @@ impl crate::GlobalNamespace::LightColorGroupEffectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyCollection_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroup>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

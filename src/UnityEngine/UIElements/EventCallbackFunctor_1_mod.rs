@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct EventCallbackFunctor_1<TEventType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-    pub m_Callback: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-    >,
+    pub m_Callback: quest_hook::libil2cpp::Gc<TEventType>,
     pub m_EventTypeId: i64,
     __cordl_phantom_TEventType: std::marker::PhantomData<TEventType>,
 }
@@ -137,9 +135,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -155,9 +151,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
         phase: crate::UnityEngine::UIElements::CallbackPhase,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -171,9 +165,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TEventType>,
                             crate::UnityEngine::UIElements::CallbackPhase,
                             crate::UnityEngine::UIElements::InvokePolicy,
                         ),

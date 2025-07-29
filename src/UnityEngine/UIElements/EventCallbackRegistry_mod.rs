@@ -210,55 +210,12 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn RegisterCallback_EventCallback_1_TrickleDown_InvokePolicy0<TEventType>(
-        &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
-        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
-        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-                            >,
-                            crate::UnityEngine::UIElements::TrickleDown,
-                            crate::UnityEngine::UIElements::InvokePolicy,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterCallback")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterCallback", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (callback, useTrickleDown, invokePolicy))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterCallback_EventCallback_2_TCallbackArgs_TrickleDown_InvokePolicy1<
+    pub fn RegisterCallback_TCallbackArgs_TrickleDown_InvokePolicy1<
         TEventType,
         TCallbackArgs,
     >(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_2<TEventType, TCallbackArgs>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
         userArgs: TCallbackArgs,
         useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
         invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
@@ -275,12 +232,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_2<
-                                    TEventType,
-                                    TCallbackArgs,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TEventType, TCallbackArgs>,
                             TCallbackArgs,
                             crate::UnityEngine::UIElements::TrickleDown,
                             crate::UnityEngine::UIElements::InvokePolicy,
@@ -302,6 +254,43 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                     self,
                     (callback, userArgs, useTrickleDown, invokePolicy),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCallback_TrickleDown_InvokePolicy0<TEventType>(
+        &mut self,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
+        useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
+        invokePolicy: crate::UnityEngine::UIElements::InvokePolicy,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TEventType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<TEventType>,
+                            crate::UnityEngine::UIElements::TrickleDown,
+                            crate::UnityEngine::UIElements::InvokePolicy,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RegisterCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (callback, useTrickleDown, invokePolicy))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,11 +323,9 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UnregisterCallback_EventCallback_1_TrickleDown1<TEventType>(
+    pub fn UnregisterCallback_Gc_TrickleDown1<TEventType>(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-        >,
+        callback: quest_hook::libil2cpp::Gc<TEventType>,
         useTrickleDown: crate::UnityEngine::UIElements::TrickleDown,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -351,9 +338,7 @@ impl crate::UnityEngine::UIElements::EventCallbackRegistry {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventCallback_1<TEventType>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TEventType>,
                             crate::UnityEngine::UIElements::TrickleDown,
                         ),
                         bool,

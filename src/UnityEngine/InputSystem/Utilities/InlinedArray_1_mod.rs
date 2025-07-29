@@ -155,11 +155,9 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Append_IEnumerable_1_1(
+    pub fn Append_Gc1(
         &mut self,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-        >,
+        values: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,9 +168,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TValue>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Append")
@@ -332,9 +328,7 @@ impl<
     pub fn Contains(
         &mut self,
         value: TValue,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEqualityComparer_1<TValue>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -345,14 +339,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            TValue,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEqualityComparer_1<
-                                    TValue,
-                                >,
-                            >,
-                        ),
+                        (TValue, quest_hook::libil2cpp::Gc<TValue>),
                         bool,
                         2usize,
                     >("Contains")
@@ -371,11 +358,7 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -386,9 +369,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TValue>,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -399,9 +380,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf(&mut self, value: TValue) -> quest_hook::libil2cpp::Result<i32>
@@ -705,9 +686,9 @@ impl<
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToArray_Func_2_1<TOther>(
+    pub fn ToArray_Gc1<TOther>(
         &mut self,
-        mapFunction: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, TOther>>,
+        mapFunction: quest_hook::libil2cpp::Gc<TValue, TOther>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TOther>>,
     >
@@ -722,9 +703,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<TValue, TOther>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TValue, TOther>),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<TOther>,
                         >,
@@ -743,11 +722,9 @@ impl<
         > = unsafe { cordl_method_info.invoke_unchecked(self, (mapFunction))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_IEnumerable_1_2(
+    pub fn _ctor_Gc2(
         &mut self,
-        values: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-        >,
+        values: quest_hook::libil2cpp::Gc<TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -758,9 +735,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TValue>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -922,26 +897,6 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -952,6 +907,20 @@ for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         todo!()
     }
 }
@@ -1217,26 +1186,6 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
-impl<
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
-for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1261,6 +1210,20 @@ for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+Utilities+InlinedArray_1+Enumerator")]
+impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::UnityEngine::InputSystem::Utilities::InlinedArray_1_Enumerator<TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         todo!()
     }
 }

@@ -59,7 +59,7 @@ for crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IOperationCacheKey")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -67,7 +67,7 @@ impl AsRef<
 > for crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -77,7 +77,7 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+IOperationCacheKey")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,
@@ -85,7 +85,7 @@ impl AsMut<
 > for crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
         >,

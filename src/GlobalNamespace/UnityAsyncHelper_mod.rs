@@ -38,47 +38,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnityAsyncHelper {
 }
 #[cfg(feature = "UnityAsyncHelper")]
 impl crate::GlobalNamespace::UnityAsyncHelper {
-    pub fn InvokeSafe_Func_1_0(
+    pub fn InvokeSafe_A1<A>(
         asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_1<
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InvokeSafe")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeSafe", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (asyncTask))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn InvokeSafe_Func_2_A1<A>(
-        asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                A,
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            A,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
         firstParameter: A,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -93,11 +56,9 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<
-                                    A,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task,
-                                    >,
+                                A,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
                                 >,
                             >,
                             A,
@@ -118,13 +79,11 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeSafe_Func_3_A_B2<A, B>(
+    pub fn InvokeSafe_A_B2<A, B>(
         asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_3<
-                A,
-                B,
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            A,
+            B,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
         firstParameter: A,
         secondParameter: B,
@@ -142,12 +101,10 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<
-                                    A,
-                                    B,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task,
-                                    >,
+                                A,
+                                B,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
                                 >,
                             >,
                             A,
@@ -170,14 +127,12 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeSafe_Func_4_A_B_C3<A, B, C>(
+    pub fn InvokeSafe_A_B_C3<A, B, C>(
         asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<
-                A,
-                B,
-                C,
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            A,
+            B,
+            C,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
         firstParameter: A,
         secondParameter: B,
@@ -198,13 +153,11 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_4<
-                                    A,
-                                    B,
-                                    C,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task,
-                                    >,
+                                A,
+                                B,
+                                C,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
                                 >,
                             >,
                             A,
@@ -231,15 +184,13 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeSafe_Func_5_A_B_C_D4<A, B, C, D>(
+    pub fn InvokeSafe_A_B_C_D4<A, B, C, D>(
         asyncTask: quest_hook::libil2cpp::Gc<
-            crate::System::Func_5<
-                A,
-                B,
-                C,
-                D,
-                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-            >,
+            A,
+            B,
+            C,
+            D,
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
         firstParameter: A,
         secondParameter: B,
@@ -263,14 +214,12 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_5<
-                                    A,
-                                    B,
-                                    C,
-                                    D,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Threading::Tasks::Task,
-                                    >,
+                                A,
+                                B,
+                                C,
+                                D,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
                                 >,
                             >,
                             A,
@@ -304,11 +253,42 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn InvokeSafe_Gc0(
+        asyncTask: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("InvokeSafe")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InvokeSafe", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (asyncTask))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn WaitUntilAsync_ICoroutineStarter1(
         coroutineStarter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ICoroutineStarter,
         >,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        predicate: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
@@ -321,7 +301,7 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::ICoroutineStarter,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+                            quest_hook::libil2cpp::Gc<bool>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
                         2usize,
@@ -343,7 +323,7 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
     }
     pub fn WaitUntilAsync_MonoBehaviour0(
         coroutineStarter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+        predicate: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     > {
@@ -354,7 +334,7 @@ impl crate::GlobalNamespace::UnityAsyncHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+                            quest_hook::libil2cpp::Gc<bool>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
                         2usize,
@@ -611,40 +591,6 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
-)]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
-)]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -675,6 +621,40 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
 impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+)]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+>
+for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityAsyncHelper+__c__DisplayClass5_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+)]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+>
+for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -905,40 +885,6 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
 #[cfg(
     feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
 )]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
-)]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
->
-for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
-)]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -969,6 +915,40 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
 impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+)]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+>
+for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityAsyncHelper+__c__DisplayClass6_0+__WaitUntilAsync_g__WaitUntilPredicateTrue_0_d"
+)]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+>
+for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

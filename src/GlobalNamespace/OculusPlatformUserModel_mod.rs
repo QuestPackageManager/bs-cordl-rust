@@ -5,9 +5,7 @@ pub struct OculusPlatformUserModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
     pub _userInfoTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
     >,
     pub _userInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
     pub _friendsUserIds: quest_hook::libil2cpp::Gc<
@@ -17,9 +15,7 @@ pub struct OculusPlatformUserModel {
     >,
     pub _lastXPlatformTokenStatusChange: f32,
     pub platformUserInfoDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
     >,
 }
 #[cfg(feature = "cordl_class_OculusPlatformUserModel")]
@@ -63,11 +59,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlatformUserAuthTokenData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformUserAuthTokenData>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -77,10 +69,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PlatformUserAuthTokenData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlatformUserAuthTokenData,
                             >,
                         >,
                         0usize,
@@ -94,11 +84,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PlatformUserAuthTokenData,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformUserAuthTokenData>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -107,12 +93,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         cached: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -123,13 +105,9 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IReadOnlyList_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -144,12 +122,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cached))? };
         Ok(__cordl_ret.into())
@@ -159,9 +133,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         ctx: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -171,9 +143,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
                         >,
                         1usize,
                     >("GetUserInfo")
@@ -186,9 +156,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (ctx))? };
         Ok(__cordl_ret.into())
     }
@@ -197,9 +165,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         ctx: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -209,9 +175,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
                         >,
                         1usize,
                     >("GetUserInfoInternalAsync")
@@ -224,27 +188,19 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (ctx))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserNamesForUserIds(
         &mut self,
         userIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     > {
@@ -254,20 +210,14 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IReadOnlyList_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
-                                        >,
-                                    >,
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                         >,
@@ -282,12 +232,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IReadOnlyList_1<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (userIds))? };
         Ok(__cordl_ret.into())
@@ -330,11 +276,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -343,9 +285,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::XPlatformAccessTokenData,
-                            >,
+                            crate::GlobalNamespace::XPlatformAccessTokenData,
                         >,
                         1usize,
                     >("RequestXPlatformAccessToken")
@@ -358,9 +298,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::XPlatformAccessTokenData,
-            >,
+            crate::GlobalNamespace::XPlatformAccessTokenData,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
@@ -368,12 +306,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Message_1<
-                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
             >,
         >,
     > {
@@ -384,13 +318,9 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Message_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::Oculus::Platform::Models::User,
-                                        >,
-                                    >,
+                                    crate::Oculus::Platform::Models::User,
                                 >,
                             >,
                         >,
@@ -405,12 +335,8 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Message_1<
-                        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userId))? };
         Ok(__cordl_ret.into())
@@ -446,9 +372,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
     pub fn add_platformUserInfoDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -457,9 +381,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -503,9 +425,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
     pub fn remove_platformUserInfoDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -514,9 +434,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -568,17 +486,13 @@ pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
     pub __1__state: i32,
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder_1<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     >,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1<
-                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
         >,
     >,
 }

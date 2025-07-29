@@ -4,49 +4,22 @@
 pub struct TickableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tickables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
     >,
     pub _fixedTickables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::IFixedTickable>,
     >,
     pub _lateTickables: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Zenject::ILateTickable>,
     >,
     pub _priorities: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::ModestTree::Util::ValuePair_2<
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    i32,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
     >,
     pub _fixedPriorities: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::ModestTree::Util::ValuePair_2<
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    i32,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
     >,
     pub _latePriorities: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::ModestTree::Util::ValuePair_2<
-                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                    i32,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
     >,
     pub _updater: quest_hook::libil2cpp::Gc<crate::Zenject::TickablesTaskUpdater>,
     pub _fixedUpdater: quest_hook::libil2cpp::Gc<
@@ -840,11 +813,7 @@ impl crate::Zenject::TickableManager {
     pub fn get_Tickables(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -853,9 +822,7 @@ impl crate::Zenject::TickableManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
                         >,
                         0usize,
                     >("get_Tickables")
@@ -868,9 +835,7 @@ impl crate::Zenject::TickableManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ITickable>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

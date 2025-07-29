@@ -33,10 +33,8 @@ pub struct XmlTextWriter {
     >,
     pub nsTop: i32,
     pub nsHashtable: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        i32,
     >,
     pub useNsHashtable: bool,
     pub xmlCharType: crate::System::Xml::XmlCharType,

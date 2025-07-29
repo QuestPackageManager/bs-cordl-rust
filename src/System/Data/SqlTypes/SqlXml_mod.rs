@@ -73,12 +73,10 @@ impl crate::System::Data::SqlTypes::SqlXml {
     }
     pub fn CreateSqlReaderDelegate() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<
-                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -88,16 +86,14 @@ impl crate::System::Data::SqlTypes::SqlXml {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_4<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Xml::XmlReaderSettings,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Xml::XmlParserContext,
-                                >,
-                                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
+                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::XmlReaderSettings,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::XmlParserContext,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
                         >,
                         0usize,
                     >("CreateSqlReaderDelegate")
@@ -110,12 +106,10 @@ impl crate::System::Data::SqlTypes::SqlXml {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<
-                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
-                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReaderSettings>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlParserContext>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlReader>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

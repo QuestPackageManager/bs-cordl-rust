@@ -161,7 +161,7 @@ for crate::UnityEngine::UIElements::BindableElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindableElement_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BindableElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BindableElement_UxmlTraits,
@@ -190,7 +190,7 @@ for crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BindableElement_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BindableElement>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BindableElement_UxmlTraits,

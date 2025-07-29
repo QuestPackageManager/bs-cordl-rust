@@ -10,11 +10,7 @@ pub struct MultiplayerLobbyAvatarPlaceManager {
         crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool,
     >,
     pub _allPlaces: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLobbyAvatarPlace,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyAvatarPlace>,
     >,
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,

@@ -78,9 +78,7 @@ impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
     }
     pub fn GenerateUniqueActorName(
         tracks: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ScriptableObject>,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -93,10 +91,8 @@ impl crate::UnityEngine::Timeline::TimelineCreateUtilities {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ScriptableObject,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ScriptableObject,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

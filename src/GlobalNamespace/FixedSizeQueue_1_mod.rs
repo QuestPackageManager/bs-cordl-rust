@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FixedSizeQueue_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub _data: quest_hook::libil2cpp::Gc<T>,
     pub _queueSize: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -83,8 +83,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_List_1_i32_1(
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub fn New_Gc_i32_1(
+        data: quest_hook::libil2cpp::Gc<T>,
         queueSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -110,9 +110,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
             .invoke_void(".ctor", (queueSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_List_1_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
-        data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        data: quest_hook::libil2cpp::Gc<T>,
         queueSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -124,12 +124,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, i32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -174,11 +169,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
     }
     pub fn get_data(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -187,13 +178,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-                        >,
-                        0usize,
-                    >("get_data")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_data")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -202,9 +187,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::FixedSizeQueue_1<T>
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

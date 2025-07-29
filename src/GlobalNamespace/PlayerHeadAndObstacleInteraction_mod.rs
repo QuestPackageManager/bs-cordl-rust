@@ -11,15 +11,11 @@ pub struct PlayerHeadAndObstacleInteraction {
     >,
     pub headDidEnterObstaclesEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub headDidEnterObstacleEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _lastFrameNumCheck: i32,
     pub _intersectingObstacles: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _prevFrameNumberOfIntersectingObstaclesCount: i32,
 }
@@ -136,9 +132,7 @@ impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     pub fn add_headDidEnterObstacleEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -147,10 +141,8 @@ impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -215,9 +207,7 @@ impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
     pub fn remove_headDidEnterObstacleEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -226,10 +216,8 @@ impl crate::GlobalNamespace::PlayerHeadAndObstacleInteraction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ObstacleController,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

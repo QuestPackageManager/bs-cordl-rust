@@ -7,11 +7,7 @@ pub struct ResultsTableView {
     pub _cellPrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ResultsTableCell>,
     pub _rowHeight: f32,
     pub _dataList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerPlayerResultsData>,
     >,
 }
 #[cfg(feature = "cordl_class_ResultsTableView")]
@@ -124,10 +120,8 @@ impl crate::GlobalNamespace::ResultsTableView {
     pub fn SetData(
         &mut self,
         dataList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerPlayerResultsData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -137,10 +131,8 @@ impl crate::GlobalNamespace::ResultsTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IReadOnlyList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MultiplayerPlayerResultsData,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

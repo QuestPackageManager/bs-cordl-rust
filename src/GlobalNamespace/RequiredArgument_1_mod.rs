@@ -247,9 +247,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
-        requiredArgument: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::RequiredArgument_1<T>,
-        >,
+        requiredArgument: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -260,9 +258,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::RequiredArgument_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         T,
                         1usize,
                     >("op_Implicit")

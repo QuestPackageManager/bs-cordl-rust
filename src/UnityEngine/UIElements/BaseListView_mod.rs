@@ -6,20 +6,8 @@ pub struct BaseListView {
     pub m_ShowBoundCollectionSize: bool,
     pub m_ShowFoldoutHeader: bool,
     pub m_HeaderTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub itemsAdded: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
-    pub itemsRemoved: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
+    pub itemsAdded: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub itemsRemoved: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     pub itemsSourceSizeChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ListViewLabel: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Label,
@@ -36,20 +24,8 @@ pub struct BaseListView {
     pub m_RemoveButton: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Button,
     >,
-    pub m_ItemAddedCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
-    pub m_ItemRemovedCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IEnumerable_1<i32>,
-            >,
-        >,
-    >,
+    pub m_ItemAddedCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
+    pub m_ItemRemovedCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<i32>>,
     pub m_ItemsSourceSizeChangedCallback: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
@@ -291,9 +267,7 @@ impl crate::UnityEngine::UIElements::BaseListView {
     pub fn OnArraySizeFieldChanged(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ChangeEvent_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -302,10 +276,8 @@ impl crate::UnityEngine::UIElements::BaseListView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::ChangeEvent_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -326,18 +298,14 @@ impl crate::UnityEngine::UIElements::BaseListView {
     }
     pub fn OnItemAdded(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnItemAdded")
@@ -356,18 +324,14 @@ impl crate::UnityEngine::UIElements::BaseListView {
     }
     pub fn OnItemsRemoved(
         &mut self,
-        indices: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
+        indices: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnItemsRemoved")
@@ -955,9 +919,7 @@ pub struct BaseListView_UxmlTraits {
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,
     pub m_ReorderMode: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
-            crate::UnityEngine::UIElements::ListViewReorderMode,
-        >,
+        crate::UnityEngine::UIElements::ListViewReorderMode,
     >,
     pub m_ShowBoundCollectionSize: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,

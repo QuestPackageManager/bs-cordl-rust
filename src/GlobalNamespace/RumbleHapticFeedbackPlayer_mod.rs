@@ -7,15 +7,11 @@ pub struct RumbleHapticFeedbackPlayer {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub _rumblesByNode: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::XR::XRNode,
+        crate::UnityEngine::XR::XRNode,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::Dictionary_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
-                    >,
-                >,
+                crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
             >,
         >,
     >,

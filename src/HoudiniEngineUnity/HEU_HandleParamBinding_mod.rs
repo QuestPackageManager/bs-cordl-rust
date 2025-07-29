@@ -119,13 +119,13 @@ for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HandleParamBinding>,
     >,
 > for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HandleParamBinding>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -133,13 +133,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HandleParamBinding>,
     >,
 > for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HandleParamBinding>,
     > {
         unsafe { std::mem::transmute(self) }

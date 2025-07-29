@@ -5,9 +5,7 @@ pub struct ContinuationTaskFromResultTask_1<
     TAntecedentResult: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Threading::Tasks::Task,
-    pub m_antecedent: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-    >,
+    pub m_antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
     __cordl_phantom_TAntecedentResult: std::marker::PhantomData<TAntecedentResult>,
 }
 #[cfg(feature = "cordl_class_System+Threading+Tasks+ContinuationTaskFromResultTask_1")]
@@ -101,9 +99,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -124,9 +120,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        antecedent: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-        >,
+        antecedent: quest_hook::libil2cpp::Gc<TAntecedentResult>,
         action: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -142,9 +136,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::Tasks::Task_1<TAntecedentResult>,
-                            >,
+                            quest_hook::libil2cpp::Gc<TAntecedentResult>,
                             quest_hook::libil2cpp::Gc<crate::System::Delegate>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,

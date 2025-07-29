@@ -9,26 +9,14 @@ pub struct ExpiringDictionary_2<
     pub _timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
     pub _expirationLengthMs: i64,
     pub _expirationQueue: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OrderedSet_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     pub _entryLookup: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            TKey,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-            >,
-        >,
+        TKey,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     pub _reusableEntries: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<TKey, TValue>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -126,12 +114,8 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn CompareEntries(
-        a: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
-        b: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        a: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        b: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -145,18 +129,8 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ExpiringDictionary_2_Entry<
-                                    TKey,
-                                    TValue,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ExpiringDictionary_2_Entry<
-                                    TKey,
-                                    TValue,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<TKey, TValue>,
+                            quest_hook::libil2cpp::Gc<TKey, TValue>,
                         ),
                         i32,
                         2usize,
@@ -228,11 +202,7 @@ impl<
     }
     pub fn Enumerate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -245,9 +215,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TValue>,
                         0usize,
                     >("Enumerate")
                     .unwrap_or_else(|e| {
@@ -258,9 +226,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Get(&mut self, key: TKey) -> quest_hook::libil2cpp::Result<TValue>
@@ -292,11 +260,7 @@ impl<
         &mut self,
         key: TKey,
         value: TValue,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -309,12 +273,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey, TValue),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ExpiringDictionary_2_Entry<
-                                TKey,
-                                TValue,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TKey, TValue>,
                         2usize,
                     >("GetEntry")
                     .unwrap_or_else(|e| {
@@ -325,9 +284,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (key, value))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -375,9 +334,7 @@ impl<
     }
     pub fn ReleaseEntry(
         &mut self,
-        entry: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue>,
-        >,
+        entry: quest_hook::libil2cpp::Gc<TKey, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -390,12 +347,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ExpiringDictionary_2_Entry<
-                                TKey,
-                                TValue,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ReleaseEntry")
@@ -535,11 +487,7 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -552,9 +500,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TValue>,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<TValue>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -566,9 +512,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<TValue>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -807,28 +753,6 @@ for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "ExpiringDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
-for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "ExpiringDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -862,6 +786,26 @@ impl<
 > AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ExpiringDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TValue>>
+for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "ExpiringDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TValue>>
+for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

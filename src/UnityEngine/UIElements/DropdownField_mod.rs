@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownField {
-    __cordl_parent: crate::UnityEngine::UIElements::PopupField_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::DropdownField {
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField {
-    type Target = crate::UnityEngine::UIElements::PopupField_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -125,7 +125,7 @@ for crate::UnityEngine::UIElements::DropdownField {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DropdownField_UxmlTraits,
@@ -154,7 +154,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::DropdownField_UxmlTraits,
@@ -215,7 +215,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_Index: quest_hook::libil2cpp::Gc<
@@ -247,7 +247,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

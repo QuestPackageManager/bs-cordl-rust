@@ -4,24 +4,16 @@
 pub struct ColumnLayout {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StretchableColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_FixedColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_RelativeWidthColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_MixedWidthColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
     pub m_ColumnsWidth: f32,
@@ -37,25 +29,17 @@ pub struct ColumnLayout {
     pub m_DragLastPos: f32,
     pub m_DragInitialColumnWidth: f32,
     pub m_DragStretchableColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_DragRelativeColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_DragFixedColumns: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_PreviewDesiredWidths: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            f32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
+        f32,
     >,
     pub layoutRequested: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
@@ -173,19 +157,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn DistributeExcess(
         &mut self,
         stretchableColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         fixedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         relativeWidthColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         delta: quest_hook::libil2cpp::ByRefMut<f32>,
         resizeToFit: bool,
@@ -198,24 +176,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<f32>,
@@ -252,19 +224,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn DistributeOverflow(
         &mut self,
         stretchableColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         fixedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         relativeWidthColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         delta: quest_hook::libil2cpp::ByRefMut<f32>,
         resizeToFit: bool,
@@ -277,24 +243,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<f32>,
@@ -698,12 +658,10 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RecomputeToDesiredWidth_List_1_0(
+    pub fn RecomputeToDesiredWidth_Gc0(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
@@ -716,10 +674,8 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             f32,
@@ -749,9 +705,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn RecomputeToMaxWidth(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
@@ -763,10 +717,8 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             f32,
@@ -795,9 +747,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn RecomputeToMaxWidthProportionally(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
@@ -809,10 +759,8 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             f32,
@@ -841,9 +789,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn RecomputeToMinWidth(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
@@ -855,10 +801,8 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             f32,
@@ -887,9 +831,7 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn RecomputeToMinWidthProportionally(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         distributedDelta: f32,
         setDesiredWidthOnly: bool,
@@ -901,10 +843,8 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             f32,
@@ -1020,19 +960,13 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
     pub fn StretchResizeColumns(
         &mut self,
         stretchableColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         fixedColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         relativeWidthColumns: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
         delta: quest_hook::libil2cpp::ByRefMut<f32>,
         resizeToFit: bool,
@@ -1045,24 +979,18 @@ impl crate::UnityEngine::UIElements::ColumnLayout {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::Column,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<f32>,

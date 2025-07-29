@@ -827,11 +827,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()
@@ -839,11 +839,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
 > for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     > {
         todo!()

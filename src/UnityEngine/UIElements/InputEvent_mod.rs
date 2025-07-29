@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::InputEvent>,
     >,
     pub _previousData_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -33,7 +33,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Inpu
 }
 #[cfg(feature = "UnityEngine+UIElements+InputEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::InputEvent {
-    type Target = crate::UnityEngine::UIElements::EventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::InputEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

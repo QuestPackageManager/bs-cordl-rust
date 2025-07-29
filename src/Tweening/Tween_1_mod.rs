@@ -5,7 +5,7 @@ pub struct Tween_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Tweening::Tween,
     pub fromValue: T,
     pub toValue: T,
-    pub onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub onUpdate: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Tweening+Tween_1")]
@@ -110,7 +110,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         &mut self,
         fromValue: T,
         toValue: T,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        onUpdate: quest_hook::libil2cpp::Gc<T>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -127,7 +127,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
                         (
                             T,
                             T,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,
@@ -163,10 +163,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_T_T_Action_1_f32_EaseType_f32_1(
+    pub fn New_T_T_Gc_f32_EaseType_f32_1(
         fromValue: T,
         toValue: T,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        onUpdate: quest_hook::libil2cpp::Gc<T>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -185,7 +185,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         Ok(__cordl_object.into())
     }
     pub fn OnDespawned(
-        t: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>,
+        t: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -196,7 +196,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnDespawned")
@@ -216,11 +216,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
     pub fn OnSpawned(
         fromValue: T,
         toValue: T,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        onUpdate: quest_hook::libil2cpp::Gc<T>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
-        t: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>,
+        t: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -234,11 +234,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
                         (
                             T,
                             T,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,
-                            quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         7usize,
@@ -337,11 +337,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_T_T_Action_1_f32_EaseType_f32_1(
+    pub fn _ctor_T_T_Gc_f32_EaseType_f32_1(
         &mut self,
         fromValue: T,
         toValue: T,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        onUpdate: quest_hook::libil2cpp::Gc<T>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -358,7 +358,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Tweening::Tween_1<T> {
                         (
                             T,
                             T,
-                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,

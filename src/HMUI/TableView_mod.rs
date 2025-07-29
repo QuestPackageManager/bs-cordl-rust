@@ -18,22 +18,24 @@ pub struct TableView {
         >,
     >,
     pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        i32,
     >,
     pub didDeselectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>, i32>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+        i32,
     >,
     pub didReloadDataEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     >,
     pub didInsertCellsEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     >,
     pub didDeleteCellsEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     >,
     pub didChangeRectSizeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     >,
     pub _contentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _viewportTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
@@ -41,23 +43,13 @@ pub struct TableView {
     pub _numberOfCells: i32,
     pub _cellSize: f32,
     pub _visibleCells: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     >,
     pub _reusableCells: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-                >,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
     >,
-    pub _selectedCellIdxs: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
+    pub _selectedCellIdxs: quest_hook::libil2cpp::Gc<i32>,
     pub _prevMinIdx: i32,
     pub _prevMaxIdx: i32,
     pub _isInitialized: bool,
@@ -413,16 +405,14 @@ impl crate::HMUI::TableView {
     }
     pub fn GetVisibleCellsIdRange(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Tuple_2<i32, i32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, i32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Tuple_2<i32, i32>>,
+                        quest_hook::libil2cpp::Gc<i32, i32>,
                         0usize,
                     >("GetVisibleCellsIdRange")
                     .unwrap_or_else(|e| {
@@ -433,7 +423,7 @@ impl crate::HMUI::TableView {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<i32, i32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -954,7 +944,7 @@ impl crate::HMUI::TableView {
     pub fn add_didChangeRectSizeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -963,9 +953,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -986,7 +974,7 @@ impl crate::HMUI::TableView {
     pub fn add_didDeleteCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -995,9 +983,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1018,10 +1004,8 @@ impl crate::HMUI::TableView {
     pub fn add_didDeselectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1030,10 +1014,8 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1054,7 +1036,7 @@ impl crate::HMUI::TableView {
     pub fn add_didInsertCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1063,9 +1045,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1086,7 +1066,7 @@ impl crate::HMUI::TableView {
     pub fn add_didReloadDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1095,9 +1075,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1118,10 +1096,8 @@ impl crate::HMUI::TableView {
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1130,10 +1106,8 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1448,11 +1422,7 @@ impl crate::HMUI::TableView {
     pub fn get_visibleCells(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1461,9 +1431,7 @@ impl crate::HMUI::TableView {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
                         >,
                         0usize,
                     >("get_visibleCells")
@@ -1476,16 +1444,14 @@ impl crate::HMUI::TableView {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_didChangeRectSizeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1494,9 +1460,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1517,7 +1481,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didDeleteCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1526,9 +1490,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1549,10 +1511,8 @@ impl crate::HMUI::TableView {
     pub fn remove_didDeselectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1561,10 +1521,8 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1585,7 +1543,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didInsertCellsEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1594,9 +1552,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1617,7 +1573,7 @@ impl crate::HMUI::TableView {
     pub fn remove_didReloadDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::TableView>>,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1626,9 +1582,7 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1649,10 +1603,8 @@ impl crate::HMUI::TableView {
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1661,10 +1613,8 @@ impl crate::HMUI::TableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1737,9 +1687,7 @@ pub struct TableView_CellsGroup {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reuseIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cells: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+TableView+CellsGroup")]
@@ -1807,11 +1755,7 @@ impl crate::HMUI::TableView_CellsGroup {
     pub fn get_cells(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1820,9 +1764,7 @@ impl crate::HMUI::TableView_CellsGroup {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
                         >,
                         0usize,
                     >("get_cells")
@@ -1835,9 +1777,7 @@ impl crate::HMUI::TableView_CellsGroup {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::TableCell>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

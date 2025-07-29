@@ -11,9 +11,7 @@ pub struct LayoutGroup {
     pub m_TotalPreferredSize: crate::UnityEngine::Vector2,
     pub m_TotalFlexibleSize: crate::UnityEngine::Vector2,
     pub m_RectChildren: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+LayoutGroup")]
@@ -845,9 +843,7 @@ impl crate::UnityEngine::UI::LayoutGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -857,9 +853,7 @@ impl crate::UnityEngine::UI::LayoutGroup {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                         >,
                         0usize,
                     >("get_rectChildren")
@@ -872,9 +866,7 @@ impl crate::UnityEngine::UI::LayoutGroup {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -4,9 +4,7 @@
 pub struct SynchronizedActionQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _synchronizedActionQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction,
-        >,
+        crate::GlobalNamespace::SynchronizedActionQueue_SynchronizedAction,
     >,
 }
 #[cfg(feature = "cordl_class_SynchronizedActionQueue")]

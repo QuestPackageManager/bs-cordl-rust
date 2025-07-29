@@ -79,8 +79,8 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Il2CppArray0<T>(
-        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    pub fn Init_Gc1<T>(
+        array: quest_hook::libil2cpp::Gc<T>,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -92,12 +92,7 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, T),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("Init")
@@ -114,8 +109,8 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_List_1_1<T>(
-        array: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    pub fn Init_Il2CppArray0<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -129,7 +124,7 @@ impl crate::HoudiniEngineUnity::ArrayExtensions {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
+                                quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
                             T,
                         ),

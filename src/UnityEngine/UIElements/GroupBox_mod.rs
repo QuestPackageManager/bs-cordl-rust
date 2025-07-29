@@ -220,7 +220,7 @@ for crate::UnityEngine::UIElements::GroupBox {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupBox_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox_UxmlTraits>,
     >,
@@ -247,7 +247,7 @@ for crate::UnityEngine::UIElements::GroupBox_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+GroupBox+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GroupBox_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GroupBox_UxmlTraits>,
     >;

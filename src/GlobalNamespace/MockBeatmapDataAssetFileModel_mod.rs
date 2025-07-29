@@ -4,7 +4,7 @@
 pub struct MockBeatmapDataAssetFileModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDataAssetDownloadUpdateEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
+        crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
     >,
 }
 #[cfg(feature = "cordl_class_MockBeatmapDataAssetFileModel")]
@@ -49,11 +49,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -68,9 +64,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::GetAssetBundleFileResult,
-                            >,
+                            crate::GlobalNamespace::GetAssetBundleFileResult,
                         >,
                         3usize,
                     >("GetAssetBundleFileForBeatmapLevelAsync")
@@ -83,9 +77,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::GetAssetBundleFileResult,
-            >,
+            crate::GlobalNamespace::GetAssetBundleFileResult,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
@@ -107,9 +99,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -122,9 +112,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                             crate::GlobalNamespace::BeatmapLevelDataVersion,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<bool>,
-                        >,
+                        quest_hook::libil2cpp::Gc<bool>,
                         3usize,
                     >("TryDeleteAssetBundleFileForBeatmapLevelAsync")
                     .unwrap_or_else(|e| {
@@ -135,9 +123,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<bool>,
-        > = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -170,7 +156,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -179,9 +165,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
-                            >,
+                            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -202,7 +186,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
+            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -211,9 +195,7 @@ impl crate::GlobalNamespace::MockBeatmapDataAssetFileModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
-                            >,
+                            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

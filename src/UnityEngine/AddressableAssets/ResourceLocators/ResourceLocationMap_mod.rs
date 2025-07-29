@@ -9,14 +9,10 @@ pub struct ResourceLocationMap {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub locations: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                    >,
-                >,
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
     >,
@@ -60,14 +56,12 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMap
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ResourceLocationMap")]
 impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMap {
-    pub fn Add_IList_1_1(
+    pub fn Add_Gc1(
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,10 +75,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                 >,
                             >,
                         ),
@@ -146,10 +138,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         locations: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                 >,
             >,
         >,
@@ -166,10 +156,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                     >,
                                 >,
                             >,
@@ -190,13 +178,11 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_IList_1_1(
+    pub fn New_Gc1(
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -216,14 +202,12 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
             .invoke_void(".ctor", (id, capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn _ctor_IList_1_1(
+    pub fn _ctor_Gc1(
         &mut self,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         locations: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -237,10 +221,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
                                 >,
                             >,
                         ),
@@ -296,9 +278,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -308,10 +288,8 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         >,
                         0usize,
@@ -325,9 +303,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -335,14 +311,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                        >,
-                    >,
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                 >,
             >,
         >,
@@ -354,16 +326,12 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::IList_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                                        >,
-                                    >,
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                                 >,
                             >,
                         >,
@@ -378,14 +346,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationMa
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
                 quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::IList_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-                        >,
-                    >,
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                 >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };

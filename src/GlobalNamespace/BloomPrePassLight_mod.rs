@@ -299,17 +299,9 @@ impl crate::GlobalNamespace::BloomPrePassLight {
     }
     pub fn get_bloomLightsDict() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassLightTypeSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::HashSet_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BloomPrePassLight,
-                        >,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
             >,
         >,
     > {
@@ -320,16 +312,12 @@ impl crate::GlobalNamespace::BloomPrePassLight {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BloomPrePassLightTypeSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BloomPrePassLightTypeSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::HashSet_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BloomPrePassLight,
-                                        >,
-                                    >,
+                                    crate::GlobalNamespace::BloomPrePassLight,
                                 >,
                             >,
                         >,
@@ -344,27 +332,17 @@ impl crate::GlobalNamespace::BloomPrePassLight {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassLightTypeSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Collections::Generic::HashSet_1<
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BloomPrePassLight,
-                        >,
-                    >,
-                >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lightsDataItems() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
             >,
         >,
     > {
@@ -375,10 +353,8 @@ impl crate::GlobalNamespace::BloomPrePassLight {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
                             >,
                         >,
                         0usize,
@@ -392,10 +368,8 @@ impl crate::GlobalNamespace::BloomPrePassLight {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassLight_LightsDataItem,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -419,9 +393,7 @@ pub struct BloomPrePassLight_LightsDataItem {
         crate::GlobalNamespace::BloomPrePassLightTypeSO,
     >,
     pub lights: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
     >,
 }
 #[cfg(feature = "cordl_class_BloomPrePassLight+LightsDataItem")]
@@ -464,9 +436,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
             crate::GlobalNamespace::BloomPrePassLightTypeSO,
         >,
         lights: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -481,9 +451,7 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
             crate::GlobalNamespace::BloomPrePassLightTypeSO,
         >,
         lights: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLight>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -496,10 +464,8 @@ impl crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
                                 crate::GlobalNamespace::BloomPrePassLightTypeSO,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BloomPrePassLight,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BloomPrePassLight,
                                 >,
                             >,
                         ),

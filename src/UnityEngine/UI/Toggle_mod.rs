@@ -649,7 +649,7 @@ impl AsMut<crate::UnityEngine::UI::ICanvasElement> for crate::UnityEngine::UI::T
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_ToggleEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<bool>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Toggle+ToggleEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle_ToggleEvent {
@@ -672,7 +672,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Toggle_Toggl
 }
 #[cfg(feature = "UnityEngine+UI+Toggle+ToggleEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Toggle_ToggleEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<bool>;
+    type Target = quest_hook::libil2cpp::Gc<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

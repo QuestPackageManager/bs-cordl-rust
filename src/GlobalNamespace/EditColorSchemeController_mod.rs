@@ -18,9 +18,7 @@ pub struct EditColorSchemeController {
     pub _closeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didChangeColorSchemeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
@@ -296,9 +294,7 @@ impl crate::GlobalNamespace::EditColorSchemeController {
     pub fn add_didChangeColorSchemeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -307,10 +303,8 @@ impl crate::GlobalNamespace::EditColorSchemeController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorScheme,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorScheme,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -358,9 +352,7 @@ impl crate::GlobalNamespace::EditColorSchemeController {
     pub fn remove_didChangeColorSchemeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -369,10 +361,8 @@ impl crate::GlobalNamespace::EditColorSchemeController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::ColorScheme,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorScheme,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

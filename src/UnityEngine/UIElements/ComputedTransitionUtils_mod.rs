@@ -44,9 +44,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             crate::UnityEngine::UIElements::ComputedStyle,
         >,
         outData: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::ComputedTransitionProperty,
-            >,
+            crate::UnityEngine::UIElements::ComputedTransitionProperty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -59,9 +57,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                                 crate::UnityEngine::UIElements::ComputedStyle,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::ComputedTransitionProperty,
-                                >,
+                                crate::UnityEngine::UIElements::ComputedTransitionProperty,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -82,16 +78,14 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
     }
     pub fn ConvertTransitionFunction(
         mode: crate::UnityEngine::UIElements::EasingMode,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32, f32>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::UnityEngine::UIElements::EasingMode),
-                        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        quest_hook::libil2cpp::Gc<f32, f32>,
                         1usize,
                     >("ConvertTransitionFunction")
                     .unwrap_or_else(|e| {
@@ -102,7 +96,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<f32, f32> = unsafe {
             cordl_method_info.invoke_unchecked((), (mode))?
         };
         Ok(__cordl_ret.into())
@@ -240,7 +234,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn GetWrappingTransitionData<T>(
-        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        list: quest_hook::libil2cpp::Gc<T>,
         i: i32,
         defaultValue: T,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -253,13 +247,7 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<T>,
-                            >,
-                            i32,
-                            T,
-                        ),
+                        (quest_hook::libil2cpp::Gc<T>, i32, T),
                         T,
                         3usize,
                     >("GetWrappingTransitionData")
@@ -344,17 +332,9 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SameTransitionProperty_List_1_List_1_1(
-        a: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
-        >,
-        b: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::StylePropertyName,
-            >,
-        >,
+    pub fn SameTransitionProperty_Gc_Gc1(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -363,14 +343,10 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::StylePropertyName,
-                                >,
+                                crate::UnityEngine::UIElements::StylePropertyName,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::StylePropertyName,
-                                >,
+                                crate::UnityEngine::UIElements::StylePropertyName,
                             >,
                         ),
                         bool,
@@ -389,17 +365,9 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SameTransitionProperty_List_1_List_1_2(
-        a: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
-        b: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UIElements::TimeValue,
-            >,
-        >,
+    pub fn SameTransitionProperty_Gc_Gc2(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -408,14 +376,10 @@ impl crate::UnityEngine::UIElements::ComputedTransitionUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::TimeValue,
-                                >,
+                                crate::UnityEngine::UIElements::TimeValue,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UIElements::TimeValue,
-                                >,
+                                crate::UnityEngine::UIElements::TimeValue,
                             >,
                         ),
                         bool,

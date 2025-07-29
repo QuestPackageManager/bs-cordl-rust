@@ -189,9 +189,7 @@ impl crate::Zenject::InjectTypeInfo {
         x: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo_InjectMethodInfo>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -203,9 +201,7 @@ impl crate::Zenject::InjectTypeInfo {
                             crate::Zenject::InjectTypeInfo_InjectMethodInfo,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
                         >,
                         1usize,
                     >("<get_AllInjectables>b__1")
@@ -218,9 +214,7 @@ impl crate::Zenject::InjectTypeInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (x))? };
         Ok(__cordl_ret.into())
     }
@@ -228,9 +222,7 @@ impl crate::Zenject::InjectTypeInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -240,9 +232,7 @@ impl crate::Zenject::InjectTypeInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
                         >,
                         0usize,
                     >("get_AllInjectables")
@@ -255,9 +245,7 @@ impl crate::Zenject::InjectTypeInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectableInfo>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

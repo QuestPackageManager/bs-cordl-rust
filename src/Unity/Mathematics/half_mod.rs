@@ -537,22 +537,6 @@ impl crate::Unity::Mathematics::half {
     }
 }
 #[cfg(feature = "Unity+Mathematics+half")]
-impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::half>>
-for crate::Unity::Mathematics::half {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::half> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+half")]
-impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::half>>
-for crate::Unity::Mathematics::half {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::half> {
-        todo!()
-    }
-}
-#[cfg(feature = "Unity+Mathematics+half")]
 impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::half {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -561,6 +545,22 @@ impl AsRef<crate::System::IFormattable> for crate::Unity::Mathematics::half {
 #[cfg(feature = "Unity+Mathematics+half")]
 impl AsMut<crate::System::IFormattable> for crate::Unity::Mathematics::half {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+half")]
+impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::half>>
+for crate::Unity::Mathematics::half {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::half> {
+        todo!()
+    }
+}
+#[cfg(feature = "Unity+Mathematics+half")]
+impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::half>>
+for crate::Unity::Mathematics::half {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::half> {
         todo!()
     }
 }

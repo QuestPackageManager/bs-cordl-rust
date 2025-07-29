@@ -45,9 +45,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -67,9 +65,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
                         >,
                         3usize,
                     >("DirectoryInfos")
@@ -82,9 +78,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::DirectoryInfo>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
@@ -95,11 +89,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         expression: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -118,9 +108,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
                         >,
                         3usize,
                     >("FileInfos")
@@ -133,9 +121,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::FileInfo>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
@@ -147,9 +133,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -169,9 +153,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
                         >,
                         3usize,
                     >("FileSystemInfos")
@@ -184,9 +166,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::IO::FileSystemInfo>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
@@ -278,9 +258,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -300,10 +278,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         3usize,
@@ -317,9 +293,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
@@ -331,9 +305,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -353,10 +325,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         3usize,
@@ -370,9 +340,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };
@@ -384,9 +352,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
         options: quest_hook::libil2cpp::Gc<crate::System::IO::EnumerationOptions>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -406,10 +372,8 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         3usize,
@@ -423,9 +387,7 @@ impl crate::System::IO::Enumeration::FileSystemEnumerableFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (directory, expression, options))?
         };

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonConverterCollection {
-    __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Newtonsoft::Json::JsonConverterCollection {
 }
 #[cfg(feature = "Newtonsoft+Json+JsonConverterCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonConverterCollection {
-    type Target = crate::System::Collections::ObjectModel::Collection_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

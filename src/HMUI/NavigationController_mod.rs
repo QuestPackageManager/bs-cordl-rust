@@ -50,14 +50,10 @@ impl crate::HMUI::NavigationController {
     pub fn GetNewPositionsForViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         >,
         fixedViewControllers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         >,
         fixedEndPos: f32,
     ) -> quest_hook::libil2cpp::Result<
@@ -70,14 +66,10 @@ impl crate::HMUI::NavigationController {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
                             >,
                             f32,
                         ),
@@ -108,9 +100,7 @@ impl crate::HMUI::NavigationController {
     pub fn LayoutViewControllers(
         &mut self,
         viewControllers: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -119,9 +109,7 @@ impl crate::HMUI::NavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

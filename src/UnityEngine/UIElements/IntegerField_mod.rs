@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::IntegerField {
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -272,7 +272,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Integ
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_IntegerInput {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IntegerField+IntegerInput")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -296,7 +296,7 @@ for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
-    type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>;
+    type Target = quest_hook::libil2cpp::Gc<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -494,7 +494,7 @@ for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IntegerField_UxmlTraits,
@@ -523,7 +523,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IntegerField>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IntegerField_UxmlTraits,
@@ -584,7 +584,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntegerField_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
@@ -613,7 +613,7 @@ for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::TextValueFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         i32,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,

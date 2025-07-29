@@ -7,15 +7,11 @@ pub struct FileSystemBeatmapLevelData {
     pub _audioDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _difficultyBeatmaps: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapCharacteristicSO,
-                >,
-                crate::GlobalNamespace::BeatmapDifficulty,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
+        crate::System::ValueTuple_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::GlobalNamespace::BeatmapDifficulty,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
     >,
     pub _audioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
@@ -113,9 +109,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -125,10 +119,8 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         0usize,
@@ -142,9 +134,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -183,9 +173,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -197,10 +185,8 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                             crate::GlobalNamespace::BeatmapKey,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -214,9 +200,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapKey))? };
         Ok(__cordl_ret.into())
     }
@@ -287,9 +271,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -301,10 +283,8 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                             crate::GlobalNamespace::BeatmapKey,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -318,9 +298,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapKey))? };
         Ok(__cordl_ret.into())
     }
@@ -387,9 +365,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -401,10 +377,8 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                             crate::GlobalNamespace::BeatmapKey,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -418,9 +392,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapKey))? };
         Ok(__cordl_ret.into())
     }
@@ -459,9 +431,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -473,10 +443,8 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                             crate::GlobalNamespace::BeatmapKey,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >,
                         1usize,
@@ -490,9 +458,7 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (beatmapKey))? };
         Ok(__cordl_ret.into())
     }
@@ -501,15 +467,13 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         audioClipPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         audioDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::BeatmapCharacteristicSO,
-                    >,
-                    crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
                 >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
+                crate::GlobalNamespace::BeatmapDifficulty,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -527,15 +491,13 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         audioClipPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         audioDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::BeatmapCharacteristicSO,
-                    >,
-                    crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
                 >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
+                crate::GlobalNamespace::BeatmapDifficulty,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FileDifficultyBeatmap>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -554,16 +516,14 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    crate::System::ValueTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::GlobalNamespace::BeatmapCharacteristicSO,
-                                        >,
-                                        crate::GlobalNamespace::BeatmapDifficulty,
-                                    >,
+                                crate::System::ValueTuple_2<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::FileDifficultyBeatmap,
+                                        crate::GlobalNamespace::BeatmapCharacteristicSO,
                                     >,
+                                    crate::GlobalNamespace::BeatmapDifficulty,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::FileDifficultyBeatmap,
                                 >,
                             >,
                         ),

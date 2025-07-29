@@ -5,9 +5,7 @@ pub struct ValueAnimation_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StartTimeMs: i64,
     pub m_DurationMs: i32,
-    pub _easingCurve_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<f32, f32>,
-    >,
+    pub _easingCurve_k__BackingField: quest_hook::libil2cpp::Gc<f32, f32>,
     pub _isRunning_k__BackingField: bool,
     pub _onAnimationCompleted_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Action,
@@ -18,20 +16,14 @@ pub struct ValueAnimation_1<T: quest_hook::libil2cpp::Type> {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub _valueUpdated_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            T,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        T,
     >,
     pub _initialValue_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            T,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        T,
     >,
-    pub _interpolator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::System::Func_4<T, T, f32, T>,
-    >,
+    pub _interpolator_k__BackingField: quest_hook::libil2cpp::Gc<T, T, f32, T>,
     pub _from: T,
     pub fromValueSet: bool,
     pub _to_k__BackingField: T,
@@ -123,12 +115,8 @@ impl<
     }
     pub fn Create(
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        interpolator: quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        >,
-    >
+        interpolator: quest_hook::libil2cpp::Gc<T, T, f32, T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -142,15 +130,9 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_4<T, T, f32, T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T, T, f32, T>,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
-                                T,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         2usize,
                     >("Create")
                     .unwrap_or_else(|e| {
@@ -161,18 +143,14 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (e, interpolator))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (e, interpolator))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn KeepAlive(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -181,15 +159,7 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
-                                T,
-                            >,
-                        >,
-                        0usize,
-                    >("KeepAlive")
+                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("KeepAlive")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -198,9 +168,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -494,9 +464,7 @@ impl<
     }
     pub fn get_easingCurve(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32, f32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -507,7 +475,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        quest_hook::libil2cpp::Gc<f32, f32>,
                         0usize,
                     >("get_easingCurve")
                     .unwrap_or_else(|e| {
@@ -518,7 +486,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<f32, f32> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -548,10 +516,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     >
     where
@@ -565,12 +531,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                T,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            T,
                         >,
                         0usize,
                     >("get_initialValue")
@@ -583,18 +547,14 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_interpolator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T, T, f32, T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -605,7 +565,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
+                        quest_hook::libil2cpp::Gc<T, T, f32, T>,
                         0usize,
                     >("get_interpolator")
                     .unwrap_or_else(|e| {
@@ -616,9 +576,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Func_4<T, T, f32, T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T, T, f32, T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isRunning(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -750,10 +710,8 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     >
     where
@@ -767,12 +725,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                T,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            T,
                         >,
                         0usize,
                     >("get_valueUpdated")
@@ -785,10 +741,8 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -854,7 +808,7 @@ impl<
     }
     pub fn set_easingCurve(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        value: quest_hook::libil2cpp::Gc<f32, f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -865,7 +819,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>),
+                        (quest_hook::libil2cpp::Gc<f32, f32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_easingCurve")
@@ -911,10 +865,8 @@ impl<
     pub fn set_initialValue(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -927,12 +879,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Func_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                T,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            T,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -952,7 +902,7 @@ impl<
     }
     pub fn set_interpolator(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>,
+        value: quest_hook::libil2cpp::Gc<T, T, f32, T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -963,7 +913,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Func_4<T, T, f32, T>>),
+                        (quest_hook::libil2cpp::Gc<T, T, f32, T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_interpolator")
@@ -1131,10 +1081,8 @@ impl<
     pub fn set_valueUpdated(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-                T,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            T,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1147,12 +1095,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
-                                >,
-                                T,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
                             >,
+                            T,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

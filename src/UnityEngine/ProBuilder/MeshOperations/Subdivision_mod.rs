@@ -39,12 +39,10 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::Subd
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Subdivision")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
-    pub fn Subdivide_IList_1_1(
+    pub fn Subdivide_Gc1(
         pb: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -63,10 +61,8 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Subdivision {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::Face,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
                                 >,
                             >,
                         ),

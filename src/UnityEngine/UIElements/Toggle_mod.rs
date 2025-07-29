@@ -165,7 +165,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Toggl
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle_UxmlTraits>,
     >,
@@ -192,7 +192,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Toggle_UxmlTraits>,
     >;
@@ -251,7 +251,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Toggle_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         bool,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
@@ -283,7 +283,7 @@ for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+Toggle+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Toggle_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+    type Target = quest_hook::libil2cpp::Gc<
         bool,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,

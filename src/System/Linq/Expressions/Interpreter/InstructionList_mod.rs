@@ -203,16 +203,12 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
 pub struct InstructionList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::Instruction,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::Instruction,
         >,
     >,
     pub _objects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _currentStackDepth: i32,
     pub _maxStackDepth: i32,
@@ -220,18 +216,14 @@ pub struct InstructionList {
     pub _maxContinuationDepth: i32,
     pub _runtimeLabelCount: i32,
     pub _labels: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::BranchLabel,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Interpreter::BranchLabel,
         >,
     >,
     pub _debugCookies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+        crate::System::Collections::Generic::KeyValuePair_2<
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
     >,
 }
@@ -1621,9 +1613,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     }
     pub fn EmitIntSwitch<T>(
         &mut self,
-        cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<T, i32>,
-        >,
+        cases: quest_hook::libil2cpp::Gc<T, i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1634,9 +1624,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<T, i32>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T, i32>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("EmitIntSwitch")
@@ -2721,14 +2709,10 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     pub fn EmitStringSwitch(
         &mut self,
         cases: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-        >,
+        nullCase: quest_hook::libil2cpp::Gc<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2737,16 +2721,12 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    i32,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
+                                i32,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
-                            >,
+                            quest_hook::libil2cpp::Gc<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -3551,24 +3531,18 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
     pub type InstructionView = crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView;
     pub fn GetInstructionViews(
         instructions: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Linq::Expressions::Interpreter::Instruction,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::Instruction,
             >,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         >,
-        labelIndexer: quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
+        labelIndexer: quest_hook::libil2cpp::Gc<i32, i32>,
         debugCookies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
-                    i32,
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -3585,27 +3559,21 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Linq::Expressions::Interpreter::Instruction,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Interpreter::Instruction,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<i32, i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    i32,
                                     quest_hook::libil2cpp::Gc<
                                         quest_hook::libil2cpp::Il2CppObject,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Func_2<i32, i32>>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IReadOnlyList_1<
-                                    crate::System::Collections::Generic::KeyValuePair_2<
-                                        i32,
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppObject,
-                                        >,
                                     >,
                                 >,
                             >,

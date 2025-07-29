@@ -171,13 +171,13 @@ for crate::GlobalNamespace::HMAutoincrementedRequestId {
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     >,
 > for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -185,13 +185,13 @@ impl AsRef<
 }
 #[cfg(feature = "HMAutoincrementedRequestId")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     >,
 > for crate::GlobalNamespace::HMAutoincrementedRequestId {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HMAutoincrementedRequestId>,
     > {
         unsafe { std::mem::transmute(self) }

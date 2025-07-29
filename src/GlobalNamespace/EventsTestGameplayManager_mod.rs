@@ -23,28 +23,17 @@ pub struct EventsTestGameplayManager {
     >,
     pub groupState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<bool>>,
     pub _beatmapEventTypeBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            crate::GlobalNamespace::BasicBeatmapEventType,
-        >,
+        crate::UnityEngine::KeyCode,
+        crate::GlobalNamespace::BasicBeatmapEventType,
     >,
-    pub _intBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            i32,
-        >,
-    >,
+    pub _intBindings: quest_hook::libil2cpp::Gc<crate::UnityEngine::KeyCode, i32>,
     pub _beatmapValuesBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            i32,
-        >,
+        crate::UnityEngine::KeyCode,
+        i32,
     >,
     pub _floatValuesBindings: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            crate::UnityEngine::KeyCode,
-            f32,
-        >,
+        crate::UnityEngine::KeyCode,
+        f32,
     >,
     pub _rotatingLasers: bool,
 }

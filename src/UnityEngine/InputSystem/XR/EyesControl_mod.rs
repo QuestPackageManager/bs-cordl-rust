@@ -2,9 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EyesControl {
-    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Eyes,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::Eyes>,
     pub _leftEyePosition_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::Vector3Control,
     >,
@@ -49,9 +47,7 @@ for crate::UnityEngine::InputSystem::XR::EyesControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+EyesControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::EyesControl {
-    type Target = crate::UnityEngine::InputSystem::InputControl_1<
-        crate::UnityEngine::InputSystem::XR::Eyes,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::XR::Eyes>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -8,12 +8,10 @@ pub struct MissionLevelScenesTransitionSetupDataSO {
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-            >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
         >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
     >,
     pub _missionId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -357,14 +355,10 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -373,13 +367,11 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -428,14 +420,10 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MissionCompletionResults,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
             >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -444,13 +432,11 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionCompletionResults,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MissionCompletionResults,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

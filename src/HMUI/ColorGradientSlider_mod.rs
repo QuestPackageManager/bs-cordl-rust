@@ -14,11 +14,9 @@ pub struct ColorGradientSlider {
     pub _darkColor: crate::UnityEngine::Color,
     pub _lightColor: crate::UnityEngine::Color,
     pub colorDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
-            crate::UnityEngine::Color,
-            crate::GlobalNamespace::ColorChangeUIEventType,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+        crate::UnityEngine::Color,
+        crate::GlobalNamespace::ColorChangeUIEventType,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+ColorGradientSlider")]
@@ -265,11 +263,9 @@ impl crate::HMUI::ColorGradientSlider {
     pub fn add_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
-                crate::UnityEngine::Color,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -278,11 +274,9 @@ impl crate::HMUI::ColorGradientSlider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
-                                crate::UnityEngine::Color,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+                            crate::UnityEngine::Color,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -303,11 +297,9 @@ impl crate::HMUI::ColorGradientSlider {
     pub fn remove_colorDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
-                crate::UnityEngine::Color,
-                crate::GlobalNamespace::ColorChangeUIEventType,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+            crate::UnityEngine::Color,
+            crate::GlobalNamespace::ColorChangeUIEventType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -316,11 +308,9 @@ impl crate::HMUI::ColorGradientSlider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
-                                crate::UnityEngine::Color,
-                                crate::GlobalNamespace::ColorChangeUIEventType,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::ColorGradientSlider>,
+                            crate::UnityEngine::Color,
+                            crate::GlobalNamespace::ColorChangeUIEventType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

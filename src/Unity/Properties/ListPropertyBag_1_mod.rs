@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListPropertyBag_1<TElement: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Unity::Properties::IndexedCollectionPropertyBag_2<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElement>>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<TElement>,
         TElement,
     >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -47,8 +47,8 @@ for crate::Unity::Properties::ListPropertyBag_1<TElement> {
 #[cfg(feature = "Unity+Properties+ListPropertyBag_1")]
 impl<TElement: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::ListPropertyBag_1<TElement> {
-    type Target = crate::Unity::Properties::IndexedCollectionPropertyBag_2<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElement>>,
+    type Target = quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<TElement>,
         TElement,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -68,9 +68,7 @@ impl<
 > crate::Unity::Properties::ListPropertyBag_1<TElement> {
     pub fn Instantiate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElement>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -81,9 +79,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<TElement>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TElement>,
                         0usize,
                     >("Instantiate")
                     .unwrap_or_else(|e| {
@@ -94,17 +90,15 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TElement>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateWithCount(
         &mut self,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElement>>,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -115,9 +109,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<TElement>,
-                        >,
+                        quest_hook::libil2cpp::Gc<TElement>,
                         1usize,
                     >("InstantiateWithCount")
                     .unwrap_or_else(|e| {
@@ -128,9 +120,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<TElement>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (count))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (count))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

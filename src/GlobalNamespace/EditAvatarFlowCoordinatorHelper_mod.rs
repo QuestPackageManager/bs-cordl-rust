@@ -14,10 +14,8 @@ pub struct EditAvatarFlowCoordinatorHelper {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+        crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
     >,
     pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _singleAvatarEditorFlowCoordinator: quest_hook::libil2cpp::Gc<
@@ -281,10 +279,8 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -293,10 +289,8 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -336,10 +330,8 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -348,10 +340,8 @@ impl crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
-                                crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
+                            crate::GlobalNamespace::EditAvatarFlowCoordinatorHelper_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

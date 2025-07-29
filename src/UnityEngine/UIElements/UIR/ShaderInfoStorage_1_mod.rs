@@ -6,9 +6,7 @@ pub struct ShaderInfoStorage_1<T: quest_hook::libil2cpp::Type> {
     pub m_InitialSize: i32,
     pub m_MaxSize: i32,
     pub m_Format: crate::UnityEngine::TextureFormat,
-    pub m_Convert: quest_hook::libil2cpp::Gc<
-        crate::System::Func_2<crate::UnityEngine::Color, T>,
-    >,
+    pub m_Convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
     pub m_Allocator: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIRAtlasAllocator,
     >,
@@ -213,9 +211,7 @@ impl<
     }
     pub fn New(
         format: crate::UnityEngine::TextureFormat,
-        convert: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<crate::UnityEngine::Color, T>,
-        >,
+        convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
         initialSize: i32,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -293,9 +289,7 @@ impl<
     pub fn _ctor(
         &mut self,
         format: crate::UnityEngine::TextureFormat,
-        convert: quest_hook::libil2cpp::Gc<
-            crate::System::Func_2<crate::UnityEngine::Color, T>,
-        >,
+        convert: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
         initialSize: i32,
         maxSize: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -310,9 +304,7 @@ impl<
                     .find_method::<
                         (
                             crate::UnityEngine::TextureFormat,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<crate::UnityEngine::Color, T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color, T>,
                             i32,
                             i32,
                         ),

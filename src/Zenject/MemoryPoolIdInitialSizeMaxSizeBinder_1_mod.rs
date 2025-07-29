@@ -4,7 +4,7 @@
 pub struct MemoryPoolIdInitialSizeMaxSizeBinder_1<
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+MemoryPoolIdInitialSizeMaxSizeBinder_1")]
@@ -46,7 +46,7 @@ for crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TContract> {
 #[cfg(feature = "Zenject+MemoryPoolIdInitialSizeMaxSizeBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TContract> {
-    type Target = crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>;
+    type Target = quest_hook::libil2cpp::Gc<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,11 +84,7 @@ impl<
     pub fn WithId(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -99,11 +95,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<
-                                TContract,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TContract>,
                         1usize,
                     >("WithId")
                     .unwrap_or_else(|e| {
@@ -114,9 +106,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::MemoryPoolInitialSizeMaxSizeBinder_1<TContract>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (identifier))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

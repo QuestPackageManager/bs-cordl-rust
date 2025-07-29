@@ -8,9 +8,7 @@ pub struct Finger {
     >,
     pub _index_k__BackingField: i32,
     pub m_StateHistory: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-            crate::UnityEngine::InputSystem::LowLevel::TouchState,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+Finger")]

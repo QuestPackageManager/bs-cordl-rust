@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AchievementProgressList {
-    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementProgress>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::Models::AchievementProgressList {
 }
 #[cfg(feature = "Oculus+Platform+Models+AchievementProgressList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::AchievementProgressList {
-    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AchievementProgress>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

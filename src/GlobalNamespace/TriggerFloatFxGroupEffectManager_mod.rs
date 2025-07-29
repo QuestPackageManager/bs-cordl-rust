@@ -10,9 +10,7 @@ pub struct TriggerFloatFxGroupEffectManager {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _floatFxGroupEffects: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TriggerFloatFxGroupEffect>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TriggerFloatFxGroupEffect>,
     >,
 }
 #[cfg(feature = "cordl_class_TriggerFloatFxGroupEffectManager")]

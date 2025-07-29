@@ -415,13 +415,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::AnimationCurve {
 }
 #[cfg(feature = "UnityEngine+AnimationCurve")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     >,
 > for crate::UnityEngine::AnimationCurve {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -429,13 +429,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+AnimationCurve")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     >,
 > for crate::UnityEngine::AnimationCurve {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }

@@ -100,9 +100,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
     pub fn HandleContinuousAudioCoroutine(
         &mut self,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -113,10 +111,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::HapticsAudioClipPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::HapticsAudioClipPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -140,9 +136,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
     pub fn HandleOneShotPlayEndCoroutine(
         &mut self,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -153,10 +147,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::HapticsAudioClipPlayer,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::HapticsAudioClipPlayer,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -212,9 +204,7 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
         >,
         onComplete: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -228,10 +218,8 @@ impl crate::GlobalNamespace::HapticsAudioClipPlayer {
                                 crate::Libraries::HM::HMLib::VR::HapticPresetSO,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::HapticsAudioClipPlayer,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::HapticsAudioClipPlayer,
                                 >,
                             >,
                         ),
@@ -407,7 +395,7 @@ for crate::GlobalNamespace::HapticsAudioClipPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HapticsAudioClipPlayer_Pool {
-    __cordl_parent: crate::Zenject::MemoryPool_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >,
 }
@@ -433,7 +421,7 @@ for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
 }
 #[cfg(feature = "HapticsAudioClipPlayer+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::HapticsAudioClipPlayer_Pool {
-    type Target = crate::Zenject::MemoryPool_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

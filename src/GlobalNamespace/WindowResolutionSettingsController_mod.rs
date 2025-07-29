@@ -6,9 +6,7 @@ pub struct WindowResolutionSettingsController {
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
-    pub _windowResolutions: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::Unity::Mathematics::int2>,
-    >,
+    pub _windowResolutions: quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::int2>,
 }
 #[cfg(feature = "cordl_class_WindowResolutionSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type

@@ -22,17 +22,11 @@ pub struct MainMenuViewController {
         crate::GlobalNamespace::IAnalyticsModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
-            crate::GlobalNamespace::MainMenuViewController_MenuButton,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
+        crate::GlobalNamespace::MainMenuViewController_MenuButton,
     >,
     pub promoButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo>,
     >,
     pub _isLoadingPackPromoData: bool,
 }
@@ -412,12 +406,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MainMenuViewController,
-                >,
-                crate::GlobalNamespace::MainMenuViewController_MenuButton,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
+            crate::GlobalNamespace::MainMenuViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -426,12 +416,10 @@ impl crate::GlobalNamespace::MainMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MainMenuViewController,
-                                >,
-                                crate::GlobalNamespace::MainMenuViewController_MenuButton,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MainMenuViewController,
                             >,
+                            crate::GlobalNamespace::MainMenuViewController_MenuButton,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -452,10 +440,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn add_promoButtonWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -465,10 +451,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -490,12 +474,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MainMenuViewController,
-                >,
-                crate::GlobalNamespace::MainMenuViewController_MenuButton,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainMenuViewController>,
+            crate::GlobalNamespace::MainMenuViewController_MenuButton,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -504,12 +484,10 @@ impl crate::GlobalNamespace::MainMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MainMenuViewController,
-                                >,
-                                crate::GlobalNamespace::MainMenuViewController_MenuButton,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::MainMenuViewController,
                             >,
+                            crate::GlobalNamespace::MainMenuViewController_MenuButton,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -530,10 +508,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
     pub fn remove_promoButtonWasPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -543,10 +519,8 @@ impl crate::GlobalNamespace::MainMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

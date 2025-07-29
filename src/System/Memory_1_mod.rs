@@ -616,20 +616,18 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
 #[cfg(feature = "System+Memory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<crate::System::IEquatable_1<crate::System::Memory_1<T>>>
+> AsRef<quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>>>
 for crate::System::Memory_1<T> {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Memory_1<T>> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "System+Memory_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<crate::System::IEquatable_1<crate::System::Memory_1<T>>>
+> AsMut<quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>>>
 for crate::System::Memory_1<T> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::System::Memory_1<T>> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Memory_1<T>> {
         todo!()
     }
 }

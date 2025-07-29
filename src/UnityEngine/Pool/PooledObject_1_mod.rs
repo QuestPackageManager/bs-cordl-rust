@@ -3,7 +3,7 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct PooledObject_1<T: quest_hook::libil2cpp::Type> {
     pub m_ToReturn: T,
-    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Pool+PooledObject_1")]
@@ -151,7 +151,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
     pub fn _ctor(
         &mut self,
         value: T,
-        pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::IObjectPool_1<T>>,
+        pool: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -162,12 +162,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Pool::PooledObject_1<T>
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Pool::IObjectPool_1<T>,
-                            >,
-                        ),
+                        (T, quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

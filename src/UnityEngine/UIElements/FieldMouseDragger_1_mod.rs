@@ -3,9 +3,7 @@
 #[derive(Debug)]
 pub struct FieldMouseDragger_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldMouseDragger,
-    pub m_DrivenField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::IValueField_1<T>,
-    >,
+    pub m_DrivenField: quest_hook::libil2cpp::Gc<T>,
     pub m_DragElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -101,9 +99,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        drivenField: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IValueField_1<T>,
-        >,
+        drivenField: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -383,9 +379,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        drivenField: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::IValueField_1<T>,
-        >,
+        drivenField: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -396,9 +390,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::IValueField_1<T>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

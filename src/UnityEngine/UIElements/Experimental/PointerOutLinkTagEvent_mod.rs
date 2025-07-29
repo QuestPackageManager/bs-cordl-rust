@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerOutLinkTagEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent,
         >,
@@ -35,7 +35,7 @@ for crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent {
 #[cfg(feature = "UnityEngine+UIElements+Experimental+PointerOutLinkTagEvent")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent {
-    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Experimental::PointerOutLinkTagEvent,
         >,

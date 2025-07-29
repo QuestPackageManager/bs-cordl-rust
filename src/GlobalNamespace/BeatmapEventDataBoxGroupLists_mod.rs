@@ -4,12 +4,8 @@
 pub struct BeatmapEventDataBoxGroupLists {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapEventDataBoxGroupListDict: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapEventDataBoxGroupList,
-            >,
-        >,
+        i32,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroupList>,
     >,
     pub _beatmapData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
     pub _beatToTimeConverter: quest_hook::libil2cpp::Gc<
@@ -63,11 +59,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -82,10 +74,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapEventDataBoxGroup,
                             >,
                         >,
                         2usize,
@@ -99,11 +89,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (groupId, beatmapEventDataBoxGroup))?
@@ -138,11 +124,7 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
         &mut self,
         groupId: i32,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventDataBoxGroup>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -153,10 +135,8 @@ impl crate::GlobalNamespace::BeatmapEventDataBoxGroupLists {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::LinkedListNode_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventDataBoxGroup,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventDataBoxGroup,
                                 >,
                             >,
                         ),

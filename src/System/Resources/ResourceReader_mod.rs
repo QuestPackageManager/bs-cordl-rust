@@ -5,10 +5,8 @@ pub struct ResourceReader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _store: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
     pub _resCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::System::Resources::ResourceLocator,
-        >,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Resources::ResourceLocator,
     >,
     pub _nameSectionOffset: i64,
     pub _dataSectionOffset: i64,
@@ -561,10 +559,8 @@ impl crate::System::Resources::ResourceReader {
     pub fn New(
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         resCache: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::System::Resources::ResourceLocator,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -764,10 +760,8 @@ impl crate::System::Resources::ResourceReader {
         &mut self,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
         resCache: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                crate::System::Resources::ResourceLocator,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Resources::ResourceLocator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -778,12 +772,10 @@ impl crate::System::Resources::ResourceReader {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::Dictionary_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
-                                    crate::System::Resources::ResourceLocator,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
+                                crate::System::Resources::ResourceLocator,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

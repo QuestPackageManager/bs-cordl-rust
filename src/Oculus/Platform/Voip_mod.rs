@@ -115,10 +115,8 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn GetMicrophoneAvailability() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
             >,
         >,
     > {
@@ -129,10 +127,8 @@ impl crate::Oculus::Platform::Voip {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
                             >,
                         >,
                         0usize,
@@ -146,10 +142,8 @@ impl crate::Oculus::Platform::Voip {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::Oculus::Platform::Models::MicrophoneAvailabilityState,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -231,9 +225,7 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn SetMicrophoneAvailabilityStateUpdateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -242,10 +234,8 @@ impl crate::Oculus::Platform::Voip {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -346,11 +336,7 @@ impl crate::Oculus::Platform::Voip {
     }
     pub fn SetSystemVoipStateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Message_1_Callback<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SystemVoipState,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -359,10 +345,8 @@ impl crate::Oculus::Platform::Voip {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Message_1_Callback<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::SystemVoipState,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::SystemVoipState,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -385,11 +369,7 @@ impl crate::Oculus::Platform::Voip {
         suppressed: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SystemVoipState,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -399,10 +379,8 @@ impl crate::Oculus::Platform::Voip {
                     .find_static_method::<
                         (bool),
                         quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Request_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Oculus::Platform::Models::SystemVoipState,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Models::SystemVoipState,
                             >,
                         >,
                         1usize,
@@ -416,11 +394,7 @@ impl crate::Oculus::Platform::Voip {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Request_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::Oculus::Platform::Models::SystemVoipState,
-                >,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SystemVoipState>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (suppressed))? };
         Ok(__cordl_ret.into())
     }

@@ -512,9 +512,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         Ok(__cordl_ret.into())
     }
     pub fn GetterAdapterFrame<T, R>(
-        getter: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R>,
-        >,
+        getter: quest_hook::libil2cpp::Gc<T, R>,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -531,12 +529,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::RuntimePropertyInfo_Getter_2<
-                                    T,
-                                    R,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<T, R>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
@@ -677,9 +670,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
         Ok(__cordl_ret.into())
     }
     pub fn StaticGetterAdapterFrame<R>(
-        getter: quest_hook::libil2cpp::Gc<
-            crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R>,
-        >,
+        getter: quest_hook::libil2cpp::Gc<R>,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -694,11 +685,7 @@ impl crate::System::Reflection::RuntimePropertyInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<
-                                    R,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<R>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,

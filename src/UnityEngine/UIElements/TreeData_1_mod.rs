@@ -2,24 +2,13 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TreeData_1<T: quest_hook::libil2cpp::Type> {
-    pub m_RootItemIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::IList_1<i32>,
-    >,
+    pub m_RootItemIds: quest_hook::libil2cpp::Gc<i32>,
     pub m_Tree: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-        >,
+        i32,
+        crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
     >,
-    pub m_ParentIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
-    >,
-    pub m_ChildrenIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
-        >,
-    >,
+    pub m_ParentIds: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub m_ChildrenIds: quest_hook::libil2cpp::Gc<i32, quest_hook::libil2cpp::Gc<i32>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TreeData_1")]
@@ -174,9 +163,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn BuildTree(
         &mut self,
         items: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-            >,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
         >,
         isRoot: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -191,9 +178,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-                                >,
+                                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
                             >,
                             bool,
                         ),
@@ -330,9 +315,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn RefreshTree(
         &mut self,
         rootItems: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-            >,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -345,9 +328,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-                            >,
+                            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -429,9 +410,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     pub fn _ctor(
         &mut self,
         rootItems: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-            >,
+            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -444,9 +423,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
-                            >,
+                            crate::UnityEngine::UIElements::TreeViewItemData_1<T>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -466,11 +443,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
     }
     pub fn get_rootItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    >
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -481,9 +454,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
+                        quest_hook::libil2cpp::Gc<i32>,
                         0usize,
                     >("get_rootItemIds")
                     .unwrap_or_else(|e| {
@@ -494,9 +465,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::TreeData_1<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

@@ -5,17 +5,13 @@ pub struct SectionTableView {
     __cordl_parent: crate::HMUI::TableView,
     pub _unfoldSectionsByDefault: bool,
     pub didSelectRowInSectionEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_3<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+        i32,
+        i32,
     >,
     pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-            i32,
-        >,
+        quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+        i32,
     >,
     pub _dataSource: quest_hook::libil2cpp::Gc<
         crate::HMUI::SectionTableView_IDataSource,
@@ -416,10 +412,8 @@ impl crate::HMUI::SectionTableView {
     pub fn add_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -428,10 +422,8 @@ impl crate::HMUI::SectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -452,11 +444,9 @@ impl crate::HMUI::SectionTableView {
     pub fn add_didSelectRowInSectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                i32,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -465,11 +455,9 @@ impl crate::HMUI::SectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                                i32,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                            i32,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -519,10 +507,8 @@ impl crate::HMUI::SectionTableView {
     pub fn remove_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -531,10 +517,8 @@ impl crate::HMUI::SectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_2<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -555,11 +539,9 @@ impl crate::HMUI::SectionTableView {
     pub fn remove_didSelectRowInSectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_3<
-                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                i32,
-                i32,
-            >,
+            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+            i32,
+            i32,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -568,11 +550,9 @@ impl crate::HMUI::SectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_3<
-                                quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
-                                i32,
-                                i32,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::HMUI::SectionTableView>,
+                            i32,
+                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

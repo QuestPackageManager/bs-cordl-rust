@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransitionStartEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::TransitionEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionStartEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::TransitionStartEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+TransitionStartEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TransitionStartEvent {
-    type Target = crate::UnityEngine::UIElements::TransitionEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransitionStartEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

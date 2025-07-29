@@ -381,10 +381,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn add_onFingerDown(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -394,10 +392,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -418,10 +414,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn add_onFingerMove(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -431,10 +425,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -455,10 +447,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn add_onFingerUp(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -468,10 +458,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -939,9 +927,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn get_screens() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -951,10 +937,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::Touchscreen,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::Touchscreen,
                             >,
                         >,
                         0usize,
@@ -968,9 +952,7 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Touchscreen>,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -1151,10 +1133,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn remove_onFingerDown(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1164,10 +1144,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1188,10 +1166,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn remove_onFingerMove(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1201,10 +1177,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1225,10 +1199,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     }
     pub fn remove_onFingerUp(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1238,10 +1210,8 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1263,11 +1233,11 @@ impl crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 impl AsRef<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
 > for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
         todo!()
@@ -1275,11 +1245,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Touch")]
 impl AsMut<
-    crate::System::IEquatable_1<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::EnhancedTouch::Touch>,
 > for crate::UnityEngine::InputSystem::EnhancedTouch::Touch {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::EnhancedTouch::Touch,
     > {
         todo!()
@@ -1436,9 +1406,7 @@ pub struct Touch_FingerAndTouchState {
     pub haveBuiltActiveTouches: bool,
     pub haveActiveTouchesNeedingRefreshNextUpdate: bool,
     pub activeTouchState: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
-            crate::UnityEngine::InputSystem::LowLevel::TouchState,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >,
 }
 #[cfg(
@@ -1688,28 +1656,22 @@ pub struct Touch_GlobalState {
     pub historyLengthPerFinger: i32,
     pub onFingerDown: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     >,
     pub onFingerMove: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     >,
     pub onFingerUp: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::EnhancedTouch::Finger,
             >,
         >,
     >,

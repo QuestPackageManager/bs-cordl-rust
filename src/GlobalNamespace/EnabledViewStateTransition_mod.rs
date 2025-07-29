@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnabledViewStateTransition {
-    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::EnabledViewStateTransition {
 }
 #[cfg(feature = "EnabledViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::EnabledViewStateTransition {
-    type Target = crate::GlobalNamespace::BaseStateTransition_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Behaviour>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -154,10 +154,8 @@ impl crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    quest_hook::libil2cpp::Gc<
-                        crate::System::Net::Http::Headers::StringWithQualityHeaderValue,
-                    >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::StringWithQualityHeaderValue,
                 >,
             >,
         >,
@@ -174,10 +172,8 @@ impl crate::System::Net::Http::Headers::StringWithQualityHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::System::Net::Http::Headers::StringWithQualityHeaderValue,
-                                        >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Net::Http::Headers::StringWithQualityHeaderValue,
                                     >,
                                 >,
                             >,

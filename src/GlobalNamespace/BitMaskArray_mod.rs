@@ -262,34 +262,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BitMaskArray 
     }
 }
 #[cfg(feature = "BitMaskArray")]
-impl AsRef<
-    crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
-    fn as_ref(
-        &self,
-    ) -> &crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskArray")]
-impl AsMut<
-    crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    >,
-> for crate::GlobalNamespace::BitMaskArray {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::GlobalNamespace::IBitMask_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BitMaskArray")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::BitMaskArray {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
@@ -305,13 +277,13 @@ for crate::GlobalNamespace::BitMaskArray {
 }
 #[cfg(feature = "BitMaskArray")]
 impl AsRef<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -319,13 +291,41 @@ impl AsRef<
 }
 #[cfg(feature = "BitMaskArray")]
 impl AsMut<
-    crate::System::IEquatable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     >,
 > for crate::GlobalNamespace::BitMaskArray {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+    >,
+> for crate::GlobalNamespace::BitMaskArray {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BitMaskArray")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
+    >,
+> for crate::GlobalNamespace::BitMaskArray {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BitMaskArray>,
     > {
         unsafe { std::mem::transmute(self) }

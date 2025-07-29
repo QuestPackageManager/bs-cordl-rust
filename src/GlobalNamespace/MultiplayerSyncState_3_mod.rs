@@ -278,9 +278,7 @@ impl<
     pub fn get_stateBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-        >,
+        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -296,13 +294,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::StateBuffer_3<
-                                TStateTable,
-                                TType,
-                                TState,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
                         0usize,
                     >("get_stateBuffer")
                     .unwrap_or_else(|e| {
@@ -313,9 +305,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StateBuffer_3<TStateTable, TType, TState>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

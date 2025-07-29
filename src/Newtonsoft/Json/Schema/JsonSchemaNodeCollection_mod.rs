@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaNodeCollection {
-    __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     >,
@@ -29,7 +29,7 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
-    type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaNode>,
     >;

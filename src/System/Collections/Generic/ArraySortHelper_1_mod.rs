@@ -66,9 +66,7 @@ impl<
         index: i32,
         length: i32,
         value: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -86,9 +84,7 @@ impl<
                             i32,
                             i32,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         5usize,
@@ -112,7 +108,7 @@ impl<
         i: i32,
         n: i32,
         lo: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -130,7 +126,7 @@ impl<
                             i32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         5usize,
@@ -152,7 +148,7 @@ impl<
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         lo: i32,
         hi: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -169,7 +165,7 @@ impl<
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -191,7 +187,7 @@ impl<
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         lo: i32,
         hi: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -208,7 +204,7 @@ impl<
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -231,9 +227,7 @@ impl<
         index: i32,
         length: i32,
         value: T,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -251,9 +245,7 @@ impl<
                             i32,
                             i32,
                             T,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         5usize,
@@ -277,7 +269,7 @@ impl<
         lo: i32,
         hi: i32,
         depthLimit: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -295,7 +287,7 @@ impl<
                             i32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         5usize,
@@ -317,7 +309,7 @@ impl<
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         left: i32,
         length: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -334,7 +326,7 @@ impl<
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -367,7 +359,7 @@ impl<
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         lo: i32,
         hi: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -384,7 +376,7 @@ impl<
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         i32,
                         4usize,
@@ -402,53 +394,12 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Sort_Comparison_1_1(
-        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        index: i32,
-        length: i32,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<T>,
-                            >,
-                            i32,
-                            i32,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Sort")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (keys, index, length, comparer))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Sort_IComparer_1_0(
+    pub fn Sort_Il2CppArray_i32_i32_Gc0(
         &mut self,
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         index: i32,
         length: i32,
-        comparer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IComparer_1<T>,
-        >,
+        comparer: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -465,9 +416,7 @@ impl<
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IComparer_1<T>,
-                            >,
+                            quest_hook::libil2cpp::Gc<T>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -482,6 +431,45 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (keys, index, length, comparer))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Sort_Il2CppArray_i32_i32_Gc1(
+        keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+        index: i32,
+        length: i32,
+        comparer: quest_hook::libil2cpp::Gc<T>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<T>,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<T>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("Sort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Sort",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (keys, index, length, comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -524,7 +512,7 @@ impl<
     }
     pub fn SwapIfGreater(
         keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        comparer: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+        comparer: quest_hook::libil2cpp::Gc<T>,
         a: i32,
         b: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -541,7 +529,7 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
+                            quest_hook::libil2cpp::Gc<T>,
                             i32,
                             i32,
                         ),
@@ -584,11 +572,7 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Default() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ArraySortHelper_1<T>,
-        >,
-    >
+    pub fn get_Default() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -599,9 +583,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::ArraySortHelper_1<T>,
-                        >,
+                        quest_hook::libil2cpp::Gc<T>,
                         0usize,
                     >("get_Default")
                     .unwrap_or_else(|e| {
@@ -612,9 +594,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::ArraySortHelper_1<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
 }

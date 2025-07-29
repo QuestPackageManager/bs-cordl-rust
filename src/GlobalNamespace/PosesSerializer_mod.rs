@@ -49,10 +49,8 @@ impl crate::GlobalNamespace::PosesSerializer {
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
             >,
         >,
     > {
@@ -63,10 +61,8 @@ impl crate::GlobalNamespace::PosesSerializer {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
                             >,
                         >,
                         1usize,
@@ -80,10 +76,8 @@ impl crate::GlobalNamespace::PosesSerializer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())

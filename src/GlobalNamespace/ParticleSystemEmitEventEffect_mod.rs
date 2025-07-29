@@ -645,11 +645,7 @@ pub struct ParticleSystemEmitEventEffect_ParticleSystemEmitBehavior {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _particleSystemEventControllerPoolContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MemoryPoolContainer_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ParticleSystemEventController,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ParticleSystemEventController>,
     >,
     pub _particleSystemParentTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Transform,

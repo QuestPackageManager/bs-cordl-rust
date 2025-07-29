@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteJumpSpeedEventDataProcessor {
-    __cordl_parent: crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJumpSpeedEventData>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
 }
 #[cfg(feature = "NoteJumpSpeedEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
-    type Target = crate::GlobalNamespace::BeatmapEventDataProcessor_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteJumpSpeedEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -53,9 +53,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -64,10 +62,8 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -89,9 +85,7 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::LinkedListNode_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -100,10 +94,8 @@ impl crate::GlobalNamespace::NoteJumpSpeedEventDataProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::LinkedListNode_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataItem,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

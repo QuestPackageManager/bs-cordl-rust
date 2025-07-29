@@ -15,9 +15,7 @@ pub struct BeatmapLevelChecksums {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub difficultyBeatmapsChecksums: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
-        >,
+        crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelChecksums")]

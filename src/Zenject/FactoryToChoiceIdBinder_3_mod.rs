@@ -6,11 +6,7 @@ pub struct FactoryToChoiceIdBinder_3<
     TParam2: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_3<
-        TParam1,
-        TParam2,
-        TContract,
-    >,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
@@ -62,11 +58,7 @@ impl<
     TContract: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract> {
-    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_3<
-        TParam1,
-        TParam2,
-        TContract,
-    >;
+    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,9 +103,7 @@ impl<
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_3<TParam1, TParam2, TContract>,
-        >,
+        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -129,13 +119,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::FactoryArgumentsToChoiceBinder_3<
-                                TParam1,
-                                TParam2,
-                                TContract,
-                            >,
-                        >,
+                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
                         1usize,
                     >("WithId")
                     .unwrap_or_else(|e| {
@@ -146,9 +130,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FactoryArgumentsToChoiceBinder_3<TParam1, TParam2, TContract>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (identifier))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -2,13 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookedEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_3<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         bool,
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     >,
 }
@@ -33,13 +31,11 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::CookedEve
 }
 #[cfg(feature = "HoudiniEngineUnity+CookedEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::CookedEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_3<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         bool,
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         >,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

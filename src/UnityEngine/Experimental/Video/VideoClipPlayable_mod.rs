@@ -154,34 +154,6 @@ impl crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
-impl AsRef<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
-    >,
-> for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
-impl AsMut<
-    crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
-    >,
-> for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::IEquatable_1<
-        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
 impl AsRef<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayable {
@@ -192,6 +164,30 @@ for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
 impl AsMut<crate::UnityEngine::Playables::IPlayable>
 for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayable {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Experimental::Video::VideoClipPlayable>,
+> for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Experimental+Video+VideoClipPlayable")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<crate::UnityEngine::Experimental::Video::VideoClipPlayable>,
+> for crate::UnityEngine::Experimental::Video::VideoClipPlayable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Experimental::Video::VideoClipPlayable,
+    > {
         todo!()
     }
 }

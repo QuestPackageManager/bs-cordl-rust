@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MouseCaptureEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MouseCaptureEventBase_1")]
@@ -44,7 +44,7 @@ for crate::UnityEngine::UIElements::MouseCaptureEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+MouseCaptureEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::MouseCaptureEventBase_1<T> {
-    type Target = crate::UnityEngine::UIElements::PointerCaptureEventBase_1<T>;
+    type Target = quest_hook::libil2cpp::Gc<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

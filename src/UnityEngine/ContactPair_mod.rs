@@ -134,9 +134,7 @@ impl crate::UnityEngine::ContactPair {
     }
     pub fn ExtractContacts(
         &mut self,
-        managedContainer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::ContactPoint>,
-        >,
+        managedContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ContactPoint>,
         flipped: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -145,11 +143,7 @@ impl crate::UnityEngine::ContactPair {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::ContactPoint,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ContactPoint>,
                             bool,
                         ),
                         i32,
@@ -246,9 +240,7 @@ impl crate::UnityEngine::ContactPair {
     }
     pub fn ExtractContacts_Injected(
         _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactPair>,
-        managedContainer: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::ContactPoint>,
-        >,
+        managedContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ContactPoint>,
         flipped: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -260,11 +252,7 @@ impl crate::UnityEngine::ContactPair {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ContactPair,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::ContactPoint,
-                                >,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ContactPoint>,
                             bool,
                         ),
                         i32,

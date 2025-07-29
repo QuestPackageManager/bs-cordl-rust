@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PointerCaptureEvent {
-    __cordl_parent: crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::PointerCaptureEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+PointerCaptureEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::PointerCaptureEvent {
-    type Target = crate::UnityEngine::UIElements::PointerCaptureEventBase_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerCaptureEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

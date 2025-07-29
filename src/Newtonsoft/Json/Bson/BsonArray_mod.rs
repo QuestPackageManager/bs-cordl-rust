@@ -4,9 +4,7 @@
 pub struct BsonArray {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
     pub _children: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Bson+BsonArray")]
@@ -75,9 +73,7 @@ impl crate::Newtonsoft::Json::Bson::BsonArray {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -87,10 +83,8 @@ impl crate::Newtonsoft::Json::Bson::BsonArray {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerator_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Bson::BsonToken,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::Bson::BsonToken,
                             >,
                         >,
                         0usize,
@@ -104,9 +98,7 @@ impl crate::Newtonsoft::Json::Bson::BsonArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerator_1<
-                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -203,34 +195,6 @@ impl quest_hook::libil2cpp::ObjectType for crate::Newtonsoft::Json::Bson::BsonAr
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonArray")]
-impl AsRef<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-    >,
-> for crate::Newtonsoft::Json::Bson::BsonArray {
-    fn as_ref(
-        &self,
-    ) -> &crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonArray")]
-impl AsMut<
-    crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-    >,
-> for crate::Newtonsoft::Json::Bson::BsonArray {
-    fn as_mut(
-        &mut self,
-    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Bson+BsonArray")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::Newtonsoft::Json::Bson::BsonArray {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -241,6 +205,34 @@ for crate::Newtonsoft::Json::Bson::BsonArray {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::Newtonsoft::Json::Bson::BsonArray {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonArray")]
+impl AsRef<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    >,
+> for crate::Newtonsoft::Json::Bson::BsonArray {
+    fn as_ref(
+        &self,
+    ) -> &quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Bson+BsonArray")]
+impl AsMut<
+    quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    >,
+> for crate::Newtonsoft::Json::Bson::BsonArray {
+    fn as_mut(
+        &mut self,
+    ) -> &mut quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Bson::BsonToken>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

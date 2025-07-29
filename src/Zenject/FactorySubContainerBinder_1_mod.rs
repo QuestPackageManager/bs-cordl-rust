@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactorySubContainerBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::Zenject::FactorySubContainerBinderBase_1<TContract>,
+    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinder_1")]
@@ -44,7 +44,7 @@ for crate::Zenject::FactorySubContainerBinder_1<TContract> {
 #[cfg(feature = "Zenject+FactorySubContainerBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactorySubContainerBinder_1<TContract> {
-    type Target = crate::Zenject::FactorySubContainerBinderBase_1<TContract>;
+    type Target = quest_hook::libil2cpp::Gc<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,9 +63,7 @@ impl<
     pub fn ByMethod(
         &mut self,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -82,9 +80,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -179,9 +175,7 @@ impl<
     pub fn ByNewGameObjectMethod(
         &mut self,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -198,9 +192,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -260,9 +252,7 @@ impl<
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -281,9 +271,7 @@ impl<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
@@ -346,9 +334,7 @@ impl<
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         installerMethod: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -369,9 +355,7 @@ impl<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<

@@ -48,9 +48,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -60,9 +58,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
-                            >,
+                            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
                         >,
                         1usize,
                     >("DisplayJoinPremiumDialogAsync")
@@ -75,9 +71,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
-            >,
+            crate::GlobalNamespace::ISonyPSPremiumHelper_DisplayJoinPremiumDialogResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }
@@ -86,9 +80,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
-            >,
+            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -98,9 +90,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
-                            >,
+                            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
                         >,
                         1usize,
                     >("GetPremiumStatusAsync")
@@ -113,9 +103,7 @@ impl crate::GlobalNamespace::ISonyPSPremiumHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
-            >,
+            crate::GlobalNamespace::ISonyPSPremiumHelper_GetPremiumStatusResult,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (token))? };
         Ok(__cordl_ret.into())
     }

@@ -698,7 +698,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Image
 #[repr(C)]
 #[derive(Debug)]
 pub struct Image_UxmlFactory {
-    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image_UxmlTraits>,
     >,
@@ -725,7 +725,7 @@ for crate::UnityEngine::UIElements::Image_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Image+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Image_UxmlFactory {
-    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Image_UxmlTraits>,
     >;

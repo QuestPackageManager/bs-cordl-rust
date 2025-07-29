@@ -4,9 +4,7 @@
 pub struct TrackedDeviceRaycaster {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseRaycaster,
     pub m_RaycastResultsCache: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
-        >,
+        crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
     >,
     pub m_IgnoreReversedGraphics: bool,
     pub m_CheckFor2DOcclusion: bool,
@@ -107,9 +105,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
             crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -122,9 +118,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
                                 crate::UnityEngine::InputSystem::UI::ExtendedPointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -183,9 +177,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::EventSystems::RaycastResult,
-            >,
+            crate::UnityEngine::EventSystems::RaycastResult,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,9 +190,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::EventSystems::RaycastResult,
-                                >,
+                                crate::UnityEngine::EventSystems::RaycastResult,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -224,9 +214,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
-            >,
+            crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -238,9 +226,7 @@ impl crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
                             crate::UnityEngine::Ray,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
-                                >,
+                                crate::UnityEngine::InputSystem::UI::TrackedDeviceRaycaster_RaycastHitData,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

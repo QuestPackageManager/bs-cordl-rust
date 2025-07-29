@@ -4,10 +4,8 @@
 pub struct EventCallbackList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
         >,
     >,
     pub _trickleDownCallbackCount_k__BackingField: i32,

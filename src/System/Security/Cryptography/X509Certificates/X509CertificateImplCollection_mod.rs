@@ -6,10 +6,8 @@
 pub struct X509CertificateImplCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl,
         >,
     >,
 }

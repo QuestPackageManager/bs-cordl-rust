@@ -53,14 +53,10 @@ pub struct OVRTrackedKeyboard {
         crate::GlobalNamespace::OVRPassthroughLayer,
     >,
     pub TrackedKeyboardActiveChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
-        >,
+        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardSetActiveEvent,
     >,
     pub TrackedKeyboardVisibilityChanged: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
-        >,
+        crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent,
     >,
     pub ActiveKeyboardTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Transform,

@@ -40,20 +40,14 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::IVertexModifier {
 impl crate::UnityEngine::UI::IVertexModifier {
     pub fn ModifyVertices(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
-        >,
+        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                crate::UnityEngine::UIVertex,
-                            >,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ModifyVertices")

@@ -182,11 +182,9 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ToBloomFilter_IEnumerable_1_1<T>(
+    pub fn ToBloomFilter_Gc1<T>(
         strings: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         hashCount: i32,
         hashBits: i32,
@@ -202,10 +200,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
                                 >,
                             >,
                             i32,
@@ -227,10 +223,8 @@ impl crate::GlobalNamespace::BloomFilterUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ToBloomFilter_IEnumerable_1_2<T>(
-        hashes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<u32>,
-        >,
+    pub fn ToBloomFilter_Gc2<T>(
+        hashes: quest_hook::libil2cpp::Gc<u32>,
         hashCount: i32,
         hashBits: i32,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -243,13 +237,7 @@ impl crate::GlobalNamespace::BloomFilterUtil {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<u32>,
-                            >,
-                            i32,
-                            i32,
-                        ),
+                        (quest_hook::libil2cpp::Gc<u32>, i32, i32),
                         T,
                         3usize,
                     >("ToBloomFilter")

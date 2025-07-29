@@ -131,13 +131,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_Terra
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Terrain")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     >,
 > for crate::HoudiniEngineUnity::Test_Terrain {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -145,13 +145,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Terrain")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     >,
 > for crate::HoudiniEngineUnity::Test_Terrain {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -159,13 +159,13 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Terrain")]
 impl AsRef<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     >,
 > for crate::HoudiniEngineUnity::Test_Terrain {
     fn as_ref(
         &self,
-    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -173,13 +173,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Terrain")]
 impl AsMut<
-    crate::HoudiniEngineUnity::IEquivable_1<
+    quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     >,
 > for crate::HoudiniEngineUnity::Test_Terrain {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Terrain>,
     > {
         unsafe { std::mem::transmute(self) }

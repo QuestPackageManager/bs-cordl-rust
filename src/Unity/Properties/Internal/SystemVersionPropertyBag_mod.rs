@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag {
-    __cordl_parent: crate::Unity::Properties::ContainerPropertyBag_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
-    type Target = crate::Unity::Properties::ContainerPropertyBag_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -99,7 +99,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_BuildProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
@@ -129,7 +129,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
@@ -220,7 +220,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MajorProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
@@ -250,7 +250,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
@@ -341,7 +341,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_MinorProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
@@ -371,7 +371,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
@@ -462,7 +462,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SystemVersionPropertyBag_RevisionProperty {
-    __cordl_parent: crate::Unity::Properties::Property_2<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >,
@@ -492,7 +492,7 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
-    type Target = crate::Unity::Properties::Property_2<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;

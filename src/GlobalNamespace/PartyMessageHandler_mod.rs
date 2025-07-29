@@ -4,10 +4,8 @@
 pub struct PartyMessageHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NetworkPacketSerializer_2<
-            crate::GlobalNamespace::PartyMessageHandler_MessageType,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
-        >,
+        crate::GlobalNamespace::PartyMessageHandler_MessageType,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     >,
     pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ConnectedPlayerManager,
@@ -627,10 +625,8 @@ impl crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
             >,
         >,
     > {
@@ -641,10 +637,8 @@ impl crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
                             >,
                         >,
                         0usize,
@@ -658,10 +652,8 @@ impl crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerMessage,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

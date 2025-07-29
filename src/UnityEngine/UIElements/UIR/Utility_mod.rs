@@ -1099,14 +1099,14 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn add_GraphicsResourcesRecreate(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_GraphicsResourcesRecreate")
@@ -1125,9 +1125,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
     }
     pub fn add_RegisterIntermediateRenderers(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1136,9 +1134,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1157,16 +1153,14 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn add_RenderNodeExecute(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<crate::System::IntPtr>>,
+        value: quest_hook::libil2cpp::Gc<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::System::IntPtr>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::System::IntPtr>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_RenderNodeExecute")
@@ -1234,14 +1228,14 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn remove_GraphicsResourcesRecreate(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+        value: quest_hook::libil2cpp::Gc<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        (quest_hook::libil2cpp::Gc<bool>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_GraphicsResourcesRecreate")
@@ -1260,9 +1254,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
     }
     pub fn remove_RegisterIntermediateRenderers(
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1271,9 +1263,7 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1292,16 +1282,14 @@ impl crate::UnityEngine::UIElements::UIR::Utility {
         Ok(__cordl_ret.into())
     }
     pub fn remove_RenderNodeExecute(
-        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<crate::System::IntPtr>>,
+        value: quest_hook::libil2cpp::Gc<crate::System::IntPtr>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::System::IntPtr>,
-                        >),
+                        (quest_hook::libil2cpp::Gc<crate::System::IntPtr>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_RenderNodeExecute")

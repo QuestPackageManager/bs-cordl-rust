@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GenericSignal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::Signal,
-    pub _floatEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    pub _floatEvent: quest_hook::libil2cpp::Gc<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_GenericSignal_1")]
@@ -120,7 +120,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> 
     }
     pub fn Subscribe(
         &mut self,
-        foo: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        foo: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -131,7 +131,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> 
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Subscribe")
@@ -150,7 +150,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> 
     }
     pub fn Unsubscribe(
         &mut self,
-        foo: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+        foo: quest_hook::libil2cpp::Gc<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -161,7 +161,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::GenericSignal_1<T> 
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
+                        (quest_hook::libil2cpp::Gc<T>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Unsubscribe")

@@ -385,18 +385,18 @@ impl crate::GlobalNamespace::OVRSpace {
     }
 }
 #[cfg(feature = "OVRSpace")]
-impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace>>
 for crate::GlobalNamespace::OVRSpace {
-    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSpace")]
-impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace>>
 for crate::GlobalNamespace::OVRSpace {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRSpace> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSpace> {
         todo!()
     }
 }

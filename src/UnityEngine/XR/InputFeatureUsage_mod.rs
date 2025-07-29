@@ -223,20 +223,20 @@ impl crate::UnityEngine::XR::InputFeatureUsage {
     }
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage")]
-impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage>>
+impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage>>
 for crate::UnityEngine::XR::InputFeatureUsage {
     fn as_ref(
         &self,
-    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage> {
+    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage")]
-impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage>>
+impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage>>
 for crate::UnityEngine::XR::InputFeatureUsage {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage> {
+    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage> {
         todo!()
     }
 }

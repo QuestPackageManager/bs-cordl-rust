@@ -7,9 +7,7 @@ pub struct RecordManager {
     pub _lastFreeRecord: i32,
     pub _minimumCapacity: i32,
     pub _recordCapacity: i32,
-    pub _freeRecordList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
-    >,
+    pub _freeRecordList: quest_hook::libil2cpp::Gc<i32>,
     pub _rows: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,

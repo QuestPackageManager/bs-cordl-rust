@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationEventBoxGroup {
-    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightRotationEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
-    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightRotationEventBox>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -80,10 +80,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationEventBox,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightRotationEventBox,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -98,10 +96,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapSaveDataVersion3::LightRotationEventBox,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightRotationEventBox,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -114,10 +110,8 @@ impl crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup {
                             f32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapSaveDataVersion3::LightRotationEventBox,
-                                    >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightRotationEventBox,
                                 >,
                             >,
                         ),

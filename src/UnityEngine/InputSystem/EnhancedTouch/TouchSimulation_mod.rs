@@ -28,16 +28,12 @@ pub struct TouchSimulation {
     pub m_LastTouchId: i32,
     pub m_PrimaryTouchIndex: i32,
     pub m_OnDeviceChange: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
-        >,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::UnityEngine::InputSystem::InputDeviceChange,
     >,
     pub m_OnEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-        >,
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+EnhancedTouch+TouchSimulation")]

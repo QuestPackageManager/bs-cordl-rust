@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ApplicationInviteList {
-    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInvite>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::Models::ApplicationInviteList {
 }
 #[cfg(feature = "Oculus+Platform+Models+ApplicationInviteList")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ApplicationInviteList {
-    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
+    type Target = quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ApplicationInvite>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

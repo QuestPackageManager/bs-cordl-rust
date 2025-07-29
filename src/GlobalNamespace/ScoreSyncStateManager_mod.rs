@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreSyncStateManager {
-    __cordl_parent: crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+    __cordl_parent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -36,7 +36,7 @@ for crate::GlobalNamespace::ScoreSyncStateManager {
 }
 #[cfg(feature = "ScoreSyncStateManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreSyncStateManager {
-    type Target = crate::GlobalNamespace::MultiplayerSyncStateManager_5<
+    type Target = quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -145,10 +145,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
             >,
         >,
     > {
@@ -159,10 +157,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IPacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
                             >,
                         >,
                         0usize,
@@ -176,10 +172,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -285,10 +279,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
             >,
         >,
     > {
@@ -299,10 +291,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IPacketPool_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
-                                >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
                             >,
                         >,
                         0usize,
@@ -316,10 +306,8 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IPacketPool_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
-                >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -351,7 +339,7 @@ for crate::GlobalNamespace::ScoreSyncStateManager {
 }
 #[cfg(feature = "ScoreSyncStateManager")]
 impl AsRef<
-    crate::GlobalNamespace::IScoreSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -365,7 +353,7 @@ impl AsRef<
 > for crate::GlobalNamespace::ScoreSyncStateManager {
     fn as_ref(
         &self,
-    ) -> &crate::GlobalNamespace::IScoreSyncStateManager_5<
+    ) -> &quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -381,7 +369,7 @@ impl AsRef<
 }
 #[cfg(feature = "ScoreSyncStateManager")]
 impl AsMut<
-    crate::GlobalNamespace::IScoreSyncStateManager_5<
+    quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,
@@ -395,7 +383,7 @@ impl AsMut<
 > for crate::GlobalNamespace::ScoreSyncStateManager {
     fn as_mut(
         &mut self,
-    ) -> &mut crate::GlobalNamespace::IScoreSyncStateManager_5<
+    ) -> &mut quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
         i32,

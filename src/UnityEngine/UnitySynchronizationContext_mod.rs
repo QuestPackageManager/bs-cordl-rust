@@ -4,14 +4,10 @@
 pub struct UnitySynchronizationContext {
     __cordl_parent: crate::System::Threading::SynchronizationContext,
     pub m_AsyncWorkQueue: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-        >,
+        crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
     >,
     pub m_CurrentFrameWork: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-        >,
+        crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
     >,
     pub m_MainThreadID: i32,
     pub m_TrackedCount: i32,
@@ -189,11 +185,9 @@ impl crate::UnityEngine::UnitySynchronizationContext {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_List_1_i32_1(
+    pub fn New_Gc_i32_1(
         queue: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-            >,
+            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
         >,
         mainThreadID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -334,12 +328,10 @@ impl crate::UnityEngine::UnitySynchronizationContext {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_List_1_i32_1(
+    pub fn _ctor_Gc_i32_1(
         &mut self,
         queue: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-            >,
+            crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
         >,
         mainThreadID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -350,9 +342,7 @@ impl crate::UnityEngine::UnitySynchronizationContext {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
-                                >,
+                                crate::UnityEngine::UnitySynchronizationContext_WorkRequest,
                             >,
                             i32,
                         ),

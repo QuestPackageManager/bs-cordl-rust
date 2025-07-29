@@ -7,9 +7,7 @@ pub struct Property_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Attributes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-        >,
+        quest_hook::libil2cpp::Gc<crate::System::Attribute>,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -112,9 +110,7 @@ impl<
     pub fn AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -129,9 +125,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -253,9 +247,7 @@ impl<
     pub fn Unity_Properties_Internal_IAttributes_AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-            >,
+            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -270,9 +262,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<
-                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -386,26 +376,6 @@ for crate::Unity::Properties::Property_2<TContainer, TValue> {
 impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
-> AsRef<crate::Unity::Properties::IProperty_1<TContainer>>
-for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_ref(&self) -> &crate::Unity::Properties::IProperty_1<TContainer> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Unity+Properties+Property_2")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<crate::Unity::Properties::IProperty_1<TContainer>>
-for crate::Unity::Properties::Property_2<TContainer, TValue> {
-    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IProperty_1<TContainer> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Unity+Properties+Property_2")]
-impl<
-    TContainer: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::Unity::Properties::Internal::IAttributes>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
     fn as_ref(&self) -> &crate::Unity::Properties::Internal::IAttributes {
@@ -419,6 +389,26 @@ impl<
 > AsMut<crate::Unity::Properties::Internal::IAttributes>
 for crate::Unity::Properties::Property_2<TContainer, TValue> {
     fn as_mut(&mut self) -> &mut crate::Unity::Properties::Internal::IAttributes {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+Property_2")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<quest_hook::libil2cpp::Gc<TContainer>>
+for crate::Unity::Properties::Property_2<TContainer, TValue> {
+    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+Property_2")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<quest_hook::libil2cpp::Gc<TContainer>>
+for crate::Unity::Properties::Property_2<TContainer, TValue> {
+    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TContainer> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -816,10 +816,8 @@ pub struct OVRHaptics_OVRHapticsOutput {
     pub m_numPredictionMisses: i32,
     pub m_numUnderruns: i32,
     pub m_pendingClips: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker,
-            >,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRHapticsOutput_OVRHaptics_ClipPlaybackTracker,
         >,
     >,
     pub m_controller: u32,

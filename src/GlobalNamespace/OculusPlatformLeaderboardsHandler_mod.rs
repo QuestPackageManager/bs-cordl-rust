@@ -6,9 +6,7 @@ pub struct OculusPlatformLeaderboardsHandler {
     pub _leaderboardIdsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardIdsModel,
     >,
-    pub _oculusRequestIds: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<u64>,
-    >,
+    pub _oculusRequestIds: quest_hook::libil2cpp::Gc<u64>,
     pub _gameplayModifiersModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiersModelSO,
     >,
