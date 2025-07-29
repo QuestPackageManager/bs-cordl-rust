@@ -4,13 +4,19 @@
 pub struct PlayableDirector {
     __cordl_parent: crate::UnityEngine::Behaviour,
     pub played: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
     pub paused: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
     pub stopped: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Playables+PlayableDirector")]
@@ -1102,7 +1108,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_paused(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1111,8 +1121,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1134,7 +1146,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_played(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1143,8 +1159,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1166,7 +1184,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn add_stopped(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1175,8 +1197,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1397,7 +1421,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_paused(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1406,8 +1434,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1429,7 +1459,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_played(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1438,8 +1472,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1461,7 +1497,11 @@ impl crate::UnityEngine::Playables::PlayableDirector {
     pub fn remove_stopped(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1470,8 +1510,10 @@ impl crate::UnityEngine::Playables::PlayableDirector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::PlayableDirector,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Playables::PlayableDirector,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

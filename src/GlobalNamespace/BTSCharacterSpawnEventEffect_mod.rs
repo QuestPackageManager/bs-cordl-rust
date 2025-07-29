@@ -21,26 +21,36 @@ pub struct BTSCharacterSpawnEventEffect {
         crate::GlobalNamespace::GameplayModifiers,
     >,
     pub startCharacterAnimationEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        >,
     >,
     pub _idsToCharacterPrefabsDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        >,
     >,
     pub _idsToCharactersDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+        >,
     >,
     pub _idsToAnimationClipsDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        >,
     >,
     pub _isInitialized: bool,
     pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _asyncOperationHandles: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BTSCharacterSpawnEventEffect")]
@@ -105,19 +115,25 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     }
     pub fn GetCharacterWithAnimationClip(
         charDictionary: quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            >,
         >,
         animDictionary: quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
         prefabId: i32,
         animationId: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Tuple_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -127,23 +143,29 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BTSCharacter,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    i32,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BTSCharacter,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                i32,
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    i32,
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                                >,
                             >,
                             i32,
                             i32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BTSCharacter,
+                            crate::System::Tuple_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BTSCharacter,
+                                >,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
                         >,
                         4usize,
                     >("GetCharacterWithAnimationClip")
@@ -156,8 +178,10 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Tuple_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
@@ -295,7 +319,9 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     pub fn add_startCharacterAnimationEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -304,8 +330,10 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BTSCharacter,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BTSCharacter,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -344,7 +372,9 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
     pub fn remove_startCharacterAnimationEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BTSCharacter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -353,8 +383,10 @@ impl crate::GlobalNamespace::BTSCharacterSpawnEventEffect {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BTSCharacter,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BTSCharacter,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

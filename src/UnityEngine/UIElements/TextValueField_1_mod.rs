@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextValueField_1<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>,
     pub m_Dragger: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseFieldMouseDragger,
     >,
@@ -49,7 +49,7 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
 #[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<TValueType>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -231,7 +231,9 @@ impl<
     pub fn New(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
-        textValueInput: quest_hook::libil2cpp::Gc<TValueType>,
+        textValueInput: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -510,7 +512,9 @@ impl<
         &mut self,
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         maxLength: i32,
-        textValueInput: quest_hook::libil2cpp::Gc<TValueType>,
+        textValueInput: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -526,7 +530,11 @@ impl<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<TValueType>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<
+                                    TValueType,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -577,7 +585,11 @@ impl<
     }
     pub fn get_textValueInput(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValueType>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType>,
+        >,
+    >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -588,7 +600,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValueType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<
+                                TValueType,
+                            >,
+                        >,
                         0usize,
                     >("get_textValueInput")
                     .unwrap_or_else(|e| {
@@ -599,9 +615,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValueType> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
@@ -671,18 +687,20 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
 #[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValueType>>
+> AsRef<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IValueField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextValueField_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValueType>>
+> AsMut<crate::UnityEngine::UIElements::IValueField_1<TValueType>>
 for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValueType> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::IValueField_1<TValueType> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -690,7 +708,9 @@ for crate::UnityEngine::UIElements::TextValueField_1<TValueType> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextValueField_1_TextValueInput<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
+    __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+        TValueType,
+    >,
     pub _formatString_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -735,7 +755,9 @@ for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> 
 #[cfg(feature = "UnityEngine+UIElements+TextValueField_1+TextValueInput")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<TValueType> {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
+        TValueType,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1028,7 +1050,11 @@ impl<
     }
     pub fn get_textValueFieldParent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValueType>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1<TValueType>,
+        >,
+    >
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1039,7 +1065,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValueType>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::TextValueField_1<TValueType>,
+                        >,
                         0usize,
                     >("get_textValueFieldParent")
                     .unwrap_or_else(|e| {
@@ -1050,9 +1078,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValueType> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TextValueField_1<TValueType>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_formatString(

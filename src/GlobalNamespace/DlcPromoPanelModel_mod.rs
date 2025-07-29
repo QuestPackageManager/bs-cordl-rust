@@ -40,7 +40,11 @@ pub struct DlcPromoPanelModel {
     pub _initialized: bool,
     pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
     pub _promoInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
+        >,
     >,
     pub _defaultPromoInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
@@ -49,19 +53,23 @@ pub struct DlcPromoPanelModel {
         crate::System::Threading::Tasks::Task,
     >,
     pub _cacheNextPackDataTask: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        crate::System::Threading::Tasks::Task_1<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                >,
+                bool,
             >,
-            bool,
         >,
     >,
     pub _loadDlcPromoPanelDataHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
     >,
     pub _loadPackPromoInfoHandles: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         >,
     >,
     pub hotReloadDidStart: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -261,8 +269,10 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -282,11 +292,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         3usize,
@@ -300,8 +312,10 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (itemId, page, customText))?
         };
@@ -311,11 +325,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         >,
     > {
@@ -326,11 +342,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::ValueTuple_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::System::ValueTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                                    >,
+                                    bool,
                                 >,
-                                bool,
                             >,
                         >,
                         0usize,
@@ -344,11 +362,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -357,11 +377,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         >,
     > {
@@ -372,11 +394,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::ValueTuple_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::System::ValueTuple_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                                    >,
+                                    bool,
                                 >,
-                                bool,
                             >,
                         >,
                         0usize,
@@ -390,11 +414,13 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            crate::System::Threading::Tasks::Task_1<
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                    >,
+                    bool,
                 >,
-                bool,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -529,7 +555,9 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -541,8 +569,10 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                             crate::GlobalNamespace::PackDefinitionSO,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PackPromoInfoSO,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PackPromoInfoSO,
+                                >,
                             >,
                         >,
                         1usize,
@@ -556,7 +586,9 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackPromoInfoSO>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (pack))? };
         Ok(__cordl_ret.into())
     }

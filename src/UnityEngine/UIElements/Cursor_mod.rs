@@ -374,20 +374,20 @@ impl crate::UnityEngine::UIElements::Cursor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
 for crate::UnityEngine::UIElements::Cursor {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Cursor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor>>
 for crate::UnityEngine::UIElements::Cursor {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Cursor> {
         todo!()
     }
 }

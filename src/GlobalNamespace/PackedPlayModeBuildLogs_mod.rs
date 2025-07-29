@@ -4,7 +4,9 @@
 pub struct PackedPlayModeBuildLogs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RuntimeBuildLogs: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_PackedPlayModeBuildLogs")]
@@ -76,7 +78,9 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -86,7 +90,9 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+                            >,
                         >,
                         0usize,
                     >("get_RuntimeBuildLogs")
@@ -99,14 +105,18 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_RuntimeBuildLogs(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -115,7 +125,9 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

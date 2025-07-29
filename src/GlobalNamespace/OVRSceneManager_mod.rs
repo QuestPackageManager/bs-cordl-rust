@@ -6,7 +6,9 @@ pub struct OVRSceneManager {
     pub PlanePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     pub VolumePrefab: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     pub PrefabOverrides: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePrefabOverride>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePrefabOverride>,
+        >,
     >,
     pub VerboseLogging: bool,
     pub MaxSceneAnchorUpdatesPerFrame: i32,
@@ -28,8 +30,14 @@ pub struct OVRSceneManager {
     pub _sceneAnchorUpdateIndex: i32,
     pub _roomCounter: i32,
     pub _onAnchorsFetchCompleted: quest_hook::libil2cpp::Gc<
-        bool,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        crate::System::Action_2<
+            bool,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::GlobalNamespace::OVRAnchor,
+                >,
+            >,
+        >,
     >,
     pub _hasLoadedScene: bool,
 }
@@ -98,9 +106,15 @@ impl crate::GlobalNamespace::OVRSceneManager {
     }
     pub fn CheckClassificationsInRooms(
         success: bool,
-        rooms: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        rooms: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         task: crate::GlobalNamespace::OVRTask_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -111,10 +125,16 @@ impl crate::GlobalNamespace::OVRSceneManager {
                     .find_static_method::<
                         (
                             bool,
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             crate::GlobalNamespace::OVRTask_1<bool>,
@@ -141,9 +161,15 @@ impl crate::GlobalNamespace::OVRSceneManager {
     }
     pub fn CheckIfAnchorsContainClassifications(
         success: bool,
-        roomAnchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        roomAnchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         task: crate::GlobalNamespace::OVRTask_1<bool>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,10 +180,16 @@ impl crate::GlobalNamespace::OVRSceneManager {
                     .find_static_method::<
                         (
                             bool,
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             crate::GlobalNamespace::OVRTask_1<bool>,
@@ -184,7 +216,9 @@ impl crate::GlobalNamespace::OVRSceneManager {
     }
     pub fn CheckIfClassificationsAreValid(
         requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -193,8 +227,10 @@ impl crate::GlobalNamespace::OVRSceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -214,9 +250,15 @@ impl crate::GlobalNamespace::OVRSceneManager {
         Ok(__cordl_ret.into())
     }
     pub fn CollectLabelsFromAnchors(
-        anchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
         labels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -225,10 +267,16 @@ impl crate::GlobalNamespace::OVRSceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -276,7 +324,9 @@ impl crate::GlobalNamespace::OVRSceneManager {
     pub fn DoesRoomSetupExist(
         &mut self,
         requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -285,8 +335,10 @@ impl crate::GlobalNamespace::OVRSceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         crate::GlobalNamespace::OVRTask_1<bool>,
@@ -338,7 +390,9 @@ impl crate::GlobalNamespace::OVRSceneManager {
     }
     pub fn GetUuidsToQuery(
         anchor: crate::GlobalNamespace::OVRAnchor,
-        uuidsToQuery: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        uuidsToQuery: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<crate::System::Guid>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -347,7 +401,11 @@ impl crate::GlobalNamespace::OVRSceneManager {
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVRAnchor,
-                            quest_hook::libil2cpp::Gc<crate::System::Guid>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<
+                                    crate::System::Guid,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -403,14 +461,22 @@ impl crate::GlobalNamespace::OVRSceneManager {
     }
     pub fn InstantiateSceneRooms(
         &mut self,
-        roomLayoutAnchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        roomLayoutAnchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::OVRAnchor,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InstantiateSceneRooms")
@@ -481,7 +547,11 @@ impl crate::GlobalNamespace::OVRSceneManager {
     pub fn OnAnchorsFetchCompleted(
         &mut self,
         success: bool,
-        roomLayoutAnchors: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+        roomLayoutAnchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -490,7 +560,11 @@ impl crate::GlobalNamespace::OVRSceneManager {
                     .find_method::<
                         (
                             bool,
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRAnchor>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::GlobalNamespace::OVRAnchor,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -668,10 +742,12 @@ impl crate::GlobalNamespace::OVRSceneManager {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn RequestSceneCapture_Gc1(
+    pub fn RequestSceneCapture_IEnumerable_1_1(
         &mut self,
         requestedAnchorClassifications: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -680,8 +756,10 @@ impl crate::GlobalNamespace::OVRSceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         bool,
@@ -970,7 +1048,9 @@ impl crate::GlobalNamespace::OVRSceneManager_Classification {
     pub const WindowFrame: &'static str = "WINDOW_FRAME";
     pub fn get_List() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -980,8 +1060,10 @@ impl crate::GlobalNamespace::OVRSceneManager_Classification {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -995,7 +1077,9 @@ impl crate::GlobalNamespace::OVRSceneManager_Classification {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -1385,7 +1469,9 @@ pub struct OVRSceneManager_RoomLayoutInformation {
     pub Floor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
     pub Ceiling: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
     pub Walls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRSceneManager+RoomLayoutInformation")]

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlStyleFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlStyleTraits>,
     >,
@@ -29,7 +29,7 @@ for crate::UnityEngine::UIElements::UxmlStyleFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlStyleFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlStyleFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlStyleTraits>,
     >;

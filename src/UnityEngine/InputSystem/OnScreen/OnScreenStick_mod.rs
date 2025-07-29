@@ -17,7 +17,9 @@ pub struct OnScreenStick {
     pub m_StartPos: crate::UnityEngine::Vector3,
     pub m_PointerDownPos: crate::UnityEngine::Vector2,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::RaycastResult,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
     pub m_PointerEventData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerEventData,

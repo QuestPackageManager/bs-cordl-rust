@@ -8,7 +8,7 @@ pub struct CollectionViewController {
     >,
     pub m_ItemsSource: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
     pub itemsSourceChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub itemIndexChanged: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub itemIndexChanged: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CollectionViewController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -582,14 +582,14 @@ impl crate::UnityEngine::UIElements::CollectionViewController {
     }
     pub fn add_itemIndexChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_itemIndexChanged")
@@ -692,14 +692,14 @@ impl crate::UnityEngine::UIElements::CollectionViewController {
     }
     pub fn remove_itemIndexChanged(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_itemIndexChanged")

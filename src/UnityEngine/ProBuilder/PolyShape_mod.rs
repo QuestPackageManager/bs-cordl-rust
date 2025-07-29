@@ -6,7 +6,9 @@ pub struct PolyShape {
     pub m_Mesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
-    pub m_Points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub m_Points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
     pub m_Extrude: f32,
     pub m_EditMode: crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode,
     pub m_FlipNormals: bool,
@@ -74,14 +76,20 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
     }
     pub fn SetControlPoints(
         &mut self,
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetControlPoints")
@@ -122,7 +130,11 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
     pub fn get_controlPoints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::Vector3,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -130,7 +142,11 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >,
                         0usize,
                     >("get_controlPoints")
                     .unwrap_or_else(|e| {
@@ -141,9 +157,11 @@ impl crate::UnityEngine::ProBuilder::PolyShape {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                crate::UnityEngine::Vector3,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_extrude(&mut self) -> quest_hook::libil2cpp::Result<f32> {

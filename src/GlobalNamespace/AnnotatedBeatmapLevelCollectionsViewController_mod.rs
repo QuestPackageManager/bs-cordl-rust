@@ -19,11 +19,15 @@ pub struct AnnotatedBeatmapLevelCollectionsViewController {
         crate::System::Action,
     >,
     pub didSelectAnnotatedBeatmapLevelCollectionEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
     pub _selectedItemIndex: i32,
     pub _annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_AnnotatedBeatmapLevelCollectionsViewController")]
@@ -263,7 +267,9 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     pub fn SetData(
         &mut self,
         annotatedBeatmapLevelCollections: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            >,
         >,
         selectedItemIndex: i32,
         hideIfOneOrNoPacks: bool,
@@ -275,8 +281,10 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevelPack,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevelPack,
+                                    >,
                                 >,
                             >,
                             i32,
@@ -407,7 +415,9 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     pub fn add_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -416,8 +426,10 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelPack,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelPack,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -537,7 +549,9 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
     pub fn remove_didSelectAnnotatedBeatmapLevelCollectionEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -546,8 +560,10 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelPack,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelPack,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

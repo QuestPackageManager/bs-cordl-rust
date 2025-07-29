@@ -15,7 +15,9 @@ pub struct TextureBlitter {
     pub m_Viewport: crate::UnityEngine::RectInt,
     pub m_PrevRT: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
     pub m_PendingBlits: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+        >,
     >,
     pub _disposed_k__BackingField: bool,
 }
@@ -197,7 +199,9 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
     pub fn DoBlit(
         &mut self,
         blitInfos: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+            >,
         >,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -208,7 +212,9 @@ impl crate::UnityEngine::UIElements::UIR::TextureBlitter {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::UIElements::UIR::TextureBlitter_BlitInfo,
+                                >,
                             >,
                             i32,
                         ),

@@ -43,8 +43,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataPersonalBestSO {
     pub fn CalculateBadgeData(
         &mut self,
         resultsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerPlayerResultsData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                >,
             >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
@@ -62,8 +64,10 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataPersonalBestSO {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerPlayerResultsData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

@@ -152,20 +152,28 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
     pub fn CalculatePlayerIndexSequence(
         &mut self,
         allActivePlayer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IConnectedPlayer,
+                                >,
                             >,
                         >),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Queue_1<i32>,
+                        >,
                         1usize,
                     >("CalculatePlayerIndexSequence")
                     .unwrap_or_else(|e| {
@@ -176,9 +184,9 @@ impl crate::GlobalNamespace::MultiplayerIntroAnimationController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (allActivePlayer))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (allActivePlayer))? };
         Ok(__cordl_ret.into())
     }
     pub fn Completed(

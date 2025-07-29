@@ -247,7 +247,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Butto
 #[repr(C)]
 #[derive(Debug)]
 pub struct Button_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button_UxmlTraits>,
     >,
@@ -274,7 +274,7 @@ for crate::UnityEngine::UIElements::Button_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Button+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Button_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Button_UxmlTraits>,
     >;

@@ -7,12 +7,16 @@ pub struct OculusMRCManager {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub _instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _enableMixedReality_k__BackingField: bool,
     pub _extraHiddenLayers_k__BackingField: crate::UnityEngine::LayerMask,
@@ -82,12 +86,16 @@ impl crate::GlobalNamespace::OculusMRCManager {
     pub fn Init(
         &mut self,
         instantiateMixedRealityBackgroundCameraGameObject: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         instantiateMixedRealityForegroundCameraGameObject: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -97,12 +105,16 @@ impl crate::GlobalNamespace::OculusMRCManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

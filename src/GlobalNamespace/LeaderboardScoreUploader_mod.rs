@@ -5,13 +5,17 @@ pub struct LeaderboardScoreUploader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub allScoresDidUploadEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _scoresToUpload: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
     pub _scoresToUploadForCurrentPlayer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
     pub _uploadScoreCallback: quest_hook::libil2cpp::Gc<
@@ -1009,8 +1013,10 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
+            >,
         >,
     >,
 }

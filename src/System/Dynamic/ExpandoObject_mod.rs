@@ -92,9 +92,11 @@ impl crate::System::Dynamic::ExpandoObject {
         version: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     > {
@@ -110,12 +112,14 @@ impl crate::System::Dynamic::ExpandoObject {
                             i32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         >,
@@ -130,9 +134,11 @@ impl crate::System::Dynamic::ExpandoObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (data, version))? };
         Ok(__cordl_ret.into())
@@ -657,7 +663,9 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -667,8 +675,10 @@ impl crate::System::Dynamic::ExpandoObject {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -685,7 +695,9 @@ impl crate::System::Dynamic::ExpandoObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -693,7 +705,9 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -703,8 +717,10 @@ impl crate::System::Dynamic::ExpandoObject {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >,
                         0usize,
@@ -721,7 +737,9 @@ impl crate::System::Dynamic::ExpandoObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -766,9 +784,11 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     > {
@@ -779,12 +799,14 @@ impl crate::System::Dynamic::ExpandoObject {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         >,
@@ -802,9 +824,11 @@ impl crate::System::Dynamic::ExpandoObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1145,6 +1169,118 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::ExpandoObject
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IDictionary_2<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IDictionary_2<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    >,
+> for crate::System::Dynamic::ExpandoObject {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Dynamic::ExpandoObject {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1183,118 +1319,6 @@ for crate::System::Dynamic::ExpandoObject {
 impl AsMut<crate::System::Dynamic::IDynamicMetaObjectProvider>
 for crate::System::Dynamic::ExpandoObject {
     fn as_mut(&mut self) -> &mut crate::System::Dynamic::IDynamicMetaObjectProvider {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1776,7 +1800,9 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1786,8 +1812,10 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1801,7 +1829,9 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1943,6 +1973,62 @@ for crate::System::Dynamic::ExpandoObject_KeyCollection {
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_KeyCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Dynamic::ExpandoObject_KeyCollection {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1953,62 +2039,6 @@ for crate::System::Dynamic::ExpandoObject_KeyCollection {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Dynamic::ExpandoObject_KeyCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_KeyCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_KeyCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_KeyCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_KeyCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2229,8 +2259,10 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
         ignoreCase: bool,
         fallback: quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
         fallbackInvoke: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
-            quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+                quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Dynamic::DynamicMetaObject>,
@@ -2252,11 +2284,13 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
                                 crate::System::Dynamic::DynamicMetaObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Dynamic::DynamicMetaObject,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Dynamic::DynamicMetaObject,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Dynamic::DynamicMetaObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -2423,7 +2457,9 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2433,8 +2469,10 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2448,7 +2486,9 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2785,7 +2825,9 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2795,8 +2837,10 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2810,7 +2854,9 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2952,6 +2998,62 @@ for crate::System::Dynamic::ExpandoObject_ValueCollection {
     }
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    >,
+> for crate::System::Dynamic::ExpandoObject_ValueCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Dynamic::ExpandoObject_ValueCollection {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -2962,62 +3064,6 @@ for crate::System::Dynamic::ExpandoObject_ValueCollection {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Dynamic::ExpandoObject_ValueCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_ValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_ValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_ValueCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    >,
-> for crate::System::Dynamic::ExpandoObject_ValueCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

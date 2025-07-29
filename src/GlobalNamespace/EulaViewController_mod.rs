@@ -24,7 +24,7 @@ pub struct EulaViewController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::EulaViewController_ButtonType,
+        crate::System::Action_1<crate::GlobalNamespace::EulaViewController_ButtonType>,
     >,
     pub _showUpdate: bool,
     pub _showOnlyContinueButton: bool,
@@ -313,7 +313,9 @@ impl crate::GlobalNamespace::EulaViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EulaViewController_ButtonType,
+            crate::System::Action_1<
+                crate::GlobalNamespace::EulaViewController_ButtonType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -322,7 +324,9 @@ impl crate::GlobalNamespace::EulaViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EulaViewController_ButtonType,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::EulaViewController_ButtonType,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -343,7 +347,9 @@ impl crate::GlobalNamespace::EulaViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EulaViewController_ButtonType,
+            crate::System::Action_1<
+                crate::GlobalNamespace::EulaViewController_ButtonType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -352,7 +358,9 @@ impl crate::GlobalNamespace::EulaViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EulaViewController_ButtonType,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::EulaViewController_ButtonType,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

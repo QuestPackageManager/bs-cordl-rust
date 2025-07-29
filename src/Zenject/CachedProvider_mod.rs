@@ -5,7 +5,9 @@ pub struct CachedProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _creator: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
     pub _instances: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _isCreatingInstance: bool,
 }
@@ -67,12 +69,16 @@ impl crate::Zenject::CachedProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -82,13 +88,19 @@ impl crate::Zenject::CachedProvider {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

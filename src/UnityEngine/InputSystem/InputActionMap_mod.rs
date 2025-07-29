@@ -45,12 +45,16 @@ pub struct InputActionMap {
     pub m_Devices: crate::UnityEngine::InputSystem::InputActionMap_DeviceArray,
     pub m_ActionCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     >,
     pub m_ActionIndexByNameOrId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionMap")]
@@ -597,7 +601,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -607,8 +613,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputAction,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputAction,
+                                >,
                             >,
                         >,
                         0usize,
@@ -622,7 +630,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -992,9 +1002,13 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToJson_Gc0(
+    pub fn ToJson_IEnumerable_1_0(
         maps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1005,8 +1019,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionMap,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionMap,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1055,7 +1071,11 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn UnityEngine_InputSystem_IInputActionCollection2_get_bindings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1064,7 +1084,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputBinding,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::UnityEngine::InputSystem::InputBinding,
+                            >,
                         >,
                         0usize,
                     >("UnityEngine.InputSystem.IInputActionCollection2.get_bindings")
@@ -1078,7 +1100,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1132,7 +1156,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn add_actionTriggered(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1141,7 +1167,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1554,7 +1582,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
     pub fn remove_actionTriggered(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1563,7 +1593,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1761,6 +1793,34 @@ for crate::UnityEngine::InputSystem::InputActionMap {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    >,
+> for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    >,
+> for crate::UnityEngine::InputSystem::InputActionMap {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::InputActionMap {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1845,34 +1905,6 @@ for crate::UnityEngine::InputSystem::InputActionMap {
     fn as_mut(
         &mut self,
     ) -> &mut crate::UnityEngine::InputSystem::IInputActionCollection2 {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    >,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputActionMap")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    >,
-> for crate::UnityEngine::InputSystem::InputActionMap {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2258,7 +2290,9 @@ impl crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionMap_BindingOverrideListJson {
     pub bindings: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+        >,
     >,
 }
 #[cfg(
@@ -3405,7 +3439,11 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
     }
     pub fn FromMaps(
         maps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputActionMap>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionMap,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson,
@@ -3416,8 +3454,10 @@ impl crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionMap,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionMap,
+                                >,
                             >,
                         >),
                         crate::UnityEngine::InputSystem::InputActionMap_WriteFileJson,

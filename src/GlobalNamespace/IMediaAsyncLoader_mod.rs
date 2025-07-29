@@ -43,7 +43,9 @@ impl crate::GlobalNamespace::IMediaAsyncLoader {
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -53,7 +55,9 @@ impl crate::GlobalNamespace::IMediaAsyncLoader {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            >,
                         >,
                         1usize,
                     >("LoadAudioClipFromFilePathAsync")
@@ -66,7 +70,9 @@ impl crate::GlobalNamespace::IMediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())
     }

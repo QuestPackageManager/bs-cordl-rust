@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FxEventBoxGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
     >,
     pub t: crate::BeatmapSaveDataVersion3::FxEventType,
@@ -29,7 +29,7 @@ for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+FxEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -49,7 +49,9 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         groupId: i32,
         _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -64,7 +66,9 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
         groupId: i32,
         _cordl_type: crate::BeatmapSaveDataVersion3::FxEventType,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBox>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -77,8 +81,10 @@ impl crate::BeatmapSaveDataVersion3::FxEventBoxGroup {
                             i32,
                             crate::BeatmapSaveDataVersion3::FxEventType,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::FxEventBox,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion3::FxEventBox,
+                                    >,
                                 >,
                             >,
                         ),

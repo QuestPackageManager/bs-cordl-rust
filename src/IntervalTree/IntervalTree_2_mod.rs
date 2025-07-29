@@ -6,11 +6,17 @@ pub struct IntervalTree_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub root: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    pub items: quest_hook::libil2cpp::Gc<
-        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    pub root: quest_hook::libil2cpp::Gc<
+        crate::IntervalTree::IntervalTreeNode_2<TKey, TValue>,
     >,
-    pub comparer: quest_hook::libil2cpp::Gc<TKey>,
+    pub items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+        >,
+    >,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IComparer_1<TKey>,
+    >,
     pub isInSync: bool,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -195,7 +201,11 @@ impl<
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            >,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -210,7 +220,9 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+                            >,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -223,7 +235,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -240,8 +254,10 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+    pub fn New_IComparer_1_1(
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -259,7 +275,9 @@ impl<
         &mut self,
         from: TKey,
         to: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TValue>>,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -272,7 +290,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey, TKey),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<TValue>,
+                        >,
                         2usize,
                     >("QueryWithCount")
                     .unwrap_or_else(|e| {
@@ -283,15 +303,19 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (from, to))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (from, to))? };
         Ok(__cordl_ret.into())
     }
     pub fn Query_TKey0(
         &mut self,
         value: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -304,7 +328,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >,
                         1usize,
                     >("Query")
                     .unwrap_or_else(|e| {
@@ -315,16 +341,20 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Query_TKey1(
         &mut self,
         from: TKey,
         to: TKey,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -337,7 +367,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TKey, TKey),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >,
                         2usize,
                     >("Query")
                     .unwrap_or_else(|e| {
@@ -348,9 +380,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (from, to))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (from, to))? };
         Ok(__cordl_ret.into())
     }
     pub fn Rebuild(
@@ -380,9 +412,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_Gc1(
+    pub fn Remove_IEnumerable_1_1(
         &mut self,
-        items: quest_hook::libil2cpp::Gc<TValue>,
+        items: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -395,7 +429,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Remove")
@@ -506,9 +542,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IComparer_1_1(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -521,7 +559,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IComparer_1<TKey>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -609,7 +649,11 @@ impl<
     }
     pub fn get_Values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -622,7 +666,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >,
                         0usize,
                     >("get_Values")
                     .unwrap_or_else(|e| {
@@ -633,9 +679,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -656,6 +702,60 @@ for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::IntervalTree::IIntervalTree_2<TKey, TValue>>
+for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
+    fn as_ref(&self) -> &crate::IntervalTree::IIntervalTree_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IntervalTree+IntervalTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::IntervalTree::IIntervalTree_2<TKey, TValue>>
+for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
+    fn as_mut(&mut self) -> &mut crate::IntervalTree::IIntervalTree_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IntervalTree+IntervalTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    >,
+> for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IntervalTree+IntervalTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    >,
+> for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IntervalTree+IntervalTree_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -669,54 +769,6 @@ impl<
 > AsMut<crate::System::Collections::IEnumerable>
 for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IntervalTree+IntervalTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IntervalTree+IntervalTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IntervalTree+IntervalTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
-for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "IntervalTree+IntervalTree_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::IntervalTree::RangeValuePair_2<TKey, TValue>>>
-for crate::IntervalTree::IntervalTree_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::IntervalTree::RangeValuePair_2<TKey, TValue>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -19,10 +19,14 @@ pub struct Dropdown {
     pub m_Dropdown: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Blocker: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub m_Items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+        >,
     >,
     pub m_AlphaTweenRunner: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UI::CoroutineTween::FloatTween,
+        crate::UnityEngine::UI::CoroutineTween::TweenRunner_1<
+            crate::UnityEngine::UI::CoroutineTween::FloatTween,
+        >,
     >,
     pub validTemplate: bool,
 }
@@ -77,7 +81,9 @@ impl crate::UnityEngine::UI::Dropdown {
             crate::UnityEngine::UI::Dropdown_DropdownItem,
         >,
         items: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_DropdownItem>,
@@ -96,8 +102,10 @@ impl crate::UnityEngine::UI::Dropdown {
                                 crate::UnityEngine::UI::Dropdown_DropdownItem,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UI::Dropdown_DropdownItem,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UI::Dropdown_DropdownItem,
+                                    >,
                                 >,
                             >,
                         ),
@@ -122,10 +130,12 @@ impl crate::UnityEngine::UI::Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc0(
+    pub fn AddOptions_List_1_0(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -134,8 +144,10 @@ impl crate::UnityEngine::UI::Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UI::Dropdown_OptionData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::Dropdown_OptionData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -154,10 +166,12 @@ impl crate::UnityEngine::UI::Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc1(
+    pub fn AddOptions_List_1_1(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -166,8 +180,10 @@ impl crate::UnityEngine::UI::Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -186,10 +202,12 @@ impl crate::UnityEngine::UI::Dropdown {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddOptions_Gc2(
+    pub fn AddOptions_List_1_2(
         &mut self,
         options: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,7 +216,9 @@ impl crate::UnityEngine::UI::Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1085,7 +1105,9 @@ impl crate::UnityEngine::UI::Dropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1095,8 +1117,10 @@ impl crate::UnityEngine::UI::Dropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UI::Dropdown_OptionData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::Dropdown_OptionData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1110,7 +1134,9 @@ impl crate::UnityEngine::UI::Dropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1319,7 +1345,9 @@ impl crate::UnityEngine::UI::Dropdown {
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1328,8 +1356,10 @@ impl crate::UnityEngine::UI::Dropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UI::Dropdown_OptionData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::Dropdown_OptionData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1470,7 +1500,7 @@ for crate::UnityEngine::UI::Dropdown {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Dropdown_DropdownEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<i32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+DropdownEvent")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -1494,7 +1524,7 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownEvent {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2248,7 +2278,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UI::Dropdown_Opti
 pub struct Dropdown_OptionDataList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Options: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Dropdown+OptionDataList")]
@@ -2318,7 +2350,9 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2328,8 +2362,10 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UI::Dropdown_OptionData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::Dropdown_OptionData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2343,14 +2379,18 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_options(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Dropdown_OptionData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2359,8 +2399,10 @@ impl crate::UnityEngine::UI::Dropdown_OptionDataList {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UI::Dropdown_OptionData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UI::Dropdown_OptionData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

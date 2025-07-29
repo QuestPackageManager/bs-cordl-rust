@@ -7,47 +7,69 @@ pub struct MirroredBeatmapObjectManager {
         crate::GlobalNamespace::BeatmapObjectManager,
     >,
     pub _mirroredBasicGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        >,
     >,
     pub _mirroredBurstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        >,
     >,
     pub _mirroredBurstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredGameNoteController>,
+        >,
     >,
     pub _mirroredBombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
+        >,
     >,
     pub _mirroredObstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
+        >,
     >,
     pub _mirroredSlidersPoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
+        >,
     >,
     pub _gameNoteControllersToMirroredGameNoteControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MirroredGameNoteController,
-            >,
-            quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameNoteMirrorable>,
+            crate::System::ValueTuple_2<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::MirroredGameNoteController,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MemoryPoolContainer_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MirroredGameNoteController,
+                        >,
+                    >,
                 >,
             >,
         >,
     >,
     pub _bombNoteControllersToMirroredBombNoteControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
+        >,
     >,
     pub _obstacleControllersToMirroredObstacleControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
+        >,
     >,
     pub _sliderControllersToMirroredSliderControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredSliderController>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_MirroredBeatmapObjectManager")]

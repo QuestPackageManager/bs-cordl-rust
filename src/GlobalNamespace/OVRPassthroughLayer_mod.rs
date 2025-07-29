@@ -28,14 +28,20 @@ pub struct OVRPassthroughLayer {
         crate::GlobalNamespace::OVROverlay,
     >,
     pub surfaceGameObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::GlobalNamespace::OVRPassthroughLayer_PassthroughMeshInstance,
+        >,
     >,
     pub deferredSurfaceGameObjects: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRPassthroughLayer_DeferredPassthroughMeshAddition,
+        >,
     >,
     pub serializedSurfaceGeometry: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRPassthroughLayer_SerializedSurfaceGeometry,
+        >,
     >,
     pub textureOpacity_: f32,
     pub edgeRenderingEnabled_: bool,

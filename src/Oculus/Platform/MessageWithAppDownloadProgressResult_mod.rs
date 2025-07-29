@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAppDownloadProgressResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AppDownloadProgressResult,
         >,
@@ -30,7 +30,7 @@ for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithAppDownloadProgressResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithAppDownloadProgressResult {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AppDownloadProgressResult,
         >,

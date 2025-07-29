@@ -178,7 +178,9 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
         srcUVs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        destUVs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        destUVs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -193,7 +195,11 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceMesh {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
                             i32,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -423,8 +429,10 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh {
 pub struct HEU_InputInterfaceMesh_HEU_InputDataMeshes {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
     pub _inputMeshes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::HoudiniEngineUnity::HEU_InputInterfaceMesh_HEU_InputDataMesh,
+            >,
         >,
     >,
     pub _hasLOD: bool,

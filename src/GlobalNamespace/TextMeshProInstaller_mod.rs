@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextMeshProInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >,
     pub _fontAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_TextMeshProInstaller")]
@@ -31,7 +33,7 @@ for crate::GlobalNamespace::TextMeshProInstaller {
 }
 #[cfg(feature = "TextMeshProInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::TextMeshProInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -74,7 +76,9 @@ impl crate::GlobalNamespace::TextMeshProInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         fontAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -87,7 +91,9 @@ impl crate::GlobalNamespace::TextMeshProInstaller {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,

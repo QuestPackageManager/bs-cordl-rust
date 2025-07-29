@@ -4,11 +4,19 @@
 pub struct FastAction {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub delegates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Action>,
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        >,
     >,
     pub lookup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Action>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Action>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LinkedListNode_1<
+                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                >,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_TMPro+FastAction")]

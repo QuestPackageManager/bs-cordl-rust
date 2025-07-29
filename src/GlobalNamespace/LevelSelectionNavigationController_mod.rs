@@ -13,31 +13,41 @@ pub struct LevelSelectionNavigationController {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub didChangeLevelDetailContentEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionNavigationController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionNavigationController,
+            >,
+            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
         >,
-        crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
     >,
     pub didSelectLevelPackEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionNavigationController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionNavigationController,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     >,
     pub didPressActionButtonEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionNavigationController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionNavigationController,
+            >,
         >,
     >,
     pub didPressPracticeButtonEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionNavigationController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionNavigationController,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     >,
     pub didChangeDifficultyBeatmapEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelSelectionNavigationController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelSelectionNavigationController,
+            >,
         >,
     >,
     pub _hidePacksIfOneOrNone: bool,
@@ -694,8 +704,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn add_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -705,8 +717,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -728,10 +742,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn add_didChangeLevelDetailContentEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
             >,
-            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -740,10 +756,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                             >,
-                            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -764,8 +782,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn add_didPressActionButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -775,8 +795,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -798,10 +820,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn add_didPressPracticeButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -810,11 +834,13 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -836,10 +862,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn add_didSelectLevelPackEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -848,11 +876,13 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelPack,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelPack,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -982,8 +1012,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn remove_didChangeDifficultyBeatmapEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -993,8 +1025,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1016,10 +1050,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn remove_didChangeLevelDetailContentEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
             >,
-            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1028,10 +1064,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                             >,
-                            crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1052,8 +1090,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn remove_didPressActionButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1063,8 +1103,10 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1086,10 +1128,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn remove_didPressPracticeButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1098,11 +1142,13 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1124,10 +1170,12 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     pub fn remove_didSelectLevelPackEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelSelectionNavigationController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1136,11 +1184,13 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelSelectionNavigationController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelPack,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelSelectionNavigationController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelPack,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

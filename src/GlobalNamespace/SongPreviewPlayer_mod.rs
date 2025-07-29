@@ -35,8 +35,10 @@ pub struct SongPreviewPlayer {
     pub _ambientVolumeScale: f32,
     pub _isActiveChannelPaused: bool,
     pub _channelToFadeOutCallbackDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::System::Action>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_SongPreviewPlayer")]

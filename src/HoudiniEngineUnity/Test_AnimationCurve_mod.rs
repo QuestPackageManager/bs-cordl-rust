@@ -133,13 +133,13 @@ for crate::HoudiniEngineUnity::Test_AnimationCurve {
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     >,
 > for crate::HoudiniEngineUnity::Test_AnimationCurve {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -147,13 +147,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     >,
 > for crate::HoudiniEngineUnity::Test_AnimationCurve {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivableWrapperClass_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -161,13 +161,13 @@ impl AsMut<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     >,
 > for crate::HoudiniEngineUnity::Test_AnimationCurve {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -175,13 +175,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_AnimationCurve")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     >,
 > for crate::HoudiniEngineUnity::Test_AnimationCurve {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_AnimationCurve>,
     > {
         unsafe { std::mem::transmute(self) }

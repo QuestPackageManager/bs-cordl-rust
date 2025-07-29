@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IFactoryProvider_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::IFactoryProviderBase_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+IFactoryProvider_1")]
@@ -41,7 +41,7 @@ for crate::Zenject::IFactoryProvider_1<TContract> {
 #[cfg(feature = "Zenject+IFactoryProvider_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::IFactoryProvider_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::IFactoryProviderBase_1<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,12 +60,16 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -79,13 +83,19 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

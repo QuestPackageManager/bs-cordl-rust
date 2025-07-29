@@ -6,8 +6,10 @@
 pub struct GatewayIPAddressInformationCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub addresses: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        crate::System::Collections::ObjectModel::Collection_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+            >,
         >,
     >,
 }
@@ -177,8 +179,10 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                >,
             >,
         >,
     > {
@@ -189,8 +193,10 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                                >,
                             >,
                         >,
                         0usize,
@@ -204,8 +210,10 @@ impl crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollecti
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -375,6 +383,78 @@ for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollectio
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    >,
+> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -385,78 +465,6 @@ for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollectio
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Net+NetworkInformation+GatewayIPAddressInformationCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    >,
-> for crate::System::Net::NetworkInformation::GatewayIPAddressInformationCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::NetworkInformation::GatewayIPAddressInformation,
-        >,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

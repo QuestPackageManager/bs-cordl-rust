@@ -95,7 +95,9 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnDictionary<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -108,7 +110,12 @@ impl crate::Zenject::Internal::ZenPools {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("DespawnDictionary")
@@ -126,7 +133,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnHashSet<T>(
-        set: quest_hook::libil2cpp::Gc<T>,
+        set: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -137,7 +144,9 @@ impl crate::Zenject::Internal::ZenPools {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("DespawnHashSet")
@@ -180,7 +189,7 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn DespawnList<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -191,7 +200,9 @@ impl crate::Zenject::Internal::ZenPools {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("DespawnList")
@@ -315,7 +326,9 @@ impl crate::Zenject::Internal::ZenPools {
         Ok(__cordl_ret.into())
     }
     pub fn SpawnDictionary<TKey, TValue>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TKey, TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -329,7 +342,12 @@ impl crate::Zenject::Internal::ZenPools {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey, TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >,
                         0usize,
                     >("SpawnDictionary")
                     .unwrap_or_else(|e| {
@@ -340,13 +358,13 @@ impl crate::Zenject::Internal::ZenPools {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnHashSet<T>() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<T>>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -358,7 +376,9 @@ impl crate::Zenject::Internal::ZenPools {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<T>,
+                        >,
                         0usize,
                     >("SpawnHashSet")
                     .unwrap_or_else(|e| {
@@ -369,9 +389,9 @@ impl crate::Zenject::Internal::ZenPools {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnInjectContext_InjectableInfo_InjectContext_Il2CppObject_Type_Il2CppObject1(
@@ -461,7 +481,9 @@ impl crate::Zenject::Internal::ZenPools {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SpawnList<T>() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn SpawnList<T>() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -472,7 +494,9 @@ impl crate::Zenject::Internal::ZenPools {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         0usize,
                     >("SpawnList")
                     .unwrap_or_else(|e| {
@@ -483,9 +507,9 @@ impl crate::Zenject::Internal::ZenPools {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SpawnLookupId(

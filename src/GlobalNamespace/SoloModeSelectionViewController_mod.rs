@@ -8,10 +8,12 @@ pub struct SoloModeSelectionViewController {
     pub _noArrowsModeButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _dismissButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SoloModeSelectionViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SoloModeSelectionViewController,
+            >,
+            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
-        crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
     >,
 }
 #[cfg(feature = "cordl_class_SoloModeSelectionViewController")]
@@ -240,10 +242,12 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SoloModeSelectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SoloModeSelectionViewController,
+                >,
+                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
             >,
-            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -252,10 +256,12 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SoloModeSelectionViewController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SoloModeSelectionViewController,
+                                >,
+                                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
                             >,
-                            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -276,10 +282,12 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SoloModeSelectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SoloModeSelectionViewController,
+                >,
+                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
             >,
-            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -288,10 +296,12 @@ impl crate::GlobalNamespace::SoloModeSelectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SoloModeSelectionViewController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SoloModeSelectionViewController,
+                                >,
+                                crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
                             >,
-                            crate::GlobalNamespace::SoloModeSelectionViewController_MenuType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

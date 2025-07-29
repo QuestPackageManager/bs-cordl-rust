@@ -11,10 +11,18 @@ pub struct OVRGLTFAnimatinonNode {
     pub m_morphTargetHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
     >,
-    pub m_translations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_rotations: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
-    pub m_scales: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_weights: quest_hook::libil2cpp::Gc<f32>,
+    pub m_translations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_rotations: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Quaternion>,
+    >,
+    pub m_scales: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_weights: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub m_additiveWeightIndex: i32,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimatinonNode")]
@@ -144,7 +152,9 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
     pub fn CopyData<T>(
         &mut self,
-        dest: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        dest: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
         src: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -158,7 +168,9 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<T>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<T>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
@@ -185,8 +197,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         joystick: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -196,8 +210,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                     .find_method::<
                         (crate::UnityEngine::Vector2),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                            crate::System::Tuple_2<
+                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                            >,
                         >,
                         1usize,
                     >("GetCardinalThumbsticks")
@@ -210,8 +226,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (joystick))? };
         Ok(__cordl_ret.into())
     }
@@ -219,8 +237,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
         &mut self,
         joystick: crate::UnityEngine::Vector2,
         cardinals: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-            crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            crate::System::Tuple_2<
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -231,8 +251,10 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
                         (
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
-                                crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                                crate::System::Tuple_2<
+                                    crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                                    crate::GlobalNamespace::OVRGLTFAnimatinonNode_ThumbstickDirection,
+                                >,
                             >,
                         ),
                         crate::UnityEngine::Vector2,

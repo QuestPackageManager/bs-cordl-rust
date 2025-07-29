@@ -12,7 +12,7 @@ pub struct JoinQuickPlayViewController {
     pub _levelSelectionToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _joinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _cancelJoinButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub didFinishEvent: quest_hook::libil2cpp::Gc<bool>,
+    pub didFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     pub _multiplayerModeSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerModeSettings,
     >,
@@ -229,14 +229,14 @@ impl crate::GlobalNamespace::JoinQuickPlayViewController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didFinishEvent")
@@ -284,14 +284,14 @@ impl crate::GlobalNamespace::JoinQuickPlayViewController {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didFinishEvent")

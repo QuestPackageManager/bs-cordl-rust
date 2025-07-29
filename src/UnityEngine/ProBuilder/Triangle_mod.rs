@@ -303,14 +303,20 @@ impl crate::UnityEngine::ProBuilder::Triangle {
     }
     pub fn get_indices(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         0usize,
                     >("get_indices")
                     .unwrap_or_else(|e| {
@@ -321,27 +327,27 @@ impl crate::UnityEngine::ProBuilder::Triangle {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
 for crate::UnityEngine::ProBuilder::Triangle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Triangle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle>>
 for crate::UnityEngine::ProBuilder::Triangle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Triangle> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Triangle> {
         todo!()
     }
 }

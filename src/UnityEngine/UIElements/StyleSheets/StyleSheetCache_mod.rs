@@ -477,14 +477,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     >,
 >
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     > {
         unsafe { std::mem::transmute(self) }
@@ -494,14 +494,14 @@ for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyC
     feature = "UnityEngine+UIElements+StyleSheets+StyleSheetCache+SheetHandleKeyComparer"
 )]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     >,
 >
 for crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKeyComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StyleSheets::StyleSheetCache_SheetHandleKey,
     > {
         unsafe { std::mem::transmute(self) }

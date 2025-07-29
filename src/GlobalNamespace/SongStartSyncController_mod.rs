@@ -17,8 +17,8 @@ pub struct SongStartSyncController {
         crate::GlobalNamespace::SongStartHandler,
     >,
     pub syncStartFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub syncStartSuccessEvent: quest_hook::libil2cpp::Gc<i64>,
-    pub syncResumeEvent: quest_hook::libil2cpp::Gc<i64>,
+    pub syncStartSuccessEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
+    pub syncResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
 }
 #[cfg(feature = "cordl_class_SongStartSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -241,14 +241,14 @@ impl crate::GlobalNamespace::SongStartSyncController {
     }
     pub fn add_syncResumeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i64>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_syncResumeEvent")
@@ -293,14 +293,14 @@ impl crate::GlobalNamespace::SongStartSyncController {
     }
     pub fn add_syncStartSuccessEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i64>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_syncStartSuccessEvent")
@@ -353,14 +353,14 @@ impl crate::GlobalNamespace::SongStartSyncController {
     }
     pub fn remove_syncResumeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i64>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_syncResumeEvent")
@@ -405,14 +405,14 @@ impl crate::GlobalNamespace::SongStartSyncController {
     }
     pub fn remove_syncStartSuccessEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i64>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i64>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i64>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_syncStartSuccessEvent")

@@ -4,7 +4,7 @@
 pub struct FactorySubContainerBinderWithParams_1<
     TContract: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::FactorySubContainerBinderBase_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+FactorySubContainerBinderWithParams_1")]
@@ -46,7 +46,7 @@ for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
 #[cfg(feature = "Zenject+FactorySubContainerBinderWithParams_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactorySubContainerBinderWithParams_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::FactorySubContainerBinderBase_1<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

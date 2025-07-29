@@ -973,6 +973,18 @@ impl AsMut<crate::System::IComparable> for crate::System::UInt64 {
     }
 }
 #[cfg(feature = "System+UInt64")]
+impl AsRef<crate::System::IComparable_1<u64>> for crate::System::UInt64 {
+    fn as_ref(&self) -> &crate::System::IComparable_1<u64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt64")]
+impl AsMut<crate::System::IComparable_1<u64>> for crate::System::UInt64 {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<u64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt64")]
 impl AsRef<crate::System::IConvertible> for crate::System::UInt64 {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -981,6 +993,18 @@ impl AsRef<crate::System::IConvertible> for crate::System::UInt64 {
 #[cfg(feature = "System+UInt64")]
 impl AsMut<crate::System::IConvertible> for crate::System::UInt64 {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt64")]
+impl AsRef<crate::System::IEquatable_1<u64>> for crate::System::UInt64 {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<u64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+UInt64")]
+impl AsMut<crate::System::IEquatable_1<u64>> for crate::System::UInt64 {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<u64> {
         todo!()
     }
 }
@@ -1005,30 +1029,6 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::UInt64 {
 #[cfg(feature = "System+UInt64")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::UInt64 {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UInt64")]
-impl AsRef<quest_hook::libil2cpp::Gc<u64>> for crate::System::UInt64 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UInt64")]
-impl AsMut<quest_hook::libil2cpp::Gc<u64>> for crate::System::UInt64 {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UInt64")]
-impl AsRef<quest_hook::libil2cpp::Gc<u64>> for crate::System::UInt64 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<u64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+UInt64")]
-impl AsMut<quest_hook::libil2cpp::Gc<u64>> for crate::System::UInt64 {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<u64> {
         todo!()
     }
 }

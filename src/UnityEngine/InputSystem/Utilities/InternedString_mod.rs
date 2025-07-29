@@ -585,11 +585,13 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::InternedString>,
+    crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
 > for crate::UnityEngine::InputSystem::Utilities::InternedString {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         todo!()
@@ -597,11 +599,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::InternedString>,
+    crate::System::IComparable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
 > for crate::UnityEngine::InputSystem::Utilities::InternedString {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IComparable_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         todo!()
@@ -609,11 +613,13 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::InternedString>,
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
 > for crate::UnityEngine::InputSystem::Utilities::InternedString {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         todo!()
@@ -621,11 +627,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::InternedString>,
+    crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::Utilities::InternedString,
+    >,
 > for crate::UnityEngine::InputSystem::Utilities::InternedString {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Utilities::InternedString,
     > {
         todo!()

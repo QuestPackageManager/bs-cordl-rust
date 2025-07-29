@@ -3,7 +3,11 @@
 #[derive(Debug)]
 pub struct BezierShape {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub points: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::BezierPoint>,
+    pub points: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::ProBuilder::BezierPoint,
+        >,
+    >,
     pub closeLoop: bool,
     pub radius: f32,
     pub rows: i32,

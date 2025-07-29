@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorStateTransition_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<T>,
     pub _transition: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ColorTransitionSO,
     >,
@@ -44,7 +44,7 @@ for crate::GlobalNamespace::ColorStateTransition_1<T> {
 #[cfg(feature = "ColorStateTransition_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::ColorStateTransition_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -1307,7 +1307,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer_GUIGlobals {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct IMGUIContainer_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,
@@ -1336,7 +1336,7 @@ for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+IMGUIContainer+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IMGUIContainer_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMGUIContainer>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IMGUIContainer_UxmlTraits,

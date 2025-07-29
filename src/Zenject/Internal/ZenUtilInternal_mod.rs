@@ -120,7 +120,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     }
     pub fn GetAllSceneContexts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -130,7 +132,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+                            >,
                         >,
                         0usize,
                     >("GetAllSceneContexts")
@@ -143,7 +147,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -179,7 +185,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursInScene(
         scene: crate::UnityEngine::SceneManagement::Scene,
         monoBehaviours: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -190,7 +198,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                         (
                             crate::UnityEngine::SceneManagement::Scene,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -212,7 +222,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursUnderGameObject(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         injectableComponents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -223,7 +235,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -245,7 +259,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
     pub fn GetInjectableMonoBehavioursUnderGameObjectInternal(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         injectableComponents: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -256,7 +272,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -279,7 +297,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
         scene: crate::UnityEngine::SceneManagement::Scene,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -289,7 +309,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                     .find_static_method::<
                         (crate::UnityEngine::SceneManagement::Scene),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         1usize,
                     >("GetRootGameObjects")
@@ -302,7 +324,9 @@ impl crate::Zenject::Internal::ZenUtilInternal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (scene))? };
         Ok(__cordl_ret.into())
     }

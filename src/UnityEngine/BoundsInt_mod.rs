@@ -740,6 +740,22 @@ impl crate::UnityEngine::BoundsInt {
     }
 }
 #[cfg(feature = "UnityEngine+BoundsInt")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::BoundsInt>>
+for crate::UnityEngine::BoundsInt {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::BoundsInt> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+BoundsInt")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::BoundsInt>>
+for crate::UnityEngine::BoundsInt {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::BoundsInt> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+BoundsInt")]
 impl AsRef<crate::System::IFormattable> for crate::UnityEngine::BoundsInt {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -748,22 +764,6 @@ impl AsRef<crate::System::IFormattable> for crate::UnityEngine::BoundsInt {
 #[cfg(feature = "UnityEngine+BoundsInt")]
 impl AsMut<crate::System::IFormattable> for crate::UnityEngine::BoundsInt {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+BoundsInt")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoundsInt>>
-for crate::UnityEngine::BoundsInt {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::BoundsInt> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+BoundsInt")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoundsInt>>
-for crate::UnityEngine::BoundsInt {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::BoundsInt> {
         todo!()
     }
 }
@@ -1043,6 +1043,30 @@ impl crate::UnityEngine::BoundsInt_PositionEnumerator {
     }
 }
 #[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<crate::UnityEngine::Vector3Int>,
+> for crate::UnityEngine::BoundsInt_PositionEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::Vector3Int,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<crate::UnityEngine::Vector3Int>,
+> for crate::UnityEngine::BoundsInt_PositionEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::Vector3Int,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1067,22 +1091,6 @@ for crate::UnityEngine::BoundsInt_PositionEnumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::BoundsInt_PositionEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int>>
-for crate::UnityEngine::BoundsInt_PositionEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+BoundsInt+PositionEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int>>
-for crate::UnityEngine::BoundsInt_PositionEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3Int> {
         todo!()
     }
 }

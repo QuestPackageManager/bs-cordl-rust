@@ -453,18 +453,18 @@ impl crate::Unity::Jobs::JobHandle {
     }
 }
 #[cfg(feature = "Unity+Jobs+JobHandle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::JobHandle>>
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle>>
 for crate::Unity::Jobs::JobHandle {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Jobs::JobHandle> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Jobs+JobHandle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Jobs::JobHandle>>
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle>>
 for crate::Unity::Jobs::JobHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Jobs::JobHandle> {
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Jobs::JobHandle> {
         todo!()
     }
 }

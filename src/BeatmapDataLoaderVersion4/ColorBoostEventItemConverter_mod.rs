@@ -49,7 +49,9 @@ impl crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
         &mut self,
         index: quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion4::BeatIndex>,
         output: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,8 +64,10 @@ impl crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
                                 crate::BeatmapSaveDataVersion4::BeatIndex,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
                                 >,
                             >,
                         ),

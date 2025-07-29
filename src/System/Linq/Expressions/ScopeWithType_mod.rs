@@ -42,12 +42,16 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ScopeWithType {
 impl crate::System::Linq::Expressions::ScopeWithType {
     pub fn New(
         variables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
         expressions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -60,8 +64,10 @@ impl crate::System::Linq::Expressions::ScopeWithType {
     pub fn Rewrite(
         &mut self,
         variables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
         args: quest_hook::libil2cpp::Gc<
@@ -79,8 +85,10 @@ impl crate::System::Linq::Expressions::ScopeWithType {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -112,12 +120,16 @@ impl crate::System::Linq::Expressions::ScopeWithType {
     pub fn _ctor(
         &mut self,
         variables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
         expressions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -128,13 +140,17 @@ impl crate::System::Linq::Expressions::ScopeWithType {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Expression,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,

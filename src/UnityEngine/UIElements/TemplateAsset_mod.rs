@@ -5,10 +5,14 @@ pub struct TemplateAsset {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElementAsset,
     pub m_TemplateAlias: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_AttributeOverrides: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        >,
     >,
     pub m_SlotUsages: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TemplateAsset")]
@@ -52,7 +56,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,7 +68,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            >,
                         >,
                         0usize,
                     >("get_attributeOverrides")
@@ -75,7 +83,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -83,7 +93,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -93,7 +105,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+                            >,
                         >,
                         0usize,
                     >("get_slotUsages")
@@ -106,7 +120,9 @@ impl crate::UnityEngine::UIElements::TemplateAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

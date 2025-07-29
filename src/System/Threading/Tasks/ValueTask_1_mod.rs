@@ -129,7 +129,9 @@ impl<
     >;
     pub fn AsTask(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -140,7 +142,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TResult>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >,
                         0usize,
                     >("AsTask")
                     .unwrap_or_else(|e| {
@@ -151,9 +155,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ConfigureAwait(
@@ -308,8 +312,12 @@ impl<
     }
     pub fn GetTaskForValueTaskSource(
         &mut self,
-        t: quest_hook::libil2cpp::Gc<TResult>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+        t: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -319,8 +327,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>),
-                        quest_hook::libil2cpp::Gc<TResult>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<
+                                TResult,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >,
                         1usize,
                     >("GetTaskForValueTaskSource")
                     .unwrap_or_else(|e| {
@@ -331,9 +345,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (t))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (t))? };
         Ok(__cordl_ret.into())
     }
     pub fn ToString(
@@ -367,39 +381,11 @@ impl<
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IValueTaskSource_1_i16_2(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<TResult>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (task))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_i16_2(
-        &mut self,
-        source: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -411,7 +397,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>, i16),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Sources::IValueTaskSource_1<
+                                    TResult,
+                                >,
+                            >,
+                            i16,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -499,6 +492,38 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor_Task_1_1(
+        &mut self,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (task))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_IsCompleted(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -568,11 +593,12 @@ impl<
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask_1<TResult>>>
-for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+> AsRef<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::System::Threading::Tasks::ValueTask_1<TResult>,
     > {
         todo!()
@@ -581,11 +607,12 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1")]
 impl<
     TResult: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::ValueTask_1<TResult>>>
-for crate::System::Threading::Tasks::ValueTask_1<TResult> {
+> AsMut<
+    crate::System::IEquatable_1<crate::System::Threading::Tasks::ValueTask_1<TResult>>,
+> for crate::System::Threading::Tasks::ValueTask_1<TResult> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::System::Threading::Tasks::ValueTask_1<TResult>,
     > {
         todo!()
@@ -595,8 +622,10 @@ for crate::System::Threading::Tasks::ValueTask_1<TResult> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueTask_1_ValueTaskSourceAsTask<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
-    pub _source: quest_hook::libil2cpp::Gc<TResult>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+    >,
     pub _token: i16,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -639,7 +668,7 @@ for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> 
 #[cfg(feature = "System+Threading+Tasks+ValueTask_1+ValueTaskSourceAsTask")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<TResult>;
+    type Target = crate::System::Threading::Tasks::Task_1<TResult>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -656,7 +685,9 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
 > crate::System::Threading::Tasks::ValueTask_1_ValueTaskSourceAsTask<TResult> {
     pub fn New(
-        source: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -671,7 +702,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<TResult>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Sources::IValueTaskSource_1<TResult>,
+        >,
         token: i16,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -683,7 +716,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>, i16),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Sources::IValueTaskSource_1<
+                                    TResult,
+                                >,
+                            >,
+                            i16,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

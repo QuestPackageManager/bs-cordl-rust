@@ -9,7 +9,9 @@ pub struct VRTextEntryController {
     pub _maxLength: i32,
     pub _allowBlank: bool,
     pub textDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -326,7 +328,9 @@ impl crate::GlobalNamespace::VRTextEntryController {
     pub fn add_textDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -335,8 +339,10 @@ impl crate::GlobalNamespace::VRTextEntryController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -437,7 +443,9 @@ impl crate::GlobalNamespace::VRTextEntryController {
     pub fn remove_textDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -446,8 +454,10 @@ impl crate::GlobalNamespace::VRTextEntryController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

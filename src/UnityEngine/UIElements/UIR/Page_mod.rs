@@ -4,8 +4,14 @@
 pub struct Page {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,
-    pub vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
-    pub indices: quest_hook::libil2cpp::Gc<u16>,
+    pub vertices: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Page_DataSet_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
+    >,
+    pub indices: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Page_DataSet_1<u16>,
+    >,
     pub next: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub framesEmpty: i32,
 }
@@ -230,7 +236,9 @@ impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::UIR::
 pub struct Page_DataSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,
-    pub gpuData: quest_hook::libil2cpp::Gc<T>,
+    pub gpuData: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+    >,
     pub cpuData: crate::Unity::Collections::NativeArray_1<T>,
     pub updateRanges: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::UIElements::UIR::GfxUpdateBufferRange,

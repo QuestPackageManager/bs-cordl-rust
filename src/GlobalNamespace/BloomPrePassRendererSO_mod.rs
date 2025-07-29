@@ -12,9 +12,11 @@ pub struct BloomPrePassRendererSO {
         >,
     >,
     pub _lightsRenderingData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData,
+            >,
         >,
     >,
     pub _commandBuffer: quest_hook::libil2cpp::Gc<

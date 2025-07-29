@@ -262,14 +262,16 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     }
     pub fn RestoreExpanded(
         &mut self,
-        ids: quest_hook::libil2cpp::Gc<i32>,
+        ids: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RestoreExpanded")
@@ -288,7 +290,9 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
     }
     pub fn SetupDragAndDrop(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -296,7 +300,12 @@ impl crate::UnityEngine::UIElements::TreeViewReorderableDragAndDropController {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
+                            bool,
+                        ),
                         crate::UnityEngine::UIElements::StartDragArgs,
                         2usize,
                     >("SetupDragAndDrop")

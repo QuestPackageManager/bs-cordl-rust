@@ -4,10 +4,18 @@
 pub struct AsyncSceneContext {
     __cordl_parent: crate::Zenject::SceneContext,
     pub _asyncPreloaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::AppFlow::Initialization::AsyncPreloader>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BGLib::AppFlow::Initialization::AsyncPreloader,
+            >,
+        >,
     >,
     pub _asyncInstallers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::AppFlow::Initialization::AsyncInstaller>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+            >,
+        >,
     >,
     pub _state: crate::BGLib::AppFlow::Initialization::AsyncSceneContext_State,
     pub _registry: quest_hook::libil2cpp::Gc<
@@ -138,8 +146,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                >,
             >,
         >,
     > {
@@ -150,8 +160,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                                >,
                             >,
                         >,
                         0usize,
@@ -165,8 +177,10 @@ impl crate::BGLib::AppFlow::Initialization::AsyncSceneContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGLib::AppFlow::Initialization::AsyncInstallerRegistry,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

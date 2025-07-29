@@ -198,14 +198,18 @@ impl crate::UnityEngine::UIElements::Foldout {
     }
     pub fn __ctor_b__29_0(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<bool>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("<.ctor>b__29_0")
@@ -352,14 +356,18 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Foldo
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
-impl AsRef<quest_hook::libil2cpp::Gc<bool>> for crate::UnityEngine::UIElements::Foldout {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<bool> {
+impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
+for crate::UnityEngine::UIElements::Foldout {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout")]
-impl AsMut<quest_hook::libil2cpp::Gc<bool>> for crate::UnityEngine::UIElements::Foldout {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<bool> {
+impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<bool>>
+for crate::UnityEngine::UIElements::Foldout {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<bool> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -367,7 +375,7 @@ impl AsMut<quest_hook::libil2cpp::Gc<bool>> for crate::UnityEngine::UIElements::
 #[repr(C)]
 #[derive(Debug)]
 pub struct Foldout_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout_UxmlTraits>,
     >,
@@ -394,7 +402,7 @@ for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Foldout+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Foldout_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Foldout_UxmlTraits>,
     >;

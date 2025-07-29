@@ -4,9 +4,11 @@
 pub struct UIRLayoutUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub changeEventsList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            crate::UnityEngine::Rect,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                crate::UnityEngine::Rect,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     >,
 }
@@ -48,9 +50,13 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
     pub fn DispatchChangeEvents(
         &mut self,
         changeEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                crate::UnityEngine::Rect,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                >,
             >,
         >,
         currentLayoutPass: i32,
@@ -62,10 +68,12 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    crate::UnityEngine::Rect,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::System::Collections::Generic::KeyValuePair_2<
+                                        crate::UnityEngine::Rect,
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::UIElements::VisualElement,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -152,9 +160,13 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         isDisplayed: bool,
         changeEvents: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                crate::UnityEngine::Rect,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -169,10 +181,12 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    crate::UnityEngine::Rect,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::System::Collections::Generic::KeyValuePair_2<
+                                        crate::UnityEngine::Rect,
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::UIElements::VisualElement,
+                                        >,
                                     >,
                                 >,
                             >,

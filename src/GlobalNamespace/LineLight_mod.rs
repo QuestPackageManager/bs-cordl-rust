@@ -159,7 +159,9 @@ impl crate::GlobalNamespace::LineLight {
     }
     pub fn get_lineLights() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -169,7 +171,9 @@ impl crate::GlobalNamespace::LineLight {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+                            >,
                         >,
                         0usize,
                     >("get_lineLights")
@@ -182,7 +186,9 @@ impl crate::GlobalNamespace::LineLight {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LineLight>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

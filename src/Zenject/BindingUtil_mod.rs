@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::Zenject::BindingUtil {
 impl crate::Zenject::BindingUtil {
     pub fn AssertConcreteTypeListIsNotEmpty(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -49,7 +51,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -96,8 +100,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertDerivesFromUnityObject_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertDerivesFromUnityObject_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -105,7 +113,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -148,10 +158,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertInstanceDerivesFromOrEqual_Gc0(
+    pub fn AssertInstanceDerivesFromOrEqual_IEnumerable_1_0(
         instance: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -164,7 +176,9 @@ impl crate::Zenject::BindingUtil {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -243,8 +257,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -252,7 +270,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -324,12 +344,16 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsDerivedFromTypes_Gc1(
+    pub fn AssertIsDerivedFromTypes_IEnumerable_1_1(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -339,10 +363,14 @@ impl crate::Zenject::BindingUtil {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -361,12 +389,16 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsDerivedFromTypes_Gc_InvalidBindResponses0(
+    pub fn AssertIsDerivedFromTypes_IEnumerable_1_InvalidBindResponses0(
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         invalidBindResponse: crate::Zenject::InvalidBindResponses,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -377,10 +409,14 @@ impl crate::Zenject::BindingUtil {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                             crate::Zenject::InvalidBindResponses,
                         ),
@@ -404,7 +440,9 @@ impl crate::Zenject::BindingUtil {
     pub fn AssertIsDerivedFromTypes_Type2(
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         parentTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -415,7 +453,9 @@ impl crate::Zenject::BindingUtil {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -463,8 +503,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsInterfaceOrComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -472,7 +516,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -544,8 +590,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsInterfaceOrScriptableObject_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsInterfaceOrScriptableObject_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -553,7 +603,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -625,8 +677,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotAbstract_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsNotAbstract_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -634,7 +690,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -706,8 +764,12 @@ impl crate::Zenject::BindingUtil {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AssertIsNotComponent_Gc0(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+    pub fn AssertIsNotComponent_IEnumerable_1_0(
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -715,7 +777,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -834,7 +898,11 @@ impl crate::Zenject::BindingUtil {
         Ok(__cordl_ret.into())
     }
     pub fn AssertTypesAreNotAbstract(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -842,7 +910,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -861,7 +931,11 @@ impl crate::Zenject::BindingUtil {
         Ok(__cordl_ret.into())
     }
     pub fn AssertTypesAreNotComponents(
-        types: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        types: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -869,7 +943,9 @@ impl crate::Zenject::BindingUtil {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

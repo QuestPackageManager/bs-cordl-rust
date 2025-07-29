@@ -17,7 +17,9 @@ pub struct FireworksController {
         crate::GlobalNamespace::FireworkItemController_Pool,
     >,
     pub _activeFireworks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FireworkItemController>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_FireworksController")]

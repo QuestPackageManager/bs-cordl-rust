@@ -4,7 +4,9 @@
 pub struct AnimatorIkHandlerManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _handlers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::IAnimatorIkHandler>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::IAnimatorIkHandler>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+AnimatorIkHandlerManager")]
@@ -44,7 +46,9 @@ impl crate::Zenject::AnimatorIkHandlerManager {
     pub fn Construct(
         &mut self,
         handlers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IAnimatorIkHandler>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IAnimatorIkHandler>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -53,7 +57,11 @@ impl crate::Zenject::AnimatorIkHandlerManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IAnimatorIkHandler>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::IAnimatorIkHandler,
+                                >,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

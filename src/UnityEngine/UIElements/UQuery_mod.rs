@@ -546,7 +546,11 @@ impl crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
     pub fn Run(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        matchers: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuleMatcher>,
+        matchers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::RuleMatcher,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -558,7 +562,9 @@ impl crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::RuleMatcher,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::RuleMatcher,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -672,7 +678,9 @@ for crate::UnityEngine::UIElements::UQuery_SingleQueryMatcher {
 pub struct UQuery_UQueryMatcher {
     __cordl_parent: crate::UnityEngine::UIElements::StyleSheets::HierarchyTraversal,
     pub m_Matchers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::RuleMatcher,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQuery+UQueryMatcher")]
@@ -783,7 +791,11 @@ impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
     pub fn Run(
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        matchers: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuleMatcher>,
+        matchers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::RuleMatcher,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -795,7 +807,9 @@ impl crate::UnityEngine::UIElements::UQuery_UQueryMatcher {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::RuleMatcher,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::RuleMatcher,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -7,20 +7,30 @@ pub struct NetworkPacketSerializer_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _messsageHandlers: quest_hook::libil2cpp::Gc<
-        u8,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
-            i32,
-            TData,
+        crate::System::Collections::Generic::Dictionary_2<
+            u8,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Action_3<
+                    quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
+                    i32,
+                    TData,
+                >,
+            >,
         >,
     >,
     pub _typeRegistry: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        u8,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            u8,
+        >,
     >,
     pub _subSerializerRegistry: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TData>,
-        u8,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+            >,
+            u8,
+        >,
     >,
     pub _internalWriter: quest_hook::libil2cpp::Gc<
         crate::LiteNetLib::Utils::NetDataWriter,
@@ -91,7 +101,9 @@ impl<
 > crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
     pub fn CopyFrom(
         &mut self,
-        other: quest_hook::libil2cpp::Gc<TType, TData>,
+        other: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -104,7 +116,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TType, TData>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::NetworkPacketSerializer_2<
+                                TType,
+                                TData,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("CopyFrom")
@@ -394,11 +411,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterCallback_Gc1<TPacket>(
+    pub fn RegisterCallback_Action_1_0<TPacket>(
         &mut self,
         packetType: TType,
-        callback: quest_hook::libil2cpp::Gc<TPacket>,
-        constructor: quest_hook::libil2cpp::Gc<TPacket>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -415,127 +431,8 @@ impl<
                     .find_method::<
                         (
                             TType,
-                            quest_hook::libil2cpp::Gc<TPacket>,
-                            quest_hook::libil2cpp::Gc<TPacket>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
                         ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterCallback")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterCallback", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (packetType, callback, constructor))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterCallback_Gc3<TPacket>(
-        &mut self,
-        packetType: TType,
-        callback: quest_hook::libil2cpp::Gc<TPacket, TData>,
-        constructor: quest_hook::libil2cpp::Gc<TPacket>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            TType,
-                            quest_hook::libil2cpp::Gc<TPacket, TData>,
-                            quest_hook::libil2cpp::Gc<TPacket>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterCallback")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterCallback", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (packetType, callback, constructor))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterCallback_Gc4<TPacket>(
-        &mut self,
-        packetType: TType,
-        callback: quest_hook::libil2cpp::Gc<TPacket, TData>,
-        constructor: quest_hook::libil2cpp::Gc<TData, TPacket>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            TType,
-                            quest_hook::libil2cpp::Gc<TPacket, TData>,
-                            quest_hook::libil2cpp::Gc<TData, TPacket>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("RegisterCallback")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegisterCallback", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (packetType, callback, constructor))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn RegisterCallback_TType_Gc0<TPacket>(
-        &mut self,
-        packetType: TType,
-        callback: quest_hook::libil2cpp::Gc<TPacket>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (TType, quest_hook::libil2cpp::Gc<TPacket>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("RegisterCallback")
@@ -552,10 +449,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegisterCallback_TType_Gc2<TPacket>(
+    pub fn RegisterCallback_Action_1_Func_1_1<TPacket>(
         &mut self,
         packetType: TType,
-        callback: quest_hook::libil2cpp::Gc<TPacket, TData>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -570,7 +468,52 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (TType, quest_hook::libil2cpp::Gc<TPacket, TData>),
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TPacket>>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RegisterCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (packetType, callback, constructor))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCallback_Action_2_2<TPacket>(
+        &mut self,
+        packetType: TType,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<TPacket, TData>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("RegisterCallback")
@@ -584,13 +527,103 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (packetType, callback))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCallback_Action_2_Func_1_3<TPacket>(
+        &mut self,
+        packetType: TType,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<TPacket, TData>,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TPacket>>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RegisterCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (packetType, callback, constructor))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RegisterCallback_Action_2_Func_2_4<TPacket>(
+        &mut self,
+        packetType: TType,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_2<TPacket, TData>>,
+        constructor: quest_hook::libil2cpp::Gc<crate::System::Func_2<TData, TPacket>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TData: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPacket: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<TPacket, TData>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TData, TPacket>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RegisterCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RegisterCallback", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (packetType, callback, constructor))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn RegisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: quest_hook::libil2cpp::Gc<TData>,
+        subSubSerializer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -603,7 +636,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (TType, quest_hook::libil2cpp::Gc<TData>),
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("RegisterSubSerializer")
@@ -709,7 +747,11 @@ impl<
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         packetType: quest_hook::libil2cpp::ByRefMut<u8>,
-        subSerializer: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<TData>>,
+        subSerializer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -726,7 +768,9 @@ impl<
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::ByRefMut<u8>,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<TData>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+                                >,
                             >,
                         ),
                         bool,
@@ -783,7 +827,9 @@ impl<
     pub fn UnregisterSubSerializer(
         &mut self,
         packetType: TType,
-        subSubSerializer: quest_hook::libil2cpp::Gc<TData>,
+        subSubSerializer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -796,7 +842,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (TType, quest_hook::libil2cpp::Gc<TData>),
+                        (
+                            TType,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("UnregisterSubSerializer")
@@ -856,9 +907,9 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TData>>
+> AsRef<crate::GlobalNamespace::INetworkPacketSerializer_1<TData>>
 for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -866,9 +917,11 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TData>>
+> AsMut<crate::GlobalNamespace::INetworkPacketSerializer_1<TData>>
 for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TData> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPacketSerializer_1<TData> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -876,9 +929,9 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TData>>
+> AsRef<crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>>
 for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TData> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -886,9 +939,11 @@ for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
 impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TData>>
+> AsMut<crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData>>
 for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TData> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::INetworkPacketSubSerializer_1<TData> {
         unsafe { std::mem::transmute(self) }
     }
 }

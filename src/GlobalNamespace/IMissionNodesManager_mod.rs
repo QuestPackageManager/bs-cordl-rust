@@ -48,7 +48,9 @@ impl crate::GlobalNamespace::IMissionNodesManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -58,8 +60,10 @@ impl crate::GlobalNamespace::IMissionNodesManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMissionNode,
+                            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IMissionNode,
+                                >,
                             >,
                         >,
                         0usize,
@@ -73,7 +77,9 @@ impl crate::GlobalNamespace::IMissionNodesManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Collections::Generic::IReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

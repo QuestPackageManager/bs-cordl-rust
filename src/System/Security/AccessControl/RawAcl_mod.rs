@@ -5,7 +5,9 @@ pub struct RawAcl {
     __cordl_parent: crate::System::Security::AccessControl::GenericAcl,
     pub revision: u8,
     pub list: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Security::AccessControl::GenericAce>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Security+AccessControl+RawAcl")]

@@ -125,7 +125,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
     }
     pub fn SnapVertices(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         snap: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -137,7 +139,9 @@ impl crate::UnityEngine::ProBuilder::ProBuilderSnapping {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
                             crate::UnityEngine::Vector3,
                         ),
                         quest_hook::libil2cpp::Void,

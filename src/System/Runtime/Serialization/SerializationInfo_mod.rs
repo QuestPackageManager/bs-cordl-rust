@@ -19,8 +19,10 @@ pub struct SerializationInfo {
         >,
     >,
     pub m_nameToIndex: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
     pub m_currMember: i32,
     pub m_converter: quest_hook::libil2cpp::Gc<

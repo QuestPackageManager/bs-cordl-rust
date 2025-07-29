@@ -4,16 +4,24 @@
 pub struct BeatmapLevelsPromoModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _promotedBeatmapLevelPacksSet: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _updatedBeatmapLevelPacksSet: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _promotedBeatmapLevelsSet: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _updatedBeatmapLevelsSet: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelsPromoModel")]

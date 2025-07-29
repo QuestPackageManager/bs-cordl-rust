@@ -83,8 +83,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
     pub fn SetLoudnessData(
         &mut self,
         loudnessPairs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -94,8 +96,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -118,9 +122,11 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                >,
             >,
         >,
     > {
@@ -131,11 +137,13 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                                >,
                             >,
                         >,
                         0usize,
@@ -149,9 +157,11 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -181,8 +191,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                >,
             >,
         >,
     > {
@@ -193,8 +205,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                                >,
                             >,
                         >,
                         0usize,
@@ -208,8 +222,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

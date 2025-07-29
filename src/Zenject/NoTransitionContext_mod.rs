@@ -118,7 +118,11 @@ impl crate::Zenject::NoTransitionContext {
     pub fn get_installMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -127,7 +131,9 @@ impl crate::Zenject::NoTransitionContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            >,
                         >,
                         0usize,
                     >("get_installMethod")
@@ -140,14 +146,20 @@ impl crate::Zenject::NoTransitionContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_postInstallMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -156,7 +168,9 @@ impl crate::Zenject::NoTransitionContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            >,
                         >,
                         0usize,
                     >("get_postInstallMethod")
@@ -169,7 +183,9 @@ impl crate::Zenject::NoTransitionContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

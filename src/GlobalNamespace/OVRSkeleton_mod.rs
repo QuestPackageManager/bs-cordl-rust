@@ -15,13 +15,19 @@ pub struct OVRSkeleton {
     pub _bindPosesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _capsulesGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _bones: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        >,
     >,
     pub _bindPoses: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        >,
     >,
     pub _capsules: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+        >,
     >,
     pub _skeleton: crate::GlobalNamespace::OVRPlugin_Skeleton2,
     pub wristFixupRotation: crate::UnityEngine::Quaternion,
@@ -29,13 +35,19 @@ pub struct OVRSkeleton {
     pub _IsDataValid_k__BackingField: bool,
     pub _IsDataHighConfidence_k__BackingField: bool,
     pub _Bones_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        >,
     >,
     pub _BindPoses_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+        >,
     >,
     pub _Capsules_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+        >,
     >,
     pub _SkeletonChangedCount_k__BackingField: i32,
 }
@@ -667,7 +679,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -677,7 +691,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            >,
                         >,
                         0usize,
                     >("get_BindPoses")
@@ -690,7 +706,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -698,7 +716,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -708,7 +728,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            >,
                         >,
                         0usize,
                     >("get_Bones")
@@ -721,7 +743,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -729,7 +753,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -739,8 +765,10 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRBoneCapsule,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::OVRBoneCapsule,
+                                >,
                             >,
                         >,
                         0usize,
@@ -754,7 +782,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -829,7 +859,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_BindPoses(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -838,7 +870,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -859,7 +893,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_Bones(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -868,7 +904,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -889,7 +927,9 @@ impl crate::GlobalNamespace::OVRSkeleton {
     pub fn set_Capsules(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBoneCapsule>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -898,8 +938,10 @@ impl crate::GlobalNamespace::OVRSkeleton {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRBoneCapsule,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::OVRBoneCapsule,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -641,20 +641,20 @@ impl crate::UnityEngine::ProBuilder::Vector3Mask {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
 for crate::UnityEngine::ProBuilder::Vector3Mask {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vector3Mask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask>>
 for crate::UnityEngine::ProBuilder::Vector3Mask {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vector3Mask> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::ProBuilder::Vector3Mask> {
         todo!()
     }
 }

@@ -4,8 +4,10 @@
 pub struct Gen2GcCallback {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub _callback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        bool,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            bool,
+        >,
     >,
     pub _weakTargetObj: crate::System::Runtime::InteropServices::GCHandle,
 }
@@ -73,8 +75,10 @@ impl crate::System::Gen2GcCallback {
     }
     pub fn Register(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                bool,
+            >,
         >,
         targetObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -85,10 +89,12 @@ impl crate::System::Gen2GcCallback {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                    bool,
                                 >,
-                                bool,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -113,8 +119,10 @@ impl crate::System::Gen2GcCallback {
     pub fn Setup(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                bool,
+            >,
         >,
         targetObj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -125,10 +133,12 @@ impl crate::System::Gen2GcCallback {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                    bool,
                                 >,
-                                bool,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,

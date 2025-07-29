@@ -142,7 +142,9 @@ impl crate::TMPro::TMP_FontAssetUtilities {
         unicode: u32,
         sourceFontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
         fontAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
         >,
         includeFallbacks: bool,
         fontStyle: crate::TMPro::FontStyles,
@@ -160,7 +162,9 @@ impl crate::TMPro::TMP_FontAssetUtilities {
                             u32,
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                                >,
                             >,
                             bool,
                             crate::TMPro::FontStyles,

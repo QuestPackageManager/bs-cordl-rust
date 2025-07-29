@@ -151,7 +151,9 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Buffer_1<TEleme
     }
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<TElement>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TElement>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -162,7 +164,9 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Buffer_1<TEleme
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TElement>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TElement>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

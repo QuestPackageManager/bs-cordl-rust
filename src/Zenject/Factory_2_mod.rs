@@ -5,7 +5,7 @@ pub struct Factory_2<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TValue>,
+    __cordl_parent: crate::Zenject::PlaceholderFactory_2<TParam1, TValue>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -49,7 +49,7 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::Factory_2<TParam1, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TParam1, TValue>;
+    type Target = crate::Zenject::PlaceholderFactory_2<TParam1, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

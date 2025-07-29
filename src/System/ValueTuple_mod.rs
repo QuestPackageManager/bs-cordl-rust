@@ -654,6 +654,36 @@ impl AsMut<crate::System::IComparable> for crate::System::ValueTuple {
     }
 }
 #[cfg(feature = "System+ValueTuple")]
+impl AsRef<crate::System::IComparable_1<crate::System::ValueTuple>>
+for crate::System::ValueTuple {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::ValueTuple> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple")]
+impl AsMut<crate::System::IComparable_1<crate::System::ValueTuple>>
+for crate::System::ValueTuple {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<crate::System::ValueTuple> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple")]
+impl AsRef<crate::System::IEquatable_1<crate::System::ValueTuple>>
+for crate::System::ValueTuple {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::ValueTuple> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple")]
+impl AsMut<crate::System::IEquatable_1<crate::System::ValueTuple>>
+for crate::System::ValueTuple {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::ValueTuple> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+ValueTuple")]
 impl AsRef<crate::System::IValueTupleInternal> for crate::System::ValueTuple {
     fn as_ref(&self) -> &crate::System::IValueTupleInternal {
         todo!()
@@ -676,34 +706,6 @@ for crate::System::ValueTuple {
 impl AsMut<crate::System::Runtime::CompilerServices::ITuple>
 for crate::System::ValueTuple {
     fn as_mut(&mut self) -> &mut crate::System::Runtime::CompilerServices::ITuple {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ValueTuple> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ValueTuple> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::ValueTuple> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+ValueTuple")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::ValueTuple>>
-for crate::System::ValueTuple {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::ValueTuple> {
         todo!()
     }
 }

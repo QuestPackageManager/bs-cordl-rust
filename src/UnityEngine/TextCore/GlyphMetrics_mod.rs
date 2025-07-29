@@ -291,20 +291,20 @@ impl crate::UnityEngine::TextCore::GlyphMetrics {
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
 for crate::UnityEngine::TextCore::GlyphMetrics {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+GlyphMetrics")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics>>
 for crate::UnityEngine::TextCore::GlyphMetrics {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphMetrics> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::TextCore::GlyphMetrics> {
         todo!()
     }
 }

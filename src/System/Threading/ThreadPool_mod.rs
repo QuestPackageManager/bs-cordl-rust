@@ -227,8 +227,8 @@ impl crate::System::Threading::ThreadPool {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn QueueUserWorkItem_Gc_TState__cordl_bool2<TState>(
-        callBack: quest_hook::libil2cpp::Gc<TState>,
+    pub fn QueueUserWorkItem_Action_1_TState__cordl_bool2<TState>(
+        callBack: quest_hook::libil2cpp::Gc<crate::System::Action_1<TState>>,
         state: TState,
         preferLocal: bool,
     ) -> quest_hook::libil2cpp::Result<bool>
@@ -241,7 +241,11 @@ impl crate::System::Threading::ThreadPool {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<TState>, TState, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TState>>,
+                            TState,
+                            bool,
+                        ),
                         bool,
                         3usize,
                     >("QueueUserWorkItem")

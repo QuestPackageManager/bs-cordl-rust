@@ -42,7 +42,9 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -52,8 +54,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::User,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::User,
+                                >,
                             >,
                         >,
                         1usize,
@@ -67,13 +71,17 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAccessToken() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -83,8 +91,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -98,13 +108,19 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBlockedUsers() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::BlockedUserList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -114,8 +130,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::BlockedUserList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::BlockedUserList,
+                                >,
                             >,
                         >,
                         0usize,
@@ -129,13 +147,19 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::BlockedUserList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLoggedInUser() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -145,8 +169,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::User,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::User,
+                                >,
                             >,
                         >,
                         0usize,
@@ -160,13 +186,17 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::User>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLoggedInUserFriends() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -176,8 +206,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::UserList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::UserList,
+                                >,
                             >,
                         >,
                         0usize,
@@ -191,7 +223,9 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -224,7 +258,11 @@ impl crate::Oculus::Platform::Users {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::BlockedUserList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -236,8 +274,10 @@ impl crate::Oculus::Platform::Users {
                             crate::Oculus::Platform::Models::BlockedUserList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::BlockedUserList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::BlockedUserList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -251,7 +291,11 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::BlockedUserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::BlockedUserList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -261,8 +305,10 @@ impl crate::Oculus::Platform::Users {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::UserCapabilityList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::UserCapabilityList,
+                >,
             >,
         >,
     > {
@@ -275,8 +321,10 @@ impl crate::Oculus::Platform::Users {
                             crate::Oculus::Platform::Models::UserCapabilityList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::UserCapabilityList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::UserCapabilityList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -290,8 +338,10 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::UserCapabilityList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::UserCapabilityList,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -300,7 +350,9 @@ impl crate::Oculus::Platform::Users {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -312,8 +364,10 @@ impl crate::Oculus::Platform::Users {
                             crate::Oculus::Platform::Models::UserList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::UserList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::UserList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -327,7 +381,9 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserList>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -335,7 +391,9 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -345,8 +403,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::OrgScopedID,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::OrgScopedID,
+                                >,
                             >,
                         >,
                         1usize,
@@ -360,13 +420,19 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::OrgScopedID>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSdkAccounts() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccountList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::SdkAccountList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -376,8 +442,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::SdkAccountList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::SdkAccountList,
+                                >,
                             >,
                         >,
                         0usize,
@@ -391,13 +459,19 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SdkAccountList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::SdkAccountList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetUserProof() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -407,8 +481,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::UserProof,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::UserProof,
+                                >,
                             >,
                         >,
                         0usize,
@@ -422,7 +498,9 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::UserProof>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -430,8 +508,10 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+                >,
             >,
         >,
     > {
@@ -442,8 +522,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -457,8 +539,10 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchBlockFlowResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
@@ -467,8 +551,10 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+                >,
             >,
         >,
     > {
@@ -479,8 +565,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -494,8 +582,10 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())
@@ -504,8 +594,10 @@ impl crate::Oculus::Platform::Users {
         userID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+                >,
             >,
         >,
     > {
@@ -516,8 +608,10 @@ impl crate::Oculus::Platform::Users {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -531,8 +625,10 @@ impl crate::Oculus::Platform::Users {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LaunchUnblockFlowResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (userID))? };
         Ok(__cordl_ret.into())

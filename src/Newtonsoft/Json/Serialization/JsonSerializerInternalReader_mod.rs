@@ -784,7 +784,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         creator: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -806,8 +808,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                                 crate::Newtonsoft::Json::Serialization::JsonProperty,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -2031,8 +2035,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+                >,
             >,
         >,
     > {
@@ -2054,8 +2060,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+                                >,
                             >,
                         >,
                         4usize,
@@ -2069,8 +2077,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -2219,10 +2229,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
             crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,
         requiredProperties: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::JsonProperty,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::JsonProperty,
+                >,
+                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
             >,
-            crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2238,10 +2250,12 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
                                 crate::Newtonsoft::Json::Serialization::JsonProperty,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Serialization::JsonProperty,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Serialization::JsonProperty,
+                                    >,
+                                    crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
                                 >,
-                                crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_PropertyPresence,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

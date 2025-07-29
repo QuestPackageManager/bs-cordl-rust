@@ -5,9 +5,13 @@ pub struct HEU_AssetSerializedMetaData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _softDeleted: bool,
     pub _savedCurveNodeData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+                >,
+            >,
         >,
     >,
 }
@@ -108,9 +112,15 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >,
             >,
         >,
     > {
@@ -121,12 +131,16 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::HoudiniEngineUnity::CurveNodeData,
+                                        >,
+                                    >,
                                 >,
                             >,
                         >,
@@ -141,9 +155,15 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::HoudiniEngineUnity::CurveNodeData,
+                        >,
+                    >,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -204,13 +224,13 @@ for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSerializedMetaData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -218,13 +238,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSerializedMetaData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData>,
     > {
         unsafe { std::mem::transmute(self) }

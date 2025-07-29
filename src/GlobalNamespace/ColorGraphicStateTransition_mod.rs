@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorGraphicStateTransition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >,
     pub _colorTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
@@ -29,7 +29,7 @@ for crate::GlobalNamespace::ColorGraphicStateTransition {
 }
 #[cfg(feature = "ColorGraphicStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorGraphicStateTransition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::ColorStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

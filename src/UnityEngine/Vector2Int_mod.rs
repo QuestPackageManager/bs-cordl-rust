@@ -411,6 +411,22 @@ impl crate::UnityEngine::Vector2Int {
     }
 }
 #[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Vector2Int>>
+for crate::UnityEngine::Vector2Int {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Vector2Int> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector2Int")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Vector2Int>>
+for crate::UnityEngine::Vector2Int {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Vector2Int> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Vector2Int")]
 impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector2Int {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -419,22 +435,6 @@ impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Vector2Int {
 #[cfg(feature = "UnityEngine+Vector2Int")]
 impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Vector2Int {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Vector2Int")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int>>
-for crate::UnityEngine::Vector2Int {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Vector2Int")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int>>
-for crate::UnityEngine::Vector2Int {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2Int> {
         todo!()
     }
 }

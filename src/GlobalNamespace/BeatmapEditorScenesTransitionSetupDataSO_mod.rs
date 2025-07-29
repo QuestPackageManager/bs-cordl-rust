@@ -4,8 +4,10 @@
 pub struct BeatmapEditorScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+            >,
         >,
     >,
     pub _goStraightToEditor_k__BackingField: bool,
@@ -121,8 +123,10 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -132,8 +136,10 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -172,8 +178,10 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,8 +191,10 @@ impl crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

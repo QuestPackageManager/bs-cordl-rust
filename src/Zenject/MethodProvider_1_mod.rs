@@ -5,8 +5,10 @@ pub struct MethodProvider_1<TReturn: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _method: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        TReturn,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            TReturn,
+        >,
     >,
     __cordl_phantom_TReturn: std::marker::PhantomData<TReturn>,
 }
@@ -63,12 +65,16 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -82,13 +88,19 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -141,8 +153,10 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
     }
     pub fn New(
         method: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            TReturn,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                TReturn,
+            >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -159,8 +173,10 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
     pub fn _ctor(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            TReturn,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                TReturn,
+            >,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -175,8 +191,10 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                TReturn,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                    TReturn,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         ),

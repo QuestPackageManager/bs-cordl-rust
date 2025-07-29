@@ -38,10 +38,12 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::CsvWriter {
 }
 #[cfg(feature = "BGLib+Polyglot+CsvWriter")]
 impl crate::BGLib::Polyglot::CsvWriter {
-    pub fn AppendCSVLine_Gc0(
+    pub fn AppendCSVLine_IEnumerable_1_0(
         buffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         values: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -54,8 +56,10 @@ impl crate::BGLib::Polyglot::CsvWriter {
                                 crate::System::Text::StringBuilder,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -152,7 +156,9 @@ impl crate::BGLib::Polyglot::CsvWriter {
     pub fn AppendRow(
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         row: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -165,8 +171,10 @@ impl crate::BGLib::Polyglot::CsvWriter {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -189,7 +197,9 @@ impl crate::BGLib::Polyglot::CsvWriter {
     pub fn AppendRowInternal(
         buffer: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         row: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -202,8 +212,10 @@ impl crate::BGLib::Polyglot::CsvWriter {
                                 crate::System::Text::StringBuilder,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),

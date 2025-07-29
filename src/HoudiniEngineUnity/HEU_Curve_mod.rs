@@ -5,7 +5,9 @@ pub struct HEU_Curve {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _geoID: i32,
     pub _curveNodeData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+        >,
     >,
     pub _vertices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
@@ -198,7 +200,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -208,8 +212,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::CurveNodeData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -223,7 +229,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -257,7 +265,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -267,8 +277,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::CurveNodeData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -282,14 +294,18 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetAllPoints(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -297,7 +313,11 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >,
                         0usize,
                     >("GetAllPoints")
                     .unwrap_or_else(|e| {
@@ -308,9 +328,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCurvePoint(
@@ -408,9 +428,11 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPointsString_Gc0(
+    pub fn GetPointsString_List_1_0(
         points: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -421,8 +443,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::CurveNodeData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -441,8 +465,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         > = unsafe { cordl_method_info.invoke_unchecked((), (points))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPointsString_Gc1(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub fn GetPointsString_List_1_1(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -451,7 +477,11 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Vector3,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("GetPointsString")
@@ -750,7 +780,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     pub fn SetCurveNodeData(
         &mut self,
         curveNodeData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -759,8 +791,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::CurveNodeData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1155,7 +1189,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1165,8 +1201,10 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::CurveNodeData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::CurveNodeData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1180,7 +1218,9 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::CurveNodeData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1298,13 +1338,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Curve 
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     >,
 > for crate::HoudiniEngineUnity::HEU_Curve {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1312,13 +1352,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_Curve")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     >,
 > for crate::HoudiniEngineUnity::HEU_Curve {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Curve>,
     > {
         unsafe { std::mem::transmute(self) }

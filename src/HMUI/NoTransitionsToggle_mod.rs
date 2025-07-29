@@ -4,7 +4,7 @@
 pub struct NoTransitionsToggle {
     __cordl_parent: crate::UnityEngine::UI::Toggle,
     pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::HMUI::UISelectionState,
+        crate::System::Action_1<crate::HMUI::UISelectionState>,
     >,
     pub _selectionState: crate::HMUI::UISelectionState,
 }
@@ -172,14 +172,18 @@ impl crate::HMUI::NoTransitionsToggle {
     }
     pub fn add_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::UISelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::HMUI::UISelectionState>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_selectionStateDidChangeEvent")
@@ -223,14 +227,18 @@ impl crate::HMUI::NoTransitionsToggle {
     }
     pub fn remove_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::UISelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::HMUI::UISelectionState>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::HMUI::UISelectionState>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_selectionStateDidChangeEvent")

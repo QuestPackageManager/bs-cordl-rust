@@ -14,7 +14,7 @@ pub struct Factory_11<
     TParam10: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PlaceholderFactory_11<
         TParam1,
         TParam2,
         TParam3,
@@ -137,7 +137,7 @@ for crate::Zenject::Factory_11<
     TParam10,
     TValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PlaceholderFactory_11<
         TParam1,
         TParam2,
         TParam3,

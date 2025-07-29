@@ -164,7 +164,9 @@ pub struct TextGenerator {
     pub m_AttributeParameterValues: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
-    pub m_MaterialReferenceIndexLookup: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub m_MaterialReferenceIndexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
     pub m_IsCalculatingPreferredValues: bool,
     pub m_DefaultSpriteAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::SpriteAsset,

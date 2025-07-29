@@ -9,14 +9,22 @@ pub struct LRUCacheAllocationStrategy {
     pub m_poolInitialCapacity: i32,
     pub m_poolCacheMaxSize: i32,
     pub m_poolCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
+            >,
         >,
     >,
     pub m_cache: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
+            >,
         >,
     >,
 }
@@ -63,7 +71,9 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -73,8 +83,10 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >,
                         0usize,
@@ -88,7 +100,9 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -173,7 +187,9 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
     pub fn ReleasePool(
         &mut self,
         pool: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -182,8 +198,10 @@ impl crate::UnityEngine::ResourceManagement::Util::LRUCacheAllocationStrategy {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

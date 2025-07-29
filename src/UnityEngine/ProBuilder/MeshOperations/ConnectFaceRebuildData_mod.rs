@@ -8,7 +8,9 @@ pub struct ConnectFaceRebuildData {
     pub faceRebuildData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::FaceRebuildData,
     >,
-    pub newVertexIndexes: quest_hook::libil2cpp::Gc<i32>,
+    pub newVertexIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ProBuilder+MeshOperations+ConnectFaceRebuildData"
@@ -53,7 +55,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
         faceRebuildData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
         >,
-        newVertexIndexes: quest_hook::libil2cpp::Gc<i32>,
+        newVertexIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -66,7 +70,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
         faceRebuildData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::FaceRebuildData,
         >,
-        newVertexIndexes: quest_hook::libil2cpp::Gc<i32>,
+        newVertexIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -77,7 +83,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::ConnectFaceRebuildData {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::FaceRebuildData,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

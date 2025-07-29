@@ -9,7 +9,9 @@ pub struct FloorLightStreakTileEffect {
         crate::GlobalNamespace::IAudioTimeSource,
     >,
     pub _elementsPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        crate::GlobalNamespace::SimpleMemoryPool_1<
+            quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Ice+FloorLightStreakTileEffect")]
@@ -243,7 +245,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
 pub struct FloorLightStreakTileEffect_Element {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didMoveToNextTile: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::Ice::FloorLightStreakTileEffect_Element>,
+        >,
     >,
     pub _currentTileY: i32,
     pub _lineIndex: i32,

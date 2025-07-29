@@ -60,7 +60,9 @@ pub struct OVRSpaceQuery_Options {
     pub _QueryType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
     pub _ActionType_k__BackingField: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
     pub _componentType: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
-    pub _uuidFilter: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+    pub _uuidFilter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+    >,
 }
 #[cfg(feature = "cordl_class_OVRSpaceQuery+Options")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -214,7 +216,9 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
         Ok(__cordl_ret.into())
     }
     pub fn ValidateSingleFilter(
-        uuidFilter: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        uuidFilter: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
         componentFilter: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -223,7 +227,11 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::System::Guid>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::System::Guid,
+                                >,
+                            >,
                             crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -412,14 +420,22 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     }
     pub fn get_UuidFilter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Guid>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Guid>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::System::Guid,
+                            >,
+                        >,
                         0usize,
                     >("get_UuidFilter")
                     .unwrap_or_else(|e| {
@@ -430,9 +446,9 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Guid> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_ActionType(
@@ -593,14 +609,20 @@ impl crate::GlobalNamespace::OVRSpaceQuery_Options {
     }
     pub fn set_UuidFilter(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::System::Guid>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Guid>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::System::Guid,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_UuidFilter")

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphyManager {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     >,
     pub m_graphyMode: crate::Tayx::Graphy::GraphyManager_Mode,
@@ -81,7 +81,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tayx::Graphy::GraphyManager {
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

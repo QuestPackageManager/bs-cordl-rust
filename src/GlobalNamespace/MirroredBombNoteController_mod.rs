@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredBombNoteController {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::MirroredBombNoteController {
 }
 #[cfg(feature = "MirroredBombNoteController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -88,7 +88,7 @@ for crate::GlobalNamespace::MirroredBombNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MirroredBombNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
     >,
 }
@@ -114,7 +114,7 @@ for crate::GlobalNamespace::MirroredBombNoteController_Pool {
 }
 #[cfg(feature = "MirroredBombNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

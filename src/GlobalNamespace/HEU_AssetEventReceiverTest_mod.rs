@@ -44,7 +44,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         success: bool,
         outputList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -58,7 +60,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +86,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         success: bool,
         outputList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -96,7 +102,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -127,7 +135,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         success: bool,
         outputList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -141,7 +151,9 @@ impl crate::GlobalNamespace::HEU_AssetEventReceiverTest {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

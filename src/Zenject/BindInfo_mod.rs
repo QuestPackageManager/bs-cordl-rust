@@ -13,7 +13,9 @@ pub struct BindInfo {
     pub RequireExplicitScope: bool,
     pub Identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub ContractTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub BindingInheritanceMethod: crate::Zenject::BindingInheritanceMethods,
     pub InvalidBindResponse: crate::Zenject::InvalidBindResponses,
@@ -22,13 +24,19 @@ pub struct BindInfo {
     pub ToChoice: crate::Zenject::ToChoices,
     pub ContextInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ToTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub Scope: crate::Zenject::ScopeTypes,
-    pub Arguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub Arguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
     pub InstantiatedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+BindInfo")]

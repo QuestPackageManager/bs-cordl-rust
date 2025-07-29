@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPropertyKeyedCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::System::Collections::ObjectModel::Collection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
     pub _dictionary: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
@@ -32,7 +34,7 @@ for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JPropertyKeyedCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::System::Collections::ObjectModel::Collection_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -541,7 +543,9 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -551,8 +555,10 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -566,7 +572,9 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -574,7 +582,9 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -584,8 +594,10 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JToken,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JToken,
+                                >,
                             >,
                         >,
                         0usize,
@@ -599,7 +611,9 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

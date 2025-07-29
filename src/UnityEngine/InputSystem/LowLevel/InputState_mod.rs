@@ -90,22 +90,26 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddChangeMonitor_Gc_i32_Gc1(
+    pub fn AddChangeMonitor_Action_4_i32_Action_4_1(
         control: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputControl,
         >,
         valueChangeCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            f64,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            i64,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                f64,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                i64,
+            >,
         >,
         monitorIndex: i32,
         timerExpiredCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            f64,
-            i64,
-            i32,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                f64,
+                i64,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -122,21 +126,25 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
                                 crate::UnityEngine::InputSystem::InputControl,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::InputControl,
+                                crate::System::Action_4<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::InputSystem::InputControl,
+                                    >,
+                                    f64,
+                                    crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                    i64,
                                 >,
-                                f64,
-                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                                i64,
                             >,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::InputControl,
+                                crate::System::Action_4<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::InputSystem::InputControl,
+                                    >,
+                                    f64,
+                                    i64,
+                                    i32,
                                 >,
-                                f64,
-                                i64,
-                                i32,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
@@ -423,8 +431,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
     }
     pub fn add_onChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -433,10 +443,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                             >,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -515,8 +527,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
     }
     pub fn remove_onChange(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -525,10 +539,12 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputState {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                             >,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -565,16 +581,20 @@ for crate::UnityEngine::InputSystem::LowLevel::InputState {
 pub struct InputState_StateChangeMonitorDelegate {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub valueChangeCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        f64,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        i64,
+        crate::System::Action_4<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f64,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            i64,
+        >,
     >,
     pub timerExpiredCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        f64,
-        i64,
-        i32,
+        crate::System::Action_4<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f64,
+            i64,
+            i32,
+        >,
     >,
 }
 #[cfg(

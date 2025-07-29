@@ -82,7 +82,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Box {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Box_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Box>,
     >,
 }
@@ -108,7 +108,7 @@ for crate::UnityEngine::UIElements::Box_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+Box+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Box_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Box>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

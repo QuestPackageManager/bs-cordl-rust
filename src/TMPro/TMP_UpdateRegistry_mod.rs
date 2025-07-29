@@ -4,13 +4,21 @@
 pub struct TMP_UpdateRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LayoutRebuildQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+        >,
     >,
-    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<i32>,
+    pub m_LayoutQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub m_GraphicRebuildQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ICanvasElement>,
+        >,
     >,
-    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<i32>,
+    pub m_GraphicQueueLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_UpdateRegistry")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_UpdateRegistry {

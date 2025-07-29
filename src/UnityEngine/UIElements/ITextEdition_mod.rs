@@ -150,14 +150,16 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn get_AcceptCharacter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<char, bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<char, bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
                         0usize,
                     >("get_AcceptCharacter")
                     .unwrap_or_else(|e| {
@@ -168,7 +170,7 @@ impl crate::UnityEngine::UIElements::ITextEdition {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<char, bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -202,14 +204,16 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn get_UpdateScrollOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
                         0usize,
                     >("get_UpdateScrollOffset")
                     .unwrap_or_else(|e| {
@@ -220,7 +224,7 @@ impl crate::UnityEngine::UIElements::ITextEdition {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -425,14 +429,14 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn set_AcceptCharacter(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char, bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<char, bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_AcceptCharacter")
@@ -477,14 +481,14 @@ impl crate::UnityEngine::UIElements::ITextEdition {
     }
     pub fn set_UpdateScrollOffset(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_UpdateScrollOffset")

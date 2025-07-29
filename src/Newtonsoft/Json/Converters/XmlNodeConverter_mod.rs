@@ -332,7 +332,7 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateElement_JsonReader_IXmlNode_Il2CppString_XmlNamespaceManager_Il2CppString_Gc0(
+    pub fn CreateElement_JsonReader_IXmlNode_Il2CppString_XmlNamespaceManager_Il2CppString_Dictionary_2_0(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
         document: quest_hook::libil2cpp::Gc<
@@ -345,8 +345,10 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
         elementPrefix: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         attributeNameValues: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -374,11 +376,13 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -813,8 +817,10 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -831,11 +837,13 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         2usize,
@@ -849,8 +857,10 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (reader, manager))? };
         Ok(__cordl_ret.into())
     }
@@ -1100,7 +1110,9 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
     pub fn ValueAttributes(
         &mut self,
         c: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1109,8 +1121,10 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Converters::IXmlNode,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Converters::IXmlNode,
+                                >,
                             >,
                         >),
                         bool,
@@ -1159,58 +1173,6 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn WriteGroupedNodes_Gc0(
-        &mut self,
-        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
-        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
-        writePropertyName: bool,
-        groupedNodes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
-        >,
-        elementNames: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonWriter,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlNamespaceManager,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Converters::IXmlNode,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("WriteGroupedNodes")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteGroupedNodes", 5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (writer, manager, writePropertyName, groupedNodes, elementNames),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn WriteGroupedNodes_IXmlNode1(
         &mut self,
         writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
@@ -1255,6 +1217,62 @@ impl crate::Newtonsoft::Json::Converters::XmlNodeConverter {
                 .invoke_unchecked(
                     self,
                     (writer, manager, writePropertyName, node, elementNames),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn WriteGroupedNodes_List_1_0(
+        &mut self,
+        writer: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonWriter>,
+        manager: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNamespaceManager>,
+        writePropertyName: bool,
+        groupedNodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Converters::IXmlNode>,
+            >,
+        >,
+        elementNames: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::JsonWriter,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::XmlNamespaceManager,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Converters::IXmlNode,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("WriteGroupedNodes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WriteGroupedNodes", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (writer, manager, writePropertyName, groupedNodes, elementNames),
                 )?
         };
         Ok(__cordl_ret.into())

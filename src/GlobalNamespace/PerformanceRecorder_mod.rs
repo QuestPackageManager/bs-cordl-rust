@@ -21,7 +21,9 @@ pub struct PerformanceRecorder {
     pub _RrecPlayState_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RecPlayBehaviour_State,
     >,
-    pub _frameTimes: quest_hook::libil2cpp::Gc<f32>,
+    pub _frameTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub _configChecks: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PerformanceConfigurationChecks,
     >,

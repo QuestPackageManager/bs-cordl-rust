@@ -1786,8 +1786,10 @@ impl crate::System::Data::DataSet {
         writer: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
         schemaFormat: crate::System::Data::SchemaFormat,
         multipleTargetConverter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Converter_2<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1799,9 +1801,11 @@ impl crate::System::Data::DataSet {
                             quest_hook::libil2cpp::Gc<crate::System::Xml::XmlWriter>,
                             crate::System::Data::SchemaFormat,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Converter_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),

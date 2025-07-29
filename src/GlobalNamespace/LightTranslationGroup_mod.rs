@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightGroupTranslationXTransform,
         >,
@@ -42,7 +42,7 @@ for crate::GlobalNamespace::LightTranslationGroup {
 }
 #[cfg(feature = "LightTranslationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LightGroupTranslationXTransform,
         >,

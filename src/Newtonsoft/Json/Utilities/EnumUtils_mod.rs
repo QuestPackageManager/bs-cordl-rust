@@ -123,7 +123,9 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
     }
     pub fn GetFlagsValues<T>(
         value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -134,7 +136,9 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<T>,
+                        >,
                         1usize,
                     >("GetFlagsValues")
                     .unwrap_or_else(|e| {
@@ -145,9 +149,9 @@ impl crate::Newtonsoft::Json::Utilities::EnumUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn InitializeValuesAndNames(

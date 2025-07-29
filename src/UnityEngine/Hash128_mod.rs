@@ -568,30 +568,34 @@ impl AsMut<crate::System::IComparable> for crate::UnityEngine::Hash128 {
     }
 }
 #[cfg(feature = "UnityEngine+Hash128")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
+impl AsRef<crate::System::IComparable_1<crate::UnityEngine::Hash128>>
 for crate::UnityEngine::Hash128 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::UnityEngine::Hash128> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Hash128")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
+impl AsMut<crate::System::IComparable_1<crate::UnityEngine::Hash128>>
 for crate::UnityEngine::Hash128 {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<crate::UnityEngine::Hash128> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Hash128")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Hash128>>
 for crate::UnityEngine::Hash128 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Hash128> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Hash128")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Hash128>>
 for crate::UnityEngine::Hash128 {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Hash128> {
         todo!()
     }
 }

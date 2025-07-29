@@ -65,7 +65,11 @@ impl crate::Oculus::Platform::RichPresence {
     }
     pub fn GetDestinations() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::DestinationList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -75,8 +79,10 @@ impl crate::Oculus::Platform::RichPresence {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::DestinationList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::DestinationList,
+                                >,
                             >,
                         >,
                         0usize,
@@ -90,7 +96,11 @@ impl crate::Oculus::Platform::RichPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::DestinationList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -98,7 +108,11 @@ impl crate::Oculus::Platform::RichPresence {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::DestinationList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -110,8 +124,10 @@ impl crate::Oculus::Platform::RichPresence {
                             crate::Oculus::Platform::Models::DestinationList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::DestinationList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::DestinationList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -125,7 +141,11 @@ impl crate::Oculus::Platform::RichPresence {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::DestinationList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::DestinationList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }

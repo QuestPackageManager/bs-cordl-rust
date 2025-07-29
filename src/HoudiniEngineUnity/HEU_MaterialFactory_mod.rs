@@ -73,7 +73,9 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         geoID: i32,
         partID: i32,
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
         assetCacheFolderPath: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -95,8 +97,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_MaterialData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -141,7 +145,9 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         sourceType: crate::HoudiniEngineUnity::HEU_MaterialData_Source,
         bWriteToFile: bool,
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
         assetCacheFolderPath: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -162,8 +168,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                             crate::HoudiniEngineUnity::HEU_MaterialData_Source,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_MaterialData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -250,7 +258,9 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         substanceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         substanceIndex: i32,
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
         assetCacheFolderPath: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -273,8 +283,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                             >,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_MaterialData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -644,7 +656,9 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     pub fn GetMaterialDataFromCache(
         materialKey: i32,
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
@@ -657,8 +671,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_MaterialData,
+                                    >,
                                 >,
                             >,
                         ),
@@ -684,12 +700,16 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
     }
     pub fn GetMaterialDataMapFromCache(
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -698,14 +718,18 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::HEU_MaterialData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::HEU_MaterialData,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                i32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -719,8 +743,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (materialCache))? };
         Ok(__cordl_ret.into())
     }
@@ -777,7 +803,9 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
         partID: i32,
         bWriteToFile: bool,
         materialCache: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_MaterialData>,
+            >,
         >,
         assetCacheFolderPath: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -798,8 +826,10 @@ impl crate::HoudiniEngineUnity::HEU_MaterialFactory {
                             i32,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_MaterialData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_MaterialData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

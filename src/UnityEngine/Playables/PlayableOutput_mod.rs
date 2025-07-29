@@ -228,6 +228,26 @@ impl crate::UnityEngine::Playables::PlayableOutput {
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput>>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableOutput>>
+for crate::UnityEngine::Playables::PlayableOutput {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Playables::PlayableOutput,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
 impl AsRef<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Playables::PlayableOutput {
     fn as_ref(&self) -> &crate::UnityEngine::Playables::IPlayableOutput {
@@ -238,24 +258,6 @@ for crate::UnityEngine::Playables::PlayableOutput {
 impl AsMut<crate::UnityEngine::Playables::IPlayableOutput>
 for crate::UnityEngine::Playables::PlayableOutput {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Playables::IPlayableOutput {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutput>>
-for crate::UnityEngine::Playables::PlayableOutput {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutput> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Playables+PlayableOutput")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutput>>
-for crate::UnityEngine::Playables::PlayableOutput {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableOutput> {
         todo!()
     }
 }

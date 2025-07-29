@@ -73,7 +73,11 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LightWithIds_LightWithId,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -83,8 +87,10 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightWithIds_LightWithId,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LightWithIds_LightWithId,
+                                >,
                             >,
                         >,
                         0usize,
@@ -98,7 +104,11 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightWithIds_LightWithId>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LightWithIds_LightWithId,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -341,7 +351,9 @@ for crate::GlobalNamespace::ColorArrayLightWithIds {
 pub struct ColorArrayLightWithIds_ColorArrayLightWithId {
     __cordl_parent: crate::GlobalNamespace::LightWithIds_LightWithId,
     pub _index: i32,
-    pub didSetColorEvent: quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>,
+    pub didSetColorEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, crate::UnityEngine::Color>,
+    >,
 }
 #[cfg(feature = "cordl_class_ColorArrayLightWithIds+ColorArrayLightWithId")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -445,14 +457,18 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     }
     pub fn add_didSetColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<i32, crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<i32, crate::UnityEngine::Color>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didSetColorEvent")
@@ -471,14 +487,18 @@ impl crate::GlobalNamespace::ColorArrayLightWithIds_ColorArrayLightWithId {
     }
     pub fn remove_didSetColorEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_2<i32, crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, crate::UnityEngine::Color>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<i32, crate::UnityEngine::Color>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didSetColorEvent")

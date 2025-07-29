@@ -201,18 +201,18 @@ impl crate::UnityEngine::BoneWeight1 {
     }
 }
 #[cfg(feature = "UnityEngine+BoneWeight1")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight1>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight1>>
 for crate::UnityEngine::BoneWeight1 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight1> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::BoneWeight1> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+BoneWeight1")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight1>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::BoneWeight1>>
 for crate::UnityEngine::BoneWeight1 {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::BoneWeight1> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::BoneWeight1> {
         todo!()
     }
 }

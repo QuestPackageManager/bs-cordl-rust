@@ -31,7 +31,9 @@ pub struct PauseController {
     pub didPauseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didStartToResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub didResumeEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub canPauseEvent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+    pub canPauseEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>>,
+    >,
     pub didReturnToMenuEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _pauseChangedStateTime: f32,
     pub _wantsToPause: bool,
@@ -533,14 +535,22 @@ impl crate::GlobalNamespace::PauseController {
     }
     pub fn add_canPauseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_canPauseEvent")
@@ -714,14 +724,22 @@ impl crate::GlobalNamespace::PauseController {
     }
     pub fn remove_canPauseEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<bool>>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_canPauseEvent")

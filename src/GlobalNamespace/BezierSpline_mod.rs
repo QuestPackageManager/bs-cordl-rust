@@ -3,8 +3,12 @@
 #[derive(Debug)]
 pub struct BezierSpline {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _segments: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierCurve>,
-    pub _sourceDataPoints: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub _segments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::BezierCurve>,
+    >,
+    pub _sourceDataPoints: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "cordl_class_BezierSpline")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BezierSpline {
@@ -140,9 +144,9 @@ impl crate::GlobalNamespace::BezierSpline {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ComputeControlPoints_Gc1(
+    pub fn ComputeControlPoints_List_1_1(
         &mut self,
-        k: quest_hook::libil2cpp::Gc<f32>,
+        k: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults,
     > {
@@ -151,7 +155,9 @@ impl crate::GlobalNamespace::BezierSpline {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         crate::GlobalNamespace::BezierSpline_ComputeControlPointsResults,
                         1usize,
                     >("ComputeControlPoints")
@@ -224,7 +230,11 @@ impl crate::GlobalNamespace::BezierSpline {
     pub fn get_segments(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierCurve>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::BezierCurve,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -232,7 +242,11 @@ impl crate::GlobalNamespace::BezierSpline {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BezierCurve>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::BezierCurve,
+                            >,
+                        >,
                         0usize,
                     >("get_segments")
                     .unwrap_or_else(|e| {
@@ -244,7 +258,9 @@ impl crate::GlobalNamespace::BezierSpline {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BezierCurve,
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::BezierCurve,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

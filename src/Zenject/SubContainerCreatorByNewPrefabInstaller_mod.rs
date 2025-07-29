@@ -4,7 +4,9 @@
 pub struct SubContainerCreatorByNewPrefabInstaller {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
     pub _installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-    pub _extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub _extraArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
 }
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabInstaller")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -43,7 +45,9 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabInstal
 impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -52,7 +56,11 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -78,7 +86,9 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -97,7 +107,9 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -111,7 +123,11 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabInstaller {
                                 crate::Zenject::GameObjectCreationParameters,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         5usize,

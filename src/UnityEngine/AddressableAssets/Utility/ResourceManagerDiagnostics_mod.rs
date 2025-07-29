@@ -9,9 +9,11 @@ pub struct ResourceManagerDiagnostics {
         crate::UnityEngine::ResourceManagement::ResourceManager,
     >,
     pub m_cachedDiagnosticInfo: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo,
+            >,
         >,
     >,
 }

@@ -40,8 +40,10 @@ impl std::ops::DerefMut for crate::Oculus::Platform::UserAgeCategory {
 impl crate::Oculus::Platform::UserAgeCategory {
     pub fn Get() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::UserAccountAgeCategory,
+                >,
             >,
         >,
     > {
@@ -52,8 +54,10 @@ impl crate::Oculus::Platform::UserAgeCategory {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::UserAccountAgeCategory,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::UserAccountAgeCategory,
+                                >,
                             >,
                         >,
                         0usize,
@@ -67,8 +71,10 @@ impl crate::Oculus::Platform::UserAgeCategory {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::UserAccountAgeCategory,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::UserAccountAgeCategory,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

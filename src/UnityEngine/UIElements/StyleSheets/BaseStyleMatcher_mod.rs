@@ -4,7 +4,9 @@
 pub struct BaseStyleMatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ContextStack: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
+        >,
     >,
     pub m_CurrentContext: crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
 }

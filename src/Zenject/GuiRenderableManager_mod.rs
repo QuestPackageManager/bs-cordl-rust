@@ -4,7 +4,11 @@
 pub struct GuiRenderableManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::GuiRenderableManager_RenderableInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::GuiRenderableManager_RenderableInfo,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+GuiRenderableManager")]
@@ -45,12 +49,18 @@ impl crate::Zenject::GuiRenderableManager {
     pub type RenderableInfo = crate::Zenject::GuiRenderableManager_RenderableInfo;
     pub fn New(
         renderables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -146,12 +156,18 @@ impl crate::Zenject::GuiRenderableManager {
     pub fn _ctor(
         &mut self,
         renderables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+            >,
         >,
         priorities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                i32,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::ModestTree::Util::ValuePair_2<
+                        quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        i32,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -162,12 +178,18 @@ impl crate::Zenject::GuiRenderableManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::IGuiRenderable>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                    i32,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::ModestTree::Util::ValuePair_2<
+                                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                            i32,
+                                        >,
+                                    >,
                                 >,
                             >,
                         ),

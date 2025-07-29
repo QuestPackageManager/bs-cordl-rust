@@ -22,9 +22,11 @@ pub struct InstructionArray {
         >,
     >,
     pub DebugCookies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<
-            i32,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::KeyValuePair_2<
+                i32,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >,
 }
@@ -149,9 +151,11 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
             >,
         >,
         debugCookies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                i32,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    i32,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -183,10 +187,12 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionArray {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::KeyValuePair_2<
-                                    i32,
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::System::Collections::Generic::KeyValuePair_2<
+                                        i32,
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppObject,
+                                        >,
                                     >,
                                 >,
                             >,

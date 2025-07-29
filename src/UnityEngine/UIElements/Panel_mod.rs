@@ -333,7 +333,9 @@ impl crate::UnityEngine::UIElements::Panel {
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
         includeIgnoredElement: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -350,8 +352,10 @@ impl crate::UnityEngine::UIElements::Panel {
                             >,
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                             bool,
@@ -407,11 +411,13 @@ impl crate::UnityEngine::UIElements::Panel {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (point))? };
         Ok(__cordl_ret.into())
     }
-    pub fn PickAll_Vector2_Gc1(
+    pub fn PickAll_Vector2_List_1_1(
         &mut self,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -424,8 +430,10 @@ impl crate::UnityEngine::UIElements::Panel {
                         (
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                         ),
@@ -447,11 +455,13 @@ impl crate::UnityEngine::UIElements::Panel {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (point, picked))? };
         Ok(__cordl_ret.into())
     }
-    pub fn PickAll_VisualElement_Vector2_Gc__cordl_bool0(
+    pub fn PickAll_VisualElement_Vector2_List_1__cordl_bool0(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         point: crate::UnityEngine::Vector2,
         picked: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
         includeIgnoredElement: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -468,8 +478,10 @@ impl crate::UnityEngine::UIElements::Panel {
                             >,
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                             bool,

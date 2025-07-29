@@ -46,8 +46,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     > {
@@ -63,8 +65,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::PlatformInitialize,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PlatformInitialize,
+                                >,
                             >,
                         >,
                         2usize,
@@ -78,8 +82,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (appID, accessToken))? };
         Ok(__cordl_ret.into())
@@ -89,13 +95,17 @@ impl crate::Oculus::Platform::StandalonePlatform {
         appId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         initConfigOptions: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::InitConfigOptions,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::Oculus::Platform::InitConfigOptions,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     > {
@@ -112,13 +122,17 @@ impl crate::Oculus::Platform::StandalonePlatform {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::InitConfigOptions,
-                                bool,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    crate::Oculus::Platform::InitConfigOptions,
+                                    bool,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::PlatformInitialize,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PlatformInitialize,
+                                >,
                             >,
                         >,
                         3usize,
@@ -132,8 +146,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -145,8 +161,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         >,
     > {
@@ -157,8 +175,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::PlatformInitialize,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PlatformInitialize,
+                                >,
                             >,
                         >,
                         0usize,
@@ -172,8 +192,10 @@ impl crate::Oculus::Platform::StandalonePlatform {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PlatformInitialize,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PlatformInitialize,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

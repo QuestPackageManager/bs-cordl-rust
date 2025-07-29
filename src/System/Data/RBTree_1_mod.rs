@@ -4,7 +4,9 @@
 pub struct RBTree_1<K: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pageTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<K>>,
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+        >,
     >,
     pub _pageTableMap: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -104,7 +106,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     pub fn AllocPage(
         &mut self,
         _cordl_size: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<K>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
+    >
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -115,7 +119,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<K>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Data::RBTree_1_TreePage<K>,
+                        >,
                         1usize,
                     >("AllocPage")
                     .unwrap_or_else(|e| {
@@ -126,9 +132,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<K> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_size))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Data::RBTree_1_TreePage<K>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -468,7 +474,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn FreePage(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -479,7 +485,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Data::RBTree_1_TreePage<K>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("FreePage")
@@ -969,7 +977,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn MarkPageFree(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -980,7 +988,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Data::RBTree_1_TreePage<K>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("MarkPageFree")
@@ -999,7 +1009,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
     }
     pub fn MarkPageFull(
         &mut self,
-        page: quest_hook::libil2cpp::Gc<K>,
+        page: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1_TreePage<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1010,7 +1020,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1<K> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Data::RBTree_1_TreePage<K>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("MarkPageFull")
@@ -2209,7 +2221,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_NodePath<K> {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RBTree_1_RBTreeEnumerator<K: quest_hook::libil2cpp::Type> {
-    pub _tree: quest_hook::libil2cpp::Gc<K>,
+    pub _tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     pub _version: i32,
     pub _index: i32,
     pub _mainTreeNodeId: i32,
@@ -2435,9 +2447,9 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_RBTree_1_0(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2448,7 +2460,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -2467,7 +2479,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
     }
     pub fn _ctor_i32_1(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
         position: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2479,7 +2491,10 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -2519,6 +2534,24 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_RBTreeEnumera
     }
 }
 #[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<K>>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<K> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
+impl<
+    K: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<K>>
+for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<K> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
 impl<K: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -2543,20 +2576,6 @@ for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
 impl<K: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<K>>
-for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<K> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Data+RBTree_1+RBTreeEnumerator")]
-impl<K: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<K>>
-for crate::System::Data::RBTree_1_RBTreeEnumerator<K> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<K> {
         todo!()
     }
 }
@@ -2629,7 +2648,7 @@ for crate::System::Data::RBTree_1_TreePage<K> {
 impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
     pub fn AllocSlot(
         &mut self,
-        tree: quest_hook::libil2cpp::Gc<K>,
+        tree: quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         K: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2640,7 +2659,7 @@ impl<K: quest_hook::libil2cpp::Type> crate::System::Data::RBTree_1_TreePage<K> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<K>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Data::RBTree_1<K>>),
                         i32,
                         1usize,
                     >("AllocSlot")

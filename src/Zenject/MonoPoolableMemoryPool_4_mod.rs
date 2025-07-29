@@ -7,7 +7,7 @@ pub struct MonoPoolableMemoryPool_4<
     TParam3: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TValue>,
+    __cordl_parent: crate::Zenject::MemoryPool_4<TParam1, TParam2, TParam3, TValue>,
     pub _originalParent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
@@ -63,7 +63,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::MonoPoolableMemoryPool_4<TParam1, TParam2, TParam3, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TValue>;
+    type Target = crate::Zenject::MemoryPool_4<TParam1, TParam2, TParam3, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

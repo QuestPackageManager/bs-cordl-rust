@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChangeEvent_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ChangeEvent_1<T>>,
+    >,
     pub _previousValue_k__BackingField: T,
     pub _newValue_k__BackingField: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -46,7 +48,9 @@ for crate::UnityEngine::UIElements::ChangeEvent_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+ChangeEvent_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::ChangeEvent_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>;
+    type Target = crate::UnityEngine::UIElements::EventBase_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ChangeEvent_1<T>>,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +67,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ChangeEvent
     pub fn GetPooled(
         previousValue: T,
         newValue: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ChangeEvent_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -74,7 +80,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ChangeEvent
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T, T),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+                        >,
                         2usize,
                     >("GetPooled")
                     .unwrap_or_else(|e| {
@@ -85,7 +93,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::ChangeEvent
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<T>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (previousValue, newValue))?
         };
         Ok(__cordl_ret.into())

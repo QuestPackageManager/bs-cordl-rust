@@ -5,8 +5,10 @@ pub struct SetPropertyBagBase_2<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TSet>,
-    pub m_Property: quest_hook::libil2cpp::Gc<TSet, TElement>,
+    __cordl_parent: crate::Unity::Properties::PropertyBag_1<TSet>,
+    pub m_Property: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement>,
+    >,
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
@@ -54,7 +56,7 @@ impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    type Target = quest_hook::libil2cpp::Gc<TSet>;
+    type Target = crate::Unity::Properties::PropertyBag_1<TSet>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,9 +156,9 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TSet>>
+> AsRef<crate::Unity::Properties::IPropertyBag_1<TSet>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TSet> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyBag_1<TSet> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -164,9 +166,9 @@ for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
 impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TSet>>
+> AsMut<crate::Unity::Properties::IPropertyBag_1<TSet>>
 for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TSet> {
+    fn as_mut(&mut self) -> &mut crate::Unity::Properties::IPropertyBag_1<TSet> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -177,7 +179,7 @@ pub struct SetPropertyBagBase_2_SetElementProperty<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TSet, TElement>,
+    __cordl_parent: crate::Unity::Properties::Property_2<TSet, TElement>,
     pub m_Value: TElement,
     __cordl_phantom_TSet: std::marker::PhantomData<TSet>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
@@ -227,7 +229,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement> {
-    type Target = quest_hook::libil2cpp::Gc<TSet, TElement>;
+    type Target = crate::Unity::Properties::Property_2<TSet, TElement>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -641,10 +641,14 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SmallXmlParser {
 pub struct SmallXmlParser_AttrListImpl {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub attrNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub attrValues: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Mono+Xml+SmallXmlParser+AttrListImpl")]

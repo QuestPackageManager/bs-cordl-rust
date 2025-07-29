@@ -120,7 +120,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerBombNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
         >,
@@ -149,7 +149,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
         >,

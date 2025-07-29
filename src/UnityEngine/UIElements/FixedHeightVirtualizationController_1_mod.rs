@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedHeightVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::UIElements::VerticalVirtualizationController_1<
+        T,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -48,7 +50,7 @@ for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+FixedHeightVirtualizationController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::FixedHeightVirtualizationController_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

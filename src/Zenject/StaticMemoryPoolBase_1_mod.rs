@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StaticMemoryPoolBase_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValue>,
+    __cordl_parent: crate::Zenject::StaticMemoryPoolBaseBase_1<TValue>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_Zenject+StaticMemoryPoolBase_1")]
@@ -44,7 +44,7 @@ for crate::Zenject::StaticMemoryPoolBase_1<TValue> {
 #[cfg(feature = "Zenject+StaticMemoryPoolBase_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::StaticMemoryPoolBase_1<TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TValue>;
+    type Target = crate::Zenject::StaticMemoryPoolBaseBase_1<TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -98,7 +98,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -109,7 +109,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

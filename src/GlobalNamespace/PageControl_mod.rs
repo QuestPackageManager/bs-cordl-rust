@@ -9,10 +9,14 @@ pub struct PageControl {
         crate::GlobalNamespace::PageControlElement,
     >,
     pub _activeElements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        >,
     >,
     pub _inactiveElements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PageControlElement>,
+        >,
     >,
     pub _selectedPage: i32,
     pub _pagesCount: i32,

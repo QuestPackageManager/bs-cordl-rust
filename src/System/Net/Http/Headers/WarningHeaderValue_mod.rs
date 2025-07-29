@@ -175,8 +175,10 @@ impl crate::System::Net::Http::Headers::WarningHeaderValue {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Net::Http::Headers::WarningHeaderValue,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Net::Http::Headers::WarningHeaderValue,
+                    >,
                 >,
             >,
         >,
@@ -193,8 +195,10 @@ impl crate::System::Net::Http::Headers::WarningHeaderValue {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::System::Net::Http::Headers::WarningHeaderValue,
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::System::Net::Http::Headers::WarningHeaderValue,
+                                        >,
                                     >,
                                 >,
                             >,

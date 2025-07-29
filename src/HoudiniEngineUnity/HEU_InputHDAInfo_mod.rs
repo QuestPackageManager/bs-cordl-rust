@@ -137,13 +137,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_InputH
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputHDAInfo")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InputHDAInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -151,13 +151,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputHDAInfo")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
     >,
 > for crate::HoudiniEngineUnity::HEU_InputHDAInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputHDAInfo>,
     > {
         unsafe { std::mem::transmute(self) }

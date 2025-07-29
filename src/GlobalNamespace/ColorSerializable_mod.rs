@@ -343,20 +343,20 @@ for crate::GlobalNamespace::ColorSerializable {
     }
 }
 #[cfg(feature = "ColorSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
 for crate::GlobalNamespace::ColorSerializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "ColorSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable>>
 for crate::GlobalNamespace::ColorSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSerializable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::ColorSerializable> {
         todo!()
     }
 }

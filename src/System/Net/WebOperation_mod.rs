@@ -20,18 +20,26 @@ pub struct WebOperation {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub requestTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        >,
     >,
     pub requestWrittenTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+        >,
     >,
     pub responseTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        crate::System::Net::WebCompletionSource_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+        >,
     >,
     pub finishedTask: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        crate::System::Net::WebCompletionSource_1<
+            crate::System::ValueTuple_2<
+                bool,
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            >,
         >,
     >,
     pub writeStream: quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
@@ -260,7 +268,11 @@ impl crate::System::Net::WebOperation {
     pub fn GetRequestStream(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::IO::Stream>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -269,7 +281,9 @@ impl crate::System::Net::WebOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+                            >,
                         >,
                         0usize,
                     >("GetRequestStream")
@@ -282,7 +296,9 @@ impl crate::System::Net::WebOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -290,7 +306,9 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -300,8 +318,10 @@ impl crate::System::Net::WebOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::WebRequestStream,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::WebRequestStream,
+                                >,
                             >,
                         >,
                         0usize,
@@ -315,7 +335,9 @@ impl crate::System::Net::WebOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebRequestStream>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -323,7 +345,9 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -333,8 +357,10 @@ impl crate::System::Net::WebOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::WebResponseStream,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::WebResponseStream,
+                                >,
                             >,
                         >,
                         0usize,
@@ -348,7 +374,9 @@ impl crate::System::Net::WebOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebResponseStream>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -776,9 +804,11 @@ impl crate::System::Net::WebOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                bool,
-                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                >,
             >,
         >,
     > {
@@ -789,9 +819,11 @@ impl crate::System::Net::WebOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::ValueTuple_2<
-                                bool,
-                                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                            crate::System::Net::WebCompletionSource_1<
+                                crate::System::ValueTuple_2<
+                                    bool,
+                                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                                >,
                             >,
                         >,
                         0usize,
@@ -805,9 +837,11 @@ impl crate::System::Net::WebOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<
-                bool,
-                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+            crate::System::Net::WebCompletionSource_1<
+                crate::System::ValueTuple_2<
+                    bool,
+                    quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

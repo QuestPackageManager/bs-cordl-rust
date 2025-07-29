@@ -10,7 +10,9 @@ pub struct LightRotationGroupEffectManager {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _lightRotationGroupEffects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationGroupEffect>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightRotationGroupEffect>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_LightRotationGroupEffectManager")]

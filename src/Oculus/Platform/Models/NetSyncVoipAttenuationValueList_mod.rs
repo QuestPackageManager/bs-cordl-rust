@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSyncVoipAttenuationValueList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
         >,
@@ -31,7 +31,7 @@ for crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList {
 #[cfg(feature = "Oculus+Platform+Models+NetSyncVoipAttenuationValueList")]
 impl std::ops::Deref
 for crate::Oculus::Platform::Models::NetSyncVoipAttenuationValueList {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Models::DeserializableList_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::NetSyncVoipAttenuationValue,
         >,

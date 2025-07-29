@@ -4,20 +4,30 @@
 pub struct MaterialReferenceManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_FontMaterialReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+        >,
     >,
     pub m_FontAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        >,
     >,
     pub m_SpriteAssetReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        >,
     >,
     pub m_ColorGradientReferenceLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextColorGradient>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::TextCore::Text::TextColorGradient,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+MaterialReferenceManager")]

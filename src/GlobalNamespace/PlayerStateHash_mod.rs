@@ -508,10 +508,12 @@ impl crate::GlobalNamespace::PlayerStateHash {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_HashSet_1_2(
         &mut self,
         stateHashSet: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -520,8 +522,10 @@ impl crate::GlobalNamespace::PlayerStateHash {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -568,38 +572,48 @@ impl crate::GlobalNamespace::PlayerStateHash {
     }
 }
 #[cfg(feature = "PlayerStateHash")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash>>
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    >,
+> for crate::GlobalNamespace::PlayerStateHash {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    >,
+> for crate::GlobalNamespace::PlayerStateHash {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::PlayerStateHash,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash>>
 for crate::GlobalNamespace::PlayerStateHash {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash> {
         todo!()
     }
 }
 #[cfg(feature = "PlayerStateHash")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash>>
 for crate::GlobalNamespace::PlayerStateHash {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash> {
-        todo!()
-    }
-}
-#[cfg(feature = "PlayerStateHash")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash>>
-for crate::GlobalNamespace::PlayerStateHash {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash> {
-        todo!()
-    }
-}
-#[cfg(feature = "PlayerStateHash")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash>>
-for crate::GlobalNamespace::PlayerStateHash {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerStateHash> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::PlayerStateHash> {
         todo!()
     }
 }

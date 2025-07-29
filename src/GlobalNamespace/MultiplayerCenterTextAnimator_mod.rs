@@ -8,11 +8,15 @@ pub struct MultiplayerCenterTextAnimator {
     pub _tweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::TimeTweeningManager,
     >,
-    pub _fadeInTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _fadeOutTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _fontSizeTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _colorTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-    pub _offsetTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _fontSizeTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _colorTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Color>,
+    >,
+    pub _offsetTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
 }
 #[cfg(feature = "cordl_class_MultiplayerCenterTextAnimator")]
 unsafe impl quest_hook::libil2cpp::Type

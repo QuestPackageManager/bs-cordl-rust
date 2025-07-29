@@ -373,6 +373,62 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::StringComparer {
     }
 }
 #[cfg(feature = "System+StringComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::StringComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::StringComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::StringComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::StringComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+StringComparer")]
 impl AsRef<crate::System::Collections::IComparer> for crate::System::StringComparer {
     fn as_ref(&self) -> &crate::System::Collections::IComparer {
         unsafe { std::mem::transmute(self) }
@@ -395,62 +451,6 @@ for crate::System::StringComparer {
 impl AsMut<crate::System::Collections::IEqualityComparer>
 for crate::System::StringComparer {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+StringComparer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::StringComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+StringComparer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::StringComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+StringComparer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::StringComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+StringComparer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::StringComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

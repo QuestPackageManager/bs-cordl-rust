@@ -8,10 +8,14 @@ pub struct NetworkPlayersViewController {
     >,
     pub _refreshIsNeeded: bool,
     pub onJoinRequestEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        >,
     >,
     pub onInviteRequestEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_NetworkPlayersViewController")]
@@ -322,7 +326,9 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn add_onInviteRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -331,8 +337,10 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -354,7 +362,9 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn add_onJoinRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -363,8 +373,10 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -469,7 +481,9 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn remove_onInviteRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -478,8 +492,10 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -501,7 +517,9 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
     pub fn remove_onJoinRequestEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -510,8 +528,10 @@ impl crate::GlobalNamespace::NetworkPlayersViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

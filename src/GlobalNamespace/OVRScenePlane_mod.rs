@@ -18,7 +18,9 @@ pub struct OVRScenePlane {
     >,
     pub _boundaryRequested: bool,
     pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
-    pub _boundary: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    pub _boundary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+    >,
 }
 #[cfg(feature = "cordl_class_OVRScenePlane")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRScenePlane {
@@ -323,7 +325,11 @@ impl crate::GlobalNamespace::OVRScenePlane {
     pub fn get_Boundary(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::UnityEngine::Vector2,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -331,7 +337,11 @@ impl crate::GlobalNamespace::OVRScenePlane {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                crate::UnityEngine::Vector2,
+                            >,
+                        >,
                         0usize,
                     >("get_Boundary")
                     .unwrap_or_else(|e| {
@@ -342,9 +352,11 @@ impl crate::GlobalNamespace::OVRScenePlane {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::UnityEngine::Vector2,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Dimensions(

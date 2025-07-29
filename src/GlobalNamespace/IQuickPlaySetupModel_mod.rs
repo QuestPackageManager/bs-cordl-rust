@@ -44,7 +44,9 @@ impl crate::GlobalNamespace::IQuickPlaySetupModel {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -54,8 +56,10 @@ impl crate::GlobalNamespace::IQuickPlaySetupModel {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::QuickPlaySetupData,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::QuickPlaySetupData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -69,7 +73,9 @@ impl crate::GlobalNamespace::IQuickPlaySetupModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuickPlaySetupData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

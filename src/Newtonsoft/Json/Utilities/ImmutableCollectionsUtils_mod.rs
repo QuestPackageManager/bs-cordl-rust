@@ -73,7 +73,9 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         >,
         parameterizedCreator: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -90,8 +92,10 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
+                                    crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppObject,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -130,7 +134,9 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
         >,
         parameterizedCreator: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -148,8 +154,10 @@ impl crate::Newtonsoft::Json::Utilities::ImmutableCollectionsUtils {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppObject,
+                                    crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppObject,
+                                        >,
                                     >,
                                 >,
                             >,

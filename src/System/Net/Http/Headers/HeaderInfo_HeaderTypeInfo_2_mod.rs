@@ -6,7 +6,9 @@ pub struct HeaderInfo_HeaderTypeInfo_2<
     U: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::System::Net::Http::Headers::HeaderInfo,
-    pub parser: quest_hook::libil2cpp::Gc<T>,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
 }
@@ -157,7 +159,9 @@ impl<
     }
     pub fn New(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        parser: quest_hook::libil2cpp::Gc<T>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+        >,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -177,7 +181,9 @@ impl<
         collection: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     >
     where
@@ -193,8 +199,10 @@ impl<
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         1usize,
@@ -208,7 +216,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (collection))? };
         Ok(__cordl_ret.into())
     }
@@ -259,7 +269,9 @@ impl<
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        parser: quest_hook::libil2cpp::Gc<T>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+        >,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -277,7 +289,9 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Http::Headers::TryParseDelegate_1<T>,
+                            >,
                             crate::System::Net::Http::Headers::HttpHeaderKind,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -18,7 +18,9 @@ pub struct GameNoteController {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+        >,
     >,
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
@@ -416,7 +418,9 @@ impl crate::GlobalNamespace::GameNoteController {
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -425,8 +429,10 @@ impl crate::GlobalNamespace::GameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -525,7 +531,9 @@ impl crate::GlobalNamespace::GameNoteController {
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -534,8 +542,10 @@ impl crate::GlobalNamespace::GameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -562,6 +572,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameNoteContr
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "GameNoteController")]
+impl AsRef<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+    >,
+> for crate::GlobalNamespace::GameNoteController {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameNoteController")]
+impl AsMut<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+    >,
+> for crate::GlobalNamespace::GameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "GameNoteController")]
@@ -622,39 +660,11 @@ for crate::GlobalNamespace::GameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "GameNoteController")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-    >,
-> for crate::GlobalNamespace::GameNoteController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "GameNoteController")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-    >,
-> for crate::GlobalNamespace::GameNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_GameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
     >,
 }
@@ -680,7 +690,7 @@ for crate::GlobalNamespace::GameNoteController_Pool {
 }
 #[cfg(feature = "GameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::GameNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

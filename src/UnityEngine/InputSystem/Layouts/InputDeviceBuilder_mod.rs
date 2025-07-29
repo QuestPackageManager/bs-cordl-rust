@@ -7,10 +7,14 @@ pub struct InputDeviceBuilder {
     >,
     pub m_LayoutCacheRef: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
     pub m_ChildControlOverrides: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
+        >,
     >,
-    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<u32>,
+    pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
     pub m_StringBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Layouts+InputDeviceBuilder")]

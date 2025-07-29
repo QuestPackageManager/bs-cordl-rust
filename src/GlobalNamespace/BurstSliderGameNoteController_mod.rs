@@ -21,7 +21,11 @@ pub struct BurstSliderGameNoteController {
         crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
     pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BurstSliderGameNoteController,
+            >,
+        >,
     >,
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
     pub _gameplayType: crate::GlobalNamespace::NoteData_GameplayType,
@@ -468,8 +472,10 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BurstSliderGameNoteController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BurstSliderGameNoteController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -479,8 +485,10 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BurstSliderGameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BurstSliderGameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -579,8 +587,10 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BurstSliderGameNoteController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BurstSliderGameNoteController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -590,8 +600,10 @@ impl crate::GlobalNamespace::BurstSliderGameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BurstSliderGameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BurstSliderGameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -619,6 +631,34 @@ for crate::GlobalNamespace::BurstSliderGameNoteController {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsRef<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
+    >,
+> for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BurstSliderGameNoteController")]
+impl AsMut<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
+    >,
+> for crate::GlobalNamespace::BurstSliderGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "BurstSliderGameNoteController")]
@@ -679,39 +719,11 @@ for crate::GlobalNamespace::BurstSliderGameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "BurstSliderGameNoteController")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
-    >,
-> for crate::GlobalNamespace::BurstSliderGameNoteController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "BurstSliderGameNoteController")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
-    >,
-> for crate::GlobalNamespace::BurstSliderGameNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_BurstSliderGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstSliderGameNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >,
 }
@@ -737,7 +749,7 @@ for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
 }
 #[cfg(feature = "BurstSliderGameNoteController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BurstSliderGameNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BurstSliderGameNoteController>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

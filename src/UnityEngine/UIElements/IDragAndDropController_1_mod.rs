@@ -62,7 +62,9 @@ impl<
 > crate::UnityEngine::UIElements::IDragAndDropController_1<TArgs> {
     pub fn CanStartDrag(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,7 +75,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >),
                         bool,
                         1usize,
                     >("CanStartDrag")
@@ -121,7 +125,11 @@ impl<
     }
     pub fn GetSortedSelectedIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    >
     where
         TArgs: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -132,7 +140,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         0usize,
                     >("GetSortedSelectedIds")
                     .unwrap_or_else(|e| {
@@ -143,9 +153,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HandleAutoExpand(
@@ -248,7 +258,9 @@ impl<
     }
     pub fn SetupDragAndDrop(
         &mut self,
-        itemIds: quest_hook::libil2cpp::Gc<i32>,
+        itemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         skipText: bool,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StartDragArgs>
     where
@@ -260,7 +272,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
+                            bool,
+                        ),
                         crate::UnityEngine::UIElements::StartDragArgs,
                         2usize,
                     >("SetupDragAndDrop")

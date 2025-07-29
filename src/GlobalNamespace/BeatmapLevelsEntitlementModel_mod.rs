@@ -7,10 +7,14 @@ pub struct BeatmapLevelsEntitlementModel {
         crate::GlobalNamespace::IAdditionalContentEntitlementModel,
     >,
     pub _alwaysOwnedBeatmapLevelIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _alwaysOwnedPacksIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelsEntitlementModel")]
@@ -81,7 +85,11 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelDataVersion>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::BeatmapLevelDataVersion,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -95,7 +103,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapLevelDataVersion,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::BeatmapLevelDataVersion,
+                            >,
                         >,
                         2usize,
                     >("GetLevelDataVersionAsync")
@@ -108,7 +118,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelDataVersion,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::BeatmapLevelDataVersion,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -117,7 +129,11 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -131,7 +147,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EntitlementStatus,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::EntitlementStatus,
+                            >,
                         >,
                         2usize,
                     >("GetLevelEntitlementStatusAsync")
@@ -144,7 +162,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, token))? };
         Ok(__cordl_ret.into())
     }
@@ -153,7 +173,11 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
         levelPackId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EntitlementStatus>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -167,7 +191,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EntitlementStatus,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::EntitlementStatus,
+                            >,
                         >,
                         2usize,
                     >("GetPackEntitlementStatusAsync")
@@ -180,7 +206,9 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (levelPackId, token))? };
         Ok(__cordl_ret.into())
     }

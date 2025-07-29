@@ -362,7 +362,9 @@ pub struct HIDParser_HIDItemStateLocal {
     pub stringIndex: crate::System::Nullable_1<i32>,
     pub stringMinimum: crate::System::Nullable_1<i32>,
     pub stringMaximum: crate::System::Nullable_1<i32>,
-    pub usageList: quest_hook::libil2cpp::Gc<i32>,
+    pub usageList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+HID+HIDParser+HIDItemStateLocal")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -762,7 +764,9 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
         reportId: crate::System::Nullable_1<i32>,
         reportType: crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
         reports: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -774,7 +778,9 @@ impl crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData {
                             crate::System::Nullable_1<i32>,
                             crate::UnityEngine::InputSystem::HID::HID_HIDReportType,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::InputSystem::HID::HIDParser_HIDReportData,
+                                >,
                             >,
                         ),
                         i32,

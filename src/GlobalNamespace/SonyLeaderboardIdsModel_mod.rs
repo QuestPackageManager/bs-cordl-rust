@@ -4,8 +4,10 @@
 pub struct SonyLeaderboardIdsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _leaderboardIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        u32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            u32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_SonyLeaderboardIdsModel")]
@@ -62,7 +64,9 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsModel {
     }
     pub fn New(
         idsMaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,7 +110,9 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsModel {
     pub fn _ctor(
         &mut self,
         idsMaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SonyLeaderboardIdsSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -115,8 +121,10 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SonyLeaderboardIdsSO,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SonyLeaderboardIdsSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

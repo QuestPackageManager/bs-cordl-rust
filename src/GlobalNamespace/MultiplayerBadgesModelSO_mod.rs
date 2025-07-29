@@ -4,10 +4,14 @@
 pub struct MultiplayerBadgesModelSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _positiveBadges: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+        >,
     >,
     pub _negativeBadges: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerBadgesModelSO")]
@@ -77,7 +81,9 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -87,8 +93,10 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerBadgeDataSO,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerBadgeDataSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -102,7 +110,9 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -110,7 +120,9 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -120,8 +132,10 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerBadgeDataSO,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerBadgeDataSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -135,7 +149,9 @@ impl crate::GlobalNamespace::MultiplayerBadgesModelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerBadgeDataSO>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

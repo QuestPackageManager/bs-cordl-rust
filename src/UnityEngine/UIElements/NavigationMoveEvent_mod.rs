@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationMoveEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     >,
     pub _direction_k__BackingField: crate::UnityEngine::UIElements::NavigationMoveEvent_Direction,
@@ -30,7 +30,7 @@ for crate::UnityEngine::UIElements::NavigationMoveEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationMoveEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationMoveEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationMoveEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

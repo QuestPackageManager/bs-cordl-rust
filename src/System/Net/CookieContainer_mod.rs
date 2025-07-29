@@ -136,7 +136,9 @@ impl crate::System::Net::CookieContainer {
         port: i32,
         cookies: quest_hook::libil2cpp::Gc<crate::System::Net::CookieCollection>,
         domainAttribute: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         matchOnlyPlainCookie: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,8 +155,10 @@ impl crate::System::Net::CookieContainer {
                                 crate::System::Net::CookieCollection,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             bool,

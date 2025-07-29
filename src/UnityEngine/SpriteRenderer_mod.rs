@@ -4,7 +4,9 @@
 pub struct SpriteRenderer {
     __cordl_parent: crate::UnityEngine::Renderer,
     pub m_SpriteChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+        crate::UnityEngine::Events::UnityEvent_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+SpriteRenderer")]
@@ -235,7 +237,9 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn RegisterSpriteChangeCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+            crate::UnityEngine::Events::UnityAction_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -244,7 +248,11 @@ impl crate::UnityEngine::SpriteRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+                            crate::UnityEngine::Events::UnityAction_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::SpriteRenderer,
+                                >,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -265,7 +273,9 @@ impl crate::UnityEngine::SpriteRenderer {
     pub fn UnregisterSpriteChangeCallback(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+            crate::UnityEngine::Events::UnityAction_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -274,7 +284,11 @@ impl crate::UnityEngine::SpriteRenderer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::SpriteRenderer>,
+                            crate::UnityEngine::Events::UnityAction_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::SpriteRenderer,
+                                >,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -64,7 +64,13 @@ for crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T>
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::ResourceManagement::Util::GlobalLinkedListNodeCache_1<T> {
-    pub fn Acquire(val: T) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn Acquire(
+        val: T,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -75,7 +81,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
                         1usize,
                     >("Acquire")
                     .unwrap_or_else(|e| {
@@ -86,13 +94,15 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (val))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
     pub fn Release(
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,7 +113,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Release")

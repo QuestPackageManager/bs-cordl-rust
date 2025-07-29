@@ -21,7 +21,9 @@ pub struct IntroTutorialRing {
     pub _highlighted: bool,
     pub _emitNextParticleTimer: f32,
     pub _activationProgress: f32,
-    pub _sabersInside: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberType>,
+    pub _sabersInside: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<crate::GlobalNamespace::SaberType>,
+    >,
     pub _sabersInsideAfterOnEnable: bool,
 }
 #[cfg(feature = "cordl_class_IntroTutorialRing")]

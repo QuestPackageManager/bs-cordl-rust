@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ScheduledItem {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub timerUpdateStopCondition: quest_hook::libil2cpp::Gc<bool>,
+    pub timerUpdateStopCondition: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     pub _startMs_k__BackingField: i64,
     pub _delayMs_k__BackingField: i64,
     pub _intervalMs_k__BackingField: i64,

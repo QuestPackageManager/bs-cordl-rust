@@ -6,7 +6,9 @@
 pub struct StyleSyntaxTokenizer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Tokens: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken,
+        >,
     >,
     pub m_CurrentTokenIndex: i32,
 }

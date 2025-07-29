@@ -26,7 +26,9 @@ pub struct ScrollView {
     pub _platformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
-    pub scrollPositionChangedEvent: quest_hook::libil2cpp::Gc<f32>,
+    pub scrollPositionChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<f32>,
+    >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _destinationPos: f32,
     pub _scrollFocusPositions: quest_hook::libil2cpp::Gc<
@@ -716,14 +718,14 @@ impl crate::HMUI::ScrollView {
     }
     pub fn add_scrollPositionChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_scrollPositionChangedEvent")
@@ -864,14 +866,14 @@ impl crate::HMUI::ScrollView {
     }
     pub fn remove_scrollPositionChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_scrollPositionChangedEvent")

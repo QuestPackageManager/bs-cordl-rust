@@ -7,9 +7,13 @@ pub struct SignalCallbackWithLookupWrapper {
     pub _signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     pub _lookupId: crate::System::Guid,
     pub _methodGetter: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Action_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
+            >,
         >,
     >,
     pub _objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -77,9 +81,13 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         lookupId: crate::System::Guid,
         methodGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >,
             >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
@@ -195,9 +203,13 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         lookupId: crate::System::Guid,
         methodGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                    >,
+                >,
             >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
@@ -215,12 +227,16 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             crate::System::Guid,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                                quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<
                                     quest_hook::libil2cpp::Gc<
                                         quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Action_1<
+                                            quest_hook::libil2cpp::Gc<
+                                                quest_hook::libil2cpp::Il2CppObject,
+                                            >,
+                                        >,
                                     >,
                                 >,
                             >,

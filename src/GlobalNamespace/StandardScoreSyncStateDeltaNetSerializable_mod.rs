@@ -201,8 +201,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+            crate::GlobalNamespace::IPacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+                >,
             >,
         >,
     > {
@@ -213,8 +215,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+                            crate::GlobalNamespace::IPacketPool_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+                                >,
                             >,
                         >,
                         0usize,
@@ -228,8 +232,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+            crate::GlobalNamespace::IPacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -355,6 +361,34 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     }
 }
 #[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+impl AsRef<
+    crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
+impl AsMut<
+    crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISyncStateDeltaSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
@@ -365,24 +399,6 @@ for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
-for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateDeltaNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
-for crate::GlobalNamespace::StandardScoreSyncStateDeltaNetSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -441,12 +441,16 @@ pub struct OVRUnityHumanoidSkeletonRetargeter {
     >,
     pub _animatorTargetSkeleton: quest_hook::libil2cpp::Gc<crate::UnityEngine::Animator>,
     pub _customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRSkeleton_BoneId,
-        crate::UnityEngine::HumanBodyBones,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRSkeleton_BoneId,
+            crate::UnityEngine::HumanBodyBones,
+        >,
     >,
     pub _targetTPoseRotations: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::HumanBodyBones,
-        crate::UnityEngine::Quaternion,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            crate::UnityEngine::Quaternion,
+        >,
     >,
     pub _lastSkelChangeCount: i32,
     pub _adjustments: quest_hook::libil2cpp::Gc<
@@ -1022,8 +1026,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1033,8 +1039,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::OVRSkeleton_BoneId,
-                            crate::UnityEngine::HumanBodyBones,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                crate::UnityEngine::HumanBodyBones,
+                            >,
                         >,
                         0usize,
                     >("get_CustomBoneIdToHumanBodyBone")
@@ -1047,8 +1055,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1149,8 +1159,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::HumanBodyBones,
-            crate::UnityEngine::Quaternion,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::HumanBodyBones,
+                crate::UnityEngine::Quaternion,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1160,8 +1172,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::HumanBodyBones,
-                            crate::UnityEngine::Quaternion,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                crate::UnityEngine::HumanBodyBones,
+                                crate::UnityEngine::Quaternion,
+                            >,
                         >,
                         0usize,
                     >("get_TargetTPoseRotations")
@@ -1174,8 +1188,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::HumanBodyBones,
-            crate::UnityEngine::Quaternion,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::HumanBodyBones,
+                crate::UnityEngine::Quaternion,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1351,9 +1367,11 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBones
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BodyToBoneData_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::HumanBodyBones,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::HumanBodyBones,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+            >,
         >,
     >,
     pub _boneEnumValues: quest_hook::libil2cpp::Gc<
@@ -1404,8 +1422,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         skeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1419,8 +1439,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                crate::UnityEngine::HumanBodyBones,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                    crate::UnityEngine::HumanBodyBones,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1474,8 +1496,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         skeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1489,8 +1513,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                crate::UnityEngine::HumanBodyBones,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                    crate::UnityEngine::HumanBodyBones,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1598,7 +1624,9 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
     }
     pub fn FindBoneWithBoneId(
         bones: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+            >,
         >,
         boneId: crate::GlobalNamespace::OVRSkeleton_BoneId,
     ) -> quest_hook::libil2cpp::Result<
@@ -1611,7 +1639,9 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRBone>,
+                                >,
                             >,
                             crate::GlobalNamespace::OVRSkeleton_BoneId,
                         ),
@@ -1671,12 +1701,14 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
             .invoke_void(".ctor", (animator))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_OVRSkeleton__cordl_bool_Gc2(
+    pub fn New_OVRSkeleton__cordl_bool_Dictionary_2_2(
         skeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1722,13 +1754,15 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_OVRSkeleton__cordl_bool_Gc2(
+    pub fn _ctor_OVRSkeleton__cordl_bool_Dictionary_2_2(
         &mut self,
         skeleton: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSkeleton>,
         useBindPose: bool,
         customBoneIdToHumanBodyBone: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRSkeleton_BoneId,
-            crate::UnityEngine::HumanBodyBones,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::OVRSkeleton_BoneId,
+                crate::UnityEngine::HumanBodyBones,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1742,8 +1776,10 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSkeleton_BoneId,
-                                crate::UnityEngine::HumanBodyBones,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    crate::GlobalNamespace::OVRSkeleton_BoneId,
+                                    crate::UnityEngine::HumanBodyBones,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1800,9 +1836,11 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::HumanBodyBones,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::HumanBodyBones,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+                >,
             >,
         >,
     > {
@@ -1813,9 +1851,11 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::HumanBodyBones,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                crate::UnityEngine::HumanBodyBones,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1829,9 +1869,11 @@ impl crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetad
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::HumanBodyBones,
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::UnityEngine::HumanBodyBones,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

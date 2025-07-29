@@ -6,22 +6,30 @@
 pub struct StyleSyntaxParser {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ProcessExpressionList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+            >,
         >,
     >,
     pub m_ExpressionStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        crate::System::Collections::Generic::Stack_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+            >,
         >,
     >,
     pub m_CombinatorStack: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
+        >,
     >,
     pub m_ParsedExpressionCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
+            >,
         >,
     >,
 }

@@ -350,16 +350,18 @@ for crate::UnityEngine::UIElements::AbstractProgressBar {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>>
+impl AsRef<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
 for crate::UnityEngine::UIElements::AbstractProgressBar {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+AbstractProgressBar")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>>
+impl AsMut<crate::UnityEngine::UIElements::INotifyValueChanged_1<f32>>
 for crate::UnityEngine::UIElements::AbstractProgressBar {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyValueChanged_1<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }

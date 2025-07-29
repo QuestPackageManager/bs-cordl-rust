@@ -26,11 +26,19 @@ pub struct LevelCollectionViewController {
         crate::GlobalNamespace::AudioClipAsyncLoader,
     >,
     pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionViewController>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelCollectionViewController,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        >,
     >,
     pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionViewController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LevelCollectionViewController,
+            >,
+        >,
     >,
     pub _showHeader: bool,
     pub _noDataInfoGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
@@ -41,7 +49,9 @@ pub struct LevelCollectionViewController {
         crate::System::Threading::CancellationTokenSource,
     >,
     pub _unloadLevelDebouncer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        crate::BGLib::UnityExtension::Debouncer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_LevelCollectionViewController")]
@@ -530,8 +540,10 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
     pub fn add_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelCollectionViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -541,8 +553,10 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -564,10 +578,12 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelCollectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionViewController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -576,11 +592,13 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionViewController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionViewController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -602,8 +620,10 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
     pub fn remove_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelCollectionViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -613,8 +633,10 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -636,10 +658,12 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelCollectionViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionViewController,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -648,11 +672,13 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionViewController,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionViewController,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

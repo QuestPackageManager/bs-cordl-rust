@@ -19,7 +19,7 @@ pub struct Keyboard {
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
     pub m_TextInputListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        quest_hook::libil2cpp::Gc<char>,
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     >,
     pub m_KeyboardLayoutName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -33,7 +33,9 @@ pub struct Keyboard {
     >,
     pub m_ImeCompositionListeners: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     >,
 }
@@ -333,7 +335,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     pub fn add_onIMECompositionChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -342,7 +346,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -362,14 +368,14 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     }
     pub fn add_onTextInput(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<char>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_onTextInput")
@@ -4072,7 +4078,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     pub fn remove_onIMECompositionChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4081,7 +4089,9 @@ impl crate::UnityEngine::InputSystem::Keyboard {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::LowLevel::IMECompositionString,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -4101,14 +4111,14 @@ impl crate::UnityEngine::InputSystem::Keyboard {
     }
     pub fn remove_onTextInput(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<char>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_onTextInput")

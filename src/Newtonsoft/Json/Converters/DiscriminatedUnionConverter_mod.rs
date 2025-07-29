@@ -262,8 +262,10 @@ pub struct DiscriminatedUnionConverter_Union {
         crate::Newtonsoft::Json::Utilities::FSharpFunction,
     >,
     pub Cases: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+            >,
         >,
     >,
 }
@@ -311,8 +313,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             crate::Newtonsoft::Json::Utilities::FSharpFunction,
         >,
         cases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -328,8 +332,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
             crate::Newtonsoft::Json::Utilities::FSharpFunction,
         >,
         cases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -343,8 +349,10 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
                                 crate::Newtonsoft::Json::Utilities::FSharpFunction,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
+                                    >,
                                 >,
                             >,
                         ),

@@ -47,17 +47,25 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
     pub const kNonAlphabetChar: char = '#';
     pub fn CreateData(
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         sortBeatmapLevels: bool,
         sortedBeatmapLevels: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                crate::System::Collections::Generic::IReadOnlyList_1<
+                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -67,22 +75,28 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
-                                >,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<
                                     quest_hook::libil2cpp::Gc<
                                         crate::GlobalNamespace::BeatmapLevel,
                                     >,
                                 >,
                             >,
+                            bool,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::IReadOnlyList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::GlobalNamespace::BeatmapLevel,
+                                        >,
+                                    >,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                                >,
                             >,
                         >,
                         3usize,
@@ -96,7 +110,11 @@ impl crate::GlobalNamespace::AlphabetScrollbarInfoBeatmapLevelHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                >,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(

@@ -4,7 +4,9 @@
 pub struct InputControl_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::InputSystem::InputControl,
     pub m_ProcessorStack: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        quest_hook::libil2cpp::Gc<TValue>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+        >,
     >,
     pub m_CachedValue: TValue,
     pub m_UnprocessedCachedValue: TValue,
@@ -753,7 +755,11 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                >,
+            >,
         >,
     >
     where
@@ -768,7 +774,9 @@ impl<
                         (),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<TValue>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                                >,
                             >,
                         >,
                         0usize,
@@ -782,7 +790,11 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<TValue>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputProcessor_1<TValue>,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

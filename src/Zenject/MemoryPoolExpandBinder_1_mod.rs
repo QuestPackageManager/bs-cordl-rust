@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryPoolExpandBinder_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
     pub _MemoryPoolBindInfo_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Zenject::MemoryPoolBindInfo,
     >,
@@ -47,7 +47,7 @@ for crate::Zenject::MemoryPoolExpandBinder_1<TContract> {
 #[cfg(feature = "Zenject+MemoryPoolExpandBinder_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolExpandBinder_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +66,11 @@ impl<
     pub fn ExpandByDoubling(
         &mut self,
         showExpandWarning: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        >,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -77,7 +81,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+                        >,
                         1usize,
                     >("ExpandByDoubling")
                     .unwrap_or_else(|e| {
@@ -88,15 +94,19 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (showExpandWarning))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (showExpandWarning))? };
         Ok(__cordl_ret.into())
     }
     pub fn ExpandByOneAtATime(
         &mut self,
         showExpandWarning: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        >,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -107,7 +117,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+                        >,
                         1usize,
                     >("ExpandByOneAtATime")
                     .unwrap_or_else(|e| {
@@ -118,9 +130,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (showExpandWarning))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryArgumentsToChoiceBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (showExpandWarning))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(

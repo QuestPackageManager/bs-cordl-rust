@@ -41,11 +41,17 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshOperations::Beve
 impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
     pub fn BevelEdges(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
         amount: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -58,13 +64,17 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Edge,
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
                             >,
                             f32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Face,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Face,
+                                >,
                             >,
                         >,
                         3usize,
@@ -78,30 +88,44 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (mesh, edges, amount))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBridgeFaces(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
         left: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         right: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         holes: quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::ProBuilder::FaceRebuildData,
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::FaceRebuildData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
+                        >,
                     >,
-                    quest_hook::libil2cpp::Gc<i32>,
                 >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -111,8 +135,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -122,20 +148,28 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                                 crate::UnityEngine::ProBuilder::WingedEdge,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::SimpleTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::ProBuilder::FaceRebuildData,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    i32,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::List_1<
+                                            crate::UnityEngine::ProBuilder::SimpleTuple_2<
+                                                quest_hook::libil2cpp::Gc<
+                                                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                                                >,
+                                                quest_hook::libil2cpp::Gc<
+                                                    crate::System::Collections::Generic::List_1<i32>,
+                                                >,
+                                            >,
                                         >,
-                                        quest_hook::libil2cpp::Gc<i32>,
                                     >,
                                 >,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::FaceRebuildData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                                >,
                             >,
                         >,
                         4usize,
@@ -149,7 +183,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::FaceRebuildData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::FaceRebuildData,
+                >,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (vertices, left, right, holes))?
         };
@@ -188,7 +226,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
     }
     pub fn SlideEdge(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
         we: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
         amount: f32,
@@ -200,8 +240,10 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Bevel {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

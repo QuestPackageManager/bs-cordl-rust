@@ -8,7 +8,9 @@ pub struct ClaimsPrincipal {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_identities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Security+Claims+ClaimsPrincipal")]
@@ -179,7 +181,11 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
     }
     pub fn SelectPrimaryIdentity(
         identities: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsIdentity,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsIdentity>,
@@ -190,8 +196,10 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Claims::ClaimsIdentity,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Security::Claims::ClaimsIdentity,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -296,7 +304,11 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
     }
     pub fn get_ClaimsPrincipalSelector() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsPrincipal>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsPrincipal,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -306,8 +318,10 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Claims::ClaimsPrincipal,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Security::Claims::ClaimsPrincipal,
+                                >,
                             >,
                         >,
                         0usize,
@@ -321,7 +335,11 @@ impl crate::System::Security::Claims::ClaimsPrincipal {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Security::Claims::ClaimsPrincipal>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Claims::ClaimsPrincipal,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

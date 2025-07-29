@@ -9,10 +9,16 @@ pub struct VisualElementPanelActivator {
     pub _isActive_k__BackingField: bool,
     pub _isDetaching_k__BackingField: bool,
     pub m_OnAttachToPanelCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AttachToPanelEvent>,
+        crate::UnityEngine::UIElements::EventCallback_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AttachToPanelEvent>,
+        >,
     >,
     pub m_OnDetachFromPanelCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DetachFromPanelEvent>,
+        crate::UnityEngine::UIElements::EventCallback_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::DetachFromPanelEvent,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualElementPanelActivator")]

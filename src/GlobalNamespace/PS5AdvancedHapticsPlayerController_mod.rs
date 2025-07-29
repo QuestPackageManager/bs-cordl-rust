@@ -10,11 +10,15 @@ pub struct PS5AdvancedHapticsPlayerController {
         crate::GlobalNamespace::ICoroutineStarter,
     >,
     pub _activePlayers: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            crate::UnityEngine::XR::XRNode,
-            quest_hook::libil2cpp::Gc<crate::Libraries::HM::HMLib::VR::HapticPresetSO>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                crate::UnityEngine::XR::XRNode,
+                quest_hook::libil2cpp::Gc<
+                    crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                >,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HapticsAudioClipPlayer>,
     >,
 }
 #[cfg(feature = "cordl_class_PS5AdvancedHapticsPlayerController")]

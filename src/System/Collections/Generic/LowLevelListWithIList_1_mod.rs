@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LowLevelListWithIList_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::System::Collections::Generic::LowLevelList_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_System+Collections+Generic+LowLevelListWithIList_1")]
@@ -44,7 +44,7 @@ for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
 #[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::System::Collections::Generic::LowLevelList_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,7 +118,9 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -129,7 +131,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<T>,
+                        >,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<T>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -141,9 +145,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -242,6 +246,60 @@ for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
     }
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IList_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IList_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IList_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IList_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -255,55 +313,15 @@ for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(
     feature = "cordl_class_System+Collections+Generic+LowLevelListWithIList_1+Enumerator"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LowLevelListWithIList_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _list: quest_hook::libil2cpp::Gc<T>,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LowLevelListWithIList_1<T>,
+    >,
     pub _index: i32,
     pub _version: i32,
     pub _current: T,
@@ -565,7 +583,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LowLevelListWithIList_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -576,7 +596,11 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LowLevelListWithIList_1<
+                                T,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -616,6 +640,24 @@ impl<
     }
 }
 #[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -640,20 +682,6 @@ for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LowLevelListWithIList_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LowLevelListWithIList_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }

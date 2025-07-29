@@ -69,7 +69,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         >,
         binding: crate::UnityEngine::InputSystem::InputBinding,
         list: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+            >,
         >,
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -84,7 +86,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                             >,
                             crate::UnityEngine::InputSystem::InputBinding,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::InputSystem::InputActionMap_BindingOverrideJson,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::InputSystem::InputAction,
@@ -321,7 +325,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::InputActionMap,
         >,
         overrides: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -334,7 +340,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputActionMap,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputBinding,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::UnityEngine::InputSystem::InputBinding,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -421,14 +429,18 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyParameterOverride_InputActionAsset_Gc_TValue_InputBinding2<
+    pub fn ApplyParameterOverride_InputActionAsset_Expression_1_TValue_InputBinding2<
         TObject,
         TValue,
     >(
         asset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionAsset,
         >,
-        expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TObject, TValue>>,
+        expr: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TObject, TValue>>,
+            >,
+        >,
         value: TValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -448,7 +460,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputActionAsset,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<TObject, TValue>,
+                                crate::System::Linq::Expressions::Expression_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TObject, TValue>,
+                                    >,
+                                >,
                             >,
                             TValue,
                             crate::UnityEngine::InputSystem::InputBinding,
@@ -508,14 +524,18 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyParameterOverride_InputActionMap_Gc_TValue_InputBinding1<
+    pub fn ApplyParameterOverride_InputActionMap_Expression_1_TValue_InputBinding1<
         TObject,
         TValue,
     >(
         actionMap: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionMap,
         >,
-        expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TObject, TValue>>,
+        expr: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TObject, TValue>>,
+            >,
+        >,
         value: TValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -535,7 +555,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputActionMap,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<TObject, TValue>,
+                                crate::System::Linq::Expressions::Expression_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TObject, TValue>,
+                                    >,
+                                >,
                             >,
                             TValue,
                             crate::UnityEngine::InputSystem::InputBinding,
@@ -658,9 +682,16 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ApplyParameterOverride_InputAction_Gc_TValue_InputBinding0<TObject, TValue>(
+    pub fn ApplyParameterOverride_InputAction_Expression_1_TValue_InputBinding0<
+        TObject,
+        TValue,
+    >(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-        expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TObject, TValue>>,
+        expr: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TObject, TValue>>,
+            >,
+        >,
         value: TValue,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -680,7 +711,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputAction,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<TObject, TValue>,
+                                crate::System::Linq::Expressions::Expression_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TObject, TValue>,
+                                    >,
+                                >,
                             >,
                             TValue,
                             crate::UnityEngine::InputSystem::InputBinding,
@@ -805,7 +840,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ExtractParameterOverride<TObject, TValue>(
-        expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TObject, TValue>>,
+        expr: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TObject, TValue>>,
+            >,
+        >,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<
@@ -824,7 +863,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<TObject, TValue>,
+                                crate::System::Linq::Expressions::Expression_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TObject, TValue>,
+                                    >,
+                                >,
                             >,
                             crate::UnityEngine::InputSystem::InputBinding,
                             crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
@@ -1184,9 +1227,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetParameterValue_Gc_InputBinding3<TObject, TValue>(
+    pub fn GetParameterValue_Expression_1_InputBinding3<TObject, TValue>(
         action: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
-        expr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TObject, TValue>>,
+        expr: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TObject, TValue>>,
+            >,
+        >,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<TValue>>
     where
@@ -1205,7 +1252,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputAction,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<TObject, TValue>,
+                                crate::System::Linq::Expressions::Expression_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TObject, TValue>,
+                                    >,
+                                >,
                             >,
                             crate::UnityEngine::InputSystem::InputBinding,
                         ),
@@ -1650,7 +1701,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
             crate::UnityEngine::InputSystem::InputActionMap,
         >,
         overrides: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputBinding,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1663,7 +1716,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
                                 crate::UnityEngine::InputSystem::InputActionMap,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputBinding,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::UnityEngine::InputSystem::InputBinding,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2180,7 +2235,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2190,7 +2247,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+                            >,
                         >,
                         0usize,
                     >(
@@ -2206,7 +2265,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2279,6 +2340,40 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
 #[cfg(
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
 )]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
+)]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -2291,40 +2386,6 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
-)]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    >,
->
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    > {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerable"
-)]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    >,
->
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    > {
         todo!()
     }
 }
@@ -2697,6 +2758,40 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
 #[cfg(
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
 )]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    >,
+>
+for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
+    > {
+        todo!()
+    }
+}
+#[cfg(
+    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
+)]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -2727,40 +2822,6 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnu
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
-)]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    >,
->
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    > {
-        todo!()
-    }
-}
-#[cfg(
-    feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterEnumerator"
-)]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    >,
->
-for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputActionRebindingExtensions_Parameter,
-    > {
         todo!()
     }
 }
@@ -3209,46 +3270,62 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
     >,
     pub m_OnComplete: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            >,
         >,
     >,
     pub m_OnCancel: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            >,
         >,
     >,
     pub m_OnPotentialMatch: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            >,
         >,
     >,
     pub m_OnGeneratePath: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_OnComputeScore: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        f32,
+        crate::System::Func_3<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            f32,
+        >,
     >,
     pub m_OnApplyBinding: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            >,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
     pub m_OnEventDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::System::Action_2<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        >,
     >,
     pub m_OnAfterUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_LayoutCache: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Cache,
     pub m_PathBuilder: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub m_Flags: crate::UnityEngine::InputSystem::RebindingOperation_InputActionRebindingExtensions_Flags,
     pub m_StartingActuations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-        f32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+            f32,
+        >,
     >,
 }
 #[cfg(
@@ -3581,10 +3658,12 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn OnApplyBinding(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -3597,11 +3676,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -3643,11 +3724,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnCancel_Gc0(
+    pub fn OnCancel_Action_1_0(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -3661,8 +3744,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -3704,11 +3789,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnComplete_Gc0(
+    pub fn OnComplete_Action_1_0(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -3722,8 +3809,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -3747,9 +3836,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn OnComputeScore(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            f32,
+            crate::System::Func_3<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -3762,11 +3853,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputControl,
+                            crate::System::Func_3<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputControl,
+                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                f32,
                             >,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            f32,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
@@ -3821,8 +3914,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn OnGeneratePath(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -3835,11 +3930,13 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputControl,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputControl,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -3895,8 +3992,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn OnPotentialMatch(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -3910,8 +4009,10 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<

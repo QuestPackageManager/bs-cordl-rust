@@ -4,8 +4,10 @@
 pub struct ContextualMenuManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
     pub m_MenuBuilder: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            >,
         >,
     >,
 }
@@ -74,8 +76,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
     }
     pub fn New(
         menuBuilder: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -280,8 +284,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
     pub fn _ctor(
         &mut self,
         menuBuilder: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,8 +297,10 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

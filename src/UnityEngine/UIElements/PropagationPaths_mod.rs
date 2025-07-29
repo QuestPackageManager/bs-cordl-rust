@@ -4,13 +4,19 @@
 pub struct PropagationPaths {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub trickleDownPath: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub targetElements: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub bubbleUpPath: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PropagationPaths")]

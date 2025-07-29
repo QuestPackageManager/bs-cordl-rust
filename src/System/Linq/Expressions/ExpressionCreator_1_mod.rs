@@ -65,8 +65,10 @@ impl<
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tailCall: bool,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -90,8 +92,10 @@ impl<
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
                                 >,
                             >,
                         ),

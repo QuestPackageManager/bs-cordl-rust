@@ -10,7 +10,9 @@ pub struct FocusController {
         crate::UnityEngine::UIElements::TextElement,
     >,
     pub m_FocusedElements: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::FocusController_FocusedElement,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::FocusController_FocusedElement,
+        >,
     >,
     pub m_LastFocusedElement: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::Focusable,

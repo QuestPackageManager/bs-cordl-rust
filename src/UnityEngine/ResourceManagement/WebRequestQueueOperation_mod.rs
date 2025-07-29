@@ -8,8 +8,10 @@ pub struct WebRequestQueueOperation {
         crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
     >,
     pub OnComplete: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
+            >,
         >,
     >,
     pub m_WebRequest: quest_hook::libil2cpp::Gc<

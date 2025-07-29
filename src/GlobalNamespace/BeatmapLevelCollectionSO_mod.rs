@@ -4,7 +4,9 @@
 pub struct BeatmapLevelCollectionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapLevelCollectionSO")]
@@ -129,7 +131,9 @@ impl crate::GlobalNamespace::BeatmapLevelCollectionSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -139,8 +143,10 @@ impl crate::GlobalNamespace::BeatmapLevelCollectionSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelSO,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -154,7 +160,9 @@ impl crate::GlobalNamespace::BeatmapLevelCollectionSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

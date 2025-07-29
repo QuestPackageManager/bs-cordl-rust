@@ -4,7 +4,9 @@
 pub struct SavedStructState_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_State: T,
-    pub m_RestoreAction: quest_hook::libil2cpp::Gc<T>,
+    pub m_RestoreAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<T>,
+    >,
     pub m_StaticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -69,7 +71,11 @@ impl<
     >;
     pub fn New(
         state: quest_hook::libil2cpp::ByRefMut<T>,
-        restoreAction: quest_hook::libil2cpp::Gc<T>,
+        restoreAction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
+                T,
+            >,
+        >,
         staticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -143,7 +149,11 @@ impl<
     pub fn _ctor(
         &mut self,
         state: quest_hook::libil2cpp::ByRefMut<T>,
-        restoreAction: quest_hook::libil2cpp::Gc<T>,
+        restoreAction: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
+                T,
+            >,
+        >,
         staticDisposeCurrentState: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -157,7 +167,11 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<T>,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::Utilities::SavedStructState_1_TypedRestore<
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                         ),
                         quest_hook::libil2cpp::Void,

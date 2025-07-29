@@ -4,8 +4,10 @@
 pub struct JSONObject {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
     pub m_Dict: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+        >,
     >,
     pub _cordl_inline: bool,
 }
@@ -254,7 +256,9 @@ impl crate::HoudiniEngineUnity::JSONObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -264,8 +268,10 @@ impl crate::HoudiniEngineUnity::JSONObject {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::JSONNode,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::JSONNode,
+                                >,
                             >,
                         >,
                         0usize,
@@ -279,7 +285,9 @@ impl crate::HoudiniEngineUnity::JSONObject {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::JSONNode>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

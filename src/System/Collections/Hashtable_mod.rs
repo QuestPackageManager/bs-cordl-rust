@@ -1235,9 +1235,11 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn get_SerializationInfoTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::SerializationInfo,
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::SerializationInfo,
+                >,
             >,
         >,
     > {
@@ -1248,11 +1250,13 @@ impl crate::System::Collections::Hashtable {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::Serialization::SerializationInfo,
+                            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Runtime::Serialization::SerializationInfo,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1266,9 +1270,11 @@ impl crate::System::Collections::Hashtable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Serialization::SerializationInfo,
+            crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::Serialization::SerializationInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

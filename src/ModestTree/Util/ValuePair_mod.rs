@@ -41,7 +41,9 @@ impl crate::ModestTree::Util::ValuePair {
     pub fn New_T1_T2_0<T1, T2>(
         first: T1,
         second: T2,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_2<T1, T2>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -54,7 +56,9 @@ impl crate::ModestTree::Util::ValuePair {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2),
-                        quest_hook::libil2cpp::Gc<T1, T2>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::ModestTree::Util::ValuePair_2<T1, T2>,
+                        >,
                         2usize,
                     >("New")
                     .unwrap_or_else(|e| {
@@ -65,16 +69,18 @@ impl crate::ModestTree::Util::ValuePair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2> = unsafe {
-            cordl_method_info.invoke_unchecked((), (first, second))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::ModestTree::Util::ValuePair_2<T1, T2>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (first, second))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_T3_1<T1, T2, T3>(
         first: T1,
         second: T2,
         third: T3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2, T3>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_3<T1, T2, T3>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -89,7 +95,9 @@ impl crate::ModestTree::Util::ValuePair {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2, T3),
-                        quest_hook::libil2cpp::Gc<T1, T2, T3>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::ModestTree::Util::ValuePair_3<T1, T2, T3>,
+                        >,
                         3usize,
                     >("New")
                     .unwrap_or_else(|e| {
@@ -100,9 +108,9 @@ impl crate::ModestTree::Util::ValuePair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2, T3> = unsafe {
-            cordl_method_info.invoke_unchecked((), (first, second, third))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::ModestTree::Util::ValuePair_3<T1, T2, T3>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (first, second, third))? };
         Ok(__cordl_ret.into())
     }
     pub fn New_T3_T4_2<T1, T2, T3, T4>(
@@ -110,7 +118,9 @@ impl crate::ModestTree::Util::ValuePair {
         second: T2,
         third: T3,
         fourth: T4,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T1, T2, T3, T4>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -127,7 +137,9 @@ impl crate::ModestTree::Util::ValuePair {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (T1, T2, T3, T4),
-                        quest_hook::libil2cpp::Gc<T1, T2, T3, T4>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>,
+                        >,
                         4usize,
                     >("New")
                     .unwrap_or_else(|e| {
@@ -138,7 +150,9 @@ impl crate::ModestTree::Util::ValuePair {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T1, T2, T3, T4> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::ModestTree::Util::ValuePair_4<T1, T2, T3, T4>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (first, second, third, fourth))?
         };
         Ok(__cordl_ret.into())

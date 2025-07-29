@@ -28,17 +28,23 @@ pub struct InputAction {
     >,
     pub m_OnStarted: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     >,
     pub m_OnCanceled: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     >,
     pub m_OnPerformed: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     >,
 }
@@ -756,7 +762,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn add_canceled(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -765,7 +773,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -786,7 +796,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn add_performed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -795,7 +807,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -816,7 +830,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn add_started(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -825,7 +841,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1311,7 +1329,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn remove_canceled(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1320,7 +1340,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1341,7 +1363,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn remove_performed(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1350,7 +1374,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1371,7 +1397,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
     pub fn remove_started(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1380,7 +1408,9 @@ impl crate::UnityEngine::InputSystem::InputAction {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

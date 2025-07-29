@@ -24,10 +24,14 @@ pub struct DataTable {
     >,
     pub _recordManager: quest_hook::libil2cpp::Gc<crate::System::Data::RecordManager>,
     pub _indexes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+        >,
     >,
     pub _shadowIndexes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+        >,
     >,
     pub _shadowCount: i32,
     pub _extendedProperties: quest_hook::libil2cpp::Gc<
@@ -98,7 +102,9 @@ pub struct DataTable {
         >,
     >,
     pub _dependentColumns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
     pub _mergingData: bool,
     pub _onRowChangedDelegate: quest_hook::libil2cpp::Gc<
@@ -133,10 +139,14 @@ pub struct DataTable {
     >,
     pub _rowBuilder: quest_hook::libil2cpp::Gc<crate::System::Data::DataRowBuilder>,
     pub _delayedViews: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataView>,
+        >,
     >,
     pub _dataViewListeners: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+        >,
     >,
     pub _rowDiffId: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
     pub _indexesLock: quest_hook::libil2cpp::Gc<
@@ -404,7 +414,9 @@ impl crate::System::Data::DataTable {
     pub fn CheckForClosureOnExpressionTables(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -413,7 +425,9 @@ impl crate::System::Data::DataTable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                            >,
                         >),
                         bool,
                         1usize,
@@ -937,10 +951,14 @@ impl crate::System::Data::DataTable {
     pub fn CreateRelationList(
         &mut self,
         tableList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
         relationList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -950,10 +968,14 @@ impl crate::System::Data::DataTable {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataRelation>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -976,7 +998,9 @@ impl crate::System::Data::DataTable {
         &mut self,
         currentTable: quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
         tableList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -987,7 +1011,9 @@ impl crate::System::Data::DataTable {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1294,15 +1320,19 @@ impl crate::System::Data::DataTable {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateDependentExpressions_Gc_DataRow_DataRowVersion_Gc1(
+    pub fn EvaluateDependentExpressions_List_1_DataRow_DataRowVersion_List_1_1(
         &mut self,
         columns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+            >,
         >,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         version: crate::System::Data::DataRowVersion,
         cachedRows: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1312,12 +1342,16 @@ impl crate::System::Data::DataTable {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
                             crate::System::Data::DataRowVersion,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1388,12 +1422,14 @@ impl crate::System::Data::DataTable {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateExpressions_DataRow_DataRowAction_Gc1(
+    pub fn EvaluateExpressions_DataRow_DataRowAction_List_1_1(
         &mut self,
         row: quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
         action: crate::System::Data::DataRowAction,
         cachedRows: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1405,7 +1441,9 @@ impl crate::System::Data::DataTable {
                             quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
                             crate::System::Data::DataRowAction,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Data::DataRow>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1708,7 +1746,9 @@ impl crate::System::Data::DataTable {
     pub fn GetInheritedNamespace(
         &mut self,
         visitedTables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1719,7 +1759,9 @@ impl crate::System::Data::DataTable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Data::DataTable>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
@@ -1741,7 +1783,9 @@ impl crate::System::Data::DataTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1751,8 +1795,10 @@ impl crate::System::Data::DataTable {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Data::DataViewListener,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Data::DataViewListener,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1766,7 +1812,9 @@ impl crate::System::Data::DataTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::DataViewListener>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -5113,7 +5161,11 @@ impl crate::System::Data::DataTable {
     pub fn get_LiveIndexes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Data::Index>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -5122,7 +5174,9 @@ impl crate::System::Data::DataTable {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+                            >,
                         >,
                         0usize,
                     >("get_LiveIndexes")
@@ -5135,7 +5189,9 @@ impl crate::System::Data::DataTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Data::Index>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

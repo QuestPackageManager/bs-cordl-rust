@@ -671,7 +671,9 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
     pub fn Subscribe(
         &mut self,
         observer: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputRemoting_Message,
+            crate::System::IObserver_1<
+                crate::UnityEngine::InputSystem::InputRemoting_Message,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
@@ -682,7 +684,9 @@ impl crate::UnityEngine::InputSystem::InputRemoting {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputRemoting_Message,
+                            crate::System::IObserver_1<
+                                crate::UnityEngine::InputSystem::InputRemoting_Message,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
                         1usize,
@@ -938,11 +942,11 @@ for crate::UnityEngine::InputSystem::InputRemoting {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -950,11 +954,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObservable_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -962,11 +966,11 @@ impl AsMut<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -974,11 +978,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputRemoting")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting_Message>,
+    crate::System::IObserver_1<crate::UnityEngine::InputSystem::InputRemoting_Message>,
 > for crate::UnityEngine::InputSystem::InputRemoting {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::InputRemoting_Message,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2491,7 +2495,9 @@ pub struct InputRemoting_Subscriber {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputRemoting>,
     pub observer: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputRemoting_Message,
+        crate::System::IObserver_1<
+            crate::UnityEngine::InputSystem::InputRemoting_Message,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputRemoting+Subscriber")]

@@ -359,7 +359,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
     }
     pub fn RemoveChar(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        charToRemoveFunc: quest_hook::libil2cpp::Gc<char, bool>,
+        charToRemoveFunc: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -372,7 +372,7 @@ impl crate::UnityEngine::Timeline::TimeUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<char, bool>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         2usize,

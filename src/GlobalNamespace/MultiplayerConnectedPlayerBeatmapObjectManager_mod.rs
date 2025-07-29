@@ -5,30 +5,40 @@ pub struct MultiplayerConnectedPlayerBeatmapObjectManager {
     __cordl_parent: crate::GlobalNamespace::BeatmapObjectManager,
     pub _firstBasicNoteTime: crate::System::Nullable_1<f32>,
     pub _gameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            >,
         >,
     >,
     pub _burstSliderHeadGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            >,
         >,
     >,
     pub _burstSliderGameNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            >,
         >,
     >,
     pub _bombNotePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
+            >,
         >,
     >,
     pub _obstaclePoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
+        crate::GlobalNamespace::MemoryPoolContainer_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
     >,
     pub _beatmapObjectEventManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayerBeatmapObjectEventManager,
@@ -598,7 +608,9 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -608,8 +620,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >,
                         0usize,
@@ -623,7 +637,9 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerBeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

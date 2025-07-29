@@ -7,7 +7,9 @@ pub struct HEU_GeneratedOutput {
         crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
     >,
     pub _childOutputs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutputData>,
+        >,
     >,
     pub isInstancer: bool,
 }
@@ -663,13 +665,13 @@ for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -677,13 +679,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     >,
 > for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_GeneratedOutput>,
     > {
         unsafe { std::mem::transmute(self) }

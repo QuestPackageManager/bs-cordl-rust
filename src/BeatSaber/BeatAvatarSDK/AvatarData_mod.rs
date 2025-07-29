@@ -1181,13 +1181,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::BeatSaber::BeatAvatarSDK::Avat
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
 > for crate::BeatSaber::BeatAvatarSDK::AvatarData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1195,13 +1195,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     >,
 > for crate::BeatSaber::BeatAvatarSDK::AvatarData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
     > {
         unsafe { std::mem::transmute(self) }

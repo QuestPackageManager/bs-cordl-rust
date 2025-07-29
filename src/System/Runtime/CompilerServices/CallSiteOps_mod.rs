@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::CallSiteOp
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteOps")]
 impl crate::System::Runtime::CompilerServices::CallSiteOps {
     pub fn AddRule<T>(
-        site: quest_hook::libil2cpp::Gc<T>,
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
         rule: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -52,7 +54,12 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                            >,
+                            T,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AddRule")
@@ -73,7 +80,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         binder: quest_hook::libil2cpp::Gc<
             crate::System::Runtime::CompilerServices::CallSiteBinder,
         >,
-        site: quest_hook::libil2cpp::Gc<T>,
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -93,7 +102,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Runtime::CompilerServices::CallSiteBinder,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
                                     quest_hook::libil2cpp::Gc<
@@ -148,8 +159,14 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         Ok(__cordl_ret.into())
     }
     pub fn CreateMatchmaker<T>(
-        site: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -159,8 +176,12 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
-                        quest_hook::libil2cpp::Gc<T>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                        >,
                         1usize,
                     >("CreateMatchmaker")
                     .unwrap_or_else(|e| {
@@ -171,13 +192,15 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (site))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (site))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetCachedRules<T>(
-        cache: quest_hook::libil2cpp::Gc<T>,
+        cache: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -190,7 +213,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,
                     >("GetCachedRules")
@@ -237,8 +262,14 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         Ok(__cordl_ret.into())
     }
     pub fn GetRuleCache<T>(
-        site: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -248,8 +279,12 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
-                        quest_hook::libil2cpp::Gc<T>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                        >,
                         1usize,
                     >("GetRuleCache")
                     .unwrap_or_else(|e| {
@@ -260,13 +295,15 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (site))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (site))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetRules<T>(
-        site: quest_hook::libil2cpp::Gc<T>,
+        site: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -279,7 +316,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,
                     >("GetRules")
@@ -297,7 +336,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         Ok(__cordl_ret.into())
     }
     pub fn MoveRule<T>(
-        cache: quest_hook::libil2cpp::Gc<T>,
+        cache: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+        >,
         rule: T,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -310,7 +351,13 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::RuleCache_1<T>,
+                            >,
+                            T,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("MoveRule")
@@ -357,7 +404,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
         Ok(__cordl_ret.into())
     }
     pub fn UpdateRules<T>(
-        _cordl_this: quest_hook::libil2cpp::Gc<T>,
+        _cordl_this: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::CallSite_1<T>,
+        >,
         matched: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -369,7 +418,12 @@ impl crate::System::Runtime::CompilerServices::CallSiteOps {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::CallSite_1<T>,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("UpdateRules")

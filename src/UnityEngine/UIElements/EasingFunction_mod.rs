@@ -304,20 +304,22 @@ impl crate::UnityEngine::UIElements::EasingFunction {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
 for crate::UnityEngine::UIElements::EasingFunction {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+EasingFunction")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::EasingFunction>>
 for crate::UnityEngine::UIElements::EasingFunction {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::EasingFunction,
+    > {
         todo!()
     }
 }

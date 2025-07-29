@@ -435,13 +435,13 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     >,
 > for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     > {
         todo!()
@@ -449,13 +449,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     >,
 > for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ManipulatorActivationFilter,
     > {
         todo!()

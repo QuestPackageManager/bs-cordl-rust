@@ -17,7 +17,9 @@ pub struct BombCutSoundEffectManager {
         crate::GlobalNamespace::BombCutSoundEffect_Pool,
     >,
     pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BombCutSoundEffectManager")]

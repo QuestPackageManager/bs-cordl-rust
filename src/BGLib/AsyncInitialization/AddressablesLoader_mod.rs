@@ -44,7 +44,9 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
             crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
         >,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TReturn>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TReturn>>,
+    >
     where
         TInstantiate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -62,7 +64,9 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         ),
-                        quest_hook::libil2cpp::Gc<TReturn>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TReturn>,
+                        >,
                         2usize,
                     >("InstantiateFromAddressableToContainer")
                     .unwrap_or_else(|e| {
@@ -73,9 +77,9 @@ impl crate::BGLib::AsyncInitialization::AddressablesLoader {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TReturn> = unsafe {
-            cordl_method_info.invoke_unchecked((), (prefab, container))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TReturn>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (prefab, container))? };
         Ok(__cordl_ret.into())
     }
 }

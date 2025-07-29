@@ -5,13 +5,17 @@ pub struct AddToCurrentGameObjectComponentProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    pub _extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub _extraArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
     pub _concreteIdentifier: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _instantiateCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+AddToCurrentGameObjectComponentProvider")]
@@ -52,12 +56,16 @@ impl crate::Zenject::AddToCurrentGameObjectComponentProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -67,13 +75,19 @@ impl crate::Zenject::AddToCurrentGameObjectComponentProvider {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -123,13 +137,19 @@ impl crate::Zenject::AddToCurrentGameObjectComponentProvider {
     pub fn New(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -151,13 +171,19 @@ impl crate::Zenject::AddToCurrentGameObjectComponentProvider {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -168,14 +194,20 @@ impl crate::Zenject::AddToCurrentGameObjectComponentProvider {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

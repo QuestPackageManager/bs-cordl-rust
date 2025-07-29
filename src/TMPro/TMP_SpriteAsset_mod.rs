@@ -3,30 +3,46 @@
 #[derive(Debug)]
 pub struct TMP_SpriteAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
-    pub m_NameLookup: quest_hook::libil2cpp::Gc<i32, i32>,
-    pub m_GlyphIndexLookup: quest_hook::libil2cpp::Gc<u32, i32>,
+    pub m_NameLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
+    pub m_GlyphIndexLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<u32, i32>,
+    >,
     pub m_Version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
     pub spriteSheet: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     pub m_SpriteCharacterTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+        >,
     >,
     pub m_SpriteCharacterLookup: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+        >,
     >,
     pub m_SpriteGlyphTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+        >,
     >,
     pub m_SpriteGlyphLookup: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+        >,
     >,
     pub spriteInfoList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Sprite>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Sprite>,
+        >,
     >,
     pub fallbackSpriteAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+        >,
     >,
     pub m_IsSpriteAssetLookupTablesDirty: bool,
 }
@@ -228,9 +244,11 @@ impl crate::TMPro::TMP_SpriteAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SearchForSpriteByHashCodeInternal_Gc0(
+    pub fn SearchForSpriteByHashCodeInternal_List_1_0(
         spriteAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+            >,
         >,
         hashCode: i32,
         searchFallbacks: bool,
@@ -245,7 +263,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                >,
                             >,
                             i32,
                             bool,
@@ -349,9 +369,11 @@ impl crate::TMPro::TMP_SpriteAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SearchForSpriteByUnicodeInternal_Gc0(
+    pub fn SearchForSpriteByUnicodeInternal_List_1_0(
         spriteAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+            >,
         >,
         unicode: u32,
         includeFallbacks: bool,
@@ -366,7 +388,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
+                                >,
                             >,
                             u32,
                             bool,
@@ -606,8 +630,10 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -617,8 +643,10 @@ impl crate::TMPro::TMP_SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            u32,
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
                         >,
                         0usize,
                     >("get_spriteCharacterLookupTable")
@@ -631,8 +659,10 @@ impl crate::TMPro::TMP_SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -640,7 +670,9 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -650,7 +682,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
                         >,
                         0usize,
                     >("get_spriteCharacterTable")
@@ -663,7 +697,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -671,7 +707,9 @@ impl crate::TMPro::TMP_SpriteAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -681,7 +719,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            >,
                         >,
                         0usize,
                     >("get_spriteGlyphTable")
@@ -694,7 +734,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -754,8 +796,10 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn set_spriteCharacterLookupTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -764,8 +808,10 @@ impl crate::TMPro::TMP_SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            u32,
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -786,7 +832,9 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn set_spriteCharacterTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -795,7 +843,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteCharacter>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -816,7 +866,9 @@ impl crate::TMPro::TMP_SpriteAsset {
     pub fn set_spriteGlyphTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -825,7 +877,9 @@ impl crate::TMPro::TMP_SpriteAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteGlyph>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

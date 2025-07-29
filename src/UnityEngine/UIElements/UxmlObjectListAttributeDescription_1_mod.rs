@@ -4,7 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlObjectListAttributeDescription_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -48,7 +50,9 @@ for crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+UxmlObjectListAttributeDescription_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UxmlObjectListAttributeDescription_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>;
+    type Target = crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +72,9 @@ impl<
         &mut self,
         bag: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IUxmlAttributes>,
         cc: crate::UnityEngine::UIElements::CreationContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -84,7 +90,9 @@ impl<
                             >,
                             crate::UnityEngine::UIElements::CreationContext,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         2usize,
                     >("GetValueFromBag")
                     .unwrap_or_else(|e| {
@@ -95,9 +103,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bag, cc))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (bag, cc))? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

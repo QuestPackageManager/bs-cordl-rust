@@ -266,8 +266,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn add_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -277,8 +279,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                            crate::System::EventHandler_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1094,8 +1098,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn remove_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1105,8 +1111,10 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                            crate::System::EventHandler_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

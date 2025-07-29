@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorTween {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    __cordl_parent: crate::Tweening::Tween_1<crate::UnityEngine::Color>,
 }
 #[cfg(feature = "cordl_class_Tweening+ColorTween")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::ColorTween {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::ColorTween {
 }
 #[cfg(feature = "Tweening+ColorTween")]
 impl std::ops::Deref for crate::Tweening::ColorTween {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
+    type Target = crate::Tweening::Tween_1<crate::UnityEngine::Color>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,10 +67,12 @@ impl crate::Tweening::ColorTween {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Color_Color_Gc_f32_EaseType_f32_1(
+    pub fn New_Color_Color_Action_1_f32_EaseType_f32_1(
         fromValue: crate::UnityEngine::Color,
         toValue: crate::UnityEngine::Color,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        onUpdate: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -105,11 +107,13 @@ impl crate::Tweening::ColorTween {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Color_Color_Gc_f32_EaseType_f32_1(
+    pub fn _ctor_Color_Color_Action_1_f32_EaseType_f32_1(
         &mut self,
         fromValue: crate::UnityEngine::Color,
         toValue: crate::UnityEngine::Color,
-        onUpdate: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        onUpdate: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         delay: f32,
@@ -122,7 +126,9 @@ impl crate::Tweening::ColorTween {
                         (
                             crate::UnityEngine::Color,
                             crate::UnityEngine::Color,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_1<crate::UnityEngine::Color>,
+                            >,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             f32,

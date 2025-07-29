@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StyleDataRef_1<T: quest_hook::libil2cpp::Type> {
-    pub m_Ref: quest_hook::libil2cpp::Gc<T>,
+    pub m_Ref: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleDataRef_1")]
@@ -439,22 +441,24 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::StyleDataRe
 #[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleDataRef_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleDataRef_1<T>>>
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleDataRef_1<T>> {
+    ) -> &crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::StyleDataRef_1<T>,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleDataRef_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleDataRef_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleDataRef_1<T>>>
 for crate::UnityEngine::UIElements::StyleDataRef_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleDataRef_1<T>,
     > {
         todo!()
@@ -550,7 +554,13 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Copy(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn Copy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -559,7 +569,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("Copy")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T>,
+                        >,
+                        0usize,
+                    >("Copy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -568,9 +584,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StyleDataRef_1_RefCounted<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>

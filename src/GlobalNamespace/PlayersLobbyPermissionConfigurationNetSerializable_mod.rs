@@ -4,8 +4,10 @@
 pub struct PlayersLobbyPermissionConfigurationNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _playersPermission: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+            >,
         >,
     >,
 }
@@ -77,8 +79,10 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
     pub fn Init(
         &mut self,
         playersPermission: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -92,8 +96,10 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -245,8 +251,10 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                >,
             >,
         >,
     > {
@@ -257,8 +265,10 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                                >,
                             >,
                         >,
                         0usize,
@@ -272,8 +282,10 @@ impl crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable 
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

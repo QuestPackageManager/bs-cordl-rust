@@ -8,7 +8,9 @@ pub struct LightColorEventBox {
     pub b: i32,
     pub i: crate::BeatmapSaveDataCommon::EaseType,
     pub e: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatmapSaveDataVersion3+LightColorEventBox")]
@@ -57,7 +59,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
         brightnessDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         brightnessDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         lightColorBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -90,7 +96,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
         brightnessDistributionParamType: crate::BeatmapSaveDataCommon::DistributionParamType,
         brightnessDistributionEaseType: crate::BeatmapSaveDataCommon::EaseType,
         lightColorBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -109,8 +119,10 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
                             crate::BeatmapSaveDataCommon::DistributionParamType,
                             crate::BeatmapSaveDataCommon::EaseType,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                                    >,
                                 >,
                             >,
                         ),
@@ -242,7 +254,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -252,8 +268,10 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -267,7 +285,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBox {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorBaseData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorBaseData,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

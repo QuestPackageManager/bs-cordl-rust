@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WheelEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
     >,
     pub _delta_k__BackingField: crate::UnityEngine::Vector3,
@@ -28,7 +28,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Whee
 }
 #[cfg(feature = "UnityEngine+UIElements+WheelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::WheelEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::MouseEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::WheelEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -7,7 +7,9 @@ pub struct HEU_AttributesStore {
     pub _partID: i32,
     pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _attributeDatas: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+        >,
     >,
     pub _hasColorAttribute: bool,
     pub _localMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
@@ -426,7 +428,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -436,8 +440,10 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -451,7 +457,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -498,7 +506,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         geoID: i32,
         partID: i32,
         attributesList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+            >,
         >,
         ownerType: crate::HoudiniEngineUnity::HAPI_AttributeOwner,
         attributeCount: i32,
@@ -515,8 +525,10 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_AttributeData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_AttributeData,
+                                    >,
                                 >,
                             >,
                             crate::HoudiniEngineUnity::HAPI_AttributeOwner,
@@ -1585,7 +1597,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
         geoID: i32,
         partID: i32,
         attributeDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributeData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1600,8 +1614,10 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_AttributeData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_AttributeData,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1805,13 +1821,13 @@ for crate::HoudiniEngineUnity::HEU_AttributesStore {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1819,13 +1835,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AttributesStore")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     >,
 > for crate::HoudiniEngineUnity::HEU_AttributesStore {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_AttributesStore>,
     > {
         unsafe { std::mem::transmute(self) }

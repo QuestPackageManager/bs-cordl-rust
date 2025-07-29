@@ -4,7 +4,9 @@
 pub struct JSONArray {
     __cordl_parent: crate::OVRSimpleJSON::JSONNode,
     pub m_List: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+        >,
     >,
     pub _cordl_inline: bool,
 }
@@ -223,7 +225,9 @@ impl crate::OVRSimpleJSON::JSONArray {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -233,7 +237,9 @@ impl crate::OVRSimpleJSON::JSONArray {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+                            >,
                         >,
                         0usize,
                     >("get_Children")
@@ -246,7 +252,9 @@ impl crate::OVRSimpleJSON::JSONArray {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::OVRSimpleJSON::JSONNode>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

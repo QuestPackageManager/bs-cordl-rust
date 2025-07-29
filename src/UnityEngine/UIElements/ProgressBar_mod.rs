@@ -82,7 +82,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Progr
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProgressBar_UxmlFactory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ProgressBar>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits,
@@ -111,7 +111,7 @@ for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
 }
 #[cfg(feature = "UnityEngine+UIElements+ProgressBar+UxmlFactory")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ProgressBar_UxmlFactory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UxmlFactory_2<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ProgressBar>,
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::AbstractProgressBar_UxmlTraits,

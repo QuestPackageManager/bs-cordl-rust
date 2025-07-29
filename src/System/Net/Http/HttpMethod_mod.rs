@@ -294,13 +294,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::Http::HttpMethod 
 }
 #[cfg(feature = "System+Net+Http+HttpMethod")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
     >,
 > for crate::System::Net::Http::HttpMethod {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -308,13 +308,13 @@ impl AsRef<
 }
 #[cfg(feature = "System+Net+Http+HttpMethod")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
     >,
 > for crate::System::Net::Http::HttpMethod {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMethod>,
     > {
         unsafe { std::mem::transmute(self) }

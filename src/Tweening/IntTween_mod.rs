@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IntTween {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::Tweening::Tween_1<i32>,
     pub _roundingType: crate::Tweening::IntTween_RoundingType,
 }
 #[cfg(feature = "cordl_class_Tweening+IntTween")]
@@ -26,7 +26,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::IntTween {
 }
 #[cfg(feature = "Tweening+IntTween")]
 impl std::ops::Deref for crate::Tweening::IntTween {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::Tweening::Tween_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,10 +65,10 @@ impl crate::Tweening::IntTween {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_i32_Gc_f32_EaseType_IntTween_RoundingType_f32_1(
+    pub fn New_i32_i32_Action_1_f32_EaseType_IntTween_RoundingType_f32_1(
         fromValue: i32,
         toValue: i32,
-        onUpdate: quest_hook::libil2cpp::Gc<i32>,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         roundingType: crate::Tweening::IntTween_RoundingType,
@@ -104,11 +104,11 @@ impl crate::Tweening::IntTween {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i32_Gc_f32_EaseType_IntTween_RoundingType_f32_1(
+    pub fn _ctor_i32_i32_Action_1_f32_EaseType_IntTween_RoundingType_f32_1(
         &mut self,
         fromValue: i32,
         toValue: i32,
-        onUpdate: quest_hook::libil2cpp::Gc<i32>,
+        onUpdate: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
         duration: f32,
         easeType: crate::GlobalNamespace::EaseType,
         roundingType: crate::Tweening::IntTween_RoundingType,
@@ -122,7 +122,7 @@ impl crate::Tweening::IntTween {
                         (
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
                             f32,
                             crate::GlobalNamespace::EaseType,
                             crate::Tweening::IntTween_RoundingType,

@@ -108,8 +108,10 @@ pub struct NetworkPlayersTableView {
     >,
     pub _rowHeight: f32,
     pub _cellInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::NetworkPlayersTableView_CellInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::NetworkPlayersTableView_CellInfo,
+            >,
         >,
     >,
     pub _selectedCellIndex: i32,
@@ -161,7 +163,9 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
     pub fn AddPlayers(
         &mut self,
         players: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -172,8 +176,10 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INetworkPlayer,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::INetworkPlayer,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -328,10 +334,14 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
     pub fn SetParties(
         &mut self,
         partyPlayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
         otherPlayers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
         myPartyTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         otherPlayersTitle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -343,13 +353,17 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INetworkPlayer,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::INetworkPlayer,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INetworkPlayer,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::INetworkPlayer,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

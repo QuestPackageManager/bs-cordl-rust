@@ -835,6 +835,18 @@ impl AsMut<crate::System::IComparable> for crate::System::Boolean {
     }
 }
 #[cfg(feature = "System+Boolean")]
+impl AsRef<crate::System::IComparable_1<bool>> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IComparable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
+impl AsMut<crate::System::IComparable_1<bool>> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<bool> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Boolean")]
 impl AsRef<crate::System::IConvertible> for crate::System::Boolean {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -847,26 +859,14 @@ impl AsMut<crate::System::IConvertible> for crate::System::Boolean {
     }
 }
 #[cfg(feature = "System+Boolean")]
-impl AsRef<quest_hook::libil2cpp::Gc<bool>> for crate::System::Boolean {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<bool> {
+impl AsRef<crate::System::IEquatable_1<bool>> for crate::System::Boolean {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<bool> {
         todo!()
     }
 }
 #[cfg(feature = "System+Boolean")]
-impl AsMut<quest_hook::libil2cpp::Gc<bool>> for crate::System::Boolean {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<bool> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Boolean")]
-impl AsRef<quest_hook::libil2cpp::Gc<bool>> for crate::System::Boolean {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<bool> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Boolean")]
-impl AsMut<quest_hook::libil2cpp::Gc<bool>> for crate::System::Boolean {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<bool> {
+impl AsMut<crate::System::IEquatable_1<bool>> for crate::System::Boolean {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<bool> {
         todo!()
     }
 }

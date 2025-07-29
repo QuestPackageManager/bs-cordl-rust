@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatSO {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::GlobalNamespace::ObservableVariableSO_1<f32>,
 }
 #[cfg(feature = "cordl_class_FloatSO")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatSO {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatSO {
 }
 #[cfg(feature = "FloatSO")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatSO {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::GlobalNamespace::ObservableVariableSO_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -35,15 +35,23 @@ pub struct SpawnRotationChevronManager {
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,
     pub _directionToDataDictionary: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData,
+            >,
         >,
     >,
-    pub _activeDirections: quest_hook::libil2cpp::Gc<i32>,
-    pub _reusableDirectionsList: quest_hook::libil2cpp::Gc<i32>,
+    pub _activeDirections: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _reusableDirectionsList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _queuedDirectionData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::SpawnRotationChevronManager_QueuedDirectionData,
+        >,
     >,
     pub _currentSpawnRotation: f32,
 }

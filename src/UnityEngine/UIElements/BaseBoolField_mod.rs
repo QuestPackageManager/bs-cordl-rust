@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseBoolField {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<bool>,
     pub m_Label: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Label>,
     pub m_CheckMark: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::BaseBoolField {
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseBoolField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::BaseBoolField {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

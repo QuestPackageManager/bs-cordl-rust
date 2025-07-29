@@ -4,9 +4,13 @@
 pub struct ButtonBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Events::UnityAction>,
+                >,
+            >,
         >,
     >,
 }
@@ -77,9 +81,13 @@ impl crate::HMUI::ButtonBinder {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -89,9 +97,13 @@ impl crate::HMUI::ButtonBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -173,11 +185,15 @@ impl crate::HMUI::ButtonBinder {
             .invoke_void(".ctor", (button, action))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_List_1_2(
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -238,12 +254,16 @@ impl crate::HMUI::ButtonBinder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_List_1_2(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                quest_hook::libil2cpp::Gc<crate::System::Action>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -253,9 +273,13 @@ impl crate::HMUI::ButtonBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

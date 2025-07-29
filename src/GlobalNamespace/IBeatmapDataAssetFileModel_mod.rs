@@ -45,7 +45,11 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GetAssetBundleFileResult>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -60,7 +64,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::GetAssetBundleFileResult,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::GetAssetBundleFileResult,
+                            >,
                         >,
                         3usize,
                     >("GetAssetBundleFileForBeatmapLevelAsync")
@@ -73,7 +79,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GetAssetBundleFileResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::GetAssetBundleFileResult,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
@@ -88,7 +96,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -101,7 +111,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                             crate::GlobalNamespace::BeatmapLevelDataVersion,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         3usize,
                     >("TryDeleteAssetBundleFileForBeatmapLevelAsync")
                     .unwrap_or_else(|e| {
@@ -112,7 +124,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -124,7 +138,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
     pub fn add_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -133,7 +147,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -159,7 +175,7 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
     pub fn remove_levelDataAssetDownloadUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+            crate::System::Action_1<crate::GlobalNamespace::LevelDataAssetDownloadUpdate>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -168,7 +184,9 @@ impl crate::GlobalNamespace::IBeatmapDataAssetFileModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

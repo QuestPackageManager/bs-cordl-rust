@@ -85,7 +85,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
+    >
     where
         TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -105,7 +107,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                             crate::GlobalNamespace::GraphAPIClient_PostOptions,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<TResponse>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResponse>,
+                        >,
                         4usize,
                     >("PostLoggedOut")
                     .unwrap_or_else(|e| {
@@ -116,7 +120,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResponse>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (path, request, postOptions, cancellationToken))?
         };
@@ -132,7 +138,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
+    >
     where
         TRequest: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -155,7 +163,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                             crate::GlobalNamespace::GraphAPIClient_PostOptions,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<TResponse>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResponse>,
+                        >,
                         5usize,
                     >("Post")
                     .unwrap_or_else(|e| {
@@ -166,7 +176,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResponse>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -181,7 +193,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
         accessToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         httpContent: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResponse>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResponse>>,
+    >
     where
         TResponse: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -201,7 +215,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                             >,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<TResponse>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResponse>,
+                        >,
                         4usize,
                     >("Post")
                     .unwrap_or_else(|e| {
@@ -212,7 +228,9 @@ impl crate::GlobalNamespace::GraphAPIClient {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResponse> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResponse>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,

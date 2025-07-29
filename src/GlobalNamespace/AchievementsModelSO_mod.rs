@@ -7,7 +7,9 @@ pub struct AchievementsModelSO {
         crate::GlobalNamespace::IPlatformAchievementsHandler,
     >,
     pub _unlockedAchievementIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _initialized: bool,
 }

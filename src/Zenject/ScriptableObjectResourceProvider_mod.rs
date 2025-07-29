@@ -6,14 +6,18 @@ pub struct ScriptableObjectResourceProvider {
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub _extraArguments: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
     pub _createNew: bool,
     pub _concreteIdentifier: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _instantiateCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+ScriptableObjectResourceProvider")]
@@ -54,12 +58,16 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -69,13 +77,19 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -126,14 +140,20 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         createNew: bool,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -158,14 +178,20 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         resourceType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        extraArguments: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArguments: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
         createNew: bool,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         >,
         instantiateCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -179,15 +205,21 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             bool,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

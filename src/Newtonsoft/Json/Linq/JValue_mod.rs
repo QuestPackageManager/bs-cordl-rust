@@ -1961,6 +1961,34 @@ impl AsMut<crate::System::IComparable> for crate::Newtonsoft::Json::Linq::JValue
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<
+    crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    >,
+> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<
+    crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    >,
+> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsRef<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
     fn as_ref(&self) -> &crate::System::IConvertible {
         unsafe { std::mem::transmute(self) }
@@ -1969,6 +1997,34 @@ impl AsRef<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValu
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
 impl AsMut<crate::System::IConvertible> for crate::Newtonsoft::Json::Linq::JValue {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    >,
+> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    >,
+> for crate::Newtonsoft::Json::Linq::JValue {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1984,67 +2040,11 @@ impl AsMut<crate::System::IFormattable> for crate::Newtonsoft::Json::Linq::JValu
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    >,
-> for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    >,
-> for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    >,
-> for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JValue")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    >,
-> for crate::Newtonsoft::Json::Linq::JValue {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct JValue_JValueDynamicProxy {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >,
 }
@@ -2070,7 +2070,7 @@ for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JValue+JValueDynamicProxy")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JValue_JValueDynamicProxy {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Newtonsoft::Json::Utilities::DynamicProxy_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JValue>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

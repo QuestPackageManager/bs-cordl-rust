@@ -9,7 +9,9 @@ pub struct DefaultDragAndDropClient {
     >,
     pub m_VisualMode: crate::UnityEngine::UIElements::DragVisualMode,
     pub m_UnityObjectReferences: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        crate::System::Collections::Generic::IEnumerable_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+DefaultDragAndDropClient")]

@@ -42,7 +42,11 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
     pub fn GetAuthenticationToken(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AuthenticationToken>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::AuthenticationToken,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -51,7 +55,9 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::AuthenticationToken,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::AuthenticationToken,
+                            >,
                         >,
                         0usize,
                     >("GetAuthenticationToken")
@@ -64,7 +70,9 @@ impl crate::GlobalNamespace::IAuthenticationTokenProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AuthenticationToken,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::AuthenticationToken,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

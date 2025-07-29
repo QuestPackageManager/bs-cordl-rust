@@ -194,7 +194,9 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
         flags: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -207,8 +209,10 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
                             crate::System::Reflection::BindingFlags,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::FieldInfo,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::FieldInfo,
+                                >,
                             >,
                         >,
                         2usize,
@@ -222,7 +226,9 @@ impl crate::Zenject::Internal::ReflectionInfoTypeInfoConverter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (t, flags))? };
         Ok(__cordl_ret.into())
     }

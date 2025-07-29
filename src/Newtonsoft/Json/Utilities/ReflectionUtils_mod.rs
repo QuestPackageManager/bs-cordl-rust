@@ -368,7 +368,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     }
     pub fn GetChildPrivateFields(
         initialFields: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            >,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
@@ -380,8 +382,10 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::MemberInfo,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Reflection::MemberInfo,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -406,7 +410,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
     }
     pub fn GetChildPrivateProperties(
         initialProperties: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            >,
         >,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         bindingAttr: crate::System::Reflection::BindingFlags,
@@ -418,8 +424,10 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::PropertyInfo,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Reflection::PropertyInfo,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -597,7 +605,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -610,8 +620,10 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                             crate::System::Reflection::BindingFlags,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::FieldInfo,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::FieldInfo,
+                                >,
                             >,
                         >,
                         2usize,
@@ -625,7 +637,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::FieldInfo>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (targetType, bindingAttr))?
         };
@@ -636,7 +650,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -649,8 +665,10 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                             crate::System::Reflection::BindingFlags,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::MemberInfo,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::MemberInfo,
+                                >,
                             >,
                         >,
                         2usize,
@@ -664,7 +682,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (_cordl_type, bindingAttr))?
         };
@@ -830,7 +850,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -843,8 +865,10 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                             crate::System::Reflection::BindingFlags,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::PropertyInfo,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::PropertyInfo,
+                                >,
                             >,
                         >,
                         2usize,
@@ -858,7 +882,9 @@ impl crate::Newtonsoft::Json::Utilities::ReflectionUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (targetType, bindingAttr))?
         };

@@ -7,7 +7,9 @@ pub struct SpecialEventsForKeyword {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _specialEvents: quest_hook::libil2cpp::Gc<
-        crate::BeatmapSaveDataCommon::BeatmapEventType,
+        crate::System::Collections::Generic::List_1<
+            crate::BeatmapSaveDataCommon::BeatmapEventType,
+        >,
     >,
 }
 #[cfg(
@@ -52,7 +54,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     pub fn New(
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         specialEvents: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
+            crate::System::Collections::Generic::List_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,7 +69,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
         &mut self,
         keyword: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         specialEvents: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
+            crate::System::Collections::Generic::List_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -78,7 +84,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataCommon::BeatmapEventType,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::BeatmapSaveDataCommon::BeatmapEventType,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -127,7 +135,11 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
     pub fn get_specialEvents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::BeatmapEventType>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -136,7 +148,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::BeatmapSaveDataCommon::BeatmapEventType,
+                            crate::System::Collections::Generic::List_1<
+                                crate::BeatmapSaveDataCommon::BeatmapEventType,
+                            >,
                         >,
                         0usize,
                     >("get_specialEvents")
@@ -149,7 +163,9 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataCommon::BeatmapEventType,
+            crate::System::Collections::Generic::List_1<
+                crate::BeatmapSaveDataCommon::BeatmapEventType,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

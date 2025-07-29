@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    __cordl_parent: crate::Zenject::StaticMemoryPool_1<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Zenject+ListPool_1")]
@@ -40,7 +42,9 @@ for crate::Zenject::ListPool_1<T> {
 }
 #[cfg(feature = "Zenject+ListPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::Zenject::ListPool_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>;
+    type Target = crate::Zenject::StaticMemoryPool_1<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +71,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
     }
     pub fn OnDespawned(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -78,7 +82,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnDespawned")
@@ -118,7 +124,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Instance() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn get_Instance() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ListPool_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -129,7 +137,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::ListPool_1<T>>,
                         0usize,
                     >("get_Instance")
                     .unwrap_or_else(|e| {
@@ -140,7 +148,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ListPool_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ListPool_1<T>> = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())

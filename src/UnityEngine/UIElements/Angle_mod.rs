@@ -364,20 +364,20 @@ impl crate::UnityEngine::UIElements::Angle {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
 for crate::UnityEngine::UIElements::Angle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Angle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle>>
 for crate::UnityEngine::UIElements::Angle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Angle> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Angle> {
         todo!()
     }
 }

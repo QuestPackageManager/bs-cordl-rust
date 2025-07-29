@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OverridableGradientDirection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GradientDirection>,
+    __cordl_parent: crate::StyledUITemplates::OverridableData_1<
+        crate::GlobalNamespace::GradientDirection,
+    >,
 }
 #[cfg(feature = "cordl_class_OverridableGradientDirection")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +28,9 @@ for crate::GlobalNamespace::OverridableGradientDirection {
 }
 #[cfg(feature = "OverridableGradientDirection")]
 impl std::ops::Deref for crate::GlobalNamespace::OverridableGradientDirection {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GradientDirection>;
+    type Target = crate::StyledUITemplates::OverridableData_1<
+        crate::GlobalNamespace::GradientDirection,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

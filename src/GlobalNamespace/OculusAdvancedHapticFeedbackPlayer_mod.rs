@@ -10,12 +10,16 @@ pub struct OculusAdvancedHapticFeedbackPlayer {
         crate::GlobalNamespace::OculusVRHelper,
     >,
     pub _hapticPlayerStatesDictionary: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<crate::Libraries::HM::HMLib::VR::HapticPresetSO>,
-            crate::UnityEngine::XR::XRNode,
-        >,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::Libraries::HM::HMLib::VR::HapticPresetSO,
+                >,
+                crate::UnityEngine::XR::XRNode,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer_HapticPlayerState,
+            >,
         >,
     >,
     pub _hasAtLeastOneLoopingClipPlaying: bool,

@@ -8,15 +8,21 @@ pub struct RenderChain {
     >,
     pub m_DirtyTracker: crate::UnityEngine::UIElements::UIR::RenderChain_DepthOrderedDirtyTracking,
     pub m_CommandPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+        crate::UnityEngine::UIElements::UIR::LinkedPool_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::UIR::RenderChainCommand,
+            >,
         >,
     >,
     pub m_TexturePool: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::TextureEntry,
+        crate::UnityEngine::UIElements::UIR::BasicNodePool_1<
+            crate::UnityEngine::UIElements::UIR::TextureEntry,
+        >,
     >,
     pub m_RenderNodesData: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::UIR::RenderChain_RenderNodeData,
+        >,
     >,
     pub m_DefaultShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_DefaultWorldSpaceShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -49,9 +55,13 @@ pub struct RenderChain {
         crate::UnityEngine::UIElements::UIR::VectorImageManager,
     >,
     pub _vertsPool_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Vertex,
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
     >,
-    pub _indicesPool_k__BackingField: quest_hook::libil2cpp::Gc<u16>,
+    pub _indicesPool_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
     pub _jobManager_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::JobManager,
     >,
@@ -1223,14 +1233,20 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn get_indicesPool(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u16>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<u16>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+                        >,
                         0usize,
                     >("get_indicesPool")
                     .unwrap_or_else(|e| {
@@ -1241,9 +1257,9 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u16> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_jobManager(
@@ -1400,7 +1416,11 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     pub fn get_vertsPool(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+                crate::UnityEngine::UIElements::Vertex,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1409,7 +1429,9 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Vertex,
+                            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+                                crate::UnityEngine::UIElements::Vertex,
+                            >,
                         >,
                         0usize,
                     >("get_vertsPool")
@@ -1422,7 +1444,9 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Vertex,
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+                crate::UnityEngine::UIElements::Vertex,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1616,14 +1640,18 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn set_indicesPool(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<u16>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<u16>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_indicesPool")
@@ -1790,7 +1818,11 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
     }
     pub fn set_vertsPool(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+                crate::UnityEngine::UIElements::Vertex,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1798,7 +1830,9 @@ impl crate::UnityEngine::UIElements::UIR::RenderChain {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Vertex,
+                            crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+                                crate::UnityEngine::UIElements::Vertex,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1848,10 +1882,14 @@ for crate::UnityEngine::UIElements::UIR::RenderChain {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RenderChain_DepthOrderedDirtyTracking {
     pub heads: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub tails: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub minDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub maxDepths: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,

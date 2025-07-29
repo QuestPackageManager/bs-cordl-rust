@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightColorEventBoxGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBox>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup {
 }
 #[cfg(feature = "BeatmapSaveDataVersion3+LightColorEventBoxGroup")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BeatmapSaveDataVersion3::EventBoxGroup_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBox>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -80,7 +80,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBox>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorEventBox,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -94,7 +98,11 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup {
         beat: f32,
         groupId: i32,
         eventBoxes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::LightColorEventBox>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::LightColorEventBox,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -106,8 +114,10 @@ impl crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup {
                             f32,
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion3::LightColorEventBox,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion3::LightColorEventBox,
+                                    >,
                                 >,
                             >,
                         ),

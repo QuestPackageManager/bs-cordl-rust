@@ -4,7 +4,9 @@
 pub struct RegexCharClass {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rangelist: quest_hook::libil2cpp::Gc<
-        crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+        crate::System::Collections::Generic::List_1<
+            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+        >,
     >,
     pub _categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _canonical: bool,
@@ -857,10 +859,12 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New__cordl_bool_Gc_StringBuilder_RegexCharClass1(
+    pub fn New__cordl_bool_List_1_StringBuilder_RegexCharClass1(
         negate: bool,
         ranges: quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+            crate::System::Collections::Generic::List_1<
+                crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+            >,
         >,
         categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         subtraction: quest_hook::libil2cpp::Gc<
@@ -1070,11 +1074,13 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor__cordl_bool_Gc_StringBuilder_RegexCharClass1(
+    pub fn _ctor__cordl_bool_List_1_StringBuilder_RegexCharClass1(
         &mut self,
         negate: bool,
         ranges: quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+            crate::System::Collections::Generic::List_1<
+                crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+            >,
         >,
         categories: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         subtraction: quest_hook::libil2cpp::Gc<
@@ -1089,7 +1095,9 @@ impl crate::System::Text::RegularExpressions::RegexCharClass {
                         (
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Text::StringBuilder,
@@ -1571,13 +1579,13 @@ for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer 
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     >,
 > for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IComparer_1<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1585,13 +1593,13 @@ impl AsRef<
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexCharClass+SingleRangeComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IComparer_1<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     >,
 > for crate::System::Text::RegularExpressions::RegexCharClass_SingleRangeComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
         crate::System::Text::RegularExpressions::RegexCharClass_SingleRange,
     > {
         unsafe { std::mem::transmute(self) }

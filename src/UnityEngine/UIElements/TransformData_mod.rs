@@ -259,38 +259,50 @@ impl crate::UnityEngine::UIElements::TransformData {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData>>
 for crate::UnityEngine::UIElements::TransformData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TransformData>>
 for crate::UnityEngine::UIElements::TransformData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData>>
-for crate::UnityEngine::UIElements::TransformData {
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    >,
+> for crate::UnityEngine::UIElements::TransformData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData> {
+    ) -> &crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TransformData")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData>>
-for crate::UnityEngine::UIElements::TransformData {
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    >,
+> for crate::UnityEngine::UIElements::TransformData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformData> {
+    ) -> &mut crate::UnityEngine::UIElements::IStyleDataGroup_1<
+        crate::UnityEngine::UIElements::TransformData,
+    > {
         todo!()
     }
 }

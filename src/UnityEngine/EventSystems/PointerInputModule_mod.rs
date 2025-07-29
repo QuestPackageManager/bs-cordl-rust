@@ -4,8 +4,10 @@
 pub struct PointerInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::BaseInputModule,
     pub m_PointerData: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::PointerEventData>,
+        >,
     >,
     pub m_MouseState: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,
@@ -895,8 +897,10 @@ for crate::UnityEngine::EventSystems::PointerInputModule_MouseButtonEventData {
 pub struct PointerInputModule_MouseState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TrackedButtons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::PointerInputModule_ButtonState,
+            >,
         >,
     >,
 }

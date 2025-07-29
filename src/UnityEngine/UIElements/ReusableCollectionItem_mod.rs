@@ -7,19 +7,33 @@ pub struct ReusableCollectionItem {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub _animator_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Experimental::StyleValues,
+        crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+            crate::UnityEngine::UIElements::Experimental::StyleValues,
+        >,
     >,
     pub _index_k__BackingField: i32,
     pub _id_k__BackingField: i32,
     pub _isDragGhost_k__BackingField: bool,
     pub onGeometryChanged: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            >,
+        >,
     >,
     pub m_GeometryChangedEventCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
+        crate::UnityEngine::UIElements::EventCallback_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::GeometryChangedEvent,
+            >,
+        >,
     >,
     pub onDestroy: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ReusableCollectionItem")]
@@ -273,8 +287,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
     pub fn add_onDestroy(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -284,8 +300,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -307,8 +325,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
     pub fn add_onGeometryChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -318,8 +338,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -342,7 +364,9 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -352,7 +376,9 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                                crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            >,
                         >,
                         0usize,
                     >("get_animator")
@@ -365,7 +391,9 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -481,8 +509,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
     pub fn remove_onDestroy(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -492,8 +522,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -515,8 +547,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
     pub fn remove_onGeometryChanged(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -526,8 +560,10 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -549,7 +585,9 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
     pub fn set_animator(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -558,7 +596,9 @@ impl crate::UnityEngine::UIElements::ReusableCollectionItem {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                                crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

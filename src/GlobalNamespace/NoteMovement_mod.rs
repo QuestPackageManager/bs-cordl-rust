@@ -18,7 +18,9 @@ pub struct NoteMovement {
     pub noteDidPassMissedMarkerEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub noteDidPassHalfJumpEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub noteDidPassJumpThreeQuartersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+        >,
     >,
     pub noteDidMoveInJumpPhaseEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _position: crate::UnityEngine::Vector3,
@@ -445,7 +447,9 @@ impl crate::GlobalNamespace::NoteMovement {
     pub fn add_noteDidPassJumpThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -454,8 +458,10 @@ impl crate::GlobalNamespace::NoteMovement {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteMovement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteMovement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -892,7 +898,9 @@ impl crate::GlobalNamespace::NoteMovement {
     pub fn remove_noteDidPassJumpThreeQuartersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMovement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -901,8 +909,10 @@ impl crate::GlobalNamespace::NoteMovement {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteMovement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteMovement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

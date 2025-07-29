@@ -182,9 +182,11 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
         > = unsafe { cordl_method_info.invoke_unchecked((), (go))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_Gc1<T>(
+    pub fn GetComponents_IEnumerable_1_1<T>(
         transforms: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -199,7 +201,9 @@ impl crate::UnityEngine::ProBuilder::InternalUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,

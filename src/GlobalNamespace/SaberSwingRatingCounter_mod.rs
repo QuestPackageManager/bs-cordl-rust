@@ -16,13 +16,17 @@ pub struct SaberSwingRatingCounter {
     pub _rateBeforeCut: bool,
     pub _rateAfterCut: bool,
     pub _didChangeReceivers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ISaberSwingRatingCounterDidChangeReceiver,
+            >,
         >,
     >,
     pub _didFinishReceivers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ISaberSwingRatingCounterDidFinishReceiver,
+            >,
         >,
     >,
     pub _notePlaneCenter: crate::UnityEngine::Vector3,

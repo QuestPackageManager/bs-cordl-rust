@@ -159,7 +159,9 @@ impl<
         &mut self,
         i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -179,7 +181,13 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerSyncState_3<
+                                TStateTable,
+                                TType,
+                                TState,
+                            >,
+                        >,
                         1usize,
                     >("GetSyncState")
                     .unwrap_or_else(|e| {
@@ -190,16 +198,18 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetSyncStateForPlayer(
         &mut self,
         player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -221,7 +231,13 @@ impl<
                         (quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::IConnectedPlayer,
                         >),
-                        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerSyncState_3<
+                                TStateTable,
+                                TType,
+                                TState,
+                            >,
+                        >,
                         1usize,
                     >("GetSyncStateForPlayer")
                     .unwrap_or_else(|e| {
@@ -232,9 +248,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (player))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (player))? };
         Ok(__cordl_ret.into())
     }
     pub fn from_object_mut(
@@ -274,7 +290,13 @@ impl<
     pub fn get_localState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -294,7 +316,13 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TStateTable, TType, TState>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                                TStateTable,
+                                TType,
+                                TState,
+                            >,
+                        >,
                         0usize,
                     >("get_localState")
                     .unwrap_or_else(|e| {
@@ -305,9 +333,13 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TStateTable, TType, TState> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::LocalMultiplayerSyncState_3<
+                TStateTable,
+                TType,
+                TState,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_syncTime(&mut self) -> quest_hook::libil2cpp::Result<i64>

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClampProcessor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<f32>,
     pub min: f32,
     pub max: f32,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::InputSystem::Processors::ClampProcessor {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Processors+ClampProcessor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Processors::ClampProcessor {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

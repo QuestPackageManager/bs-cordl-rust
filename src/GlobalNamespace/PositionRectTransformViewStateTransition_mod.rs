@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PositionRectTransformViewStateTransition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
@@ -33,7 +33,7 @@ for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
 #[cfg(feature = "PositionRectTransformViewStateTransition")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PositionRectTransformViewStateTransition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

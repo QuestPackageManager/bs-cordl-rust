@@ -4,11 +4,17 @@
 pub struct NativePagedList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub k_PoolCapacity: i32,
-    pub m_Pages: quest_hook::libil2cpp::Gc<crate::Unity::Collections::NativeArray_1<T>>,
+    pub m_Pages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeArray_1<T>,
+        >,
+    >,
     pub m_CurrentPage: crate::Unity::Collections::NativeArray_1<T>,
     pub m_CurrentPageCount: i32,
     pub m_Enumerator: quest_hook::libil2cpp::Gc<
-        crate::Unity::Collections::NativeSlice_1<T>,
+        crate::System::Collections::Generic::List_1<
+            crate::Unity::Collections::NativeSlice_1<T>,
+        >,
     >,
     pub _disposed_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -156,7 +162,11 @@ impl<
     pub fn GetPages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Unity::Collections::NativeSlice_1<T>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::Unity::Collections::NativeSlice_1<T>,
+            >,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -169,7 +179,9 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::Unity::Collections::NativeSlice_1<T>,
+                            crate::System::Collections::Generic::List_1<
+                                crate::Unity::Collections::NativeSlice_1<T>,
+                            >,
                         >,
                         0usize,
                     >("GetPages")
@@ -182,7 +194,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Unity::Collections::NativeSlice_1<T>,
+            crate::System::Collections::Generic::List_1<
+                crate::Unity::Collections::NativeSlice_1<T>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

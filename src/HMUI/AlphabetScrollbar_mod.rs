@@ -14,10 +14,14 @@ pub struct AlphabetScrollbar {
     >,
     pub _highlightImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
     pub _characterScrollData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
+        >,
     >,
     pub _texts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
     pub _highlightedCharacterIndex: i32,
     pub _pointerIsDown: bool,
@@ -348,7 +352,11 @@ impl crate::HMUI::AlphabetScrollbar {
     pub fn SetData(
         &mut self,
         characterScrollData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AlphabetScrollInfo_Data>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -357,8 +365,10 @@ impl crate::HMUI::AlphabetScrollbar {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::AlphabetScrollInfo_Data,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

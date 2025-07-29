@@ -383,11 +383,11 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::OSPlatform>,
+    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
 > for crate::System::Runtime::InteropServices::OSPlatform {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::System::Runtime::InteropServices::OSPlatform,
     > {
         todo!()
@@ -395,11 +395,11 @@ impl AsRef<
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::System::Runtime::InteropServices::OSPlatform>,
+    crate::System::IEquatable_1<crate::System::Runtime::InteropServices::OSPlatform>,
 > for crate::System::Runtime::InteropServices::OSPlatform {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::System::Runtime::InteropServices::OSPlatform,
     > {
         todo!()

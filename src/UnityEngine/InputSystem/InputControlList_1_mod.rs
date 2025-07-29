@@ -159,7 +159,9 @@ impl<
     }
     pub fn AddRange(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<TControl>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TControl>,
+        >,
         count: i32,
         destinationIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -172,7 +174,13 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TControl>, i32, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TControl>,
+                            >,
+                            i32,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("AddRange")
@@ -428,7 +436,11 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TControl>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TControl>,
+        >,
+    >
     where
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -439,7 +451,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TControl>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<TControl>,
+                        >,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -450,9 +464,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TControl> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TControl>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf_TControl0(
@@ -836,9 +850,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Allocator1(
+    pub fn _ctor_IEnumerable_1_Allocator1(
         &mut self,
-        values: quest_hook::libil2cpp::Gc<TControl>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TControl>,
+        >,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -851,7 +867,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<TControl>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TControl>,
+                            >,
                             crate::Unity::Collections::Allocator,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -1053,6 +1071,106 @@ impl<
 #[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
 impl<
     TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IList_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IList_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IList_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IList_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyList_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyList_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyList_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1079,76 +1197,6 @@ for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
 impl<TControl: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
         todo!()
     }
 }
@@ -1433,6 +1481,26 @@ impl<
 #[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
 impl<
     TControl: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TControl>>
+for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TControl> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
+impl<
+    TControl: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1459,20 +1527,6 @@ for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
 impl<TControl: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
-impl<TControl: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TControl> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+InputControlList_1+Enumerator")]
-impl<TControl: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TControl>>
-for crate::UnityEngine::InputSystem::InputControlList_1_Enumerator<TControl> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TControl> {
         todo!()
     }
 }

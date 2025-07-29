@@ -395,34 +395,34 @@ impl crate::UnityEngine::UIElements::StyleFloat {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFloat>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat>>
 for crate::UnityEngine::UIElements::StyleFloat {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFloat> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFloat>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat>>
 for crate::UnityEngine::UIElements::StyleFloat {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFloat> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFloat> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>>
+impl AsRef<crate::UnityEngine::UIElements::IStyleValue_1<f32>>
 for crate::UnityEngine::UIElements::StyleFloat {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IStyleValue_1<f32> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFloat")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>>
+impl AsMut<crate::UnityEngine::UIElements::IStyleValue_1<f32>>
 for crate::UnityEngine::UIElements::StyleFloat {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<f32> {
         todo!()
     }
 }

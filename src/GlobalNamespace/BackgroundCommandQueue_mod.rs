@@ -5,7 +5,9 @@ pub struct BackgroundCommandQueue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _sync: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _commandsQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBackgroundCommand>,
+        >,
     >,
     pub _isRunning: bool,
 }

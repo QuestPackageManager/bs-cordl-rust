@@ -52,7 +52,9 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -60,7 +62,11 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::System::Nullable_1<i32>,
+                            >,
+                        >,
                         1usize,
                     >("InnerRead")
                     .unwrap_or_else(|e| {
@@ -71,9 +77,9 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Nullable_1<i32>> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (cancellationToken))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<i32>>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
@@ -200,7 +206,11 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolResult>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Net::Security::AsyncProtocolResult,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -210,8 +220,10 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Mono::Net::Security::AsyncProtocolResult,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Mono::Net::Security::AsyncProtocolResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -225,7 +237,11 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Mono::Net::Security::AsyncProtocolResult>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Mono::Net::Security::AsyncProtocolResult,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

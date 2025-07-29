@@ -13,7 +13,9 @@ pub struct PCAppInit {
         crate::GlobalNamespace::DefaultScenesTransitionsFromInit,
     >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        crate::Zenject::LazyInject_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_PCAppInit")]

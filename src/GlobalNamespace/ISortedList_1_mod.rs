@@ -55,9 +55,11 @@ for crate::GlobalNamespace::ISortedList_1<T> {
 }
 #[cfg(feature = "ISortedList_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
-    pub fn Insert_Gc1(
+    pub fn Insert_LinkedListNode_1_1(
         &mut self,
-        newNode: quest_hook::libil2cpp::Gc<T>,
+        newNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -68,7 +70,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Insert")
@@ -88,7 +92,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
     pub fn Insert_T0(
         &mut self,
         newItem: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -97,7 +105,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(T), quest_hook::libil2cpp::Gc<T>, 1usize>("Insert")
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        1usize,
+                    >("Insert")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -106,14 +120,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newItem))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (newItem))? };
         Ok(__cordl_ret.into())
     }
     pub fn Remove(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -124,7 +140,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Remove")
@@ -143,7 +161,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
     }
     pub fn TouchLastUsedNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -154,7 +174,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("TouchLastUsedNode")
@@ -199,7 +221,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::LinkedList_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -208,7 +232,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_items")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedList_1<T>,
+                        >,
+                        0usize,
+                    >("get_items")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -217,9 +247,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ISortedList_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedList_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

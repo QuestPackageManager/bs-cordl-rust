@@ -45,7 +45,9 @@ impl crate::Oculus::Platform::Challenges {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,8 +64,10 @@ impl crate::Oculus::Platform::Challenges {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         2usize,
@@ -77,7 +81,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (leaderboardName, challengeOptions))?
         };
@@ -87,7 +93,9 @@ impl crate::Oculus::Platform::Challenges {
         challengeID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -97,8 +105,10 @@ impl crate::Oculus::Platform::Challenges {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         1usize,
@@ -112,7 +122,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
@@ -147,7 +159,9 @@ impl crate::Oculus::Platform::Challenges {
         challengeID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -157,8 +171,10 @@ impl crate::Oculus::Platform::Challenges {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         1usize,
@@ -172,7 +188,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
@@ -183,8 +201,10 @@ impl crate::Oculus::Platform::Challenges {
         startAt: crate::Oculus::Platform::LeaderboardStartAt,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         >,
     > {
@@ -200,8 +220,10 @@ impl crate::Oculus::Platform::Challenges {
                             crate::Oculus::Platform::LeaderboardStartAt,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeEntryList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                                >,
                             >,
                         >,
                         4usize,
@@ -215,8 +237,10 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -230,8 +254,10 @@ impl crate::Oculus::Platform::Challenges {
         afterRank: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         >,
     > {
@@ -242,8 +268,10 @@ impl crate::Oculus::Platform::Challenges {
                     .find_static_method::<
                         (u64, i32, u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeEntryList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                                >,
                             >,
                         >,
                         3usize,
@@ -257,8 +285,10 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (challengeID, limit, afterRank))?
@@ -272,8 +302,10 @@ impl crate::Oculus::Platform::Challenges {
         userIDs: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u64>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         >,
     > {
@@ -291,8 +323,10 @@ impl crate::Oculus::Platform::Challenges {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeEntryList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                                >,
                             >,
                         >,
                         4usize,
@@ -306,8 +340,10 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -322,7 +358,9 @@ impl crate::Oculus::Platform::Challenges {
         limit: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -337,8 +375,10 @@ impl crate::Oculus::Platform::Challenges {
                             i32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeList,
+                                >,
                             >,
                         >,
                         2usize,
@@ -352,7 +392,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (challengeOptions, limit))?
         };
@@ -362,7 +404,9 @@ impl crate::Oculus::Platform::Challenges {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -374,8 +418,10 @@ impl crate::Oculus::Platform::Challenges {
                             crate::Oculus::Platform::Models::ChallengeList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -389,7 +435,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -399,8 +447,10 @@ impl crate::Oculus::Platform::Challenges {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         >,
     > {
@@ -413,8 +463,10 @@ impl crate::Oculus::Platform::Challenges {
                             crate::Oculus::Platform::Models::ChallengeEntryList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeEntryList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -428,8 +480,10 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -438,7 +492,9 @@ impl crate::Oculus::Platform::Challenges {
         list: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -450,8 +506,10 @@ impl crate::Oculus::Platform::Challenges {
                             crate::Oculus::Platform::Models::ChallengeList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -465,7 +523,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ChallengeList>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
     }
@@ -475,8 +535,10 @@ impl crate::Oculus::Platform::Challenges {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         >,
     > {
@@ -489,8 +551,10 @@ impl crate::Oculus::Platform::Challenges {
                             crate::Oculus::Platform::Models::ChallengeEntryList,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ChallengeEntryList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                                >,
                             >,
                         >,
                         1usize,
@@ -504,8 +568,10 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::ChallengeEntryList,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ChallengeEntryList,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (list))? };
         Ok(__cordl_ret.into())
@@ -514,7 +580,9 @@ impl crate::Oculus::Platform::Challenges {
         challengeID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -524,8 +592,10 @@ impl crate::Oculus::Platform::Challenges {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         1usize,
@@ -539,7 +609,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
@@ -547,7 +619,9 @@ impl crate::Oculus::Platform::Challenges {
         challengeID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -557,8 +631,10 @@ impl crate::Oculus::Platform::Challenges {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         1usize,
@@ -572,7 +648,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (challengeID))? };
         Ok(__cordl_ret.into())
     }
@@ -583,7 +661,9 @@ impl crate::Oculus::Platform::Challenges {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -598,8 +678,10 @@ impl crate::Oculus::Platform::Challenges {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Challenge,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Challenge,
+                                >,
                             >,
                         >,
                         2usize,
@@ -613,7 +695,9 @@ impl crate::Oculus::Platform::Challenges {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Challenge>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (challengeID, challengeOptions))?
         };

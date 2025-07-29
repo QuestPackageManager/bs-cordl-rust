@@ -217,11 +217,13 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Append_Gc1<TValue>(
+    pub fn Append_IEnumerable_1_1<TValue>(
         array: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
         >,
-        values: quest_hook::libil2cpp::Gc<TValue>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -238,7 +240,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                                     quest_hook::libil2cpp::Il2CppArray<TValue>,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                            >,
                         ),
                         i32,
                         2usize,
@@ -1298,9 +1302,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Gc1<TValue>(
+    pub fn IndexOf_Predicate_1_1<TValue>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
-        predicate: quest_hook::libil2cpp::Gc<TValue>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1315,7 +1319,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TValue>,
                             >,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
                         ),
                         i32,
                         2usize,
@@ -1333,9 +1337,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Gc_i32_i32_2<TValue>(
+    pub fn IndexOf_Predicate_1_i32_i32_2<TValue>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
-        predicate: quest_hook::libil2cpp::Gc<TValue>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<TValue>>,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32>
@@ -1352,7 +1356,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TValue>,
                             >,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Predicate_1<TValue>,
+                            >,
                             i32,
                             i32,
                         ),
@@ -1569,10 +1575,12 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Merge_Gc1<TValue>(
+    pub fn Merge_IEqualityComparer_1_1<TValue>(
         first: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
         second: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
-        comparer: quest_hook::libil2cpp::Gc<TValue>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     >
@@ -1592,7 +1600,11 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TValue>,
                             >,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TValue,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<TValue>,
@@ -1700,7 +1712,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
         >,
         index: i32,
-        valueFn: quest_hook::libil2cpp::Gc<TValue>,
+        valueFn: quest_hook::libil2cpp::Gc<crate::System::Func_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1718,7 +1730,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                                 >,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_1<TValue>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -1777,7 +1789,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
     }
     pub fn Select<TOld, TNew>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TOld>>,
-        converter: quest_hook::libil2cpp::Gc<TOld, TNew>,
+        converter: quest_hook::libil2cpp::Gc<crate::System::Func_2<TOld, TNew>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TNew>>,
     >
@@ -1796,7 +1808,7 @@ impl crate::UnityEngine::InputSystem::Utilities::ArrayHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<TOld>,
                             >,
-                            quest_hook::libil2cpp::Gc<TOld, TNew>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<TOld, TNew>>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<TNew>,

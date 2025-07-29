@@ -200,7 +200,9 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     }
     pub fn OnNavigationEvent<TEvent>(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<TEvent>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -211,7 +213,9 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TEvent>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::NavigationEventBase_1<TEvent>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnNavigationEvent")

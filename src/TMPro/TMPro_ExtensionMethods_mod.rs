@@ -230,7 +230,7 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         Ok(__cordl_ret.into())
     }
     pub fn FindInstanceID<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         target: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -242,7 +242,12 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                            T,
+                        ),
                         i32,
                         2usize,
                     >("FindInstanceID")
@@ -459,7 +464,9 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         Ok(__cordl_ret.into())
     }
     pub fn UintToString(
-        unicodes: quest_hook::libil2cpp::Gc<u32>,
+        unicodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -468,7 +475,9 @@ impl crate::TMPro::TMPro_ExtensionMethods {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<u32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<u32>,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("UintToString")

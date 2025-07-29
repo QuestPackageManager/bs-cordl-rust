@@ -8,7 +8,9 @@ pub struct BasicSpectrogramData {
     pub _hasData: bool,
     pub _hasProcessedData: bool,
     pub _samples: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-    pub _processedSamples: quest_hook::libil2cpp::Gc<f32>,
+    pub _processedSamples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
 }
 #[cfg(feature = "cordl_class_BasicSpectrogramData")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -100,7 +102,9 @@ impl crate::GlobalNamespace::BasicSpectrogramData {
         sourceSamples: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<f32>,
         >,
-        processedSamples: quest_hook::libil2cpp::Gc<f32>,
+        processedSamples: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -111,7 +115,9 @@ impl crate::GlobalNamespace::BasicSpectrogramData {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<f32>,
                             >,
-                            quest_hook::libil2cpp::Gc<f32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -152,14 +158,18 @@ impl crate::GlobalNamespace::BasicSpectrogramData {
     }
     pub fn get_ProcessedSamples(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<f32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<f32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >,
                         0usize,
                     >("get_ProcessedSamples")
                     .unwrap_or_else(|e| {
@@ -170,9 +180,9 @@ impl crate::GlobalNamespace::BasicSpectrogramData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Samples(

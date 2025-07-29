@@ -5,8 +5,10 @@ pub struct ExpressionStringBuilder {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _out: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     pub _ids: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+ExpressionStringBuilder")]
@@ -560,7 +562,9 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
     pub fn VisitExpressions_Il2CppString1<T>(
         &mut self,
         open: char,
-        expressions: quest_hook::libil2cpp::Gc<T>,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
         close: char,
         seperator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -575,7 +579,11 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
                     .find_method::<
                         (
                             char,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    T,
+                                >,
+                            >,
                             char,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -598,10 +606,12 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn VisitExpressions__cordl_char_Gc__cordl_char0<T>(
+    pub fn VisitExpressions__cordl_char_ReadOnlyCollection_1__cordl_char0<T>(
         &mut self,
         open: char,
-        expressions: quest_hook::libil2cpp::Gc<T>,
+        expressions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
         close: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -613,7 +623,15 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (char, quest_hook::libil2cpp::Gc<T>, char),
+                        (
+                            char,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    T,
+                                >,
+                            >,
+                            char,
+                        ),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("VisitExpressions")
@@ -798,7 +816,9 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >
@@ -811,7 +831,9 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
                         >,

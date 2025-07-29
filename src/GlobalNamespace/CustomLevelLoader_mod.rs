@@ -4,10 +4,14 @@
 pub struct CustomLevelLoader {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _defaultEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
     pub _defaultAllDirectionsEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_CustomLevelLoader")]

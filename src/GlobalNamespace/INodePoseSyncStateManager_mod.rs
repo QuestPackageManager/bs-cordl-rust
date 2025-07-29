@@ -57,7 +57,7 @@ for crate::GlobalNamespace::INodePoseSyncStateManager {
 }
 #[cfg(feature = "INodePoseSyncStateManager")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::INodePoseSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -71,7 +71,7 @@ impl AsRef<
 > for crate::GlobalNamespace::INodePoseSyncStateManager {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::INodePoseSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -87,7 +87,7 @@ impl AsRef<
 }
 #[cfg(feature = "INodePoseSyncStateManager")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::INodePoseSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,
@@ -101,7 +101,7 @@ impl AsMut<
 > for crate::GlobalNamespace::INodePoseSyncStateManager {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::INodePoseSyncStateManager_5<
         crate::GlobalNamespace::NodePoseSyncState,
         crate::GlobalNamespace::NodePoseSyncState_NodePose,
         crate::GlobalNamespace::PoseSerializable,

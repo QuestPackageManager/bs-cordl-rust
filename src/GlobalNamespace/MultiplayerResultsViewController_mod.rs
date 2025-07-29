@@ -13,13 +13,17 @@ pub struct MultiplayerResultsViewController {
     pub _backToLobbyButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _backToMenuButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub backToLobbyPressedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerResultsViewController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerResultsViewController,
+            >,
         >,
     >,
     pub backToMenuPressedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerResultsViewController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerResultsViewController,
+            >,
         >,
     >,
 }
@@ -218,8 +222,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
     pub fn add_backToLobbyPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerResultsViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -229,8 +235,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -252,8 +260,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
     pub fn add_backToMenuPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerResultsViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -263,8 +273,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -286,8 +298,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
     pub fn remove_backToLobbyPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerResultsViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -297,8 +311,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -320,8 +336,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
     pub fn remove_backToMenuPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerResultsViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -331,8 +349,10 @@ impl crate::GlobalNamespace::MultiplayerResultsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

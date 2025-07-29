@@ -102,12 +102,14 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CookCompletedCallback_HEU_HoudiniAsset__cordl_bool_Gc0(
+    pub fn CookCompletedCallback_HEU_HoudiniAsset__cordl_bool_List_1_0(
         &mut self,
         asset: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_HoudiniAsset>,
         bSuccess: bool,
         outputs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -121,7 +123,9 @@ impl crate::HoudiniEngineUnity::HEU_AssetTask {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

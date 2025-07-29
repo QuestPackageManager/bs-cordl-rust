@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ClickEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClickEvent>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Clic
 }
 #[cfg(feature = "UnityEngine+UIElements+ClickEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ClickEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::PointerEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ClickEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

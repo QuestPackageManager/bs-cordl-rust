@@ -7,7 +7,9 @@ pub struct BeatmapCharacteristicsViewController {
         crate::GlobalNamespace::BeatmapCharacteristicsTableView,
     >,
     pub didSelectBeatmapCharacteristicEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        >,
     >,
     pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
@@ -210,7 +212,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
     pub fn add_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -219,8 +225,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCharacteristicSO,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -302,7 +310,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
     pub fn remove_didSelectBeatmapCharacteristicEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -311,8 +323,10 @@ impl crate::GlobalNamespace::BeatmapCharacteristicsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapCharacteristicSO,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapCharacteristicSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

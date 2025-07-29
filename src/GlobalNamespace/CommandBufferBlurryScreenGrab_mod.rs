@@ -49,8 +49,10 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -60,9 +62,11 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::CommandBufferOwners,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::CommandBufferOwners,
+                                >,
                             >,
                         >,
                         0usize,
@@ -76,8 +80,10 @@ impl crate::GlobalNamespace::CommandBufferBlurryScreenGrab {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CommandBufferOwners>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

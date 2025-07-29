@@ -360,30 +360,32 @@ impl crate::UnityEngine::UIElements::StyleFont {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont>>
 for crate::UnityEngine::UIElements::StyleFont {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont>>
 for crate::UnityEngine::UIElements::StyleFont {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleFont> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleFont> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    >,
 > for crate::UnityEngine::UIElements::StyleFont {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     > {
         todo!()
@@ -391,11 +393,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleFont")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>>,
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
+    >,
 > for crate::UnityEngine::UIElements::StyleFont {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     > {
         todo!()

@@ -93,7 +93,9 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpression2 {
             crate::System::Linq::Expressions::Expression,
         >,
         args: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MethodCallExpression>,
@@ -108,8 +110,10 @@ impl crate::System::Linq::Expressions::InstanceMethodCallExpression2 {
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Expression,
+                                    >,
                                 >,
                             >,
                         ),

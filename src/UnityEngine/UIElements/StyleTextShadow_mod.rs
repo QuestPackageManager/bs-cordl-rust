@@ -360,40 +360,50 @@ impl crate::UnityEngine::UIElements::StyleTextShadow {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTextShadow>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow>>
 for crate::UnityEngine::UIElements::StyleTextShadow {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTextShadow> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTextShadow>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTextShadow>>
 for crate::UnityEngine::UIElements::StyleTextShadow {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleTextShadow,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow>>
-for crate::UnityEngine::UIElements::StyleTextShadow {
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    >,
+> for crate::UnityEngine::UIElements::StyleTextShadow {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow> {
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTextShadow")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow>>
-for crate::UnityEngine::UIElements::StyleTextShadow {
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    >,
+> for crate::UnityEngine::UIElements::StyleTextShadow {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow> {
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    > {
         todo!()
     }
 }

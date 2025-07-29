@@ -12,8 +12,10 @@ pub struct DataColumnCollection {
         >,
     >,
     pub _columnFromName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
     pub _fInClear: bool,
     pub _columnsImplementingIChangeTracking: quest_hook::libil2cpp::Gc<

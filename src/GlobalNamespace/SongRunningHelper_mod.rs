@@ -16,7 +16,9 @@ pub struct SongRunningHelper {
         crate::GlobalNamespace::EnvironmentsListModel,
     >,
     pub _playQueue: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
+        >,
     >,
     pub _current: crate::System::Nullable_1<
         crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
@@ -288,10 +290,12 @@ pub struct SongRunningHelper_QueuedSongParams {
     pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
     pub recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
     pub songFinishedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
     pub zenMode: bool,
 }
@@ -402,10 +406,12 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
         zenMode: bool,
         songFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -426,11 +432,13 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                             crate::GlobalNamespace::RecordingToolManager_SetupData,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
                             >,
                         ),

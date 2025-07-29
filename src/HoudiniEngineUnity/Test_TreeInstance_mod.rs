@@ -115,13 +115,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::Test_TreeI
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_TreeInstance")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
     >,
 > for crate::HoudiniEngineUnity::Test_TreeInstance {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -129,13 +129,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_TreeInstance")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
     >,
 > for crate::HoudiniEngineUnity::Test_TreeInstance {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_TreeInstance>,
     > {
         unsafe { std::mem::transmute(self) }

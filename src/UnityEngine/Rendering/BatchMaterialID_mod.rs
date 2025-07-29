@@ -172,20 +172,22 @@ impl crate::UnityEngine::Rendering::BatchMaterialID {
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMaterialID>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID>>
 for crate::UnityEngine::Rendering::BatchMaterialID {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMaterialID> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMaterialID>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID>>
 for crate::UnityEngine::Rendering::BatchMaterialID {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::BatchMaterialID> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Rendering::BatchMaterialID,
+    > {
         todo!()
     }
 }

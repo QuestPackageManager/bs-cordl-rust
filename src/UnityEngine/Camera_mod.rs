@@ -2785,7 +2785,9 @@ impl crate::UnityEngine::Camera {
     pub fn SubmitRenderRequests(
         &mut self,
         renderRequests: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Camera_RenderRequest,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Camera_RenderRequest,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2794,7 +2796,9 @@ impl crate::UnityEngine::Camera {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Camera_RenderRequest,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::Camera_RenderRequest,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

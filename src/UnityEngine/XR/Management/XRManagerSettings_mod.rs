@@ -8,10 +8,14 @@ pub struct XRManagerSettings {
     pub m_AutomaticLoading: bool,
     pub m_AutomaticRunning: bool,
     pub m_Loaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+        >,
     >,
     pub m_RegisteredLoaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+        >,
     >,
     pub _activeLoader_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::XR::Management::XRLoader,
@@ -384,7 +388,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
     pub fn TrySetLoaders(
         &mut self,
         reorderedLoaders: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -393,8 +399,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >),
                         bool,
@@ -467,7 +475,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -477,8 +487,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >,
                         0usize,
@@ -492,7 +504,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -534,7 +548,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -544,8 +560,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >,
                         0usize,
@@ -559,7 +577,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -586,7 +606,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -596,8 +618,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >,
                         0usize,
@@ -611,7 +635,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -619,7 +645,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -629,8 +657,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >,
                         0usize,
@@ -644,7 +674,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -731,7 +763,9 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
     pub fn set_currentLoaders(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Management::XRLoader>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -740,8 +774,10 @@ impl crate::UnityEngine::XR::Management::XRManagerSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::XR::Management::XRLoader,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::XR::Management::XRLoader,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

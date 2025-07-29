@@ -38,39 +38,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TaskExtensions {
 }
 #[cfg(feature = "TaskExtensions")]
 impl crate::GlobalNamespace::TaskExtensions {
-    pub fn WaitAsyncInternal_Gc1<T>(
-        task: quest_hook::libil2cpp::Gc<T>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<T>,
-                            crate::System::Threading::CancellationToken,
-                        ),
-                        quest_hook::libil2cpp::Gc<T>,
-                        2usize,
-                    >("WaitAsyncInternal")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitAsyncInternal", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (task, cancellationToken))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn WaitAsyncInternal_Task0(
         task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -106,10 +73,12 @@ impl crate::GlobalNamespace::TaskExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn WaitAsync_Gc1<T>(
-        task: quest_hook::libil2cpp::Gc<T>,
+    pub fn WaitAsyncInternal_Task_1_1<T>(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -120,21 +89,27 @@ impl crate::GlobalNamespace::TaskExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<T>,
+                            >,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         2usize,
-                    >("WaitAsync")
+                    >("WaitAsyncInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WaitAsync", 2usize
+                            "WaitAsyncInternal", 2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (task, cancellationToken))?
         };
         Ok(__cordl_ret.into())
@@ -174,10 +149,12 @@ impl crate::GlobalNamespace::TaskExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn WithCancellation<T>(
-        task: quest_hook::libil2cpp::Gc<T>,
+    pub fn WaitAsync_Task_1_1<T>(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -188,10 +165,55 @@ impl crate::GlobalNamespace::TaskExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<T>,
+                            >,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
+                        2usize,
+                    >("WaitAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WaitAsync", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (task, cancellationToken))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn WithCancellation<T>(
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<T>,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         2usize,
                     >("WithCancellation")
                     .unwrap_or_else(|e| {
@@ -202,7 +224,9 @@ impl crate::GlobalNamespace::TaskExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (task, cancellationToken))?
         };
         Ok(__cordl_ret.into())

@@ -2790,18 +2790,18 @@ impl crate::UnityEngine::PhysicsScene {
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
 for crate::UnityEngine::PhysicsScene {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PhysicsScene")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene>>
 for crate::UnityEngine::PhysicsScene {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::PhysicsScene> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PhysicsScene> {
         todo!()
     }
 }

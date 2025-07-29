@@ -709,16 +709,32 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
             crate::UnityEngine::UIElements::StyleSheets::StylePropertyReader,
         >,
         outDelay: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::TimeValue,
+                >,
+            >,
         >,
         outDuration: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimeValue>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::TimeValue,
+                >,
+            >,
         >,
         outProperty: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::StylePropertyName,
+                >,
+            >,
         >,
         outTimingFunction: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EasingFunction>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::EasingFunction,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -732,22 +748,30 @@ impl crate::UnityEngine::UIElements::StyleSheets::ShorthandApplicator {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::TimeValue,
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::UIElements::TimeValue,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::TimeValue,
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::UIElements::TimeValue,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::StylePropertyName,
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::UIElements::StylePropertyName,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::EasingFunction,
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::UIElements::EasingFunction,
+                                    >,
                                 >,
                             >,
                         ),

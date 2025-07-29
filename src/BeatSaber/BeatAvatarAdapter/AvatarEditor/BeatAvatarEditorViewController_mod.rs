@@ -52,16 +52,20 @@ pub struct BeatAvatarEditorViewController {
         crate::BeatSaber::BeatAvatarSDK::AvatarDataModel,
     >,
     pub didRequestColorChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-        crate::UnityEngine::Color,
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-        i32,
+        crate::System::Action_4<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Action_1<crate::UnityEngine::Color>,
+            >,
+            crate::UnityEngine::Color,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+            i32,
+        >,
     >,
     pub randomizeAllButtonWasPressedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action,
     >,
     pub didChangedAvatarPartEvent: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+        crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
     >,
     pub cancelButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -69,7 +73,9 @@ pub struct BeatAvatarEditorViewController {
         crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarEditHistory,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
-    pub _intPickerBinder: quest_hook::libil2cpp::Gc<i32>,
+    pub _intPickerBinder: quest_hook::libil2cpp::Gc<
+        crate::HMUI::ValueChangedBinder_1<i32>,
+    >,
     pub _lastEditedPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
 }
 #[cfg(
@@ -174,7 +180,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
         Ok(__cordl_ret.into())
     }
     pub fn CreateTextValuePairsForAvatarPartCollection<T>(
-        partCollection: quest_hook::libil2cpp::Gc<T>,
+        partCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -193,7 +201,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -633,8 +643,12 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     pub fn SetupColorButton(
         &mut self,
         button: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-        colorSetter: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-        currentColorGetter: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        colorSetter: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::UnityEngine::Color>,
+        >,
+        currentColorGetter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_1<crate::UnityEngine::Color>,
+        >,
         avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
         uvSegment: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -645,8 +659,12 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_1<crate::UnityEngine::Color>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_1<crate::UnityEngine::Color>,
+                            >,
                             crate::BeatSaber::BeatAvatarSDK::AvatarPart,
                             i32,
                         ),
@@ -672,12 +690,16 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     }
     pub fn SetupValuePicker<T>(
         &mut self,
-        partCollection: quest_hook::libil2cpp::Gc<T>,
+        partCollection: quest_hook::libil2cpp::Gc<
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T>,
+        >,
         valuePicker: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::NamedIntListController,
         >,
         setIdAction: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         avatarEditPart: crate::BeatSaber::BeatAvatarSDK::AvatarPart,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -691,13 +713,17 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<T>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::NamedIntListController,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             crate::BeatSaber::BeatAvatarSDK::AvatarPart,
@@ -1201,7 +1227,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     }
     pub fn add_didChangedAvatarPartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1209,7 +1237,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                            crate::System::Action_1<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1230,10 +1260,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     pub fn add_didRequestColorChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-            crate::UnityEngine::Color,
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            i32,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::UnityEngine::Color>,
+                >,
+                crate::UnityEngine::Color,
+                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1242,10 +1276,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-                            crate::UnityEngine::Color,
-                            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-                            i32,
+                            crate::System::Action_4<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Action_1<crate::UnityEngine::Color>,
+                                >,
+                                crate::UnityEngine::Color,
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1343,7 +1381,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     }
     pub fn remove_didChangedAvatarPartEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::BeatSaber::BeatAvatarSDK::AvatarPart>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1351,7 +1391,9 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                            crate::System::Action_1<
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1372,10 +1414,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
     pub fn remove_didRequestColorChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-            crate::UnityEngine::Color,
-            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-            i32,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Action_1<crate::UnityEngine::Color>,
+                >,
+                crate::UnityEngine::Color,
+                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1384,10 +1430,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::BeatAvatarEditorViewCont
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-                            crate::UnityEngine::Color,
-                            crate::BeatSaber::BeatAvatarSDK::AvatarPart,
-                            i32,
+                            crate::System::Action_4<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Action_1<crate::UnityEngine::Color>,
+                                >,
+                                crate::UnityEngine::Color,
+                                crate::BeatSaber::BeatAvatarSDK::AvatarPart,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

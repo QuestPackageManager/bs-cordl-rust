@@ -93,7 +93,9 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
     pub fn GetAllAnimations(
         &mut self,
         outPropertyIds: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -102,7 +104,9 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -127,7 +131,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: i32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -140,7 +144,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             i32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -169,7 +173,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::BackgroundPosition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -182,7 +186,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::BackgroundPosition,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -211,7 +215,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::BackgroundRepeat,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -224,7 +228,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::BackgroundRepeat,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -253,7 +257,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::BackgroundSize,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -266,7 +270,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::BackgroundSize,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -295,7 +299,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::Background,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -308,7 +312,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::Background,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -337,7 +341,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::Color,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -350,7 +354,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::Color,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -379,7 +383,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::FontDefinition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -392,7 +396,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::FontDefinition,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -421,7 +425,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -434,7 +438,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -463,7 +467,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::Length,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -476,7 +480,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::Length,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -505,7 +509,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::Rotate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -518,7 +522,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::Rotate,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -547,7 +551,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::Scale,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -560,7 +564,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::Scale,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -589,7 +593,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::TextShadow,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -602,7 +606,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::TextShadow,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -631,7 +635,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::TransformOrigin,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -644,7 +648,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::TransformOrigin,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -673,7 +677,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: crate::UnityEngine::UIElements::Translate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -686,7 +690,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             crate::UnityEngine::UIElements::Translate,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -715,7 +719,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: f32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -728,7 +732,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             f32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,
@@ -757,7 +761,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
         to: i32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -770,7 +774,7 @@ impl crate::UnityEngine::UIElements::IStylePropertyAnimations {
                             i32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         6usize,

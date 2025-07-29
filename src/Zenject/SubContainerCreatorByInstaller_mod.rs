@@ -5,7 +5,9 @@ pub struct SubContainerCreatorByInstaller {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    pub _extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+    pub _extraArgs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+    >,
     pub _containerBindInfo: quest_hook::libil2cpp::Gc<
         crate::Zenject::SubContainerCreatorBindInfo,
     >,
@@ -47,7 +49,9 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByInstaller {
 impl crate::Zenject::SubContainerCreatorByInstaller {
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -58,7 +62,11 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -90,13 +98,17 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
             .invoke_void(".ctor", (container, containerBindInfo, installerType))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IEnumerable_1_0(
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         containerBindInfo: quest_hook::libil2cpp::Gc<
             crate::Zenject::SubContainerCreatorBindInfo,
         >,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -144,14 +156,18 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IEnumerable_1_0(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         containerBindInfo: quest_hook::libil2cpp::Gc<
             crate::Zenject::SubContainerCreatorBindInfo,
         >,
         installerType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -164,7 +180,11 @@ impl crate::Zenject::SubContainerCreatorByInstaller {
                                 crate::Zenject::SubContainerCreatorBindInfo,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,

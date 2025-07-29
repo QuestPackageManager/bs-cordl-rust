@@ -266,7 +266,9 @@ impl crate::UnityEngine::Texture2D {
         >,
         padding: i32,
         atlasSize: i32,
-        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Rect>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -281,7 +283,11 @@ impl crate::UnityEngine::Texture2D {
                             >,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Rect,
+                                >,
+                            >,
                         ),
                         bool,
                         4usize,

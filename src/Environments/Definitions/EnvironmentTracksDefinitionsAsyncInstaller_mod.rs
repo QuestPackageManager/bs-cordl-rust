@@ -4,14 +4,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTracksDefinitionsAsyncInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<
             crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
         >,
     >,
     pub _environmentTracksDefinitions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+            >,
         >,
     >,
 }
@@ -40,7 +42,7 @@ for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller
 #[cfg(feature = "Environments+Definitions+EnvironmentTracksDefinitionsAsyncInstaller")]
 impl std::ops::Deref
 for crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<
             crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
         >,
@@ -86,8 +88,10 @@ impl crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstalle
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         tracksDefinitions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+                >,
             >,
         >,
         registry: quest_hook::libil2cpp::Gc<
@@ -101,8 +105,10 @@ impl crate::Environments::Definitions::EnvironmentTracksDefinitionsAsyncInstalle
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

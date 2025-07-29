@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct SparselyPopulatedArrayAddInfo_1<T: quest_hook::libil2cpp::Type> {
-    pub _source: quest_hook::libil2cpp::Gc<T>,
+    pub _source: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+    >,
     pub _index: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -123,7 +125,9 @@ impl<
 > crate::System::Threading::SparselyPopulatedArrayAddInfo_1<T> {
     pub fn _ctor(
         &mut self,
-        source: quest_hook::libil2cpp::Gc<T>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -135,7 +139,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::SparselyPopulatedArrayFragment_1<
+                                    T,
+                                >,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -175,7 +186,11 @@ impl<
     }
     pub fn get_Source(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -186,7 +201,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+                        >,
                         0usize,
                     >("get_Source")
                     .unwrap_or_else(|e| {
@@ -197,9 +214,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

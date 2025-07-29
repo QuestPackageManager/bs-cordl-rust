@@ -260,7 +260,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar_Factory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
@@ -290,7 +290,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
 #[cfg(feature = "MultiplayerResultsPyramidViewAvatar+Factory")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,

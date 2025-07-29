@@ -26,8 +26,10 @@ pub struct CertificateData {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub Extensions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Security::Cryptography::X509Certificates::X509Extension,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+            >,
         >,
     >,
     pub SignatureAlgorithm: crate::Internal::Cryptography::Pal::CertificateData_AlgorithmIdentifier,
@@ -245,9 +247,11 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     > {
@@ -260,12 +264,14 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
                             crate::System::Security::Cryptography::X509Certificates::X500DistinguishedName,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         >,
@@ -280,9 +286,11 @@ impl crate::Internal::Cryptography::Pal::CertificateData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (name))? };
         Ok(__cordl_ret.into())

@@ -4,7 +4,11 @@
 pub struct EventTrigger {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub m_Delegates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::EventTrigger_Entry>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+EventSystems+EventTrigger")]
@@ -622,8 +626,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         >,
     > {
@@ -634,8 +640,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                                >,
                             >,
                         >,
                         0usize,
@@ -649,8 +657,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -659,8 +669,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         >,
     > {
@@ -671,8 +683,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                                >,
                             >,
                         >,
                         0usize,
@@ -686,8 +700,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -695,8 +711,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
     pub fn set_delegates(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -706,8 +724,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -729,8 +749,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
     pub fn set_triggers(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -740,8 +762,10 @@ impl crate::UnityEngine::EventSystems::EventTrigger {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::EventSystems::EventTrigger_Entry,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1117,7 +1141,7 @@ for crate::UnityEngine::EventSystems::EventTrigger_Entry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventTrigger_TriggerEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
     >,
 }
@@ -1143,7 +1167,7 @@ for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
 }
 #[cfg(feature = "UnityEngine+EventSystems+EventTrigger+TriggerEvent")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::EventTrigger_TriggerEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::BaseEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

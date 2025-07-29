@@ -7,7 +7,9 @@ pub struct FloorLightTilesGrid {
         crate::Ice::FloorLightTile_Pool,
     >,
     pub _floorLightTileMemoryPoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+        >,
     >,
     pub _grid: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

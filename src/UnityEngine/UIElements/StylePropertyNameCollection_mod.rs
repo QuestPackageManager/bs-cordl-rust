@@ -3,7 +3,9 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct StylePropertyNameCollection {
     pub propertiesList: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyName,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StylePropertyName,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+StylePropertyNameCollection")]
@@ -135,7 +137,11 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
     pub fn System_Collections_Generic_IEnumerable_UnityEngine_UIElements_StylePropertyName__GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -144,7 +150,9 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::StylePropertyName,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::UnityEngine::UIElements::StylePropertyName,
+                            >,
                         >,
                         0usize,
                     >(
@@ -160,7 +168,9 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StylePropertyName,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -196,7 +206,9 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
     pub fn _ctor(
         &mut self,
         list: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StylePropertyName,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StylePropertyName,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -205,7 +217,9 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::StylePropertyName,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::StylePropertyName,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -225,6 +239,34 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -235,26 +277,6 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::UIElements::StylePropertyNameCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyNameCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyNameCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyName,
-    > {
         todo!()
     }
 }
@@ -522,6 +544,34 @@ impl crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    >,
+> for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::UIElements::StylePropertyName,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -546,26 +596,6 @@ for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+StylePropertyNameCollection+Enumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StylePropertyName>>
-for crate::UnityEngine::UIElements::StylePropertyNameCollection_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyName,
-    > {
         todo!()
     }
 }

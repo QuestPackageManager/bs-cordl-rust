@@ -43,7 +43,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
     pub const kTransitionDuration: f32 = 0.4f32;
     pub const kVerticalTransitionMoveOffset: f32 = 0.5f32;
     pub fn AnimationCoroutine(
-        transitionAnimation: quest_hook::libil2cpp::Gc<f32>,
+        transitionAnimation: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
     > {
@@ -52,7 +52,7 @@ impl crate::HMUI::ViewControllerTransitionHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::IEnumerator,
                         >,

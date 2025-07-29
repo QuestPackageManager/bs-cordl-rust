@@ -26,8 +26,10 @@ pub struct OVRGrabber {
     pub m_grabbedObjectPosOff: crate::UnityEngine::Vector3,
     pub m_grabbedObjectRotOff: crate::UnityEngine::Quaternion,
     pub m_grabCandidates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGrabbable>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGrabbable>,
+            i32,
+        >,
     >,
     pub m_operatingWithoutOVRCameraRig: bool,
 }

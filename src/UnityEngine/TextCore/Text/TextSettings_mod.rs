@@ -11,7 +11,9 @@ pub struct TextSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_FallbackFontAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        >,
     >,
     pub m_MatchMaterialPreset: bool,
     pub m_MissingCharacterUnicode: i32,
@@ -23,7 +25,9 @@ pub struct TextSettings {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_FallbackSpriteAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+        >,
     >,
     pub m_MissingSpriteCharacterUnicode: u32,
     pub m_DefaultStyleSheet: quest_hook::libil2cpp::Gc<
@@ -41,11 +45,15 @@ pub struct TextSettings {
     pub m_UseModernHangulLineBreakingRules: bool,
     pub m_DisplayWarnings: bool,
     pub m_FontLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+        >,
     >,
     pub m_FontReferences: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::Text::TextSettings_FontReferenceMap,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextSettings")]
@@ -397,7 +405,9 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -407,8 +417,10 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::FontAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::FontAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -422,7 +434,9 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -430,7 +444,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::SpriteAsset,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -440,8 +458,10 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::SpriteAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::SpriteAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -455,7 +475,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::SpriteAsset,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -839,7 +863,9 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     pub fn set_fallbackFontAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -848,8 +874,10 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::FontAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::FontAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -871,7 +899,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     pub fn set_fallbackSpriteAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::TextCore::Text::SpriteAsset,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -880,8 +912,10 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::SpriteAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Text::SpriteAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

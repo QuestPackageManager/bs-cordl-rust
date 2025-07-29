@@ -4,7 +4,9 @@
 pub struct ClipperRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Clippers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+        crate::UnityEngine::UI::Collections::IndexedSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::IClipper>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ClipperRegistry")]

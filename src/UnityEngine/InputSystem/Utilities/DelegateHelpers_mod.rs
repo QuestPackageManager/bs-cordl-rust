@@ -43,8 +43,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<
-                    TValue,
-                    quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    crate::System::Func_2<
+                        TValue,
+                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                    >,
                 >,
             >,
         >,
@@ -65,8 +67,10 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                                     quest_hook::libil2cpp::Gc<
-                                        TValue,
-                                        quest_hook::libil2cpp::Gc<crate::System::Action>,
+                                        crate::System::Func_2<
+                                            TValue,
+                                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -98,7 +102,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     pub fn InvokeCallbacksSafe_AnyCallbackReturnsObject<TValue, TReturn>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue, TReturn>,
+                quest_hook::libil2cpp::Gc<crate::System::Func_2<TValue, TReturn>>,
             >,
         >,
         argument: TValue,
@@ -119,7 +123,9 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                                    quest_hook::libil2cpp::Gc<TValue, TReturn>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_2<TValue, TReturn>,
+                                    >,
                                 >,
                             >,
                             TValue,
@@ -150,7 +156,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     pub fn InvokeCallbacksSafe_AnyCallbackReturnsTrue<TValue1, TValue2>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue1, TValue2, bool>,
+                quest_hook::libil2cpp::Gc<crate::System::Func_3<TValue1, TValue2, bool>>,
             >,
         >,
         argument1: TValue1,
@@ -172,7 +178,9 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                                    quest_hook::libil2cpp::Gc<TValue1, TValue2, bool>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Func_3<TValue1, TValue2, bool>,
+                                    >,
                                 >,
                             >,
                             TValue1,
@@ -253,7 +261,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     >(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue1, TValue2>,
+                quest_hook::libil2cpp::Gc<crate::System::Action_2<TValue1, TValue2>>,
             >,
         >,
         argument1: TValue1,
@@ -275,7 +283,9 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                                    quest_hook::libil2cpp::Gc<TValue1, TValue2>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Action_2<TValue1, TValue2>,
+                                    >,
                                 >,
                             >,
                             TValue1,
@@ -310,7 +320,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
     pub fn InvokeCallbacksSafe_TValue_Il2CppString_Il2CppObject1<TValue>(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                quest_hook::libil2cpp::Gc<TValue>,
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
             >,
         >,
         argument: TValue,
@@ -329,7 +339,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-                                    quest_hook::libil2cpp::Gc<TValue>,
+                                    quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
                                 >,
                             >,
                             TValue,

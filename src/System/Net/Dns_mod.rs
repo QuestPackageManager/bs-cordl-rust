@@ -183,9 +183,11 @@ impl crate::System::Net::Dns {
         hostNameOrAddress: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                    >,
                 >,
             >,
         >,
@@ -197,9 +199,11 @@ impl crate::System::Net::Dns {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                                    >,
                                 >,
                             >,
                         >,
@@ -214,9 +218,11 @@ impl crate::System::Net::Dns {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                    >,
                 >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (hostNameOrAddress))? };

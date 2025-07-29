@@ -1849,20 +1849,22 @@ impl crate::UnityEngine::Playables::PlayableHandle {
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableHandle")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableHandle>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableHandle>>
 for crate::UnityEngine::Playables::PlayableHandle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableHandle> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableHandle> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Playables+PlayableHandle")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableHandle>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::PlayableHandle>>
 for crate::UnityEngine::Playables::PlayableHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableHandle> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::Playables::PlayableHandle,
+    > {
         todo!()
     }
 }

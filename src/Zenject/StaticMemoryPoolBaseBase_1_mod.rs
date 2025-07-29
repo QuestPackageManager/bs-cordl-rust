@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct StaticMemoryPoolBaseBase_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: quest_hook::libil2cpp::Gc<TValue>,
-    pub _onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<TValue>,
+    >,
+    pub _onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     pub _activeCount: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -224,7 +226,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -377,7 +379,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        onDespawnedMethod: quest_hook::libil2cpp::Gc<TValue>,
+        onDespawnedMethod: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -388,7 +390,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -499,7 +501,7 @@ impl<
     }
     pub fn set_OnDespawnedMethod(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TValue>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -510,7 +512,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TValue>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_OnDespawnedMethod")
@@ -553,6 +555,24 @@ for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
     }
 }
 #[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_ref(&self) -> &crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
+impl<
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::Zenject::IDespawnableMemoryPool_1<TValue>>
+for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IDespawnableMemoryPool_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
 impl<TValue: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IMemoryPool>
 for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
     fn as_ref(&self) -> &crate::Zenject::IMemoryPool {
@@ -563,20 +583,6 @@ for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
 impl<TValue: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IMemoryPool>
 for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
     fn as_mut(&mut self) -> &mut crate::Zenject::IMemoryPool {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Zenject+StaticMemoryPoolBaseBase_1")]
-impl<TValue: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::Zenject::StaticMemoryPoolBaseBase_1<TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         unsafe { std::mem::transmute(self) }
     }
 }

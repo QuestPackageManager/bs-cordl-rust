@@ -6,8 +6,10 @@ pub struct VisualElementFocusRing {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     pub _defaultFocusOrder_k__BackingField: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     pub m_FocusRing: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            >,
         >,
     >,
 }
@@ -55,8 +57,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         scopeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
         scopeList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -71,8 +75,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                             >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                                    >,
                                 >,
                             >,
                         ),
@@ -378,8 +384,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
     pub fn SortAndFlattenScopeLists(
         &mut self,
         rootScopeList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -389,8 +397,10 @@ impl crate::UnityEngine::UIElements::VisualElementFocusRing {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -666,8 +676,10 @@ pub struct VisualElementFocusRing_FocusRingRecord {
     >,
     pub m_IsSlot: bool,
     pub m_ScopeNavigationOrder: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord,
+            >,
         >,
     >,
 }

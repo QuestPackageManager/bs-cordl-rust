@@ -44,7 +44,9 @@ impl crate::Zenject::Internal::IDecoratorProvider {
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -56,8 +58,10 @@ impl crate::Zenject::Internal::IDecoratorProvider {
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

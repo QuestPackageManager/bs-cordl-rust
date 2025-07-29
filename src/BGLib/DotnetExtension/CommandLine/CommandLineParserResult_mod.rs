@@ -4,11 +4,15 @@
 pub struct CommandLineParserResult {
     pub applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _parsed: quest_hook::libil2cpp::Gc<
-        crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::IReadOnlyDictionary_2<
+            crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub unexpectedArguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
@@ -219,11 +223,15 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         &mut self,
         applicationPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parsed: quest_hook::libil2cpp::Gc<
-            crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         unexpectedArguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -236,14 +244,18 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IReadOnlyDictionary_2<
+                                    crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),

@@ -7,10 +7,12 @@ pub struct HeaderInfo_CollectionHeaderTypeInfo_2<
     T: quest_hook::libil2cpp::Type,
     U: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T, U>,
+    __cordl_parent: crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U>,
     pub minimalCount: i32,
     pub separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub parser: quest_hook::libil2cpp::Gc<T>,
+    pub parser: quest_hook::libil2cpp::Gc<
+        crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
 }
@@ -58,7 +60,7 @@ for crate::GlobalNamespace::HeaderInfo_CollectionHeaderTypeInfo_2<T, U> {
 #[cfg(feature = "System+Net+Http+Headers+HeaderInfo+CollectionHeaderTypeInfo_2")]
 impl<T: quest_hook::libil2cpp::Type, U: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::HeaderInfo_CollectionHeaderTypeInfo_2<T, U> {
-    type Target = quest_hook::libil2cpp::Gc<T, U>;
+    type Target = crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +79,9 @@ impl<
 > crate::GlobalNamespace::HeaderInfo_CollectionHeaderTypeInfo_2<T, U> {
     pub fn New(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        parser: quest_hook::libil2cpp::Gc<T>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+        >,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
         minimalCount: i32,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -141,7 +145,9 @@ impl<
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        parser: quest_hook::libil2cpp::Gc<T>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+        >,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
         minimalCount: i32,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -161,7 +167,9 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
+                            >,
                             crate::System::Net::Http::Headers::HttpHeaderKind,
                             i32,
                             quest_hook::libil2cpp::Gc<

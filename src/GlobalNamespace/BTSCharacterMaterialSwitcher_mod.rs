@@ -207,8 +207,10 @@ pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
     pub _materialPairs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            >,
         >,
     >,
 }
@@ -288,8 +290,10 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+                >,
             >,
         >,
     > {
@@ -300,8 +304,10 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+                                >,
                             >,
                         >,
                         0usize,
@@ -315,8 +321,10 @@ impl crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

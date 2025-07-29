@@ -6,7 +6,9 @@ pub struct DnsEndPoint {
     pub hostName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub port: i32,
     pub _getEndPointTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        crate::System::Threading::Tasks::Task_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_DnsEndPoint")]
@@ -127,7 +129,9 @@ impl crate::GlobalNamespace::DnsEndPoint {
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -137,7 +141,9 @@ impl crate::GlobalNamespace::DnsEndPoint {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+                            >,
                         >,
                         1usize,
                     >("GetEndPointAsync")
@@ -150,7 +156,9 @@ impl crate::GlobalNamespace::DnsEndPoint {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (taskUtility))? };
         Ok(__cordl_ret.into())
     }
@@ -341,13 +349,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DnsEndPoint {
 }
 #[cfg(feature = "DnsEndPoint")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
     >,
 > for crate::GlobalNamespace::DnsEndPoint {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -355,13 +363,13 @@ impl AsRef<
 }
 #[cfg(feature = "DnsEndPoint")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
     >,
 > for crate::GlobalNamespace::DnsEndPoint {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DnsEndPoint>,
     > {
         unsafe { std::mem::transmute(self) }

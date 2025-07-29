@@ -33,14 +33,18 @@ pub struct NoteCutSoundEffect {
     pub _goodCut: bool,
     pub _pitch: f32,
     pub _badCutRandomSoundPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
     pub _handleWrongSaberTypeAsGood: bool,
     pub _ignoreSaberSpeed: bool,
     pub _ignoreBadCuts: bool,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+            >,
         >,
     >,
 }
@@ -376,8 +380,10 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+                >,
             >,
         >,
     > {
@@ -388,8 +394,10 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+                                >,
                             >,
                         >,
                         0usize,
@@ -403,8 +411,10 @@ impl crate::GlobalNamespace::NoteCutSoundEffect {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteCutSoundEffectDidFinishEvent,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -483,7 +493,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NoteCutSoundE
 #[repr(C)]
 #[derive(Debug)]
 pub struct NoteCutSoundEffect_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
     >,
 }
@@ -509,7 +519,7 @@ for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
 }
 #[cfg(feature = "NoteCutSoundEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteCutSoundEffect_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutSoundEffect>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

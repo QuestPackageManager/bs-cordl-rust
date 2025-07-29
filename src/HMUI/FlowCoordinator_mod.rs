@@ -10,7 +10,9 @@ pub struct FlowCoordinator {
     pub _parentFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _childFlowCoordinator: quest_hook::libil2cpp::Gc<crate::HMUI::FlowCoordinator>,
     pub _mainScreenViewControllers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        >,
     >,
     pub _leftScreenViewController: quest_hook::libil2cpp::Gc<
         crate::HMUI::ViewController,

@@ -16,9 +16,15 @@ pub struct Dictionary_2<
     pub _freeList: i32,
     pub _freeCount: i32,
     pub _version: i32,
-    pub _comparer: quest_hook::libil2cpp::Gc<TKey>,
-    pub _keys: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    pub _values: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+    >,
+    pub _keys: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue>,
+    >,
+    pub _values: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue>,
+    >,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -437,23 +443,10 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (comparer))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc4(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub fn New_IDictionary_2_4(
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -467,9 +460,13 @@ impl<
             .invoke_void(".ctor", (dictionary))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc_Gc5(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+    pub fn New_IDictionary_2_IEqualityComparer_1_5(
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -481,6 +478,23 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (dictionary, comparer))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IEqualityComparer_1_2(
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (comparer))?;
         Ok(__cordl_object.into())
     }
     pub fn New_SerializationInfo_StreamingContext6(
@@ -516,9 +530,11 @@ impl<
             .invoke_void(".ctor", (capacity))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_i32_Gc3(
+    pub fn New_i32_IEqualityComparer_1_3(
         capacity: i32,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -880,73 +896,9 @@ impl<
     }
     pub fn System_Collections_Generic_IDictionary_TKey_TValue__get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<TKey>,
-                        0usize,
-                    >("System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn System_Collections_Generic_IDictionary_TKey_TValue__get_Values(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<TValue>,
-                        0usize,
-                    >("System.Collections.Generic.IDictionary<TKey,TValue>.get_Values")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "System.Collections.Generic.IDictionary<TKey,TValue>.get_Values",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_TKey_TValue___GetEnumerator(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::ICollection_1<TKey>,
         >,
     >
     where
@@ -962,9 +914,89 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                TKey,
-                                TValue,
+                            crate::System::Collections::Generic::ICollection_1<TKey>,
+                        >,
+                        0usize,
+                    >("System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn System_Collections_Generic_IDictionary_TKey_TValue__get_Values(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TValue>,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::ICollection_1<TValue>,
+                        >,
+                        0usize,
+                    >("System.Collections.Generic.IDictionary<TKey,TValue>.get_Values")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "System.Collections.Generic.IDictionary<TKey,TValue>.get_Values",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_TKey_TValue___GetEnumerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
+        >,
+    >
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    TKey,
+                                    TValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -981,13 +1013,19 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TKey>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1000,7 +1038,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TKey>,
+                        >,
                         0usize,
                     >(
                         "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Keys",
@@ -1014,14 +1054,18 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TKey>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_Generic_IReadOnlyDictionary_TKey_TValue__get_Values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1034,7 +1078,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >,
                         0usize,
                     >(
                         "System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.get_Values",
@@ -1048,9 +1094,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -1651,9 +1697,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IDictionary_2_4(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1666,39 +1714,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (comparer))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc4(
-        &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IDictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1715,10 +1736,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_Gc5(
+    pub fn _ctor_IDictionary_2_IEqualityComparer_1_5(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IDictionary_2<TKey, TValue>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1732,8 +1757,17 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<TKey, TValue>,
-                            quest_hook::libil2cpp::Gc<TKey>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IDictionary_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TKey,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -1748,6 +1782,44 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (dictionary, comparer))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IEqualityComparer_1_2(
+        &mut self,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEqualityComparer_1<
+                                TKey,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (comparer))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1819,10 +1891,12 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_Gc3(
+    pub fn _ctor_i32_IEqualityComparer_1_3(
         &mut self,
         capacity: i32,
-        comparer: quest_hook::libil2cpp::Gc<TKey>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1835,7 +1909,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<TKey>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TKey,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -1902,7 +1983,11 @@ impl<
     }
     pub fn get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1915,7 +2000,12 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey, TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2_KeyCollection<
+                                TKey,
+                                TValue,
+                            >,
+                        >,
                         0usize,
                     >("get_Keys")
                     .unwrap_or_else(|e| {
@@ -1926,14 +2016,21 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey, TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2_ValueCollection<
+                TKey,
+                TValue,
+            >,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1946,7 +2043,12 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey, TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2_ValueCollection<
+                                TKey,
+                                TValue,
+                            >,
+                        >,
                         0usize,
                     >("get_Values")
                     .unwrap_or_else(|e| {
@@ -1957,9 +2059,12 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey, TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2_ValueCollection<
+                TKey,
+                TValue,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
@@ -2007,6 +2112,156 @@ for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue>>
+for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2")]
@@ -2110,148 +2365,6 @@ impl<
 > AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
     fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2410,7 +2523,9 @@ pub struct Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     pub _version: i32,
     pub _index: i32,
     pub _current: crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
@@ -2765,7 +2880,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
         getEnumeratorRetType: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2779,7 +2896,15 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -2832,6 +2957,40 @@ impl<
             TValue,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        todo!()
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
@@ -2894,40 +3053,6 @@ for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
         todo!()
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::System::Collections::Generic::Dictionary_2_Enumerator<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        todo!()
-    }
-}
 #[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -2936,7 +3061,9 @@ pub struct Dictionary_2_KeyCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -3089,7 +3216,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3263,7 +3392,11 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_TKey__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TKey>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3276,7 +3409,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<TKey>,
+                        >,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<TKey>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -3288,9 +3423,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TKey>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -3425,7 +3560,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3438,7 +3575,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -3496,6 +3638,74 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TKey>>
+for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TKey> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -3532,66 +3742,6 @@ for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::Dictionary_2_KeyCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection")]
 #[repr(C)]
 #[derive(Debug)]
@@ -3600,7 +3750,9 @@ pub struct Dictionary_2_ValueCollection<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -3755,7 +3907,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3931,7 +4085,11 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_TValue__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3944,7 +4102,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+                        >,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<TValue>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -3956,9 +4116,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -4093,7 +4253,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -4106,7 +4268,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -4164,6 +4331,74 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<TValue>>
+for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::ICollection>
 for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -4200,66 +4435,6 @@ for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TVal
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::Dictionary_2_ValueCollection<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(
     feature = "cordl_class_System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator"
 )]
@@ -4269,7 +4444,9 @@ pub struct KeyCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     pub _index: i32,
     pub _version: i32,
     pub _currentKey: TKey,
@@ -4559,7 +4736,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -4572,7 +4751,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -4611,6 +4795,34 @@ impl<
             });
         let __cordl_ret: TKey = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TKey>>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TKey> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TKey>>
+for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TKey> {
+        todo!()
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
@@ -4665,32 +4877,6 @@ for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
         todo!()
     }
 }
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
-    TKey,
-    TValue,
-> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+KeyCollection+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey>>
-for crate::System::Collections::Generic::KeyCollection_Dictionary_2_Enumerator<
-    TKey,
-    TValue,
-> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey> {
-        todo!()
-    }
-}
 #[cfg(
     feature = "cordl_class_System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator"
 )]
@@ -4700,7 +4886,9 @@ pub struct ValueCollection_Dictionary_2_Enumerator<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     pub _index: i32,
     pub _version: i32,
     pub _currentValue: TValue,
@@ -4990,7 +5178,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -5003,7 +5193,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                TValue,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -5044,6 +5239,34 @@ impl<
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TValue> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TValue>>
+for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
+    TKey,
+    TValue,
+> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TValue> {
+        todo!()
     }
 }
 #[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
@@ -5095,32 +5318,6 @@ for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator
     TValue,
 > {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
-    TKey,
-    TValue,
-> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TValue> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+Dictionary_2+ValueCollection+Enumerator")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TValue>>
-for crate::System::Collections::Generic::ValueCollection_Dictionary_2_Enumerator<
-    TKey,
-    TValue,
-> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TValue> {
         todo!()
     }
 }

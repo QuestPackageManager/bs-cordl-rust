@@ -313,20 +313,20 @@ impl crate::UnityEngine::UIElements::BackgroundRepeat {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundRepeat>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat>>
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundRepeat> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BackgroundRepeat")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::BackgroundRepeat>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::BackgroundRepeat>>
 for crate::UnityEngine::UIElements::BackgroundRepeat {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     > {
         todo!()

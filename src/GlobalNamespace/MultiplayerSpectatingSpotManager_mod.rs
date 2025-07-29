@@ -4,11 +4,17 @@
 pub struct MultiplayerSpectatingSpotManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _spectatingSpots: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+        >,
     >,
     pub _spotIndexBySpot: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+            >,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerSpectatingSpotManager")]
@@ -262,7 +268,11 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -272,8 +282,10 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+                                >,
                             >,
                         >,
                         0usize,
@@ -287,7 +299,11 @@ impl crate::GlobalNamespace::MultiplayerSpectatingSpotManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSpectatingSpot>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IMultiplayerSpectatingSpot,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

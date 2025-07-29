@@ -314,7 +314,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -324,7 +326,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -337,7 +341,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -596,6 +602,34 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -634,30 +668,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
         todo!()
     }
 }
@@ -922,6 +932,34 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -946,30 +984,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventBuffer+Enumerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventBuffer_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
         todo!()
     }
 }

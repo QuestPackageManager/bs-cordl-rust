@@ -15,7 +15,7 @@ pub struct SimpleDialogPromptViewController {
             quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
         >,
     >,
-    pub _didFinishAction: quest_hook::libil2cpp::Gc<i32>,
+    pub _didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
 }
 #[cfg(feature = "cordl_class_SimpleDialogPromptViewController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -112,12 +112,12 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Gc0(
+    pub fn Init_Action_1_0(
         &mut self,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         buttonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
+        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -134,7 +134,7 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,
@@ -153,13 +153,13 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Il2CppString_Gc1(
+    pub fn Init_Il2CppString_Action_1_1(
         &mut self,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         firstButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         secondButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
+        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         5usize,
@@ -201,14 +201,14 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_Il2CppString_Il2CppString_Gc2(
+    pub fn Init_Il2CppString_Il2CppString_Action_1_2(
         &mut self,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         firstButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         secondButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         thirdButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        didFinishAction: quest_hook::libil2cpp::Gc<i32>,
+        didFinishAction: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -231,7 +231,7 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         6usize,

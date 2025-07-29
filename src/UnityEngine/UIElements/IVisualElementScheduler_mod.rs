@@ -71,10 +71,10 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduler {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (updateEvent))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Execute_Gc0(
+    pub fn Execute_Action_1_0(
         &mut self,
         timerUpdateEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TimerState,
+            crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -87,7 +87,9 @@ impl crate::UnityEngine::UIElements::IVisualElementScheduler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TimerState,
+                            crate::System::Action_1<
+                                crate::UnityEngine::UIElements::TimerState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::IVisualElementScheduledItem,

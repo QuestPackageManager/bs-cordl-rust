@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector2Composite {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputBindingComposite_1<
+        crate::UnityEngine::Vector2,
+    >,
     pub up: i32,
     pub down: i32,
     pub left: i32,
@@ -32,7 +34,9 @@ for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Composites+Vector2Composite")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Composites::Vector2Composite {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
+    type Target = crate::UnityEngine::InputSystem::InputBindingComposite_1<
+        crate::UnityEngine::Vector2,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

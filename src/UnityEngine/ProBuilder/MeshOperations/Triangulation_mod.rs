@@ -41,8 +41,12 @@ for crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+Triangulation")]
 impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
     pub fn SortAndTriangulate(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indexes: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -51,9 +55,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                             bool,
                         ),
@@ -73,11 +83,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TriangulateVertices_Gc__cordl_bool__cordl_bool0(
+    pub fn TriangulateVertices_IList_1__cordl_bool__cordl_bool0(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
-        triangles: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -88,12 +102,16 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                             bool,
                             bool,
@@ -119,7 +137,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         vertices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        triangles: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
         holes: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<
@@ -140,7 +160,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
@@ -172,7 +194,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         vertices: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        triangles: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        triangles: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
         unordered: bool,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -188,7 +212,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                             bool,
                             bool,
@@ -211,8 +237,12 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         Ok(__cordl_ret.into())
     }
     pub fn Triangulate_ByRefMut__cordl_bool0(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indexes: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
         convex: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -221,9 +251,15 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                             bool,
                         ),
@@ -243,12 +279,22 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Triangulate_Gc_ByRefMut1(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        holes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    pub fn Triangulate_IList_1_ByRefMut1(
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<i32>>,
+        holes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<
+                        crate::UnityEngine::Vector2,
+                    >,
+                >,
+            >,
+        >,
+        indexes: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -256,12 +302,24 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::Triangulation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::IList_1<
+                                            crate::UnityEngine::Vector2,
+                                        >,
+                                    >,
+                                >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<i32>,
+                                >,
                             >,
                         ),
                         bool,

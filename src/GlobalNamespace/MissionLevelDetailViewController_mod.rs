@@ -16,8 +16,10 @@ pub struct MissionLevelDetailViewController {
     >,
     pub _modifiersPanelGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub didPressPlayButtonEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MissionLevelDetailViewController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelDetailViewController,
+            >,
         >,
     >,
     pub _missionNode: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNode>,
@@ -196,8 +198,10 @@ impl crate::GlobalNamespace::MissionLevelDetailViewController {
     pub fn add_didPressPlayButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionLevelDetailViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionLevelDetailViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,8 +211,10 @@ impl crate::GlobalNamespace::MissionLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionLevelDetailViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionLevelDetailViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -257,8 +263,10 @@ impl crate::GlobalNamespace::MissionLevelDetailViewController {
     pub fn remove_didPressPlayButtonEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionLevelDetailViewController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionLevelDetailViewController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -268,8 +276,10 @@ impl crate::GlobalNamespace::MissionLevelDetailViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionLevelDetailViewController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionLevelDetailViewController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -4,22 +4,39 @@
 pub struct CallbacksInTime {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lastProcessedNode: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+        crate::System::Collections::Generic::LinkedListNode_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+        >,
     >,
     pub aheadTime: f32,
     pub beatmapEventDataForCallbacksAfterNodeRemoval: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapEventData,
     >,
     pub _callbacksWithSubtypeIdentifier: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<quest_hook::libil2cpp::Gc<crate::System::Type>, i32>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                i32,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+                    >,
+                >,
+            >,
         >,
     >,
     pub _callbacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataCallbackWrapper>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::BeatmapDataCallbackWrapper,
+                    >,
+                >,
+            >,
         >,
     >,
 }

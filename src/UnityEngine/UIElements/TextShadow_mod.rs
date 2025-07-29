@@ -289,20 +289,20 @@ impl crate::UnityEngine::UIElements::TextShadow {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextShadow")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow>>
 for crate::UnityEngine::UIElements::TextShadow {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextShadow")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow>>
 for crate::UnityEngine::UIElements::TextShadow {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TextShadow> {
         todo!()
     }
 }

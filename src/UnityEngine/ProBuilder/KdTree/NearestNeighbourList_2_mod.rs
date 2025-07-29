@@ -6,8 +6,12 @@ pub struct NearestNeighbourList_2<
     TDistance: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub queue: quest_hook::libil2cpp::Gc<TItem, TDistance>,
-    pub distanceMath: quest_hook::libil2cpp::Gc<TDistance>,
+    pub queue: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TDistance>,
+    >,
+    pub distanceMath: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+    >,
     pub maxCapacity: i32,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TDistance: std::marker::PhantomData<TDistance>,
@@ -158,7 +162,9 @@ impl<
     }
     pub fn New(
         maxCapacity: i32,
-        distanceMath: quest_hook::libil2cpp::Gc<TDistance>,
+        distanceMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -200,7 +206,9 @@ impl<
     pub fn _ctor(
         &mut self,
         maxCapacity: i32,
-        distanceMath: quest_hook::libil2cpp::Gc<TDistance>,
+        distanceMath: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<TDistance>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -213,7 +221,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<TDistance>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<
+                                    TDistance,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -317,9 +332,15 @@ for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDista
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TItem, TDistance>>
-for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem, TDistance> {
+> AsRef<
+    crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDistance>,
+> for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<
+        TItem,
+        TDistance,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -327,9 +348,15 @@ for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDista
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TDistance: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TItem, TDistance>>
-for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem, TDistance> {
+> AsMut<
+    crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<TItem, TDistance>,
+> for crate::UnityEngine::ProBuilder::KdTree::NearestNeighbourList_2<TItem, TDistance> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ProBuilder::KdTree::INearestNeighbourList_2<
+        TItem,
+        TDistance,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

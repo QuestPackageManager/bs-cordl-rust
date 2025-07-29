@@ -335,13 +335,13 @@ impl crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     >,
 > for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     > {
         todo!()
@@ -349,13 +349,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+InputSystem+Users+InputUserAccountHandle")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     >,
 > for crate::UnityEngine::InputSystem::Users::InputUserAccountHandle {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     > {
         todo!()

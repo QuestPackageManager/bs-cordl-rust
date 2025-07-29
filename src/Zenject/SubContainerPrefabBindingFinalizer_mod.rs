@@ -6,8 +6,10 @@ pub struct SubContainerPrefabBindingFinalizer {
     pub _subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _resolveAll: bool,
     pub _subContainerCreatorFactory: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+SubContainerPrefabBindingFinalizer")]
@@ -49,7 +51,9 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -60,7 +64,9 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -110,8 +116,10 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
         subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
         subContainerCreatorFactory: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -155,8 +163,10 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
         subIdentifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         resolveAll: bool,
         subContainerCreatorFactory: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::ISubContainerCreator>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -171,9 +181,11 @@ impl crate::Zenject::SubContainerPrefabBindingFinalizer {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::ISubContainerCreator,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::ISubContainerCreator,
+                                    >,
                                 >,
                             >,
                         ),

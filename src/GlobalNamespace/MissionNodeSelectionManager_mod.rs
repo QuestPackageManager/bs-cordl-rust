@@ -7,7 +7,11 @@ pub struct MissionNodeSelectionManager {
         crate::GlobalNamespace::MissionNodesManager,
     >,
     pub didSelectMissionNodeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionNodeVisualController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionNodeVisualController,
+            >,
+        >,
     >,
     pub _missionNodes: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -211,8 +215,10 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
     pub fn add_didSelectMissionNodeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionNodeVisualController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionNodeVisualController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -222,8 +228,10 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionNodeVisualController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionNodeVisualController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -245,8 +253,10 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
     pub fn remove_didSelectMissionNodeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionNodeVisualController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionNodeVisualController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -256,8 +266,10 @@ impl crate::GlobalNamespace::MissionNodeSelectionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionNodeVisualController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionNodeVisualController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

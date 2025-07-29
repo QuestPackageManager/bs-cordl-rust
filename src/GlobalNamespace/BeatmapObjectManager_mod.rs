@@ -4,57 +4,89 @@
 pub struct BeatmapObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub noteWasAddedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-        crate::GlobalNamespace::NoteSpawnData,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+            crate::GlobalNamespace::NoteSpawnData,
+        >,
     >,
     pub noteWasSpawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        >,
     >,
     pub noteWasDespawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        >,
     >,
     pub noteWasMissedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        >,
     >,
     pub noteWasCutEvent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager_NoteWasCutDelegate,
     >,
     pub noteDidStartJumpEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+        >,
     >,
     pub noteDidStartDissolvingEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+        >,
     >,
     pub obstacleWasAddedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-        crate::GlobalNamespace::ObstacleSpawnData,
-        f32,
+        crate::System::Action_3<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+            crate::GlobalNamespace::ObstacleSpawnData,
+            f32,
+        >,
     >,
     pub obstacleWasSpawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        >,
     >,
     pub obstacleWasDespawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        >,
     >,
     pub obstacleDidPassThreeQuartersOfMove2Event: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        >,
     >,
     pub obstacleDidPassAvoidedMarkEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+        >,
     >,
     pub sliderWasAddedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-        crate::GlobalNamespace::SliderSpawnData,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+            crate::GlobalNamespace::SliderSpawnData,
+        >,
     >,
     pub sliderWasSpawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        >,
     >,
     pub sliderWasDespawnedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        >,
     >,
-    pub didHideAllBeatmapObjectsEvent: quest_hook::libil2cpp::Gc<bool>,
+    pub didHideAllBeatmapObjectsEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<bool>,
+    >,
     pub _allBeatmapObjects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapObjectController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapObjectController>,
+        >,
     >,
     pub _spawnHidden_k__BackingField: bool,
 }
@@ -1169,14 +1201,14 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     }
     pub fn add_didHideAllBeatmapObjectsEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didHideAllBeatmapObjectsEvent")
@@ -1196,7 +1228,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteDidStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1205,8 +1239,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteControllerBase,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteControllerBase,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1228,7 +1264,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteDidStartJumpEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1237,8 +1275,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1260,8 +1300,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-            crate::GlobalNamespace::NoteSpawnData,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                crate::GlobalNamespace::NoteSpawnData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1270,8 +1312,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                            crate::GlobalNamespace::NoteSpawnData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                                crate::GlobalNamespace::NoteSpawnData,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1322,7 +1366,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1331,8 +1377,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1354,7 +1402,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1363,8 +1413,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1386,7 +1438,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_noteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1395,8 +1449,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1418,7 +1474,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_obstacleDidPassAvoidedMarkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1427,8 +1485,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1450,7 +1510,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_obstacleDidPassThreeQuartersOfMove2Event(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1459,8 +1521,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1482,9 +1546,11 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_obstacleWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-            crate::GlobalNamespace::ObstacleSpawnData,
-            f32,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+                crate::GlobalNamespace::ObstacleSpawnData,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1493,11 +1559,13 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleData,
+                            crate::System::Action_3<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleData,
+                                >,
+                                crate::GlobalNamespace::ObstacleSpawnData,
+                                f32,
                             >,
-                            crate::GlobalNamespace::ObstacleSpawnData,
-                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1518,7 +1586,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_obstacleWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1527,8 +1597,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1550,7 +1622,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_obstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1559,8 +1633,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1582,8 +1658,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_sliderWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-            crate::GlobalNamespace::SliderSpawnData,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+                crate::GlobalNamespace::SliderSpawnData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1592,10 +1670,12 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderData,
+                                >,
+                                crate::GlobalNamespace::SliderSpawnData,
                             >,
-                            crate::GlobalNamespace::SliderSpawnData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1616,7 +1696,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_sliderWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1625,8 +1707,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1648,7 +1732,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn add_sliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1657,8 +1743,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1681,7 +1769,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1691,8 +1781,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1706,7 +1798,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1729,14 +1823,14 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     }
     pub fn remove_didHideAllBeatmapObjectsEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didHideAllBeatmapObjectsEvent")
@@ -1756,7 +1850,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteDidStartDissolvingEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteControllerBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1765,8 +1861,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteControllerBase,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteControllerBase,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1788,7 +1886,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteDidStartJumpEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1797,8 +1897,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1820,8 +1922,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-            crate::GlobalNamespace::NoteSpawnData,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                crate::GlobalNamespace::NoteSpawnData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1830,8 +1934,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
-                            crate::GlobalNamespace::NoteSpawnData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteData>,
+                                crate::GlobalNamespace::NoteSpawnData,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1882,7 +1988,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1891,8 +1999,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1914,7 +2024,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteWasMissedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1923,8 +2035,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1946,7 +2060,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_noteWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1955,8 +2071,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::NoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::NoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1978,7 +2096,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_obstacleDidPassAvoidedMarkEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1987,8 +2107,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2010,7 +2132,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_obstacleDidPassThreeQuartersOfMove2Event(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2019,8 +2143,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2042,9 +2168,11 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_obstacleWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
-            crate::GlobalNamespace::ObstacleSpawnData,
-            f32,
+            crate::System::Action_3<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleData>,
+                crate::GlobalNamespace::ObstacleSpawnData,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2053,11 +2181,13 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleData,
+                            crate::System::Action_3<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleData,
+                                >,
+                                crate::GlobalNamespace::ObstacleSpawnData,
+                                f32,
                             >,
-                            crate::GlobalNamespace::ObstacleSpawnData,
-                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2078,7 +2208,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_obstacleWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2087,8 +2219,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2110,7 +2244,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_obstacleWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObstacleController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2119,8 +2255,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ObstacleController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2142,8 +2280,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_sliderWasAddedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
-            crate::GlobalNamespace::SliderSpawnData,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderData>,
+                crate::GlobalNamespace::SliderSpawnData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2152,10 +2292,12 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderData,
+                                >,
+                                crate::GlobalNamespace::SliderSpawnData,
                             >,
-                            crate::GlobalNamespace::SliderSpawnData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2176,7 +2318,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_sliderWasDespawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2185,8 +2329,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2208,7 +2354,9 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
     pub fn remove_sliderWasSpawnedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2217,8 +2365,10 @@ impl crate::GlobalNamespace::BeatmapObjectManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

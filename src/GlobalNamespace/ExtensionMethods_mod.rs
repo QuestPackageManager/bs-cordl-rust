@@ -123,10 +123,14 @@ impl crate::GlobalNamespace::ExtensionMethods {
         Ok(__cordl_ret.into())
     }
     pub fn GetRange<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
         index: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -136,8 +140,16 @@ impl crate::GlobalNamespace::ExtensionMethods {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32, i32),
-                        quest_hook::libil2cpp::Gc<T>,
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         3usize,
                     >("GetRange")
                     .unwrap_or_else(|e| {
@@ -148,9 +160,9 @@ impl crate::GlobalNamespace::ExtensionMethods {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (list, index, count))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (list, index, count))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsDescendantOf(
@@ -183,7 +195,9 @@ impl crate::GlobalNamespace::ExtensionMethods {
         Ok(__cordl_ret.into())
     }
     pub fn LastUnsafe<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -194,7 +208,9 @@ impl crate::GlobalNamespace::ExtensionMethods {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                        >),
                         T,
                         1usize,
                     >("LastUnsafe")
@@ -323,10 +339,12 @@ impl crate::GlobalNamespace::ExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartUniqueCoroutine_MonoBehaviour_Gc0(
+    pub fn StartUniqueCoroutine_Func_1_0(
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         func: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Coroutine>,
@@ -339,8 +357,10 @@ impl crate::GlobalNamespace::ExtensionMethods {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::IEnumerator,
+                                crate::System::Func_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::IEnumerator,
+                                    >,
                                 >,
                             >,
                         ),
@@ -360,11 +380,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartUniqueCoroutine_T1<T>(
+    pub fn StartUniqueCoroutine_Func_2_T1<T>(
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         func: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            >,
         >,
         value: T,
     ) -> quest_hook::libil2cpp::Result<
@@ -382,9 +404,11 @@ impl crate::GlobalNamespace::ExtensionMethods {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                             quest_hook::libil2cpp::Gc<
-                                T,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::IEnumerator,
+                                crate::System::Func_2<
+                                    T,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::IEnumerator,
+                                    >,
                                 >,
                             >,
                             T,
@@ -405,10 +429,12 @@ impl crate::GlobalNamespace::ExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StopUniqueCoroutine_MonoBehaviour_Gc0(
+    pub fn StopUniqueCoroutine_Func_1_0(
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         func: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -419,8 +445,10 @@ impl crate::GlobalNamespace::ExtensionMethods {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::IEnumerator,
+                                crate::System::Func_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::IEnumerator,
+                                    >,
                                 >,
                             >,
                         ),
@@ -440,11 +468,13 @@ impl crate::GlobalNamespace::ExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StopUniqueCoroutine_MonoBehaviour_Gc1<T>(
+    pub fn StopUniqueCoroutine_Func_2_1<T>(
         m: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
         func: quest_hook::libil2cpp::Gc<
-            T,
-            quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            crate::System::Func_2<
+                T,
+                quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -459,9 +489,11 @@ impl crate::GlobalNamespace::ExtensionMethods {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
                             quest_hook::libil2cpp::Gc<
-                                T,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::IEnumerator,
+                                crate::System::Func_2<
+                                    T,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::IEnumerator,
+                                    >,
                                 >,
                             >,
                         ),

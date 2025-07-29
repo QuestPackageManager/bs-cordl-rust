@@ -5,8 +5,10 @@ pub struct JsonValidatingReader {
     __cordl_parent: crate::Newtonsoft::Json::JsonReader,
     pub _reader: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonReader>,
     pub _stack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+        crate::System::Collections::Generic::Stack_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope,
+            >,
         >,
     >,
     pub _schema: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchema>,
@@ -1039,7 +1041,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
     pub fn WriteToken(
         &mut self,
         schemas: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1048,8 +1054,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1128,7 +1136,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1138,8 +1150,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1153,7 +1167,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1161,7 +1179,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1171,8 +1193,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1186,7 +1210,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1500,11 +1528,15 @@ pub struct JsonValidatingReader_SchemaScope {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
     pub _schemas: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+        >,
     >,
     pub _requiredProperties: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        bool,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            bool,
+        >,
     >,
     pub _CurrentPropertyName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -1512,7 +1544,9 @@ pub struct JsonValidatingReader_SchemaScope {
     pub _ArrayItemCount_k__BackingField: i32,
     pub _IsUniqueArray_k__BackingField: bool,
     pub _UniqueArrayItems_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+        >,
     >,
     pub _CurrentItemWriter_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Linq::JTokenWriter,
@@ -1560,7 +1594,9 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1572,8 +1608,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                             crate::Newtonsoft::Json::Schema::JsonSchemaModel,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         1usize,
@@ -1587,14 +1625,20 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (schema))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
         schemas: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1607,7 +1651,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
         tokenType: crate::Newtonsoft::Json::Linq::JTokenType,
         schemas: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1618,8 +1666,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                         (
                             crate::Newtonsoft::Json::Linq::JTokenType,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1733,8 +1783,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1744,10 +1796,12 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                bool,
                             >,
-                            bool,
                         >,
                         0usize,
                     >("get_RequiredProperties")
@@ -1760,8 +1814,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1769,7 +1825,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1779,8 +1839,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1794,7 +1856,11 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Schema::JsonSchemaModel>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Schema::JsonSchemaModel,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1827,7 +1893,9 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1837,8 +1905,10 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JToken,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JToken,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1852,7 +1922,9 @@ impl crate::Newtonsoft::Json::JsonValidatingReader_SchemaScope {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

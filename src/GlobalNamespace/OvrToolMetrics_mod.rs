@@ -9,7 +9,9 @@ pub struct OvrToolMetrics {
         >,
     >,
     pub _sample: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i64>>,
-    pub _samples: quest_hook::libil2cpp::Gc<i64>,
+    pub _samples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i64>,
+    >,
 }
 #[cfg(feature = "cordl_class_OvrToolMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OvrToolMetrics {

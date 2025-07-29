@@ -4,14 +4,20 @@
 pub struct TimerEventScheduler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ScheduledItems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        >,
     >,
     pub m_TransactionMode: bool,
     pub m_ScheduleTransactions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        >,
     >,
     pub m_UnscheduleTransactions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ScheduledItem>,
+        >,
     >,
     pub disableThrottling: bool,
     pub m_LastUpdatedIndex: i32,

@@ -42,7 +42,9 @@ impl crate::GlobalNamespace::BakedLightTexturePacking {
     pub const kBakedLightTexturePackingShaderName: &'static str = "Hidden/BakedLightTexturePacking";
     pub fn PackTextures(
         textures: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+            >,
         >,
         descriptor: crate::UnityEngine::RenderTextureDescriptor,
     ) -> quest_hook::libil2cpp::Result<
@@ -55,7 +57,9 @@ impl crate::GlobalNamespace::BakedLightTexturePacking {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+                                >,
                             >,
                             crate::UnityEngine::RenderTextureDescriptor,
                         ),

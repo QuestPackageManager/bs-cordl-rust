@@ -34,7 +34,9 @@ pub struct ReadObjectInfo {
     >,
     pub context: crate::System::Runtime::Serialization::StreamingContext,
     pub memberTypesList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub serObjectInfoInit: quest_hook::libil2cpp::Gc<
         crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit,

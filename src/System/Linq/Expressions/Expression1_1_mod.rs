@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression1_1<TDelegate: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TDelegate>,
+    __cordl_parent: crate::System::Linq::Expressions::Expression_1<TDelegate>,
     pub _par0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
@@ -45,7 +45,7 @@ for crate::System::Linq::Expressions::Expression1_1<TDelegate> {
 #[cfg(feature = "System+Linq+Expressions+Expression1_1")]
 impl<TDelegate: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Linq::Expressions::Expression1_1<TDelegate> {
-    type Target = quest_hook::libil2cpp::Gc<TDelegate>;
+    type Target = crate::System::Linq::Expressions::Expression_1<TDelegate>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,7 +121,11 @@ impl<
                 >,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TDelegate>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        >,
+    >
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -143,7 +147,9 @@ impl<
                                 >,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<TDelegate>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+                        >,
                         2usize,
                     >("Rewrite")
                     .unwrap_or_else(|e| {
@@ -154,9 +160,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TDelegate> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (body, parameters))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<TDelegate>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (body, parameters))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

@@ -4,7 +4,9 @@
 pub struct RotationTimeProcessor {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rotationChangeDataList: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::RotationTimeProcessor_RotationChangeData,
+        >,
     >,
     pub currentBpmChangesDataIdx: i32,
 }
@@ -67,10 +69,12 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IReadOnlyList_1_0(
         events: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -80,9 +84,13 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
             .invoke_void(".ctor", (events))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IReadOnlyList_1_1(
         rotationEventsSaveData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::RotationEventData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -135,11 +143,13 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IReadOnlyList_1_0(
         &mut self,
         events: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,8 +159,10 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -169,10 +181,14 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IReadOnlyList_1_1(
         &mut self,
         rotationEventsSaveData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::RotationEventData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion3::RotationEventData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -181,8 +197,10 @@ impl crate::GlobalNamespace::RotationTimeProcessor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion3::RotationEventData,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion3::RotationEventData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

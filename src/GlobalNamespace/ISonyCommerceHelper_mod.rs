@@ -52,7 +52,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -67,7 +69,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+                            >,
                         >,
                         2usize,
                     >("DisplayCategoryBrowseDialogAsync")
@@ -80,7 +84,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayCategoryBrowseDialogResult,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (categoryLabel, token))? };
         Ok(__cordl_ret.into())
     }
@@ -90,7 +96,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -105,7 +113,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+                            >,
                         >,
                         2usize,
                     >("DisplayProductBrowseDialogAsync")
@@ -118,7 +128,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_DisplayProductBrowseDialogResult,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (productLabel, token))? };
         Ok(__cordl_ret.into())
     }
@@ -127,7 +139,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -137,7 +151,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+                            >,
                         >,
                         1usize,
                     >("GetAdditionalContentEntitlementsAsync")
@@ -150,7 +166,9 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

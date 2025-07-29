@@ -22,7 +22,9 @@ pub struct PointerEventData {
     pub _pointerCurrentRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
     pub _pointerPressRaycast_k__BackingField: crate::UnityEngine::EventSystems::RaycastResult,
     pub hovered: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _eligibleForClick_k__BackingField: bool,
     pub _displayIndex_k__BackingField: i32,

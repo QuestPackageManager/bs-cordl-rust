@@ -6,8 +6,10 @@ pub struct QueryOutputWriter {
     pub wrapped: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlRawWriter>,
     pub inCDataSection: bool,
     pub lookupCDataElems: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            i32,
+        >,
     >,
     pub bitsCData: quest_hook::libil2cpp::Gc<crate::System::Xml::BitStack>,
     pub qnameCData: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,

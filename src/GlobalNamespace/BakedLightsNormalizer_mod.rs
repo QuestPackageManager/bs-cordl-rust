@@ -5,8 +5,10 @@ pub struct BakedLightsNormalizer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _maxTotalIntensity: f32,
     pub _lightmapLightDict: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LightConstants_BakeId,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::LightConstants_BakeId,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+        >,
     >,
     pub _lightmapDictInitialized: bool,
     pub _grayscaleTotal: f32,
@@ -170,8 +172,10 @@ impl crate::GlobalNamespace::BakedLightsNormalizer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightConstants_BakeId,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::LightConstants_BakeId,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -181,9 +185,11 @@ impl crate::GlobalNamespace::BakedLightsNormalizer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::LightConstants_BakeId,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LightmapLightWithIds,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                crate::GlobalNamespace::LightConstants_BakeId,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LightmapLightWithIds,
+                                >,
                             >,
                         >,
                         0usize,
@@ -197,8 +203,10 @@ impl crate::GlobalNamespace::BakedLightsNormalizer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LightConstants_BakeId,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            crate::System::Collections::Generic::Dictionary_2<
+                crate::GlobalNamespace::LightConstants_BakeId,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightmapLightWithIds>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct JEnumerable_1<T: quest_hook::libil2cpp::Type> {
-    pub _enumerable: quest_hook::libil2cpp::Gc<T>,
+    pub _enumerable: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEnumerable_1<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Linq+JEnumerable_1")]
@@ -180,7 +182,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -191,7 +195,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<T>,
+                        >,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -202,9 +208,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32>
@@ -263,7 +269,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
     }
     pub fn _ctor(
         &mut self,
-        enumerable: quest_hook::libil2cpp::Gc<T>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -274,7 +282,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -296,7 +306,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         >,
     >
     where
@@ -310,8 +322,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JToken,
+                            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JToken,
+                                >,
                             >,
                         >,
                         1usize,
@@ -325,9 +339,47 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::JEnumerable_
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            crate::Newtonsoft::Json::Linq::IJEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (key))? };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(&self) -> &crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::Newtonsoft::Json::Linq::IJEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
@@ -345,52 +397,24 @@ for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
 for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>> {
+    ) -> &crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JEnumerable_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::Newtonsoft::Json::Linq::JEnumerable_1<T>>>
 for crate::Newtonsoft::Json::Linq::JEnumerable_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::Newtonsoft::Json::Linq::JEnumerable_1<T>,
     > {
         todo!()

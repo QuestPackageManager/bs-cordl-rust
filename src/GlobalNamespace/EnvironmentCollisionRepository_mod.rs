@@ -4,8 +4,10 @@
 pub struct EnvironmentCollisionRepository {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColliderEventEffect>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColliderEventEffect>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_EnvironmentCollisionRepository")]

@@ -340,18 +340,20 @@ impl crate::GlobalNamespace::BeatmapKey {
     }
 }
 #[cfg(feature = "BeatmapKey")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey>>
 for crate::GlobalNamespace::BeatmapKey {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey> {
         todo!()
     }
 }
 #[cfg(feature = "BeatmapKey")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey>>
 for crate::GlobalNamespace::BeatmapKey {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::BeatmapKey> {
         todo!()
     }
 }

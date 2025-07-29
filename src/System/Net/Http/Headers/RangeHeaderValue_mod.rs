@@ -4,8 +4,10 @@
 pub struct RangeHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ranges: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::Http::Headers::RangeItemHeaderValue,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::RangeItemHeaderValue,
+            >,
         >,
     >,
     pub unit: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -254,8 +256,10 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::RangeItemHeaderValue,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::RangeItemHeaderValue,
+                >,
             >,
         >,
     > {
@@ -266,8 +270,10 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Http::Headers::RangeItemHeaderValue,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::Http::Headers::RangeItemHeaderValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -281,8 +287,10 @@ impl crate::System::Net::Http::Headers::RangeHeaderValue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::RangeItemHeaderValue,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::RangeItemHeaderValue,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -25,7 +25,9 @@ pub struct PS5AppInit {
         crate::UnityEngine::GameObject,
     >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        crate::Zenject::LazyInject_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerDataModel>,
+        >,
     >,
     pub _backgroundExecutionHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SonyBackgroundExecutionHelper,

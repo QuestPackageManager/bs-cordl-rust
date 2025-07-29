@@ -33,16 +33,26 @@ pub struct ScoreController {
     pub _playerHeadAndObstacleInteraction: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerHeadAndObstacleInteraction,
     >,
-    pub scoreDidChangeEvent: quest_hook::libil2cpp::Gc<i32, i32>,
-    pub multiplierDidChangeEvent: quest_hook::libil2cpp::Gc<i32, f32>,
+    pub scoreDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, i32>,
+    >,
+    pub multiplierDidChangeEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<i32, f32>,
+    >,
     pub scoringForNoteStartedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub scoringForNoteFinishedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _gameplayModifierParams: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+        >,
     >,
     pub _modifiedScore: i32,
     pub _immediateMaxPossibleModifiedScore: i32,
@@ -56,15 +66,23 @@ pub struct ScoreController {
     pub _scoreMultiplierCounter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ScoreMultiplierCounter,
     >,
-    pub _sortedNoteTimesWithoutScoringElements: quest_hook::libil2cpp::Gc<f32>,
+    pub _sortedNoteTimesWithoutScoringElements: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub _sortedScoringElementsWithoutMultiplier: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _scoringElementsWithMultiplier: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
     pub _scoringElementsToRemove: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_ScoreController")]
@@ -365,14 +383,14 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn add_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_multiplierDidChangeEvent")
@@ -391,14 +409,14 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn add_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_scoreDidChangeEvent")
@@ -418,7 +436,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn add_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -427,8 +447,10 @@ impl crate::GlobalNamespace::ScoreController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ScoringElement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ScoringElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -450,7 +472,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn add_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -459,8 +483,10 @@ impl crate::GlobalNamespace::ScoreController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ScoringElement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ScoringElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -578,14 +604,14 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn remove_multiplierDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_multiplierDidChangeEvent")
@@ -604,14 +630,14 @@ impl crate::GlobalNamespace::ScoreController {
     }
     pub fn remove_scoreDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32, i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32, i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<i32, i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_scoreDidChangeEvent")
@@ -631,7 +657,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn remove_scoringForNoteFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -640,8 +668,10 @@ impl crate::GlobalNamespace::ScoreController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ScoringElement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ScoringElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -663,7 +693,9 @@ impl crate::GlobalNamespace::ScoreController {
     pub fn remove_scoringForNoteStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ScoringElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -672,8 +704,10 @@ impl crate::GlobalNamespace::ScoreController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ScoringElement,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ScoringElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

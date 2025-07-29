@@ -30,11 +30,13 @@ pub struct ControllerProfilesSettingsViewController {
     >,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
     pub onRequestSelectProfileToCopyFrom: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                    i32,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::ValueTuple_2<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        i32,
+                    >,
                 >,
             >,
         >,
@@ -442,11 +444,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     pub fn add_onRequestSelectProfileToCopyFrom(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    crate::System::ValueTuple_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        i32,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::System::ValueTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        >,
                     >,
                 >,
             >,
@@ -458,13 +464,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::System::ValueTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::System::ValueTuple_2<
+                                            quest_hook::libil2cpp::Gc<
+                                                quest_hook::libil2cpp::Il2CppString,
+                                            >,
+                                            i32,
                                         >,
-                                        i32,
                                     >,
                                 >,
                             >,
@@ -488,11 +496,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
     pub fn remove_onRequestSelectProfileToCopyFrom(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    crate::System::ValueTuple_2<
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        i32,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        crate::System::ValueTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        >,
                     >,
                 >,
             >,
@@ -504,13 +516,15 @@ impl crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::System::ValueTuple_2<
-                                        quest_hook::libil2cpp::Gc<
-                                            quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::System::ValueTuple_2<
+                                            quest_hook::libil2cpp::Gc<
+                                                quest_hook::libil2cpp::Il2CppString,
+                                            >,
+                                            i32,
                                         >,
-                                        i32,
                                     >,
                                 >,
                             >,

@@ -4,20 +4,28 @@
 pub struct SchemaInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub elementDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub undeclaredElementDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub generalEntities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        >,
     >,
     pub parameterEntities: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+        >,
     >,
     pub docTypeName: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
     pub internalDtdSubset: quest_hook::libil2cpp::Gc<
@@ -26,22 +34,30 @@ pub struct SchemaInfo {
     pub hasNonCDataAttributes: bool,
     pub hasDefaultAttributes: bool,
     pub targetNamespaces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        bool,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            bool,
+        >,
     >,
     pub attributeDecls: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+        >,
     >,
     pub errorCount: i32,
     pub schemaType: crate::System::Xml::Schema::SchemaType,
     pub elementDeclsByType: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+        >,
     >,
     pub notations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Xml+Schema+SchemaInfo")]
@@ -615,8 +631,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -626,11 +644,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaAttDef,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaAttDef,
+                                >,
                             >,
                         >,
                         0usize,
@@ -644,8 +664,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaAttDef>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -680,8 +702,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -691,11 +715,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaElementDecl,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaElementDecl,
+                                >,
                             >,
                         >,
                         0usize,
@@ -709,8 +735,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -718,8 +746,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -729,11 +759,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaElementDecl,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaElementDecl,
+                                >,
                             >,
                         >,
                         0usize,
@@ -747,8 +779,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -773,8 +807,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -784,11 +820,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaEntity,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaEntity,
+                                >,
                             >,
                         >,
                         0usize,
@@ -802,8 +840,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -811,8 +851,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -822,11 +864,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaNotation,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaNotation,
+                                >,
                             >,
                         >,
                         0usize,
@@ -840,8 +884,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaNotation>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -849,8 +895,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -860,11 +908,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaEntity,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaEntity,
+                                >,
                             >,
                         >,
                         0usize,
@@ -878,8 +928,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaEntity>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -912,8 +964,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -923,10 +977,12 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                bool,
                             >,
-                            bool,
                         >,
                         0usize,
                     >("get_TargetNamespaces")
@@ -939,8 +995,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -948,8 +1006,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -959,11 +1019,13 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::XmlQualifiedName,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Schema::SchemaElementDecl,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlQualifiedName,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Schema::SchemaElementDecl,
+                                >,
                             >,
                         >,
                         0usize,
@@ -977,8 +1039,10 @@ impl crate::System::Xml::Schema::SchemaInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
-            quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::XmlQualifiedName>,
+                quest_hook::libil2cpp::Gc<crate::System::Xml::Schema::SchemaElementDecl>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

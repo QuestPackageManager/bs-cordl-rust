@@ -39,7 +39,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LinkedListExtension {
 #[cfg(feature = "LinkedListExtension")]
 impl crate::GlobalNamespace::LinkedListExtension {
     pub fn Index<T>(
-        searchNode: quest_hook::libil2cpp::Gc<T>,
+        searchNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -50,7 +52,9 @@ impl crate::GlobalNamespace::LinkedListExtension {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         i32,
                         1usize,
                     >("Index")

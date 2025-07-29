@@ -18,8 +18,7 @@ pub struct BaseRuntimePanel {
     pub panelToWorld: crate::UnityEngine::Matrix4x4,
     pub _targetDisplay_k__BackingField: i32,
     pub m_ScreenToPanelSpace: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector2,
-        crate::UnityEngine::Vector2,
+        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseRuntimePanel")]
@@ -432,8 +431,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -443,8 +444,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
+                            crate::System::Func_2<
+                                crate::UnityEngine::Vector2,
+                                crate::UnityEngine::Vector2,
+                            >,
                         >,
                         0usize,
                     >("get_screenToPanelSpace")
@@ -457,8 +460,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -605,8 +610,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
     pub fn set_screenToPanelSpace(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -615,8 +622,10 @@ impl crate::UnityEngine::UIElements::BaseRuntimePanel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
+                            crate::System::Func_2<
+                                crate::UnityEngine::Vector2,
+                                crate::UnityEngine::Vector2,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

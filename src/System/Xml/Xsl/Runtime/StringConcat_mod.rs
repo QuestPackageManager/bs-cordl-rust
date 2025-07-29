@@ -8,7 +8,9 @@ pub struct StringConcat {
     pub s4: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub delimiter: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub strList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub idxStr: i32,
 }

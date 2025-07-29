@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CachedInvokableCall_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::Events::InvokableCall_1<T>,
     pub m_Arg1: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -45,7 +45,7 @@ for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
 #[cfg(feature = "UnityEngine+Events+CachedInvokableCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::CachedInvokableCall_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::Events::InvokableCall_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

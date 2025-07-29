@@ -199,8 +199,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                >,
             >,
         >,
     > {
@@ -211,8 +213,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                                >,
                             >,
                         >,
                         0usize,
@@ -226,8 +230,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Security::Cryptography::X509Certificates::X509Extension,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Security::Cryptography::X509Certificates::X509Extension,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

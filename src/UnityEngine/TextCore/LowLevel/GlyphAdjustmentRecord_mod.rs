@@ -218,13 +218,13 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAdjustmentRecord")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     > {
         todo!()
@@ -232,13 +232,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphAdjustmentRecord")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphAdjustmentRecord,
     > {
         todo!()

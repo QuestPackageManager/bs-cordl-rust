@@ -4,7 +4,9 @@
 pub struct MainThreadDispatcher {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dispatchQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Action>,
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_MainThreadDispatcher")]
@@ -68,9 +70,9 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn DispatchOnMainThread_Gc_A1<A>(
+    pub fn DispatchOnMainThread_Action_1_A1<A>(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<A>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
         firstParameter: A,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -82,7 +84,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A>, A),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>, A),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("DispatchOnMainThread")
@@ -99,9 +101,9 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn DispatchOnMainThread_Gc_A_B2<A, B>(
+    pub fn DispatchOnMainThread_Action_2_A_B2<A, B>(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<A, B>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>,
         firstParameter: A,
         secondParameter: B,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -116,7 +118,7 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A, B>, A, B),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_2<A, B>>, A, B),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("DispatchOnMainThread")
@@ -134,9 +136,9 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn DispatchOnMainThread_Gc_A_B_C3<A, B, C>(
+    pub fn DispatchOnMainThread_Action_3_A_B_C3<A, B, C>(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<A, B, C>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_3<A, B, C>>,
         firstParameter: A,
         secondParameter: B,
         thirdParameter: C,
@@ -154,7 +156,12 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A, B, C>, A, B, C),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Action_3<A, B, C>>,
+                            A,
+                            B,
+                            C,
+                        ),
                         quest_hook::libil2cpp::Void,
                         4usize,
                     >("DispatchOnMainThread")
@@ -175,9 +182,9 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn DispatchOnMainThread_Gc_A_B_C_D4<A, B, C, D>(
+    pub fn DispatchOnMainThread_Action_4_A_B_C_D4<A, B, C, D>(
         &mut self,
-        action: quest_hook::libil2cpp::Gc<A, B, C, D>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_4<A, B, C, D>>,
         firstParameter: A,
         secondParameter: B,
         thirdParameter: C,
@@ -198,7 +205,15 @@ impl crate::GlobalNamespace::MainThreadDispatcher {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A, B, C, D>, A, B, C, D),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_4<A, B, C, D>,
+                            >,
+                            A,
+                            B,
+                            C,
+                            D,
+                        ),
                         quest_hook::libil2cpp::Void,
                         5usize,
                     >("DispatchOnMainThread")

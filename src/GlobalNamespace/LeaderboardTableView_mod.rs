@@ -9,7 +9,11 @@ pub struct LeaderboardTableView {
     pub _tableView: quest_hook::libil2cpp::Gc<crate::HMUI::TableView>,
     pub _rowHeight: f32,
     pub _scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardTableView_ScoreData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+            >,
+        >,
     >,
     pub _specialScorePos: i32,
 }
@@ -126,8 +130,10 @@ impl crate::GlobalNamespace::LeaderboardTableView {
     pub fn SetScores(
         &mut self,
         scores: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+                >,
             >,
         >,
         specialScorePos: i32,
@@ -139,8 +145,10 @@ impl crate::GlobalNamespace::LeaderboardTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+                                    >,
                                 >,
                             >,
                             i32,

@@ -45,7 +45,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         anchor: crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -59,7 +61,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             crate::UnityEngine::ProBuilder::AutoUnwrapSettings_Anchor,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -82,7 +86,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         uvSettings: crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -96,7 +102,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             crate::UnityEngine::ProBuilder::AutoUnwrapSettings,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -116,10 +124,18 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn CalculateDelta(
-        src: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        srcIndices: quest_hook::libil2cpp::Gc<i32>,
-        dst: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        dstIndices: quest_hook::libil2cpp::Gc<i32>,
+        src: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        srcIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
+        dst: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        dstIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
     > {
@@ -129,10 +145,22 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::ProBuilder::UvUnwrapping_UVTransform,
                         4usize,
@@ -223,7 +251,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn GetIndex(
-        collection: quest_hook::libil2cpp::Gc<i32>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -231,7 +261,12 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<i32>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
+                            i32,
+                        ),
                         i32,
                         2usize,
                     >("GetIndex")
@@ -249,8 +284,12 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         Ok(__cordl_ret.into())
     }
     pub fn GetRotatedSize(
-        points: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        points: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         center: crate::UnityEngine::Vector2,
         rotation: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -260,8 +299,14 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             crate::UnityEngine::Vector2,
                             f32,
                         ),
@@ -353,7 +398,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
         uvs: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         scale: crate::UnityEngine::Vector2,
         bounds: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Bounds2D>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -368,7 +415,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::Bounds2D,
@@ -393,7 +442,9 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
     pub fn SetAutoAndAlignUnwrapParamsToUVs(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         facesToConvert: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -406,8 +457,10 @@ impl crate::UnityEngine::ProBuilder::UvUnwrapping {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),

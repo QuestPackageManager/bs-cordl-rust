@@ -271,20 +271,20 @@ impl crate::UnityEngine::UIElements::TimerState {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerState")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimerState>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState>>
 for crate::UnityEngine::UIElements::TimerState {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimerState> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerState")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimerState>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState>>
 for crate::UnityEngine::UIElements::TimerState {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TimerState> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::TimerState> {
         todo!()
     }
 }

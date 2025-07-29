@@ -1002,7 +1002,7 @@ for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -1013,7 +1013,7 @@ impl AsRef<
 > for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -1026,7 +1026,7 @@ impl AsRef<
 }
 #[cfg(feature = "System+Data+Common+ObjectStorage+TempAssemblyComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<
@@ -1037,7 +1037,7 @@ impl AsMut<
 > for crate::System::Data::Common::ObjectStorage_TempAssemblyComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             quest_hook::libil2cpp::Gc<crate::System::Type>,
             quest_hook::libil2cpp::Gc<

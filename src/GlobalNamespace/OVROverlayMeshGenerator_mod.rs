@@ -4,9 +4,15 @@
 pub struct OVROverlayMeshGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-    pub _Verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub _UV: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-    pub _Tris: quest_hook::libil2cpp::Gc<i32>,
+    pub _Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _UV: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+    >,
+    pub _Tris: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _Overlay: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
     pub _MeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _MeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
@@ -82,9 +88,15 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn BuildCube(
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        uv: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        triangles: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         scale: crate::UnityEngine::Vector3,
@@ -98,9 +110,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,
                             crate::UnityEngine::Vector3,
@@ -139,9 +161,15 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn BuildHemicylinder(
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        uv: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        triangles: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
         scale: crate::UnityEngine::Vector3,
         rect: crate::UnityEngine::Rect,
         longitudes: i32,
@@ -152,9 +180,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Rect,
                             i32,
@@ -177,9 +215,15 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn BuildQuad(
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        uv: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        triangles: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
         rect: crate::UnityEngine::Rect,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -188,9 +232,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                             crate::UnityEngine::Rect,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -210,9 +264,15 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn BuildSphere(
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        uv: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        triangles: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uv: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        triangles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         scale: crate::UnityEngine::Vector3,
@@ -228,9 +288,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,
                             crate::UnityEngine::Vector3,
@@ -273,9 +343,15 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         Ok(__cordl_ret.into())
     }
     pub fn GenerateMesh(
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        uvs: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        tris: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+        >,
+        uvs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        tris: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
         shape: crate::GlobalNamespace::OVROverlay_OverlayShape,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -288,9 +364,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                             crate::GlobalNamespace::OVROverlay_OverlayShape,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Quaternion,

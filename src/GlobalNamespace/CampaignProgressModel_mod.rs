@@ -7,7 +7,9 @@ pub struct CampaignProgressModel {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub _missionIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _finalMissionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _numberOfClearedMissionsDirty: bool,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardEventBase_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<T>,
     pub _modifiers_k__BackingField: crate::UnityEngine::EventModifiers,
     pub _character_k__BackingField: char,
     pub _keyCode_k__BackingField: crate::UnityEngine::KeyCode,
@@ -47,7 +47,7 @@ for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+KeyboardEventBase_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::KeyboardEventBase_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::EventBase_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

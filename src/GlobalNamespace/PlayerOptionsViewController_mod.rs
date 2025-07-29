@@ -11,7 +11,7 @@ pub struct PlayerOptionsViewController {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>>,
     >,
 }
 #[cfg(feature = "cordl_class_PlayerOptionsViewController")]
@@ -165,7 +165,9 @@ impl crate::GlobalNamespace::PlayerOptionsViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -174,7 +176,9 @@ impl crate::GlobalNamespace::PlayerOptionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -195,7 +199,9 @@ impl crate::GlobalNamespace::PlayerOptionsViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -204,7 +210,9 @@ impl crate::GlobalNamespace::PlayerOptionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::ViewController>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -740,7 +740,11 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
         folderPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         tools: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ShelfToolData>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::HoudiniEngineUnity::HEU_ShelfToolData,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -755,8 +759,10 @@ impl crate::HoudiniEngineUnity::HEU_ShelfTools {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::HoudiniEngineUnity::HEU_ShelfToolData,
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::HoudiniEngineUnity::HEU_ShelfToolData,
+                                        >,
                                     >,
                                 >,
                             >,

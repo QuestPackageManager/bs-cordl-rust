@@ -8,9 +8,15 @@ pub struct TextGenerator {
     pub m_LastSettings: crate::UnityEngine::TextGenerationSettings,
     pub m_HasGenerated: bool,
     pub m_LastValid: crate::UnityEngine::TextGenerationError,
-    pub m_Verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
-    pub m_Characters: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
-    pub m_Lines: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+    pub m_Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+    >,
+    pub m_Characters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UICharInfo>,
+    >,
+    pub m_Lines: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::UILineInfo>,
+    >,
     pub m_CachedVerts: bool,
     pub m_CachedCharacters: bool,
     pub m_CachedLines: bool,
@@ -72,14 +78,20 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetCharacters(
         &mut self,
-        characters: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
+        characters: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UICharInfo>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UICharInfo,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetCharacters")
@@ -124,14 +136,20 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetLines(
         &mut self,
-        lines: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+        lines: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UILineInfo>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UILineInfo,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetLines")
@@ -240,14 +258,20 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetVertices(
         &mut self,
-        vertices: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIVertex,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetVertices")
@@ -929,7 +953,9 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_characters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UICharInfo>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -937,7 +963,11 @@ impl crate::UnityEngine::TextGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::UICharInfo,
+                            >,
+                        >,
                         0usize,
                     >("get_characters")
                     .unwrap_or_else(|e| {
@@ -948,9 +978,9 @@ impl crate::UnityEngine::TextGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UICharInfo> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UICharInfo>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_lineCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -973,7 +1003,9 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_lines(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UILineInfo>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -981,7 +1013,11 @@ impl crate::UnityEngine::TextGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::UILineInfo,
+                            >,
+                        >,
                         0usize,
                     >("get_lines")
                     .unwrap_or_else(|e| {
@@ -992,9 +1028,9 @@ impl crate::UnityEngine::TextGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UILineInfo> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UILineInfo>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_rectExtents(
@@ -1051,7 +1087,9 @@ impl crate::UnityEngine::TextGenerator {
     pub fn get_verts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UIVertex>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1059,7 +1097,11 @@ impl crate::UnityEngine::TextGenerator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::UIVertex,
+                            >,
+                        >,
                         0usize,
                     >("get_verts")
                     .unwrap_or_else(|e| {
@@ -1070,9 +1112,9 @@ impl crate::UnityEngine::TextGenerator {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::UIVertex>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

@@ -13,7 +13,9 @@ pub struct FileSystemEnumerator_1<TResult: quest_hook::libil2cpp::Type> {
     pub _directoryHandle: crate::System::IntPtr,
     pub _lastEntryFound: bool,
     pub _pending: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _entry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _current: TResult,
@@ -772,6 +774,26 @@ for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<TResult>>
+for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]
+impl<
+    TResult: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<TResult>>
+for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<TResult> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]
 impl<TResult: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -796,20 +818,6 @@ for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<TResult>>
-for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TResult> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+IO+Enumeration+FileSystemEnumerator_1")]
-impl<TResult: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<TResult>>
-for crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TResult> {
         unsafe { std::mem::transmute(self) }
     }
 }

@@ -7,14 +7,18 @@ pub struct QuickPlaySongPacksDropdown {
     pub _songPackMasksModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SongPackMasksModel,
     >,
-    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub didSelectCellWithIdxEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<i32>,
+    >,
     pub _initialized: bool,
     pub _quickPlaySongPacksOverride: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
     >,
     pub _data: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
+            >,
         >,
     >,
 }
@@ -333,14 +337,14 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn add_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didSelectCellWithIdxEvent")
@@ -359,14 +363,14 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn remove_didSelectCellWithIdxEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didSelectCellWithIdxEvent")

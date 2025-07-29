@@ -40,10 +40,16 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Utilities::MiscHelp
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+MiscHelpers")]
 impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
     pub fn EveryNth<TValue>(
-        enumerable: quest_hook::libil2cpp::Gc<TValue>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
         n: i32,
         start: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -53,8 +59,16 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>, i32, i32),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                        >,
                         3usize,
                     >("EveryNth")
                     .unwrap_or_else(|e| {
@@ -65,13 +79,15 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked((), (enumerable, n, start))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (enumerable, n, start))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetValueOrDefault<TKey, TValue>(
-        dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        dictionary: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+        >,
         key: TKey,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
@@ -85,7 +101,15 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>, TKey),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    TKey,
+                                    TValue,
+                                >,
+                            >,
+                            TKey,
+                        ),
                         TValue,
                         2usize,
                     >("GetValueOrDefault")
@@ -103,7 +127,9 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<TValue>(
-        enumerable: quest_hook::libil2cpp::Gc<TValue>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -115,7 +141,12 @@ impl crate::UnityEngine::InputSystem::Utilities::MiscHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>, TValue),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                            >,
+                            TValue,
+                        ),
                         i32,
                         2usize,
                     >("IndexOf")

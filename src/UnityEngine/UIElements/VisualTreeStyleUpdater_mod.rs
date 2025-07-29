@@ -4,10 +4,14 @@
 pub struct VisualTreeStyleUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub m_ApplyStyleUpdateList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub m_TransitionPropertyUpdateList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub m_IsApplyingStyles: bool,
     pub m_Version: u32,

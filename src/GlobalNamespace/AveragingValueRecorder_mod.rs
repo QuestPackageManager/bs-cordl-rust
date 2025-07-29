@@ -7,9 +7,13 @@ pub struct AveragingValueRecorder {
     pub _historyValuesPerSecond: f32,
     pub _historyValuesCount: i32,
     pub _averageWindowValues: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+        crate::System::Collections::Generic::Queue_1<
+            crate::GlobalNamespace::AveragingValueRecorder_AverageValueData,
+        >,
     >,
-    pub _historyValues: quest_hook::libil2cpp::Gc<f32>,
+    pub _historyValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Queue_1<f32>,
+    >,
     pub _time: f32,
     pub _historyTime: f32,
     pub _averageValue: f32,
@@ -72,14 +76,18 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
     }
     pub fn GetHistoryValues(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::Queue_1<f32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<f32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Queue_1<f32>,
+                        >,
                         0usize,
                     >("GetHistoryValues")
                     .unwrap_or_else(|e| {
@@ -90,9 +98,9 @@ impl crate::GlobalNamespace::AveragingValueRecorder {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Queue_1<f32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetLastValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {

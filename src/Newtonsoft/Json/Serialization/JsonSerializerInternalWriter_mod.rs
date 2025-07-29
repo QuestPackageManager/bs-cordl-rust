@@ -8,7 +8,9 @@ pub struct JsonSerializerInternalWriter {
     pub _rootType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _rootLevel: i32,
     pub _serializeStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(

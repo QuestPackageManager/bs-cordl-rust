@@ -324,18 +324,18 @@ impl crate::UnityEngine::PropertyName {
     }
 }
 #[cfg(feature = "UnityEngine+PropertyName")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
 for crate::UnityEngine::PropertyName {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+PropertyName")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::PropertyName>>
 for crate::UnityEngine::PropertyName {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::PropertyName> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::PropertyName> {
         todo!()
     }
 }

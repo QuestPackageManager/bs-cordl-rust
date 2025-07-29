@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithAssetFileDownloadCancelResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
         >,
@@ -31,7 +31,7 @@ for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
 #[cfg(feature = "Oculus+Platform+MessageWithAssetFileDownloadCancelResult")]
 impl std::ops::Deref
 for crate::Oculus::Platform::MessageWithAssetFileDownloadCancelResult {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
         >,

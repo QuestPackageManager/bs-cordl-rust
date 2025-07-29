@@ -86,10 +86,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LightLambda,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -99,10 +101,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Interpreter::LightLambda,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
                         >,
                         1usize,
                     >("GetRunDelegateCtor")
@@ -115,10 +119,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LightLambda,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (delegateType))? };
         Ok(__cordl_ret.into())
     }
@@ -1002,10 +1008,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
         delegateType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LightLambda,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1015,10 +1023,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Interpreter::LightLambda,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                                >,
+                                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
                         >,
                         1usize,
                     >("MakeRunDelegateCtor")
@@ -1031,10 +1041,12 @@ impl crate::System::Linq::Expressions::Interpreter::LightLambda {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LightLambda,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LightLambda,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Delegate>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (delegateType))? };
         Ok(__cordl_ret.into())
     }
@@ -3827,12 +3839,18 @@ pub struct LightLambda_DebugViewPrinter {
     pub _interpreter: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::Interpreter,
     >,
-    pub _tryStart: quest_hook::libil2cpp::Gc<i32, i32>,
-    pub _handlerEnter: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _tryStart: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
     >,
-    pub _handlerExit: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub _handlerEnter: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    >,
+    pub _handlerExit: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
     pub _indent: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(

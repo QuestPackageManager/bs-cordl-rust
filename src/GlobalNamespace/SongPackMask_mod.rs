@@ -508,10 +508,12 @@ impl crate::GlobalNamespace::SongPackMask {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IEnumerable_1_2(
         &mut self,
         packs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -520,8 +522,10 @@ impl crate::GlobalNamespace::SongPackMask {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -734,38 +738,48 @@ impl crate::GlobalNamespace::SongPackMask {
     }
 }
 #[cfg(feature = "SongPackMask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask>>
+impl AsRef<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    >,
+> for crate::GlobalNamespace::SongPackMask {
+    fn as_ref(
+        &self,
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SongPackMask")]
+impl AsMut<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    >,
+> for crate::GlobalNamespace::SongPackMask {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
+        crate::GlobalNamespace::SongPackMask,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "SongPackMask")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask>>
 for crate::GlobalNamespace::SongPackMask {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask> {
         todo!()
     }
 }
 #[cfg(feature = "SongPackMask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask>>
 for crate::GlobalNamespace::SongPackMask {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask> {
-        todo!()
-    }
-}
-#[cfg(feature = "SongPackMask")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask>>
-for crate::GlobalNamespace::SongPackMask {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask> {
-        todo!()
-    }
-}
-#[cfg(feature = "SongPackMask")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask>>
-for crate::GlobalNamespace::SongPackMask {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SongPackMask> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::SongPackMask> {
         todo!()
     }
 }

@@ -4,8 +4,10 @@
 pub struct LeaderboardIdsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _leaderboardIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_LeaderboardIdsModel")]
@@ -44,7 +46,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardIdsModel {
 impl crate::GlobalNamespace::LeaderboardIdsModel {
     pub fn New(
         idsMaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -95,7 +99,9 @@ impl crate::GlobalNamespace::LeaderboardIdsModel {
     pub fn _ctor(
         &mut self,
         idsMaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardIdsSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -104,8 +110,10 @@ impl crate::GlobalNamespace::LeaderboardIdsModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LeaderboardIdsSO,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LeaderboardIdsSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -6,7 +6,9 @@ pub struct UQueryState_1<T: quest_hook::libil2cpp::Type> {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_Matchers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::RuleMatcher,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::RuleMatcher,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -335,7 +337,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -346,7 +350,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<T>,
+                        >,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<T>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -358,9 +364,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -401,7 +407,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
         element: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
         >,
-        matchers: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RuleMatcher>,
+        matchers: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::RuleMatcher,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -417,7 +427,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::RuleMatcher,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::RuleMatcher,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -438,6 +450,24 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::UIElements::UQueryState
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::UnityEngine::UIElements::UQueryState_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::UnityEngine::UIElements::UQueryState_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -452,38 +482,24 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::UnityEngine::UIElements::UQueryState_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::UnityEngine::UIElements::UQueryState_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryState_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::UQueryState_1<T>>>
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryState_1<T>> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::UQueryState_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UQueryState_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::UQueryState_1<T>>>
 for crate::UnityEngine::UIElements::UQueryState_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::UQueryState_1<T>,
     > {
         todo!()
@@ -494,7 +510,7 @@ for crate::UnityEngine::UIElements::UQueryState_1<T> {
 #[derive(Debug)]
 pub struct UQueryState_1_ActionQueryMatcher<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    pub _callBack_k__BackingField: quest_hook::libil2cpp::Gc<T>,
+    pub _callBack_k__BackingField: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ActionQueryMatcher")]
@@ -624,7 +640,9 @@ impl<
     }
     pub fn get_callBack(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -635,7 +653,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
                         0usize,
                     >("get_callBack")
                     .unwrap_or_else(|e| {
@@ -646,7 +664,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -667,7 +685,9 @@ for crate::UnityEngine::UIElements::UQueryState_1_ActionQueryMatcher<T> {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UQueryState_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub iterationList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub currentIndex: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -940,6 +960,24 @@ impl<
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -967,20 +1005,6 @@ for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
         todo!()
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+UIElements+UQueryState_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::UnityEngine::UIElements::UQueryState_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UQueryState_1+ListQueryMatcher_1")]
 #[repr(C)]
 #[derive(Debug)]
@@ -989,7 +1013,9 @@ pub struct UQueryState_1_ListQueryMatcher_1<
     TElement: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::UnityEngine::UIElements::UQuery_UQueryMatcher,
-    pub _matches_k__BackingField: quest_hook::libil2cpp::Gc<TElement>,
+    pub _matches_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TElement>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
@@ -1161,7 +1187,9 @@ impl<
     }
     pub fn get_matches(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TElement>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TElement>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1174,7 +1202,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<TElement>,
+                        >,
                         0usize,
                     >("get_matches")
                     .unwrap_or_else(|e| {
@@ -1185,14 +1215,16 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TElement>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_matches(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TElement>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TElement>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1205,7 +1237,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TElement>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<TElement>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_matches")

@@ -533,7 +533,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn DestroyBakedGameObjects(
         gameObjectsToDestroy: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -542,7 +544,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -562,7 +566,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn DestroyBakedGameObjectsWithEndName(
         gameObjectsToDestroy: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         endName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -573,7 +579,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -964,11 +972,15 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         assetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parameters: quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Parameters>,
         currentHandles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -991,14 +1003,18 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                                 crate::HoudiniEngineUnity::HEU_Parameters,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::HoudiniEngineUnity::HEU_Handle,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::HoudiniEngineUnity::HEU_Handle,
+                                    >,
                                 >,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::HEU_Handle,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::HEU_Handle,
+                                >,
                             >,
                         >,
                         6usize,
@@ -1012,7 +1028,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_Handle>,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
@@ -1045,9 +1063,19 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         arg1: i32,
         arg2: ARG2,
         arg3: ARG3,
-        func1: quest_hook::libil2cpp::Gc<T>,
-        func2: quest_hook::libil2cpp::Gc<ARG2, T>,
-        func3: quest_hook::libil2cpp::Gc<ARG3, ARG2, T>,
+        func1: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T>,
+        >,
+        func2: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>,
+        >,
+        func3: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<
+                ARG3,
+                ARG2,
+                T,
+            >,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -1072,9 +1100,24 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             i32,
                             ARG2,
                             ARG3,
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<ARG2, T>,
-                            quest_hook::libil2cpp::Gc<ARG3, ARG2, T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
+                                    T,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<
+                                    ARG3,
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -1117,7 +1160,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn GetArray1Arg<T>(
         arg1: i32,
-        func: quest_hook::libil2cpp::Gc<T>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T>,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -1135,7 +1180,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (
                             i32,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -1163,7 +1212,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     pub fn GetArray2Arg<ARG2, T>(
         arg1: i32,
         arg2: ARG2,
-        func: quest_hook::libil2cpp::Gc<ARG2, T>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -1184,7 +1235,12 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                         (
                             i32,
                             ARG2,
-                            quest_hook::libil2cpp::Gc<ARG2, T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -1214,7 +1270,13 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         arg1: i32,
         arg2: ARG2,
         arg3: ARG3,
-        func: quest_hook::libil2cpp::Gc<ARG3, ARG2, T>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<
+                ARG3,
+                ARG2,
+                T,
+            >,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -1238,7 +1300,13 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             i32,
                             ARG2,
                             ARG3,
-                            quest_hook::libil2cpp::Gc<ARG3, ARG2, T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<
+                                    ARG3,
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -1275,7 +1343,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
-        getFunc: quest_hook::libil2cpp::Gc<T>,
+        getFunc: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1303,7 +1373,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                                     quest_hook::libil2cpp::Il2CppArray<T>,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
+                                    T,
+                                >,
+                            >,
                         ),
                         bool,
                         7usize,
@@ -1333,7 +1407,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        getFunc: quest_hook::libil2cpp::Gc<T>,
+        getFunc: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T>,
+        >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -1357,7 +1433,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
+                                    T,
+                                >,
+                            >,
                             i32,
                         ),
                         bool,
@@ -1556,7 +1636,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
-        getFunc: quest_hook::libil2cpp::Gc<T>,
+        getFunc: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1585,7 +1667,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                                     quest_hook::libil2cpp::Il2CppArray<T>,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<
+                                    T,
+                                >,
+                            >,
                         ),
                         bool,
                         8usize,
@@ -1811,7 +1897,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         parentGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1821,7 +1909,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         1usize,
                     >("GetChildGameObjects")
@@ -1834,7 +1924,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (parentGO))? };
         Ok(__cordl_ret.into())
     }
@@ -1844,7 +1936,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         bExclude: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1860,7 +1954,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         3usize,
                     >("GetChildGameObjectsWithNamePattern")
@@ -1873,7 +1969,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (parentGO, pattern, bExclude))?
         };
@@ -1881,7 +1979,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn GetGameObjectByName(
         goList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1894,7 +1994,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -2003,7 +2105,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         parentGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2013,7 +2117,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         1usize,
                     >("GetInstanceChildObjects")
@@ -2026,7 +2132,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (parentGO))? };
         Ok(__cordl_ret.into())
     }
@@ -2034,7 +2142,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         targetGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2044,7 +2154,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            >,
                         >,
                         1usize,
                     >("GetLODTransforms")
@@ -2057,7 +2169,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (targetGO))? };
         Ok(__cordl_ret.into())
     }
@@ -2100,7 +2214,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
         parentGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2110,7 +2226,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         1usize,
                     >("GetNonInstanceChildObjects")
@@ -2123,7 +2241,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (parentGO))? };
         Ok(__cordl_ret.into())
     }
@@ -2488,7 +2608,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn LongestCommonPrefix(
         list: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2499,8 +2621,10 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2692,8 +2816,12 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     pub fn SetArray<ARG2, T>(
         arg1: i32,
         arg2: ARG2,
-        func1: quest_hook::libil2cpp::Gc<T>,
-        func2: quest_hook::libil2cpp::Gc<ARG2, T>,
+        func1: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T>,
+        >,
+        func2: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -2715,8 +2843,17 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                         (
                             i32,
                             ARG2,
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<ARG2, T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
+                                    T,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -2748,7 +2885,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     }
     pub fn SetArray1Arg<T>(
         arg1: i32,
-        func: quest_hook::libil2cpp::Gc<T>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T>,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -2766,7 +2905,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                     .find_static_method::<
                         (
                             i32,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -2794,7 +2937,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     pub fn SetArray2Arg<ARG2, T>(
         arg1: i32,
         arg2: ARG2,
-        func: quest_hook::libil2cpp::Gc<ARG2, T>,
+        func: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T>,
+        >,
         data: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -2815,7 +2960,12 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                         (
                             i32,
                             ARG2,
-                            quest_hook::libil2cpp::Gc<ARG2, T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<
+                                    ARG2,
+                                    T,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -2849,7 +2999,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        setFunc: quest_hook::libil2cpp::Gc<T>,
+        setFunc: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -2872,7 +3024,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
+                                    T,
+                                >,
+                            >,
                         ),
                         bool,
                         6usize,
@@ -2902,7 +3058,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
         items: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-        setFunc: quest_hook::libil2cpp::Gc<T>,
+        setFunc: quest_hook::libil2cpp::Gc<
+            crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T>,
+        >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -2926,7 +3084,11 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<T>,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<
+                                    T,
+                                >,
+                            >,
                             i32,
                         ),
                         bool,
@@ -3068,7 +3230,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
     pub fn SetLODTransformValues(
         targetGO: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         transformData: quest_hook::libil2cpp::Gc<
-            crate::HoudiniEngineUnity::TransformData,
+            crate::System::Collections::Generic::List_1<
+                crate::HoudiniEngineUnity::TransformData,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3079,7 +3243,9 @@ impl crate::HoudiniEngineUnity::HEU_GeneralUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::TransformData,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::HoudiniEngineUnity::TransformData,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

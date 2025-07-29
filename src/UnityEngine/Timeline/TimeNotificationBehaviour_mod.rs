@@ -4,7 +4,9 @@
 pub struct TimeNotificationBehaviour {
     __cordl_parent: crate::UnityEngine::Playables::PlayableBehaviour,
     pub m_Notifications: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::TimeNotificationBehaviour_NotificationEntry,
+        >,
     >,
     pub m_PreviousTime: f64,
     pub m_NeedSortNotifications: bool,

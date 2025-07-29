@@ -887,8 +887,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
     }
     pub fn add_sceneLoaded(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::SceneManagement::Scene,
-            crate::UnityEngine::SceneManagement::LoadSceneMode,
+            crate::UnityEngine::Events::UnityAction_2<
+                crate::UnityEngine::SceneManagement::Scene,
+                crate::UnityEngine::SceneManagement::LoadSceneMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -897,8 +899,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::SceneManagement::Scene,
-                            crate::UnityEngine::SceneManagement::LoadSceneMode,
+                            crate::UnityEngine::Events::UnityAction_2<
+                                crate::UnityEngine::SceneManagement::Scene,
+                                crate::UnityEngine::SceneManagement::LoadSceneMode,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -917,7 +921,11 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
         Ok(__cordl_ret.into())
     }
     pub fn add_sceneUnloaded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<
+                crate::UnityEngine::SceneManagement::Scene,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -925,7 +933,9 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::SceneManagement::Scene,
+                            crate::UnityEngine::Events::UnityAction_1<
+                                crate::UnityEngine::SceneManagement::Scene,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -983,8 +993,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
     }
     pub fn remove_sceneLoaded(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::SceneManagement::Scene,
-            crate::UnityEngine::SceneManagement::LoadSceneMode,
+            crate::UnityEngine::Events::UnityAction_2<
+                crate::UnityEngine::SceneManagement::Scene,
+                crate::UnityEngine::SceneManagement::LoadSceneMode,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -993,8 +1005,10 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::SceneManagement::Scene,
-                            crate::UnityEngine::SceneManagement::LoadSceneMode,
+                            crate::UnityEngine::Events::UnityAction_2<
+                                crate::UnityEngine::SceneManagement::Scene,
+                                crate::UnityEngine::SceneManagement::LoadSceneMode,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1013,7 +1027,11 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
         Ok(__cordl_ret.into())
     }
     pub fn remove_sceneUnloaded(
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::SceneManagement::Scene>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Events::UnityAction_1<
+                crate::UnityEngine::SceneManagement::Scene,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1021,7 +1039,9 @@ impl crate::UnityEngine::SceneManagement::SceneManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::SceneManagement::Scene,
+                            crate::UnityEngine::Events::UnityAction_1<
+                                crate::UnityEngine::SceneManagement::Scene,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

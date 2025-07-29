@@ -7,7 +7,9 @@ pub struct SwitchExpression {
         crate::System::Linq::Expressions::Expression,
     >,
     pub _Cases_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+        >,
     >,
     pub _DefaultBody_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
@@ -55,7 +57,9 @@ impl crate::System::Linq::Expressions::SwitchExpression {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -65,8 +69,10 @@ impl crate::System::Linq::Expressions::SwitchExpression {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::SwitchCase,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::SwitchCase,
+                                >,
                             >,
                         >,
                         0usize,
@@ -80,7 +86,9 @@ impl crate::System::Linq::Expressions::SwitchExpression {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::SwitchCase>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

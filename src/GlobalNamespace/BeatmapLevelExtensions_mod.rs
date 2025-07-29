@@ -42,7 +42,11 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
     pub fn CreateColorScheme(
         idx: i32,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO_ColorScheme>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
@@ -55,8 +59,10 @@ impl crate::GlobalNamespace::BeatmapLevelExtensions {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                                    >,
                                 >,
                             >,
                         ),

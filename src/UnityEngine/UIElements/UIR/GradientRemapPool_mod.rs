@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientRemapPool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientRemapPool")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientRemapPool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UIR::LinkedPool_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::GradientRemap>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

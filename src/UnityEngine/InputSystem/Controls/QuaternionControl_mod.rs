@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuaternionControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
+        crate::UnityEngine::Quaternion,
+    >,
     pub _x_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::AxisControl,
     >,
@@ -38,7 +40,9 @@ for crate::UnityEngine::InputSystem::Controls::QuaternionControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+QuaternionControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::QuaternionControl {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Quaternion>;
+    type Target = crate::UnityEngine::InputSystem::InputControl_1<
+        crate::UnityEngine::Quaternion,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

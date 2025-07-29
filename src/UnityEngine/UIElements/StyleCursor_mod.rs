@@ -359,38 +359,44 @@ impl crate::UnityEngine::UIElements::StyleCursor {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor>>
 for crate::UnityEngine::UIElements::StyleCursor {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor>>
 for crate::UnityEngine::UIElements::StyleCursor {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Cursor> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleCursor> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleCursor>>
-for crate::UnityEngine::UIElements::StyleCursor {
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Cursor>,
+> for crate::UnityEngine::UIElements::StyleCursor {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleCursor> {
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Cursor,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleCursor")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleCursor>>
-for crate::UnityEngine::UIElements::StyleCursor {
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<crate::UnityEngine::UIElements::Cursor>,
+> for crate::UnityEngine::UIElements::StyleCursor {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleCursor> {
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::Cursor,
+    > {
         todo!()
     }
 }

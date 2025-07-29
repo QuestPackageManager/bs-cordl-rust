@@ -3,10 +3,20 @@
 #[derive(Debug)]
 pub struct FastAction_1<A: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub delegates: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<A>>,
+    pub delegates: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
+        >,
+    >,
     pub lookup: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<A>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<A>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LinkedListNode_1<
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
+                >,
+            >,
+        >,
     >,
     __cordl_phantom_A: std::marker::PhantomData<A>,
 }
@@ -61,7 +71,7 @@ for crate::TMPro::FastAction_1<A> {
 impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
     pub fn Add(
         &mut self,
-        rhs: quest_hook::libil2cpp::Gc<A>,
+        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -72,7 +82,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Add")
@@ -128,7 +138,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
     }
     pub fn Remove(
         &mut self,
-        rhs: quest_hook::libil2cpp::Gc<A>,
+        rhs: quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         A: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -139,7 +149,7 @@ impl<A: quest_hook::libil2cpp::Type> crate::TMPro::FastAction_1<A> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<A>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<A>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Remove")

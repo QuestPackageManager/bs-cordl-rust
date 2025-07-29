@@ -412,6 +412,70 @@ impl crate::GlobalNamespace::NodePoseSyncState {
     }
 }
 #[cfg(feature = "NodePoseSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IEquatableByReference_1<
+        crate::GlobalNamespace::NodePoseSyncState,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsRef<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
+impl AsMut<
+    crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    >,
+> for crate::GlobalNamespace::NodePoseSyncState {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IStateTable_3<
+        crate::GlobalNamespace::NodePoseSyncState,
+        crate::GlobalNamespace::NodePoseSyncState_NodePose,
+        crate::GlobalNamespace::PoseSerializable,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "NodePoseSyncState")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::NodePoseSyncState {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
@@ -422,60 +486,6 @@ for crate::GlobalNamespace::NodePoseSyncState {
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::NodePoseSyncState {
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
-        todo!()
-    }
-}
-#[cfg(feature = "NodePoseSyncState")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "NodePoseSyncState")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    >,
-> for crate::GlobalNamespace::NodePoseSyncState {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NodePoseSyncState,
-        crate::GlobalNamespace::NodePoseSyncState_NodePose,
-        crate::GlobalNamespace::PoseSerializable,
-    > {
-        todo!()
-    }
-}
-#[cfg(feature = "NodePoseSyncState")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState>>
-for crate::GlobalNamespace::NodePoseSyncState {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState> {
-        todo!()
-    }
-}
-#[cfg(feature = "NodePoseSyncState")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState>>
-for crate::GlobalNamespace::NodePoseSyncState {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NodePoseSyncState> {
         todo!()
     }
 }

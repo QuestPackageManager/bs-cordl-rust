@@ -6,8 +6,10 @@ pub struct ThreadSafeStore_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _concurrentStore: quest_hook::libil2cpp::Gc<TKey, TValue>,
-    pub _creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _concurrentStore: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue>,
+    >,
+    pub _creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -102,7 +104,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -118,7 +120,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        creator: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        creator: quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -131,7 +133,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_2<TKey, TValue>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

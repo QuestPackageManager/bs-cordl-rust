@@ -13,7 +13,9 @@ pub struct OVRBody {
     pub _dataChangedSinceLastQuery: bool,
     pub _hasData: bool,
     pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRBody")]

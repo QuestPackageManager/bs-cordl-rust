@@ -40,44 +40,56 @@ pub struct MenuTransitionsHelper {
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub _standardLevelFinishedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
     pub _standardLevelRestartedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
     pub _multiplayerLevelFinishedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
     >,
     pub _multiplayerDidDisconnectCallback: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DisconnectedReason,
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     >,
     pub _missionLevelFinishedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
     >,
     pub _missionLevelRestartedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
     >,
     pub _beatmapEditorFinishedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _beatmapEditorGameplayLevelFinishedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
     >,
 }
 #[cfg(feature = "cordl_class_MenuTransitionsHelper")]
@@ -451,7 +463,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
     pub fn RestartGame(
         &mut self,
         finishCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -460,7 +474,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -554,10 +570,12 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -595,11 +613,13 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
                             >,
                         ),
@@ -659,16 +679,24 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionCompletionResults,
+                >,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
         levelRestartedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionCompletionResults,
+                >,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -707,19 +735,23 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionCompletionResults,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MissionCompletionResults,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MissionCompletionResults,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MissionCompletionResults,
+                                    >,
                                 >,
                             >,
                         ),
@@ -755,7 +787,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartMultiplayerLevel_Gc1(
+    pub fn StartMultiplayerLevel_Action_1_Action_2_Action_1_1(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -779,16 +811,20 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         useTestNoteCutSoundEffects: bool,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
         didDisconnectCallback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DisconnectedReason,
+            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -827,18 +863,24 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::DisconnectedReason,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerResultsData,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_1<
+                                    crate::GlobalNamespace::DisconnectedReason,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -876,7 +918,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartMultiplayerLevel_Il2CppString_ByRefMut_BeatmapLevel_IBeatmapLevelData_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_Il2CppString__cordl_bool_Action_Gc_Gc0(
+    pub fn StartMultiplayerLevel_Action_2_Action_1_0(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -900,13 +942,15 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         useTestNoteCutSoundEffects: bool,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
         didDisconnectCallback: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DisconnectedReason,
+            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -945,15 +989,19 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::MultiplayerResultsData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::DisconnectedReason,
+                                crate::System::Action_1<
+                                    crate::GlobalNamespace::DisconnectedReason,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -990,7 +1038,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Gc_Nullable_1_1(
+    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -1025,19 +1073,25 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         startPaused: bool,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
         afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
         levelRestartedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
@@ -1090,22 +1144,28 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
                             >,
                             crate::System::Nullable_1<
@@ -1153,7 +1213,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Gc_Nullable_1_0(
+    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -1187,19 +1247,25 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::System::Action,
         >,
         afterSceneSwitchToGameplayCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
         levelRestartedCallback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
         >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
@@ -1249,22 +1315,28 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LevelCompletionResults,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LevelCompletionResults,
+                                    >,
                                 >,
                             >,
                             crate::System::Nullable_1<

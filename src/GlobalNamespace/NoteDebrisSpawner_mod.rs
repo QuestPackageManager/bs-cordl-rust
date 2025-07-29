@@ -21,12 +21,16 @@ pub struct NoteDebrisSpawner {
         crate::GlobalNamespace::DeterminismConfig,
     >,
     pub _poolForNoteGameplayType: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::NoteData_GameplayType,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::NoteData_GameplayType,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
+        >,
     >,
     pub _poolForNoteDebris: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteDebris_Pool>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_NoteDebrisSpawner")]

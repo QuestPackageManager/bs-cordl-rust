@@ -39,43 +39,6 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::Test_Gradient_Extensions 
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_Gradient_Extensions")]
 impl crate::HoudiniEngineUnity::Test_Gradient_Extensions {
-    pub fn ToTestObject_Gc2(
-        _cordl_self: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::HoudiniEngineUnity::Test_Gradient,
-                            >,
-                        >,
-                        1usize,
-                    >("ToTestObject")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToTestObject", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn ToTestObject_Gradient0(
         _cordl_self: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     ) -> quest_hook::libil2cpp::Result<
@@ -147,6 +110,53 @@ impl crate::HoudiniEngineUnity::Test_Gradient_Extensions {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToTestObject_List_1_2(
+        _cordl_self: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::HoudiniEngineUnity::Test_Gradient,
+                                >,
+                            >,
+                        >,
+                        1usize,
+                    >("ToTestObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToTestObject", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_Gradient>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_self))? };

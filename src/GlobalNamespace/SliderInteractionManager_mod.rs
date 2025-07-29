@@ -9,14 +9,20 @@ pub struct SliderInteractionManager {
     >,
     pub _saberInteractionParam_k__BackingField: f32,
     pub sliderWasAddedToActiveSlidersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
-        f32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+            f32,
+        >,
     >,
     pub allSliderWereRemovedFromActiveSlidersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        >,
     >,
     pub _activeSliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_SliderInteractionManager")]
@@ -268,7 +274,11 @@ impl crate::GlobalNamespace::SliderInteractionManager {
     pub fn add_allSliderWereRemovedFromActiveSlidersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SliderInteractionManager,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -277,8 +287,10 @@ impl crate::GlobalNamespace::SliderInteractionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderInteractionManager,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderInteractionManager,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -300,8 +312,12 @@ impl crate::GlobalNamespace::SliderInteractionManager {
     pub fn add_sliderWasAddedToActiveSlidersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
-            f32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SliderInteractionManager,
+                >,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -310,10 +326,12 @@ impl crate::GlobalNamespace::SliderInteractionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderInteractionManager,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderInteractionManager,
+                                >,
+                                f32,
                             >,
-                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -376,7 +394,11 @@ impl crate::GlobalNamespace::SliderInteractionManager {
     pub fn remove_allSliderWereRemovedFromActiveSlidersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SliderInteractionManager,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -385,8 +407,10 @@ impl crate::GlobalNamespace::SliderInteractionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderInteractionManager,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderInteractionManager,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -408,8 +432,12 @@ impl crate::GlobalNamespace::SliderInteractionManager {
     pub fn remove_sliderWasAddedToActiveSlidersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
-            f32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SliderInteractionManager,
+                >,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -418,10 +446,12 @@ impl crate::GlobalNamespace::SliderInteractionManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SliderInteractionManager,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SliderInteractionManager,
+                                >,
+                                f32,
                             >,
-                            f32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

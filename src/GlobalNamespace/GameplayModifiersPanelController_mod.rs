@@ -26,8 +26,10 @@ pub struct GameplayModifiersPanelController {
     >,
     pub _changingGameplayModifierToggles: bool,
     pub _toggleForGameplayModifierParam: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifierParamsSO>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_GameplayModifiersPanelController")]

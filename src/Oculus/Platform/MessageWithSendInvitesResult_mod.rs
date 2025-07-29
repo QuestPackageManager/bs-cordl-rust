@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithSendInvitesResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithSendInvitesResult {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithSendInvitesResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithSendInvitesResult {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::SendInvitesResult>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

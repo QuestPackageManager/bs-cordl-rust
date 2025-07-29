@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct UndoRedoBuffer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _data: quest_hook::libil2cpp::Gc<T>,
+    pub _data: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     pub _capacity: i32,
     pub _cursor: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

@@ -109,7 +109,9 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     }
     pub fn RegisterEventHandler(
         handler: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            >,
         >,
         _cordl_register: bool,
         create: bool,
@@ -121,7 +123,9 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                                crate::System::Action_1<
+                                    crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                                >,
                             >,
                             bool,
                             bool,
@@ -145,7 +149,9 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
     pub fn UnregisterEventHandler(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            crate::System::Action_1<
+                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -154,7 +160,9 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEventCollect
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                            crate::System::Action_1<
+                                crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

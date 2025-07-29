@@ -219,8 +219,10 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CacheInitialization_CacheInitOp {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
-    pub m_Callback: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >,
+    pub m_Callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     pub m_UpdateRequired: bool,
 }
 #[cfg(
@@ -250,7 +252,9 @@ for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_C
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_CacheInitOp {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
+        bool,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -291,14 +295,14 @@ impl crate::UnityEngine::AddressableAssets::Initialization::CacheInitialization_
     }
     pub fn Init(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<bool>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Init")

@@ -4,7 +4,9 @@
 pub struct AsyncLocal_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_valueChangedHandler: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        crate::System::Action_1<
+            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+        >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -63,7 +65,9 @@ for crate::System::Threading::AsyncLocal_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     pub fn New(
         valueChangedHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -123,7 +127,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     pub fn _ctor(
         &mut self,
         valueChangedHandler: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            crate::System::Action_1<
+                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -136,7 +142,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+                            crate::System::Action_1<
+                                crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

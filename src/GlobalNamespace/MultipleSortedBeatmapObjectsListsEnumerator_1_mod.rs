@@ -5,7 +5,15 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _priorityQueue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
+    pub _priorityQueue: quest_hook::libil2cpp::Gc<
+        crate::Priority_Queue::StablePriorityQueue_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
+                    T,
+                >,
+            >,
+        >,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_MultipleSortedBeatmapObjectsListsEnumerator_1")]
@@ -72,7 +80,11 @@ impl<
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<T, i32>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::ValueTuple_2<T, i32>,
+            >,
+        >,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -84,7 +96,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::ValueTuple_2<T, i32>>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::ValueTuple_2<T, i32>,
+                            >,
+                        >,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -96,14 +112,21 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::ValueTuple_2<T, i32>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::ValueTuple_2<T, i32>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New(
         dataList: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ValueTuple_2<quest_hook::libil2cpp::Gc<T>, i32>,
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                    >,
+                    i32,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -154,7 +177,12 @@ impl<
         &mut self,
         dataList: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                crate::System::ValueTuple_2<quest_hook::libil2cpp::Gc<T>, i32>,
+                crate::System::ValueTuple_2<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                    >,
+                    i32,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -170,7 +198,9 @@ impl<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 crate::System::ValueTuple_2<
-                                    quest_hook::libil2cpp::Gc<T>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                                    >,
                                     i32,
                                 >,
                             >,
@@ -225,7 +255,9 @@ pub struct MultipleSortedBeatmapObjectsListsEnumerator_1_BeatmapObjectListNode<
     T: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: crate::Priority_Queue::StablePriorityQueueNode,
-    pub _dataList: quest_hook::libil2cpp::Gc<T>,
+    pub _dataList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IReadOnlyList_1<T>,
+    >,
     pub _typeId: i32,
     pub _idx: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -317,7 +349,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        dataList: quest_hook::libil2cpp::Gc<T>,
+        dataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
         typeId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -332,7 +366,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        dataList: quest_hook::libil2cpp::Gc<T>,
+        dataList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<T>,
+        >,
         typeId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -344,7 +380,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<T>,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

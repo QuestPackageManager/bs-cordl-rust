@@ -397,9 +397,11 @@ impl crate::UnityEngine::Component {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInChildren_Gc4<T>(
+    pub fn GetComponentsInChildren_List_1_4<T>(
         &mut self,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -410,7 +412,9 @@ impl crate::UnityEngine::Component {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetComponentsInChildren")
@@ -498,10 +502,10 @@ impl crate::UnityEngine::Component {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (includeInactive))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInChildren__cordl_bool_Gc2<T>(
+    pub fn GetComponentsInChildren__cordl_bool_List_1_2<T>(
         &mut self,
         includeInactive: bool,
-        result: quest_hook::libil2cpp::Gc<T>,
+        result: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -512,7 +516,12 @@ impl crate::UnityEngine::Component {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (bool, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetComponentsInChildren")
@@ -631,10 +640,12 @@ impl crate::UnityEngine::Component {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (includeInactive))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponentsInParent__cordl_bool_Gc2<T>(
+    pub fn GetComponentsInParent__cordl_bool_List_1_2<T>(
         &mut self,
         includeInactive: bool,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -645,7 +656,12 @@ impl crate::UnityEngine::Component {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (bool, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetComponentsInParent")
@@ -693,9 +709,11 @@ impl crate::UnityEngine::Component {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_Gc2<T>(
+    pub fn GetComponents_List_1_2<T>(
         &mut self,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -706,7 +724,9 @@ impl crate::UnityEngine::Component {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetComponents")
@@ -761,11 +781,13 @@ impl crate::UnityEngine::Component {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetComponents_Type_Gc1(
+    pub fn GetComponents_Type_List_1_1(
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -776,7 +798,9 @@ impl crate::UnityEngine::Component {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

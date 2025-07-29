@@ -43,10 +43,12 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     pub type EmptyArrayContainer_1<T: quest_hook::libil2cpp::Type> = crate::Newtonsoft::Json::Utilities::CollectionUtils_EmptyArrayContainer_1<
         T,
     >;
-    pub fn AddDistinct_Gc1<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+    pub fn AddDistinct_IEqualityComparer_1_1<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
         value: T,
-        comparer: quest_hook::libil2cpp::Gc<T>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -57,7 +59,15 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
+                            T,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                            >,
+                        ),
                         bool,
                         3usize,
                     >("AddDistinct")
@@ -74,8 +84,8 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddDistinct_Gc_T0<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+    pub fn AddDistinct_IList_1_T0<T>(
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
         value: T,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -87,7 +97,12 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
+                            T,
+                        ),
                         bool,
                         2usize,
                     >("AddDistinct")
@@ -105,8 +120,12 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn AddRange<T>(
-        initial: quest_hook::libil2cpp::Gc<T>,
-        collection: quest_hook::libil2cpp::Gc<T>,
+        initial: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        >,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -117,7 +136,14 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AddRange")
@@ -135,9 +161,13 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn AddRangeDistinct<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
-        values: quest_hook::libil2cpp::Gc<T>,
-        comparer: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -149,9 +179,15 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                            >,
                         ),
                         bool,
                         3usize,
@@ -199,7 +235,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn Contains<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         value: T,
         comparer: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEqualityComparer,
@@ -215,7 +251,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                             T,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::IEqualityComparer,
@@ -238,9 +276,13 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn ContainsValue<TSource>(
-        source: quest_hook::libil2cpp::Gc<TSource>,
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
         value: TSource,
-        comparer: quest_hook::libil2cpp::Gc<TSource>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSource>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -252,9 +294,15 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<TSource>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                            >,
                             TSource,
-                            quest_hook::libil2cpp::Gc<TSource>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TSource,
+                                >,
+                            >,
                         ),
                         bool,
                         3usize,
@@ -307,7 +355,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn FastReverse<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -318,7 +366,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("FastReverse")
@@ -338,7 +388,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
     pub fn GetDimensions(
         values: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
         dimensionsCount: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -348,7 +400,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                             quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<i32>,
+                        >,
                         2usize,
                     >("GetDimensions")
                     .unwrap_or_else(|e| {
@@ -359,14 +413,18 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (values, dimensionsCount))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn IndexOf<T>(
-        collection: quest_hook::libil2cpp::Gc<T>,
-        predicate: quest_hook::libil2cpp::Gc<T, bool>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -378,8 +436,10 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<T, bool>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
                         ),
                         i32,
                         2usize,
@@ -398,7 +458,7 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn IndexOfReference<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         item: T,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -410,7 +470,12 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                            T,
+                        ),
                         i32,
                         2usize,
                     >("IndexOfReference")
@@ -453,7 +518,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
         Ok(__cordl_ret.into())
     }
     pub fn IsNullOrEmpty<T>(
-        collection: quest_hook::libil2cpp::Gc<T>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -464,7 +531,9 @@ impl crate::Newtonsoft::Json::Utilities::CollectionUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::ICollection_1<T>,
+                        >),
                         bool,
                         1usize,
                     >("IsNullOrEmpty")

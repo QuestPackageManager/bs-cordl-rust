@@ -95,7 +95,9 @@ for crate::UnityEngine::Android::AndroidAssetPacks {
 pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
+        >,
     >,
     pub m_AssetPacks: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -150,7 +152,11 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Android::AndroidAssetPackInfo,
+                >,
+            >,
         >,
         assetPacks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -167,7 +173,11 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Android::AndroidAssetPackInfo,
+                >,
+            >,
         >,
         assetPacks: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -182,8 +192,10 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStat
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Android::AndroidAssetPackInfo,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Android::AndroidAssetPackInfo,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -282,8 +294,10 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 pub struct AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+            >,
         >,
     >,
 }
@@ -334,8 +348,10 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -348,8 +364,10 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -359,8 +377,10 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCo
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Android::AndroidAssetPackUseMobileDataRequestResult,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -426,20 +446,26 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 pub struct AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
     pub m_Callback: quest_hook::libil2cpp::Gc<
-        u64,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::Android::AndroidAssetPackState,
+        crate::System::Action_2<
+            u64,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Android::AndroidAssetPackState,
+                    >,
                 >,
             >,
         >,
     >,
     pub m_AssetPackNames: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub m_States: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackState>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Android::AndroidAssetPackState>,
+        >,
     >,
     pub m_Size: i64,
 }
@@ -490,11 +516,13 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
 impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            u64,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Android::AndroidAssetPackState,
+            crate::System::Action_2<
+                u64,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Android::AndroidAssetPackState,
+                        >,
                     >,
                 >,
             >,
@@ -514,11 +542,13 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            u64,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<
-                    quest_hook::libil2cpp::Gc<
-                        crate::UnityEngine::Android::AndroidAssetPackState,
+            crate::System::Action_2<
+                u64,
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Android::AndroidAssetPackState,
+                        >,
                     >,
                 >,
             >,
@@ -536,11 +566,13 @@ impl crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryC
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                u64,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<
-                                        quest_hook::libil2cpp::Gc<
-                                            crate::UnityEngine::Android::AndroidAssetPackState,
+                                crate::System::Action_2<
+                                    u64,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppArray<
+                                            quest_hook::libil2cpp::Gc<
+                                                crate::UnityEngine::Android::AndroidAssetPackState,
+                                            >,
                                         >,
                                     >,
                                 >,

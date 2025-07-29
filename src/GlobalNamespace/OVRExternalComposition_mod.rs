@@ -39,7 +39,9 @@ pub struct OVRExternalComposition {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub audioDataLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub cachedAudioData: quest_hook::libil2cpp::Gc<f32>,
+    pub cachedAudioData: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
     pub cachedChannels: i32,
 }
 #[cfg(feature = "cordl_class_OVRExternalComposition")]

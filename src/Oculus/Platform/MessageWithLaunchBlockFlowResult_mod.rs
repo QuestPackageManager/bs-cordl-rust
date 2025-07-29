@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLaunchBlockFlowResult {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchBlockFlowResult>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLaunchBlockFlowResult")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLaunchBlockFlowResult {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Oculus::Platform::Message_1<
         quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::LaunchBlockFlowResult>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

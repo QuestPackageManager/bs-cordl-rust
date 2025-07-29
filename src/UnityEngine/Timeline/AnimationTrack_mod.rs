@@ -250,7 +250,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         track: quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::AnimationTrack>,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         tree: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            crate::UnityEngine::Timeline::IntervalTree_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            >,
         >,
         mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
@@ -266,8 +268,10 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::RuntimeElement,
+                                crate::UnityEngine::Timeline::IntervalTree_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::RuntimeElement,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::Timeline::AppliedOffsetMode,
@@ -382,7 +386,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         tree: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            crate::UnityEngine::Timeline::IntervalTree_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            >,
         >,
         mode: crate::UnityEngine::Timeline::AppliedOffsetMode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
@@ -395,8 +401,10 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::RuntimeElement,
+                                crate::UnityEngine::Timeline::IntervalTree_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::RuntimeElement,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::Timeline::AppliedOffsetMode,
@@ -422,7 +430,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
         graph: crate::UnityEngine::Playables::PlayableGraph,
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         tree: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            crate::UnityEngine::Timeline::IntervalTree_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::RuntimeElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -434,8 +444,10 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::RuntimeElement,
+                                crate::UnityEngine::Timeline::IntervalTree_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::RuntimeElement,
+                                    >,
                                 >,
                             >,
                         ),
@@ -559,7 +571,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
     pub fn GetAnimationClips(
         &mut self,
         animClips: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -568,7 +582,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1526,7 +1542,11 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
     pub fn get_outputs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableBinding>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1535,7 +1555,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Playables::PlayableBinding,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::UnityEngine::Playables::PlayableBinding,
+                            >,
                         >,
                         0usize,
                     >("get_outputs")
@@ -1548,7 +1570,9 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Playables::PlayableBinding,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::Playables::PlayableBinding,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

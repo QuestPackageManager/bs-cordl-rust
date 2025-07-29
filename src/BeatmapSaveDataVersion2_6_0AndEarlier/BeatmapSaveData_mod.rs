@@ -5,26 +5,38 @@ pub struct BeatmapSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _events: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            >,
         >,
     >,
     pub _notes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            >,
+        >,
     >,
     pub _sliders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            >,
         >,
     >,
     pub _waypoints: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            >,
         >,
     >,
     pub _obstacles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            >,
         >,
     >,
     pub _specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
@@ -95,28 +107,38 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
     }
     pub fn New(
         events: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         >,
         notes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                >,
             >,
         >,
         sliders: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                >,
             >,
         >,
         waypoints: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                >,
             >,
         >,
         obstacles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                >,
             >,
         >,
         specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
@@ -142,28 +164,38 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
     pub fn _ctor(
         &mut self,
         events: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         >,
         notes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                >,
             >,
         >,
         sliders: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                >,
             >,
         >,
         waypoints: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                >,
             >,
         >,
         obstacles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                >,
             >,
         >,
         specialEventsKeywordFilters: quest_hook::libil2cpp::Gc<
@@ -177,28 +209,38 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -236,8 +278,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         >,
     > {
@@ -248,8 +292,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -263,8 +309,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::EventData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -273,8 +321,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                >,
             >,
         >,
     > {
@@ -285,8 +335,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -300,8 +352,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::NoteData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -310,8 +364,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                >,
             >,
         >,
     > {
@@ -322,8 +378,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -337,8 +395,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::ObstacleData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -347,8 +407,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                >,
             >,
         >,
     > {
@@ -359,8 +421,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -374,8 +438,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SliderData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -442,8 +508,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                >,
             >,
         >,
     > {
@@ -454,8 +522,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -469,8 +539,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

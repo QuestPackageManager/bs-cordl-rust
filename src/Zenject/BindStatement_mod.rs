@@ -4,7 +4,9 @@
 pub struct BindStatement {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::IDisposable>,
+        >,
     >,
     pub _bindingFinalizer: quest_hook::libil2cpp::Gc<crate::Zenject::IBindingFinalizer>,
 }

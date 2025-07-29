@@ -4,12 +4,23 @@
 pub struct ConventionBindInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _typeFilters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>, bool>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Func_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                    bool,
+                >,
+            >,
+        >,
     >,
     pub _assemblyFilters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-            bool,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Func_2<
+                    quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                    bool,
+                >,
+            >,
         >,
     >,
 }
@@ -50,8 +61,10 @@ impl crate::Zenject::ConventionBindInfo {
     pub fn AddAssemblyFilter(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-            bool,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -60,10 +73,12 @@ impl crate::Zenject::ConventionBindInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::Assembly,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::Assembly,
+                                >,
+                                bool,
                             >,
-                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -84,8 +99,7 @@ impl crate::Zenject::ConventionBindInfo {
     pub fn AddTypeFilter(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            bool,
+            crate::System::Func_2<quest_hook::libil2cpp::Gc<crate::System::Type>, bool>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -94,8 +108,10 @@ impl crate::Zenject::ConventionBindInfo {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            bool,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                bool,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -117,7 +133,9 @@ impl crate::Zenject::ConventionBindInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -127,8 +145,10 @@ impl crate::Zenject::ConventionBindInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Reflection::Assembly,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Reflection::Assembly,
+                                >,
                             >,
                         >,
                         0usize,
@@ -142,7 +162,9 @@ impl crate::Zenject::ConventionBindInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -194,7 +216,11 @@ impl crate::Zenject::ConventionBindInfo {
     pub fn ResolveTypes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -203,7 +229,9 @@ impl crate::Zenject::ConventionBindInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         0usize,
                     >("ResolveTypes")
@@ -216,7 +244,9 @@ impl crate::Zenject::ConventionBindInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -276,7 +306,11 @@ impl crate::Zenject::ConventionBindInfo {
         &mut self,
         assembly: quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -285,7 +319,9 @@ impl crate::Zenject::ConventionBindInfo {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("<ResolveTypes>b__9_0")
@@ -298,7 +334,9 @@ impl crate::Zenject::ConventionBindInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (assembly))? };
         Ok(__cordl_ret.into())
     }

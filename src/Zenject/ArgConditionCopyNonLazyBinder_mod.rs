@@ -50,7 +50,11 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
     }
     pub fn WithArgumentsExplicit(
         &mut self,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::Zenject::TypeValuePair,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
@@ -61,7 +65,11 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::Zenject::TypeValuePair,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
                         >,

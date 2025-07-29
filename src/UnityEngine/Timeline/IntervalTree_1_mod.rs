@@ -4,10 +4,14 @@
 pub struct IntervalTree_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Entries: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::IntervalTree_1_Entry<T>,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::IntervalTree_1_Entry<T>,
+        >,
     >,
     pub m_Nodes: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::IntervalTreeNode,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::IntervalTreeNode,
+        >,
     >,
     pub _dirty_k__BackingField: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -122,7 +126,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
     pub fn IntersectsWith(
         &mut self,
         value: i64,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -133,7 +139,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i64, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            i64,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("IntersectsWith")
@@ -154,7 +165,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         &mut self,
         start: i64,
         end: i64,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -165,7 +178,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i64, i64, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            i64,
+                            i64,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         3usize,
                     >("IntersectsWithRange")
@@ -197,7 +216,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         &mut self,
         intervalTreeNode: crate::UnityEngine::Timeline::IntervalTreeNode,
         value: i64,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -211,7 +232,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                         (
                             crate::UnityEngine::Timeline::IntervalTreeNode,
                             i64,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -234,7 +257,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
         intervalTreeNode: crate::UnityEngine::Timeline::IntervalTreeNode,
         start: i64,
         end: i64,
-        results: quest_hook::libil2cpp::Gc<T>,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -249,7 +274,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::Timeline::IntervalTree_
                             crate::UnityEngine::Timeline::IntervalTreeNode,
                             i64,
                             i64,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,

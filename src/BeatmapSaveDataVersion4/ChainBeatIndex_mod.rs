@@ -117,13 +117,13 @@ for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -131,13 +131,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapSaveDataVersion4+ChainBeatIndex")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     >,
 > for crate::BeatmapSaveDataVersion4::ChainBeatIndex {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IComparable_1<
         quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataCommon::IBeat>,
     > {
         unsafe { std::mem::transmute(self) }

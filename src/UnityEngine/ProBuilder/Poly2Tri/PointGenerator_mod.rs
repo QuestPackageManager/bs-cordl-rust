@@ -51,8 +51,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
         scale: f64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >,
             >,
         >,
     > {
@@ -63,8 +65,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
                     .find_static_method::<
                         (i32, f64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                                >,
                             >,
                         >,
                         2usize,
@@ -78,8 +82,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (n, scale))? };
         Ok(__cordl_ret.into())
@@ -89,8 +95,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
         scale: f64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >,
             >,
         >,
     > {
@@ -101,8 +109,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
                     .find_static_method::<
                         (i32, f64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                                >,
                             >,
                         >,
                         2usize,
@@ -116,8 +126,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointGenerator {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (n, scale))? };
         Ok(__cordl_ret.into())

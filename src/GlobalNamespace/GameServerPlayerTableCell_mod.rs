@@ -37,9 +37,9 @@ pub struct GameServerPlayerTableCell {
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
-    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<i32>,
-    pub useBeatmapEvent: quest_hook::libil2cpp::Gc<i32>,
-    pub useModifiersEvent: quest_hook::libil2cpp::Gc<i32>,
+    pub kickPlayerEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub useBeatmapEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+    pub useModifiersEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _getLevelEntitlementCancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
@@ -186,7 +186,9 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     pub fn SetBeatmapUseButtonEnabledAsync(
         &mut self,
         getLevelEntitlementTask: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -195,7 +197,9 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EntitlementStatus,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::EntitlementStatus,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -222,7 +226,9 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
         hasKickPermissions: bool,
         allowSelection: bool,
         getLevelEntitlementTask: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EntitlementStatus,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::EntitlementStatus,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -240,7 +246,9 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
                             bool,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EntitlementStatus,
+                                crate::System::Threading::Tasks::Task_1<
+                                    crate::GlobalNamespace::EntitlementStatus,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -292,14 +300,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_kickPlayerEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_kickPlayerEvent")
@@ -318,14 +326,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_useBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_useBeatmapEvent")
@@ -344,14 +352,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn add_useModifiersEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_useModifiersEvent")
@@ -370,14 +378,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_kickPlayerEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_kickPlayerEvent")
@@ -396,14 +404,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_useBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_useBeatmapEvent")
@@ -422,14 +430,14 @@ impl crate::GlobalNamespace::GameServerPlayerTableCell {
     }
     pub fn remove_useModifiersEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<i32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_useModifiersEvent")

@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::NoAllocHelpers {
 #[cfg(feature = "UnityEngine+NoAllocHelpers")]
 impl crate::UnityEngine::NoAllocHelpers {
     pub fn EnsureListElemCount<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -51,7 +51,12 @@ impl crate::UnityEngine::NoAllocHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("EnsureListElemCount")
@@ -94,7 +99,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn ExtractArrayFromListT<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -107,7 +112,9 @@ impl crate::UnityEngine::NoAllocHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
                         1usize,
                     >("ExtractArrayFromListT")
@@ -156,7 +163,7 @@ impl crate::UnityEngine::NoAllocHelpers {
         Ok(__cordl_ret.into())
     }
     pub fn ResizeList<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         _cordl_size: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -168,7 +175,12 @@ impl crate::UnityEngine::NoAllocHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ResizeList")
@@ -210,8 +222,8 @@ impl crate::UnityEngine::NoAllocHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SafeLength_Gc1<T>(
-        values: quest_hook::libil2cpp::Gc<T>,
+    pub fn SafeLength_List_1_1<T>(
+        values: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -222,7 +234,9 @@ impl crate::UnityEngine::NoAllocHelpers {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         i32,
                         1usize,
                     >("SafeLength")

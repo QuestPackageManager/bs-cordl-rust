@@ -3,16 +3,24 @@
 #[derive(Debug)]
 pub struct VerticalVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionVirtualizationController,
-    pub m_Pool: quest_hook::libil2cpp::Gc<T>,
+    pub m_Pool: quest_hook::libil2cpp::Gc<crate::UnityEngine::Pool::ObjectPool_1<T>>,
     pub m_CollectionView: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     >,
-    pub m_ActiveItems: quest_hook::libil2cpp::Gc<T>,
+    pub m_ActiveItems: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     pub m_DraggedItem: T,
     pub m_LastFocusedElementIndex: i32,
-    pub m_LastFocusedElementTreeChildIndexes: quest_hook::libil2cpp::Gc<i32>,
-    pub m_VisibleItemPredicateDelegate: quest_hook::libil2cpp::Gc<T, bool>,
-    pub m_ScrollInsertionList: quest_hook::libil2cpp::Gc<T>,
+    pub m_LastFocusedElementTreeChildIndexes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
+    pub m_VisibleItemPredicateDelegate: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<T, bool>,
+    >,
+    pub m_ScrollInsertionList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     pub m_EmptyRows: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -517,8 +525,10 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         >,
     >
@@ -533,8 +543,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                                >,
                             >,
                         >,
                         0usize,
@@ -548,8 +560,10 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ReusableCollectionItem,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoubleControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f64>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<f64>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+Controls+DoubleControl")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::UnityEngine::InputSystem::Controls::DoubleControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DoubleControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DoubleControl {
-    type Target = quest_hook::libil2cpp::Gc<f64>;
+    type Target = crate::UnityEngine::InputSystem::InputControl_1<f64>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

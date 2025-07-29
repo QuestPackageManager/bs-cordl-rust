@@ -27,11 +27,15 @@ pub struct NoteCutCoreEffectsSpawner {
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
     pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        >,
     >,
     pub _colorTypeToSliderInteractionManagerDictionary: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ColorType,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::ColorType,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_NoteCutCoreEffectsSpawner")]

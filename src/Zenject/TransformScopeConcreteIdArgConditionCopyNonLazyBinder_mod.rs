@@ -94,11 +94,13 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (transformGroupname))? };
         Ok(__cordl_ret.into())
     }
-    pub fn UnderTransform_Gc1(
+    pub fn UnderTransform_Func_2_1(
         &mut self,
         parentGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -111,8 +113,10 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,

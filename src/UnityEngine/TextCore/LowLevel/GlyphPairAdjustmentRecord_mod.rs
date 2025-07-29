@@ -256,13 +256,13 @@ impl crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     > {
         todo!()
@@ -270,13 +270,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+GlyphPairAdjustmentRecord")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     >,
 > for crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::TextCore::LowLevel::GlyphPairAdjustmentRecord,
     > {
         todo!()

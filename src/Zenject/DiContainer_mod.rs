@@ -4,13 +4,19 @@
 pub struct DiContainer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _decorators: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<crate::Zenject::Internal::IDecoratorProvider>,
+        >,
     >,
     pub _providers: quest_hook::libil2cpp::Gc<
-        crate::Zenject::BindingId,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::Zenject::BindingId,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+                >,
+            >,
         >,
     >,
     pub _containerLookups: quest_hook::libil2cpp::Gc<
@@ -23,26 +29,38 @@ pub struct DiContainer {
         >,
     >,
     pub _resolvesInProgress: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::Internal::LookupId>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::Internal::LookupId>,
+        >,
     >,
     pub _resolvesTwiceInProgress: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::Internal::LookupId>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::Internal::LookupId>,
+        >,
     >,
     pub _lazyInjector: quest_hook::libil2cpp::Gc<crate::Zenject::LazyInstanceInjector>,
     pub _singletonMarkRegistry: quest_hook::libil2cpp::Gc<
         crate::Zenject::Internal::SingletonMarkRegistry,
     >,
     pub _currentBindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        >,
     >,
     pub _childBindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+        >,
     >,
     pub _validatedTypes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _validationQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::IValidatable>,
+        >,
     >,
     pub _contextTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hasLookedUpContextTransform: bool,
@@ -214,7 +232,9 @@ impl crate::Zenject::DiContainer {
     }
     pub fn BindFactoryCustomInterface_0<TContract, TFactoryConcrete, TFactoryContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryToChoiceIdBinder_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -229,7 +249,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+                        >,
                         0usize,
                     >("BindFactoryCustomInterface")
                     .unwrap_or_else(|e| {
@@ -240,9 +262,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryCustomInterface_1<
@@ -252,7 +274,11 @@ impl crate::Zenject::DiContainer {
         TFactoryContract,
     >(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TParam1, TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        >,
+    >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -269,7 +295,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+                        >,
                         0usize,
                     >("BindFactoryCustomInterface")
                     .unwrap_or_else(|e| {
@@ -280,9 +308,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryCustomInterface_2<
@@ -294,7 +322,9 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -314,7 +344,13 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_3<
+                                TParam1,
+                                TParam2,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactoryCustomInterface")
                     .unwrap_or_else(|e| {
@@ -325,9 +361,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryCustomInterface_3<
@@ -340,7 +376,14 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -362,7 +405,14 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_4<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactoryCustomInterface")
                     .unwrap_or_else(|e| {
@@ -374,10 +424,12 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -392,7 +444,15 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -417,11 +477,13 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_5<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryCustomInterface")
@@ -434,11 +496,13 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -454,7 +518,16 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -481,12 +554,14 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_6<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryCustomInterface")
@@ -499,12 +574,14 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -522,13 +599,15 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         >,
     >
     where
@@ -558,13 +637,15 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_7<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryCustomInterface")
@@ -577,13 +658,15 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -605,17 +688,19 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         >,
     >
     where
@@ -653,17 +738,19 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TParam7,
-                            TParam8,
-                            TParam9,
-                            TParam10,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_11<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TParam8,
+                                TParam9,
+                                TParam10,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryCustomInterface")
@@ -676,23 +763,27 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryInternal_0<TContract, TFactoryContract, TFactoryConcrete>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryToChoiceIdBinder_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -707,7 +798,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+                        >,
                         0usize,
                     >("BindFactoryInternal")
                     .unwrap_or_else(|e| {
@@ -718,14 +811,18 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryInternal_1<TParam1, TContract, TFactoryContract, TFactoryConcrete>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TParam1, TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        >,
+    >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -742,7 +839,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+                        >,
                         0usize,
                     >("BindFactoryInternal")
                     .unwrap_or_else(|e| {
@@ -753,9 +852,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryInternal_2<
@@ -767,7 +866,9 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -787,7 +888,13 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_3<
+                                TParam1,
+                                TParam2,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactoryInternal")
                     .unwrap_or_else(|e| {
@@ -798,9 +905,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactoryInternal_3<
@@ -813,7 +920,14 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -835,7 +949,14 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_4<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactoryInternal")
                     .unwrap_or_else(|e| {
@@ -847,10 +968,12 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -865,7 +988,15 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -890,11 +1021,13 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_5<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryInternal")
@@ -907,11 +1040,13 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -927,7 +1062,16 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -954,12 +1098,14 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_6<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryInternal")
@@ -972,12 +1118,14 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -995,13 +1143,15 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         >,
     >
     where
@@ -1031,13 +1181,15 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_7<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryInternal")
@@ -1050,13 +1202,15 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1078,17 +1232,19 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         >,
     >
     where
@@ -1126,17 +1282,19 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TParam7,
-                            TParam8,
-                            TParam9,
-                            TParam10,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_11<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TParam8,
+                                TParam9,
+                                TParam10,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactoryInternal")
@@ -1149,23 +1307,27 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactory_0<TContract, TFactory>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryToChoiceIdBinder_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1178,7 +1340,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+                        >,
                         0usize,
                     >("BindFactory")
                     .unwrap_or_else(|e| {
@@ -1189,14 +1353,18 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactory_1<TParam1, TContract, TFactory>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TParam1, TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        >,
+    >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1211,7 +1379,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+                        >,
                         0usize,
                     >("BindFactory")
                     .unwrap_or_else(|e| {
@@ -1222,15 +1392,17 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactory_2<TParam1, TParam2, TContract, TFactory>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1248,7 +1420,13 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_3<
+                                TParam1,
+                                TParam2,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactory")
                     .unwrap_or_else(|e| {
@@ -1259,15 +1437,22 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactory_3<TParam1, TParam2, TParam3, TContract, TFactory>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1287,7 +1472,14 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_4<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindFactory")
                     .unwrap_or_else(|e| {
@@ -1299,17 +1491,27 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindFactory_4<TParam1, TParam2, TParam3, TParam4, TContract, TFactory>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1332,11 +1534,13 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_5<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactory")
@@ -1349,11 +1553,13 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1368,7 +1574,16 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1393,12 +1608,14 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_6<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactory")
@@ -1411,12 +1628,14 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1433,13 +1652,15 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         >,
     >
     where
@@ -1467,13 +1688,15 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_7<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactory")
@@ -1486,13 +1709,15 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1513,17 +1738,19 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         >,
     >
     where
@@ -1559,17 +1786,19 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TParam7,
-                            TParam8,
-                            TParam9,
-                            TParam10,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_11<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TParam8,
+                                TParam9,
+                                TParam10,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindFactory")
@@ -1582,17 +1811,19 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1659,7 +1890,9 @@ impl crate::Zenject::DiContainer {
     }
     pub fn BindIFactory_0<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FactoryToChoiceIdBinder_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1670,7 +1903,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+                        >,
                         0usize,
                     >("BindIFactory")
                     .unwrap_or_else(|e| {
@@ -1681,14 +1916,18 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindIFactory_1<TParam1, TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TParam1, TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        >,
+    >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1701,7 +1940,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+                        >,
                         0usize,
                     >("BindIFactory")
                     .unwrap_or_else(|e| {
@@ -1712,15 +1953,17 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_2<TParam1, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindIFactory_2<TParam1, TParam2, TContract>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1736,7 +1979,13 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_3<
+                                TParam1,
+                                TParam2,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindIFactory")
                     .unwrap_or_else(|e| {
@@ -1747,15 +1996,22 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TParam1, TParam2, TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_3<TParam1, TParam2, TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindIFactory_3<TParam1, TParam2, TParam3, TContract>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1773,7 +2029,14 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FactoryToChoiceIdBinder_4<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TContract,
+                            >,
+                        >,
                         0usize,
                     >("BindIFactory")
                     .unwrap_or_else(|e| {
@@ -1785,17 +2048,27 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_4<
+                TParam1,
+                TParam2,
+                TParam3,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindIFactory_4<TParam1, TParam2, TParam3, TParam4, TContract>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1816,11 +2089,13 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_5<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindIFactory")
@@ -1833,18 +2108,29 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_5<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindIFactory_5<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TParam1, TParam2, TParam3, TParam4, TParam5, TContract>,
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
+        >,
     >
     where
         TParam1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1867,12 +2153,14 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_6<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindIFactory")
@@ -1885,12 +2173,14 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_6<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1906,13 +2196,15 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         >,
     >
     where
@@ -1938,13 +2230,15 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_7<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindIFactory")
@@ -1957,13 +2251,15 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_7<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1983,17 +2279,19 @@ impl crate::Zenject::DiContainer {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         >,
     >
     where
@@ -2027,17 +2325,19 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TParam1,
-                            TParam2,
-                            TParam3,
-                            TParam4,
-                            TParam5,
-                            TParam6,
-                            TParam7,
-                            TParam8,
-                            TParam9,
-                            TParam10,
-                            TContract,
+                            crate::Zenject::FactoryToChoiceIdBinder_11<
+                                TParam1,
+                                TParam2,
+                                TParam3,
+                                TParam4,
+                                TParam5,
+                                TParam6,
+                                TParam7,
+                                TParam8,
+                                TParam9,
+                                TParam10,
+                                TContract,
+                            >,
                         >,
                         0usize,
                     >("BindIFactory")
@@ -2050,17 +2350,19 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TParam1,
-            TParam2,
-            TParam3,
-            TParam4,
-            TParam5,
-            TParam6,
-            TParam7,
-            TParam8,
-            TParam9,
-            TParam10,
-            TContract,
+            crate::Zenject::FactoryToChoiceIdBinder_11<
+                TParam1,
+                TParam2,
+                TParam3,
+                TParam4,
+                TParam5,
+                TParam6,
+                TParam7,
+                TParam8,
+                TParam9,
+                TParam10,
+                TContract,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2476,7 +2778,11 @@ impl crate::Zenject::DiContainer {
     pub fn BindMemoryPoolCustomInterface<TItemContract, TPoolConcrete, TPoolContract>(
         &mut self,
         includeConcreteType: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItemContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        >,
+    >
     where
         TItemContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2491,7 +2797,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
-                        quest_hook::libil2cpp::Gc<TItemContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<
+                                TItemContract,
+                            >,
+                        >,
                         1usize,
                     >("BindMemoryPoolCustomInterface")
                     .unwrap_or_else(|e| {
@@ -2502,9 +2812,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItemContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (includeConcreteType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (includeConcreteType))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindMemoryPoolCustomInterfaceInternal<
@@ -2515,7 +2825,11 @@ impl crate::Zenject::DiContainer {
         &mut self,
         includeConcreteType: bool,
         statement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItemContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        >,
+    >
     where
         TItemContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2530,7 +2844,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
-                        quest_hook::libil2cpp::Gc<TItemContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<
+                                TItemContract,
+                            >,
+                        >,
                         2usize,
                     >("BindMemoryPoolCustomInterfaceInternal")
                     .unwrap_or_else(|e| {
@@ -2541,7 +2859,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItemContract> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked(self, (includeConcreteType, statement))?
         };
         Ok(__cordl_ret.into())
@@ -2553,7 +2873,11 @@ impl crate::Zenject::DiContainer {
     >(
         &mut self,
         includeConcreteType: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItemContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        >,
+    >
     where
         TItemContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2568,7 +2892,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool),
-                        quest_hook::libil2cpp::Gc<TItemContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<
+                                TItemContract,
+                            >,
+                        >,
                         1usize,
                     >("BindMemoryPoolCustomInterfaceNoFlush")
                     .unwrap_or_else(|e| {
@@ -2579,14 +2907,18 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItemContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (includeConcreteType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (includeConcreteType))? };
         Ok(__cordl_ret.into())
     }
     pub fn BindMemoryPool_0<TItemContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItemContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        >,
+    >
     where
         TItemContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2597,7 +2929,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TItemContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<
+                                TItemContract,
+                            >,
+                        >,
                         0usize,
                     >("BindMemoryPool")
                     .unwrap_or_else(|e| {
@@ -2608,14 +2944,18 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItemContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindMemoryPool_1<TItemContract, TPool>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItemContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        >,
+    >
     where
         TItemContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2628,7 +2968,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TItemContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<
+                                TItemContract,
+                            >,
+                        >,
                         0usize,
                     >("BindMemoryPool")
                     .unwrap_or_else(|e| {
@@ -2639,14 +2983,16 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItemContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::MemoryPoolIdInitialSizeMaxSizeBinder_1<TItemContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindNoFlush<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderGeneric_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2657,7 +3003,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+                        >,
                         0usize,
                     >("BindNoFlush")
                     .unwrap_or_else(|e| {
@@ -2668,9 +3016,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn BindPoolableExecutionOrder_Type_i32_1(
@@ -2797,7 +3145,9 @@ impl crate::Zenject::DiContainer {
     }
     pub fn Bind_0<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderGeneric_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -2808,7 +3158,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+                        >,
                         0usize,
                     >("Bind")
                     .unwrap_or_else(|e| {
@@ -2819,79 +3171,17 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Bind_BindStatement1<TContract>(
-        &mut self,
-        bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
-    where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
-                        quest_hook::libil2cpp::Gc<TContract>,
-                        1usize,
-                    >("Bind")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bindStatement))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Bind_Gc3(
-        &mut self,
-        contractTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderNonGeneric>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Zenject::ConcreteIdBinderNonGeneric,
-                        >,
-                        1usize,
-                    >("Bind")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
-                            1usize
-                        )
-                    })
-            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::ConcreteIdBinderNonGeneric,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (contractTypes))? };
+            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Bind_Gc4(
+    pub fn Bind_Action_1_4(
         &mut self,
         generator: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ConventionSelectTypesBinder>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConventionSelectTypesBinder>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderNonGeneric>,
@@ -2902,8 +3192,10 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::ConventionSelectTypesBinder,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::ConventionSelectTypesBinder,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -2922,6 +3214,78 @@ impl crate::Zenject::DiContainer {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::ConcreteIdBinderNonGeneric,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (generator))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_BindStatement1<TContract>(
+        &mut self,
+        bindStatement: quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderGeneric_1<TContract>>,
+    >
+    where
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::BindStatement>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+                        >,
+                        1usize,
+                    >("Bind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConcreteIdBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (bindStatement))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Bind_IEnumerable_1_3(
+        &mut self,
+        contractTypes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteIdBinderNonGeneric>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteIdBinderNonGeneric,
+                        >,
+                        1usize,
+                    >("Bind")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConcreteIdBinderNonGeneric,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (contractTypes))? };
         Ok(__cordl_ret.into())
     }
     pub fn Bind_Il2CppArray2(
@@ -2967,7 +3331,9 @@ impl crate::Zenject::DiContainer {
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         injectableType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -2985,7 +3351,11 @@ impl crate::Zenject::DiContainer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -3313,7 +3683,11 @@ impl crate::Zenject::DiContainer {
     }
     pub fn Decorate<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>,
+        >,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -3324,7 +3698,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>,
+                        >,
                         0usize,
                     >("Decorate")
                     .unwrap_or_else(|e| {
@@ -3335,9 +3711,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::DecoratorToChoiceFromBinder_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn FinalizeBinding(
@@ -3369,7 +3745,11 @@ impl crate::Zenject::DiContainer {
     pub fn FlattenInheritanceChain(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3378,7 +3758,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            >,
                         >,
                         0usize,
                     >("FlattenInheritanceChain")
@@ -3391,7 +3773,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3503,7 +3887,9 @@ impl crate::Zenject::DiContainer {
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3515,8 +3901,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -3539,7 +3927,11 @@ impl crate::Zenject::DiContainer {
     pub fn GetDependencyContracts_0<TContract>(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -3552,7 +3944,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         0usize,
                     >("GetDependencyContracts")
@@ -3565,7 +3959,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3573,7 +3969,11 @@ impl crate::Zenject::DiContainer {
         &mut self,
         contract: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3582,7 +3982,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("GetDependencyContracts")
@@ -3595,7 +3997,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (contract))? };
         Ok(__cordl_ret.into())
     }
@@ -3603,7 +4007,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         bindingId: crate::Zenject::BindingId,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3614,8 +4020,10 @@ impl crate::Zenject::DiContainer {
                         (
                             crate::Zenject::BindingId,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::DiContainer_ProviderInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::DiContainer_ProviderInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -3667,7 +4075,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3678,8 +4088,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::DiContainer_ProviderInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::DiContainer_ProviderInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -3704,7 +4116,9 @@ impl crate::Zenject::DiContainer {
         bindingId: crate::Zenject::BindingId,
         sourceType: crate::Zenject::InjectSources,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer_ProviderInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3716,8 +4130,10 @@ impl crate::Zenject::DiContainer {
                             crate::Zenject::BindingId,
                             crate::Zenject::InjectSources,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::DiContainer_ProviderInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::DiContainer_ProviderInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -3947,7 +4363,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         injectableType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -3963,7 +4381,11 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -3989,10 +4411,12 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InjectExplicit_Gc0(
+    pub fn InjectExplicit_List_1_0(
         &mut self,
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -4003,7 +4427,11 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -4021,11 +4449,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InjectExplicit_Type_Gc_InjectContext_Il2CppObject1(
+    pub fn InjectExplicit_Type_List_1_InjectContext_Il2CppObject1(
         &mut self,
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         injectableType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -4041,7 +4471,11 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -4097,7 +4531,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -4113,7 +4549,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -4169,11 +4609,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InjectGameObjectForComponent_Gc1<T>(
+    pub fn InjectGameObjectForComponent_IEnumerable_1_1<T>(
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -4188,8 +4630,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4209,12 +4653,14 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InjectGameObjectForComponent_Type_Gc2(
+    pub fn InjectGameObjectForComponent_Type_IEnumerable_1_2(
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -4228,8 +4674,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4257,7 +4705,9 @@ impl crate::Zenject::DiContainer {
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         injectableType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         typeInfo: quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -4275,7 +4725,11 @@ impl crate::Zenject::DiContainer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectTypeInfo>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -4310,11 +4764,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Inject_Gc1(
+    pub fn Inject_IEnumerable_1_1(
         &mut self,
         injectable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4327,8 +4783,10 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4468,7 +4926,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
@@ -4480,7 +4940,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
                         3usize,
@@ -4522,10 +4986,12 @@ impl crate::Zenject::DiContainer {
         let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateComponentOnNewGameObject_Gc1<T>(
+    pub fn InstantiateComponentOnNewGameObject_IEnumerable_1_1<T>(
         &mut self,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -4538,8 +5004,10 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >),
                         T,
@@ -4588,11 +5056,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateComponentOnNewGameObject_Il2CppString_Gc3<T>(
+    pub fn InstantiateComponentOnNewGameObject_Il2CppString_IEnumerable_1_3<T>(
         &mut self,
         gameObjectName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -4609,8 +5079,10 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4660,11 +5132,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateComponent_GameObject_Gc1<TContract>(
+    pub fn InstantiateComponent_GameObject_IEnumerable_1_1<TContract>(
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<TContract>
     where
@@ -4679,8 +5153,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4732,12 +5208,14 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateComponent_Type_GameObject_Gc3(
+    pub fn InstantiateComponent_Type_GameObject_IEnumerable_1_3(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
@@ -4751,8 +5229,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -4773,9 +5253,11 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateExplicit_Gc0<T>(
+    pub fn InstantiateExplicit_List_1_0<T>(
         &mut self,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -4786,7 +5268,11 @@ impl crate::Zenject::DiContainer {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::Zenject::TypeValuePair,
+                            >,
+                        >),
                         T,
                         1usize,
                     >("InstantiateExplicit")
@@ -4803,10 +5289,12 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateExplicit_Type_Gc1(
+    pub fn InstantiateExplicit_Type_List_1_1(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -4817,7 +5305,11 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         2usize,
@@ -4837,11 +5329,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateExplicit_Type__cordl_bool_Gc_InjectContext_Il2CppObject2(
+    pub fn InstantiateExplicit_Type__cordl_bool_List_1_InjectContext_Il2CppObject2(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         autoInject: bool,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -4857,7 +5351,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             bool,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -4889,7 +5387,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         autoInject: bool,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -4905,7 +5405,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             bool,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -4937,7 +5441,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         gameObjectBindInfo: quest_hook::libil2cpp::Gc<
             crate::Zenject::GameObjectCreationParameters,
         >,
@@ -4952,7 +5458,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::Zenject::GameObjectCreationParameters,
                             >,
@@ -4983,7 +5493,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -5002,7 +5514,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -5040,11 +5556,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponentExplicit_Type_Object_Gc0(
+    pub fn InstantiatePrefabForComponentExplicit_Type_Object_List_1_0(
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -5056,7 +5574,11 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         3usize,
@@ -5106,11 +5628,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponent_Object_Gc1<T>(
+    pub fn InstantiatePrefabForComponent_Object_IEnumerable_1_1<T>(
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5125,8 +5649,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5180,12 +5706,14 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponent_Object_Transform_Gc3<T>(
+    pub fn InstantiatePrefabForComponent_Object_Transform_IEnumerable_1_3<T>(
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5201,8 +5729,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5262,14 +5792,18 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponent_Object_Vector3_Quaternion_Transform_Gc5<T>(
+    pub fn InstantiatePrefabForComponent_Object_Vector3_Quaternion_Transform_IEnumerable_1_5<
+        T,
+    >(
         &mut self,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5287,8 +5821,10 @@ impl crate::Zenject::DiContainer {
                             crate::UnityEngine::Quaternion,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5312,12 +5848,14 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponent_Type_Object_Gc_GameObjectCreationParameters7(
+    pub fn InstantiatePrefabForComponent_Type_Object_IEnumerable_1_GameObjectCreationParameters7(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         creationInfo: quest_hook::libil2cpp::Gc<
             crate::Zenject::GameObjectCreationParameters,
@@ -5334,8 +5872,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -5361,13 +5901,15 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabForComponent_Type_Object_Transform_Gc6(
+    pub fn InstantiatePrefabForComponent_Type_Object_Transform_IEnumerable_1_6(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         prefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -5382,8 +5924,10 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5413,7 +5957,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         creationInfo: quest_hook::libil2cpp::Gc<
             crate::Zenject::GameObjectCreationParameters,
         >,
@@ -5430,7 +5976,11 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::Zenject::GameObjectCreationParameters,
                             >,
@@ -5461,7 +6011,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         componentType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         concreteIdentifier: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
@@ -5482,7 +6034,11 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -5550,11 +6106,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Gc1<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_IEnumerable_1_1<T>(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5571,8 +6129,10 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5628,12 +6188,16 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Transform_Gc3<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Transform_IEnumerable_1_3<
+        T,
+    >(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5651,8 +6215,10 @@ impl crate::Zenject::DiContainer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5719,7 +6285,7 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Vector3_Quaternion_Transform_Gc5<
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Vector3_Quaternion_Transform_IEnumerable_1_5<
         T,
     >(
         &mut self,
@@ -5728,7 +6294,9 @@ impl crate::Zenject::DiContainer {
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -5748,8 +6316,10 @@ impl crate::Zenject::DiContainer {
                             crate::UnityEngine::Quaternion,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -5773,13 +6343,15 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiatePrefabResourceForComponent_Type_Il2CppString_Transform_Gc6(
+    pub fn InstantiatePrefabResourceForComponent_Type_Il2CppString_Transform_IEnumerable_1_6(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         parentTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -5796,8 +6368,10 @@ impl crate::Zenject::DiContainer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -6102,7 +6676,9 @@ impl crate::Zenject::DiContainer {
         &mut self,
         scriptableObjectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        extraArgs: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        extraArgs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     > {
@@ -6116,7 +6692,11 @@ impl crate::Zenject::DiContainer {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
                         3usize,
@@ -6167,11 +6747,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateScriptableObjectResource_Il2CppString_Gc1<T>(
+    pub fn InstantiateScriptableObjectResource_Il2CppString_IEnumerable_1_1<T>(
         &mut self,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -6188,8 +6770,10 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -6246,12 +6830,14 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateScriptableObjectResource_Type_Il2CppString_Gc3(
+    pub fn InstantiateScriptableObjectResource_Type_Il2CppString_IEnumerable_1_3(
         &mut self,
         scriptableObjectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         resourcePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -6267,8 +6853,10 @@ impl crate::Zenject::DiContainer {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -6312,10 +6900,12 @@ impl crate::Zenject::DiContainer {
         let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Gc1<T>(
+    pub fn Instantiate_IEnumerable_1_1<T>(
         &mut self,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -6328,8 +6918,10 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >),
                         T,
@@ -6376,11 +6968,13 @@ impl crate::Zenject::DiContainer {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (concreteType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Type_Gc3(
+    pub fn Instantiate_Type_IEnumerable_1_3(
         &mut self,
         concreteType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         extraArgs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -6393,8 +6987,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -6465,9 +7061,11 @@ impl crate::Zenject::DiContainer {
             .invoke_void(".ctor", (parentContainer, isValidating))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc5(
+    pub fn New_IEnumerable_1_5(
         parentContainers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -6476,9 +7074,11 @@ impl crate::Zenject::DiContainer {
             .invoke_void(".ctor", (parentContainers))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc__cordl_bool0(
+    pub fn New_IEnumerable_1__cordl_bool0(
         parentContainersEnumerable: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
         isValidating: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -6552,7 +7152,9 @@ impl crate::Zenject::DiContainer {
     pub fn RebindId_Il2CppObject0<TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteBinderGeneric_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -6563,7 +7165,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteBinderGeneric_1<TContract>,
+                        >,
                         1usize,
                     >("RebindId")
                     .unwrap_or_else(|e| {
@@ -6574,9 +7178,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (identifier))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConcreteBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn RebindId_Type_Il2CppObject1(
@@ -6619,7 +7223,9 @@ impl crate::Zenject::DiContainer {
     }
     pub fn Rebind_0<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ConcreteBinderGeneric_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -6630,7 +7236,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::ConcreteBinderGeneric_1<TContract>,
+                        >,
                         0usize,
                     >("Rebind")
                     .unwrap_or_else(|e| {
@@ -6641,9 +7249,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::ConcreteBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Rebind_Type1(
@@ -6713,7 +7321,9 @@ impl crate::Zenject::DiContainer {
     }
     pub fn ResolveAll_2<TContract>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -6724,7 +7334,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<TContract>,
+                        >,
                         0usize,
                     >("ResolveAll")
                     .unwrap_or_else(|e| {
@@ -6735,9 +7347,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveAll_InjectContext0(
@@ -6768,11 +7380,13 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ResolveAll_InjectContext_Gc1(
+    pub fn ResolveAll_InjectContext_List_1_1(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6783,8 +7397,10 @@ impl crate::Zenject::DiContainer {
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -6860,7 +7476,9 @@ impl crate::Zenject::DiContainer {
     pub fn ResolveIdAll_Il2CppObject0<TContract>(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -6871,7 +7489,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<TContract>,
+                        >,
                         1usize,
                     >("ResolveIdAll")
                     .unwrap_or_else(|e| {
@@ -6882,9 +7502,9 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (identifier))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (identifier))? };
         Ok(__cordl_ret.into())
     }
     pub fn ResolveIdAll_Type_Il2CppObject1(
@@ -7016,7 +7636,11 @@ impl crate::Zenject::DiContainer {
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7025,7 +7649,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("ResolveTypeAll")
@@ -7038,7 +7664,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (context))? };
         Ok(__cordl_ret.into())
     }
@@ -7046,7 +7674,11 @@ impl crate::Zenject::DiContainer {
         &mut self,
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7055,7 +7687,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("ResolveTypeAll")
@@ -7068,7 +7702,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())
     }
@@ -7077,7 +7713,11 @@ impl crate::Zenject::DiContainer {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7091,7 +7731,9 @@ impl crate::Zenject::DiContainer {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         2usize,
                     >("ResolveTypeAll")
@@ -7104,7 +7746,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (_cordl_type, identifier))?
         };
@@ -7305,7 +7949,9 @@ impl crate::Zenject::DiContainer {
         >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         instances: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -7319,8 +7965,10 @@ impl crate::Zenject::DiContainer {
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -7981,10 +8629,12 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc5(
+    pub fn _ctor_IEnumerable_1_5(
         &mut self,
         parentContainers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -7993,7 +8643,9 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -8011,10 +8663,12 @@ impl crate::Zenject::DiContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc__cordl_bool0(
+    pub fn _ctor_IEnumerable_1__cordl_bool0(
         &mut self,
         parentContainersEnumerable: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
         isValidating: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -8025,7 +8679,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                >,
                             >,
                             bool,
                         ),
@@ -8071,7 +8727,9 @@ impl crate::Zenject::DiContainer {
     pub fn get_AllContracts(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindingId>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::Zenject::BindingId>,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -8079,7 +8737,11 @@ impl crate::Zenject::DiContainer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::Zenject::BindingId>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::Zenject::BindingId,
+                            >,
+                        >,
                         0usize,
                     >("get_AllContracts")
                     .unwrap_or_else(|e| {
@@ -8090,15 +8752,19 @@ impl crate::Zenject::DiContainer {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::BindingId> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<crate::Zenject::BindingId>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_AllProviders(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -8107,7 +8773,9 @@ impl crate::Zenject::DiContainer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            >,
                         >,
                         0usize,
                     >("get_AllProviders")
@@ -8120,7 +8788,9 @@ impl crate::Zenject::DiContainer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

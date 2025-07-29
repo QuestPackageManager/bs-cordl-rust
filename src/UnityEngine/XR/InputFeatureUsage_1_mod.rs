@@ -296,22 +296,24 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
+> AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage_1<T>> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
 impl<
     T: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
+> AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::InputFeatureUsage_1<T>>>
 for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::InputFeatureUsage_1<T>> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::XR::InputFeatureUsage_1<T>,
+    > {
         todo!()
     }
 }

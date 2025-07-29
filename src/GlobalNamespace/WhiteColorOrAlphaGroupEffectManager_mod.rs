@@ -11,7 +11,11 @@ pub struct WhiteColorOrAlphaGroupEffectManager {
     pub _color: crate::UnityEngine::Color,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _whiteColorOrAlphaEffects: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::WhiteColorOrAlphaGroupEffect,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_WhiteColorOrAlphaGroupEffectManager")]

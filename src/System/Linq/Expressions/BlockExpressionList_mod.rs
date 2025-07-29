@@ -164,7 +164,9 @@ impl crate::System::Linq::Expressions::BlockExpressionList {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -174,8 +176,10 @@ impl crate::System::Linq::Expressions::BlockExpressionList {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Expression,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
+                                >,
                             >,
                         >,
                         0usize,
@@ -189,7 +193,9 @@ impl crate::System::Linq::Expressions::BlockExpressionList {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -492,6 +498,90 @@ for crate::System::Linq::Expressions::BlockExpressionList {
     }
 }
 #[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsRef<
+    crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
+impl AsMut<
+    crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    >,
+> for crate::System::Linq::Expressions::BlockExpressionList {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::System::Linq::Expressions::BlockExpressionList {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -502,90 +592,6 @@ for crate::System::Linq::Expressions::BlockExpressionList {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::System::Linq::Expressions::BlockExpressionList {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Linq+Expressions+BlockExpressionList")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    >,
-> for crate::System::Linq::Expressions::BlockExpressionList {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

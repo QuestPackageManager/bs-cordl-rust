@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PoolWrapperFactory_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _pool: quest_hook::libil2cpp::Gc<T>,
+    pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Zenject+PoolWrapperFactory_1")]
@@ -81,7 +81,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::PoolWrapperFactory_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        pool: quest_hook::libil2cpp::Gc<T>,
+        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -165,7 +165,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::PoolWrapperFactory_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        pool: quest_hook::libil2cpp::Gc<T>,
+        pool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -176,7 +176,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::PoolWrapperFactory_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -219,16 +219,16 @@ for crate::Zenject::PoolWrapperFactory_1<T> {
     }
 }
 #[cfg(feature = "Zenject+PoolWrapperFactory_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::Zenject::IFactory_1<T>>
 for crate::Zenject::PoolWrapperFactory_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+    fn as_ref(&self) -> &crate::Zenject::IFactory_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "Zenject+PoolWrapperFactory_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::Zenject::IFactory_1<T>>
 for crate::Zenject::PoolWrapperFactory_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+    fn as_mut(&mut self) -> &mut crate::Zenject::IFactory_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

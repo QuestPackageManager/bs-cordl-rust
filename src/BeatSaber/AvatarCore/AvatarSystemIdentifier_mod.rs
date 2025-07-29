@@ -287,11 +287,11 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
+    crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
 > for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
     > {
         todo!()
@@ -299,11 +299,11 @@ impl AsRef<
 }
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemIdentifier")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
+    crate::System::IEquatable_1<crate::BeatSaber::AvatarCore::AvatarSystemIdentifier>,
 > for crate::BeatSaber::AvatarCore::AvatarSystemIdentifier {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
     > {
         todo!()

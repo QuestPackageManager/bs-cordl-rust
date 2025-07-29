@@ -4,9 +4,15 @@
 pub struct ToggleBinder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-            quest_hook::libil2cpp::Gc<bool>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::Events::UnityAction_1<bool>,
+                    >,
+                >,
+            >,
         >,
     >,
     pub _enabled: bool,
@@ -45,10 +51,10 @@ impl std::ops::DerefMut for crate::HMUI::ToggleBinder {
 }
 #[cfg(feature = "HMUI+ToggleBinder")]
 impl crate::HMUI::ToggleBinder {
-    pub fn AddBinding_Gc0(
+    pub fn AddBinding_Action_1_0(
         &mut self,
         toggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-        action: quest_hook::libil2cpp::Gc<bool>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -57,7 +63,7 @@ impl crate::HMUI::ToggleBinder {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                            quest_hook::libil2cpp::Gc<bool>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -110,9 +116,13 @@ impl crate::HMUI::ToggleBinder {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,9 +132,13 @@ impl crate::HMUI::ToggleBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                                quest_hook::libil2cpp::Gc<bool>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -238,11 +252,15 @@ impl crate::HMUI::ToggleBinder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_List_1_1(
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -273,12 +291,16 @@ impl crate::HMUI::ToggleBinder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_List_1_1(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                quest_hook::libil2cpp::Gc<bool>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -288,9 +310,13 @@ impl crate::HMUI::ToggleBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
-                                quest_hook::libil2cpp::Gc<bool>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

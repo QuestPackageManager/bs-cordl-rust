@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct SyncBackgroundCommand {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<i32>,
+    pub _taskCompletionSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<i32>,
+    >,
 }
 #[cfg(feature = "cordl_class_SyncBackgroundCommand")]
 unsafe impl quest_hook::libil2cpp::Type

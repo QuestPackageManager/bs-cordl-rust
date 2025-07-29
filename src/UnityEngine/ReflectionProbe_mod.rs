@@ -300,7 +300,9 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_defaultReflectionSet(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -309,7 +311,9 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -329,7 +333,9 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_defaultReflectionTexture(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -338,7 +344,9 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -358,8 +366,10 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn add_reflectionProbeChanged(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
-            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
+                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -368,10 +378,12 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ReflectionProbe,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ReflectionProbe,
+                                >,
+                                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
                             >,
-                            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1181,7 +1193,9 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_defaultReflectionSet(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1190,7 +1204,9 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1210,7 +1226,9 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_defaultReflectionTexture(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1219,7 +1237,9 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1239,8 +1259,10 @@ impl crate::UnityEngine::ReflectionProbe {
     }
     pub fn remove_reflectionProbeChanged(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
-            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ReflectionProbe>,
+                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1249,10 +1271,12 @@ impl crate::UnityEngine::ReflectionProbe {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ReflectionProbe,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ReflectionProbe,
+                                >,
+                                crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
                             >,
-                            crate::UnityEngine::ReflectionProbe_ReflectionProbeEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

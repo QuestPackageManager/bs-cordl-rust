@@ -455,7 +455,11 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO_ColorScheme>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -465,8 +469,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                                >,
                             >,
                         >,
                         0usize,
@@ -480,7 +486,11 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO_ColorScheme>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_ColorScheme,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -564,7 +574,11 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
     pub fn get_environmentNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentName>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::GlobalNamespace::EnvironmentName,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -573,7 +587,9 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EnvironmentName,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                crate::GlobalNamespace::EnvironmentName,
+                            >,
                         >,
                         0usize,
                     >("get_environmentNames")
@@ -586,7 +602,9 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentName,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::GlobalNamespace::EnvironmentName,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -682,8 +700,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                >,
             >,
         >,
     > {
@@ -694,8 +714,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                                >,
                             >,
                         >,
                         0usize,
@@ -709,8 +731,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1684,8 +1708,10 @@ pub struct BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         crate::GlobalNamespace::BeatmapCharacteristicSO,
     >,
     pub _previewDifficultyBeatmaps: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+            >,
         >,
     >,
 }
@@ -1767,13 +1793,15 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
             .invoke_void(".ctor", (beatmapCharacteristic))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_List_1_1(
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
         previewDifficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1813,14 +1841,16 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_List_1_1(
         &mut self,
         beatmapCharacteristic: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapCharacteristicSO,
         >,
         previewDifficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1834,8 +1864,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
                                 crate::GlobalNamespace::BeatmapCharacteristicSO,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1892,8 +1924,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                >,
             >,
         >,
     > {
@@ -1904,8 +1938,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1919,8 +1955,10 @@ impl crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmapSet {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapLevelSO_PreviewDifficultyBeatmap,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -3355,6 +3355,20 @@ impl AsMut<crate::System::IComparable> for crate::System::Decimal {
     }
 }
 #[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IComparable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IComparable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IComparable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
 impl AsRef<crate::System::IConvertible> for crate::System::Decimal {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -3363,6 +3377,20 @@ impl AsRef<crate::System::IConvertible> for crate::System::Decimal {
 #[cfg(feature = "System+Decimal")]
 impl AsMut<crate::System::IConvertible> for crate::System::Decimal {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsRef<crate::System::IEquatable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Decimal> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Decimal")]
+impl AsMut<crate::System::IEquatable_1<crate::System::Decimal>>
+for crate::System::Decimal {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::System::Decimal> {
         todo!()
     }
 }
@@ -3405,34 +3433,6 @@ for crate::System::Decimal {
     fn as_mut(
         &mut self,
     ) -> &mut crate::System::Runtime::Serialization::IDeserializationCallback {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
-for crate::System::Decimal {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Decimal> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
-for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Decimal> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
-for crate::System::Decimal {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Decimal> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Decimal")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Decimal>>
-for crate::System::Decimal {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::System::Decimal> {
         todo!()
     }
 }

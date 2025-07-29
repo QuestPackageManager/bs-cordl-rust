@@ -6,7 +6,7 @@ pub struct PoolableStaticMemoryPool_3<
     TParam2: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>,
+    __cordl_parent: crate::Zenject::StaticMemoryPool_3<TParam1, TParam2, TValue>,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -58,7 +58,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Zenject::PoolableStaticMemoryPool_3<TParam1, TParam2, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TParam1, TParam2, TValue>;
+    type Target = crate::Zenject::StaticMemoryPool_3<TParam1, TParam2, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

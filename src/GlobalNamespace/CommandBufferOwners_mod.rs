@@ -4,7 +4,9 @@
 pub struct CommandBufferOwners {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _owners: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
     pub commandBuffer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Rendering::CommandBuffer,

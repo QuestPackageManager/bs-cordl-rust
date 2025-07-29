@@ -4,11 +4,13 @@
 pub struct DefaultSerializationBinder {
     __cordl_parent: crate::System::Runtime::Serialization::SerializationBinder,
     pub _typeCache: quest_hook::libil2cpp::Gc<
-        crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
+            crate::Newtonsoft::Json::Utilities::StructMultiKey_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
         >,
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+DefaultSerializationBinder")]

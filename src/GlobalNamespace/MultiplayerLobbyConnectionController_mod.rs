@@ -11,8 +11,10 @@ pub struct MultiplayerLobbyConnectionController {
     >,
     pub connectionSuccessEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub connectionFailedEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-        crate::GlobalNamespace::ConnectionFailedReason,
+        crate::System::Action_2<
+            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+            crate::GlobalNamespace::ConnectionFailedReason,
+        >,
     >,
     pub _connectionState_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionState,
     pub _connectionType_k__BackingField: crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
@@ -369,8 +371,10 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     pub fn add_connectionFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            crate::GlobalNamespace::ConnectionFailedReason,
+            crate::System::Action_2<
+                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                crate::GlobalNamespace::ConnectionFailedReason,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -379,8 +383,10 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-                            crate::GlobalNamespace::ConnectionFailedReason,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                                crate::GlobalNamespace::ConnectionFailedReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -506,8 +512,10 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
     pub fn remove_connectionFailedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-            crate::GlobalNamespace::ConnectionFailedReason,
+            crate::System::Action_2<
+                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                crate::GlobalNamespace::ConnectionFailedReason,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -516,8 +524,10 @@ impl crate::GlobalNamespace::MultiplayerLobbyConnectionController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
-                            crate::GlobalNamespace::ConnectionFailedReason,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::MultiplayerLobbyConnectionController_LobbyConnectionType,
+                                crate::GlobalNamespace::ConnectionFailedReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

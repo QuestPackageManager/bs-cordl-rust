@@ -5,7 +5,9 @@ pub struct SignalCallbackWrapper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     pub _action: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _signalType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -68,7 +70,9 @@ impl crate::Zenject::SignalCallbackWrapper {
     pub fn New(
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBindingBindInfo>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -170,7 +174,9 @@ impl crate::Zenject::SignalCallbackWrapper {
         &mut self,
         bindInfo: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBindingBindInfo>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         signalBus: quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -184,8 +190,10 @@ impl crate::Zenject::SignalCallbackWrapper {
                                 crate::Zenject::SignalBindingBindInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::SignalBus>,

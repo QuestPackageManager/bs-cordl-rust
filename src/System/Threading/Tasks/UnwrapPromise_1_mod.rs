@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnwrapPromise_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TResult>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<TResult>,
     pub _state: u8,
     pub _lookForOce: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
@@ -46,7 +46,7 @@ for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
 #[cfg(feature = "System+Threading+Tasks+UnwrapPromise_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::UnwrapPromise_1<TResult> {
-    type Target = quest_hook::libil2cpp::Gc<TResult>;
+    type Target = crate::System::Threading::Tasks::Task_1<TResult>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

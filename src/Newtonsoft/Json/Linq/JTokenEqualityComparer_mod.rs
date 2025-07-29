@@ -142,13 +142,13 @@ for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -156,13 +156,13 @@ impl AsRef<
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JTokenEqualityComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     >,
 > for crate::Newtonsoft::Json::Linq::JTokenEqualityComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JToken>,
     > {
         unsafe { std::mem::transmute(self) }

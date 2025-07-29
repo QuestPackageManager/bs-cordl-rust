@@ -4,8 +4,10 @@
 pub struct LeaderboardIdsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _leaderboardIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            >,
         >,
     >,
 }
@@ -88,7 +90,9 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -98,8 +102,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ILeaderboardIdData,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILeaderboardIdData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -113,7 +119,9 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILeaderboardIdData>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -149,8 +157,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         >,
     > {
@@ -161,8 +171,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -176,8 +188,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -185,8 +199,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
     pub fn set_leaderboardIds(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -196,8 +212,10 @@ impl crate::GlobalNamespace::LeaderboardIdsSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LeaderboardIdsSO_LeaderboardIdData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

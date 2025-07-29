@@ -22,7 +22,9 @@ pub struct MockPlayer {
     pub _canUnblock_k__BackingField: bool,
     pub _isReady: bool,
     pub _playerState: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub _settings: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MockPlayerSettings>,
     pub _fsm: quest_hook::libil2cpp::Gc<

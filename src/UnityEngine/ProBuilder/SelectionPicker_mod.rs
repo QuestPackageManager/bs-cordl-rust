@@ -43,14 +43,24 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         rect: crate::UnityEngine::Rect,
         selectable: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            >,
         >,
         options: crate::UnityEngine::ProBuilder::PickerOptions,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -62,19 +72,25 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::ProBuilder::PickerOptions,
                             f32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Edge,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<
+                                        crate::UnityEngine::ProBuilder::Edge,
+                                    >,
+                                >,
                             >,
                         >,
                         5usize,
@@ -88,8 +104,16 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        crate::UnityEngine::ProBuilder::Edge,
+                    >,
+                >,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?
@@ -139,15 +163,23 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         rect: crate::UnityEngine::Rect,
         selectable: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            >,
         >,
         options: crate::UnityEngine::ProBuilder::PickerOptions,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
             >,
         >,
     > {
@@ -160,20 +192,26 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::ProBuilder::PickerOptions,
                             f32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::Dictionary_2<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::ProBuilder::Face,
+                                        >,
+                                    >,
                                 >,
                             >,
                         >,
@@ -188,9 +226,15 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+                    >,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -202,14 +246,22 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
         cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         rect: crate::UnityEngine::Rect,
         selectable: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
+            >,
         >,
         options: crate::UnityEngine::ProBuilder::PickerOptions,
         pixelsPerPoint: f32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<i32>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<i32>,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -221,18 +273,24 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             crate::UnityEngine::Rect,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::ProBuilder::PickerOptions,
                             f32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::HashSet_1<i32>,
+                                >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
                         >,
                         5usize,
                     >("PickVerticesInRect")
@@ -245,8 +303,14 @@ impl crate::UnityEngine::ProBuilder::SelectionPicker {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-            quest_hook::libil2cpp::Gc<i32>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::ProBuilderMesh,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::HashSet_1<i32>,
+                >,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (cam, rect, selectable, options, pixelsPerPoint))?

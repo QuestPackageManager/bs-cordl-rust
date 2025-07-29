@@ -44,7 +44,9 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
         destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         proxyList: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
         syncStatus: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -58,8 +60,10 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Collections::Generic::IList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -87,7 +91,9 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
         destination: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         proxyList: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -100,8 +106,10 @@ impl crate::System::Net::AutoWebProxyScriptEngine {
                             quest_hook::libil2cpp::Gc<crate::System::Uri>,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Collections::Generic::IList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
                                     >,
                                 >,
                             >,

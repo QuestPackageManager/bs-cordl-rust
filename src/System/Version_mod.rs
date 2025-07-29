@@ -1009,6 +1009,54 @@ impl AsMut<crate::System::IComparable> for crate::System::Version {
     }
 }
 #[cfg(feature = "System+Version")]
+impl AsRef<
+    crate::System::IComparable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<
+    crate::System::IComparable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IComparable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsRef<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
+impl AsMut<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::Version>>,
+> for crate::System::Version {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Version>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Version")]
 impl AsRef<crate::System::ISpanFormattable> for crate::System::Version {
     fn as_ref(&self) -> &crate::System::ISpanFormattable {
         unsafe { std::mem::transmute(self) }
@@ -1017,46 +1065,6 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::Version {
 #[cfg(feature = "System+Version")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::Version {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Version>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Version")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Version>>>
-for crate::System::Version {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Version>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

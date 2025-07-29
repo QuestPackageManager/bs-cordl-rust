@@ -5,7 +5,9 @@ pub struct ToggleGroup {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_AllowSwitchOff: bool,
     pub m_Toggles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ToggleGroup")]
@@ -46,7 +48,9 @@ impl crate::UnityEngine::UI::ToggleGroup {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -56,7 +60,9 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            >,
                         >,
                         0usize,
                     >("ActiveToggles")
@@ -69,7 +75,9 @@ impl crate::UnityEngine::UI::ToggleGroup {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

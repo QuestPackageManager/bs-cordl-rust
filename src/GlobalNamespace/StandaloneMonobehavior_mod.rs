@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StandaloneMonobehavior {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _readyTcs: quest_hook::libil2cpp::Gc<bool>,
+    pub _readyTcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
     pub _isRunning: bool,
     pub _startTime: f32,
     pub _lastFrameTimings: quest_hook::libil2cpp::Gc<
@@ -199,7 +201,9 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
     }
     pub fn RunAsyncCoroutine(
         &mut self,
-        tcs: quest_hook::libil2cpp::Gc<bool>,
+        tcs: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+        >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
@@ -210,7 +214,11 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<bool>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::TaskCompletionSource_1<
+                                    bool,
+                                >,
+                            >,
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
@@ -325,7 +333,9 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
     pub fn WhenReadyAsync(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -336,8 +346,10 @@ impl crate::GlobalNamespace::StandaloneMonobehavior {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Threading::Tasks::Task,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,

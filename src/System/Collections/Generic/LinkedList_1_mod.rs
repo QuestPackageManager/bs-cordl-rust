@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct LinkedList_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub head: quest_hook::libil2cpp::Gc<T>,
+    pub head: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
     pub count: i32,
     pub version: i32,
     pub _syncRoot: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -76,8 +78,12 @@ impl<
     >;
     pub fn AddAfter(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
-        newNode: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+        newNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -88,7 +94,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AddAfter")
@@ -105,10 +118,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddBefore_Gc1(
+    pub fn AddBefore_LinkedListNode_1_1(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
-        newNode: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+        newNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -119,7 +136,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AddBefore")
@@ -138,9 +162,15 @@ impl<
     }
     pub fn AddBefore_T0(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
         value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -150,8 +180,15 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, T),
-                        quest_hook::libil2cpp::Gc<T>,
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                            T,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
                         2usize,
                     >("AddBefore")
                     .unwrap_or_else(|e| {
@@ -162,14 +199,16 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node, value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn AddFirst_Gc1(
+    pub fn AddFirst_LinkedListNode_1_1(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -180,7 +219,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddFirst")
@@ -200,7 +241,11 @@ impl<
     pub fn AddFirst_T0(
         &mut self,
         value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -209,7 +254,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(T), quest_hook::libil2cpp::Gc<T>, 1usize>("AddFirst")
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        1usize,
+                    >("AddFirst")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -218,14 +269,16 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn AddLast_Gc1(
+    pub fn AddLast_LinkedListNode_1_1(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -236,7 +289,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddLast")
@@ -256,7 +311,11 @@ impl<
     pub fn AddLast_T0(
         &mut self,
         value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -265,7 +324,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(T), quest_hook::libil2cpp::Gc<T>, 1usize>("AddLast")
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        1usize,
+                    >("AddLast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -274,9 +339,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -364,7 +429,11 @@ impl<
     pub fn Find(
         &mut self,
         value: T,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -373,7 +442,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(T), quest_hook::libil2cpp::Gc<T>, 1usize>("Find")
+                    .find_method::<
+                        (T),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        1usize,
+                    >("Find")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -382,9 +457,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetEnumerator(
@@ -458,8 +533,12 @@ impl<
     }
     pub fn InternalInsertNodeBefore(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
-        newNode: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+        newNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -470,7 +549,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::LinkedListNode_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("InternalInsertNodeBefore")
@@ -489,7 +575,9 @@ impl<
     }
     pub fn InternalInsertNodeToEmptyList(
         &mut self,
-        newNode: quest_hook::libil2cpp::Gc<T>,
+        newNode: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -500,7 +588,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InternalInsertNodeToEmptyList")
@@ -519,7 +609,9 @@ impl<
     }
     pub fn InternalRemoveNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -530,7 +622,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InternalRemoveNode")
@@ -658,9 +752,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Remove_Gc1(
+    pub fn Remove_LinkedListNode_1_1(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -671,7 +767,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Remove")
@@ -771,7 +869,9 @@ impl<
     }
     pub fn System_Collections_Generic_IEnumerable_T__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -782,7 +882,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<T>,
+                        >,
                         0usize,
                     >("System.Collections.Generic.IEnumerable<T>.GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -794,9 +896,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_ICollection_CopyTo(
@@ -923,7 +1025,9 @@ impl<
     }
     pub fn ValidateNewNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -934,7 +1038,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ValidateNewNode")
@@ -953,7 +1059,9 @@ impl<
     }
     pub fn ValidateNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -964,7 +1072,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("ValidateNode")
@@ -1067,7 +1177,11 @@ impl<
     }
     pub fn get_First(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1076,7 +1190,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_First")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        0usize,
+                    >("get_First")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1085,14 +1205,18 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Last(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1101,7 +1225,13 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_Last")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedListNode_1<T>,
+                        >,
+                        0usize,
+                    >("get_Last")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1110,9 +1240,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -1124,6 +1254,62 @@ for crate::System::Collections::Generic::LinkedList_1<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::ICollection_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::ICollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<T>>
+for crate::System::Collections::Generic::LinkedList_1<T> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<T> {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "System+Collections+Generic+LinkedList_1")]
@@ -1194,54 +1380,16 @@ for crate::System::Collections::Generic::LinkedList_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_System+Collections+Generic+LinkedList_1+Enumerator")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct LinkedList_1_Enumerator<T: quest_hook::libil2cpp::Type> {
-    pub _list: quest_hook::libil2cpp::Gc<T>,
-    pub _node: quest_hook::libil2cpp::Gc<T>,
+    pub _list: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedList_1<T>,
+    >,
+    pub _node: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::LinkedListNode_1<T>,
+    >,
     pub _version: i32,
     pub _current: T,
     pub _index: i32,
@@ -1540,9 +1688,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_LinkedList_1_0(
         &mut self,
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedList_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1553,7 +1703,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::LinkedList_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -1631,6 +1783,24 @@ impl<
     }
 }
 #[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerator_1<T>>
+for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerator_1<T> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1695,20 +1865,6 @@ impl<
 > AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
     fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Collections+Generic+LinkedList_1+Enumerator")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::System::Collections::Generic::LinkedList_1_Enumerator<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
         todo!()
     }
 }

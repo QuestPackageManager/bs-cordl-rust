@@ -192,9 +192,11 @@ impl crate::Oculus::Platform::Callback {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetNotificationCallback_Gc0<T>(
+    pub fn SetNotificationCallback_Message_1_Callback0<T>(
         _cordl_type: crate::Oculus::Platform::Message_MessageType,
-        callback: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -207,7 +209,9 @@ impl crate::Oculus::Platform::Callback {
                     .find_static_method::<
                         (
                             crate::Oculus::Platform::Message_MessageType,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Oculus::Platform::Message_1_Callback<T>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -417,7 +421,9 @@ for crate::Oculus::Platform::Callback_RequestCallback {
 #[derive(Debug)]
 pub struct Callback_RequestCallback_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::Oculus::Platform::Callback_RequestCallback,
-    pub callback: quest_hook::libil2cpp::Gc<T>,
+    pub callback: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Message_1_Callback<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Callback+RequestCallback_1")]
@@ -506,7 +512,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        callback: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -520,7 +528,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<T>,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Message_1_Callback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -531,7 +541,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Message_1_Callback<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

@@ -165,8 +165,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                >,
             >,
         >,
     > {
@@ -177,8 +179,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                                >,
                             >,
                         >,
                         1usize,
@@ -192,8 +196,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
@@ -235,8 +241,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                >,
             >,
         >,
     > {
@@ -247,8 +255,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                                >,
                             >,
                         >,
                         1usize,
@@ -262,8 +272,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
@@ -272,8 +284,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                >,
             >,
         >,
     > {
@@ -284,8 +298,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                                >,
                             >,
                         >,
                         1usize,
@@ -299,8 +315,10 @@ impl crate::Zenject::Internal::ReflectionTypeAnalyzer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())

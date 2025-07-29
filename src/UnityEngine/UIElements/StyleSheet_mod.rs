@@ -42,7 +42,9 @@ pub struct StyleSheet {
         >,
     >,
     pub m_FlattenedImportedStyleSheets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        >,
     >,
     pub m_ContentHash: i32,
     pub scalableImages: quest_hook::libil2cpp::Gc<
@@ -51,16 +53,28 @@ pub struct StyleSheet {
         >,
     >,
     pub orderedNameSelectors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
+            >,
+        >,
     >,
     pub orderedTypeSelectors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
+            >,
+        >,
     >,
     pub orderedClassSelectors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleComplexSelector>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StyleComplexSelector,
+            >,
+        >,
     >,
     pub m_IsDefaultStyleSheet: bool,
 }
@@ -1034,7 +1048,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1044,8 +1060,10 @@ impl crate::UnityEngine::UIElements::StyleSheet {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheet,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::StyleSheet,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1059,7 +1077,9 @@ impl crate::UnityEngine::UIElements::StyleSheet {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

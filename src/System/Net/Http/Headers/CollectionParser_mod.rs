@@ -85,7 +85,9 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         minimalCount: i32,
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -101,8 +103,10 @@ impl crate::System::Net::Http::Headers::CollectionParser {
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -123,11 +127,15 @@ impl crate::System::Net::Http::Headers::CollectionParser {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Gc_ByRefMut0<T>(
+    pub fn TryParse_ElementTryParser_1_ByRefMut0<T>(
         input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         minimalCount: i32,
-        parser: quest_hook::libil2cpp::Gc<T>,
-        result: quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+        parser: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::ElementTryParser_1<T>,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -143,8 +151,14 @@ impl crate::System::Net::Http::Headers::CollectionParser {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             i32,
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::ByRefMut<quest_hook::libil2cpp::Gc<T>>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Http::Headers::ElementTryParser_1<T>,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<T>,
+                                >,
+                            >,
                         ),
                         bool,
                         4usize,

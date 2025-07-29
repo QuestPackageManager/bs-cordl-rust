@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScaleVector2Processor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    __cordl_parent: crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector2,
+    >,
     pub x: f32,
     pub y: f32,
 }
@@ -29,7 +31,9 @@ for crate::UnityEngine::InputSystem::Processors::ScaleVector2Processor {
 #[cfg(feature = "UnityEngine+InputSystem+Processors+ScaleVector2Processor")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Processors::ScaleVector2Processor {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
+    type Target = crate::UnityEngine::InputSystem::InputProcessor_1<
+        crate::UnityEngine::Vector2,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

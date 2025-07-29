@@ -13,7 +13,7 @@ pub struct TextMeshProUGUI {
     pub m_ClipRect: crate::UnityEngine::Rect,
     pub m_ValidRect: bool,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>>,
     >,
     pub m_hasFontAssetChanged: bool,
     pub m_subTextObjects: quest_hook::libil2cpp::Gc<
@@ -1726,7 +1726,9 @@ impl crate::TMPro::TextMeshProUGUI {
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1735,7 +1737,9 @@ impl crate::TMPro::TextMeshProUGUI {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1879,7 +1883,9 @@ impl crate::TMPro::TextMeshProUGUI {
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1888,7 +1894,9 @@ impl crate::TMPro::TextMeshProUGUI {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

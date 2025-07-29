@@ -350,7 +350,9 @@ impl crate::System::Text::RegularExpressions::GroupCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -360,8 +362,10 @@ impl crate::System::Text::RegularExpressions::GroupCollection {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::RegularExpressions::Group,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Text::RegularExpressions::Group,
+                                >,
                             >,
                         >,
                         0usize,
@@ -378,7 +382,9 @@ impl crate::System::Text::RegularExpressions::GroupCollection {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1022,6 +1028,146 @@ for crate::System::Text::RegularExpressions::GroupCollection {
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyCollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsRef<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
+impl AsMut<
+    crate::System::Collections::Generic::IReadOnlyList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyList_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
 impl AsRef<crate::System::Collections::ICollection>
 for crate::System::Text::RegularExpressions::GroupCollection {
     fn as_ref(&self) -> &crate::System::Collections::ICollection {
@@ -1060,146 +1206,6 @@ for crate::System::Text::RegularExpressions::GroupCollection {
 impl AsMut<crate::System::Collections::IList>
 for crate::System::Text::RegularExpressions::GroupCollection {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IList {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1426,6 +1432,34 @@ for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    >,
+> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1450,34 +1484,6 @@ for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Text+RegularExpressions+GroupCollection+Enumerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    >,
-> for crate::System::Text::RegularExpressions::GroupCollection_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::Group>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

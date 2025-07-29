@@ -395,6 +395,62 @@ for crate::System::Resources::FastResourceComparer {
     }
 }
 #[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsRef<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
+impl AsMut<
+    crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >,
+> for crate::System::Resources::FastResourceComparer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Resources+FastResourceComparer")]
 impl AsRef<crate::System::Collections::IComparer>
 for crate::System::Resources::FastResourceComparer {
     fn as_ref(&self) -> &crate::System::Collections::IComparer {
@@ -419,62 +475,6 @@ for crate::System::Resources::FastResourceComparer {
 impl AsMut<crate::System::Collections::IEqualityComparer>
 for crate::System::Resources::FastResourceComparer {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEqualityComparer {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Resources+FastResourceComparer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Resources::FastResourceComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Resources+FastResourceComparer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Resources::FastResourceComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Resources+FastResourceComparer")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Resources::FastResourceComparer {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Resources+FastResourceComparer")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    >,
-> for crate::System::Resources::FastResourceComparer {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

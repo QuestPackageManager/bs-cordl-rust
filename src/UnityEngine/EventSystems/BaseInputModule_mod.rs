@@ -4,7 +4,9 @@
 pub struct BaseInputModule {
     __cordl_parent: crate::UnityEngine::EventSystems::UIBehaviour,
     pub m_RaycastResultCache: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::EventSystems::RaycastResult,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::EventSystems::RaycastResult,
+        >,
     >,
     pub m_SendPointerHoverToParent: bool,
     pub m_AxisEventData: quest_hook::libil2cpp::Gc<
@@ -224,7 +226,9 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
     }
     pub fn FindFirstRaycast(
         candidates: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::EventSystems::RaycastResult> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -233,7 +237,9 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::EventSystems::RaycastResult,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::EventSystems::RaycastResult,
+                            >,
                         >),
                         crate::UnityEngine::EventSystems::RaycastResult,
                         1usize,

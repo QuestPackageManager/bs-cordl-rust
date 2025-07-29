@@ -31,8 +31,10 @@ pub struct SinglePlayerLevelSelectionFlowCoordinator {
         crate::GlobalNamespace::EnvironmentsListModel,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            >,
         >,
     >,
 }
@@ -644,8 +646,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -655,8 +659,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -897,8 +903,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -908,8 +916,10 @@ impl crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SinglePlayerLevelSelectionFlowCoordinator,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

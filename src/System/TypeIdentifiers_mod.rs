@@ -246,6 +246,30 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeIdentifiers_Displa
     }
 }
 #[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsRef<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
+> for crate::System::TypeIdentifiers_Display {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
+impl AsMut<
+    crate::System::IEquatable_1<quest_hook::libil2cpp::Gc<crate::System::TypeName>>,
+> for crate::System::TypeIdentifiers_Display {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+TypeIdentifiers+Display")]
 impl AsRef<crate::System::TypeIdentifier> for crate::System::TypeIdentifiers_Display {
     fn as_ref(&self) -> &crate::System::TypeIdentifier {
         unsafe { std::mem::transmute(self) }
@@ -266,26 +290,6 @@ impl AsRef<crate::System::TypeName> for crate::System::TypeIdentifiers_Display {
 #[cfg(feature = "System+TypeIdentifiers+Display")]
 impl AsMut<crate::System::TypeName> for crate::System::TypeIdentifiers_Display {
     fn as_mut(&mut self) -> &mut crate::System::TypeName {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeIdentifiers+Display")]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
-for crate::System::TypeIdentifiers_Display {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+TypeIdentifiers+Display")]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::TypeName>>>
-for crate::System::TypeIdentifiers_Display {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::TypeName>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

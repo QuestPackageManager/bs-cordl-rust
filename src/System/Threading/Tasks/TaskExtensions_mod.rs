@@ -40,8 +40,16 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskExtensions {
 #[cfg(feature = "System+Threading+Tasks+TaskExtensions")]
 impl crate::System::Threading::Tasks::TaskExtensions {
     pub fn Unwrap<TResult>(
-        task: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TResult>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+        task: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Threading::Tasks::Task_1<TResult>,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -51,8 +59,16 @@ impl crate::System::Threading::Tasks::TaskExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TResult>>),
-                        quest_hook::libil2cpp::Gc<TResult>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task_1<TResult>,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >,
                         1usize,
                     >("Unwrap")
                     .unwrap_or_else(|e| {
@@ -63,9 +79,9 @@ impl crate::System::Threading::Tasks::TaskExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
-            cordl_method_info.invoke_unchecked((), (task))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (task))? };
         Ok(__cordl_ret.into())
     }
 }

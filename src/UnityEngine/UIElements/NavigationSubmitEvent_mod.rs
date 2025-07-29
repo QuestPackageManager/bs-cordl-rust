@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NavigationSubmitEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationSubmitEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::NavigationSubmitEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigationSubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigationSubmitEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::NavigationEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::NavigationSubmitEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

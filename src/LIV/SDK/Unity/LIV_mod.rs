@@ -5,22 +5,34 @@ pub struct LIV {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub onActivate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub onPreRender: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onPreRenderBackground: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onPostRenderBackground: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onPreRenderForeground: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onPostRenderForeground: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onPostRender: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::LIV::SDK::Unity::SDKRender>,
+        >,
     >,
     pub onDeactivate: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _stage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

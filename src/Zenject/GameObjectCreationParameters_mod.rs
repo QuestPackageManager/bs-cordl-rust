@@ -13,8 +13,10 @@ pub struct GameObjectCreationParameters {
         crate::UnityEngine::Transform,
     >,
     pub _ParentTransformGetter_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        >,
     >,
     pub _Position_k__BackingField: crate::System::Nullable_1<
         crate::UnityEngine::Vector3,
@@ -242,8 +244,10 @@ impl crate::Zenject::GameObjectCreationParameters {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -253,8 +257,10 @@ impl crate::Zenject::GameObjectCreationParameters {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            >,
                         >,
                         0usize,
                     >("get_ParentTransformGetter")
@@ -267,8 +273,10 @@ impl crate::Zenject::GameObjectCreationParameters {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -473,8 +481,10 @@ impl crate::Zenject::GameObjectCreationParameters {
     pub fn set_ParentTransformGetter(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -483,8 +493,10 @@ impl crate::Zenject::GameObjectCreationParameters {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

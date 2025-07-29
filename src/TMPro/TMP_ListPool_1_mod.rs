@@ -55,7 +55,9 @@ for crate::TMPro::TMP_ListPool_1<T> {
 }
 #[cfg(feature = "TMPro+TMP_ListPool_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ListPool_1<T> {
-    pub fn Get() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    pub fn Get() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -66,7 +68,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ListPool_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         0usize,
                     >("Get")
                     .unwrap_or_else(|e| {
@@ -77,13 +81,15 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ListPool_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Release(
-        toRelease: quest_hook::libil2cpp::Gc<T>,
+        toRelease: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -94,7 +100,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::TMPro::TMP_ListPool_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Release")

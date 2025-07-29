@@ -798,6 +798,22 @@ impl crate::UnityEngine::Bounds {
     }
 }
 #[cfg(feature = "UnityEngine+Bounds")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Bounds>>
+for crate::UnityEngine::Bounds {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Bounds> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Bounds")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Bounds>>
+for crate::UnityEngine::Bounds {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Bounds> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Bounds")]
 impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Bounds {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -806,20 +822,6 @@ impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Bounds {
 #[cfg(feature = "UnityEngine+Bounds")]
 impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Bounds {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Bounds")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>>
-for crate::UnityEngine::Bounds {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Bounds")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds>>
-for crate::UnityEngine::Bounds {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Bounds> {
         todo!()
     }
 }

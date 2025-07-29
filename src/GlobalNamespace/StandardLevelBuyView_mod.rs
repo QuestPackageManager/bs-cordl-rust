@@ -13,7 +13,9 @@ pub struct StandardLevelBuyView {
         crate::GlobalNamespace::PlayerDataModel,
     >,
     pub didFavoriteToggleChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+        >,
     >,
     pub _beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     pub _toggleBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleBinder>,
@@ -205,7 +207,9 @@ impl crate::GlobalNamespace::StandardLevelBuyView {
     pub fn add_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -214,7 +218,9 @@ impl crate::GlobalNamespace::StandardLevelBuyView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -262,7 +268,9 @@ impl crate::GlobalNamespace::StandardLevelBuyView {
     pub fn remove_didFavoriteToggleChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -271,7 +279,9 @@ impl crate::GlobalNamespace::StandardLevelBuyView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

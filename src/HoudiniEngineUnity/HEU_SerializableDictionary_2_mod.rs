@@ -6,7 +6,9 @@ pub struct HEU_SerializableDictionary_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _dictionary: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dictionary: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     pub _keys: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TKey>>,
     pub _values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TValue>>,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -281,7 +283,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -297,9 +301,11 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                TKey,
-                                TValue,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    TKey,
+                                    TValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -313,7 +319,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -618,7 +626,11 @@ impl<
     }
     pub fn get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -631,7 +643,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TKey>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::ICollection_1<TKey>,
+                        >,
                         0usize,
                     >("get_Keys")
                     .unwrap_or_else(|e| {
@@ -642,14 +656,18 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Values(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TValue>,
+        >,
+    >
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -662,7 +680,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::ICollection_1<TValue>,
+                        >,
                         0usize,
                     >("get_Values")
                     .unwrap_or_else(|e| {
@@ -673,9 +693,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_Item(
@@ -729,6 +749,98 @@ for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
 impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::ICollection_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IDictionary_2<TKey, TValue>>
+for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IDictionary_2<TKey, TValue> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
+> AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    >,
+> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
+impl<
+    TKey: quest_hook::libil2cpp::Type,
+    TValue: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -762,94 +874,6 @@ impl<
 > AsMut<crate::UnityEngine::ISerializationCallbackReceiver>
 for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::ISerializationCallbackReceiver {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TKey, TValue>>
-for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TKey, TValue> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsRef<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "HoudiniEngineUnity+HEU_SerializableDictionary_2")]
-impl<
-    TKey: quest_hook::libil2cpp::Type,
-    TValue: quest_hook::libil2cpp::Type,
-> AsMut<
-    quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    >,
-> for crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<TKey, TValue> {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

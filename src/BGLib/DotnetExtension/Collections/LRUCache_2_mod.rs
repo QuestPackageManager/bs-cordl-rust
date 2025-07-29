@@ -6,13 +6,33 @@ pub struct LRUCache_2<
     TValue: quest_hook::libil2cpp::Type,
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub itemWillBeRemovedFromCacheEvent: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub itemWillBeRemovedFromCacheEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_2<TKey, TValue>,
+    >,
     pub _cacheContent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TKey, TValue>,
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                    TKey,
+                    TValue,
+                >,
+            >,
+        >,
     >,
     pub _index: quest_hook::libil2cpp::Gc<
-        TKey,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::LinkedListNode_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                            TKey,
+                            TValue,
+                        >,
+                    >,
+                >,
+            >,
+        >,
     >,
     pub _maxNumberElements: i32,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -173,7 +193,16 @@ impl<
     }
     pub fn MakeNodeMostRecentlyUsed(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TKey, TValue>>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                        TKey,
+                        TValue,
+                    >,
+                >,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -187,7 +216,14 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<TKey, TValue>,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
+                                        TKey,
+                                        TValue,
+                                    >,
+                                >,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -314,7 +350,7 @@ impl<
     }
     pub fn add_itemWillBeRemovedFromCacheEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -327,7 +363,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<TKey, TValue>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_itemWillBeRemovedFromCacheEvent")
@@ -369,7 +407,7 @@ impl<
     }
     pub fn remove_itemWillBeRemovedFromCacheEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<TKey, TValue>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_2<TKey, TValue>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -382,7 +420,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TKey, TValue>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_2<TKey, TValue>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_itemWillBeRemovedFromCacheEvent")

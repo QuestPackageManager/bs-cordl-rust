@@ -85,7 +85,7 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (target, args))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Bind_Il2CppArray_Gc_LabelTarget0(
+    pub fn Bind_Il2CppArray_ReadOnlyCollection_1_LabelTarget0(
         &mut self,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -93,8 +93,10 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
             >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
         returnLabel: quest_hook::libil2cpp::Gc<
@@ -117,8 +119,10 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -152,8 +156,10 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
             >,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -177,8 +183,10 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
+                                crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
                                 >,
                             >,
                         ),

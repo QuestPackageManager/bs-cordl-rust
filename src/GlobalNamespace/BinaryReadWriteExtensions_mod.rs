@@ -67,10 +67,14 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
     pub fn ReadListOf<T>(
         binaryReader: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
         elementReader: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
-            T,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                T,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -83,11 +87,15 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
-                                T,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryReader>,
+                                    T,
+                                >,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         2usize,
                     >("ReadListOf")
                     .unwrap_or_else(|e| {
@@ -98,7 +106,9 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (binaryReader, elementReader))?
         };
         Ok(__cordl_ret.into())
@@ -180,10 +190,12 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
     }
     pub fn WriteListOf<T>(
         binaryWriter: quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
         elementWriter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
-            T,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                T,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -197,10 +209,14 @@ impl crate::GlobalNamespace::BinaryReadWriteExtensions {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
-                            quest_hook::libil2cpp::Gc<T>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
-                                T,
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Action_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::IO::BinaryWriter>,
+                                    T,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

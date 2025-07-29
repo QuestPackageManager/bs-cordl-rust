@@ -46,7 +46,9 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
 impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn New(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -77,7 +79,9 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn _ctor(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetExecutionContext: quest_hook::libil2cpp::Gc<
@@ -97,8 +101,10 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

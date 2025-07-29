@@ -70,8 +70,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerDidInitEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerDidInitEvent,
+                >,
             >,
         >,
     > {
@@ -82,8 +84,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INoteControllerDidInitEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INoteControllerDidInitEvent,
+                                >,
                             >,
                         >,
                         0usize,
@@ -97,8 +101,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerDidInitEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerDidInitEvent,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -134,8 +140,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                >,
             >,
         >,
     > {
@@ -146,8 +154,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                                >,
                             >,
                         >,
                         0usize,
@@ -161,8 +171,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidPassJumpThreeQuartersEvent,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -171,8 +183,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                >,
             >,
         >,
     > {
@@ -183,8 +197,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                                >,
                             >,
                         >,
                         0usize,
@@ -198,8 +214,10 @@ impl crate::GlobalNamespace::NoteControllerBase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::INoteControllerNoteDidStartDissolvingEvent,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

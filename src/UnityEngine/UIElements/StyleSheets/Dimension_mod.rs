@@ -337,11 +337,11 @@ impl crate::UnityEngine::UIElements::StyleSheets::Dimension {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
 > for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleSheets::Dimension,
     > {
         todo!()
@@ -349,11 +349,11 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Dimension")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleSheets::Dimension>,
 > for crate::UnityEngine::UIElements::StyleSheets::Dimension {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleSheets::Dimension,
     > {
         todo!()

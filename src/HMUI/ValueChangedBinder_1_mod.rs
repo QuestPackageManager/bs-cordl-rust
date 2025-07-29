@@ -4,9 +4,13 @@
 pub struct ValueChangedBinder_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<T>,
-            quest_hook::libil2cpp::Gc<T>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Tuple_2<
+                    quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                    quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                >,
+            >,
         >,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -63,8 +67,8 @@ for crate::HMUI::ValueChangedBinder_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
     pub fn AddBinding(
         &mut self,
-        valueChanger: quest_hook::libil2cpp::Gc<T>,
-        action: quest_hook::libil2cpp::Gc<T>,
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -75,7 +79,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("AddBinding")
@@ -95,9 +102,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
     pub fn AddBindings(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<T>,
-                quest_hook::libil2cpp::Gc<T>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -111,9 +122,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<T>,
-                                quest_hook::libil2cpp::Gc<T>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -195,11 +210,29 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_IValueChanger_1_Action_1_1(
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (valueChanger, action))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_List_1_2(
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<T>,
-                quest_hook::libil2cpp::Gc<T>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
@@ -211,20 +244,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (bindingData))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc1(
-        valueChanger: quest_hook::libil2cpp::Gc<T>,
-        action: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (valueChanger, action))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor_0(
@@ -252,12 +271,50 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_IValueChanger_1_Action_1_1(
+        &mut self,
+        valueChanger: quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+        action: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (valueChanger, action))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_List_1_2(
         &mut self,
         bindingData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<T>,
-                quest_hook::libil2cpp::Gc<T>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -271,9 +328,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<T>,
-                                quest_hook::libil2cpp::Gc<T>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Tuple_2<
+                                        quest_hook::libil2cpp::Gc<crate::HMUI::IValueChanger_1<T>>,
+                                        quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
+                                    >,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -289,37 +350,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::ValueChangedBinder_1<T> {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (bindingData))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc1(
-        &mut self,
-        valueChanger: quest_hook::libil2cpp::Gc<T>,
-        action: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (valueChanger, action))?
         };
         Ok(__cordl_ret.into())
     }

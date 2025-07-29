@@ -321,8 +321,7 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     pub fn GetMeshChannel<T>(
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         attributeGetter: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-            T,
+            crate::System::Func_2<quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>, T>,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -337,8 +336,10 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                                T,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+                                    T,
+                                >,
                             >,
                         ),
                         T,
@@ -478,7 +479,9 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
     pub fn PrintAttribute<T>(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        attrib: quest_hook::libil2cpp::Gc<T>,
+        attrib: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
         fmt: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -497,7 +500,9 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -545,9 +550,11 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SanityCheck_Gc2(
+    pub fn SanityCheck_IList_1_2(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -558,8 +565,10 @@ impl crate::UnityEngine::ProBuilder::MeshUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Vertex,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Vertex,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

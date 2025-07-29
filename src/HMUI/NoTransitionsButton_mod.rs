@@ -4,7 +4,7 @@
 pub struct NoTransitionsButton {
     __cordl_parent: crate::UnityEngine::UI::Button,
     pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::HMUI::NoTransitionsButton_SelectionState,
+        crate::System::Action_1<crate::HMUI::NoTransitionsButton_SelectionState>,
     >,
     pub _selectionState: crate::HMUI::NoTransitionsButton_SelectionState,
 }
@@ -101,7 +101,9 @@ impl crate::HMUI::NoTransitionsButton {
     }
     pub fn add_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton_SelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::NoTransitionsButton_SelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -109,7 +111,9 @@ impl crate::HMUI::NoTransitionsButton {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::HMUI::NoTransitionsButton_SelectionState,
+                            crate::System::Action_1<
+                                crate::HMUI::NoTransitionsButton_SelectionState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -154,7 +158,9 @@ impl crate::HMUI::NoTransitionsButton {
     }
     pub fn remove_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::NoTransitionsButton_SelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::NoTransitionsButton_SelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -162,7 +168,9 @@ impl crate::HMUI::NoTransitionsButton {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::HMUI::NoTransitionsButton_SelectionState,
+                            crate::System::Action_1<
+                                crate::HMUI::NoTransitionsButton_SelectionState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

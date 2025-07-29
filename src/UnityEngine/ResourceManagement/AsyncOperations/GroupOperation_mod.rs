@@ -4,13 +4,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GroupOperation {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     >,
     pub m_InternalOnComplete: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        crate::System::Action_1<
+            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+        >,
     >,
     pub m_LoadedCount: i32,
     pub m_Settings: crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings,
@@ -19,7 +23,9 @@ pub struct GroupOperation {
         crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
     >,
     pub m_CachedDependencyLocations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(
@@ -47,9 +53,11 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -98,7 +106,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     pub fn DependenciesAreUnchanged(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -107,7 +117,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            >,
                         >),
                         bool,
                         1usize,
@@ -170,7 +182,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     pub fn GetDependencies(
         &mut self,
         deps: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -179,7 +193,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -201,7 +217,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -211,7 +229,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                            >,
                         >,
                         0usize,
                     >("GetDependentOps")
@@ -224,14 +244,18 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::IList_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetDownloadStatus(
         &mut self,
         visited: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -242,8 +266,10 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
                             >,
                         >),
                         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -265,7 +291,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     pub fn Init_GroupOperation_GroupOperationSettings1(
         &mut self,
         operations: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
         settings: crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -276,7 +304,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                                >,
                             >,
                             crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings,
                         ),
@@ -299,7 +329,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     pub fn Init__cordl_bool__cordl_bool0(
         &mut self,
         operations: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+            >,
         >,
         releaseDependenciesOnFailure: bool,
         allowFailedDependencies: bool,
@@ -311,7 +343,9 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
+                                >,
                             >,
                             bool,
                             bool,

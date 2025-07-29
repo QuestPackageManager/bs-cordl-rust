@@ -7,15 +7,34 @@ pub struct SimplePriorityQueue_2<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _queue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TItem, TPriority>,
-        TPriority,
+        crate::Priority_Queue::GenericPriorityQueue_2<
+            quest_hook::libil2cpp::Gc<
+                crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+            >,
+            TPriority,
+        >,
     >,
     pub _itemToNodesCache: quest_hook::libil2cpp::Gc<
-        TItem,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<TItem, TPriority>>,
+        crate::System::Collections::Generic::Dictionary_2<
+            TItem,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::IList_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                            TItem,
+                            TPriority,
+                        >,
+                    >,
+                >,
+            >,
+        >,
     >,
     pub _nullNodesCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TItem, TPriority>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+            >,
+        >,
     >,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
@@ -91,7 +110,9 @@ impl<
     >;
     pub fn AddToNodeCache(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<TItem, TPriority>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -104,7 +125,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TItem, TPriority>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                                TItem,
+                                TPriority,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddToNodeCache")
@@ -233,7 +259,11 @@ impl<
         &mut self,
         item: TItem,
         priority: TPriority,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        >,
+    >
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -246,7 +276,12 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TItem, TPriority),
-                        quest_hook::libil2cpp::Gc<TItem, TPriority>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                                TItem,
+                                TPriority,
+                            >,
+                        >,
                         2usize,
                     >("EnqueueNoLockOrCache")
                     .unwrap_or_else(|e| {
@@ -257,9 +292,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItem, TPriority> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (item, priority))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (item, priority))? };
         Ok(__cordl_ret.into())
     }
     pub fn EnqueueWithoutDuplicates(
@@ -297,7 +332,11 @@ impl<
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItem>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TItem>,
+        >,
+    >
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -310,7 +349,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TItem>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<TItem>,
+                        >,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -321,15 +362,19 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItem> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<TItem>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetExistingNode(
         &mut self,
         item: TItem,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TItem, TPriority>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        >,
+    >
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -342,7 +387,12 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (TItem),
-                        quest_hook::libil2cpp::Gc<TItem, TPriority>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                                TItem,
+                                TPriority,
+                            >,
+                        >,
                         1usize,
                     >("GetExistingNode")
                     .unwrap_or_else(|e| {
@@ -353,9 +403,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TItem, TPriority> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (item))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (item))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetPriority(
@@ -422,8 +472,10 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
+    pub fn New_Comparison_1_2(
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -437,8 +489,30 @@ impl<
             .invoke_void(".ctor", (priorityComparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
+    pub fn New_Comparison_1_IEqualityComparer_1_5(
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<TPriority>,
+        >,
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (priorityComparer, itemEquality))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IComparer_1_1(
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -452,8 +526,30 @@ impl<
             .invoke_void(".ctor", (priorityComparer))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc3(
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
+    pub fn New_IComparer_1_IEqualityComparer_1_4(
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TPriority>,
+        >,
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (priorityComparer, itemEquality))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IEqualityComparer_1_3(
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -465,38 +561,6 @@ impl<
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (itemEquality))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc4(
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (priorityComparer, itemEquality))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Gc_Gc5(
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (priorityComparer, itemEquality))?;
         Ok(__cordl_object.into())
     }
     pub fn Remove(
@@ -533,7 +597,9 @@ impl<
     }
     pub fn RemoveFromNodeCache(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<TItem, TPriority>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -546,7 +612,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TItem, TPriority>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<
+                                TItem,
+                                TPriority,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RemoveFromNodeCache")
@@ -809,9 +880,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_Comparison_1_2(
         &mut self,
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<TPriority>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -824,7 +897,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TPriority>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Comparison_1<TPriority>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -841,9 +916,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_Comparison_1_IEqualityComparer_1_5(
         &mut self,
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Comparison_1<TPriority>,
+        >,
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -856,7 +936,52 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TPriority>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Comparison_1<TPriority>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TItem,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (priorityComparer, itemEquality))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IComparer_1_1(
+        &mut self,
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TPriority>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IComparer_1<TPriority>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -873,9 +998,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc3(
+    pub fn _ctor_IComparer_1_IEqualityComparer_1_4(
         &mut self,
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
+        priorityComparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IComparer_1<TPriority>,
+        >,
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -888,7 +1018,54 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TItem>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IComparer_1<TPriority>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TItem,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (priorityComparer, itemEquality))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IEqualityComparer_1_3(
+        &mut self,
+        itemEquality: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TItem>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEqualityComparer_1<
+                                TItem,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -902,78 +1079,6 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (itemEquality))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc4(
-        &mut self,
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<TPriority>,
-                            quest_hook::libil2cpp::Gc<TItem>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (priorityComparer, itemEquality))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Gc_Gc5(
-        &mut self,
-        priorityComparer: quest_hook::libil2cpp::Gc<TPriority>,
-        itemEquality: quest_hook::libil2cpp::Gc<TItem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        TItem: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TPriority: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<TPriority>,
-                            quest_hook::libil2cpp::Gc<TItem>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (priorityComparer, itemEquality))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1043,6 +1148,50 @@ for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
 impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
+> AsRef<crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority>>
+for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority>>
+for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Priority_Queue::IPriorityQueue_2<TItem, TPriority> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<TItem>>
+for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<TItem> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<TItem>>
+for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<TItem> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
+impl<
+    TItem: quest_hook::libil2cpp::Type,
+    TPriority: quest_hook::libil2cpp::Type,
 > AsRef<crate::System::Collections::IEnumerable>
 for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1059,46 +1208,6 @@ for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TItem, TPriority>>
-for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem, TPriority> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TItem, TPriority>>
-for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem, TPriority> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsRef<quest_hook::libil2cpp::Gc<TItem>>
-for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<TItem> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "Priority_Queue+SimplePriorityQueue_2")]
-impl<
-    TItem: quest_hook::libil2cpp::Type,
-    TPriority: quest_hook::libil2cpp::Type,
-> AsMut<quest_hook::libil2cpp::Gc<TItem>>
-for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<TItem> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_Priority_Queue+SimplePriorityQueue_2+SimpleNode")]
 #[repr(C)]
 #[derive(Debug)]
@@ -1106,7 +1215,7 @@ pub struct SimplePriorityQueue_2_SimpleNode<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TPriority>,
+    __cordl_parent: crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority>,
     pub _Data_k__BackingField: TItem,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
     __cordl_phantom_TPriority: std::marker::PhantomData<TPriority>,
@@ -1156,7 +1265,7 @@ impl<
     TPriority: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority> {
-    type Target = quest_hook::libil2cpp::Gc<TPriority>;
+    type Target = crate::Priority_Queue::GenericPriorityQueueNode_1<TPriority>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

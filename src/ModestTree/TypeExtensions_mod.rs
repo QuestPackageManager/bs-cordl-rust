@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::ModestTree::TypeExtensions {
 impl crate::ModestTree::TypeExtensions {
     pub fn AllAttributes_MemberInfo0<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::MemberInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -53,7 +55,9 @@ impl crate::ModestTree::TypeExtensions {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::MemberInfo,
                         >),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
                         1usize,
                     >("AllAttributes")
                     .unwrap_or_else(|e| {
@@ -64,9 +68,9 @@ impl crate::ModestTree::TypeExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (provider))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllAttributes_MemberInfo_Il2CppArray1(
@@ -77,7 +81,11 @@ impl crate::ModestTree::TypeExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -95,7 +103,9 @@ impl crate::ModestTree::TypeExtensions {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            >,
                         >,
                         2usize,
                     >("AllAttributes")
@@ -108,7 +118,9 @@ impl crate::ModestTree::TypeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (provider, attributeTypes))?
         };
@@ -116,7 +128,9 @@ impl crate::ModestTree::TypeExtensions {
     }
     pub fn AllAttributes_ParameterInfo2<T>(
         provider: quest_hook::libil2cpp::Gc<crate::System::Reflection::ParameterInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -129,7 +143,9 @@ impl crate::ModestTree::TypeExtensions {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Reflection::ParameterInfo,
                         >),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
                         1usize,
                     >("AllAttributes")
                     .unwrap_or_else(|e| {
@@ -140,9 +156,9 @@ impl crate::ModestTree::TypeExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (provider))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (provider))? };
         Ok(__cordl_ret.into())
     }
     pub fn AllAttributes_ParameterInfo_Il2CppArray3(
@@ -153,7 +169,11 @@ impl crate::ModestTree::TypeExtensions {
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Attribute>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -171,7 +191,9 @@ impl crate::ModestTree::TypeExtensions {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            >,
                         >,
                         2usize,
                     >("AllAttributes")
@@ -184,7 +206,9 @@ impl crate::ModestTree::TypeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (provider, attributeTypes))?
         };
@@ -606,7 +630,11 @@ impl crate::ModestTree::TypeExtensions {
     pub fn GetParentTypes(
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -615,7 +643,9 @@ impl crate::ModestTree::TypeExtensions {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("GetParentTypes")
@@ -628,7 +658,9 @@ impl crate::ModestTree::TypeExtensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (_cordl_type))? };
         Ok(__cordl_ret.into())
     }

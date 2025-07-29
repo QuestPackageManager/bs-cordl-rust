@@ -567,8 +567,10 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     >
     where
@@ -582,8 +584,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            >,
                         >,
                         0usize,
                     >("get_ProviderFunc")
@@ -596,8 +600,10 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -725,8 +731,10 @@ impl<
     pub fn set_ProviderFunc(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -739,8 +747,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

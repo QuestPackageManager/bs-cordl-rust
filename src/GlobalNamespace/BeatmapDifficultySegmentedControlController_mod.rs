@@ -7,13 +7,17 @@ pub struct BeatmapDifficultySegmentedControlController {
         crate::HMUI::TextSegmentedControl,
     >,
     pub didSelectDifficultyEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+            >,
+            crate::GlobalNamespace::BeatmapDifficulty,
         >,
-        crate::GlobalNamespace::BeatmapDifficulty,
     >,
     pub _difficulties: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapDifficulty,
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
     >,
     pub _selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
 }
@@ -159,7 +163,9 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn SetData(
         &mut self,
         difficultyBeatmaps: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
         selectedDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -171,7 +177,9 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDifficulty,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::GlobalNamespace::BeatmapDifficulty,
+                                >,
                             >,
                             crate::GlobalNamespace::BeatmapDifficulty,
                             crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -224,10 +232,12 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn add_didSelectDifficultyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
             >,
-            crate::GlobalNamespace::BeatmapDifficulty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -236,10 +246,12 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -285,10 +297,12 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
     pub fn remove_didSelectDifficultyEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
             >,
-            crate::GlobalNamespace::BeatmapDifficulty,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -297,10 +311,12 @@ impl crate::GlobalNamespace::BeatmapDifficultySegmentedControlController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDifficultySegmentedControlController,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

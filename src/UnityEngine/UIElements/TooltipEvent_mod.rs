@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TooltipEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TooltipEvent>,
     >,
     pub _tooltip_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -32,7 +32,7 @@ for crate::UnityEngine::UIElements::TooltipEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TooltipEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TooltipEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -6,10 +6,14 @@
 pub struct StringSwitchInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
     pub _cases: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
-    pub _nullCase: quest_hook::libil2cpp::Gc<i32>,
+    pub _nullCase: quest_hook::libil2cpp::Gc<
+        crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+    >,
 }
 #[cfg(
     feature = "cordl_class_System+Linq+Expressions+Interpreter+StringSwitchInstruction"
@@ -52,10 +56,14 @@ for crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
 impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     pub fn New(
         cases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i32,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i32,
+            >,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<i32>,
+        nullCase: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -96,10 +104,14 @@ impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
     pub fn _ctor(
         &mut self,
         cases: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            i32,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                i32,
+            >,
         >,
-        nullCase: quest_hook::libil2cpp::Gc<i32>,
+        nullCase: quest_hook::libil2cpp::Gc<
+            crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -108,12 +120,16 @@ impl crate::System::Linq::Expressions::Interpreter::StringSwitchInstruction {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    i32,
                                 >,
-                                i32,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

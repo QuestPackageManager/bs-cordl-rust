@@ -295,13 +295,17 @@ pub struct PlayerSaveDataV1_0_1 {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub localPlayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer,
+            >,
         >,
     >,
     pub guestPlayers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer,
+            >,
         >,
     >,
     pub lastSelectedBeatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -688,17 +692,23 @@ pub struct PlayerSaveDataV1_0_1_LocalPlayer {
         crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData,
     >,
     pub levelsStatsData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData,
+            >,
         >,
     >,
     pub missionsStatsData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData,
+            >,
         >,
     >,
     pub showedMissionHelpIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub achievementsData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData,

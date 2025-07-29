@@ -13,7 +13,7 @@ pub struct FloorLightTile {
         crate::Tweening::SongTimeTweeningManager,
     >,
     pub didFinish: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>>,
     >,
     pub _fadeInTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
     pub _fadeOutTween: quest_hook::libil2cpp::Gc<crate::Tweening::ColorTween>,
@@ -243,7 +243,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightTile {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightTile_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
     >,
 }
@@ -268,7 +268,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Ice::FloorLightTile_Pool {
 }
 #[cfg(feature = "Ice+FloorLightTile+Pool")]
 impl std::ops::Deref for crate::Ice::FloorLightTile_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::Ice::FloorLightTile>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -44,7 +44,9 @@ impl crate::UnityEngine::UI::Shadow {
     pub const kMaxEffectDistance: f32 = 600f32;
     pub fn ApplyShadow(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
         color: crate::UnityEngine::Color32,
         start: i32,
         end: i32,
@@ -57,7 +59,11 @@ impl crate::UnityEngine::UI::Shadow {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIVertex,
+                                >,
+                            >,
                             crate::UnityEngine::Color32,
                             i32,
                             i32,
@@ -82,7 +88,9 @@ impl crate::UnityEngine::UI::Shadow {
     }
     pub fn ApplyShadowZeroAlloc(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
         color: crate::UnityEngine::Color32,
         start: i32,
         end: i32,
@@ -95,7 +103,11 @@ impl crate::UnityEngine::UI::Shadow {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIVertex,
+                                >,
+                            >,
                             crate::UnityEngine::Color32,
                             i32,
                             i32,

@@ -1088,6 +1088,20 @@ impl crate::UnityEngine::Rect {
     }
 }
 #[cfg(feature = "UnityEngine+Rect")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rect")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Rect>>
+for crate::UnityEngine::Rect {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Rect> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Rect")]
 impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Rect {
     fn as_ref(&self) -> &crate::System::IFormattable {
         todo!()
@@ -1096,20 +1110,6 @@ impl AsRef<crate::System::IFormattable> for crate::UnityEngine::Rect {
 #[cfg(feature = "UnityEngine+Rect")]
 impl AsMut<crate::System::IFormattable> for crate::UnityEngine::Rect {
     fn as_mut(&mut self) -> &mut crate::System::IFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Rect")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>>
-for crate::UnityEngine::Rect {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect> {
-        todo!()
-    }
-}
-#[cfg(feature = "UnityEngine+Rect")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect>>
-for crate::UnityEngine::Rect {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Rect> {
         todo!()
     }
 }

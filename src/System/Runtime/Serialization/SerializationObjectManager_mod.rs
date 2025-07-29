@@ -4,8 +4,10 @@
 pub struct SerializationObjectManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectSeenTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _context: crate::System::Runtime::Serialization::StreamingContext,
     pub _onSerializedHandler: quest_hook::libil2cpp::Gc<

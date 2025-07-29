@@ -14,15 +14,19 @@ pub struct AvatarSystemSelectionFlowCoordinator {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+            >,
+            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
-        crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
     >,
     pub _avatarFlowCoordinators: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
-        quest_hook::libil2cpp::Gc<
-            crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::BeatSaber::AvatarCore::AvatarSystemIdentifier,
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::AvatarCore::AvatarEditorFlowCoordinator,
+            >,
         >,
     >,
     pub _continueButtonVisible: bool,
@@ -316,8 +320,10 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn Initialize(
         &mut self,
         avatarSystemsMetadata: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -327,8 +333,10 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::AvatarCore::IAvatarSystemMetadata,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -496,10 +504,12 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                >,
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
             >,
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -508,10 +518,12 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                                >,
+                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
                             >,
-                            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -532,10 +544,12 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                >,
+                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
             >,
-            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -544,10 +558,12 @@ impl crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator,
+                                >,
+                                crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
                             >,
-                            crate::GlobalNamespace::AvatarSystemSelectionFlowCoordinator_FinishAction,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

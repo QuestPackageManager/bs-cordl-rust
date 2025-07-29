@@ -205,6 +205,34 @@ for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    >,
+> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -229,34 +257,6 @@ for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
-    >,
-> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+ProBuilder+WingedEdgeEnumerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
-    >,
-> for crate::UnityEngine::ProBuilder::WingedEdgeEnumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::WingedEdge>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

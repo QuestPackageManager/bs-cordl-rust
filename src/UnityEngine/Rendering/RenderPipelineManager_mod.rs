@@ -259,8 +259,10 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
     }
     pub fn add_beginCameraRendering(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ScriptableRenderContext,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            crate::System::Action_2<
+                crate::UnityEngine::Rendering::ScriptableRenderContext,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -269,8 +271,10 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::System::Action_2<
+                                crate::UnityEngine::Rendering::ScriptableRenderContext,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -317,8 +321,10 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
     }
     pub fn remove_beginCameraRendering(
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Rendering::ScriptableRenderContext,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            crate::System::Action_2<
+                crate::UnityEngine::Rendering::ScriptableRenderContext,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -327,8 +333,10 @@ impl crate::UnityEngine::Rendering::RenderPipelineManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Rendering::ScriptableRenderContext,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::System::Action_2<
+                                crate::UnityEngine::Rendering::ScriptableRenderContext,
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

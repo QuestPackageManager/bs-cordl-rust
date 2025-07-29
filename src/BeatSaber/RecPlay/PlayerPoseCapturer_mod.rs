@@ -3,7 +3,11 @@
 #[derive(Debug)]
 pub struct PlayerPoseCapturer {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub frames: quest_hook::libil2cpp::Gc<crate::BeatSaber::RecPlay::PlayerPoseFrame>,
+    pub frames: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::BeatSaber::RecPlay::PlayerPoseFrame,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+RecPlay+PlayerPoseCapturer")]
 unsafe impl quest_hook::libil2cpp::Type

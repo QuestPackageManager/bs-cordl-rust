@@ -571,18 +571,20 @@ impl crate::UnityEngine::UI::ColorBlock {
     }
 }
 #[cfg(feature = "UnityEngine+UI+ColorBlock")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ColorBlock>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock>>
 for crate::UnityEngine::UI::ColorBlock {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ColorBlock> {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UI+ColorBlock")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ColorBlock>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock>>
 for crate::UnityEngine::UI::ColorBlock {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ColorBlock> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UI::ColorBlock> {
         todo!()
     }
 }

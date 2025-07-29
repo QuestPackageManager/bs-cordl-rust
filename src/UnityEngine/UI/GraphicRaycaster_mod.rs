@@ -8,7 +8,9 @@ pub struct GraphicRaycaster {
     pub m_BlockingMask: crate::UnityEngine::LayerMask,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+GraphicRaycaster")]
@@ -55,15 +57,19 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn Raycast_Canvas_Camera_Vector2_Gc_Gc1(
+    pub fn Raycast_Canvas_Camera_Vector2_IList_1_List_1_1(
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
         eventCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         pointerPosition: crate::UnityEngine::Vector2,
         foundGraphics: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
         results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -76,10 +82,14 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
                             crate::UnityEngine::Vector2,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -102,13 +112,15 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_PointerEventData_Gc0(
+    pub fn Raycast_PointerEventData_List_1_0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -121,7 +133,9 @@ impl crate::UnityEngine::UI::GraphicRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::RaycastResult,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::EventSystems::RaycastResult,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

@@ -9,11 +9,15 @@ pub struct CreationContext {
         crate::UnityEngine::UIElements::VisualTreeAsset,
     >,
     pub _slotInsertionPoints_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        >,
     >,
     pub _attributeOverrides_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+CreationContext")]
@@ -182,14 +186,18 @@ impl crate::UnityEngine::UIElements::CreationContext {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_VisualTreeAsset_VisualElement1(
+    pub fn _ctor_List_1_VisualTreeAsset_VisualElement1(
         &mut self,
         slotInsertionPoints: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
         attributeOverrides: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
         vta: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -201,15 +209,19 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualTreeAsset,
@@ -241,8 +253,10 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn _ctor_VisualTreeAsset_VisualElement0(
         &mut self,
         slotInsertionPoints: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
         vta: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -254,11 +268,13 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -288,7 +304,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -298,7 +316,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            >,
                         >,
                         0usize,
                     >("get_attributeOverrides")
@@ -311,7 +331,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -319,8 +341,10 @@ impl crate::UnityEngine::UIElements::CreationContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -330,11 +354,13 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
+                                >,
                             >,
                         >,
                         0usize,
@@ -348,8 +374,10 @@ impl crate::UnityEngine::UIElements::CreationContext {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -414,7 +442,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn set_attributeOverrides(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -423,7 +453,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -444,8 +476,10 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn set_slotInsertionPoints(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -454,11 +488,13 @@ impl crate::UnityEngine::UIElements::CreationContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -535,20 +571,20 @@ impl crate::UnityEngine::UIElements::CreationContext {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CreationContext")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::CreationContext>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext>>
 for crate::UnityEngine::UIElements::CreationContext {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::CreationContext> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+CreationContext")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::CreationContext>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::CreationContext>>
 for crate::UnityEngine::UIElements::CreationContext {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::CreationContext,
     > {
         todo!()

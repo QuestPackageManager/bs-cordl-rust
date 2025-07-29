@@ -80,7 +80,9 @@ impl crate::UnityEngine::TextCore::Text::TextUtilities {
         Ok(__cordl_ret.into())
     }
     pub fn UintToString(
-        unicodes: quest_hook::libil2cpp::Gc<u32>,
+        unicodes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -89,7 +91,9 @@ impl crate::UnityEngine::TextCore::Text::TextUtilities {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<u32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<u32>,
+                        >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
                     >("UintToString")

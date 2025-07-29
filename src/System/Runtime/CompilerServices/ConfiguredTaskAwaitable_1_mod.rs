@@ -165,7 +165,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<TResult>,
+        task: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        >,
         continueOnCapturedContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -177,7 +179,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<TResult>,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -203,7 +210,9 @@ impl<
 pub struct ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<
     TResult: quest_hook::libil2cpp::Type,
 > {
-    pub m_task: quest_hook::libil2cpp::Gc<TResult>,
+    pub m_task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TResult>,
+    >,
     pub m_continueOnCapturedContext: bool,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -435,7 +444,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<TResult>,
+        task: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        >,
         continueOnCapturedContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -447,7 +458,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<TResult>,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

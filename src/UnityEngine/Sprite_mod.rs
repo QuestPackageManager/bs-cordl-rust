@@ -830,14 +830,23 @@ impl crate::UnityEngine::Sprite {
     pub fn GetPhysicsShape(
         &mut self,
         shapeIdx: i32,
-        physicsShape: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        physicsShape: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                        ),
                         i32,
                         2usize,
                     >("GetPhysicsShape")
@@ -874,7 +883,9 @@ impl crate::UnityEngine::Sprite {
     pub fn GetPhysicsShapeImpl(
         sprite: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
         shapeIdx: i32,
-        physicsShape: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+        physicsShape: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -884,7 +895,11 @@ impl crate::UnityEngine::Sprite {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -1202,11 +1217,13 @@ impl crate::UnityEngine::Sprite {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OverridePhysicsShape_Gc0(
+    pub fn OverridePhysicsShape_IList_1_0(
         &mut self,
         physicsShapes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1216,9 +1233,11 @@ impl crate::UnityEngine::Sprite {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::Vector2,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::UnityEngine::Vector2,
+                                    >,
                                 >,
                             >,
                         >),

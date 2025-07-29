@@ -10,21 +10,29 @@ pub struct LightCompiler {
         crate::System::Linq::Expressions::Interpreter::LocalVariables,
     >,
     pub _debugInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::DebugInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::DebugInfo,
+            >,
         >,
     >,
     pub _treeLabels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::LabelInfo,
+        crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::LabelTarget>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LabelInfo,
+            >,
         >,
     >,
     pub _labelBlock: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
     >,
     pub _exceptionForRethrowStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+        crate::System::Collections::Generic::Stack_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
     >,
     pub _parent: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::LightCompiler,
@@ -1040,7 +1048,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
     pub fn CompileListInit(
         &mut self,
         initializers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ElementInit>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ElementInit>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1049,8 +1059,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ElementInit,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::ElementInit,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1297,7 +1309,11 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
     pub fn CompileMemberInit(
         &mut self,
         bindings: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::MemberBinding>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::MemberBinding,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1306,8 +1322,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::MemberBinding,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::MemberBinding,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2937,11 +2955,19 @@ for crate::System::Linq::Expressions::Interpreter::LightCompiler {
 pub struct LightCompiler_QuoteVisitor {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _definedParameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            i32,
+        >,
     >,
     pub _hoistedParameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+        >,
     >,
 }
 #[cfg(
@@ -2993,8 +3019,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     pub fn PopParameters(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3004,8 +3032,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ParameterExpression,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::ParameterExpression,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3027,8 +3057,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     pub fn PushParameters(
         &mut self,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3038,8 +3070,10 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::ParameterExpression,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::ParameterExpression,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3126,7 +3160,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >
@@ -3139,7 +3175,9 @@ impl crate::System::Linq::Expressions::Interpreter::LightCompiler_QuoteVisitor {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
                         >,

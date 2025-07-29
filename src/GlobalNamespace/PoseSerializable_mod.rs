@@ -448,20 +448,20 @@ for crate::GlobalNamespace::PoseSerializable {
     }
 }
 #[cfg(feature = "PoseSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
 for crate::GlobalNamespace::PoseSerializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "PoseSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable>>
 for crate::GlobalNamespace::PoseSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PoseSerializable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::PoseSerializable> {
         todo!()
     }
 }

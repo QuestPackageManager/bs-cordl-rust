@@ -68,7 +68,9 @@ impl crate::Unity::Properties::Internal::IAttributes {
     pub fn AddAttributes(
         &mut self,
         attributes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -77,7 +79,9 @@ impl crate::Unity::Properties::Internal::IAttributes {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Attribute>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

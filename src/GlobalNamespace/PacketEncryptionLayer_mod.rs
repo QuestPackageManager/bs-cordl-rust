@@ -8,15 +8,19 @@ pub struct PacketEncryptionLayer {
     >,
     pub _taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub _encryptionStates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        crate::GlobalNamespace::ExpiringDictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
         >,
     >,
     pub _pendingEncryptionStates: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
+        crate::GlobalNamespace::ExpiringDictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList,
+            >,
         >,
     >,
     pub _unencryptedTrafficFilter: quest_hook::libil2cpp::Gc<
@@ -135,8 +139,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
         isClient: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         >,
     > {
@@ -159,8 +165,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                                >,
                             >,
                         >,
                         5usize,
@@ -174,8 +182,10 @@ impl crate::GlobalNamespace::PacketEncryptionLayer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -1318,9 +1328,11 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pendingStatesByPort: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            >,
         >,
     >,
 }

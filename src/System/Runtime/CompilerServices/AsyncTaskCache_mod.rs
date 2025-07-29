@@ -41,7 +41,9 @@ impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::AsyncTaskC
 impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
     pub fn CreateCacheableTask<TResult>(
         result: TResult,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TResult>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
+    >
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -52,7 +54,9 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (TResult),
-                        quest_hook::libil2cpp::Gc<TResult>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >,
                         1usize,
                     >("CreateCacheableTask")
                     .unwrap_or_else(|e| {
@@ -63,14 +67,16 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TResult> = unsafe {
-            cordl_method_info.invoke_unchecked((), (result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<TResult>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (result))? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInt32Tasks() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<i32>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -81,7 +87,9 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                         (),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<i32>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Threading::Tasks::Task_1<i32>,
+                                >,
                             >,
                         >,
                         0usize,
@@ -95,7 +103,9 @@ impl crate::System::Runtime::CompilerServices::AsyncTaskCache {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<quest_hook::libil2cpp::Gc<i32>>,
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

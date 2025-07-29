@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortedList_1<TBase: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TBase, TBase>,
+    __cordl_parent: crate::GlobalNamespace::SortedList_2<TBase, TBase>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
 }
 #[cfg(feature = "cordl_class_SortedList_1")]
@@ -41,7 +41,7 @@ for crate::GlobalNamespace::SortedList_1<TBase> {
 #[cfg(feature = "SortedList_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::SortedList_1<TBase> {
-    type Target = quest_hook::libil2cpp::Gc<TBase, TBase>;
+    type Target = crate::GlobalNamespace::SortedList_2<TBase, TBase>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,8 +66,10 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
-        sortedListDataProcessor: quest_hook::libil2cpp::Gc<TBase>,
+    pub fn New_ISortedListItemProcessor_1_1(
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -104,9 +106,11 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_ISortedListItemProcessor_1_1(
         &mut self,
-        sortedListDataProcessor: quest_hook::libil2cpp::Gc<TBase>,
+        sortedListDataProcessor: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -117,7 +121,9 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TBase>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ISortedListItemProcessor_1<TBase>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

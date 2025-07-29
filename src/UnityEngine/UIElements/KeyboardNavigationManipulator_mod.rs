@@ -4,8 +4,10 @@
 pub struct KeyboardNavigationManipulator {
     __cordl_parent: crate::UnityEngine::UIElements::Manipulator,
     pub m_Action: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        crate::System::Action_2<
+            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+KeyboardNavigationManipulator")]
@@ -78,8 +80,10 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     }
     pub fn New(
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Action_2<
+                crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -292,8 +296,10 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
     pub fn _ctor(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Action_2<
+                crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -302,9 +308,11 @@ impl crate::UnityEngine::UIElements::KeyboardNavigationManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::KeyboardNavigationOperation,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventBase,
+                            crate::System::Action_2<
+                                crate::UnityEngine::UIElements::KeyboardNavigationOperation,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::EventBase,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

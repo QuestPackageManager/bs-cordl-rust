@@ -6,26 +6,40 @@ pub struct VisualTreeAsset {
     pub m_ImportedWithErrors: bool,
     pub m_ImportedWithWarnings: bool,
     pub m_Usings: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+        >,
     >,
     pub inlineSheet: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleSheet,
     >,
     pub m_VisualElementAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+        >,
     >,
     pub m_TemplateAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+        >,
     >,
     pub m_UxmlObjectEntries: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+        >,
     >,
-    pub m_UxmlObjectIds: quest_hook::libil2cpp::Gc<i32>,
+    pub m_UxmlObjectIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub m_AssetEntries: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry,
+        >,
     >,
     pub m_Slots: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+        >,
     >,
     pub m_ContentContainerId: i32,
     pub m_ContentHash: i32,
@@ -185,10 +199,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             crate::UnityEngine::UIElements::VisualElementAsset,
         >,
         idToChildren: quest_hook::libil2cpp::Gc<
-            i32,
-            quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                i32,
                 quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::VisualElementAsset,
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElementAsset,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -206,10 +224,14 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                                 crate::UnityEngine::UIElements::VisualElementAsset,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                i32,
-                                quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    i32,
                                     quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::UIElements::VisualElementAsset,
+                                        crate::System::Collections::Generic::List_1<
+                                            quest_hook::libil2cpp::Gc<
+                                                crate::UnityEngine::UIElements::VisualElementAsset,
+                                            >,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -357,15 +379,19 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CloneTree_VisualElement_Gc_Gc4(
+    pub fn CloneTree_VisualElement_Dictionary_2_List_1_4(
         &mut self,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         slotInsertionPoints: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
         attributeOverrides: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -378,15 +404,19 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::VisualElement,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::VisualElement,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -594,7 +624,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             crate::UnityEngine::UIElements::IUxmlAttributes,
         >,
         cc: crate::UnityEngine::UIElements::CreationContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -610,7 +642,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                             >,
                             crate::UnityEngine::UIElements::CreationContext,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         2usize,
                     >("GetUxmlObjects")
                     .unwrap_or_else(|e| {
@@ -621,9 +655,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (asset, cc))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (asset, cc))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_0(
@@ -952,7 +986,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -962,7 +998,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+                            >,
                         >,
                         0usize,
                     >("get_slots")
@@ -975,7 +1013,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -983,7 +1023,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -993,8 +1035,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheet,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::StyleSheet,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1008,7 +1052,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1016,7 +1062,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1026,8 +1074,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::TemplateAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::TemplateAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1041,7 +1091,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1049,7 +1101,11 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualTreeAsset,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1059,8 +1115,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualTreeAsset,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualTreeAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1074,7 +1132,11 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualTreeAsset,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1082,7 +1144,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1092,7 +1156,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+                            >,
                         >,
                         0usize,
                     >("get_uxmlObjectEntries")
@@ -1105,20 +1171,26 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_uxmlObjectIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >,
                         0usize,
                     >("get_uxmlObjectIds")
                     .unwrap_or_else(|e| {
@@ -1129,16 +1201,20 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_visualElementAssets(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementAsset,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1148,8 +1224,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElementAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1163,7 +1241,11 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementAsset,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1274,7 +1356,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_slots(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1283,7 +1367,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1304,7 +1390,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_templateAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TemplateAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1313,8 +1401,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::TemplateAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::TemplateAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1336,7 +1426,11 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn set_visualElementAssets(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElementAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::VisualElementAsset,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1345,8 +1439,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElementAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElementAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2006,11 +2102,13 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry>,
+    crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    >,
 > for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IComparer_1<
         crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2018,11 +2116,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry>,
+    crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
+    >,
 > for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
         crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry,
     > {
         unsafe { std::mem::transmute(self) }
@@ -2034,7 +2134,9 @@ impl AsMut<
 pub struct VisualTreeAsset_UxmlObjectEntry {
     pub parentId: i32,
     pub uxmlObjectAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlObjectAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlObjectAsset>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeAsset+UxmlObjectEntry")]
@@ -2138,7 +2240,11 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
         &mut self,
         parentId: i32,
         uxmlObjectAssets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlObjectAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UxmlObjectAsset,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2149,8 +2255,10 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UxmlObjectEntry {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::UxmlObjectAsset,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::UxmlObjectAsset,
+                                    >,
                                 >,
                             >,
                         ),

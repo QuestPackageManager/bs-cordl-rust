@@ -14,8 +14,10 @@ pub struct Context {
         crate::System::Runtime::Remoting::Messaging::IMessageSink,
     >,
     pub context_properties: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::Remoting::Contexts::IContextProperty,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::Remoting::Contexts::IContextProperty,
+            >,
         >,
     >,
     pub _localDataStore: quest_hook::libil2cpp::Gc<crate::System::LocalDataStoreHolder>,

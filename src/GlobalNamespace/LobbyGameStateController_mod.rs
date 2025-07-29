@@ -34,10 +34,14 @@ pub struct LobbyGameStateController {
         crate::GlobalNamespace::BeatmapLevelsModel,
     >,
     pub selectedLevelGameplaySetupDataChangedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+        >,
     >,
     pub gameStartedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+        >,
     >,
     pub gameStartCancelledEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub countdownStartedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -45,25 +49,29 @@ pub struct LobbyGameStateController {
     pub songStillDownloadingEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub startTimeChangedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelFinishedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
     >,
     pub levelDidGetDisconnectedEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DisconnectedReason,
+        crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
     >,
     pub lobbyDisconnectedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub beforeSceneSwitchCallbackEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub lobbyStateChangedEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerLobbyState,
+        crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
     >,
     pub startButtonEnabledEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::CannotStartGameReason,
+        crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
     >,
     pub playerMissingEntitlementsChangedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+            >,
         >,
     >,
     pub _levelStartInitiated_k__BackingField: bool,
@@ -1124,7 +1132,11 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_gameStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1133,8 +1145,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ILevelGameplaySetupData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1155,7 +1169,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_levelDidGetDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1163,7 +1179,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DisconnectedReason,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::DisconnectedReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1184,10 +1202,12 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1196,11 +1216,13 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1247,7 +1269,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_lobbyStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1255,7 +1279,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerLobbyState,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::MultiplayerLobbyState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1276,8 +1302,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1287,8 +1315,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1310,7 +1340,11 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn add_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1319,8 +1353,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ILevelGameplaySetupData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1367,7 +1403,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn add_startButtonEnabledEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CannotStartGameReason>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1375,7 +1413,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::CannotStartGameReason,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::CannotStartGameReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1734,7 +1774,11 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_gameStartedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1743,8 +1787,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ILevelGameplaySetupData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1765,7 +1811,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_levelDidGetDisconnectedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DisconnectedReason>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1773,7 +1821,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::DisconnectedReason,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::DisconnectedReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1794,10 +1844,12 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_levelFinishedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1806,11 +1858,13 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1857,7 +1911,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_lobbyStateChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::MultiplayerLobbyState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1865,7 +1921,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerLobbyState,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::MultiplayerLobbyState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1886,8 +1944,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_playerMissingEntitlementsChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1897,8 +1957,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1920,7 +1982,11 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     pub fn remove_selectedLevelGameplaySetupDataChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILevelGameplaySetupData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1929,8 +1995,10 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ILevelGameplaySetupData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ILevelGameplaySetupData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1977,7 +2045,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
     }
     pub fn remove_startButtonEnabledEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CannotStartGameReason>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::CannotStartGameReason>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1985,7 +2055,9 @@ impl crate::GlobalNamespace::LobbyGameStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::CannotStartGameReason,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::CannotStartGameReason,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

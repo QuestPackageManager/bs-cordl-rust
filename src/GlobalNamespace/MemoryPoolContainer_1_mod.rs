@@ -3,8 +3,10 @@
 #[derive(Debug)]
 pub struct MemoryPoolContainer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _activeItems: quest_hook::libil2cpp::Gc<T>,
-    pub _memoryPool: quest_hook::libil2cpp::Gc<T>,
+    pub _activeItems: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LazyCopyHashSet_1<T>,
+    >,
+    pub _memoryPool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_MemoryPoolContainer_1")]
@@ -134,7 +136,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        memoryPool: quest_hook::libil2cpp::Gc<T>,
+        memoryPool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -169,7 +171,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
     }
     pub fn _ctor(
         &mut self,
-        memoryPool: quest_hook::libil2cpp::Gc<T>,
+        memoryPool: quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -180,7 +182,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<crate::Zenject::IMemoryPool_1<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")
@@ -199,7 +201,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
     }
     pub fn get_activeItems(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -210,7 +214,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >,
                         0usize,
                     >("get_activeItems")
                     .unwrap_or_else(|e| {
@@ -221,9 +227,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::MemoryPoolContainer
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

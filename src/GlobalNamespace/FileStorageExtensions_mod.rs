@@ -196,7 +196,9 @@ impl crate::GlobalNamespace::FileStorageExtensions {
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
         fileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         storageLocation: crate::GlobalNamespace::StoragePreference,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -215,7 +217,9 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                             >,
                             crate::GlobalNamespace::StoragePreference,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         3usize,
                     >("LoadFromJSONFileAsync")
                     .unwrap_or_else(|e| {
@@ -226,7 +230,9 @@ impl crate::GlobalNamespace::FileStorageExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (fileStorage, fileName, storageLocation))?
         };

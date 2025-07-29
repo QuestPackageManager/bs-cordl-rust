@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GeometryChangedEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
     >,
     pub _oldRect_k__BackingField: crate::UnityEngine::Rect,
@@ -31,7 +31,7 @@ for crate::UnityEngine::UIElements::GeometryChangedEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+GeometryChangedEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GeometryChangedEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::EventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::GeometryChangedEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

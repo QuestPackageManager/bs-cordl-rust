@@ -14,7 +14,9 @@ pub struct GameServersListTableView {
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub joinButtonPressedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+        >,
     >,
     pub _isInitialized: bool,
     pub _gamesList: quest_hook::libil2cpp::Gc<
@@ -308,7 +310,9 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn SetData(
         &mut self,
         servers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
         clearSelection: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -319,8 +323,10 @@ impl crate::GlobalNamespace::GameServersListTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::INetworkPlayer,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::INetworkPlayer,
+                                    >,
                                 >,
                             >,
                             bool,
@@ -365,7 +371,9 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn add_joinButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -374,8 +382,10 @@ impl crate::GlobalNamespace::GameServersListTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -397,7 +407,9 @@ impl crate::GlobalNamespace::GameServersListTableView {
     pub fn remove_joinButtonPressedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -406,8 +418,10 @@ impl crate::GlobalNamespace::GameServersListTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::INetworkPlayer,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::INetworkPlayer,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

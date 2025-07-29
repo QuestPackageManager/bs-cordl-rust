@@ -8,11 +8,20 @@ pub struct KeyedFactoryBase_2<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _typePairs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TKey, quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::ModestTree::Util::ValuePair_2<
+                    TKey,
+                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                >,
+            >,
+        >,
     >,
     pub _typeMap: quest_hook::libil2cpp::Gc<
-        TKey,
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::Dictionary_2<
+            TKey,
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _fallbackType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     __cordl_phantom_TBase: std::marker::PhantomData<TBase>,
@@ -494,39 +503,10 @@ impl<
     }
     pub fn get_Keys(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TKey>>
-    where
-        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<TKey>,
-                        0usize,
-                    >("get_Keys")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Keys", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TKey> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_ProvidedTypes(
-        &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        >,
     >
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -541,7 +521,48 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::ICollection_1<TKey>,
+                        >,
+                        0usize,
+                    >("get_Keys")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Keys", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<TKey>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_ProvidedTypes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    >
+    where
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         0usize,
                     >("get_ProvidedTypes")
@@ -554,14 +575,21 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_TypeMap(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TKey, quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::Dictionary_2<
+                TKey,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     >
     where
         TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -576,8 +604,10 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            TKey,
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                TKey,
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         0usize,
                     >("get_TypeMap")
@@ -590,8 +620,10 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            TKey,
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::Dictionary_2<
+                TKey,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

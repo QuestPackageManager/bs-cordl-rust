@@ -350,20 +350,20 @@ impl crate::UnityEngine::UIElements::Scale {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Scale")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale>>
 for crate::UnityEngine::UIElements::Scale {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Scale")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale>>
 for crate::UnityEngine::UIElements::Scale {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Scale> {
         todo!()
     }
 }

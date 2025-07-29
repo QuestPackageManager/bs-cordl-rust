@@ -6,7 +6,9 @@ pub struct XNamespace {
     pub _namespaceName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _hashCode: i32,
     pub _names: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+        crate::System::Xml::Linq::XHashtable_1<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XNamespace")]

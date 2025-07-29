@@ -3,7 +3,11 @@
 #[derive(Debug)]
 pub struct JsonWriter {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _stack: quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonPosition>,
+    pub _stack: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::Newtonsoft::Json::JsonPosition,
+        >,
+    >,
     pub _currentPosition: crate::Newtonsoft::Json::JsonPosition,
     pub _currentState: crate::Newtonsoft::Json::JsonWriter_State,
     pub _formatting: crate::Newtonsoft::Json::Formatting,

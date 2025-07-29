@@ -963,13 +963,13 @@ impl crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     >,
 > for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     > {
         todo!()
@@ -977,13 +977,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDragger+DragPosition")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     >,
 > for crate::UnityEngine::UIElements::ListViewDragger_DragPosition {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
     > {
         todo!()

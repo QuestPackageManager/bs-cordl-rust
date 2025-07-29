@@ -21,8 +21,10 @@ pub struct Regex {
         crate::System::Text::RegularExpressions::ExclusiveReference,
     >,
     pub _replref: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexReplacement,
+        crate::System::WeakReference_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Text::RegularExpressions::RegexReplacement,
+            >,
         >,
     >,
     pub _code: quest_hook::libil2cpp::Gc<
@@ -1441,8 +1443,10 @@ pub struct Regex_CachedCodeEntry {
         crate::System::Text::RegularExpressions::ExclusiveReference,
     >,
     pub ReplRef: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Text::RegularExpressions::RegexReplacement,
+        crate::System::WeakReference_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Text::RegularExpressions::RegexReplacement,
+            >,
         >,
     >,
 }
@@ -1499,8 +1503,10 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
             crate::System::Text::RegularExpressions::ExclusiveReference,
         >,
         replref: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Text::RegularExpressions::RegexReplacement,
+            crate::System::WeakReference_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Text::RegularExpressions::RegexReplacement,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -1531,8 +1537,10 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
             crate::System::Text::RegularExpressions::ExclusiveReference,
         >,
         replref: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Text::RegularExpressions::RegexReplacement,
+            crate::System::WeakReference_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Text::RegularExpressions::RegexReplacement,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1564,8 +1572,10 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
                                 crate::System::Text::RegularExpressions::ExclusiveReference,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Text::RegularExpressions::RegexReplacement,
+                                crate::System::WeakReference_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Text::RegularExpressions::RegexReplacement,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1842,13 +1852,13 @@ impl crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
     >,
 > for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
     > {
         todo!()
@@ -1856,13 +1866,13 @@ impl AsRef<
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntryKey")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
     >,
 > for crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::System::Text::RegularExpressions::Regex_CachedCodeEntryKey,
     > {
         todo!()

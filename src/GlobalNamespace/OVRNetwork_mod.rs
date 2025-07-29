@@ -348,10 +348,12 @@ pub struct OVRNetwork_OVRNetworkTcpClient {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionStateChangedCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub payloadReceivedCallback: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-        i32,
-        i32,
+        crate::System::Action_4<
+            i32,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+            i32,
+            i32,
+        >,
     >,
     pub tcpClient: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
     pub receivedBuffers: quest_hook::libil2cpp::Gc<
@@ -609,7 +611,9 @@ pub struct OVRNetwork_OVRNetworkTcpServer {
     pub tcpListener: quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpListener>,
     pub clientsLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub clients: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::Sockets::TcpClient>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRNetwork+OVRNetworkTcpServer")]

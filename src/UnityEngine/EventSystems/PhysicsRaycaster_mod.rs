@@ -104,7 +104,9 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -117,7 +119,9 @@ impl crate::UnityEngine::EventSystems::PhysicsRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::RaycastResult,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::EventSystems::RaycastResult,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -439,18 +443,26 @@ for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit>>
-for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit> {
+impl AsRef<
+    crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::RaycastHit>,
+> for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::RaycastHit,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+PhysicsRaycaster+RaycastHitComparer")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit>>
-for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
+impl AsMut<
+    crate::System::Collections::Generic::IComparer_1<crate::UnityEngine::RaycastHit>,
+> for crate::UnityEngine::EventSystems::PhysicsRaycaster_RaycastHitComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit> {
+    ) -> &mut crate::System::Collections::Generic::IComparer_1<
+        crate::UnityEngine::RaycastHit,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }

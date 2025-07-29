@@ -127,7 +127,9 @@ impl<
 #[derive(Debug)]
 pub struct XHashtable_1<TValue: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _state: quest_hook::libil2cpp::Gc<TValue>,
+    pub _state: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1")]
@@ -217,7 +219,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        extractKey: quest_hook::libil2cpp::Gc<TValue>,
+        extractKey: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
+        >,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -272,7 +276,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        extractKey: quest_hook::libil2cpp::Gc<TValue>,
+        extractKey: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
+        >,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -284,7 +290,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
+                                    TValue,
+                                >,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -479,7 +492,9 @@ pub struct XHashtable_1_XHashtableState<TValue: quest_hook::libil2cpp::Type> {
         >,
     >,
     pub _numEntries: i32,
-    pub _extractKey: quest_hook::libil2cpp::Gc<TValue>,
+    pub _extractKey: quest_hook::libil2cpp::Gc<
+        crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
+    >,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XHashtable_1+XHashtableState")]
@@ -622,7 +637,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        extractKey: quest_hook::libil2cpp::Gc<TValue>,
+        extractKey: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
+        >,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -637,7 +654,11 @@ impl<
     }
     pub fn Resize(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TValue>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
+        >,
+    >
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -648,7 +669,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TValue>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Xml::Linq::XHashtable_1_XHashtableState<
+                                TValue,
+                            >,
+                        >,
                         0usize,
                     >("Resize")
                     .unwrap_or_else(|e| {
@@ -659,9 +684,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TValue> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_XHashtableState<TValue>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn TryAdd(
@@ -737,7 +762,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        extractKey: quest_hook::libil2cpp::Gc<TValue>,
+        extractKey: quest_hook::libil2cpp::Gc<
+            crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<TValue>,
+        >,
         capacity: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -749,7 +776,14 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TValue>, i32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Xml::Linq::XHashtable_1_ExtractKeyDelegate<
+                                    TValue,
+                                >,
+                            >,
+                            i32,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")

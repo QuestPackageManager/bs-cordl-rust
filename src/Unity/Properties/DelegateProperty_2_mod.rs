@@ -5,9 +5,13 @@ pub struct DelegateProperty_2<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-    pub m_Getter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-    pub m_Setter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+    __cordl_parent: crate::Unity::Properties::Property_2<TContainer, TValue>,
+    pub m_Getter: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
+    >,
+    pub m_Setter: quest_hook::libil2cpp::Gc<
+        crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
+    >,
     pub _Name_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
@@ -58,7 +62,7 @@ impl<
     TContainer: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::DelegateProperty_2<TContainer, TValue> {
-    type Target = quest_hook::libil2cpp::Gc<TContainer, TValue>;
+    type Target = crate::Unity::Properties::Property_2<TContainer, TValue>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,8 +84,12 @@ impl<
 > crate::Unity::Properties::DelegateProperty_2<TContainer, TValue> {
     pub fn New(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        getter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-        setter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+        getter: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
+        >,
+        setter: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -98,8 +106,12 @@ impl<
     pub fn _ctor(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        getter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
-        setter: quest_hook::libil2cpp::Gc<TContainer, TValue>,
+        getter: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
+        >,
+        setter: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -116,8 +128,18 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<TContainer, TValue>,
-                            quest_hook::libil2cpp::Gc<TContainer, TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::PropertyGetter_2<
+                                    TContainer,
+                                    TValue,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::PropertySetter_2<
+                                    TContainer,
+                                    TValue,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,

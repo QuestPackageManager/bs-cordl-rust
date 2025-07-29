@@ -7,7 +7,9 @@ pub struct InteractableTextMeshPro {
     pub _noInteractionAlpha: f32,
     pub _text: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
     pub _canvasGroupCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+InteractableTextMeshPro")]

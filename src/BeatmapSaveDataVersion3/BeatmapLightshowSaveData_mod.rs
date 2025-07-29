@@ -4,28 +4,42 @@
 pub struct BeatmapLightshowSaveData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub basicBeatmapEvents: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::BasicEventData>,
+        >,
     >,
     pub colorBoostBeatmapEvents: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::ColorBoostEventData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::ColorBoostEventData,
+            >,
+        >,
     >,
     pub lightColorEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightColorEventBoxGroup,
+            >,
         >,
     >,
     pub lightRotationEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightRotationEventBoxGroup,
+            >,
         >,
     >,
     pub lightTranslationEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion3::LightTranslationEventBoxGroup,
+            >,
         >,
     >,
     pub vfxEventBoxGroups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BeatmapSaveDataVersion3::FxEventBoxGroup>,
+        >,
     >,
     pub _fxEventsCollection: quest_hook::libil2cpp::Gc<
         crate::BeatmapSaveDataVersion3::FxEventsCollection,

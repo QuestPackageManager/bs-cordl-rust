@@ -222,7 +222,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         &mut self,
         bindingIndex: i32,
         value: TValue,
-        controlOfType: quest_hook::libil2cpp::Gc<TValue>,
+        controlOfType: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+        >,
     ) -> quest_hook::libil2cpp::Result<TValue>
     where
         TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -233,7 +235,13 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, TValue, quest_hook::libil2cpp::Gc<TValue>),
+                        (
+                            i32,
+                            TValue,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputControl_1<TValue>,
+                            >,
+                        ),
                         TValue,
                         3usize,
                     >("ApplyProcessors")
@@ -261,7 +269,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         listeners: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                    crate::System::Action_1<
+                        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                    >,
                 >,
             >,
         >,
@@ -281,7 +291,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                        crate::System::Action_1<
+                                            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -1088,7 +1100,9 @@ impl crate::UnityEngine::InputSystem::InputActionState {
     }
     pub fn FindAllEnabledActions(
         result: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputAction>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1097,8 +1111,10 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputAction,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputAction,
+                                >,
                             >,
                         >),
                         i32,
@@ -4629,13 +4645,17 @@ pub struct InputActionState_GlobalState {
     >,
     pub onActionChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            crate::UnityEngine::InputSystem::InputActionChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                crate::UnityEngine::InputSystem::InputActionChange,
+            >,
         >,
     >,
     pub onActionControlsChanged: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     >,
 }

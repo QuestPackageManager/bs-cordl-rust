@@ -3,7 +3,9 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct RegexFCD {
     pub _fcStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Text::RegularExpressions::RegexFC>,
+        >,
     >,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _skipAllChildren: bool,

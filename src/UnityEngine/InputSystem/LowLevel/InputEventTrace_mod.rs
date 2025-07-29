@@ -6,14 +6,18 @@ pub struct InputEventTrace {
     pub m_ChangeCounter: i32,
     pub m_Enabled: bool,
     pub m_OnFilterEvent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            bool,
+        >,
     >,
     pub m_DeviceId: i32,
     pub m_EventListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     >,
     pub m_EventBufferSize: i64,
@@ -185,7 +189,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -195,7 +201,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >,
                         0usize,
                     >("GetEnumerator")
@@ -208,7 +216,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -700,7 +710,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     pub fn add_onEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -709,7 +721,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -978,9 +992,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -990,11 +1006,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Func_3<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                bool,
                             >,
-                            bool,
                         >,
                         0usize,
                     >("get_onFilterEvent")
@@ -1007,9 +1025,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1050,7 +1070,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     pub fn remove_onEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1059,7 +1081,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1184,9 +1208,11 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     pub fn set_onFilterEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1195,11 +1221,13 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Func_3<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                bool,
                             >,
-                            bool,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1255,6 +1283,34 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -1279,30 +1335,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1840,6 +1872,34 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl AsRef<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
+impl AsMut<
+    crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    >,
+> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<
+        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1864,30 +1924,6 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
-> for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2019,13 +2055,15 @@ pub struct InputEventTrace_ReplayController {
     >,
     pub m_OnFinished: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_OnEvent: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        crate::System::Action_1<crate::UnityEngine::InputSystem::LowLevel::InputEventPtr>,
     >,
     pub m_StartTimeAsPerFirstEvent: f64,
     pub m_StartTimeAsPerRuntime: f64,
     pub m_AllEventsByTimeIndex: i32,
     pub m_AllEventsByTime: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+        >,
     >,
 }
 #[cfg(
@@ -2204,7 +2242,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
     pub fn OnEvent(
         &mut self,
         action: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -2217,7 +2257,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            crate::System::Action_1<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController,
@@ -2597,7 +2639,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2607,8 +2651,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2622,7 +2668,9 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -102,7 +102,9 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JRaw>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JRaw>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -117,8 +119,10 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Linq::JRaw,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Linq::JRaw,
+                                >,
                             >,
                         >,
                         2usize,
@@ -132,7 +136,9 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JRaw>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Linq::JRaw>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (reader, cancellationToken))?
         };

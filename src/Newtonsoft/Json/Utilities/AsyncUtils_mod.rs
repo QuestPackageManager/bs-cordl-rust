@@ -68,7 +68,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     }
     pub fn CancelIfRequestedAsync_CancellationToken1<T>(
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -79,7 +81,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         1usize,
                     >("CancelIfRequestedAsync")
                     .unwrap_or_else(|e| {
@@ -90,9 +94,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (cancellationToken))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn FromCanceled_CancellationToken0(
@@ -124,7 +128,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     }
     pub fn FromCanceled_CancellationToken1<T>(
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -135,7 +141,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         1usize,
                     >("FromCanceled")
                     .unwrap_or_else(|e| {
@@ -146,9 +154,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (cancellationToken))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsCompletedSuccessfully(
@@ -184,7 +192,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
         index: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -199,7 +209,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         5usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -210,7 +222,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (reader, buffer, index, count, cancellationToken))?
         };
@@ -218,14 +232,18 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
     }
     pub fn ToAsync(
         value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (bool),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         1usize,
                     >("ToAsync")
                     .unwrap_or_else(|e| {
@@ -236,9 +254,9 @@ impl crate::Newtonsoft::Json::Utilities::AsyncUtils {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (value))? };
         Ok(__cordl_ret.into())
     }
     pub fn WriteAsync_Il2CppArray_i32_i32_CancellationToken2(

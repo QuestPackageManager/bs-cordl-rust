@@ -4,7 +4,9 @@
 pub struct SwitchCase {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _TestValues_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        >,
     >,
     pub _Body_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
@@ -78,7 +80,9 @@ impl crate::System::Linq::Expressions::SwitchCase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -88,8 +92,10 @@ impl crate::System::Linq::Expressions::SwitchCase {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Linq::Expressions::Expression,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Linq::Expressions::Expression,
+                                >,
                             >,
                         >,
                         0usize,
@@ -103,7 +109,9 @@ impl crate::System::Linq::Expressions::SwitchCase {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

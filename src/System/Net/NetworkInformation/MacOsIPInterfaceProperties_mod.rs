@@ -46,7 +46,9 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
             crate::System::Net::NetworkInformation::MacOsNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -106,7 +108,9 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
             crate::System::Net::NetworkInformation::MacOsNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -119,7 +123,9 @@ impl crate::System::Net::NetworkInformation::MacOsIPInterfaceProperties {
                                 crate::System::Net::NetworkInformation::MacOsNetworkInterface,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

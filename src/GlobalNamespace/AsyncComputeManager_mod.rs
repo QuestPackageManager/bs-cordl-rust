@@ -4,7 +4,9 @@
 pub struct AsyncComputeManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _asyncComputeRequests: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AsyncComputeOperation>,
+        crate::System::Collections::Concurrent::BlockingCollection_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AsyncComputeOperation>,
+        >,
     >,
     pub _computeThread: quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
     pub _disposed: bool,
@@ -73,10 +75,14 @@ impl crate::GlobalNamespace::AsyncComputeManager {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn BeginOperation_Gc1<T>(
+    pub fn BeginOperation_AsyncComputeOperation_1_1<T>(
         &mut self,
-        operation: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+        operation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AsyncComputeOperation_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -86,8 +92,12 @@ impl crate::GlobalNamespace::AsyncComputeManager {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
-                        quest_hook::libil2cpp::Gc<T>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::AsyncComputeOperation_1<T>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         1usize,
                     >("BeginOperation")
                     .unwrap_or_else(|e| {
@@ -98,9 +108,9 @@ impl crate::GlobalNamespace::AsyncComputeManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (operation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (operation))? };
         Ok(__cordl_ret.into())
     }
     pub fn ComputeThreadRun(

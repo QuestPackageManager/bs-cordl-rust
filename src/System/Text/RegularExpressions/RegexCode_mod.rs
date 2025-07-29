@@ -107,7 +107,9 @@ impl crate::System::Text::RegularExpressions::RegexCode {
     pub fn New(
         codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         stringlist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         trackcount: i32,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -161,7 +163,9 @@ impl crate::System::Text::RegularExpressions::RegexCode {
         &mut self,
         codes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
         stringlist: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         trackcount: i32,
         caps: quest_hook::libil2cpp::Gc<crate::System::Collections::Hashtable>,
@@ -185,8 +189,10 @@ impl crate::System::Text::RegularExpressions::RegexCode {
                                 quest_hook::libil2cpp::Il2CppArray<i32>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             i32,

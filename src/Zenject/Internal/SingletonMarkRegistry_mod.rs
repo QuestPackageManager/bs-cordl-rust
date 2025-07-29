@@ -4,10 +4,14 @@
 pub struct SingletonMarkRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _boundSingletons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
     pub _boundNonSingletons: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+Internal+SingletonMarkRegistry")]

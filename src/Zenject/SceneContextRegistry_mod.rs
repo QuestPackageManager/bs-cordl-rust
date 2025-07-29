@@ -4,8 +4,10 @@
 pub struct SceneContextRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _map: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::SceneManagement::Scene,
-        quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::SceneManagement::Scene,
+            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+SceneContextRegistry")]
@@ -356,7 +358,9 @@ impl crate::Zenject::SceneContextRegistry {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -366,7 +370,9 @@ impl crate::Zenject::SceneContextRegistry {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+                            >,
                         >,
                         0usize,
                     >("get_SceneContexts")
@@ -379,7 +385,9 @@ impl crate::Zenject::SceneContextRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SceneContext>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -4,8 +4,10 @@
 pub struct TriangulationPoint {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Edges_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            >,
         >,
     >,
     pub X: f64,
@@ -150,8 +152,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         >,
     > {
@@ -162,8 +166,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                                >,
                             >,
                         >,
                         0usize,
@@ -177,8 +183,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -237,8 +245,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
     pub fn set_Edges(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,8 +258,10 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ProBuilder::Poly2Tri::DTSweepConstraint,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

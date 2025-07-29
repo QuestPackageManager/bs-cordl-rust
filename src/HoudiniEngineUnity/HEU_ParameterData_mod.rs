@@ -7,7 +7,9 @@ pub struct HEU_ParameterData {
     pub _name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _labelName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _help: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub _childParameterIDs: quest_hook::libil2cpp::Gc<i32>,
+    pub _childParameterIDs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub _choiceValue: i32,
     pub _intValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub _floatValues: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
@@ -609,13 +611,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::HoudiniEngineUnity::HEU_Parame
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ParameterData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -623,13 +625,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
     >,
 > for crate::HoudiniEngineUnity::HEU_ParameterData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_ParameterData>,
     > {
         unsafe { std::mem::transmute(self) }

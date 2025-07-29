@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArcVisibilityTypeSettingsDropdown {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArcVisibilityType>,
+    __cordl_parent: crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::ArcVisibilityType,
+    >,
 }
 #[cfg(feature = "cordl_class_ArcVisibilityTypeSettingsDropdown")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +28,9 @@ for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
 }
 #[cfg(feature = "ArcVisibilityTypeSettingsDropdown")]
 impl std::ops::Deref for crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
-    type Target = quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ArcVisibilityType>;
+    type Target = crate::GlobalNamespace::ValueDropdownController_1<
+        crate::GlobalNamespace::ArcVisibilityType,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,9 +47,13 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ArcVisibilityType,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        crate::GlobalNamespace::ArcVisibilityType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         >,
     > {
@@ -56,10 +64,14 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ArcVisibilityType,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                    crate::System::Tuple_2<
+                                        crate::GlobalNamespace::ArcVisibilityType,
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
+                                    >,
                                 >,
                             >,
                         >,
@@ -74,9 +86,13 @@ impl crate::GlobalNamespace::ArcVisibilityTypeSettingsDropdown {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::ArcVisibilityType,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Tuple_2<
+                        crate::GlobalNamespace::ArcVisibilityType,
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

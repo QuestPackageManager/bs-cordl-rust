@@ -1524,18 +1524,18 @@ impl crate::Unity::Mathematics::bool2 {
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool2")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool2>>
+impl AsRef<crate::System::IEquatable_1<crate::Unity::Mathematics::bool2>>
 for crate::Unity::Mathematics::bool2 {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool2> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::Unity::Mathematics::bool2> {
         todo!()
     }
 }
 #[cfg(feature = "Unity+Mathematics+bool2")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool2>>
+impl AsMut<crate::System::IEquatable_1<crate::Unity::Mathematics::bool2>>
 for crate::Unity::Mathematics::bool2 {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Unity::Mathematics::bool2> {
+    ) -> &mut crate::System::IEquatable_1<crate::Unity::Mathematics::bool2> {
         todo!()
     }
 }

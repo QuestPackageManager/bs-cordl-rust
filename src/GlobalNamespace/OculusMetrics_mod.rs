@@ -9,7 +9,9 @@ pub struct OculusMetrics {
         >,
     >,
     pub _sample: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-    pub _samples: quest_hook::libil2cpp::Gc<f32>,
+    pub _samples: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
 }
 #[cfg(feature = "cordl_class_OculusMetrics")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OculusMetrics {

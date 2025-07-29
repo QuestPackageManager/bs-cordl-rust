@@ -6,7 +6,9 @@ pub struct UIItemsList_1<T: quest_hook::libil2cpp::Type> {
     pub _prefab: T,
     pub _itemsContainer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _insertInTheBeginning: bool,
-    pub _items: quest_hook::libil2cpp::Gc<T>,
+    pub _items: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<T>,
+    >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -75,7 +77,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
     pub fn SetData(
         &mut self,
         numberOfElements: i32,
-        dataCallback: quest_hook::libil2cpp::Gc<T>,
+        dataCallback: quest_hook::libil2cpp::Gc<
+            crate::HMUI::UIItemsList_1_DataCallback<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -86,7 +90,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::HMUI::UIItemsList_1_DataCallback<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetData")
@@ -128,7 +137,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
     }
     pub fn get_items(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerable_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -137,7 +148,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Gc<T>, 0usize>("get_items")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >,
+                        0usize,
+                    >("get_items")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -146,9 +163,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::UIItemsList_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

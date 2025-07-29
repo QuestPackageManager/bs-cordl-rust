@@ -65,9 +65,11 @@ impl crate::LiteNetLib::NetUtils {
         > = unsafe { cordl_method_info.invoke_unchecked((), (addrType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetLocalIpList_Gc_LocalAddrType1(
+    pub fn GetLocalIpList_IList_1_LocalAddrType1(
         targetList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         addrType: crate::LiteNetLib::LocalAddrType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -78,8 +80,10 @@ impl crate::LiteNetLib::NetUtils {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             crate::LiteNetLib::LocalAddrType,
@@ -104,7 +108,9 @@ impl crate::LiteNetLib::NetUtils {
         addrType: crate::LiteNetLib::LocalAddrType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -114,8 +120,10 @@ impl crate::LiteNetLib::NetUtils {
                     .find_static_method::<
                         (crate::LiteNetLib::LocalAddrType),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         1usize,
@@ -129,7 +137,9 @@ impl crate::LiteNetLib::NetUtils {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (addrType))? };
         Ok(__cordl_ret.into())
     }

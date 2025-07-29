@@ -7,8 +7,10 @@ pub struct SelectableStateController {
         crate::Tweening::TimeTweeningManager,
     >,
     pub stateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SelectableStateController_ViewState,
-        bool,
+        crate::System::Action_2<
+            crate::GlobalNamespace::SelectableStateController_ViewState,
+            bool,
+        >,
     >,
     pub _currentViewState_k__BackingField: crate::GlobalNamespace::SelectableStateController_ViewState,
 }
@@ -110,8 +112,10 @@ impl crate::GlobalNamespace::SelectableStateController {
     pub fn add_stateDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SelectableStateController_ViewState,
-            bool,
+            crate::System::Action_2<
+                crate::GlobalNamespace::SelectableStateController_ViewState,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -120,8 +124,10 @@ impl crate::GlobalNamespace::SelectableStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::SelectableStateController_ViewState,
-                            bool,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::SelectableStateController_ViewState,
+                                bool,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -196,8 +202,10 @@ impl crate::GlobalNamespace::SelectableStateController {
     pub fn remove_stateDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SelectableStateController_ViewState,
-            bool,
+            crate::System::Action_2<
+                crate::GlobalNamespace::SelectableStateController_ViewState,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -206,8 +214,10 @@ impl crate::GlobalNamespace::SelectableStateController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::SelectableStateController_ViewState,
-                            bool,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::SelectableStateController_ViewState,
+                                bool,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

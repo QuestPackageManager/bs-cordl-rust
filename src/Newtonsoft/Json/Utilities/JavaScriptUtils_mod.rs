@@ -386,7 +386,9 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
             quest_hook::libil2cpp::Il2CppArray<bool>,
         >,
         stringEscapeHandling: crate::Newtonsoft::Json::StringEscapeHandling,
-        bufferPool: quest_hook::libil2cpp::Gc<char>,
+        bufferPool: quest_hook::libil2cpp::Gc<
+            crate::Newtonsoft::Json::IArrayPool_1<char>,
+        >,
         writeBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         >,
@@ -407,7 +409,9 @@ impl crate::Newtonsoft::Json::Utilities::JavaScriptUtils {
                                 quest_hook::libil2cpp::Il2CppArray<bool>,
                             >,
                             crate::Newtonsoft::Json::StringEscapeHandling,
-                            quest_hook::libil2cpp::Gc<char>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::Newtonsoft::Json::IArrayPool_1<char>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<char>,

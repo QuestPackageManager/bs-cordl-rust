@@ -6300,7 +6300,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_InputField_LineT
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_OnChangeEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -6325,7 +6325,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_OnChang
 }
 #[cfg(feature = "TMPro+TMP_InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_OnChangeEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -6578,7 +6578,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_OnValida
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SelectionEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -6603,7 +6603,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_Selecti
 }
 #[cfg(feature = "TMPro+TMP_InputField+SelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SelectionEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -6660,7 +6660,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_Selectio
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_SubmitEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -6685,7 +6685,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_InputField_SubmitE
 }
 #[cfg(feature = "TMPro+TMP_InputField+SubmitEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_SubmitEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -6742,7 +6742,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_InputField_SubmitEv
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TextSelectionEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i32,
         i32,
@@ -6770,7 +6770,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
 }
 #[cfg(feature = "TMPro+TMP_InputField+TextSelectionEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TextSelectionEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_3<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i32,
         i32,
@@ -6830,7 +6830,7 @@ for crate::TMPro::TMP_InputField_TextSelectionEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_InputField_TouchScreenKeyboardEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::TouchScreenKeyboard_Status,
     >,
 }
@@ -6856,7 +6856,7 @@ for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
 }
 #[cfg(feature = "TMPro+TMP_InputField+TouchScreenKeyboardEvent")]
 impl std::ops::Deref for crate::TMPro::TMP_InputField_TouchScreenKeyboardEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::TouchScreenKeyboard_Status,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

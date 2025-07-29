@@ -7,7 +7,7 @@ pub struct TextMeshPro {
     pub _SortingLayerID: i32,
     pub _SortingOrder: i32,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>>,
     >,
     pub m_currentAutoSizeMode: bool,
     pub m_hasFontAssetChanged: bool,
@@ -1643,7 +1643,9 @@ impl crate::TMPro::TextMeshPro {
     pub fn add_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1652,7 +1654,9 @@ impl crate::TMPro::TextMeshPro {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1884,7 +1888,9 @@ impl crate::TMPro::TextMeshPro {
     pub fn remove_OnPreRenderText(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1893,7 +1899,9 @@ impl crate::TMPro::TextMeshPro {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

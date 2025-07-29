@@ -42,8 +42,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         >,
     > {
@@ -54,8 +56,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -69,8 +73,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -79,8 +85,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         >,
     > {
@@ -91,8 +99,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -106,8 +116,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -116,8 +128,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         >,
     > {
@@ -128,8 +142,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -143,8 +159,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDeleteResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDeleteResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
@@ -153,8 +171,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         >,
     > {
@@ -165,8 +185,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -180,8 +202,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -190,8 +214,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         >,
     > {
@@ -202,8 +228,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -217,8 +245,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -227,8 +257,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         >,
     > {
@@ -239,8 +271,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -254,8 +288,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
@@ -264,8 +300,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         >,
     > {
@@ -276,8 +314,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -291,8 +331,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -301,8 +343,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         >,
     > {
@@ -313,8 +357,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -328,8 +374,10 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
@@ -338,8 +386,10 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         >,
     > {
@@ -350,8 +400,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                                >,
                             >,
                         >,
                         1usize,
@@ -365,15 +417,21 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadCancelResult,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetList() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetDetailsList,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -383,8 +441,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetDetailsList,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetDetailsList,
+                                >,
                             >,
                         >,
                         0usize,
@@ -398,14 +458,20 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetailsList>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetDetailsList,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetDownloadUpdateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+            crate::Oculus::Platform::Message_1_Callback<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -415,8 +481,10 @@ impl crate::Oculus::Platform::AssetFile {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+                            crate::Oculus::Platform::Message_1_Callback<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetFileDownloadUpdate,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -439,7 +507,9 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -449,8 +519,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetDetails,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetDetails,
+                                >,
                             >,
                         >,
                         1usize,
@@ -464,7 +536,9 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
@@ -472,7 +546,9 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileID: u64,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -482,8 +558,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (u64),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetDetails,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetDetails,
+                                >,
                             >,
                         >,
                         1usize,
@@ -497,7 +575,9 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileID))? };
         Ok(__cordl_ret.into())
     }
@@ -505,7 +585,9 @@ impl crate::Oculus::Platform::AssetFile {
         assetFileName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -515,8 +597,10 @@ impl crate::Oculus::Platform::AssetFile {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::AssetDetails,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::AssetDetails,
+                                >,
                             >,
                         >,
                         1usize,
@@ -530,7 +614,9 @@ impl crate::Oculus::Platform::AssetFile {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::AssetDetails>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (assetFileName))? };
         Ok(__cordl_ret.into())
     }

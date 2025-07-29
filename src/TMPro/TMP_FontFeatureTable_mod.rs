@@ -4,11 +4,15 @@
 pub struct TMP_FontFeatureTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_GlyphPairAdjustmentRecords: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+        >,
     >,
     pub m_GlyphPairAdjustmentRecordLookupDictionary: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_FontFeatureTable")]
@@ -102,7 +106,9 @@ impl crate::TMPro::TMP_FontFeatureTable {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -112,8 +118,10 @@ impl crate::TMPro::TMP_FontFeatureTable {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+                                >,
                             >,
                         >,
                         0usize,
@@ -127,14 +135,18 @@ impl crate::TMPro::TMP_FontFeatureTable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_glyphPairAdjustmentRecords(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_GlyphPairAdjustmentRecord>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -143,8 +155,10 @@ impl crate::TMPro::TMP_FontFeatureTable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::TMPro::TMP_GlyphPairAdjustmentRecord,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -61,7 +61,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn CacheSubEmitters(
         ps: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
         subEmitters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -74,8 +76,10 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                                 crate::UnityEngine::ParticleSystem,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                         ),
@@ -130,7 +134,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     }
     pub fn ConnectPlayablesToMixer(
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        playables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        playables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Playables::Playable> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -140,7 +148,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::Playable,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Playables::Playable,
+                                >,
                             >,
                         ),
                         crate::UnityEngine::Playables::Playable,
@@ -163,7 +173,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         &mut self,
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -174,7 +188,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::Playable,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Playables::Playable,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -264,7 +280,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn GetComponent<T>(
         &mut self,
         gameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -275,7 +293,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<T>,
+                        >,
                         1usize,
                     >("GetComponent")
                     .unwrap_or_else(|e| {
@@ -286,16 +306,18 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (gameObject))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (gameObject))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetControlableScripts(
         root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -305,7 +327,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                            >,
                         >,
                         1usize,
                     >("GetControlableScripts")
@@ -318,7 +342,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (root))? };
         Ok(__cordl_ret.into())
     }
@@ -327,7 +353,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
         go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -337,7 +365,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ParticleSystem,
+                                >,
+                            >,
                         >,
                         1usize,
                     >("GetControllableParticleSystems")
@@ -350,17 +382,23 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (go))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetControllableParticleSystems_Transform_Gc_Gc1(
+    pub fn GetControllableParticleSystems_Transform_ICollection_1_HashSet_1_1(
         t: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         roots: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
         subEmitters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -371,13 +409,17 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::ICollection_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                         ),
@@ -430,7 +472,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         objects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -443,7 +487,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                                 crate::UnityEngine::Timeline::IPropertyCollector,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -467,7 +513,11 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -480,8 +530,10 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                                 crate::UnityEngine::Timeline::IPropertyCollector,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Playables::PlayableDirector,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Playables::PlayableDirector,
+                                    >,
                                 >,
                             >,
                         ),
@@ -506,7 +558,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Timeline::IPropertyCollector,
         >,
         particles: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -519,8 +573,10 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                                 crate::UnityEngine::Timeline::IPropertyCollector,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                         ),
@@ -548,7 +604,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
             crate::UnityEngine::Playables::PlayableDirector,
         >,
         scripts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -564,7 +622,9 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                                 crate::UnityEngine::Playables::PlayableDirector,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -585,10 +645,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     }
     pub fn SearchHierarchyAndConnectControlableScripts(
         controlableScripts: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -597,11 +663,15 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                                >,
                             >,
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::Playable,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Playables::Playable,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -624,10 +694,18 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn SearchHierarchyAndConnectDirector(
         &mut self,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
         disableSelfReferences: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -637,13 +715,17 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Playables::PlayableDirector,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Playables::PlayableDirector,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::Playable,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Playables::Playable,
+                                >,
                             >,
                             bool,
                         ),
@@ -670,10 +752,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn SearchHierarchyAndConnectParticleSystem(
         &mut self,
         particleSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
         graph: crate::UnityEngine::Playables::PlayableGraph,
-        outplayables: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::Playable>,
+        outplayables: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::Playables::Playable,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -682,13 +770,17 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Playables::Playable,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Playables::Playable,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -711,10 +803,16 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
     pub fn UpdateDurationAndLoopFlag(
         &mut self,
         directors: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::PlayableDirector>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::Playables::PlayableDirector,
+                >,
+            >,
         >,
         particleSystems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -724,13 +822,17 @@ impl crate::UnityEngine::Timeline::ControlPlayableAsset {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Playables::PlayableDirector,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Playables::PlayableDirector,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ParticleSystem,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ParticleSystem,
+                                    >,
                                 >,
                             >,
                         ),

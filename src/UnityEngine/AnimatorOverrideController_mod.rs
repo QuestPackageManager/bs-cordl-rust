@@ -49,9 +49,11 @@ impl crate::UnityEngine::AnimatorOverrideController {
     pub fn ApplyOverrides(
         &mut self,
         overrides: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::IList_1<
+                crate::System::Collections::Generic::KeyValuePair_2<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -61,11 +63,13 @@ impl crate::UnityEngine::AnimatorOverrideController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::AnimationClip,
+                            crate::System::Collections::Generic::IList_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::AnimationClip,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
                                 >,
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

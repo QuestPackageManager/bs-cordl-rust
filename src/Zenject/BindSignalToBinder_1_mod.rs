@@ -111,9 +111,9 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Gc0(
+    pub fn ToMethod_Action_1_0(
         &mut self,
-        callback: quest_hook::libil2cpp::Gc<TSignal>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
     >
@@ -126,7 +126,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TSignal>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>),
                         quest_hook::libil2cpp::Gc<crate::Zenject::SignalCopyBinder>,
                         1usize,
                     >("ToMethod")
@@ -143,45 +143,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Gc2<TObject>(
+    pub fn ToMethod_Action_2_2<TObject>(
         &mut self,
-        handler: quest_hook::libil2cpp::Gc<TObject, TSignal>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
-    where
-        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<TObject, TSignal>),
-                        quest_hook::libil2cpp::Gc<TObject, TSignal>,
-                        1usize,
-                    >("ToMethod")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToMethod", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handler))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToMethod_Gc3<TObject>(
-        &mut self,
-        handlerGetter: quest_hook::libil2cpp::Gc<
-            TObject,
-            quest_hook::libil2cpp::Gc<crate::System::Action>,
+        handler: quest_hook::libil2cpp::Gc<crate::System::Action_2<TObject, TSignal>>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
+    >
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -194,10 +163,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            TObject,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
+                            crate::System::Action_2<TObject, TSignal>,
                         >),
-                        quest_hook::libil2cpp::Gc<TObject, TSignal>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+                        >,
                         1usize,
                     >("ToMethod")
                     .unwrap_or_else(|e| {
@@ -208,18 +178,24 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handlerGetter))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (handler))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ToMethod_Gc4<TObject>(
+    pub fn ToMethod_Func_2_3<TObject>(
         &mut self,
         handlerGetter: quest_hook::libil2cpp::Gc<
-            TObject,
-            quest_hook::libil2cpp::Gc<TSignal>,
+            crate::System::Func_2<
+                TObject,
+                quest_hook::libil2cpp::Gc<crate::System::Action>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TObject, TSignal>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+        >,
+    >
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -232,10 +208,14 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            TObject,
-                            quest_hook::libil2cpp::Gc<TSignal>,
+                            crate::System::Func_2<
+                                TObject,
+                                quest_hook::libil2cpp::Gc<crate::System::Action>,
+                            >,
                         >),
-                        quest_hook::libil2cpp::Gc<TObject, TSignal>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+                        >,
                         1usize,
                     >("ToMethod")
                     .unwrap_or_else(|e| {
@@ -246,9 +226,57 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TObject, TSignal> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handlerGetter))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (handlerGetter))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToMethod_Func_2_4<TObject>(
+        &mut self,
+        handlerGetter: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                TObject,
+                quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+        >,
+    >
+    where
+        TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<
+                                TObject,
+                                quest_hook::libil2cpp::Gc<crate::System::Action_1<TSignal>>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+                        >,
+                        1usize,
+                    >("ToMethod")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToMethod", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::BindSignalFromBinder_2<TObject, TSignal>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (handlerGetter))? };
         Ok(__cordl_ret.into())
     }
     pub fn __zenCreate(

@@ -14,7 +14,9 @@ pub struct HydraulicCarJumpEffect {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _lastEventTime: f32,
-    pub _eventValuesHashSet: quest_hook::libil2cpp::Gc<i32>,
+    pub _eventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,

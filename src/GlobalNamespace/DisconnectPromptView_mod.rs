@@ -8,7 +8,7 @@ pub struct DisconnectPromptView {
     pub _promptGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _cancelButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub didViewFinishEvent: quest_hook::libil2cpp::Gc<bool>,
+    pub didViewFinishEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
 }
 #[cfg(feature = "cordl_class_DisconnectPromptView")]
@@ -215,14 +215,14 @@ impl crate::GlobalNamespace::DisconnectPromptView {
     }
     pub fn add_didViewFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_didViewFinishEvent")
@@ -241,14 +241,14 @@ impl crate::GlobalNamespace::DisconnectPromptView {
     }
     pub fn remove_didViewFinishEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<bool>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_didViewFinishEvent")

@@ -24,8 +24,10 @@ pub struct TextureIntSwitchEventEffect {
     >,
     pub _texturePropertyId: i32,
     pub _valueToTextureMap: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_TextureIntSwitchEventEffect")]

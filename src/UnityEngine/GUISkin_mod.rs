@@ -50,8 +50,10 @@ pub struct GUISkin {
     >,
     pub m_Settings: quest_hook::libil2cpp::Gc<crate::UnityEngine::GUISettings>,
     pub m_Styles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GUIStyle>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+GUISkin")]

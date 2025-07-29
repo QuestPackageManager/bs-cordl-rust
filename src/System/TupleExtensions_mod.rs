@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::System::TupleExtensions {
 #[cfg(feature = "System+TupleExtensions")]
 impl crate::System::TupleExtensions {
     pub fn Deconstruct<T1, T2>(
-        value: quest_hook::libil2cpp::Gc<T1, T2>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
         item1: quest_hook::libil2cpp::ByRefMut<T1>,
         item2: quest_hook::libil2cpp::ByRefMut<T2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -55,7 +55,7 @@ impl crate::System::TupleExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T1, T2>,
+                            quest_hook::libil2cpp::Gc<crate::System::Tuple_2<T1, T2>>,
                             quest_hook::libil2cpp::ByRefMut<T1>,
                             quest_hook::libil2cpp::ByRefMut<T2>,
                         ),

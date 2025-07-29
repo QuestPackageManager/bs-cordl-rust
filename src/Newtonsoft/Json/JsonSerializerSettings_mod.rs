@@ -64,7 +64,9 @@ pub struct JsonSerializerSettings {
         crate::Newtonsoft::Json::MetadataPropertyHandling,
     >,
     pub _Converters_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+        crate::System::Collections::Generic::IList_1<
+            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+        >,
     >,
     pub _ContractResolver_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::Newtonsoft::Json::Serialization::IContractResolver,
@@ -73,8 +75,10 @@ pub struct JsonSerializerSettings {
         crate::System::Collections::IEqualityComparer,
     >,
     pub _ReferenceResolverProvider_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+        crate::System::Func_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+            >,
         >,
     >,
     pub _TraceWriter_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -84,7 +88,11 @@ pub struct JsonSerializerSettings {
         crate::Newtonsoft::Json::Serialization::ISerializationBinder,
     >,
     pub _Error_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::ErrorEventArgs>,
+        crate::System::EventHandler_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+JsonSerializerSettings")]
@@ -329,7 +337,9 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -339,8 +349,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonConverter,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonConverter,
+                                >,
                             >,
                         >,
                         0usize,
@@ -354,7 +366,9 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -547,8 +561,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     > {
@@ -559,8 +575,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                            crate::System::EventHandler_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                                >,
                             >,
                         >,
                         0usize,
@@ -574,8 +592,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -869,8 +889,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                >,
             >,
         >,
     > {
@@ -881,8 +903,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                                >,
                             >,
                         >,
                         0usize,
@@ -896,8 +920,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1207,7 +1233,9 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
     pub fn set_Converters(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonConverter>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1216,8 +1244,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonConverter,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonConverter,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1425,8 +1455,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
     pub fn set_Error(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+            crate::System::EventHandler_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1436,8 +1468,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                            crate::System::EventHandler_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::ErrorEventArgs,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1749,8 +1783,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
     pub fn set_ReferenceResolverProvider(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1760,8 +1796,10 @@ impl crate::Newtonsoft::Json::JsonSerializerSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::Serialization::IReferenceResolver,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -6,7 +6,9 @@ pub struct AnimationOutputWeightProcessor {
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_MotionXPlayable: crate::UnityEngine::Animations::AnimationMotionXToDeltaPlayable,
     pub m_Mixers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::Timeline::AnimationOutputWeightProcessor_WeightInfo,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Timeline+AnimationOutputWeightProcessor")]

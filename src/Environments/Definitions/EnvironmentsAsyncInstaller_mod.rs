@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentsAsyncInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >,
     pub _environmentInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Environments+Definitions+EnvironmentsAsyncInstaller")]
@@ -31,7 +33,7 @@ for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
 }
 #[cfg(feature = "Environments+Definitions+EnvironmentsAsyncInstaller")]
 impl std::ops::Deref for crate::Environments::Definitions::EnvironmentsAsyncInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -76,7 +78,11 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
         crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                 quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                    crate::System::Collections::Generic::IList_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentInfoSO,
+                        >,
+                    >,
                 >,
             >,
         >,
@@ -90,8 +96,10 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
                         crate::System::Nullable_1<
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::EnvironmentInfoSO,
+                                    crate::System::Collections::Generic::IList_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::GlobalNamespace::EnvironmentInfoSO,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -109,7 +117,11 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
                 quest_hook::libil2cpp::Gc<
-                    quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+                    crate::System::Collections::Generic::IList_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentInfoSO,
+                        >,
+                    >,
                 >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
@@ -118,7 +130,9 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         environmentInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+            >,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -131,8 +145,10 @@ impl crate::Environments::Definitions::EnvironmentsAsyncInstaller {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::EnvironmentInfoSO,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::EnvironmentInfoSO,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

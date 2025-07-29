@@ -16,8 +16,10 @@ pub struct InputManager {
         >,
     >,
     pub m_DevicesById: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+        >,
     >,
     pub m_AvailableDeviceCount: i32,
     pub m_AvailableDevices: quest_hook::libil2cpp::Gc<
@@ -36,14 +38,18 @@ pub struct InputManager {
     pub m_StateBuffers: crate::UnityEngine::InputSystem::LowLevel::InputStateBuffers,
     pub m_DeviceChangeListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::InputDeviceChange,
+            >,
         >,
     >,
     pub m_DeviceStateChangeListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     >,
     pub m_DeviceFindLayoutCallbacks: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
@@ -58,14 +64,18 @@ pub struct InputManager {
     >,
     pub m_LayoutChangeListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            >,
         >,
     >,
     pub m_EventListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     >,
     pub m_BeforeUpdateListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
@@ -1003,7 +1013,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn GetUnsupportedDevices(
         &mut self,
         descriptions: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1012,7 +1024,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
+                            >,
                         >),
                         i32,
                         1usize,
@@ -1354,7 +1368,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
         basedOn: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1364,8 +1380,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         1usize,
@@ -1379,7 +1397,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (basedOn))? };
         Ok(__cordl_ret.into())
     }
@@ -1891,8 +1911,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn RegisterControlLayoutBuilder(
         &mut self,
         method: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                >,
             >,
         >,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1905,8 +1927,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                                crate::System::Func_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -3101,8 +3125,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn add_onDeviceChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::InputDeviceChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3111,10 +3137,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::InputDeviceChange,
                             >,
-                            crate::UnityEngine::InputSystem::InputDeviceChange,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3165,8 +3193,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn add_onDeviceStateChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3175,10 +3205,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                             >,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3199,8 +3231,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn add_onEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3209,9 +3243,11 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3263,8 +3299,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn add_onLayoutChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3273,10 +3311,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::UnityEngine::InputSystem::InputControlLayoutChange,
                             >,
-                            crate::UnityEngine::InputSystem::InputControlLayoutChange,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3690,8 +3730,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn remove_onDeviceChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::InputDeviceChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::InputDeviceChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3700,10 +3742,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::InputDeviceChange,
                             >,
-                            crate::UnityEngine::InputSystem::InputDeviceChange,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3754,8 +3798,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn remove_onDeviceStateChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3764,10 +3810,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                             >,
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -3788,8 +3836,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn remove_onEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            crate::System::Action_2<
+                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3798,9 +3848,11 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputDevice,
+                            crate::System::Action_2<
+                                crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::InputSystem::InputDevice,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -3852,8 +3904,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn remove_onLayoutChange(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::UnityEngine::InputSystem::InputControlLayoutChange,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3862,10 +3916,12 @@ impl crate::UnityEngine::InputSystem::InputManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::UnityEngine::InputSystem::InputControlLayoutChange,
                             >,
-                            crate::UnityEngine::InputSystem::InputControlLayoutChange,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

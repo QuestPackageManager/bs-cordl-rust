@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderChainCommand {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,
@@ -44,7 +44,7 @@ for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+RenderChainCommand")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::RenderChainCommand {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::UIR::LinkedPoolItem_1<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
         >,

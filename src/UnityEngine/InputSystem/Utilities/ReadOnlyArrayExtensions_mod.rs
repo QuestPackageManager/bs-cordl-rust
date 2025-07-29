@@ -113,7 +113,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
     }
     pub fn HaveEqualReferences<TValue>(
         array1: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<TValue>,
-        array2: quest_hook::libil2cpp::Gc<TValue>,
+        array2: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<TValue>,
+        >,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -129,7 +131,9 @@ impl crate::UnityEngine::InputSystem::Utilities::ReadOnlyArrayExtensions {
                             crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
                                 TValue,
                             >,
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IReadOnlyList_1<TValue>,
+                            >,
                             i32,
                         ),
                         bool,

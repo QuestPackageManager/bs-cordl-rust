@@ -2585,7 +2585,9 @@ for crate::UnityEngine::UI::ScrollRect_MovementType {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScrollRect_ScrollRectEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        crate::UnityEngine::Vector2,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -2609,7 +2611,7 @@ for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
 }
 #[cfg(feature = "UnityEngine+UI+ScrollRect+ScrollRectEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::ScrollRect_ScrollRectEvent {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<crate::UnityEngine::Vector2>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

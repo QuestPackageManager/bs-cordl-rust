@@ -80,7 +80,9 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
             crate::UnityEngine::EventSystems::PointerEventData,
         >,
         resultAppendList: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::EventSystems::RaycastResult,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -93,7 +95,9 @@ impl crate::UnityEngine::UIElements::PanelRaycaster {
                                 crate::UnityEngine::EventSystems::PointerEventData,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::EventSystems::RaycastResult,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::EventSystems::RaycastResult,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

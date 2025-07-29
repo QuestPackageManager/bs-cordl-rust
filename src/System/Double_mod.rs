@@ -1084,6 +1084,18 @@ impl AsMut<crate::System::IComparable> for crate::System::Double {
     }
 }
 #[cfg(feature = "System+Double")]
+impl AsRef<crate::System::IComparable_1<f64>> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IComparable_1<f64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Double")]
+impl AsMut<crate::System::IComparable_1<f64>> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<f64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Double")]
 impl AsRef<crate::System::IConvertible> for crate::System::Double {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -1092,6 +1104,18 @@ impl AsRef<crate::System::IConvertible> for crate::System::Double {
 #[cfg(feature = "System+Double")]
 impl AsMut<crate::System::IConvertible> for crate::System::Double {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Double")]
+impl AsRef<crate::System::IEquatable_1<f64>> for crate::System::Double {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<f64> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Double")]
+impl AsMut<crate::System::IEquatable_1<f64>> for crate::System::Double {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<f64> {
         todo!()
     }
 }
@@ -1116,30 +1140,6 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::Double {
 #[cfg(feature = "System+Double")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::Double {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Double")]
-impl AsRef<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f64> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Double")]
-impl AsMut<quest_hook::libil2cpp::Gc<f64>> for crate::System::Double {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f64> {
         todo!()
     }
 }

@@ -4,7 +4,9 @@
 pub struct GameVersionProvider {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _versionTask: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+        crate::System::Threading::Tasks::Task_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+        >,
     >,
     pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
 }
@@ -113,7 +115,9 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -123,8 +127,10 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::Init::GameVersion,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::Init::GameVersion,
+                                >,
                             >,
                         >,
                         0usize,
@@ -138,7 +144,9 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -146,7 +154,9 @@ impl crate::BeatSaber::Init::GameVersionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -156,8 +166,10 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::Init::GameVersion,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::Init::GameVersion,
+                                >,
                             >,
                         >,
                         0usize,
@@ -171,7 +183,9 @@ impl crate::BeatSaber::Init::GameVersionProvider {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::GameVersion>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

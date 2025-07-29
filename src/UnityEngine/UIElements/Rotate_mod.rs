@@ -427,20 +427,20 @@ impl crate::UnityEngine::UIElements::Rotate {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Rotate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate>>
 for crate::UnityEngine::UIElements::Rotate {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Rotate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate>>
 for crate::UnityEngine::UIElements::Rotate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Rotate> {
         todo!()
     }
 }

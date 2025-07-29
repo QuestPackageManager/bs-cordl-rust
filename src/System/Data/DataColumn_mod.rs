@@ -27,7 +27,9 @@ pub struct DataColumn {
     pub _implementsIXMLSerializable: bool,
     pub _defaultValueIsNull: bool,
     pub _dependentColumns: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Data::DataColumn>,
+        >,
     >,
     pub _extendedProperties: quest_hook::libil2cpp::Gc<
         crate::System::Data::PropertyCollection,

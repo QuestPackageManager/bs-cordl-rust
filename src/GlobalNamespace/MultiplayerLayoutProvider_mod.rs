@@ -6,8 +6,7 @@ pub struct MultiplayerLayoutProvider {
     pub _layout_k__BackingField: crate::GlobalNamespace::MultiplayerPlayerLayout,
     pub _activePlayerSpotsCount_k__BackingField: i32,
     pub playersLayoutWasCalculatedEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MultiplayerPlayerLayout,
-        i32,
+        crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerLayoutProvider")]
@@ -102,8 +101,7 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
     pub fn add_playersLayoutWasCalculatedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerPlayerLayout,
-            i32,
+            crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -112,8 +110,10 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerPlayerLayout,
-                            i32,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::MultiplayerPlayerLayout,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -176,8 +176,7 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
     pub fn remove_playersLayoutWasCalculatedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerPlayerLayout,
-            i32,
+            crate::System::Action_2<crate::GlobalNamespace::MultiplayerPlayerLayout, i32>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -186,8 +185,10 @@ impl crate::GlobalNamespace::MultiplayerLayoutProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::MultiplayerPlayerLayout,
-                            i32,
+                            crate::System::Action_2<
+                                crate::GlobalNamespace::MultiplayerPlayerLayout,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

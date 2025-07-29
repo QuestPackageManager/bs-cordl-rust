@@ -490,38 +490,48 @@ impl crate::GlobalNamespace::OVRSemanticLabels {
     }
 }
 #[cfg(feature = "OVRSemanticLabels")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels>>
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    >,
+> for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    >,
+> for crate::GlobalNamespace::OVRSemanticLabels {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRSemanticLabels,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRSemanticLabels")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels>>
 for crate::GlobalNamespace::OVRSemanticLabels {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels> {
         todo!()
     }
 }
 #[cfg(feature = "OVRSemanticLabels")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels>>
 for crate::GlobalNamespace::OVRSemanticLabels {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRSemanticLabels")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels>>
-for crate::GlobalNamespace::OVRSemanticLabels {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRSemanticLabels")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels>>
-for crate::GlobalNamespace::OVRSemanticLabels {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSemanticLabels> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRSemanticLabels> {
         todo!()
     }
 }

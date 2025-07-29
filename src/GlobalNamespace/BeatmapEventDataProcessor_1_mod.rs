@@ -74,7 +74,9 @@ impl<
     pub fn ProcessBeforeDeleteData(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -87,8 +89,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -109,7 +113,9 @@ impl<
     }
     pub fn ProcessBeforeDeleteEventDataCommon(
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -122,8 +128,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -145,7 +153,9 @@ impl<
     pub fn ProcessBeforeDeleteEventDataInternal(
         &mut self,
         nodeToDelete: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -158,8 +168,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -181,7 +193,9 @@ impl<
     pub fn ProcessInsertedData(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -194,8 +208,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -216,7 +232,9 @@ impl<
     }
     pub fn ProcessInsertedEventDataCommon(
         insertedNode: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -229,8 +247,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -252,7 +272,9 @@ impl<
     pub fn ProcessInsertedEventDataInternal(
         &mut self,
         insertedNode: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::LinkedListNode_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -265,8 +287,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataItem,
+                            crate::System::Collections::Generic::LinkedListNode_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapDataItem,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -323,13 +347,13 @@ for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::ISortedListItemProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     >,
 > for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::GlobalNamespace::ISortedListItemProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -339,13 +363,13 @@ impl<
 impl<
     T: quest_hook::libil2cpp::Type,
 > AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::GlobalNamespace::ISortedListItemProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     >,
 > for crate::GlobalNamespace::BeatmapEventDataProcessor_1<T> {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::GlobalNamespace::ISortedListItemProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
     > {
         unsafe { std::mem::transmute(self) }

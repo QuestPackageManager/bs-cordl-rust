@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DetachFromPanelEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::PanelChangedEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DetachFromPanelEvent>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::DetachFromPanelEvent {
 }
 #[cfg(feature = "UnityEngine+UIElements+DetachFromPanelEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DetachFromPanelEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::PanelChangedEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DetachFromPanelEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

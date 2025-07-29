@@ -7,8 +7,10 @@ pub struct CircleSlider {
     pub _cursorRadius: f32,
     pub _normalizedValue: f32,
     pub normalizedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
-        f32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
+            f32,
+        >,
     >,
     pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _handleGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -532,8 +534,10 @@ impl crate::HMUI::CircleSlider {
     pub fn add_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
-            f32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -542,8 +546,10 @@ impl crate::HMUI::CircleSlider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
-                            f32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
+                                f32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -608,8 +614,10 @@ impl crate::HMUI::CircleSlider {
     pub fn remove_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
-            f32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
+                f32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -618,8 +626,10 @@ impl crate::HMUI::CircleSlider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
-                            f32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::CircleSlider>,
+                                f32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

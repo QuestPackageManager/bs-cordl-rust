@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReferenceSprite {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceSprite {
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceSprite")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReferenceSprite {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

@@ -15,26 +15,32 @@ pub struct ServicePointScheduler {
         crate::System::Net::ServicePointScheduler_ConnectionGroup,
     >,
     pub groups: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::ServicePointScheduler_ConnectionGroup,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::ServicePointScheduler_ConnectionGroup,
+            >,
         >,
     >,
     pub operations: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_2<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::ServicePointScheduler_ConnectionGroup,
+        crate::System::Collections::Generic::LinkedList_1<
+            crate::System::ValueTuple_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::ServicePointScheduler_ConnectionGroup,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
         >,
     >,
     pub idleConnections: quest_hook::libil2cpp::Gc<
-        crate::System::ValueTuple_3<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::ServicePointScheduler_ConnectionGroup,
+        crate::System::Collections::Generic::LinkedList_1<
+            crate::System::ValueTuple_3<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::ServicePointScheduler_ConnectionGroup,
+                >,
+                quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
             >,
-            quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         >,
     >,
     pub currentConnections: i32,
@@ -503,7 +509,9 @@ impl crate::System::Net::ServicePointScheduler {
     pub fn WaitAsync(
         workerTask: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
         millisecondTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -515,7 +523,9 @@ impl crate::System::Net::ServicePointScheduler {
                             >,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         2usize,
                     >("WaitAsync")
                     .unwrap_or_else(|e| {
@@ -526,7 +536,9 @@ impl crate::System::Net::ServicePointScheduler {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked((), (workerTask, millisecondTimeout))?
         };
         Ok(__cordl_ret.into())
@@ -676,7 +688,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointSched
 #[derive(Debug)]
 pub struct ServicePointScheduler_AsyncManualResetEvent {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_tcs: quest_hook::libil2cpp::Gc<bool>,
+    pub m_tcs: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
+    >,
 }
 #[cfg(feature = "cordl_class_System+Net+ServicePointScheduler+AsyncManualResetEvent")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -767,14 +781,18 @@ impl crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
     pub fn WaitAsync(
         &mut self,
         millisecondTimeout: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         1usize,
                     >("WaitAsync")
                     .unwrap_or_else(|e| {
@@ -785,9 +803,9 @@ impl crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (millisecondTimeout))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (millisecondTimeout))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -836,10 +854,14 @@ pub struct ServicePointScheduler_ConnectionGroup {
     >,
     pub _cordl_ID: i32,
     pub connections: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebConnection>,
+        >,
     >,
     pub queue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        crate::System::Collections::Generic::LinkedList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Net::WebOperation>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Net+ServicePointScheduler+ConnectionGroup")]

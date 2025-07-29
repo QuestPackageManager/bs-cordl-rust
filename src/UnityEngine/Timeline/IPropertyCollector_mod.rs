@@ -95,11 +95,13 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddFromClips_GameObject_Gc1(
+    pub fn AddFromClips_GameObject_IEnumerable_1_1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
         clips: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -110,7 +112,9 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -129,10 +133,12 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddFromClips_Gc0(
+    pub fn AddFromClips_IEnumerable_1_0(
         &mut self,
         clips: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -141,7 +147,9 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

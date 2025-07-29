@@ -18,8 +18,12 @@ pub struct HydraulicCarSuspensionEffect {
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub _contractEventValuesHashSet: quest_hook::libil2cpp::Gc<i32>,
-    pub _expandEventValuesHashSet: quest_hook::libil2cpp::Gc<i32>,
+    pub _contractEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub _expandEventValuesHashSet: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub _contractBeatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,

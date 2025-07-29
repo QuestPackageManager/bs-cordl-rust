@@ -75,7 +75,9 @@ impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
     }
     pub fn FindNextSameColorTypeNote(
         beatmapDataItems: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+            >,
         >,
         startIndex: i32,
         colorType: crate::GlobalNamespace::ColorType,
@@ -89,8 +91,10 @@ impl crate::GlobalNamespace::BeatmapDataAddTestSlidersTransform {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapDataItem,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapDataItem,
+                                    >,
                                 >,
                             >,
                             i32,

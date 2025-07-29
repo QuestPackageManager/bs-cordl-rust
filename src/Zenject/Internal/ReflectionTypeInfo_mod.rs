@@ -6,21 +6,27 @@ pub struct ReflectionTypeInfo {
     pub Type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub BaseType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub InjectProperties: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            >,
         >,
     >,
     pub InjectFields: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            >,
         >,
     >,
     pub InjectConstructor: quest_hook::libil2cpp::Gc<
         crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
     >,
     pub InjectMethods: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            >,
         >,
     >,
 }
@@ -76,18 +82,24 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
             crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
         >,
         injectMethods: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                >,
             >,
         >,
         injectFields: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                >,
             >,
         >,
         injectProperties: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -115,18 +127,24 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
             crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
         >,
         injectMethods: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                >,
             >,
         >,
         injectFields: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                >,
             >,
         >,
         injectProperties: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -142,18 +160,24 @@ impl crate::Zenject::Internal::ReflectionTypeInfo {
                                 crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -203,8 +227,10 @@ pub struct ReflectionTypeInfo_InjectConstructorInfo {
         crate::System::Reflection::ConstructorInfo,
     >,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            >,
         >,
     >,
 }
@@ -250,8 +276,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
             crate::System::Reflection::ConstructorInfo,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -267,8 +295,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
             crate::System::Reflection::ConstructorInfo,
         >,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -282,8 +312,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
                                 crate::System::Reflection::ConstructorInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -418,8 +450,10 @@ pub struct ReflectionTypeInfo_InjectMethodInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MethodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
     pub Parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            >,
         >,
     >,
 }
@@ -462,8 +496,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
     pub fn New(
         methodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -477,8 +513,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
         &mut self,
         methodInfo: quest_hook::libil2cpp::Gc<crate::System::Reflection::MethodInfo>,
         parameters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -492,8 +530,10 @@ impl crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
                                 crate::System::Reflection::MethodInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
+                                    >,
                                 >,
                             >,
                         ),

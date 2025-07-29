@@ -13,8 +13,10 @@ pub struct VRController {
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
     pub anchorUpdateEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-        crate::UnityEngine::Pose,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::UnityEngine::Pose,
+        >,
     >,
     pub _lastTrackedPosition: crate::UnityEngine::Vector3,
     pub _lastTrackedRotation: crate::UnityEngine::Quaternion,
@@ -421,8 +423,10 @@ impl crate::GlobalNamespace::VRController {
     pub fn add_anchorUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-            crate::UnityEngine::Pose,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+                crate::UnityEngine::Pose,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -431,10 +435,12 @@ impl crate::GlobalNamespace::VRController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::VRController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::VRController,
+                                >,
+                                crate::UnityEngine::Pose,
                             >,
-                            crate::UnityEngine::Pose,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -675,8 +681,10 @@ impl crate::GlobalNamespace::VRController {
     pub fn remove_anchorUpdateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
-            crate::UnityEngine::Pose,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+                crate::UnityEngine::Pose,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -685,10 +693,12 @@ impl crate::GlobalNamespace::VRController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::VRController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::VRController,
+                                >,
+                                crate::UnityEngine::Pose,
                             >,
-                            crate::UnityEngine::Pose,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -80,40 +80,6 @@ impl<
     T2: quest_hook::libil2cpp::Type,
     T3: quest_hook::libil2cpp::Type,
 > crate::ModestTree::Util::ValuePair_3<T1, T2, T3> {
-    pub fn Equals_Gc1(
-        &mut self,
-        that: quest_hook::libil2cpp::Gc<T1, T2, T3>,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<T1, T2, T3>),
-                        bool,
-                        1usize,
-                    >("Equals")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (that))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -145,6 +111,42 @@ impl<
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_ValuePair_3_1(
+        &mut self,
+        that: quest_hook::libil2cpp::Gc<crate::ModestTree::Util::ValuePair_3<T1, T2, T3>>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        T3: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::ModestTree::Util::ValuePair_3<T1, T2, T3>,
+                        >),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (that))?
         };
         Ok(__cordl_ret.into())
     }

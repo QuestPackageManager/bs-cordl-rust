@@ -6,8 +6,10 @@ pub struct BaseCompositeField_3<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TValueType>,
-    pub m_Fields: quest_hook::libil2cpp::Gc<TField>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1<TValueType>,
+    pub m_Fields: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<TField>,
+    >,
     pub m_ShouldUpdateDisplay: bool,
     pub m_ForceUpdateDisplay: bool,
     pub m_PropertyIndex: i32,
@@ -70,7 +72,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
     TField,
     TFieldValue,
 > {
-    type Target = quest_hook::libil2cpp::Gc<TValueType>;
+    type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -418,8 +420,14 @@ pub struct BaseCompositeField_3_FieldDescription<
 > {
     pub name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ussName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub read: quest_hook::libil2cpp::Gc<TValueType, TFieldValue>,
-    pub write: quest_hook::libil2cpp::Gc<TValueType, TField, TFieldValue>,
+    pub read: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TFieldValue>>,
+    pub write: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
+            TValueType,
+            TField,
+            TFieldValue,
+        >,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TField: std::marker::PhantomData<TField>,
     __cordl_phantom_TFieldValue: std::marker::PhantomData<TFieldValue>,
@@ -617,8 +625,14 @@ impl<
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ussName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        read: quest_hook::libil2cpp::Gc<TValueType, TFieldValue>,
-        write: quest_hook::libil2cpp::Gc<TValueType, TField, TFieldValue>,
+        read: quest_hook::libil2cpp::Gc<crate::System::Func_2<TValueType, TFieldValue>>,
+        write: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
+                TValueType,
+                TField,
+                TFieldValue,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -640,8 +654,16 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<TValueType, TFieldValue>,
-                            quest_hook::libil2cpp::Gc<TValueType, TField, TFieldValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TValueType, TFieldValue>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
+                                    TValueType,
+                                    TField,
+                                    TFieldValue,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,

@@ -7,24 +7,34 @@ pub struct OVRGLTFLoader {
     pub m_glbStream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
     pub m_Nodes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub m_InputAnimationNodes: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        >,
     >,
     pub m_AnimationLookup: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    quest_hook::libil2cpp::Gc<
+                        crate::GlobalNamespace::OVRGLTFAnimatinonNode,
+                    >,
+                >,
             >,
         >,
     >,
     pub m_morphTargetHandlers: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler,
+            >,
         >,
     >,
     pub m_Shader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
@@ -32,9 +42,11 @@ pub struct OVRGLTFLoader {
     pub m_TextureQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub m_TextureMipmapBias: f32,
     pub textureUriHandler: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        crate::System::Func_3<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRGLTFLoader")]

@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedUpdateVector3SmoothValue {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    __cordl_parent: crate::GlobalNamespace::FixedUpdateSmoothValue_1<
+        crate::UnityEngine::Vector3,
+    >,
 }
 #[cfg(feature = "cordl_class_FixedUpdateVector3SmoothValue")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +28,9 @@ for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
 }
 #[cfg(feature = "FixedUpdateVector3SmoothValue")]
 impl std::ops::Deref for crate::GlobalNamespace::FixedUpdateVector3SmoothValue {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>;
+    type Target = crate::GlobalNamespace::FixedUpdateSmoothValue_1<
+        crate::UnityEngine::Vector3,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

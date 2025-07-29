@@ -363,11 +363,11 @@ impl crate::UnityEngine::UIElements::StyleTransformOrigin {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTransformOrigin")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTransformOrigin>,
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTransformOrigin>,
 > for crate::UnityEngine::UIElements::StyleTransformOrigin {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleTransformOrigin,
     > {
         todo!()
@@ -375,31 +375,39 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTransformOrigin")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleTransformOrigin>,
+    crate::System::IEquatable_1<crate::UnityEngine::UIElements::StyleTransformOrigin>,
 > for crate::UnityEngine::UIElements::StyleTransformOrigin {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::UnityEngine::UIElements::StyleTransformOrigin,
     > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTransformOrigin")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformOrigin>>
-for crate::UnityEngine::UIElements::StyleTransformOrigin {
+impl AsRef<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TransformOrigin,
+    >,
+> for crate::UnityEngine::UIElements::StyleTransformOrigin {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformOrigin> {
+    ) -> &crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TransformOrigin,
+    > {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleTransformOrigin")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TransformOrigin>>
-for crate::UnityEngine::UIElements::StyleTransformOrigin {
+impl AsMut<
+    crate::UnityEngine::UIElements::IStyleValue_1<
+        crate::UnityEngine::UIElements::TransformOrigin,
+    >,
+> for crate::UnityEngine::UIElements::StyleTransformOrigin {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::UnityEngine::UIElements::IStyleValue_1<
         crate::UnityEngine::UIElements::TransformOrigin,
     > {
         todo!()

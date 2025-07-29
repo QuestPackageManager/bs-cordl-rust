@@ -6,8 +6,10 @@
 pub struct SpecialEventKeywordFiltersData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keywords: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            >,
         >,
     >,
 }
@@ -52,8 +54,10 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData
 impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersData {
     pub fn New(
         keywords: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -66,8 +70,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
     pub fn _ctor(
         &mut self,
         keywords: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -77,8 +83,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -101,8 +109,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                >,
             >,
         >,
     > {
@@ -113,8 +123,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                                >,
                             >,
                         >,
                         0usize,
@@ -128,8 +140,10 @@ impl crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventKeywordFiltersDat
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatmapSaveDataVersion2_6_0AndEarlier::SpecialEventsForKeyword,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

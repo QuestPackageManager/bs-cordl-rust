@@ -41,7 +41,11 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::ArrayBuilderExtens
 impl crate::System::Linq::Expressions::ArrayBuilderExtensions {
     pub fn ToReadOnly<T>(
         builder: crate::System::Collections::Generic::ArrayBuilder_1<T>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        >,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -52,7 +56,11 @@ impl crate::System::Linq::Expressions::ArrayBuilderExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::System::Collections::Generic::ArrayBuilder_1<T>),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                T,
+                            >,
+                        >,
                         1usize,
                     >("ToReadOnly")
                     .unwrap_or_else(|e| {
@@ -63,9 +71,9 @@ impl crate::System::Linq::Expressions::ArrayBuilderExtensions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked((), (builder))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (builder))? };
         Ok(__cordl_ret.into())
     }
 }

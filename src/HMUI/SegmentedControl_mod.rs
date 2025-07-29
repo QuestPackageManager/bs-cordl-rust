@@ -6,34 +6,53 @@ pub struct SegmentedControl {
     pub _separatorPrefab: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub didSelectCellEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
+        >,
     >,
     pub didPressNonInteractableCellEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+            i32,
+        >,
     >,
     pub _numberOfCells: i32,
     pub _cells: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+        >,
     >,
     pub _separators: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
     pub _dataSource: quest_hook::libil2cpp::Gc<
         crate::HMUI::SegmentedControl_IDataSource,
     >,
     pub _selectedCellNumber: i32,
-    pub _callbacks: quest_hook::libil2cpp::Gc<i32, quest_hook::libil2cpp::Gc<i32>>,
+    pub _callbacks: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
+        >,
+    >,
     pub _reusableCellPools: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::Queue_1<
+                    quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+                >,
+            >,
         >,
     >,
     pub _cellToPrefabMap: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+SegmentedControl")]
@@ -245,14 +264,14 @@ impl crate::HMUI::SegmentedControl {
     pub fn SetCallbackForCell(
         &mut self,
         cellNumber: i32,
-        callback: quest_hook::libil2cpp::Gc<i32>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<i32>),
+                        (i32, quest_hook::libil2cpp::Gc<crate::System::Action_1<i32>>),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetCallbackForCell")
@@ -293,8 +312,10 @@ impl crate::HMUI::SegmentedControl {
     pub fn add_didPressNonInteractableCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -303,8 +324,10 @@ impl crate::HMUI::SegmentedControl {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-                            i32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -325,8 +348,10 @@ impl crate::HMUI::SegmentedControl {
     pub fn add_didSelectCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -335,8 +360,10 @@ impl crate::HMUI::SegmentedControl {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-                            i32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -358,7 +385,9 @@ impl crate::HMUI::SegmentedControl {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -368,7 +397,9 @@ impl crate::HMUI::SegmentedControl {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+                            >,
                         >,
                         0usize,
                     >("get_cells")
@@ -381,7 +412,9 @@ impl crate::HMUI::SegmentedControl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControlCell>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -434,8 +467,10 @@ impl crate::HMUI::SegmentedControl {
     pub fn remove_didPressNonInteractableCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -444,8 +479,10 @@ impl crate::HMUI::SegmentedControl {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-                            i32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -466,8 +503,10 @@ impl crate::HMUI::SegmentedControl {
     pub fn remove_didSelectCellEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -476,8 +515,10 @@ impl crate::HMUI::SegmentedControl {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
-                            i32,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::SegmentedControl>,
+                                i32,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

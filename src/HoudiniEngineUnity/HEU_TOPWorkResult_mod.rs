@@ -6,7 +6,9 @@ pub struct HEU_TOPWorkResult {
     pub _workItemIndex: i32,
     pub _workItemID: i32,
     pub _generatedGOs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_TOPWorkResult")]

@@ -476,20 +476,20 @@ for crate::GlobalNamespace::Vector4Serializable {
     }
 }
 #[cfg(feature = "Vector4Serializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector4Serializable>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable>>
 for crate::GlobalNamespace::Vector4Serializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector4Serializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable> {
         todo!()
     }
 }
 #[cfg(feature = "Vector4Serializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector4Serializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable>>
 for crate::GlobalNamespace::Vector4Serializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Vector4Serializable> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::Vector4Serializable> {
         todo!()
     }
 }

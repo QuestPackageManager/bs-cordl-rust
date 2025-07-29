@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConcreteBinderGeneric_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<TContract>,
+    __cordl_parent: crate::Zenject::FromBinderGeneric_1<TContract>,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "cordl_class_Zenject+ConcreteBinderGeneric_1")]
@@ -44,7 +44,7 @@ for crate::Zenject::ConcreteBinderGeneric_1<TContract> {
 #[cfg(feature = "Zenject+ConcreteBinderGeneric_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::ConcreteBinderGeneric_1<TContract> {
-    type Target = quest_hook::libil2cpp::Gc<TContract>;
+    type Target = crate::Zenject::FromBinderGeneric_1<TContract>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -77,7 +77,9 @@ impl<
     }
     pub fn ToSelf(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TContract>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderGeneric_1<TContract>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -88,7 +90,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TContract>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FromBinderGeneric_1<TContract>,
+                        >,
                         0usize,
                     >("ToSelf")
                     .unwrap_or_else(|e| {
@@ -99,14 +103,16 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TContract> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FromBinderGeneric_1<TContract>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn To_0<TConcrete>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<TConcrete>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderGeneric_1<TConcrete>>,
+    >
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -119,7 +125,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TConcrete>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::Zenject::FromBinderGeneric_1<TConcrete>,
+                        >,
                         0usize,
                     >("To")
                     .unwrap_or_else(|e| {
@@ -130,51 +138,17 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TConcrete> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn To_Gc2(
-        &mut self,
-        concreteTypes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
-    >
-    where
-        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                        >),
-                        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
-                        1usize,
-                    >("To")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "To",
-                            1usize
-                        )
-                    })
-            });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Zenject::FromBinderNonGeneric,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (concreteTypes))? };
+            crate::Zenject::FromBinderGeneric_1<TConcrete>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn To_Gc3(
+    pub fn To_Action_1_3(
         &mut self,
         generator: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::ConventionSelectTypesBinder>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::ConventionSelectTypesBinder>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -189,8 +163,10 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Zenject::ConventionSelectTypesBinder,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Zenject::ConventionSelectTypesBinder,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
@@ -207,6 +183,46 @@ impl<
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Zenject::FromBinderNonGeneric,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (generator))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn To_IEnumerable_1_2(
+        &mut self,
+        concreteTypes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
+    >
+    where
+        TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<crate::Zenject::FromBinderNonGeneric>,
+                        1usize,
+                    >("To")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "To",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Zenject::FromBinderNonGeneric,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (concreteTypes))? };
         Ok(__cordl_ret.into())
     }
     pub fn To_Il2CppArray1(

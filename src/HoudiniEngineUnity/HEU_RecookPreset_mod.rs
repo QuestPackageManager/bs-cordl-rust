@@ -4,10 +4,14 @@
 pub struct HEU_RecookPreset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _volumeCachePresets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCachePreset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeCachePreset>,
+        >,
     >,
     pub _inputPresets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_InputPreset>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_HoudiniEngineUnity+HEU_RecookPreset")]

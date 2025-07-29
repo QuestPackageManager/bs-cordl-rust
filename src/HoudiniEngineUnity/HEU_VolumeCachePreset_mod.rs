@@ -7,7 +7,9 @@ pub struct HEU_VolumeCachePreset {
     pub _geoName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _uiExpanded: bool,
     pub _volumeLayersPresets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeLayerPreset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_VolumeLayerPreset>,
+        >,
     >,
     pub _terrainDataPath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _tile: i32,

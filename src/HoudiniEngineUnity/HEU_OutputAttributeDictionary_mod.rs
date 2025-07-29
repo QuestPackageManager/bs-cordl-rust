@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_OutputAttributeDictionary {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_OutputAttribute>,
     >,
@@ -29,7 +29,7 @@ for crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributeDictionary")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_OutputAttribute>,
     >;

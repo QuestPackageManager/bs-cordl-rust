@@ -9,8 +9,10 @@ pub struct CancellationTokenSource {
     pub _registeredCallbacksLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<
-                    crate::System::Threading::CancellationCallbackInfo,
+                crate::System::Threading::SparselyPopulatedArray_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Threading::CancellationCallbackInfo,
+                    >,
                 >,
             >,
         >,
@@ -385,7 +387,9 @@ impl crate::System::Threading::CancellationTokenSource {
     pub fn InternalRegister(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         stateForCallback: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         targetSyncContext: quest_hook::libil2cpp::Gc<
@@ -404,8 +408,10 @@ impl crate::System::Threading::CancellationTokenSource {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

@@ -123,7 +123,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -133,8 +135,10 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     .find_method::<
                         (crate::GlobalNamespace::BeatmapLevelDataVersion),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapLevelData,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IBeatmapLevelData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -148,7 +152,9 @@ impl crate::GlobalNamespace::GameplayCoreSceneSetupData {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatmapLevelData>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (beatmapLevelDataVersion))?
         };

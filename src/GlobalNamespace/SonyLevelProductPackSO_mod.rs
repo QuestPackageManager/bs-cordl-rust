@@ -112,8 +112,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                >,
             >,
         >,
     > {
@@ -124,8 +126,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -139,8 +143,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -178,8 +184,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
     pub fn set_levelPackRedirectionData(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -189,8 +197,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

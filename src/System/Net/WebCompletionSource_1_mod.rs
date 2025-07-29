@@ -3,8 +3,16 @@
 #[derive(Debug)]
 pub struct WebCompletionSource_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub completion: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<T>>,
-    pub currentResult: quest_hook::libil2cpp::Gc<T>,
+    pub completion: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::TaskCompletionSource_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::WebCompletionSource_1_Result<T>,
+            >,
+        >,
+    >,
+    pub currentResult: quest_hook::libil2cpp::Gc<
+        crate::System::Net::WebCompletionSource_1_Result<T>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_System+Net+WebCompletionSource_1")]
@@ -238,7 +246,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
     }
     pub fn WaitForCompletion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -249,7 +259,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         0usize,
                     >("WaitForCompletion")
                     .unwrap_or_else(|e| {
@@ -260,9 +272,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -293,7 +305,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
     }
     pub fn get_CurrentResult(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Net::WebCompletionSource_1_Result<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -304,7 +318,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::WebCompletionSource_1_Result<T>,
+                        >,
                         0usize,
                     >("get_CurrentResult")
                     .unwrap_or_else(|e| {
@@ -315,9 +331,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::WebCompletionSource_1_Result<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_Task(

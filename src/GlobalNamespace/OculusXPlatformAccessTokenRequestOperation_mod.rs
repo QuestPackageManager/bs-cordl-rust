@@ -59,7 +59,9 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     pub fn OnCompleteLoadingOculusAccessToken(
         &mut self,
         message: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::Oculus::Platform::Message_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -68,8 +70,10 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::Oculus::Platform::Message_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -117,7 +121,11 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -126,7 +134,9 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
                     .find_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::XPlatformAccessTokenData,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::XPlatformAccessTokenData,
+                            >,
                         >,
                         1usize,
                     >("RequestXPlatformAccessToken")
@@ -139,14 +149,20 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
     pub fn Run(
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::XPlatformAccessTokenData>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -155,7 +171,9 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
                     .find_static_method::<
                         (crate::System::Threading::CancellationToken),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::XPlatformAccessTokenData,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::XPlatformAccessTokenData,
+                            >,
                         >,
                         1usize,
                     >("Run")
@@ -168,7 +186,9 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::XPlatformAccessTokenData,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::XPlatformAccessTokenData,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (cancellationToken))? };
         Ok(__cordl_ret.into())
     }

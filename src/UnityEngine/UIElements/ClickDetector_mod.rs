@@ -4,8 +4,10 @@
 pub struct ClickDetector {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ClickStatus: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ClickDetector_ButtonClickStatus,
+            >,
         >,
     >,
 }
@@ -77,7 +79,9 @@ impl crate::UnityEngine::UIElements::ClickDetector {
     pub fn Cleanup(
         &mut self,
         elements: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -86,8 +90,10 @@ impl crate::UnityEngine::UIElements::ClickDetector {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

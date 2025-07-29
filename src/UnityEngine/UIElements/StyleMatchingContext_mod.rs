@@ -4,7 +4,9 @@
 pub struct StyleMatchingContext {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StyleSheetStack: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::StyleSheet>,
+        >,
     >,
     pub variableContext: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::StyleVariableContext,
@@ -13,8 +15,10 @@ pub struct StyleMatchingContext {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub processResult: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+        >,
     >,
     pub ancestorFilter: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::AncestorFilter,
@@ -115,8 +119,10 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
     }
     pub fn New(
         processResult: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -155,8 +161,10 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
     pub fn _ctor(
         &mut self,
         processResult: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -165,10 +173,12 @@ impl crate::UnityEngine::UIElements::StyleMatchingContext {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::VisualElement,
+                                >,
+                                crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
                             >,
-                            crate::UnityEngine::UIElements::StyleSheets::MatchResultInfo,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

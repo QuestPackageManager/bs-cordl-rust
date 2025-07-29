@@ -4,7 +4,9 @@
 pub struct InlineStyleAccess {
     __cordl_parent: crate::UnityEngine::UIElements::StyleValueCollection,
     pub m_ValuesManaged: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::StyleSheets::StyleValueManaged,
+        >,
     >,
     pub _ve_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,

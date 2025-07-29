@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TouchControl {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >,
     pub _press_k__BackingField: quest_hook::libil2cpp::Gc<
@@ -67,7 +67,7 @@ for crate::UnityEngine::InputSystem::Controls::TouchControl {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchControl {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

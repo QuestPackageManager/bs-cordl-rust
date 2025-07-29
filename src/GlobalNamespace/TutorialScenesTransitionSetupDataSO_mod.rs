@@ -4,17 +4,23 @@
 pub struct TutorialScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
     pub _tutorialSceneInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
+        >,
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+            >,
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
-        crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
     >,
     pub _playerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSpecificSettings,
@@ -150,10 +156,12 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
             >,
-            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -162,10 +170,12 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                                >,
+                                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
                             >,
-                            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -215,10 +225,12 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
             >,
-            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -227,10 +239,12 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                                >,
+                                crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
                             >,
-                            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

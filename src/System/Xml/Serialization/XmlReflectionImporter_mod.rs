@@ -224,8 +224,10 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Xml::Serialization::XmlReflectionMember,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Serialization::XmlReflectionMember,
+                >,
             >,
         >,
     > {
@@ -236,8 +238,10 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::Serialization::XmlReflectionMember,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::Serialization::XmlReflectionMember,
+                                >,
                             >,
                         >,
                         1usize,
@@ -251,8 +255,10 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Xml::Serialization::XmlReflectionMember,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Xml::Serialization::XmlReflectionMember,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_type))? };
         Ok(__cordl_ret.into())

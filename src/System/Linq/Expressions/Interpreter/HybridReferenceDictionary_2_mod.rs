@@ -13,7 +13,9 @@ pub struct HybridReferenceDictionary_2<
             crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
         >,
     >,
-    pub _dict: quest_hook::libil2cpp::Gc<TKey, TValue>,
+    pub _dict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<TKey, TValue>,
+    >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -125,7 +127,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -141,9 +145,11 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                TKey,
-                                TValue,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    TKey,
+                                    TValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -157,7 +163,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -165,7 +173,9 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         >,
     >
     where
@@ -181,9 +191,11 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::KeyValuePair_2<
-                                TKey,
-                                TValue,
+                            crate::System::Collections::Generic::IEnumerator_1<
+                                crate::System::Collections::Generic::KeyValuePair_2<
+                                    TKey,
+                                    TValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -197,7 +209,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            crate::System::Collections::Generic::IEnumerator_1<
+                crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

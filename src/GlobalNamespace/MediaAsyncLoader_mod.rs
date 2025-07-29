@@ -43,7 +43,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         streamAudio: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -58,7 +60,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            >,
                         >,
                         2usize,
                     >("LoadAudioClipAsync")
@@ -71,7 +75,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (filePath, streamAudio))? };
         Ok(__cordl_ret.into())
     }
@@ -80,7 +86,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         filePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -90,7 +98,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+                            >,
                         >,
                         1usize,
                     >("LoadAudioClipFromFilePathAsync")
@@ -103,7 +113,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (filePath))? };
         Ok(__cordl_ret.into())
     }
@@ -111,7 +123,11 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -125,7 +141,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+                            >,
                         >,
                         2usize,
                     >("LoadSpriteAsync")
@@ -138,7 +156,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (path, cancellationToken))?
         };
@@ -149,7 +169,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -164,7 +186,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                            >,
                         >,
                         2usize,
                     >("LoadTextureAsync")
@@ -177,7 +201,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+            >,
         > = unsafe {
             cordl_method_info.invoke_unchecked((), (path, cancellationToken))?
         };
@@ -188,7 +214,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -203,8 +231,10 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                             crate::System::Threading::CancellationToken,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         2usize,
@@ -218,7 +248,9 @@ impl crate::GlobalNamespace::MediaAsyncLoader {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (uri, cancellationToken))? };
         Ok(__cordl_ret.into())
     }

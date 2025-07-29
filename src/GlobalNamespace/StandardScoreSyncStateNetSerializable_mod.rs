@@ -175,8 +175,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     }
     pub fn get_pool() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                >,
             >,
         >,
     > {
@@ -187,8 +189,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                            crate::GlobalNamespace::PacketPool_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                                >,
                             >,
                         >,
                         0usize,
@@ -202,8 +206,10 @@ impl crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+            crate::GlobalNamespace::PacketPool_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::StandardScoreSyncStateNetSerializable,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
@@ -354,6 +360,34 @@ for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     }
 }
 #[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsRef<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
+impl AsMut<
+    crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    >,
+> for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ISyncStateSerializable_1<
+        crate::GlobalNamespace::StandardScoreSyncState,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
 impl AsRef<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetSerializable {
@@ -364,24 +398,6 @@ for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
 impl AsMut<crate::LiteNetLib::Utils::INetSerializable>
 for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
     fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetSerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
-for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "StandardScoreSyncStateNetSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState>>
-for crate::GlobalNamespace::StandardScoreSyncStateNetSerializable {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::StandardScoreSyncState> {
         unsafe { std::mem::transmute(self) }
     }
 }

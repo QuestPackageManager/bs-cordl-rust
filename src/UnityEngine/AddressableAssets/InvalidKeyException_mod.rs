@@ -53,7 +53,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
     pub fn GetCSVString(
         &mut self,
         enumerator: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         prefixSingle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         prefixPlural: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -67,8 +69,10 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -128,7 +132,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
     pub fn GetMessageforMergeKeys(
         &mut self,
         keys: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -139,8 +145,10 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -163,7 +171,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -178,7 +188,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -231,7 +243,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -246,7 +260,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -271,9 +287,13 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         typeToKeys: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -287,10 +307,14 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
                                     quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
+                                        crate::System::Collections::Generic::List_1<
+                                            quest_hook::libil2cpp::Gc<
+                                                quest_hook::libil2cpp::Il2CppString,
+                                            >,
+                                        >,
                                     >,
                                 >,
                             >,
@@ -315,7 +339,11 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         &mut self,
         keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -324,7 +352,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            >,
                         >,
                         1usize,
                     >("GetTypesForKey")
@@ -337,7 +367,9 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (keyString))? };
         Ok(__cordl_ret.into())
     }

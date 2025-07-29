@@ -4,7 +4,9 @@
 pub struct HEU_PDGSession {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pdgAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PDGAssetLink>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_PDGAssetLink>,
+        >,
     >,
     pub _pdgMaxProcessEvents: i32,
     pub _pdgQueryEvents: quest_hook::libil2cpp::Gc<

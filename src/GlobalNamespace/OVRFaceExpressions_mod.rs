@@ -7,7 +7,9 @@ pub struct OVRFaceExpressions {
     pub _EyeFollowingBlendshapesValid_k__BackingField: bool,
     pub _currentFaceState: crate::GlobalNamespace::OVRPlugin_FaceState,
     pub _onPermissionGranted: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRFaceExpressions")]
@@ -298,14 +300,20 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     }
     pub fn System_Collections_Generic_IEnumerable_System_Single__GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<f32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<f32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<f32>,
+                        >,
                         0usize,
                     >(
                         "System.Collections.Generic.IEnumerable<System.Single>.GetEnumerator",
@@ -319,9 +327,9 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<f32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn System_Collections_IEnumerable_GetEnumerator(
@@ -659,6 +667,40 @@ for crate::GlobalNamespace::OVRFaceExpressions {
     }
 }
 #[cfg(feature = "OVRFaceExpressions")]
+impl AsRef<crate::System::Collections::Generic::IEnumerable_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRFaceExpressions")]
+impl AsMut<crate::System::Collections::Generic::IEnumerable_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerable_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRFaceExpressions")]
+impl AsRef<crate::System::Collections::Generic::IReadOnlyCollection_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRFaceExpressions")]
+impl AsMut<crate::System::Collections::Generic::IReadOnlyCollection_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IReadOnlyCollection_1<f32> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OVRFaceExpressions")]
 impl AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -669,34 +711,6 @@ for crate::GlobalNamespace::OVRFaceExpressions {
 impl AsMut<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::OVRFaceExpressions {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRFaceExpressions")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRFaceExpressions")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRFaceExpressions")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OVRFaceExpressions")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1095,6 +1109,22 @@ impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     }
 }
 #[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+impl AsRef<crate::System::Collections::Generic::IEnumerator_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
+impl AsMut<crate::System::Collections::Generic::IEnumerator_1<f32>>
+for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator>
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
@@ -1119,20 +1149,6 @@ for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
 impl AsMut<crate::System::IDisposable>
 for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRFaceExpressions+FaceExpressionsEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>>
-for crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
         todo!()
     }
 }

@@ -15,7 +15,9 @@ pub struct ColorSchemeDropdown {
     >,
     pub _cellSize: f32,
     pub _colorSchemes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        >,
     >,
     pub _initialized: bool,
 }
@@ -284,7 +286,9 @@ impl crate::GlobalNamespace::ColorSchemeDropdown {
     pub fn SetData(
         &mut self,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -293,8 +297,10 @@ impl crate::GlobalNamespace::ColorSchemeDropdown {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ColorScheme,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

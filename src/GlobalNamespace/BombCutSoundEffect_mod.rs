@@ -5,7 +5,9 @@ pub struct BombCutSoundEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+        >,
     >,
     pub _saber: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
 }
@@ -154,7 +156,9 @@ impl crate::GlobalNamespace::BombCutSoundEffect {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -163,8 +167,10 @@ impl crate::GlobalNamespace::BombCutSoundEffect {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BombCutSoundEffect,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BombCutSoundEffect,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -186,7 +192,9 @@ impl crate::GlobalNamespace::BombCutSoundEffect {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -195,8 +203,10 @@ impl crate::GlobalNamespace::BombCutSoundEffect {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BombCutSoundEffect,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BombCutSoundEffect,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -229,7 +239,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BombCutSoundE
 #[repr(C)]
 #[derive(Debug)]
 pub struct BombCutSoundEffect_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
     >,
 }
@@ -255,7 +265,7 @@ for crate::GlobalNamespace::BombCutSoundEffect_Pool {
 }
 #[cfg(feature = "BombCutSoundEffect+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::BombCutSoundEffect_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BombCutSoundEffect>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

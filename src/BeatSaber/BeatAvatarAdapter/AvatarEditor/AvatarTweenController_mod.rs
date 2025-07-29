@@ -39,28 +39,40 @@ pub struct AvatarTweenController {
     pub _sharedCoroutineStarter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ICoroutineStarter,
     >,
-    pub _popHeadTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _popLeftHandTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _popRightHandTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _popClothesTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _appearHeadPositionTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub _appearHeadScaleTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub _appearBodyPositionTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub _appearBodyScaleTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub _popHeadTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popLeftHandTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popRightHandTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _popClothesTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _appearHeadPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _appearHeadScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _appearBodyPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _appearBodyScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
     pub _appearRightHandPositionTween: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector3,
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
     pub _appearRightHandScaleTween: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector3,
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
     pub _appearLeftHandPositionTween: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector3,
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
     pub _appearLeftHandScaleTween: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector3,
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
     >,
-    pub _disappearScaleTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub _disappearPositionTween: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    pub _disappearScaleTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
+    pub _disappearPositionTween: quest_hook::libil2cpp::Gc<
+        crate::Tweening::Tween_1<crate::UnityEngine::Vector3>,
+    >,
     pub _avatarLocalPosition: crate::UnityEngine::Vector3,
     pub _avatarLocalScale: crate::UnityEngine::Vector3,
 }
@@ -249,14 +261,16 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
         &mut self,
         partTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         popAmount: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>, f32),
-                        quest_hook::libil2cpp::Gc<f32>,
+                        quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
                         2usize,
                     >("CreatePopTween")
                     .unwrap_or_else(|e| {
@@ -267,7 +281,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::AvatarEditor::AvatarTweenController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>> = unsafe {
             cordl_method_info.invoke_unchecked(self, (partTransform, popAmount))?
         };
         Ok(__cordl_ret.into())

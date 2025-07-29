@@ -39,14 +39,18 @@ impl std::ops::DerefMut for crate::Tayx::Graphy::Utils::G_ExtensionMethods {
 }
 #[cfg(feature = "Tayx+Graphy+Utils+G_ExtensionMethods")]
 impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
-    pub fn SetAllActive_Gc__cordl_bool0(
+    pub fn SetAllActive_List_1__cordl_bool0(
         gameObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
         active: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -56,12 +60,16 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                                >,
                             >,
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            >,
                         >,
                         2usize,
                     >("SetAllActive")
@@ -74,18 +82,24 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (gameObjects, active))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SetAllActive_Gc__cordl_bool1(
+    pub fn SetAllActive_List_1__cordl_bool1(
         images: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         >,
         active: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -95,12 +109,16 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                                >,
                             >,
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                            >,
                         >,
                         2usize,
                     >("SetAllActive")
@@ -113,18 +131,24 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (images, active))? };
         Ok(__cordl_ret.into())
     }
     pub fn SetOneActive(
         images: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         >,
         active: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -134,12 +158,16 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                                >,
                             >,
                             i32,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+                            >,
                         >,
                         2usize,
                     >("SetOneActive")
@@ -152,7 +180,9 @@ impl crate::Tayx::Graphy::Utils::G_ExtensionMethods {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Image>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (images, active))? };
         Ok(__cordl_ret.into())
     }

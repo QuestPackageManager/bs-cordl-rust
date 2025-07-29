@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TaskAwaiter_1<TResult: quest_hook::libil2cpp::Type> {
-    pub m_task: quest_hook::libil2cpp::Gc<TResult>,
+    pub m_task: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<TResult>,
+    >,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "cordl_class_System+Runtime+CompilerServices+TaskAwaiter_1")]
@@ -205,7 +207,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<TResult>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<TResult>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -216,7 +218,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TResult>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<TResult>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

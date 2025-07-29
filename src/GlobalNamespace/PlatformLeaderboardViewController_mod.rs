@@ -30,7 +30,11 @@ pub struct PlatformLeaderboardViewController {
         crate::GlobalNamespace::HMAsyncRequest,
     >,
     pub _scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LeaderboardTableView_ScoreData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LeaderboardTableView_ScoreData,
+            >,
+        >,
     >,
     pub _playerScorePos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,

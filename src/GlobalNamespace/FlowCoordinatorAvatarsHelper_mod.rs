@@ -46,7 +46,9 @@ impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -60,7 +62,9 @@ impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
                                 crate::GlobalNamespace::PlayerDataModel,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         2usize,
                     >("HasUserSelectedAvatarSystemWithCreatedAvatar")
                     .unwrap_or_else(|e| {
@@ -71,7 +75,9 @@ impl crate::GlobalNamespace::FlowCoordinatorAvatarsHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (avatarSystemCollection, playerDataModel))?
         };

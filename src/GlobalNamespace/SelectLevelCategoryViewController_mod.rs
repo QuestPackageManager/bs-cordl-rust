@@ -17,10 +17,12 @@ pub struct SelectLevelCategoryViewController {
         crate::GlobalNamespace::IAnalyticsModel,
     >,
     pub didSelectLevelCategoryEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SelectLevelCategoryViewController,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            >,
+            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
-        crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
     pub _prevSelectedLevelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     pub _levelCategoryInfos: quest_hook::libil2cpp::Gc<
@@ -228,10 +230,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
     pub fn add_didSelectLevelCategoryEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                >,
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
             >,
-            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -240,10 +244,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SelectLevelCategoryViewController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                                >,
+                                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
                             >,
-                            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -291,10 +297,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
     pub fn remove_didSelectLevelCategoryEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SelectLevelCategoryViewController,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                >,
+                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
             >,
-            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -303,10 +311,12 @@ impl crate::GlobalNamespace::SelectLevelCategoryViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SelectLevelCategoryViewController,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SelectLevelCategoryViewController,
+                                >,
+                                crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
                             >,
-                            crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

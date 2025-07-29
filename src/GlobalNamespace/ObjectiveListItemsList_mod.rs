@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectiveListItemsList {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObjectiveListItem>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::ObjectiveListItemsList {
 }
 #[cfg(feature = "ObjectiveListItemsList")]
 impl std::ops::Deref for crate::GlobalNamespace::ObjectiveListItemsList {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::HMUI::UIItemsList_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObjectiveListItem>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

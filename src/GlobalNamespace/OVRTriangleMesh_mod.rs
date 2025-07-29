@@ -597,38 +597,48 @@ impl crate::GlobalNamespace::OVRTriangleMesh {
     }
 }
 #[cfg(feature = "OVRTriangleMesh")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
+impl AsRef<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsMut<
+    crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    >,
+> for crate::GlobalNamespace::OVRTriangleMesh {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::IOVRAnchorComponent_1<
+        crate::GlobalNamespace::OVRTriangleMesh,
+    > {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRTriangleMesh")]
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
 for crate::GlobalNamespace::OVRTriangleMesh {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
         todo!()
     }
 }
 #[cfg(feature = "OVRTriangleMesh")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh>>
 for crate::GlobalNamespace::OVRTriangleMesh {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTriangleMesh")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
-for crate::GlobalNamespace::OVRTriangleMesh {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
-        todo!()
-    }
-}
-#[cfg(feature = "OVRTriangleMesh")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh>>
-for crate::GlobalNamespace::OVRTriangleMesh {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRTriangleMesh> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRTriangleMesh> {
         todo!()
     }
 }

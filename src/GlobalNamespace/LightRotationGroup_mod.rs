@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroup {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationYTransform>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationZTransform>,
@@ -29,7 +29,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::LightRotatio
 }
 #[cfg(feature = "LightRotationGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroup {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::LightTransformGroup_3<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationXTransform>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationYTransform>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightGroupRotationZTransform>,

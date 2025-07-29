@@ -448,16 +448,20 @@ for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>>
 for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+KdTree+Math+TypeMath_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T>>
 for crate::UnityEngine::ProBuilder::KdTree::Math::TypeMath_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

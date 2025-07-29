@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRDisplaySubsystemDescriptor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<Blacklisted>,
+    __cordl_parent: crate::UnityEngine::IntegratedSubsystemDescriptor_1<Blacklisted>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
 }
 #[cfg(feature = "UnityEngine+XR+XRDisplaySubsystemDescriptor")]
 impl std::ops::Deref for crate::UnityEngine::XR::XRDisplaySubsystemDescriptor {
-    type Target = quest_hook::libil2cpp::Gc<Blacklisted>;
+    type Target = crate::UnityEngine::IntegratedSubsystemDescriptor_1<Blacklisted>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

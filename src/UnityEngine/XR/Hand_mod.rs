@@ -201,18 +201,18 @@ impl crate::UnityEngine::XR::Hand {
     }
 }
 #[cfg(feature = "UnityEngine+XR+Hand")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
 for crate::UnityEngine::XR::Hand {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+Hand")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Hand>>
 for crate::UnityEngine::XR::Hand {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Hand> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Hand> {
         todo!()
     }
 }

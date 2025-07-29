@@ -5,10 +5,12 @@ pub struct MultiColumnController {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub columnSortingChanged: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub headerContextMenuPopulateEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            >,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
     >,
     pub m_View: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::BaseVerticalCollectionView,
@@ -286,8 +288,10 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::SortColumnDescription,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::SortColumnDescription,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -784,8 +788,10 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
             crate::UnityEngine::UIElements::SortColumnDescriptions,
         >,
         sortedColumns: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::SortColumnDescription,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::SortColumnDescription,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -802,8 +808,10 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
                                 crate::UnityEngine::UIElements::SortColumnDescriptions,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::SortColumnDescription,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::SortColumnDescription,
+                                    >,
                                 >,
                             >,
                         ),
@@ -853,10 +861,12 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
     pub fn add_headerContextMenuPopulateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
             >,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -865,11 +875,13 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Column,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -948,10 +960,12 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
     pub fn remove_headerContextMenuPopulateEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                >,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
             >,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -960,11 +974,13 @@ impl crate::UnityEngine::UIElements::MultiColumnController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::Column,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::ContextualMenuPopulateEvent,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::Column,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

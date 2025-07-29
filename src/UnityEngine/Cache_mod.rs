@@ -373,16 +373,16 @@ impl crate::UnityEngine::Cache {
     }
 }
 #[cfg(feature = "UnityEngine+Cache")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Cache>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Cache>>
 for crate::UnityEngine::Cache {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Cache> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Cache> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Cache")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Cache>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Cache>>
 for crate::UnityEngine::Cache {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Cache> {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Cache> {
         todo!()
     }
 }

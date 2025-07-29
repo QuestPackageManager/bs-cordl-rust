@@ -16,16 +16,22 @@ pub struct PlayerAllOverallStatsData {
         crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     >,
     pub didUpdateSoloFreePlayOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-        crate::GlobalNamespace::BeatmapDifficulty,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
     >,
     pub didUpdatePartyFreePlayOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-        crate::GlobalNamespace::BeatmapDifficulty,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
+            crate::GlobalNamespace::BeatmapDifficulty,
+        >,
     >,
     pub didUpdateCampaignOverallStatsDataEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_PlayerAllOverallStatsData")]
@@ -320,8 +326,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn add_didUpdateCampaignOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionCompletionResults,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -330,11 +340,13 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionCompletionResults,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMissionNode,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionCompletionResults,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IMissionNode,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -356,8 +368,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn add_didUpdatePartyFreePlayOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -366,10 +382,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCompletionResults,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -390,8 +408,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn add_didUpdateSoloFreePlayOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -400,10 +422,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCompletionResults,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -579,8 +603,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn remove_didUpdateCampaignOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionCompletionResults>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MissionCompletionResults,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMissionNode>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -589,11 +617,13 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MissionCompletionResults,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMissionNode,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MissionCompletionResults,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IMissionNode,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -615,8 +645,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn remove_didUpdatePartyFreePlayOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -625,10 +659,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCompletionResults,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -649,8 +685,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
     pub fn remove_didUpdateSoloFreePlayOverallStatsDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            crate::GlobalNamespace::BeatmapDifficulty,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCompletionResults,
+                >,
+                crate::GlobalNamespace::BeatmapDifficulty,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -659,10 +699,12 @@ impl crate::GlobalNamespace::PlayerAllOverallStatsData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCompletionResults,
+                                >,
+                                crate::GlobalNamespace::BeatmapDifficulty,
                             >,
-                            crate::GlobalNamespace::BeatmapDifficulty,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

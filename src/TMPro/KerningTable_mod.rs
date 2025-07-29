@@ -4,7 +4,9 @@
 pub struct KerningTable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub kerningPairs: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::KerningPair>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::KerningPair>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_TMPro+KerningTable")]

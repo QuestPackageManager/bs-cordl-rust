@@ -16,13 +16,17 @@ pub struct CutScoreBuffer {
     pub _initialized: bool,
     pub _isFinished: bool,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ICutScoreBufferDidFinishReceiver,
+            >,
         >,
     >,
     pub _didChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ICutScoreBufferDidChangeReceiver,
+            >,
         >,
     >,
 }

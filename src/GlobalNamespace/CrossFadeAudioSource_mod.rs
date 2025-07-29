@@ -17,8 +17,8 @@ pub struct CrossFadeAudioSource {
     >,
     pub _activeAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _inactiveAudioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
-    pub _volumeDownTween: quest_hook::libil2cpp::Gc<f32>,
-    pub _volumeUpTween: quest_hook::libil2cpp::Gc<f32>,
+    pub _volumeDownTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
+    pub _volumeUpTween: quest_hook::libil2cpp::Gc<crate::Tweening::Tween_1<f32>>,
     pub _activePitchGainEffect: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioPitchGainEffect,
     >,

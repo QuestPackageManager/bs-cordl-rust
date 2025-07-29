@@ -14,7 +14,7 @@ pub struct InputFieldView {
     pub _textLengthLimit: i32,
     pub _caretOffset: f32,
     pub selectionStateDidChangeEvent: quest_hook::libil2cpp::Gc<
-        crate::HMUI::InputFieldView_SelectionState,
+        crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
     >,
     pub _selectionState: crate::HMUI::InputFieldView_SelectionState,
     pub _text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -444,7 +444,9 @@ impl crate::HMUI::InputFieldView {
     }
     pub fn add_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_SelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -452,7 +454,9 @@ impl crate::HMUI::InputFieldView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::HMUI::InputFieldView_SelectionState,
+                            crate::System::Action_1<
+                                crate::HMUI::InputFieldView_SelectionState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -595,7 +599,9 @@ impl crate::HMUI::InputFieldView {
     }
     pub fn remove_selectionStateDidChangeEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView_SelectionState>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::InputFieldView_SelectionState>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -603,7 +609,9 @@ impl crate::HMUI::InputFieldView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::HMUI::InputFieldView_SelectionState,
+                            crate::System::Action_1<
+                                crate::HMUI::InputFieldView_SelectionState,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -689,7 +697,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::InputFieldView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldView_InputFieldChanged {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >,
 }
@@ -715,7 +723,7 @@ for crate::HMUI::InputFieldView_InputFieldChanged {
 }
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
 impl std::ops::Deref for crate::HMUI::InputFieldView_InputFieldChanged {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

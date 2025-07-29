@@ -4,7 +4,9 @@
 pub struct AvatarDataModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didChangeAvatarDataEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+        >,
     >,
     pub _avatarPartsModel: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel,
@@ -13,7 +15,9 @@ pub struct AvatarDataModel {
     pub _avatarData: quest_hook::libil2cpp::Gc<
         crate::BeatSaber::BeatAvatarSDK::AvatarData,
     >,
-    pub _avatarCreatedTask: quest_hook::libil2cpp::Gc<bool>,
+    pub _avatarCreatedTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<bool>,
+    >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarDataModel")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -138,14 +142,18 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn DeleteAsyncInternal(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         0usize,
                     >("DeleteAsyncInternal")
                     .unwrap_or_else(|e| {
@@ -156,9 +164,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -276,7 +284,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
         fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSaveData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -288,8 +300,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                             crate::GlobalNamespace::IFileStorage,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -303,20 +317,28 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSaveData>,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSaveData,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (fileStorage))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         0usize,
                     >("LoadInternalAsync")
                     .unwrap_or_else(|e| {
@@ -327,9 +349,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -366,14 +388,18 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn RequestIsAvatarCreatedAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         0usize,
                     >("RequestIsAvatarCreatedAsync")
                     .unwrap_or_else(|e| {
@@ -384,9 +410,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SaveAsync(
@@ -418,14 +444,18 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     }
     pub fn SaveInternalAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         0usize,
                     >("SaveInternalAsync")
                     .unwrap_or_else(|e| {
@@ -436,9 +466,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -465,7 +495,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     pub fn add_didChangeAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -474,8 +506,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -526,7 +560,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
     pub fn remove_didChangeAvatarDataEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -535,8 +571,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

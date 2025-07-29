@@ -152,14 +152,14 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
     >,
 >
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
     > {
         unsafe { std::mem::transmute(self) }
@@ -169,14 +169,14 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
     feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ElementPropertyPair+EqualityComparer"
 )]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
     >,
 >
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::Collections::Generic::IEqualityComparer_1<
         crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
     > {
         unsafe { std::mem::transmute(self) }
@@ -234,14 +234,18 @@ pub struct StylePropertyAnimationSystem {
         crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize,
     >,
     pub m_AllValues: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+            >,
         >,
     >,
     pub m_PropertyToValues: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
+            >,
         >,
     >,
 }
@@ -463,7 +467,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         &mut self,
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         propertyIds: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -476,7 +482,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -540,7 +548,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::BackgroundPosition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -556,7 +564,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::BackgroundPosition,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -586,7 +594,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::BackgroundRepeat,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -602,7 +610,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::BackgroundRepeat,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -632,7 +640,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::BackgroundSize,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -648,7 +656,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::BackgroundSize,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -678,7 +686,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::Background,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -694,7 +702,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::Background,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -724,7 +732,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::Color,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -740,7 +748,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::Color,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -770,7 +778,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::FontDefinition,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -786,7 +794,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::FontDefinition,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -816,7 +824,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -832,7 +840,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -862,7 +870,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::Length,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -878,7 +886,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::Length,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -908,7 +916,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::Rotate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -924,7 +932,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::Rotate,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -954,7 +962,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::Scale,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -970,7 +978,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::Scale,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -992,7 +1000,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartTransition_T_T_Gc0<T>(
+    pub fn StartTransition_T_T_StylePropertyAnimationSystem_Values_1_0<T>(
         &mut self,
         owner: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         prop: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -1000,8 +1008,10 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: T,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
-        values: quest_hook::libil2cpp::Gc<T>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1021,8 +1031,12 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             T,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+                                    T,
+                                >,
+                            >,
                         ),
                         bool,
                         8usize,
@@ -1061,7 +1075,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::TextShadow,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1077,7 +1091,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::TextShadow,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -1107,7 +1121,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::TransformOrigin,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1123,7 +1137,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::TransformOrigin,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -1153,7 +1167,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: crate::UnityEngine::UIElements::Translate,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1169,7 +1183,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             crate::UnityEngine::UIElements::Translate,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -1199,7 +1213,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: f32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1215,7 +1229,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             f32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -1245,7 +1259,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
         endValue: i32,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1261,7 +1275,7 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
                             i32,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                         ),
                         bool,
                         7usize,
@@ -1338,7 +1352,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     }
     pub fn UpdateTracking<T>(
         &mut self,
-        values: quest_hook::libil2cpp::Gc<T>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -1349,7 +1365,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+                                T,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UpdateTracking")
@@ -1439,8 +1459,10 @@ pub struct StylePropertyAnimationSystem_AnimationDataSet_2<
     pub style: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<TStyleData>>,
     pub count: i32,
     pub indices: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            i32,
+        >,
     >,
     __cordl_phantom_TTimingData: std::marker::PhantomData<TTimingData>,
     __cordl_phantom_TStyleData: std::marker::PhantomData<TStyleData>,
@@ -1699,7 +1721,9 @@ impl<
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         outProperties: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1718,7 +1742,9 @@ impl<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2387,7 +2413,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         outPropertyIds: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2400,7 +2428,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2596,7 +2626,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesBackground {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::Background,
     >,
 }
@@ -2625,7 +2655,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Background>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
+        crate::UnityEngine::UIElements::Background,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2737,7 +2769,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundPosition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundPosition,
     >,
 }
@@ -2768,7 +2800,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundPosition,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -2886,7 +2918,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundRepeat {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     >,
 }
@@ -2917,7 +2949,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -3035,13 +3067,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesBackgroundSize {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::BackgroundSize,
     >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::BackgroundSize,
-        crate::UnityEngine::UIElements::BackgroundSize,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::BackgroundSize,
+            crate::UnityEngine::UIElements::BackgroundSize,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -3071,7 +3105,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::BackgroundSize,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -3303,9 +3337,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BackgroundSize,
-            crate::UnityEngine::UIElements::BackgroundSize,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::BackgroundSize,
+                crate::UnityEngine::UIElements::BackgroundSize,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3315,9 +3351,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::BackgroundSize,
-                            crate::UnityEngine::UIElements::BackgroundSize,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::BackgroundSize,
+                                crate::UnityEngine::UIElements::BackgroundSize,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -3330,9 +3368,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgrou
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::BackgroundSize,
-            crate::UnityEngine::UIElements::BackgroundSize,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::BackgroundSize,
+                crate::UnityEngine::UIElements::BackgroundSize,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3355,11 +3395,11 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesColor {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::Color,
+    >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Color,
-        crate::UnityEngine::Color,
-        bool,
+        crate::System::Func_3<crate::UnityEngine::Color, crate::UnityEngine::Color, bool>,
     >,
 }
 #[cfg(
@@ -3387,7 +3427,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::Color,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3562,9 +3604,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Color,
-            crate::UnityEngine::Color,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::Color,
+                crate::UnityEngine::Color,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3574,9 +3618,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::Color,
+                                crate::UnityEngine::Color,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -3589,9 +3635,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Color,
-            crate::UnityEngine::Color,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::Color,
+                crate::UnityEngine::Color,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3616,8 +3664,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
 pub struct StylePropertyAnimationSystem_ValuesDiscrete_1<
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
-    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<T, T, bool>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        T,
+    >,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<T, T, bool>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -3661,7 +3713,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        T,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3788,7 +3842,9 @@ impl<
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T, T, bool>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -3799,7 +3855,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T, T, bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
                         0usize,
                     >("get_SameFunc")
                     .unwrap_or_else(|e| {
@@ -3810,7 +3866,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T, T, bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -3834,8 +3890,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesFloat {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
-    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<f32, f32, bool>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        f32,
+    >,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<f32, f32, bool>,
+    >,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat"
@@ -3862,7 +3922,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        f32,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4020,14 +4082,16 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<f32, f32, bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<f32, f32, bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<f32, f32, bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<f32, f32, bool>>,
                         0usize,
                     >("get_SameFunc")
                     .unwrap_or_else(|e| {
@@ -4038,9 +4102,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<f32, f32, bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<f32, f32, bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4062,7 +4126,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesFont {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     >,
 }
@@ -4091,7 +4155,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -4205,7 +4269,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesFontDefinition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::FontDefinition,
     >,
 }
@@ -4236,7 +4300,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::FontDefinition,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -4354,8 +4418,12 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesInt {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
-    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<i32, i32, bool>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        i32,
+    >,
+    pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::System::Func_3<i32, i32, bool>,
+    >,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt"
@@ -4382,7 +4450,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        i32,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4540,14 +4610,16 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32, i32, bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<i32, i32, bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<i32, i32, bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<i32, i32, bool>>,
                         0usize,
                     >("get_SameFunc")
                     .unwrap_or_else(|e| {
@@ -4558,9 +4630,9 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32, i32, bool> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_3<i32, i32, bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }
@@ -4582,11 +4654,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesLength {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Length,
+    >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Length,
-        crate::UnityEngine::UIElements::Length,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Length,
+            crate::UnityEngine::UIElements::Length,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -4614,7 +4690,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Length,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4836,9 +4914,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Length,
-            crate::UnityEngine::UIElements::Length,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Length,
+                crate::UnityEngine::UIElements::Length,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4848,9 +4928,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Length,
-                            crate::UnityEngine::UIElements::Length,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::Length,
+                                crate::UnityEngine::UIElements::Length,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -4863,9 +4945,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Length,
-            crate::UnityEngine::UIElements::Length,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Length,
+                crate::UnityEngine::UIElements::Length,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -4888,11 +4972,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesRotate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Rotate,
+    >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Rotate,
-        crate::UnityEngine::UIElements::Rotate,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Rotate,
+            crate::UnityEngine::UIElements::Rotate,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -4920,7 +5008,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Rotate>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Rotate,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5102,9 +5192,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Rotate,
-            crate::UnityEngine::UIElements::Rotate,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Rotate,
+                crate::UnityEngine::UIElements::Rotate,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5114,9 +5206,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Rotate,
-                            crate::UnityEngine::UIElements::Rotate,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::Rotate,
+                                crate::UnityEngine::UIElements::Rotate,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -5129,9 +5223,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Rotate,
-            crate::UnityEngine::UIElements::Rotate,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Rotate,
+                crate::UnityEngine::UIElements::Rotate,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -5154,11 +5250,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesScale {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Scale,
+    >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Scale,
-        crate::UnityEngine::UIElements::Scale,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Scale,
+            crate::UnityEngine::UIElements::Scale,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -5186,7 +5286,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Scale>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Scale,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5368,9 +5470,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Scale,
-            crate::UnityEngine::UIElements::Scale,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Scale,
+                crate::UnityEngine::UIElements::Scale,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5380,9 +5484,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Scale,
-                            crate::UnityEngine::UIElements::Scale,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::Scale,
+                                crate::UnityEngine::UIElements::Scale,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -5395,9 +5501,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Scale,
-            crate::UnityEngine::UIElements::Scale,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Scale,
+                crate::UnityEngine::UIElements::Scale,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -5420,13 +5528,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesTextShadow {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TextShadow,
     >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TextShadow,
-        crate::UnityEngine::UIElements::TextShadow,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::TextShadow,
+            crate::UnityEngine::UIElements::TextShadow,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -5454,7 +5564,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextShadow>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::TextShadow,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5636,9 +5748,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TextShadow,
-            crate::UnityEngine::UIElements::TextShadow,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TextShadow,
+                crate::UnityEngine::UIElements::TextShadow,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5648,9 +5762,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TextShadow,
-                            crate::UnityEngine::UIElements::TextShadow,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::TextShadow,
+                                crate::UnityEngine::UIElements::TextShadow,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -5663,9 +5779,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShad
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TextShadow,
-            crate::UnityEngine::UIElements::TextShadow,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TextShadow,
+                crate::UnityEngine::UIElements::TextShadow,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -5688,13 +5806,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesTransformOrigin {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TransformOrigin,
     >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TransformOrigin,
-        crate::UnityEngine::UIElements::TransformOrigin,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::TransformOrigin,
+            crate::UnityEngine::UIElements::TransformOrigin,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -5724,7 +5844,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TransformOrigin,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -5956,9 +6076,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TransformOrigin,
-            crate::UnityEngine::UIElements::TransformOrigin,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TransformOrigin,
+                crate::UnityEngine::UIElements::TransformOrigin,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -5968,9 +6090,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::TransformOrigin,
-                            crate::UnityEngine::UIElements::TransformOrigin,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::TransformOrigin,
+                                crate::UnityEngine::UIElements::TransformOrigin,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -5983,9 +6107,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransfor
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::TransformOrigin,
-            crate::UnityEngine::UIElements::TransformOrigin,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::TransformOrigin,
+                crate::UnityEngine::UIElements::TransformOrigin,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -6008,11 +6134,15 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
 #[repr(C)]
 #[derive(Debug)]
 pub struct StylePropertyAnimationSystem_ValuesTranslate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>,
+    __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Translate,
+    >,
     pub _SameFunc_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Translate,
-        crate::UnityEngine::UIElements::Translate,
-        bool,
+        crate::System::Func_3<
+            crate::UnityEngine::UIElements::Translate,
+            crate::UnityEngine::UIElements::Translate,
+            bool,
+        >,
     >,
 }
 #[cfg(
@@ -6040,7 +6170,9 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Translate>;
+    type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
+        crate::UnityEngine::UIElements::Translate,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6262,9 +6394,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Translate,
-            crate::UnityEngine::UIElements::Translate,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Translate,
+                crate::UnityEngine::UIElements::Translate,
+                bool,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6274,9 +6408,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Translate,
-                            crate::UnityEngine::UIElements::Translate,
-                            bool,
+                            crate::System::Func_3<
+                                crate::UnityEngine::UIElements::Translate,
+                                crate::UnityEngine::UIElements::Translate,
+                                bool,
+                            >,
                         >,
                         0usize,
                     >("get_SameFunc")
@@ -6289,9 +6425,11 @@ impl crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslat
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Translate,
-            crate::UnityEngine::UIElements::Translate,
-            bool,
+            crate::System::Func_3<
+                crate::UnityEngine::UIElements::Translate,
+                crate::UnityEngine::UIElements::Translate,
+                bool,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -6316,8 +6454,16 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
 pub struct StylePropertyAnimationSystem_Values_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values,
     pub m_CurrentTimeMs: i64,
-    pub m_CurrentFrameEventsState: quest_hook::libil2cpp::Gc<T>,
-    pub m_NextFrameEventsState: quest_hook::libil2cpp::Gc<T>,
+    pub m_CurrentFrameEventsState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+            T,
+        >,
+    >,
+    pub m_NextFrameEventsState: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
+            T,
+        >,
+    >,
     pub running: crate::UnityEngine::UIElements::StylePropertyAnimationSystem_AnimationDataSet_2<
         crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TimingData<
             T,
@@ -6705,7 +6851,9 @@ impl<
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         outPropertyIds: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -6722,7 +6870,9 @@ impl<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -7009,7 +7159,7 @@ impl<
         endValue: T,
         durationMs: i32,
         delayMs: i32,
-        easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
         currentTimeMs: i64,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -7030,7 +7180,7 @@ impl<
                             T,
                             i32,
                             i32,
-                            quest_hook::libil2cpp::Gc<f32, f32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
                             i64,
                         ),
                         bool,
@@ -7208,7 +7358,9 @@ impl<
     }
     pub fn get_SameFunc(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T, T, bool>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -7219,7 +7371,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T, T, bool>,
+                        quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>>,
                         0usize,
                     >("get_SameFunc")
                     .unwrap_or_else(|e| {
@@ -7230,7 +7382,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T, T, bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Func_3<T, T, bool>> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -7561,7 +7713,7 @@ pub struct Values_1_StylePropertyAnimationSystem_TimingData<
 > {
     pub startTimeMs: i64,
     pub durationMs: i32,
-    pub easingCurve: quest_hook::libil2cpp::Gc<f32, f32>,
+    pub easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
     pub easedProgress: f32,
     pub reversingShorteningFactor: f32,
     pub isStarted: bool,
@@ -7707,13 +7859,19 @@ pub struct Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
 > {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub elementPropertyStateDelta: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_TransitionState,
+        >,
     >,
     pub elementPropertyQueuedEvents: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ElementPropertyPair,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::Queue_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+                >,
+            >,
         >,
     >,
     pub panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
@@ -7816,7 +7974,9 @@ impl<
     }
     pub fn GetPooledQueue() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Collections::Generic::Queue_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         >,
     >
     where
@@ -7830,8 +7990,10 @@ impl<
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventBase,
+                            crate::System::Collections::Generic::Queue_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::EventBase,
+                                >,
                             >,
                         >,
                         0usize,
@@ -7845,7 +8007,9 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            crate::System::Collections::Generic::Queue_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }

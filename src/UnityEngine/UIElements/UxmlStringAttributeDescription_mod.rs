@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlStringAttributeDescription {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlStringAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlStringAttributeDescription {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

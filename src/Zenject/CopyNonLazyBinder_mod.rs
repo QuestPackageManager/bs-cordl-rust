@@ -4,7 +4,9 @@
 pub struct CopyNonLazyBinder {
     __cordl_parent: crate::Zenject::NonLazyBinder,
     pub _secondaryBindInfos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::BindInfo>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+CopyNonLazyBinder")]

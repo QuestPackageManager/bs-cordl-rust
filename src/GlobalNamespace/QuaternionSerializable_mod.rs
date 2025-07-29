@@ -565,20 +565,22 @@ for crate::GlobalNamespace::QuaternionSerializable {
     }
 }
 #[cfg(feature = "QuaternionSerializable")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuaternionSerializable>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable>>
 for crate::GlobalNamespace::QuaternionSerializable {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuaternionSerializable> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable> {
         todo!()
     }
 }
 #[cfg(feature = "QuaternionSerializable")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuaternionSerializable>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::QuaternionSerializable>>
 for crate::GlobalNamespace::QuaternionSerializable {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::QuaternionSerializable> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::GlobalNamespace::QuaternionSerializable,
+    > {
         todo!()
     }
 }

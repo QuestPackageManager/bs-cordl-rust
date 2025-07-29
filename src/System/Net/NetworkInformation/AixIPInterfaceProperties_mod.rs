@@ -47,7 +47,9 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::AixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
         mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -108,7 +110,9 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
             crate::System::Net::NetworkInformation::AixNetworkInterface,
         >,
         addresses: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+            >,
         >,
         mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -122,7 +126,9 @@ impl crate::System::Net::NetworkInformation::AixIPInterfaceProperties {
                                 crate::System::Net::NetworkInformation::AixNetworkInterface,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Net::IPAddress>,
+                                >,
                             >,
                             i32,
                         ),

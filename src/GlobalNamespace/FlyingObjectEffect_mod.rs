@@ -20,8 +20,10 @@ pub struct FlyingObjectEffect {
     pub _duration: f32,
     pub _shake: bool,
     pub _didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+        crate::GlobalNamespace::LazyCopyHashSet_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+            >,
         >,
     >,
 }
@@ -173,8 +175,10 @@ impl crate::GlobalNamespace::FlyingObjectEffect {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+                >,
             >,
         >,
     > {
@@ -185,8 +189,10 @@ impl crate::GlobalNamespace::FlyingObjectEffect {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+                            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+                                >,
                             >,
                         >,
                         0usize,
@@ -200,8 +206,10 @@ impl crate::GlobalNamespace::FlyingObjectEffect {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+            crate::GlobalNamespace::ILazyCopyHashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IFlyingObjectEffectDidFinishEvent,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

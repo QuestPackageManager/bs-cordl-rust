@@ -66,12 +66,16 @@ impl crate::BGNet::Core::DefaultTaskUtility {
     }
     pub fn ContinueWith<T1, T2>(
         &mut self,
-        task: quest_hook::libil2cpp::Gc<T1>,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T1>>,
         continuation: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<T1>,
-            quest_hook::libil2cpp::Gc<T2>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T1>>,
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T2>>,
+            >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T2>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T2>>,
+    >
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -84,13 +88,23 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T1>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<T1>,
-                                quest_hook::libil2cpp::Gc<T2>,
+                                crate::System::Threading::Tasks::Task_1<T1>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Threading::Tasks::Task_1<T1>,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Threading::Tasks::Task_1<T2>,
+                                    >,
+                                >,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<T2>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T2>,
+                        >,
                         2usize,
                     >("ContinueWith")
                     .unwrap_or_else(|e| {
@@ -101,9 +115,9 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T2> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (task, continuation))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T2>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (task, continuation))? };
         Ok(__cordl_ret.into())
     }
     pub fn Delay(
@@ -181,10 +195,12 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Run_Gc1(
+    pub fn Run_Func_1_1(
         &mut self,
         func: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+            >,
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -197,8 +213,10 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Threading::Tasks::Task,
+                                crate::System::Func_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Threading::Tasks::Task,
+                                    >,
                                 >,
                             >,
                             crate::System::Threading::CancellationToken,
@@ -221,11 +239,13 @@ impl crate::BGNet::Core::DefaultTaskUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Run_Gc2<T>(
+    pub fn Run_Func_1_2<T>(
         &mut self,
-        func: quest_hook::libil2cpp::Gc<T>,
+        func: quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -236,10 +256,12 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_1<T>>,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >,
                         2usize,
                     >("Run")
                     .unwrap_or_else(|e| {
@@ -250,34 +272,10 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<T>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked(self, (func, cancellationToken))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Wait_Gc1<T>(
-        &mut self,
-        task: quest_hook::libil2cpp::Gc<T>,
-    ) -> quest_hook::libil2cpp::Result<T>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(quest_hook::libil2cpp::Gc<T>), T, 1usize>("Wait")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Wait",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked(self, (task))?
         };
         Ok(__cordl_ret.into())
     }
@@ -305,6 +303,38 @@ impl crate::BGNet::Core::DefaultTaskUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (task))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Wait_Task_1_1<T>(
+        &mut self,
+        task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<T>,
+                        >),
+                        T,
+                        1usize,
+                    >("Wait")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Wait",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe {
             cordl_method_info.invoke_unchecked(self, (task))?
         };
         Ok(__cordl_ret.into())

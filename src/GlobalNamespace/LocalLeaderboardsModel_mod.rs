@@ -4,26 +4,34 @@
 pub struct LocalLeaderboardsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub newScoreWasAddedToLeaderboardEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+        >,
     >,
     pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
     pub _maxNumberOfScoresInLeaderboard: i32,
     pub _lastScorePositions: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            i32,
+        >,
     >,
     pub _lastScoreLeaderboardId: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _leaderboardsData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         >,
     >,
     pub _dailyLeaderboardsData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         >,
     >,
 }
@@ -157,13 +165,17 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
     }
     pub fn AppendLeaderboardScores(
         main: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                >,
             >,
         >,
         tail: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                >,
             >,
         >,
         maxNumberOfScores: i32,
@@ -175,13 +187,17 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                                    >,
                                 >,
                             >,
                             i32,
@@ -409,8 +425,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         >,
     > {
@@ -421,8 +439,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .find_method::<
                         (crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -436,8 +456,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (leaderboardType))? };
         Ok(__cordl_ret.into())
@@ -483,8 +505,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         leaderboardType: crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                >,
             >,
         >,
     > {
@@ -500,8 +524,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                             crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                                >,
                             >,
                         >,
                         2usize,
@@ -515,8 +541,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+                >,
             >,
         > = unsafe {
             cordl_method_info.invoke_unchecked(self, (leaderboardId, leaderboardType))?
@@ -601,45 +629,7 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
-            >,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
-                            >,
-                        >,
-                        1usize,
-                    >("LoadLeaderboardsData")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadLeaderboardsData", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (filename))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadLeaderboardsDataAsync(
-        &mut self,
-        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
                 quest_hook::libil2cpp::Gc<
                     crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
                 >,
@@ -653,9 +643,61 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
                                 quest_hook::libil2cpp::Gc<
                                     crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                >,
+                            >,
+                        >,
+                        1usize,
+                    >("LoadLeaderboardsData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadLeaderboardsData", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (filename))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadLeaderboardsDataAsync(
+        &mut self,
+        filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                        >,
+                    >,
+                >,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                        >,
+                                    >,
                                 >,
                             >,
                         >,
@@ -670,9 +712,13 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
                 quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                        >,
+                    >,
                 >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (filename))? };
@@ -684,8 +730,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         >,
     > {
@@ -698,8 +746,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                             crate::GlobalNamespace::LocalLeaderboardsModel_SavedLeaderboardsData,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                >,
                             >,
                         >,
                         1usize,
@@ -713,16 +763,20 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (savedLeaderboardsData))? };
         Ok(__cordl_ret.into())
     }
     pub fn MigrateQuestLeaderboards(
         leaderboardDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         >,
         maxNumberOfScores: i32,
@@ -734,8 +788,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                    >,
                                 >,
                             >,
                             i32,
@@ -800,8 +856,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
         &mut self,
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         leaderboardsData: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -817,8 +875,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1009,8 +1069,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
     pub fn add_newScoreWasAddedToLeaderboardEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1019,10 +1081,12 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
                             >,
-                            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1043,8 +1107,10 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
     pub fn remove_newScoreWasAddedToLeaderboardEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1053,10 +1119,12 @@ impl crate::GlobalNamespace::LocalLeaderboardsModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
                             >,
-                            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1092,8 +1160,10 @@ pub struct LocalLeaderboardsModel_LeaderboardData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _leaderboardId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _scores: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_ScoreData,
+            >,
         >,
     >,
 }
@@ -1270,8 +1340,10 @@ for crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardType {
 pub struct LocalLeaderboardsModel_SavedLeaderboardsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _leaderboardsData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::LocalLeaderboardsModel_LeaderboardData,
+            >,
         >,
     >,
 }

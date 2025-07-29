@@ -815,13 +815,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameplayModif
 }
 #[cfg(feature = "GameplayModifiers")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >,
 > for crate::GlobalNamespace::GameplayModifiers {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -829,13 +829,13 @@ impl AsRef<
 }
 #[cfg(feature = "GameplayModifiers")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >,
 > for crate::GlobalNamespace::GameplayModifiers {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     > {
         unsafe { std::mem::transmute(self) }

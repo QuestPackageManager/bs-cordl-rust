@@ -99,8 +99,10 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     }
     pub fn CreateAxesTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -110,10 +112,12 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                crate::MS::Internal::Xml::XPath::Axis_AxisType,
                             >,
-                            crate::MS::Internal::Xml::XPath::Axis_AxisType,
                         >,
                         0usize,
                     >("CreateAxesTable")
@@ -126,16 +130,20 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                crate::MS::Internal::Xml::XPath::Axis_AxisType,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateFunctionTable() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                >,
             >,
         >,
     > {
@@ -146,11 +154,13 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                                >,
                             >,
                         >,
                         0usize,
@@ -164,9 +174,11 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<
+                    crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

@@ -42,8 +42,7 @@ pub struct PanelSettings {
     >,
     pub _ScreenDPI_k__BackingField: f32,
     pub m_AssignedScreenToPanel: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::Vector2,
-        crate::UnityEngine::Vector2,
+        crate::System::Func_2<crate::UnityEngine::Vector2, crate::UnityEngine::Vector2>,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PanelSettings")]
@@ -396,8 +395,10 @@ impl crate::UnityEngine::UIElements::PanelSettings {
     pub fn SetScreenToPanelSpaceFunction(
         &mut self,
         screentoPanelSpaceFunction: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::Vector2,
-            crate::UnityEngine::Vector2,
+            crate::System::Func_2<
+                crate::UnityEngine::Vector2,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -406,8 +407,10 @@ impl crate::UnityEngine::UIElements::PanelSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
+                            crate::System::Func_2<
+                                crate::UnityEngine::Vector2,
+                                crate::UnityEngine::Vector2,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

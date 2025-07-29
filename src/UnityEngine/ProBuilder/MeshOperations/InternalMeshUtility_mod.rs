@@ -44,7 +44,9 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
     pub fn AverageNormalWithIndexes(
         shared: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::SharedVertex>,
         all: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        norm: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        norm: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -58,7 +60,11 @@ impl crate::UnityEngine::ProBuilder::MeshOperations::InternalMeshUtility {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<i32>,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
                         ),
                         crate::UnityEngine::Vector3,
                         3usize,

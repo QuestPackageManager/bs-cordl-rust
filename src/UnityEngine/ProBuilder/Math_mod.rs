@@ -194,9 +194,13 @@ impl crate::UnityEngine::ProBuilder::Math {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc0(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_0(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector2>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -204,8 +208,14 @@ impl crate::UnityEngine::ProBuilder::Math {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector2,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector2,
                         2usize,
@@ -223,9 +233,13 @@ impl crate::UnityEngine::ProBuilder::Math {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc1(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_1(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -233,8 +247,14 @@ impl crate::UnityEngine::ProBuilder::Math {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector3,
                         2usize,
@@ -252,9 +272,13 @@ impl crate::UnityEngine::ProBuilder::Math {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Average_Gc_Gc2(
-        array: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn Average_IList_1_IList_1_2(
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector4>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -262,8 +286,14 @@ impl crate::UnityEngine::ProBuilder::Math {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector4,
                         2usize,
@@ -553,7 +583,9 @@ impl crate::UnityEngine::ProBuilder::Math {
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -566,7 +598,9 @@ impl crate::UnityEngine::ProBuilder::Math {
                                     crate::UnityEngine::Vector3,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Bounds,
                         2usize,
@@ -902,11 +936,13 @@ impl crate::UnityEngine::ProBuilder::Math {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (v))? };
         Ok(__cordl_ret.into())
     }
-    pub fn LargestVector2_Gc1(
+    pub fn LargestVector2_IList_1_1(
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -919,7 +955,9 @@ impl crate::UnityEngine::ProBuilder::Math {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector2,
                         2usize,
@@ -1078,11 +1116,15 @@ impl crate::UnityEngine::ProBuilder::Math {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Normal_Gc_Gc1(
+    pub fn Normal_IList_1_IList_1_1(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1091,11 +1133,15 @@ impl crate::UnityEngine::ProBuilder::Math {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector3,
                         2usize,
@@ -1810,11 +1856,13 @@ impl crate::UnityEngine::ProBuilder::Math {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SmallestVector2_Gc1(
+    pub fn SmallestVector2_IList_1_1(
         v: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1827,7 +1875,9 @@ impl crate::UnityEngine::ProBuilder::Math {
                                     crate::UnityEngine::Vector2,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector2,
                         2usize,

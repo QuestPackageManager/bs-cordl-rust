@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlFloatAttributeDescription {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<f32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlFloatAttributeDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlFloatAttributeDescription {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::UIElements::TypedUxmlAttributeDescription_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

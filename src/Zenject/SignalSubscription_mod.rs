@@ -5,7 +5,9 @@ pub struct SignalSubscription {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pool: quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription_Pool>,
     pub _callback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _declaration: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     pub _signalId: crate::Zenject::BindingId,
@@ -155,7 +157,9 @@ impl crate::Zenject::SignalSubscription {
     pub fn OnSpawned(
         &mut self,
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         declaration: quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,8 +170,10 @@ impl crate::Zenject::SignalSubscription {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
@@ -348,18 +354,22 @@ impl AsMut<crate::System::IDisposable> for crate::Zenject::SignalSubscription {
 }
 #[cfg(feature = "Zenject+SignalSubscription")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::Zenject::IPoolable_2<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
 > for crate::Zenject::SignalSubscription {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::Zenject::IPoolable_2<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     > {
@@ -368,18 +378,22 @@ impl AsRef<
 }
 #[cfg(feature = "Zenject+SignalSubscription")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::Zenject::IPoolable_2<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
 > for crate::Zenject::SignalSubscription {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::Zenject::IPoolable_2<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     > {
@@ -390,9 +404,11 @@ impl AsMut<
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalSubscription_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PoolableMemoryPool_3<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
@@ -419,9 +435,11 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalSubscription_P
 }
 #[cfg(feature = "Zenject+SignalSubscription+Pool")]
 impl std::ops::Deref for crate::Zenject::SignalSubscription_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PoolableMemoryPool_3<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,

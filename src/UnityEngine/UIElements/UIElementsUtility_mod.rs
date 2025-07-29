@@ -200,7 +200,9 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
     }
     pub fn GetAllPanels(
         panels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Panel>,
+            >,
         >,
         contextType: crate::UnityEngine::UIElements::ContextType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -211,8 +213,10 @@ impl crate::UnityEngine::UIElements::UIElementsUtility {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::Panel,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UIElements::Panel,
+                                    >,
                                 >,
                             >,
                             crate::UnityEngine::UIElements::ContextType,

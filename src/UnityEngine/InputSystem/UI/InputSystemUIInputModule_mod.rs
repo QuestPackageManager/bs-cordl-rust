@@ -46,31 +46,49 @@ pub struct InputSystemUIInputModule {
     pub m_ActionsHooked: bool,
     pub m_NeedToPurgeStalePointers: bool,
     pub m_OnPointDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnMoveDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnLeftClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnRightClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnMiddleClickDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnScrollWheelDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnTrackedDevicePositionDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnTrackedDeviceOrientationDelegate: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        crate::System::Action_1<
+            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+        >,
     >,
     pub m_OnControlsChangedDelegate: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub m_CurrentPointerId: i32,
     pub m_CurrentPointerIndex: i32,
@@ -1499,7 +1517,9 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             crate::UnityEngine::InputSystem::InputActionReference,
         >,
         callback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
         install: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1513,7 +1533,9 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
                                 crate::UnityEngine::InputSystem::InputActionReference,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                crate::System::Action_1<
+                                    crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                >,
                             >,
                             bool,
                         ),
@@ -1571,7 +1593,9 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         >,
         actionsHooked: bool,
         actionCallback: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            crate::System::Action_1<
+                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1590,7 +1614,9 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                crate::System::Action_1<
+                                    crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

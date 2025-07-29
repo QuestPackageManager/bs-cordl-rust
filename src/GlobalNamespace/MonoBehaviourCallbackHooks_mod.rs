@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoBehaviourCallbackHooks {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MonoBehaviourCallbackHooks>,
     >,
-    pub m_OnUpdateDelegate: quest_hook::libil2cpp::Gc<f32>,
-    pub m_OnLateUpdateDelegate: quest_hook::libil2cpp::Gc<f32>,
+    pub m_OnUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
+    pub m_OnLateUpdateDelegate: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
 }
 #[cfg(feature = "cordl_class_MonoBehaviourCallbackHooks")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
 }
 #[cfg(feature = "MonoBehaviourCallbackHooks")]
 impl std::ops::Deref for crate::GlobalNamespace::MonoBehaviourCallbackHooks {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::ResourceManagement::Util::ComponentSingleton_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MonoBehaviourCallbackHooks>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -144,14 +144,14 @@ impl crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     }
     pub fn add_OnLateUpdateDelegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_OnLateUpdateDelegate")
@@ -170,14 +170,14 @@ impl crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     }
     pub fn add_OnUpdateDelegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_OnUpdateDelegate")
@@ -196,14 +196,14 @@ impl crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     }
     pub fn remove_OnLateUpdateDelegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_OnLateUpdateDelegate")
@@ -222,14 +222,14 @@ impl crate::GlobalNamespace::MonoBehaviourCallbackHooks {
     }
     pub fn remove_OnUpdateDelegate(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<f32>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<f32>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_OnUpdateDelegate")

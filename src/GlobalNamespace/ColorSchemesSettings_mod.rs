@@ -6,11 +6,15 @@ pub struct ColorSchemesSettings {
     pub _colorOverrideType_k__BackingField: crate::GlobalNamespace::ColorSchemesSettings_ColorOverrideType,
     pub didChangeOverrideSettingsEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _colorSchemesList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        >,
     >,
     pub _colorSchemesDict: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+        >,
     >,
     pub _selectedColorSchemeId: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -198,9 +202,11 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc0(
+    pub fn New_IEnumerable_1_0(
         colorSchemes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -209,9 +215,11 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
             .invoke_void(".ctor", (colorSchemes))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IEnumerable_1_1(
         colorSchemeSOs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -265,10 +273,12 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc0(
+    pub fn _ctor_IEnumerable_1_0(
         &mut self,
         colorSchemes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -277,8 +287,10 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ColorScheme,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -297,10 +309,12 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IEnumerable_1_1(
         &mut self,
         colorSchemeSOs: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorSchemeSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -309,8 +323,10 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorSchemeSO,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::ColorSchemeSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

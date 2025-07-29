@@ -110,13 +110,13 @@ for crate::UnityEngine::UIElements::UxmlTypeRestriction {
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     >,
 > for crate::UnityEngine::UIElements::UxmlTypeRestriction {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -124,13 +124,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlTypeRestriction")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     >,
 > for crate::UnityEngine::UIElements::UxmlTypeRestriction {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UxmlTypeRestriction>,
     > {
         unsafe { std::mem::transmute(self) }

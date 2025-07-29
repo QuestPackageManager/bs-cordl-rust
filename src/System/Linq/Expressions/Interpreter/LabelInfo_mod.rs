@@ -9,8 +9,10 @@ pub struct LabelInfo {
     >,
     pub _definitions: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub _references: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
+            >,
         >,
     >,
     pub _acrossBlockJump: bool,
@@ -83,7 +85,7 @@ impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
     pub fn CommonNode<T>(
         first: T,
         second: T,
-        parent: quest_hook::libil2cpp::Gc<T, T>,
+        parent: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -94,7 +96,7 @@ impl crate::System::Linq::Expressions::Interpreter::LabelInfo {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (T, T, quest_hook::libil2cpp::Gc<T, T>),
+                        (T, T, quest_hook::libil2cpp::Gc<crate::System::Func_2<T, T>>),
                         T,
                         3usize,
                     >("CommonNode")

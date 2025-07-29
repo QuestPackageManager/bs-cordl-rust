@@ -13,7 +13,9 @@ pub struct UnmanagedMemoryStream {
     pub _offset: i64,
     pub _access: crate::System::IO::FileAccess,
     pub _isOpen: bool,
-    pub _lastReadTask: quest_hook::libil2cpp::Gc<i32>,
+    pub _lastReadTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
 }
 #[cfg(feature = "cordl_class_System+IO+UnmanagedMemoryStream")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::UnmanagedMemoryStream {
@@ -261,7 +263,9 @@ impl crate::System::IO::UnmanagedMemoryStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -275,7 +279,9 @@ impl crate::System::IO::UnmanagedMemoryStream {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         4usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -286,7 +292,9 @@ impl crate::System::IO::UnmanagedMemoryStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };

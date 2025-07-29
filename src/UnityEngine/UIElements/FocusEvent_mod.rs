@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Focu
 }
 #[cfg(feature = "UnityEngine+UIElements+FocusEvent")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::UIElements::FocusEventBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusEvent>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

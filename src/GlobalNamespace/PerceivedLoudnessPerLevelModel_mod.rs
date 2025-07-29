@@ -4,8 +4,10 @@
 pub struct PerceivedLoudnessPerLevelModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _loudnessLevelPerLevelId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        f32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            f32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_PerceivedLoudnessPerLevelModel")]
@@ -152,7 +154,9 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     }
     pub fn New(
         loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -164,7 +168,9 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     pub fn _ctor(
         &mut self,
         loudnessPerLeveDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PerceivedLoudnessSO>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -173,8 +179,10 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PerceivedLoudnessSO,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::PerceivedLoudnessSO,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

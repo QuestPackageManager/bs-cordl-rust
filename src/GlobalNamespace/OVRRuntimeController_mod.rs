@@ -15,8 +15,10 @@ pub struct OVRRuntimeController {
     pub m_hasInputFocusPrev: bool,
     pub m_controllerConnectedPrev: bool,
     pub m_animationNodes: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OVRGLTFInputNode,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::OVRGLTFInputNode,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRGLTFAnimatinonNode>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OVRRuntimeController")]

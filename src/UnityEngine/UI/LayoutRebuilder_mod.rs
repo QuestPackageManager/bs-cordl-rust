@@ -283,7 +283,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            crate::UnityEngine::Events::UnityAction_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -294,7 +296,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                crate::UnityEngine::Events::UnityAction_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -317,7 +321,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
         &mut self,
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            crate::UnityEngine::Events::UnityAction_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -328,7 +334,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                crate::UnityEngine::Events::UnityAction_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -400,7 +408,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
     }
     pub fn StripDisabledBehavioursFromList(
         components: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -409,7 +419,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -457,7 +469,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
     pub fn ValidController(
         layoutRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         comps: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -468,7 +482,9 @@ impl crate::UnityEngine::UI::LayoutRebuilder {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
+                                >,
                             >,
                         ),
                         bool,

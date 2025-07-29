@@ -37428,20 +37428,20 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
     }
 }
 #[cfg(feature = "OVRPlugin+Sizei")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Sizei>>
+impl AsRef<crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei>>
 for crate::GlobalNamespace::OVRPlugin_Sizei {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Sizei> {
+    ) -> &crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei> {
         todo!()
     }
 }
 #[cfg(feature = "OVRPlugin+Sizei")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Sizei>>
+impl AsMut<crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei>>
 for crate::GlobalNamespace::OVRPlugin_Sizei {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPlugin_Sizei> {
+    ) -> &mut crate::System::IEquatable_1<crate::GlobalNamespace::OVRPlugin_Sizei> {
         todo!()
     }
 }

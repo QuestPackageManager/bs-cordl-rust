@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithLeaderboardDidUpdate {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::Oculus::Platform::Message_1<bool>,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+MessageWithLeaderboardDidUpdate")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::Oculus::Platform::MessageWithLeaderboardDidUpdate {
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLeaderboardDidUpdate")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithLeaderboardDidUpdate {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::Oculus::Platform::Message_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2331,7 +2331,11 @@ impl crate::Newtonsoft::Json::JsonConvert {
     }
     pub fn get_DefaultSettings() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializerSettings>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::JsonSerializerSettings,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2341,8 +2345,10 @@ impl crate::Newtonsoft::Json::JsonConvert {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonSerializerSettings,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonSerializerSettings,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2356,13 +2362,21 @@ impl crate::Newtonsoft::Json::JsonConvert {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializerSettings>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::JsonSerializerSettings,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_DefaultSettings(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::JsonSerializerSettings>,
+            crate::System::Func_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Newtonsoft::Json::JsonSerializerSettings,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2371,8 +2385,10 @@ impl crate::Newtonsoft::Json::JsonConvert {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Newtonsoft::Json::JsonSerializerSettings,
+                            crate::System::Func_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Newtonsoft::Json::JsonSerializerSettings,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

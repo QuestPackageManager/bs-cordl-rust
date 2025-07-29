@@ -8,19 +8,25 @@ pub struct MultiplayerLevelScenesTransitionSetupDataSO {
     >,
     pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub _multiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
+        >,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
     >,
     pub didDisconnectEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            >,
+            crate::GlobalNamespace::DisconnectedReason,
         >,
-        crate::GlobalNamespace::DisconnectedReason,
     >,
     pub _gameMode_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -351,10 +357,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didDisconnectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::DisconnectedReason,
             >,
-            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -363,10 +371,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                crate::GlobalNamespace::DisconnectedReason,
                             >,
-                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -387,10 +397,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -399,11 +411,13 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -579,10 +593,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didDisconnectEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                crate::GlobalNamespace::DisconnectedReason,
             >,
-            crate::GlobalNamespace::DisconnectedReason,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -591,10 +607,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                crate::GlobalNamespace::DisconnectedReason,
                             >,
-                            crate::GlobalNamespace::DisconnectedReason,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -615,10 +633,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
             >,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -627,11 +647,13 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerResultsData,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerResultsData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

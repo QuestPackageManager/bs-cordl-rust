@@ -4,9 +4,11 @@
 pub struct XmlEventCache {
     __cordl_parent: crate::System::Xml::XmlRawWriter,
     pub pages: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Xml::XmlEventCache_XmlEvent,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::System::Xml::XmlEventCache_XmlEvent,
+                >,
             >,
         >,
     >,

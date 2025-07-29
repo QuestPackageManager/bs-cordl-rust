@@ -5,8 +5,10 @@ pub struct TaskExceptionHolder {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_task: quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
     pub m_faultExceptions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        crate::System::Collections::Generic::LowLevelListWithIList_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            >,
         >,
     >,
     pub m_cancellationException: quest_hook::libil2cpp::Gc<
@@ -194,8 +196,10 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         >,
     > {
@@ -206,8 +210,10 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                >,
                             >,
                         >,
                         0usize,
@@ -221,8 +227,10 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

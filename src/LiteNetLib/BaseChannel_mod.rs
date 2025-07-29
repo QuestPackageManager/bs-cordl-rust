@@ -6,7 +6,9 @@ pub struct BaseChannel {
     pub Next: quest_hook::libil2cpp::Gc<crate::LiteNetLib::BaseChannel>,
     pub Peer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPeer>,
     pub OutgoingQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        crate::System::Collections::Generic::Queue_1<
+            quest_hook::libil2cpp::Gc<crate::LiteNetLib::NetPacket>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_LiteNetLib+BaseChannel")]

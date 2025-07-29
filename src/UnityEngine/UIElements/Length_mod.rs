@@ -534,20 +534,20 @@ impl crate::UnityEngine::UIElements::Length {
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Length")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::Length {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Length")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length>>
 for crate::UnityEngine::UIElements::Length {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Length> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::UIElements::Length> {
         todo!()
     }
 }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct WaitUntil {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
-    pub m_Predicate: quest_hook::libil2cpp::Gc<bool>,
+    pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+WaitUntil")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitUntil {
@@ -40,7 +40,7 @@ impl std::ops::DerefMut for crate::UnityEngine::WaitUntil {
 #[cfg(feature = "UnityEngine+WaitUntil")]
 impl crate::UnityEngine::WaitUntil {
     pub fn New(
-        predicate: quest_hook::libil2cpp::Gc<bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -50,14 +50,14 @@ impl crate::UnityEngine::WaitUntil {
     }
     pub fn _ctor(
         &mut self,
-        predicate: quest_hook::libil2cpp::Gc<bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

@@ -61,7 +61,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > crate::System::Linq::IdentityFunction_1<TElement> {
     pub fn get_Instance() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<TElement, TElement>,
+        quest_hook::libil2cpp::Gc<crate::System::Func_2<TElement, TElement>>,
     >
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,7 +73,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<TElement, TElement>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Func_2<TElement, TElement>,
+                        >,
                         0usize,
                     >("get_Instance")
                     .unwrap_or_else(|e| {
@@ -84,9 +86,9 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<TElement, TElement> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<TElement, TElement>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

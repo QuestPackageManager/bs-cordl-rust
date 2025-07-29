@@ -72,8 +72,10 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
     }
     pub fn GetUpdateableCatalogLocationDatas() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                >,
             >,
         >,
     > {
@@ -84,8 +86,10 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                                >,
                             >,
                         >,
                         0usize,
@@ -99,8 +103,10 @@ impl crate::AddressablesInternalBridge::Runtime::Extensions {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::AddressablesInternalBridge::Runtime::CatalogLocationData,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())

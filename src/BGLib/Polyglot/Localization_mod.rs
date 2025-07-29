@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct Localization {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub supportedLanguages: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
+    pub supportedLanguages: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::BGLib::Polyglot::Language>,
+    >,
     pub selectedLanguage: crate::BGLib::Polyglot::Language,
     pub fallbackLanguage: crate::BGLib::Polyglot::Language,
 }
@@ -96,7 +98,9 @@ impl crate::BGLib::Polyglot::Localization {
     }
     pub fn GetKeys() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -106,8 +110,10 @@ impl crate::BGLib::Polyglot::Localization {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -121,7 +127,9 @@ impl crate::BGLib::Polyglot::Localization {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
@@ -382,7 +390,11 @@ impl crate::BGLib::Polyglot::Localization {
     pub fn get_SupportedLanguages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::BGLib::Polyglot::Language,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -390,7 +402,11 @@ impl crate::BGLib::Polyglot::Localization {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                crate::BGLib::Polyglot::Language,
+                            >,
+                        >,
                         0usize,
                     >("get_SupportedLanguages")
                     .unwrap_or_else(|e| {
@@ -401,9 +417,11 @@ impl crate::BGLib::Polyglot::Localization {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::Language> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                crate::BGLib::Polyglot::Language,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_selectedLanguageIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {

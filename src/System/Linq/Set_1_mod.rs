@@ -9,7 +9,9 @@ pub struct Set_1<TElement: quest_hook::libil2cpp::Type> {
     >,
     pub count: i32,
     pub freeList: i32,
-    pub comparer: quest_hook::libil2cpp::Gc<TElement>,
+    pub comparer: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
+    >,
     __cordl_phantom_TElement: std::marker::PhantomData<TElement>,
 }
 #[cfg(feature = "cordl_class_System+Linq+Set_1")]
@@ -141,7 +143,9 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        comparer: quest_hook::libil2cpp::Gc<TElement>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -203,7 +207,9 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
     }
     pub fn _ctor(
         &mut self,
-        comparer: quest_hook::libil2cpp::Gc<TElement>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TElement>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TElement: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -214,7 +220,11 @@ impl<TElement: quest_hook::libil2cpp::Type> crate::System::Linq::Set_1<TElement>
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TElement>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEqualityComparer_1<
+                                TElement,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

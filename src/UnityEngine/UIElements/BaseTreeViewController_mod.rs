@@ -4,16 +4,26 @@
 pub struct BaseTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
     pub m_TreeItems: quest_hook::libil2cpp::Gc<
-        i32,
-        crate::UnityEngine::UIElements::TreeItem,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::TreeItem,
+        >,
     >,
-    pub m_RootIndices: quest_hook::libil2cpp::Gc<i32>,
+    pub m_RootIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub m_ItemWrappers: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        >,
     >,
-    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<i32>,
+    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub m_WrapperInsertionList: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TreeViewItemWrapper,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseTreeViewController")]
@@ -129,11 +139,15 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn CreateWrappers(
         &mut self,
-        treeViewItemIds: quest_hook::libil2cpp::Gc<i32>,
+        treeViewItemIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
         depth: i32,
         wrappers: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::TreeViewItemWrapper,
+                crate::System::Collections::Generic::List_1<
+                    crate::UnityEngine::UIElements::TreeViewItemWrapper,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,11 +157,15 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::TreeViewItemWrapper,
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::UIElements::TreeViewItemWrapper,
+                                    >,
                                 >,
                             >,
                         ),
@@ -245,15 +263,25 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn GetAllItemIds(
         &mut self,
-        rootIds: quest_hook::libil2cpp::Gc<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+        rootIds: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         1usize,
                     >("GetAllItemIds")
                     .unwrap_or_else(|e| {
@@ -264,9 +292,9 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (rootIds))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (rootIds))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChildIndexForId(&mut self, id: i32) -> quest_hook::libil2cpp::Result<i32> {
@@ -291,14 +319,20 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     pub fn GetChildrenIds(
         &mut self,
         id: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         1usize,
                     >("GetChildrenIds")
                     .unwrap_or_else(|e| {
@@ -309,22 +343,28 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (id))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetChildrenIdsByIndex(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         1usize,
                     >("GetChildrenIdsByIndex")
                     .unwrap_or_else(|e| {
@@ -335,9 +375,9 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetIdForIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
@@ -443,14 +483,20 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn GetRootItemIds(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<i32>,
+                        >,
                         0usize,
                     >("GetRootItemIds")
                     .unwrap_or_else(|e| {
@@ -461,9 +507,9 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasChildren(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -728,14 +774,18 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
     }
     pub fn OnToggleValueChanged(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<bool>,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<bool>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::ChangeEvent_1<bool>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnToggleValueChanged")

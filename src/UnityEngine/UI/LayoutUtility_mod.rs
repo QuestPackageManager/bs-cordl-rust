@@ -120,8 +120,10 @@ impl crate::UnityEngine::UI::LayoutUtility {
     pub fn GetLayoutProperty_ByRefMut1(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         property: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
-            f32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
+                f32,
+            >,
         >,
         defaultValue: f32,
         source: quest_hook::libil2cpp::ByRefMut<
@@ -136,10 +138,12 @@ impl crate::UnityEngine::UI::LayoutUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UI::ILayoutElement,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UI::ILayoutElement,
+                                    >,
+                                    f32,
                                 >,
-                                f32,
                             >,
                             f32,
                             quest_hook::libil2cpp::ByRefMut<
@@ -165,11 +169,13 @@ impl crate::UnityEngine::UI::LayoutUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetLayoutProperty_RectTransform_Gc_f32_0(
+    pub fn GetLayoutProperty_RectTransform_Func_2_f32_0(
         rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
         property: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
-            f32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::ILayoutElement>,
+                f32,
+            >,
         >,
         defaultValue: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -181,10 +187,12 @@ impl crate::UnityEngine::UI::LayoutUtility {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UI::ILayoutElement,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::UI::ILayoutElement,
+                                    >,
+                                    f32,
                                 >,
-                                f32,
                             >,
                             f32,
                         ),

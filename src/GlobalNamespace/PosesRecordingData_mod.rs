@@ -9,8 +9,10 @@ pub struct PosesRecordingData {
         >,
     >,
     pub keyframes: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+            >,
         >,
     >,
     pub externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -111,15 +113,17 @@ impl crate::GlobalNamespace::PosesRecordingData {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_Gc_PosesRecordingData_ExternalCameraCalibration1(
+    pub fn New_List_1_PosesRecordingData_ExternalCameraCalibration1(
         objectIds: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+                >,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -174,7 +178,7 @@ impl crate::GlobalNamespace::PosesRecordingData {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc_PosesRecordingData_ExternalCameraCalibration1(
+    pub fn _ctor_List_1_PosesRecordingData_ExternalCameraCalibration1(
         &mut self,
         objectIds: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -182,8 +186,10 @@ impl crate::GlobalNamespace::PosesRecordingData {
             >,
         >,
         keyframes: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+                >,
             >,
         >,
         externalCameraCalibration: quest_hook::libil2cpp::Gc<
@@ -204,8 +210,10 @@ impl crate::GlobalNamespace::PosesRecordingData {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::PosesRecordingData_TransformsKeyframe,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

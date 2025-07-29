@@ -39,9 +39,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SortExtensions {
 #[cfg(feature = "SortExtensions")]
 impl crate::GlobalNamespace::SortExtensions {
     pub fn InsertSorted<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
         item: T,
-        getSortIndex: quest_hook::libil2cpp::Gc<T, i32>,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -53,9 +53,11 @@ impl crate::GlobalNamespace::SortExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                             T,
-                            quest_hook::libil2cpp::Gc<T, i32>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -74,8 +76,8 @@ impl crate::GlobalNamespace::SortExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn Sort<T>(
-        list: quest_hook::libil2cpp::Gc<T>,
-        getSortIndex: quest_hook::libil2cpp::Gc<T, i32>,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        getSortIndex: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -87,8 +89,10 @@ impl crate::GlobalNamespace::SortExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
-                            quest_hook::libil2cpp::Gc<T, i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<T, i32>>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,

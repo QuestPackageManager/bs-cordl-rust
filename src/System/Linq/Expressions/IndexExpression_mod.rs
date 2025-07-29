@@ -4,7 +4,9 @@
 pub struct IndexExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        >,
     >,
     pub _Object_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Expression,
@@ -118,7 +120,9 @@ impl crate::System::Linq::Expressions::IndexExpression {
         >,
         indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -182,7 +186,9 @@ impl crate::System::Linq::Expressions::IndexExpression {
         >,
         indexer: quest_hook::libil2cpp::Gc<crate::System::Reflection::PropertyInfo>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -198,8 +204,10 @@ impl crate::System::Linq::Expressions::IndexExpression {
                                 crate::System::Reflection::PropertyInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Expression,
+                                    >,
                                 >,
                             >,
                         ),

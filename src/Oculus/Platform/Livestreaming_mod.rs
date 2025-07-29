@@ -40,8 +40,10 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Livestreaming {
 impl crate::Oculus::Platform::Livestreaming {
     pub fn SetStatusUpdateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::LivestreamingStatus,
+            crate::Oculus::Platform::Message_1_Callback<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::LivestreamingStatus,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -51,8 +53,10 @@ impl crate::Oculus::Platform::Livestreaming {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::LivestreamingStatus,
+                            crate::Oculus::Platform::Message_1_Callback<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::LivestreamingStatus,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

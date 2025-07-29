@@ -41,8 +41,10 @@ pub struct DtdParser {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub undeclaredNotations: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        quest_hook::libil2cpp::Gc<crate::System::Xml::DtdParser_UndeclaredNotation>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::DtdParser_UndeclaredNotation>,
+        >,
     >,
     pub condSectionEntityIds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<i32>,

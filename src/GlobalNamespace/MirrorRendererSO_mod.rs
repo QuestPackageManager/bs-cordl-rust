@@ -24,8 +24,10 @@ pub struct MirrorRendererSO {
     pub _mirrorCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _antialiasing: i32,
     pub _renderTextures: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
+        >,
     >,
     pub kLeftRect: crate::UnityEngine::Rect,
     pub kRightRect: crate::UnityEngine::Rect,
@@ -690,13 +692,13 @@ impl crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     >,
 > for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     > {
         todo!()
@@ -704,13 +706,13 @@ impl AsRef<
 }
 #[cfg(feature = "MirrorRendererSO+CameraTransformData")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     >,
 > for crate::GlobalNamespace::MirrorRendererSO_CameraTransformData {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         crate::GlobalNamespace::MirrorRendererSO_CameraTransformData,
     > {
         todo!()

@@ -4,7 +4,7 @@
 pub struct SubContainerCreatorByNewPrefabMethod {
     __cordl_parent: crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext,
     pub _installerMethod: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+        crate::System::Action_1<quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>>,
     >,
 }
 #[cfg(feature = "cordl_class_Zenject+SubContainerCreatorByNewPrefabMethod")]
@@ -44,7 +44,9 @@ impl std::ops::DerefMut for crate::Zenject::SubContainerCreatorByNewPrefabMethod
 impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
     pub fn AddInstallers(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -53,7 +55,11 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::GameObjectContext>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -79,7 +85,9 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -99,7 +107,9 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
             crate::Zenject::GameObjectCreationParameters,
         >,
         installerMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -114,7 +124,9 @@ impl crate::Zenject::SubContainerCreatorByNewPrefabMethod {
                                 crate::Zenject::GameObjectCreationParameters,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

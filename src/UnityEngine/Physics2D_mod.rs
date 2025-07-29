@@ -382,45 +382,6 @@ impl crate::UnityEngine::Physics2D {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_ContactFilter2D_Gc_f32_7(
-        origin: crate::UnityEngine::Vector2,
-        direction: crate::UnityEngine::Vector2,
-        contactFilter: crate::UnityEngine::ContactFilter2D,
-        results: quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
-        distance: f32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::Vector2,
-                            crate::UnityEngine::ContactFilter2D,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RaycastHit2D>,
-                            f32,
-                        ),
-                        i32,
-                        5usize,
-                    >("Raycast")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
-                            5usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (origin, direction, contactFilter, results, distance),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn Raycast_ContactFilter2D_Il2CppArray5(
         origin: crate::UnityEngine::Vector2,
         direction: crate::UnityEngine::Vector2,
@@ -481,6 +442,51 @@ impl crate::UnityEngine::Physics2D {
                             crate::UnityEngine::ContactFilter2D,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
+                                    crate::UnityEngine::RaycastHit2D,
+                                >,
+                            >,
+                            f32,
+                        ),
+                        i32,
+                        5usize,
+                    >("Raycast")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
+                            5usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (origin, direction, contactFilter, results, distance),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Raycast_ContactFilter2D_List_1_f32_7(
+        origin: crate::UnityEngine::Vector2,
+        direction: crate::UnityEngine::Vector2,
+        contactFilter: crate::UnityEngine::ContactFilter2D,
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
+        >,
+        distance: f32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::ContactFilter2D,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
                                     crate::UnityEngine::RaycastHit2D,
                                 >,
                             >,

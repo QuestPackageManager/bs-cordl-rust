@@ -10,9 +10,13 @@ pub struct ExpandoClass {
     >,
     pub _hashCode: i32,
     pub _transitions: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+                >,
+            >,
         >,
     >,
 }
@@ -83,7 +87,9 @@ impl crate::System::Dynamic::ExpandoClass {
         hashCode: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -93,7 +99,9 @@ impl crate::System::Dynamic::ExpandoClass {
                     .find_method::<
                         (i32),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+                            >,
                         >,
                         1usize,
                     >("GetTransitionList")
@@ -106,7 +114,9 @@ impl crate::System::Dynamic::ExpandoClass {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::System::WeakReference>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (hashCode))? };
         Ok(__cordl_ret.into())
     }

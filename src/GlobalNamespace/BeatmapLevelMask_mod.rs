@@ -202,9 +202,11 @@ impl crate::GlobalNamespace::BeatmapLevelMask {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc2(
+    pub fn New_HashSet_1_2(
         levelSet: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -298,10 +300,12 @@ impl crate::GlobalNamespace::BeatmapLevelMask {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc2(
+    pub fn _ctor_HashSet_1_2(
         &mut self,
         levelSet: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -310,8 +314,10 @@ impl crate::GlobalNamespace::BeatmapLevelMask {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -382,13 +388,13 @@ for crate::GlobalNamespace::BeatmapLevelMask {
 }
 #[cfg(feature = "BeatmapLevelMask")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelMask>,
     >,
 > for crate::GlobalNamespace::BeatmapLevelMask {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelMask>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -396,13 +402,13 @@ impl AsRef<
 }
 #[cfg(feature = "BeatmapLevelMask")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelMask>,
     >,
 > for crate::GlobalNamespace::BeatmapLevelMask {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelMask>,
     > {
         unsafe { std::mem::transmute(self) }

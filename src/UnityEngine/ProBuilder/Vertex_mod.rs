@@ -114,9 +114,13 @@ impl crate::UnityEngine::ProBuilder::Vertex {
     }
     pub fn Average(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
@@ -127,11 +131,15 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::Vertex,
@@ -294,9 +302,11 @@ impl crate::UnityEngine::ProBuilder::Vertex {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetArrays_Gc_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut0(
+    pub fn GetArrays_IList_1_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut_ByRefMut0(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
         position: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
@@ -329,10 +339,14 @@ impl crate::UnityEngine::ProBuilder::Vertex {
             >,
         >,
         uv3: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            >,
         >,
         uv4: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -342,8 +356,10 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
@@ -389,10 +405,18 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::Vector4,
+                                    >,
+                                >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::Vector4,
+                                    >,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -417,7 +441,9 @@ impl crate::UnityEngine::ProBuilder::Vertex {
     }
     pub fn GetArrays_MeshArrays1(
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
         position: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
@@ -450,10 +476,14 @@ impl crate::UnityEngine::ProBuilder::Vertex {
             >,
         >,
         uv3: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            >,
         >,
         uv4: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+            >,
         >,
         attributes: crate::UnityEngine::ProBuilder::MeshArrays,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -464,8 +494,10 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
@@ -511,10 +543,18 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::Vector4,
+                                    >,
+                                >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::UnityEngine::Vector4,
+                                    >,
+                                >,
                             >,
                             crate::UnityEngine::ProBuilder::MeshArrays,
                         ),
@@ -732,7 +772,9 @@ impl crate::UnityEngine::ProBuilder::Vertex {
     pub fn SetMesh(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
         vertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -743,8 +785,10 @@ impl crate::UnityEngine::ProBuilder::Vertex {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Vertex,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Vertex,
+                                    >,
                                 >,
                             >,
                         ),
@@ -1881,13 +1925,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::ProBuilder::Verte
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vertex")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     >,
 > for crate::UnityEngine::ProBuilder::Vertex {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -1895,13 +1939,13 @@ impl AsRef<
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Vertex")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     >,
 > for crate::UnityEngine::ProBuilder::Vertex {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::System::IEquatable_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Vertex>,
     > {
         unsafe { std::mem::transmute(self) }

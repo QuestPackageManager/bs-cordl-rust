@@ -7,13 +7,17 @@ pub struct TriangulationContext {
         crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationDebugContext,
     >,
     pub Triangles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::DelaunayTriangle,
+            >,
         >,
     >,
     pub Points: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
+            >,
         >,
     >,
     pub _TriangulationMode_k__BackingField: crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationMode,

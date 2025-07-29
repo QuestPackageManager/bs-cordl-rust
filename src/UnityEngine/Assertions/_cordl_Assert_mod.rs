@@ -139,11 +139,13 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AreEqual_T_T_Il2CppString_Gc2<T>(
+    pub fn AreEqual_T_T_Il2CppString_IEqualityComparer_1_2<T>(
         expected: T,
         actual: T,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        comparer: quest_hook::libil2cpp::Gc<T>,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -160,7 +162,9 @@ impl crate::UnityEngine::Assertions::_cordl_Assert {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<T>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,

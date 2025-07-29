@@ -586,7 +586,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -596,7 +598,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+                            >,
                         >,
                         1usize,
                     >("Parse")
@@ -609,7 +613,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (path))? };
         Ok(__cordl_ret.into())
     }
@@ -1694,7 +1700,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1704,8 +1712,10 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         0usize,
@@ -1719,7 +1729,9 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

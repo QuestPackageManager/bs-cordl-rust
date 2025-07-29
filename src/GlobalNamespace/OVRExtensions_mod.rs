@@ -690,7 +690,9 @@ impl crate::GlobalNamespace::OVRExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToNativeArray<T>(
-        enumerable: quest_hook::libil2cpp::Gc<T>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
         allocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeArray_1<T>>
     where
@@ -703,7 +705,9 @@ impl crate::GlobalNamespace::OVRExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
                             crate::Unity::Collections::Allocator,
                         ),
                         crate::Unity::Collections::NativeArray_1<T>,
@@ -723,7 +727,9 @@ impl crate::GlobalNamespace::OVRExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn ToNonAlloc<T>(
-        enumerable: quest_hook::libil2cpp::Gc<T>,
+        enumerable: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVREnumerable_1<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -734,7 +740,9 @@ impl crate::GlobalNamespace::OVRExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >),
                         crate::GlobalNamespace::OVREnumerable_1<T>,
                         1usize,
                     >("ToNonAlloc")

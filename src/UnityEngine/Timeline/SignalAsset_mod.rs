@@ -89,7 +89,9 @@ impl crate::UnityEngine::Timeline::SignalAsset {
     }
     pub fn add_OnEnableCallback(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -98,8 +100,10 @@ impl crate::UnityEngine::Timeline::SignalAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::SignalAsset,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::SignalAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -120,7 +124,9 @@ impl crate::UnityEngine::Timeline::SignalAsset {
     }
     pub fn remove_OnEnableCallback(
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::SignalAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -129,8 +135,10 @@ impl crate::UnityEngine::Timeline::SignalAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::Timeline::SignalAsset,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::Timeline::SignalAsset,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

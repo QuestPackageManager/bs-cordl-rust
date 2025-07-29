@@ -4,8 +4,10 @@
 pub struct GenericDropdownMenu {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Items: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
+            >,
         >,
     >,
     pub m_MenuContainer: quest_hook::libil2cpp::Gc<
@@ -134,12 +136,14 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AddItem_Gc_Il2CppObject1(
+    pub fn AddItem_Action_1_Il2CppObject1(
         &mut self,
         itemName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isChecked: bool,
         action: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -154,8 +158,10 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -1015,7 +1021,9 @@ pub struct GenericDropdownMenu_MenuItem {
     >,
     pub action: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub actionUserData: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]

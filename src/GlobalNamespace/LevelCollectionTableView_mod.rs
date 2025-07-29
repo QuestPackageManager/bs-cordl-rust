@@ -28,15 +28,21 @@ pub struct LevelCollectionTableView {
         crate::GlobalNamespace::BeatmapLevelsPromoModel,
     >,
     pub didSelectLevelEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        >,
     >,
     pub didSelectHeaderEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+        >,
     >,
     pub _isInitialized: bool,
     pub _beatmapLevels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+        >,
     >,
     pub _selectedRow: i32,
     pub _selectedBeatmapLevel: quest_hook::libil2cpp::Gc<
@@ -46,7 +52,9 @@ pub struct LevelCollectionTableView {
     pub _headerText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _showLevelPackHeader: bool,
     pub _favoriteLevelIds: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Collections::Generic::HashSet_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_LevelCollectionTableView")]
@@ -377,7 +385,9 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn RefreshFavorites(
         &mut self,
         favoriteLevelIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -386,8 +396,10 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -512,10 +524,14 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn SetData(
         &mut self,
         beatmapLevels: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
         favoriteLevelIds: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
         beatmapLevelsAreSorted: bool,
         sortBeatmapLevels: bool,
@@ -527,13 +543,17 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapLevel,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapLevel,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                             bool,
@@ -613,7 +633,11 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn add_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionTableView,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -622,8 +646,10 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionTableView,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionTableView,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -645,8 +671,12 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn add_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionTableView,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -655,11 +685,13 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionTableView,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionTableView,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -681,7 +713,11 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn remove_didSelectHeaderEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionTableView,
+                >,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -690,8 +726,10 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionTableView,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionTableView,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -713,8 +751,12 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn remove_didSelectLevelEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCollectionTableView>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::LevelCollectionTableView,
+                >,
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -723,11 +765,13 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCollectionTableView,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::LevelCollectionTableView,
+                                >,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapLevel,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

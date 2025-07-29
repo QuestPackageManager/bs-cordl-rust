@@ -4,13 +4,21 @@
 pub struct TextureRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Textures: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::TextureRegistry_TextureInfo,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::UIElements::TextureRegistry_TextureInfo,
+        >,
     >,
     pub m_TextureToId: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-        crate::UnityEngine::UIElements::TextureId,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+            crate::UnityEngine::UIElements::TextureId,
+        >,
     >,
-    pub m_FreeIds: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextureId>,
+    pub m_FreeIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
+            crate::UnityEngine::UIElements::TextureId,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+TextureRegistry")]
 unsafe impl quest_hook::libil2cpp::Type

@@ -215,8 +215,10 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     pub fn ExpandTemplateString(
         _cordl_template: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mapFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -231,11 +233,13 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -367,8 +371,10 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (ch))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Gc_Il2CppString1<TValue>(
-        values: quest_hook::libil2cpp::Gc<TValue>,
+    pub fn Join_IEnumerable_1_Il2CppString1<TValue>(
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TValue>,
+        >,
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -383,7 +389,9 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<TValue>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TValue>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -445,10 +453,14 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     }
     pub fn MakeUniqueName<TExisting>(
         baseName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        existingSet: quest_hook::libil2cpp::Gc<TExisting>,
+        existingSet: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TExisting>,
+        >,
         getNameFunc: quest_hook::libil2cpp::Gc<
-            TExisting,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                TExisting,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -466,11 +478,17 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<TExisting>,
                             quest_hook::libil2cpp::Gc<
-                                TExisting,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    TExisting,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<
+                                    TExisting,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),
@@ -615,10 +633,12 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
     }
     pub fn Split(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        predicate: quest_hook::libil2cpp::Gc<char, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -630,11 +650,13 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<char, bool>,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<char, bool>>,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >,
                         2usize,
@@ -648,14 +670,20 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (str, predicate))? };
         Ok(__cordl_ret.into())
     }
     pub fn Tokenize(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::Utilities::Substring>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::Substring,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -664,7 +692,9 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::InputSystem::Utilities::Substring,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                crate::UnityEngine::InputSystem::Utilities::Substring,
+                            >,
                         >,
                         1usize,
                     >("Tokenize")
@@ -677,7 +707,9 @@ impl crate::UnityEngine::InputSystem::Utilities::StringHelpers {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::InputSystem::Utilities::Substring,
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::InputSystem::Utilities::Substring,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (str))? };
         Ok(__cordl_ret.into())
     }

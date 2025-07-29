@@ -4,25 +4,43 @@
 pub struct AvatarPartsModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _headTopCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        >,
     >,
     pub _eyesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            >,
+        >,
     >,
     pub _mouthCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<
+                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            >,
+        >,
     >,
     pub _glassesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        >,
     >,
     pub _facialHairCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        >,
     >,
     pub _handsCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        >,
     >,
     pub _clothesCollection_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+        >,
     >,
     pub _skinColors_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -30,8 +48,10 @@ pub struct AvatarPartsModel {
         >,
     >,
     pub _indexById: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i32,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            i32,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+BeatAvatarSDK+AvatarPartsModel")]
@@ -210,7 +230,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -220,8 +244,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -235,7 +261,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -243,8 +273,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                >,
             >,
         >,
     > {
@@ -255,8 +287,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -270,8 +304,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -280,7 +316,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -290,8 +330,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -305,7 +347,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -313,7 +359,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -323,8 +373,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -338,7 +390,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -346,7 +402,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -356,8 +416,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -371,7 +433,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -379,7 +445,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -389,8 +459,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -404,7 +476,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO>,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarMeshPartSO,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -412,8 +488,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                >,
             >,
         >,
     > {
@@ -424,8 +502,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                                >,
                             >,
                         >,
                         0usize,
@@ -439,8 +519,10 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarPartsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+            crate::BeatSaber::BeatAvatarSDK::AvatarPartCollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BeatSaber::BeatAvatarSDK::AvatarSpritePartSO,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

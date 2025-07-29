@@ -4,7 +4,9 @@
 pub struct OidCollection {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Security::Cryptography::Oid>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Security+Cryptography+OidCollection")]

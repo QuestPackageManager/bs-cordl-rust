@@ -4,7 +4,9 @@
 pub struct InvocationExpressionN {
     __cordl_parent: crate::System::Linq::Expressions::InvocationExpression,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Linq+Expressions+InvocationExpressionN")]
@@ -75,7 +77,9 @@ impl crate::System::Linq::Expressions::InvocationExpressionN {
     pub fn New(
         lambda: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -135,7 +139,9 @@ impl crate::System::Linq::Expressions::InvocationExpressionN {
         &mut self,
         lambda: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         arguments: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+            >,
         >,
         returnType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -149,8 +155,10 @@ impl crate::System::Linq::Expressions::InvocationExpressionN {
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Expression,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Expression,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,

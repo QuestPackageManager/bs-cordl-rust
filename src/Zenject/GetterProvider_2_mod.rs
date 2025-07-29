@@ -8,7 +8,7 @@ pub struct GetterProvider_2<
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-    pub _method: quest_hook::libil2cpp::Gc<TObj, TResult>,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
     pub _matchAll: bool,
     pub _sourceType: crate::Zenject::InjectSources,
     __cordl_phantom_TObj: std::marker::PhantomData<TObj>,
@@ -76,12 +76,16 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -97,13 +101,19 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -192,7 +202,7 @@ impl<
     }
     pub fn New(
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TResult>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         sourceType: crate::Zenject::InjectSources,
         matchAll: bool,
@@ -215,7 +225,7 @@ impl<
     pub fn _ctor(
         &mut self,
         identifier: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        method: quest_hook::libil2cpp::Gc<TObj, TResult>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_2<TObj, TResult>>,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
         sourceType: crate::Zenject::InjectSources,
         matchAll: bool,
@@ -235,7 +245,9 @@ impl<
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            quest_hook::libil2cpp::Gc<TObj, TResult>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<TObj, TResult>,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                             crate::Zenject::InjectSources,
                             bool,

@@ -453,14 +453,18 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         sync: bool,
         requestedSize: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (bool, i32, crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         3usize,
                     >("InnerRead")
                     .unwrap_or_else(|e| {
@@ -471,7 +475,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (sync, requestedSize, cancellationToken))?
         };
@@ -869,7 +875,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -883,7 +891,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         4usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -894,7 +904,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };
@@ -992,7 +1004,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
             crate::Mono::Net::Security::AsyncProtocolRequest,
         >,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -1005,7 +1019,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                             >,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         3usize,
                     >("StartOperation")
                     .unwrap_or_else(|e| {
@@ -1016,7 +1032,9 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (_cordl_type, asyncRequest, cancellationToken))?
         };

@@ -6,12 +6,14 @@ pub struct UIKeyboard {
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _startsUpperCase: bool,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<char>,
+    pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
     pub _shouldCapitalize: bool,
     pub _letterBtnTexts: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_HMUI+UIKeyboard")]
@@ -328,14 +330,14 @@ impl crate::HMUI::UIKeyboard {
     }
     pub fn add_keyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<char>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_keyWasPressedEvent")
@@ -406,14 +408,14 @@ impl crate::HMUI::UIKeyboard {
     }
     pub fn remove_keyWasPressedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<char>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<char>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_keyWasPressedEvent")

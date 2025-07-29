@@ -2,13 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonPropertyCollection {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
     >,
     pub _type: quest_hook::libil2cpp::Gc<crate::System::Type>,
     pub _list: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::Newtonsoft::Json::Serialization::JsonProperty,
+            >,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_Newtonsoft+Json+Serialization+JsonPropertyCollection")]
@@ -33,7 +37,7 @@ for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::Newtonsoft::Json::Serialization::JsonProperty>,
     >;

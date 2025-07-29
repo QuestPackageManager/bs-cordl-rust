@@ -5,8 +5,10 @@ pub struct ContentDispositionHeaderValue {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub dispositionType: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub parameters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Net::Http::Headers::NameValueHeaderValue,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Net::Http::Headers::NameValueHeaderValue,
+            >,
         >,
     >,
 }
@@ -256,8 +258,10 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::NameValueHeaderValue,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueHeaderValue,
+                >,
             >,
         >,
     > {
@@ -268,8 +272,10 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Net::Http::Headers::NameValueHeaderValue,
+                            crate::System::Collections::Generic::ICollection_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::Http::Headers::NameValueHeaderValue,
+                                >,
                             >,
                         >,
                         0usize,
@@ -283,8 +289,10 @@ impl crate::System::Net::Http::Headers::ContentDispositionHeaderValue {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Net::Http::Headers::NameValueHeaderValue,
+            crate::System::Collections::Generic::ICollection_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Net::Http::Headers::NameValueHeaderValue,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

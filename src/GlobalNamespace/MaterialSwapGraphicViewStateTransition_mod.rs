@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialSwapGraphicViewStateTransition {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >,
     pub _transition: quest_hook::libil2cpp::Gc<
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
 }
 #[cfg(feature = "MaterialSwapGraphicViewStateTransition")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapGraphicViewStateTransition {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::BaseStateTransition_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

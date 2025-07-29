@@ -17,7 +17,9 @@ pub struct BasicUIAudioManager {
     pub _minPitch: f32,
     pub _maxPitch: f32,
     pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BasicUIAudioManager")]

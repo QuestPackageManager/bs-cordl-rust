@@ -111,7 +111,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarPlace_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyAvatarPlace>,
     >,
 }
@@ -137,7 +137,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool {
 }
 #[cfg(feature = "MultiplayerLobbyAvatarPlace+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLobbyAvatarPlace_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerLobbyAvatarPlace>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

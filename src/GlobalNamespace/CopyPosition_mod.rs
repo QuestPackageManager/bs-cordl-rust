@@ -127,7 +127,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CopyPosition 
 pub struct CopyPosition_CopyPositionUpdater {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _copyPositions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CopyPosition>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::CopyPosition>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_CopyPosition+CopyPositionUpdater")]

@@ -29,8 +29,12 @@ pub struct OVRInputModule {
     pub m_InputActionsPerSecond: f32,
     pub m_AllowActivationOnMobileDevice: bool,
     pub m_VRRayPointerData: quest_hook::libil2cpp::Gc<
-        i32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::EventSystems::OVRPointerEventData>,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::EventSystems::OVRPointerEventData,
+            >,
+        >,
     >,
     pub m_MouseState: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerInputModule_MouseState,

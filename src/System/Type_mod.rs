@@ -2474,17 +2474,21 @@ impl crate::System::Type {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetType_Il2CppString_Gc_Gc__cordl_bool4(
+    pub fn GetType_Il2CppString_Func_2_Func_4__cordl_bool4(
         typeName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         assemblyResolver: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::AssemblyName>,
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+            >,
         >,
         typeResolver: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            crate::System::Func_4<
+                quest_hook::libil2cpp::Gc<crate::System::Reflection::Assembly>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                bool,
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
         >,
         throwOnError: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<crate::System::Type>> {
@@ -2498,22 +2502,26 @@ impl crate::System::Type {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::AssemblyName,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::Assembly,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Reflection::AssemblyName,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Reflection::Assembly,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Reflection::Assembly,
+                                crate::System::Func_4<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Reflection::Assembly,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    bool,
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
                                 >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                bool,
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
                             >,
                             bool,
                         ),

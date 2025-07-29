@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Vector3Converter {
-    __cordl_parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+    __cordl_parent: crate::Newtonsoft::Json::JsonConverter_1<
+        crate::UnityEngine::Vector3,
+    >,
 }
 #[cfg(feature = "cordl_class_BGLib+JsonExtension+Vector3Converter")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +28,7 @@ for crate::BGLib::JsonExtension::Vector3Converter {
 }
 #[cfg(feature = "BGLib+JsonExtension+Vector3Converter")]
 impl std::ops::Deref for crate::BGLib::JsonExtension::Vector3Converter {
-    type Target = quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>;
+    type Target = crate::Newtonsoft::Json::JsonConverter_1<crate::UnityEngine::Vector3>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

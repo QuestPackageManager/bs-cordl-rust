@@ -5,8 +5,10 @@ pub struct AudioClipQueue {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _queue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::AudioClipQueue_AudioClipWithDelay,
+            >,
         >,
     >,
 }

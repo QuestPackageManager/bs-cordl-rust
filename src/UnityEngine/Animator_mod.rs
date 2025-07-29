@@ -1288,10 +1288,14 @@ impl crate::UnityEngine::Animator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCurrentAnimatorClipInfo_Gc1(
+    pub fn GetCurrentAnimatorClipInfo_List_1_1(
         &mut self,
         layerIndex: i32,
-        clips: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimatorClipInfo>,
+        clips: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::AnimatorClipInfo,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1301,7 +1305,9 @@ impl crate::UnityEngine::Animator {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimatorClipInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::AnimatorClipInfo,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2120,10 +2126,14 @@ impl crate::UnityEngine::Animator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetNextAnimatorClipInfo_Gc1(
+    pub fn GetNextAnimatorClipInfo_List_1_1(
         &mut self,
         layerIndex: i32,
-        clips: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimatorClipInfo>,
+        clips: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::AnimatorClipInfo,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2133,7 +2143,9 @@ impl crate::UnityEngine::Animator {
                         (
                             i32,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AnimatorClipInfo,
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::AnimatorClipInfo,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

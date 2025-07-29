@@ -4,15 +4,23 @@
 pub struct GraphicRegistry {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Graphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UI::Collections::IndexedSet_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                >,
+            >,
         >,
     >,
     pub m_RaycastableGraphics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UI::Collections::IndexedSet_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                >,
+            >,
         >,
     >,
 }
@@ -112,7 +120,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -122,7 +132,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                            >,
                         >,
                         1usize,
                     >("GetGraphicsForCanvas")
@@ -135,7 +147,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (canvas))? };
         Ok(__cordl_ret.into())
     }
@@ -143,7 +157,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -153,7 +169,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+                            >,
                         >,
                         1usize,
                     >("GetRaycastableGraphicsForCanvas")
@@ -166,7 +184,9 @@ impl crate::UnityEngine::UI::GraphicRegistry {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (canvas))? };
         Ok(__cordl_ret.into())
     }

@@ -365,20 +365,20 @@ impl crate::UnityEngine::Playables::FrameRate {
     }
 }
 #[cfg(feature = "UnityEngine+Playables+FrameRate")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::FrameRate>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate>>
 for crate::UnityEngine::Playables::FrameRate {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::FrameRate> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Playables+FrameRate")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::FrameRate>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate>>
 for crate::UnityEngine::Playables::FrameRate {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::FrameRate> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Playables::FrameRate> {
         todo!()
     }
 }

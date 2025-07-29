@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventDataBox {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventDataBox_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >,
     pub _vfxBaseDataList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+        >,
     >,
     pub _beatStep: f32,
 }
@@ -33,7 +35,7 @@ for crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
 }
 #[cfg(feature = "FloatFxBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::GlobalNamespace::FxBeatmapEventDataBox_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >;
@@ -106,7 +108,9 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         fxBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -137,7 +141,9 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
         eventDistributionShouldAffectFirstBaseEvent: bool,
         eventDistributionEaseType: crate::GlobalNamespace::EaseType,
         fxBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -156,8 +162,10 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
                             bool,
                             crate::GlobalNamespace::EaseType,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::FloatFxBaseData,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::FloatFxBaseData,
+                                    >,
                                 >,
                             >,
                         ),

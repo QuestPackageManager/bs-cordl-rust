@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalizationAsyncInstaller {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     >,
     pub _mainPolyglotAsset: quest_hook::libil2cpp::Gc<
         crate::BGLib::Polyglot::Localization,
     >,
     pub _inputFiles: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsyncInstaller")]
@@ -34,7 +36,7 @@ for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
 }
 #[cfg(feature = "BGLib+Polyglot+LocalizationAsyncInstaller")]
 impl std::ops::Deref for crate::BGLib::Polyglot::LocalizationAsyncInstaller {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -77,7 +79,9 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     }
     pub fn LoadLocalizationAssetsSync() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -87,8 +91,10 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BGLib::Polyglot::LocalizationAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGLib::Polyglot::LocalizationAsset,
+                                >,
                             >,
                         >,
                         0usize,
@@ -102,14 +108,18 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         assets: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            >,
         >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -122,7 +132,9 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
@@ -146,11 +158,15 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
     }
     pub fn LocalizationContentToAsset(
         content: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -159,11 +175,15 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::BGLib::Polyglot::LocalizationAsset,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGLib::Polyglot::LocalizationAsset,
+                                >,
                             >,
                         >,
                         1usize,
@@ -177,7 +197,9 @@ impl crate::BGLib::Polyglot::LocalizationAsyncInstaller {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::BGLib::Polyglot::LocalizationAsset>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (content))? };
         Ok(__cordl_ret.into())
     }

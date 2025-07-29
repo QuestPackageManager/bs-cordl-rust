@@ -11,18 +11,26 @@ pub struct TMP_FontAsset {
     pub m_AtlasPopulationMode: crate::TMPro::AtlasPopulationMode,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
     pub m_GlyphTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        >,
     >,
     pub m_GlyphLookupDictionary: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        >,
     >,
     pub m_CharacterTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        >,
     >,
     pub m_CharacterLookupDictionary: quest_hook::libil2cpp::Gc<
-        u32,
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        crate::System::Collections::Generic::Dictionary_2<
+            u32,
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        >,
     >,
     pub m_AtlasTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub m_AtlasTextures: quest_hook::libil2cpp::Gc<
@@ -34,10 +42,14 @@ pub struct TMP_FontAsset {
     pub m_IsMultiAtlasTexturesEnabled: bool,
     pub m_ClearDynamicDataOnBuild: bool,
     pub m_UsedGlyphRects: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::GlyphRect,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::GlyphRect,
+        >,
     >,
     pub m_FreeGlyphRects: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::TextCore::GlyphRect,
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::GlyphRect,
+        >,
     >,
     pub m_fontInfo: quest_hook::libil2cpp::Gc<crate::TMPro::FaceInfo_Legacy>,
     pub atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
@@ -46,17 +58,23 @@ pub struct TMP_FontAsset {
     pub m_AtlasPadding: i32,
     pub m_AtlasRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
     pub m_glyphInfoList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Glyph>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Glyph>,
+        >,
     >,
     pub m_KerningTable: quest_hook::libil2cpp::Gc<crate::TMPro::KerningTable>,
     pub m_FontFeatureTable: quest_hook::libil2cpp::Gc<
         crate::TMPro::TMP_FontFeatureTable,
     >,
     pub fallbackFontAssets: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        >,
     >,
     pub m_FallbackFontAssetTable: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        >,
     >,
     pub m_CreationSettings: crate::TMPro::FontAssetCreationSettings,
     pub m_FontWeightTable: quest_hook::libil2cpp::Gc<
@@ -72,23 +90,45 @@ pub struct TMP_FontAsset {
     pub italicStyle: u8,
     pub tabSize: u8,
     pub IsFontAssetLookupTablesDirty: bool,
-    pub FallbackSearchQueryLookup: quest_hook::libil2cpp::Gc<i32>,
+    pub FallbackSearchQueryLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub m_GlyphsToRender: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        >,
     >,
     pub m_GlyphsRendered: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+        >,
     >,
-    pub m_GlyphIndexList: quest_hook::libil2cpp::Gc<u32>,
-    pub m_GlyphIndexListNewlyAdded: quest_hook::libil2cpp::Gc<u32>,
-    pub m_GlyphsToAdd: quest_hook::libil2cpp::Gc<u32>,
-    pub m_GlyphsToAddLookup: quest_hook::libil2cpp::Gc<u32>,
+    pub m_GlyphIndexList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_GlyphIndexListNewlyAdded: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_GlyphsToAdd: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_GlyphsToAddLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
     pub m_CharactersToAdd: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+        >,
     >,
-    pub m_CharactersToAddLookup: quest_hook::libil2cpp::Gc<u32>,
-    pub s_MissingCharacterList: quest_hook::libil2cpp::Gc<u32>,
-    pub m_MissingUnicodesFromFontFile: quest_hook::libil2cpp::Gc<u32>,
+    pub m_CharactersToAddLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub s_MissingCharacterList: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<u32>,
+    >,
+    pub m_MissingUnicodesFromFontFile: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_FontAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_FontAsset {
@@ -330,7 +370,9 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn CopyListDataToArray<T>(
         &mut self,
-        srcList: quest_hook::libil2cpp::Gc<T>,
+        srcList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
         dstArray: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         >,
@@ -345,7 +387,9 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<T>,
@@ -606,7 +650,7 @@ impl crate::TMPro::TMP_FontAsset {
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<char>,
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<char>>,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -619,7 +663,9 @@ impl crate::TMPro::TMP_FontAsset {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<char>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<char>,
+                                >,
                             >,
                         ),
                         bool,
@@ -1407,59 +1453,6 @@ impl crate::TMPro::TMP_FontAsset {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateGlyphAdjustmentRecords_Gc2(
-        &mut self,
-        glyphIndexes: quest_hook::libil2cpp::Gc<u32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<u32>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UpdateGlyphAdjustmentRecords")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateGlyphAdjustmentRecords", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (glyphIndexes))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn UpdateGlyphAdjustmentRecords_Gc_Gc3(
-        &mut self,
-        newGlyphIndexes: quest_hook::libil2cpp::Gc<u32>,
-        allGlyphIndexes: quest_hook::libil2cpp::Gc<u32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<u32>, quest_hook::libil2cpp::Gc<u32>),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("UpdateGlyphAdjustmentRecords")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateGlyphAdjustmentRecords", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newGlyphIndexes, allGlyphIndexes))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn UpdateGlyphAdjustmentRecords_Il2CppArray1(
         &mut self,
         glyphIndexes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
@@ -1485,6 +1478,74 @@ impl crate::TMPro::TMP_FontAsset {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (glyphIndexes))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateGlyphAdjustmentRecords_List_1_2(
+        &mut self,
+        glyphIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<u32>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UpdateGlyphAdjustmentRecords")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateGlyphAdjustmentRecords", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (glyphIndexes))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateGlyphAdjustmentRecords_List_1_List_1_3(
+        &mut self,
+        newGlyphIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
+        allGlyphIndexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<u32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<u32>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<u32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("UpdateGlyphAdjustmentRecords")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateGlyphAdjustmentRecords", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newGlyphIndexes, allGlyphIndexes))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1747,8 +1808,10 @@ impl crate::TMPro::TMP_FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1758,8 +1821,10 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            u32,
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            >,
                         >,
                         0usize,
                     >("get_characterLookupTable")
@@ -1772,15 +1837,21 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_characterTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1789,7 +1860,9 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            >,
                         >,
                         0usize,
                     >("get_characterTable")
@@ -1802,7 +1875,9 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1878,7 +1953,11 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn get_fallbackFontAssetTable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1887,7 +1966,9 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            >,
                         >,
                         0usize,
                     >("get_fallbackFontAssetTable")
@@ -1900,7 +1981,9 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1994,7 +2077,11 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn get_freeGlyphRects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2003,7 +2090,9 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::TextCore::GlyphRect,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
                         >,
                         0usize,
                     >("get_freeGlyphRects")
@@ -2016,7 +2105,9 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2024,8 +2115,10 @@ impl crate::TMPro::TMP_FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2035,9 +2128,11 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            u32,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Glyph,
+                            crate::System::Collections::Generic::Dictionary_2<
+                                u32,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Glyph,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2051,8 +2146,10 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            u32,
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            crate::System::Collections::Generic::Dictionary_2<
+                u32,
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2060,7 +2157,9 @@ impl crate::TMPro::TMP_FontAsset {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2070,8 +2169,10 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Glyph,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Glyph,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2085,7 +2186,9 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2138,7 +2241,11 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn get_usedGlyphRects(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2147,7 +2254,9 @@ impl crate::TMPro::TMP_FontAsset {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::TextCore::GlyphRect,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
                         >,
                         0usize,
                     >("get_usedGlyphRects")
@@ -2160,7 +2269,9 @@ impl crate::TMPro::TMP_FontAsset {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::GlyphRect,
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2358,7 +2469,9 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn set_characterTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2367,7 +2480,9 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Character>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2466,7 +2581,9 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn set_fallbackFontAssetTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2475,7 +2592,9 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2553,7 +2672,11 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn set_freeGlyphRects(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2561,7 +2684,9 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::TextCore::GlyphRect,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -2582,7 +2707,9 @@ impl crate::TMPro::TMP_FontAsset {
     pub fn set_glyphTable(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2591,8 +2718,10 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Glyph,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::TextCore::Glyph,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2665,7 +2794,11 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn set_usedGlyphRects(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::GlyphRect>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::GlyphRect,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2673,7 +2806,9 @@ impl crate::TMPro::TMP_FontAsset {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::TextCore::GlyphRect,
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::GlyphRect,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

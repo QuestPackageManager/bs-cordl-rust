@@ -7,7 +7,9 @@ pub struct OptionsViewController {
     pub _playerOptionsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _settingsButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OptionsViewController_OptionsButton,
+        crate::System::Action_1<
+            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_OptionsViewController")]
@@ -185,7 +187,9 @@ impl crate::GlobalNamespace::OptionsViewController {
     pub fn add_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+            crate::System::Action_1<
+                crate::GlobalNamespace::OptionsViewController_OptionsButton,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -194,7 +198,9 @@ impl crate::GlobalNamespace::OptionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::OptionsViewController_OptionsButton,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -215,7 +221,9 @@ impl crate::GlobalNamespace::OptionsViewController {
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+            crate::System::Action_1<
+                crate::GlobalNamespace::OptionsViewController_OptionsButton,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -224,7 +232,9 @@ impl crate::GlobalNamespace::OptionsViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::OptionsViewController_OptionsButton,
+                            crate::System::Action_1<
+                                crate::GlobalNamespace::OptionsViewController_OptionsButton,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MethodProviderSimple_1<TReturn: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _method: quest_hook::libil2cpp::Gc<TReturn>,
+    pub _method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>,
     __cordl_phantom_TReturn: std::marker::PhantomData<TReturn>,
 }
 #[cfg(feature = "cordl_class_Zenject+MethodProviderSimple_1")]
@@ -64,12 +64,16 @@ impl<
     pub fn GetAllInstancesWithInjectSplit(
         &mut self,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         injectAction: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Action>,
         >,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -83,13 +87,19 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Action>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -141,7 +151,7 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        method: quest_hook::libil2cpp::Gc<TReturn>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -155,7 +165,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        method: quest_hook::libil2cpp::Gc<TReturn>,
+        method: quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TReturn: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -166,7 +176,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<TReturn>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_1<TReturn>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(".ctor")

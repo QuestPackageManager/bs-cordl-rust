@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayPool_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::StaticMemoryPoolBaseBase_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >,
     pub _length: i32,
@@ -43,7 +43,7 @@ for crate::Zenject::ArrayPool_1<T> {
 }
 #[cfg(feature = "Zenject+ArrayPool_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref for crate::Zenject::ArrayPool_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::StaticMemoryPoolBaseBase_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
@@ -92,7 +92,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ArrayPool_1<T> {
     }
     pub fn GetPool(
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Zenject::ArrayPool_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -103,7 +105,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ArrayPool_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (i32),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<crate::Zenject::ArrayPool_1<T>>,
                         1usize,
                     >("GetPool")
                     .unwrap_or_else(|e| {
@@ -114,7 +116,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Zenject::ArrayPool_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Zenject::ArrayPool_1<T>> = unsafe {
             cordl_method_info.invoke_unchecked((), (length))?
         };
         Ok(__cordl_ret.into())

@@ -245,6 +245,22 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::CharEnumerator {
     }
 }
 #[cfg(feature = "System+CharEnumerator")]
+impl AsRef<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::System::CharEnumerator {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerator_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
+impl AsMut<crate::System::Collections::Generic::IEnumerator_1<char>>
+for crate::System::CharEnumerator {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::Collections::Generic::IEnumerator_1<char> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+CharEnumerator")]
 impl AsRef<crate::System::Collections::IEnumerator> for crate::System::CharEnumerator {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerator {
         unsafe { std::mem::transmute(self) }
@@ -277,18 +293,6 @@ impl AsRef<crate::System::IDisposable> for crate::System::CharEnumerator {
 #[cfg(feature = "System+CharEnumerator")]
 impl AsMut<crate::System::IDisposable> for crate::System::CharEnumerator {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+CharEnumerator")]
-impl AsRef<quest_hook::libil2cpp::Gc<char>> for crate::System::CharEnumerator {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<char> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+CharEnumerator")]
-impl AsMut<quest_hook::libil2cpp::Gc<char>> for crate::System::CharEnumerator {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<char> {
         unsafe { std::mem::transmute(self) }
     }
 }

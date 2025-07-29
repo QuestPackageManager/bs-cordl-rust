@@ -1367,20 +1367,22 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding>>
 for crate::UnityEngine::InputSystem::InputBinding {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding> {
+    ) -> &crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::InputSystem::InputBinding>>
 for crate::UnityEngine::InputSystem::InputBinding {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputBinding> {
+    ) -> &mut crate::System::IEquatable_1<
+        crate::UnityEngine::InputSystem::InputBinding,
+    > {
         todo!()
     }
 }

@@ -148,7 +148,9 @@ pub struct PlayAudioOnGameEventController_EventAudioBinding {
         crate::GlobalNamespace::AudioClipQueue,
     >,
     pub _randomObjectPicker: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
+        crate::GlobalNamespace::RandomObjectPicker_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LocalizedAudioClipSO>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_PlayAudioOnGameEventController+EventAudioBinding")]

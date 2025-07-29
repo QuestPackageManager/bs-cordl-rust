@@ -46,7 +46,11 @@ impl crate::Oculus::Platform::Media {
         contentType: crate::Oculus::Platform::MediaContentType,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ShareMediaResult,
+                >,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -64,8 +68,10 @@ impl crate::Oculus::Platform::Media {
                             crate::Oculus::Platform::MediaContentType,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::ShareMediaResult,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::ShareMediaResult,
+                                >,
                             >,
                         >,
                         3usize,
@@ -79,7 +85,11 @@ impl crate::Oculus::Platform::Media {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::ShareMediaResult>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::ShareMediaResult,
+                >,
+            >,
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (postTextSuggestion, filePath, contentType))?

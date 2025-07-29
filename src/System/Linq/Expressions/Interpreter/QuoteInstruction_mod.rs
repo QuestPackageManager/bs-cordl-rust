@@ -7,9 +7,13 @@ pub struct QuoteInstruction {
         crate::System::Linq::Expressions::Expression,
     >,
     pub _hoistedVariables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            >,
         >,
     >,
 }
@@ -57,11 +61,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
     pub fn New(
         operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         hoistedVariables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -105,11 +111,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
         &mut self,
         operand: quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
         hoistedVariables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,11 +131,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
                                 crate::System::Linq::Expressions::Expression,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                                    >,
                                 >,
                             >,
                         ),
@@ -210,18 +220,26 @@ for crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
 pub struct QuoteInstruction_ExpressionQuoter {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _variables: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::ParameterExpression>,
-        quest_hook::libil2cpp::Gc<
-            crate::System::Linq::Expressions::Interpreter::LocalVariable,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::ParameterExpression,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            >,
         >,
     >,
     pub _frame: quest_hook::libil2cpp::Gc<
         crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
     >,
     pub _shadowedVars: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Stack_1<
             quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
+                crate::System::Collections::Generic::HashSet_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::System::Linq::Expressions::ParameterExpression,
+                    >,
+                >,
             >,
         >,
     >,
@@ -301,11 +319,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
     }
     pub fn New(
         hoistedVariables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         >,
         frame: quest_hook::libil2cpp::Gc<
@@ -386,7 +406,9 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
     }
     pub fn VisitLambda<T>(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Linq::Expressions::Expression_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
     >
@@ -399,7 +421,9 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Linq::Expressions::Expression_1<T>,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Linq::Expressions::Expression,
                         >,
@@ -455,11 +479,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
     pub fn _ctor(
         &mut self,
         hoistedVariables: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::ParameterExpression,
-            >,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Linq::Expressions::Interpreter::LocalVariable,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::ParameterExpression,
+                >,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                >,
             >,
         >,
         frame: quest_hook::libil2cpp::Gc<
@@ -473,11 +499,13 @@ impl crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQ
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::ParameterExpression,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::ParameterExpression,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Linq::Expressions::Interpreter::LocalVariable,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

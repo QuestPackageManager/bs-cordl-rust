@@ -20,7 +20,9 @@ pub struct BeatEffectSpawner {
         crate::GlobalNamespace::SongController,
     >,
     pub _beatEffectPoolContainer: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
+        crate::GlobalNamespace::MemoryPoolContainer_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatEffect>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_BeatEffectSpawner")]

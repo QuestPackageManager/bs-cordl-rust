@@ -47,7 +47,9 @@ impl crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
         durationMs: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -57,7 +59,9 @@ impl crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
                     .find_method::<
                         (crate::UnityEngine::UIElements::Experimental::StyleValues, i32),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                                crate::UnityEngine::UIElements::Experimental::StyleValues,
+                            >,
                         >,
                         2usize,
                     >("Start")
@@ -70,7 +74,9 @@ impl crate::UnityEngine::UIElements::Experimental::ITransitionAnimations {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::Experimental::StyleValues,
+            crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
+                crate::UnityEngine::UIElements::Experimental::StyleValues,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (to, durationMs))? };
         Ok(__cordl_ret.into())
     }

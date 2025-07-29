@@ -201,18 +201,18 @@ impl crate::UnityEngine::XR::Eyes {
     }
 }
 #[cfg(feature = "UnityEngine+XR+Eyes")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Eyes>>
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes>>
 for crate::UnityEngine::XR::Eyes {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Eyes> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes> {
         todo!()
     }
 }
 #[cfg(feature = "UnityEngine+XR+Eyes")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Eyes>>
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes>>
 for crate::UnityEngine::XR::Eyes {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::Eyes> {
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::XR::Eyes> {
         todo!()
     }
 }

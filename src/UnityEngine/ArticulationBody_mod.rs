@@ -741,14 +741,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDofStartIndices(
         &mut self,
-        dofStartIndices: quest_hook::libil2cpp::Gc<i32>,
+        dofStartIndices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >),
                         i32,
                         1usize,
                     >("GetDofStartIndices")
@@ -767,14 +771,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetDriveForces")
@@ -793,14 +801,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveTargetVelocities(
         &mut self,
-        targetVelocities: quest_hook::libil2cpp::Gc<f32>,
+        targetVelocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetDriveTargetVelocities")
@@ -819,14 +831,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetDriveTargets(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<f32>,
+        targets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetDriveTargets")
@@ -845,14 +861,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointAccelerations(
         &mut self,
-        accelerations: quest_hook::libil2cpp::Gc<f32>,
+        accelerations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointAccelerations")
@@ -871,14 +891,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointCoriolisCentrifugalForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointCoriolisCentrifugalForces")
@@ -897,7 +921,9 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointExternalForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
         step: f32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -905,7 +931,12 @@ impl crate::UnityEngine::ArticulationBody {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>, f32),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
+                            f32,
+                        ),
                         i32,
                         2usize,
                     >("GetJointExternalForces")
@@ -924,14 +955,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointForces")
@@ -1014,14 +1049,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointGravityForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointGravityForces")
@@ -1040,14 +1079,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointPositions(
         &mut self,
-        positions: quest_hook::libil2cpp::Gc<f32>,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointPositions")
@@ -1066,14 +1109,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn GetJointVelocities(
         &mut self,
-        velocities: quest_hook::libil2cpp::Gc<f32>,
+        velocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         i32,
                         1usize,
                     >("GetJointVelocities")
@@ -1414,14 +1461,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetDriveTargetVelocities(
         &mut self,
-        targetVelocities: quest_hook::libil2cpp::Gc<f32>,
+        targetVelocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetDriveTargetVelocities")
@@ -1467,14 +1518,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetDriveTargets(
         &mut self,
-        targets: quest_hook::libil2cpp::Gc<f32>,
+        targets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetDriveTargets")
@@ -1493,14 +1548,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointAccelerations(
         &mut self,
-        accelerations: quest_hook::libil2cpp::Gc<f32>,
+        accelerations: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetJointAccelerations")
@@ -1519,14 +1578,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointForces(
         &mut self,
-        forces: quest_hook::libil2cpp::Gc<f32>,
+        forces: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetJointForces")
@@ -1545,14 +1608,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointPositions(
         &mut self,
-        positions: quest_hook::libil2cpp::Gc<f32>,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetJointPositions")
@@ -1571,14 +1638,18 @@ impl crate::UnityEngine::ArticulationBody {
     }
     pub fn SetJointVelocities(
         &mut self,
-        velocities: quest_hook::libil2cpp::Gc<f32>,
+        velocities: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<f32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<f32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("SetJointVelocities")

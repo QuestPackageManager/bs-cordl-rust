@@ -10,8 +10,10 @@ pub struct ClothRandomFluctuation {
     pub _minFluctuations: crate::UnityEngine::Vector3,
     pub _maxFluctuations: crate::UnityEngine::Vector3,
     pub _compoundSins: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::ClothRandomFluctuation_SineLayer,
+            >,
         >,
     >,
     pub _speed: f32,

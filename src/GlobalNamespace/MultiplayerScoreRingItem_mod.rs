@@ -84,7 +84,7 @@ for crate::GlobalNamespace::MultiplayerScoreRingItem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreRingItem_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreRingItem>,
     >,
 }
@@ -110,7 +110,7 @@ for crate::GlobalNamespace::MultiplayerScoreRingItem_Pool {
 }
 #[cfg(feature = "MultiplayerScoreRingItem+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreRingItem_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerScoreRingItem>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

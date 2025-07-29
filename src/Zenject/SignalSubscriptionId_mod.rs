@@ -306,20 +306,20 @@ impl crate::Zenject::SignalSubscriptionId {
     }
 }
 #[cfg(feature = "Zenject+SignalSubscriptionId")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscriptionId>>
+impl AsRef<crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId>>
 for crate::Zenject::SignalSubscriptionId {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscriptionId> {
+    ) -> &crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId> {
         todo!()
     }
 }
 #[cfg(feature = "Zenject+SignalSubscriptionId")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscriptionId>>
+impl AsMut<crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId>>
 for crate::Zenject::SignalSubscriptionId {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscriptionId> {
+    ) -> &mut crate::System::IEquatable_1<crate::Zenject::SignalSubscriptionId> {
         todo!()
     }
 }

@@ -24,13 +24,17 @@ pub struct ServerPlayerListViewController {
         crate::GlobalNamespace::ILobbyGameStateController,
     >,
     pub selectSuggestedBeatmapEvent: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::BeatmapKey,
+        crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
     >,
     pub selectSuggestedGameplayModifiersEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+        >,
     >,
     pub kickPlayerEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
     pub didOpenInvitePanelEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
@@ -421,7 +425,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn add_kickPlayerEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -430,8 +436,10 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -452,14 +460,18 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn add_selectSuggestedBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_selectSuggestedBeatmapEvent")
@@ -479,7 +491,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn add_selectSuggestedGameplayModifiersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -488,8 +502,10 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifiers,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -537,7 +553,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn remove_kickPlayerEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -546,8 +564,10 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -568,14 +588,18 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn remove_selectSuggestedBeatmapEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKey>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::GlobalNamespace::BeatmapKey>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_selectSuggestedBeatmapEvent")
@@ -595,7 +619,9 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     pub fn remove_selectSuggestedGameplayModifiersEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -604,8 +630,10 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::GameplayModifiers,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

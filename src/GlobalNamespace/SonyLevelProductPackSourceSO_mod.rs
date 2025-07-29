@@ -118,8 +118,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+                >,
             >,
         >,
     > {
@@ -130,8 +132,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+                                >,
                             >,
                         >,
                         0usize,
@@ -145,8 +149,10 @@ impl crate::GlobalNamespace::SonyLevelProductPackSourceSO {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::SonyLevelProductPackSourceSO_LevelProductRedirectionSource,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

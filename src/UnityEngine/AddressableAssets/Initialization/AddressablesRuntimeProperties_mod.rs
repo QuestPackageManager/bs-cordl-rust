@@ -130,13 +130,15 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
         > = unsafe { cordl_method_info.invoke_unchecked((), (input))? };
         Ok(__cordl_ret.into())
     }
-    pub fn EvaluateString__cordl_char__cordl_char_Gc1(
+    pub fn EvaluateString__cordl_char__cordl_char_Func_2_1(
         inputString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startDelimiter: char,
         endDelimiter: char,
         varFunc: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -153,11 +155,13 @@ impl crate::UnityEngine::AddressableAssets::Initialization::AddressablesRuntimeP
                             char,
                             char,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppString,
+                                    >,
                                 >,
                             >,
                         ),

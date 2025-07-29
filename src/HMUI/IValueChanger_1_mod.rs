@@ -57,7 +57,7 @@ for crate::HMUI::IValueChanger_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
     pub fn add_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<T>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -68,7 +68,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("add_valueChangedEvent")
@@ -92,7 +92,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
     }
     pub fn remove_valueChangedEvent(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<T>,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,7 +103,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::HMUI::IValueChanger_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("remove_valueChangedEvent")

@@ -6,8 +6,10 @@ pub struct Slider2D {
     pub _handleRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _normalizedValue: crate::UnityEngine::Vector2,
     pub normalizedValueDidChangeEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-        crate::UnityEngine::Vector2,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+            crate::UnityEngine::Vector2,
+        >,
     >,
     pub _containerRect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
     pub _handleGraphic: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Graphic>,
@@ -588,8 +590,10 @@ impl crate::HMUI::Slider2D {
     pub fn add_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-            crate::UnityEngine::Vector2,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -598,8 +602,10 @@ impl crate::HMUI::Slider2D {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-                            crate::UnityEngine::Vector2,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                                crate::UnityEngine::Vector2,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -672,8 +678,10 @@ impl crate::HMUI::Slider2D {
     pub fn remove_normalizedValueDidChangeEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-            crate::UnityEngine::Vector2,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                crate::UnityEngine::Vector2,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -682,8 +690,10 @@ impl crate::HMUI::Slider2D {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
-                            crate::UnityEngine::Vector2,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<crate::HMUI::Slider2D>,
+                                crate::UnityEngine::Vector2,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

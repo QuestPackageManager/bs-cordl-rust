@@ -4,7 +4,9 @@
 pub struct LightColorBeatmapEventDataBox {
     __cordl_parent: crate::GlobalNamespace::BeatmapEventDataBox,
     pub _lightColorBaseDataList: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+        >,
     >,
     pub _brightnessStep: f32,
     pub _beatStep: f32,
@@ -54,7 +56,9 @@ impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
         brightnessDistributionShouldAffectFirstBaseEvent: bool,
         brightnessDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightColorBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -90,7 +94,9 @@ impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
         output: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -112,8 +118,10 @@ impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
                                 crate::GlobalNamespace::IBeatmapLightEventConverter,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::BeatmapEventData,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::BeatmapEventData,
+                                    >,
                                 >,
                             >,
                         ),
@@ -157,7 +165,9 @@ impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
         brightnessDistributionShouldAffectFirstBaseEvent: bool,
         brightnessDistributionEaseType: crate::GlobalNamespace::EaseType,
         lightColorBaseDataList: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LightColorBaseData>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -176,8 +186,10 @@ impl crate::GlobalNamespace::LightColorBeatmapEventDataBox {
                             bool,
                             crate::GlobalNamespace::EaseType,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::LightColorBaseData,
+                                crate::System::Collections::Generic::IReadOnlyList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::LightColorBaseData,
+                                    >,
                                 >,
                             >,
                         ),

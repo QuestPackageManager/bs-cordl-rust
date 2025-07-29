@@ -60,7 +60,9 @@ impl crate::System::IO::Stream {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -73,7 +75,9 @@ impl crate::System::IO::Stream {
                             i32,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         3usize,
                     >("BeginEndReadAsync")
                     .unwrap_or_else(|e| {
@@ -84,7 +88,9 @@ impl crate::System::IO::Stream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked(self, (buffer, offset, count))?
         };
         Ok(__cordl_ret.into())
@@ -1027,7 +1033,9 @@ impl crate::System::IO::Stream {
         buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -1040,7 +1048,9 @@ impl crate::System::IO::Stream {
                             i32,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         3usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -1051,7 +1061,9 @@ impl crate::System::IO::Stream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info.invoke_unchecked(self, (buffer, offset, count))?
         };
         Ok(__cordl_ret.into())
@@ -1062,7 +1074,9 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<i32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<i32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -1076,7 +1090,9 @@ impl crate::System::IO::Stream {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<i32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<i32>,
+                        >,
                         4usize,
                     >("ReadAsync")
                     .unwrap_or_else(|e| {
@@ -1087,7 +1103,9 @@ impl crate::System::IO::Stream {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<i32> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (buffer, offset, count, cancellationToken))?
         };
@@ -1509,7 +1527,9 @@ impl crate::System::IO::Stream {
         Ok(__cordl_ret.into())
     }
     pub fn _ReadAsync_g__FinishReadAsync_44_0(
-        readTask: quest_hook::libil2cpp::Gc<i32>,
+        readTask: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<i32>,
+        >,
         localBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         localDestination: crate::System::Memory_1<u8>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1521,7 +1541,9 @@ impl crate::System::IO::Stream {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::Task_1<i32>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<u8>,
                             >,
@@ -1922,7 +1944,7 @@ impl crate::System::IO::Stream_ReadWriteParameters {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stream_ReadWriteTask {
-    __cordl_parent: quest_hook::libil2cpp::Gc<i32>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<i32>,
     pub _isRead: bool,
     pub _apm: bool,
     pub _stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -1953,7 +1975,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::IO::Stream_ReadWriteT
 }
 #[cfg(feature = "System+IO+Stream+ReadWriteTask")]
 impl std::ops::Deref for crate::System::IO::Stream_ReadWriteTask {
-    type Target = quest_hook::libil2cpp::Gc<i32>;
+    type Target = crate::System::Threading::Tasks::Task_1<i32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2020,8 +2042,10 @@ impl crate::System::IO::Stream_ReadWriteTask {
         isRead: bool,
         apm: bool,
         function: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            i32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                i32,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -2098,8 +2122,10 @@ impl crate::System::IO::Stream_ReadWriteTask {
         isRead: bool,
         apm: bool,
         function: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            i32,
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                i32,
+            >,
         >,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         stream: quest_hook::libil2cpp::Gc<crate::System::IO::Stream>,
@@ -2117,10 +2143,12 @@ impl crate::System::IO::Stream_ReadWriteTask {
                             bool,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
+                                    i32,
                                 >,
-                                i32,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
@@ -2556,7 +2584,9 @@ pub struct Stream___ReadAsync_g__FinishReadAsync_44_0_d {
     pub __t__builder: crate::System::Runtime::CompilerServices::AsyncValueTaskMethodBuilder_1<
         i32,
     >,
-    pub readTask: quest_hook::libil2cpp::Gc<i32>,
+    pub readTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task_1<i32>,
+    >,
     pub localBuffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub localDestination: crate::System::Memory_1<u8>,
     pub __u__1: crate::System::Runtime::CompilerServices::ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter<

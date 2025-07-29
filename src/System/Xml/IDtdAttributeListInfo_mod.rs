@@ -78,7 +78,9 @@ impl crate::System::Xml::IDtdAttributeListInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -88,8 +90,10 @@ impl crate::System::Xml::IDtdAttributeListInfo {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Xml::IDtdDefaultAttributeInfo,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::IDtdDefaultAttributeInfo,
+                                >,
                             >,
                         >,
                         0usize,
@@ -103,7 +107,9 @@ impl crate::System::Xml::IDtdAttributeListInfo {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Xml::IDtdDefaultAttributeInfo>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -4,7 +4,7 @@
 pub struct AddressablesAsyncInstaller_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
     pub _handle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        quest_hook::libil2cpp::Gc<T>,
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IList_1<T>>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -67,8 +67,10 @@ impl<
         runtimeKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         >,
     >
@@ -83,8 +85,10 @@ impl<
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                            crate::System::Collections::Generic::HashSet_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                                >,
                             >,
                         >,
                         1usize,
@@ -98,8 +102,10 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (runtimeKey))? };
         Ok(__cordl_ret.into())
@@ -109,7 +115,9 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                quest_hook::libil2cpp::Gc<T>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<T>,
+                >,
             >,
         >,
     >
@@ -125,7 +133,9 @@ impl<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
                         crate::System::Nullable_1<
                             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                                quest_hook::libil2cpp::Gc<T>,
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::IList_1<T>,
+                                >,
                             >,
                         >,
                         1usize,
@@ -140,7 +150,9 @@ impl<
             });
         let __cordl_ret: crate::System::Nullable_1<
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-                quest_hook::libil2cpp::Gc<T>,
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::IList_1<T>,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked((), (runtimeKey))? };
         Ok(__cordl_ret.into())
@@ -223,9 +235,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadResourcesBeforeInstall_Gc_AsyncInstaller_IInstallerRegistry1(
+    pub fn LoadResourcesBeforeInstall_IList_1_AsyncInstaller_IInstallerRegistry1(
         &mut self,
-        assets: quest_hook::libil2cpp::Gc<T>,
+        assets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        >,
         registry: quest_hook::libil2cpp::Gc<
             crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
         >,
@@ -240,7 +254,9 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
                             >,

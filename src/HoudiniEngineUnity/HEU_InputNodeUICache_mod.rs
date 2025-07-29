@@ -4,13 +4,17 @@
 pub struct HEU_InputNodeUICache {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inputObjectCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputObjectUICache,
+            >,
         >,
     >,
     pub _inputAssetCache: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::HoudiniEngineUnity::HEU_InputNodeUICache_HEU_InputAssetUICache,
+            >,
         >,
     >,
 }

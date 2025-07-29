@@ -3,11 +3,16 @@
 #[derive(Debug)]
 pub struct OrderedSet_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _comparison: quest_hook::libil2cpp::Gc<T>,
+    pub _comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
     pub _processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
-    pub _sortIndices: quest_hook::libil2cpp::Gc<T, quest_hook::libil2cpp::Gc<T>>,
-    pub _head: quest_hook::libil2cpp::Gc<T>,
-    pub _tail: quest_hook::libil2cpp::Gc<T>,
+    pub _sortIndices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            T,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
+        >,
+    >,
+    pub _head: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
+    pub _tail: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     pub _clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -93,7 +98,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn AppendNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -104,7 +109,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AppendNode")
@@ -123,7 +130,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn AppendNodeUnchecked(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -134,7 +141,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AppendNodeUnchecked")
@@ -199,7 +208,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn GetEnumerator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<T>>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::IEnumerator_1<T>>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -210,7 +221,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<T>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerator_1<T>,
+                        >,
                         0usize,
                     >("GetEnumerator")
                     .unwrap_or_else(|e| {
@@ -221,9 +234,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<T> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerator_1<T>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFirstOrDefault(&mut self) -> quest_hook::libil2cpp::Result<T>
@@ -248,7 +261,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        comparison: quest_hook::libil2cpp::Gc<T>,
+        comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
         processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -263,7 +276,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn PrependNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -274,7 +287,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("PrependNode")
@@ -293,7 +308,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn PrependNodeUnchecked(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -304,7 +319,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("PrependNodeUnchecked")
@@ -346,7 +363,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn RemoveNode(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -357,7 +374,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("RemoveNode")
@@ -376,8 +395,10 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn SwapNodes(
         &mut self,
-        previous: quest_hook::libil2cpp::Gc<T>,
-        next: quest_hook::libil2cpp::Gc<T>,
+        previous: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+        >,
+        next: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -388,7 +409,14 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SwapNodes")
@@ -468,9 +496,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateSortedPosition_Gc1(
+    pub fn UpdateSortedPosition_OrderedSet_1_Node1(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -481,7 +509,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OrderedSet_1_Node<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("UpdateSortedPosition")
@@ -530,7 +560,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        comparison: quest_hook::libil2cpp::Gc<T>,
+        comparison: quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
         processOrder: crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -543,7 +573,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OrderedSet_1<T> {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<crate::System::Comparison_1<T>>,
                             crate::GlobalNamespace::OrderedSet_1_ProcessOrder<T>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -595,6 +625,24 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
     }
 }
 #[cfg(feature = "OrderedSet_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::GlobalNamespace::OrderedSet_1<T> {
+    fn as_ref(&self) -> &crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OrderedSet_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::System::Collections::Generic::IEnumerable_1<T>>
+for crate::GlobalNamespace::OrderedSet_1<T> {
+    fn as_mut(&mut self) -> &mut crate::System::Collections::Generic::IEnumerable_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "OrderedSet_1")]
 impl<T: quest_hook::libil2cpp::Type> AsRef<crate::System::Collections::IEnumerable>
 for crate::GlobalNamespace::OrderedSet_1<T> {
     fn as_ref(&self) -> &crate::System::Collections::IEnumerable {
@@ -608,28 +656,16 @@ for crate::GlobalNamespace::OrderedSet_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "OrderedSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
-for crate::GlobalNamespace::OrderedSet_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "OrderedSet_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
-for crate::GlobalNamespace::OrderedSet_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_OrderedSet_1+Node")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct OrderedSet_1_Node<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub value: T,
-    pub previous: quest_hook::libil2cpp::Gc<T>,
-    pub next: quest_hook::libil2cpp::Gc<T>,
+    pub previous: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OrderedSet_1_Node<T>,
+    >,
+    pub next: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OrderedSet_1_Node<T>>,
     pub isRemoved: bool,
     pub clearCount: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,

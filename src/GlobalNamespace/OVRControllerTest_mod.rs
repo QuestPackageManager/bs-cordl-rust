@@ -178,7 +178,11 @@ pub struct OVRControllerTest {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub uiText: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Text>,
     pub monitors: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRControllerTest_BoolMonitor>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::OVRControllerTest_BoolMonitor,
+            >,
+        >,
     >,
     pub data: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
 }

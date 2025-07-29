@@ -98,17 +98,21 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FaceRaycast_CullingMode_Gc2(
+    pub fn FaceRaycast_CullingMode_HashSet_1_2(
         InWorldRay: crate::UnityEngine::Ray,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         hits: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::RaycastHit>,
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::RaycastHit>,
+                >,
             >,
         >,
         cullingMode: crate::UnityEngine::ProBuilder::CullingMode,
         ignore: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -123,15 +127,19 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::UnityEngine::ProBuilder::RaycastHit,
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::ProBuilder::RaycastHit,
+                                        >,
                                     >,
                                 >,
                             >,
                             crate::UnityEngine::ProBuilder::CullingMode,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),
@@ -152,14 +160,16 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FaceRaycast_Gc0(
+    pub fn FaceRaycast_HashSet_1_0(
         worldRay: crate::UnityEngine::Ray,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         hit: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::RaycastHit>,
         >,
         ignore: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -178,8 +188,10 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),
@@ -199,7 +211,7 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FaceRaycast_f32_CullingMode_Gc1(
+    pub fn FaceRaycast_f32_CullingMode_HashSet_1_1(
         worldRay: crate::UnityEngine::Ray,
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         hit: quest_hook::libil2cpp::ByRefMut<
@@ -208,7 +220,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         distance: f32,
         cullingMode: crate::UnityEngine::ProBuilder::CullingMode,
         ignore: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -229,8 +243,10 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             f32,
                             crate::UnityEngine::ProBuilder::CullingMode,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),
@@ -254,10 +270,12 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetActiveElementPosition_ProBuilderMesh_Gc0(
+    pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -270,8 +288,10 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),
@@ -291,9 +311,13 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetActiveElementPosition_ProBuilderMesh_Gc1(
+    pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -305,7 +329,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Edge,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
                             >,
                         ),
                         crate::UnityEngine::Vector3,
@@ -324,9 +350,11 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetActiveElementPosition_ProBuilderMesh_Gc2(
+    pub fn GetActiveElementPosition_ProBuilderMesh_IEnumerable_1_2(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        vertices: quest_hook::libil2cpp::Gc<i32>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -337,7 +365,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Vector3,
                         2usize,
@@ -386,10 +416,14 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetEdgeRotation_HandleOrientation_Gc0(
+    pub fn GetEdgeRotation_HandleOrientation_IEnumerable_1_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         orientation: crate::UnityEngine::ProBuilder::HandleOrientation,
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -402,7 +436,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             >,
                             crate::UnityEngine::ProBuilder::HandleOrientation,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Edge,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
                             >,
                         ),
                         crate::UnityEngine::Quaternion,
@@ -454,11 +490,13 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetFaceRotation_HandleOrientation_Gc0(
+    pub fn GetFaceRotation_HandleOrientation_IEnumerable_1_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         orientation: crate::UnityEngine::ProBuilder::HandleOrientation,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -472,8 +510,10 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             >,
                             crate::UnityEngine::ProBuilder::HandleOrientation,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                         ),
@@ -495,7 +535,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
     }
     pub fn GetRotation(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -506,7 +548,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Quaternion,
                         2usize,
@@ -524,10 +568,12 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVertexRotation_HandleOrientation_Gc0(
+    pub fn GetVertexRotation_HandleOrientation_IEnumerable_1_0(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         orientation: crate::UnityEngine::ProBuilder::HandleOrientation,
-        vertices: quest_hook::libil2cpp::Gc<i32>,
+        vertices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -539,7 +585,9 @@ impl crate::UnityEngine::ProBuilder::HandleUtility {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             crate::UnityEngine::ProBuilder::HandleOrientation,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<i32>,
+                            >,
                         ),
                         crate::UnityEngine::Quaternion,
                         3usize,

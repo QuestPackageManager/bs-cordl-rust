@@ -92,7 +92,9 @@ impl<
     }
     pub fn AddRange(
         &mut self,
-        collection: quest_hook::libil2cpp::Gc<T>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,7 +105,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<T>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddRange")
@@ -289,7 +293,9 @@ impl<
     pub fn InsertRange(
         &mut self,
         index: i32,
-        collection: quest_hook::libil2cpp::Gc<T>,
+        collection: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -300,7 +306,12 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<T>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("InsertRange")
@@ -366,7 +377,7 @@ impl<
     }
     pub fn RemoveAll(
         &mut self,
-        _cordl_match: quest_hook::libil2cpp::Gc<T>,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -377,7 +388,7 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
                         i32,
                         1usize,
                     >("RemoveAll")

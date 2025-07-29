@@ -8,10 +8,12 @@ pub struct SubContainerCreatorByMethod_3<
 > {
     __cordl_parent: crate::Zenject::SubContainerCreatorByMethodBase,
     pub _installMethod: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-        TParam1,
-        TParam2,
-        TParam3,
+        crate::System::Action_4<
+            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            TParam1,
+            TParam2,
+            TParam3,
+        >,
     >,
     __cordl_phantom_TParam1: std::marker::PhantomData<TParam1>,
     __cordl_phantom_TParam2: std::marker::PhantomData<TParam2>,
@@ -88,7 +90,9 @@ impl<
 > crate::Zenject::SubContainerCreatorByMethod_3<TParam1, TParam2, TParam3> {
     pub fn CreateSubContainer(
         &mut self,
-        args: quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+        args: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::Zenject::TypeValuePair>,
+        >,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -107,7 +111,11 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::Zenject::TypeValuePair>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::Zenject::TypeValuePair,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                         ),
                         quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
@@ -132,10 +140,12 @@ impl<
             crate::Zenject::SubContainerCreatorBindInfo,
         >,
         installMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            TParam1,
-            TParam2,
-            TParam3,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                TParam1,
+                TParam2,
+                TParam3,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -159,10 +169,12 @@ impl<
             crate::Zenject::SubContainerCreatorBindInfo,
         >,
         installMethod: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            TParam1,
-            TParam2,
-            TParam3,
+            crate::System::Action_4<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                TParam1,
+                TParam2,
+                TParam3,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -184,10 +196,12 @@ impl<
                                 crate::Zenject::SubContainerCreatorBindInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                TParam1,
-                                TParam2,
-                                TParam3,
+                                crate::System::Action_4<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                    TParam1,
+                                    TParam2,
+                                    TParam3,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

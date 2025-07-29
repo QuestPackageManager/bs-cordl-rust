@@ -444,14 +444,23 @@ impl crate::UnityEngine::Material {
     pub fn ExtractColorArray(
         &mut self,
         name: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Color,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ExtractColorArray")
@@ -511,14 +520,21 @@ impl crate::UnityEngine::Material {
     pub fn ExtractFloatArray(
         &mut self,
         name: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<f32>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ExtractFloatArray")
@@ -574,14 +590,23 @@ impl crate::UnityEngine::Material {
     pub fn ExtractMatrixArray(
         &mut self,
         name: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Matrix4x4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ExtractMatrixArray")
@@ -641,14 +666,23 @@ impl crate::UnityEngine::Material {
     pub fn ExtractVectorArray(
         &mut self,
         name: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("ExtractVectorArray")
@@ -901,10 +935,12 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetColorArray_Il2CppString_Gc2(
+    pub fn GetColorArray_Il2CppString_List_1_2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -915,7 +951,11 @@ impl crate::UnityEngine::Material {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Color,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -965,17 +1005,26 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (nameID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetColorArray_i32_Gc3(
+    pub fn GetColorArray_i32_List_1_3(
         &mut self,
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Color,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetColorArray")
@@ -1400,10 +1449,12 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetFloatArray_Il2CppString_Gc2(
+    pub fn GetFloatArray_Il2CppString_List_1_2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1414,7 +1465,9 @@ impl crate::UnityEngine::Material {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<f32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -1462,17 +1515,24 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (nameID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetFloatArray_i32_Gc3(
+    pub fn GetFloatArray_i32_List_1_3(
         &mut self,
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<f32>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetFloatArray")
@@ -1755,10 +1815,12 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetMatrixArray_Il2CppString_Gc2(
+    pub fn GetMatrixArray_Il2CppString_List_1_2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1769,7 +1831,11 @@ impl crate::UnityEngine::Material {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Matrix4x4,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -1821,17 +1887,26 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (nameID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetMatrixArray_i32_Gc3(
+    pub fn GetMatrixArray_i32_List_1_3(
         &mut self,
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Matrix4x4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetMatrixArray")
@@ -2382,16 +2457,20 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTexturePropertyNameIDs_Gc1(
+    pub fn GetTexturePropertyNameIDs_List_1_1(
         &mut self,
-        outNames: quest_hook::libil2cpp::Gc<i32>,
+        outNames: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<i32>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetTexturePropertyNameIDs")
@@ -2473,10 +2552,12 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetTexturePropertyNames_Gc1(
+    pub fn GetTexturePropertyNames_List_1_1(
         &mut self,
         outNames: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -2485,8 +2566,10 @@ impl crate::UnityEngine::Material {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -2759,10 +2842,12 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVectorArray_Il2CppString_Gc2(
+    pub fn GetVectorArray_Il2CppString_List_1_2(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2773,7 +2858,11 @@ impl crate::UnityEngine::Material {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -2825,17 +2914,26 @@ impl crate::UnityEngine::Material {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (nameID))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVectorArray_i32_Gc3(
+    pub fn GetVectorArray_i32_List_1_3(
         &mut self,
         nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("GetVectorArray")
@@ -3880,38 +3978,6 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetColorArray_Il2CppString_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetColorArray")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColorArray", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, values))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetColorArray_Il2CppString_Il2CppArray3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -3950,17 +4016,28 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetColorArray_i32_Gc2(
+    pub fn SetColorArray_Il2CppString_List_1_1(
         &mut self,
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Color>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Color,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetColorArray")
@@ -3973,7 +4050,7 @@ impl crate::UnityEngine::Material {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameID, values))?
+            cordl_method_info.invoke_unchecked(self, (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4048,6 +4125,42 @@ impl crate::UnityEngine::Material {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (name, values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetColorArray_i32_List_1_2(
+        &mut self,
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Color>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Color,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetColorArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetColorArray", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4451,38 +4564,6 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloatArray_Il2CppString_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<f32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<f32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetFloatArray")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetFloatArray", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, values))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetFloatArray_Il2CppString_Il2CppArray3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -4517,17 +4598,26 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetFloatArray_i32_Gc2(
+    pub fn SetFloatArray_Il2CppString_List_1_1(
         &mut self,
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<f32>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<f32>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetFloatArray")
@@ -4540,7 +4630,7 @@ impl crate::UnityEngine::Material {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameID, values))?
+            cordl_method_info.invoke_unchecked(self, (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4607,6 +4697,40 @@ impl crate::UnityEngine::Material {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (name, values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFloatArray_i32_List_1_2(
+        &mut self,
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<f32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<f32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetFloatArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFloatArray", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5004,38 +5128,6 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetMatrixArray_Il2CppString_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetMatrixArray")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetMatrixArray", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, values))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetMatrixArray_Il2CppString_Il2CppArray3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5074,17 +5166,28 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetMatrixArray_i32_Gc2(
+    pub fn SetMatrixArray_Il2CppString_List_1_1(
         &mut self,
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Matrix4x4>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Matrix4x4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetMatrixArray")
@@ -5097,7 +5200,7 @@ impl crate::UnityEngine::Material {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameID, values))?
+            cordl_method_info.invoke_unchecked(self, (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5172,6 +5275,42 @@ impl crate::UnityEngine::Material {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (name, values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMatrixArray_i32_List_1_2(
+        &mut self,
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Matrix4x4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Matrix4x4,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetMatrixArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMatrixArray", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5868,38 +6007,6 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetVectorArray_Il2CppString_Gc1(
-        &mut self,
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("SetVectorArray")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetVectorArray", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (name, values))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn SetVectorArray_Il2CppString_Il2CppArray3(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -5938,17 +6045,28 @@ impl crate::UnityEngine::Material {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetVectorArray_i32_Gc2(
+    pub fn SetVectorArray_Il2CppString_List_1_1(
         &mut self,
-        nameID: i32,
-        values: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("SetVectorArray")
@@ -5961,7 +6079,7 @@ impl crate::UnityEngine::Material {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nameID, values))?
+            cordl_method_info.invoke_unchecked(self, (name, values))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6036,6 +6154,42 @@ impl crate::UnityEngine::Material {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (name, values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetVectorArray_i32_List_1_2(
+        &mut self,
+        nameID: i32,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetVectorArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetVectorArray", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nameID, values))?
         };
         Ok(__cordl_ret.into())
     }

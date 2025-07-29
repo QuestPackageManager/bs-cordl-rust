@@ -381,14 +381,18 @@ impl crate::System::Threading::SemaphoreSlim {
         &mut self,
         millisecondsTimeout: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, crate::System::Threading::CancellationToken),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         2usize,
                     >("WaitAsync")
                     .unwrap_or_else(|e| {
@@ -399,7 +403,9 @@ impl crate::System::Threading::SemaphoreSlim {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (millisecondsTimeout, cancellationToken))?
         };
@@ -444,7 +450,9 @@ impl crate::System::Threading::SemaphoreSlim {
         >,
         millisecondsTimeout: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<bool>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task_1<bool>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -457,7 +465,9 @@ impl crate::System::Threading::SemaphoreSlim {
                             i32,
                             crate::System::Threading::CancellationToken,
                         ),
-                        quest_hook::libil2cpp::Gc<bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<bool>,
+                        >,
                         3usize,
                     >("WaitUntilCountOrTimeoutAsync")
                     .unwrap_or_else(|e| {
@@ -468,7 +478,9 @@ impl crate::System::Threading::SemaphoreSlim {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<bool>,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -640,7 +652,7 @@ impl AsMut<crate::System::IDisposable> for crate::System::Threading::SemaphoreSl
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim_TaskNode {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::System::Threading::Tasks::Task_1<bool>,
     pub Prev: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim_TaskNode,
     >,
@@ -670,7 +682,7 @@ for crate::System::Threading::SemaphoreSlim_TaskNode {
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim_TaskNode {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::System::Threading::Tasks::Task_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

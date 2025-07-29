@@ -115,8 +115,10 @@ impl crate::GlobalNamespace::EncryptionUtility {
         isClient: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         >,
     > {
@@ -139,8 +141,10 @@ impl crate::GlobalNamespace::EncryptionUtility {
                             bool,
                         ),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                                >,
                             >,
                         >,
                         5usize,
@@ -154,8 +158,10 @@ impl crate::GlobalNamespace::EncryptionUtility {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
+                >,
             >,
         > = unsafe {
             cordl_method_info
@@ -394,10 +400,14 @@ pub struct EncryptionUtility_EncryptionState {
         quest_hook::libil2cpp::Il2CppArray<u8>,
     >,
     pub _sendMacQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
+        >,
     >,
     pub _receiveMacQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
+        crate::System::Collections::Concurrent::ConcurrentQueue_1<
+            quest_hook::libil2cpp::Gc<crate::Org::BouncyCastle::Crypto::Macs::HMac>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_EncryptionUtility+EncryptionState")]

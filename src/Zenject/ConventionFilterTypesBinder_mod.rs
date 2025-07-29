@@ -194,10 +194,12 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (ns))? };
         Ok(__cordl_ret.into())
     }
-    pub fn InNamespaces_Gc1(
+    pub fn InNamespaces_IEnumerable_1_1(
         &mut self,
         namespaces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
@@ -208,8 +210,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Gc<
@@ -411,8 +415,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     pub fn Where(
         &mut self,
         predicate: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            bool,
+            crate::System::Func_2<quest_hook::libil2cpp::Gc<crate::System::Type>, bool>,
         >,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
@@ -423,8 +426,10 @@ impl crate::Zenject::ConventionFilterTypesBinder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Type>,
-                            bool,
+                            crate::System::Func_2<
+                                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                bool,
+                            >,
                         >),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::ConventionFilterTypesBinder,
@@ -446,7 +451,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn WithAttributeWhere<T>(
         &mut self,
-        predicate: quest_hook::libil2cpp::Gc<T, bool>,
+        predicate: quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::Zenject::ConventionFilterTypesBinder>,
     >
@@ -459,7 +464,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T, bool>),
+                        (quest_hook::libil2cpp::Gc<crate::System::Func_2<T, bool>>),
                         quest_hook::libil2cpp::Gc<
                             crate::Zenject::ConventionFilterTypesBinder,
                         >,

@@ -1129,6 +1129,18 @@ impl AsMut<crate::System::IComparable> for crate::System::Single {
     }
 }
 #[cfg(feature = "System+Single")]
+impl AsRef<crate::System::IComparable_1<f32>> for crate::System::Single {
+    fn as_ref(&self) -> &crate::System::IComparable_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Single")]
+impl AsMut<crate::System::IComparable_1<f32>> for crate::System::Single {
+    fn as_mut(&mut self) -> &mut crate::System::IComparable_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Single")]
 impl AsRef<crate::System::IConvertible> for crate::System::Single {
     fn as_ref(&self) -> &crate::System::IConvertible {
         todo!()
@@ -1137,6 +1149,18 @@ impl AsRef<crate::System::IConvertible> for crate::System::Single {
 #[cfg(feature = "System+Single")]
 impl AsMut<crate::System::IConvertible> for crate::System::Single {
     fn as_mut(&mut self) -> &mut crate::System::IConvertible {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Single")]
+impl AsRef<crate::System::IEquatable_1<f32>> for crate::System::Single {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<f32> {
+        todo!()
+    }
+}
+#[cfg(feature = "System+Single")]
+impl AsMut<crate::System::IEquatable_1<f32>> for crate::System::Single {
+    fn as_mut(&mut self) -> &mut crate::System::IEquatable_1<f32> {
         todo!()
     }
 }
@@ -1161,30 +1185,6 @@ impl AsRef<crate::System::ISpanFormattable> for crate::System::Single {
 #[cfg(feature = "System+Single")]
 impl AsMut<crate::System::ISpanFormattable> for crate::System::Single {
     fn as_mut(&mut self) -> &mut crate::System::ISpanFormattable {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Single")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>> for crate::System::Single {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Single")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>> for crate::System::Single {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Single")]
-impl AsRef<quest_hook::libil2cpp::Gc<f32>> for crate::System::Single {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<f32> {
-        todo!()
-    }
-}
-#[cfg(feature = "System+Single")]
-impl AsMut<quest_hook::libil2cpp::Gc<f32>> for crate::System::Single {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<f32> {
         todo!()
     }
 }

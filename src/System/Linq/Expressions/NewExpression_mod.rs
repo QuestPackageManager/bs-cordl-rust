@@ -4,7 +4,9 @@
 pub struct NewExpression {
     __cordl_parent: crate::System::Linq::Expressions::Expression,
     pub _arguments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        crate::System::Collections::Generic::IReadOnlyList_1<
+            quest_hook::libil2cpp::Gc<crate::System::Linq::Expressions::Expression>,
+        >,
     >,
     pub _Constructor_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::System::Reflection::ConstructorInfo,

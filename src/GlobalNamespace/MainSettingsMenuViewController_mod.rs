@@ -4,8 +4,10 @@
 pub struct MainSettingsMenuViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub didSelectSettingsSubMenuEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
-        i32,
+        crate::System::Action_2<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+            i32,
+        >,
     >,
     pub _settingsSubMenuInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -167,8 +169,10 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
     pub fn add_didSelectSettingsSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -177,10 +181,12 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsSubMenuInfo,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SettingsSubMenuInfo,
+                                >,
+                                i32,
                             >,
-                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -247,8 +253,10 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
     pub fn remove_didSelectSettingsSubMenuEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
-            i32,
+            crate::System::Action_2<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SettingsSubMenuInfo>,
+                i32,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -257,10 +265,12 @@ impl crate::GlobalNamespace::MainSettingsMenuViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsSubMenuInfo,
+                            crate::System::Action_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::SettingsSubMenuInfo,
+                                >,
+                                i32,
                             >,
-                            i32,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

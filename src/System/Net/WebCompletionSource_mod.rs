@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebCompletionSource {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::System::Net::WebCompletionSource_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
@@ -27,7 +27,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::WebCompletionSou
 }
 #[cfg(feature = "System+Net+WebCompletionSource")]
 impl std::ops::Deref for crate::System::Net::WebCompletionSource {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::System::Net::WebCompletionSource_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

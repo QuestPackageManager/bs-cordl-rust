@@ -885,7 +885,7 @@ impl crate::System::Data::Common::DataStorage {
     pub fn InspectTypeForInterfaces(
         dataType: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<bool, bool, bool, bool>,
+        quest_hook::libil2cpp::Gc<crate::System::Tuple_4<bool, bool, bool, bool>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -893,7 +893,9 @@ impl crate::System::Data::Common::DataStorage {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
-                        quest_hook::libil2cpp::Gc<bool, bool, bool, bool>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Tuple_4<bool, bool, bool, bool>,
+                        >,
                         1usize,
                     >("InspectTypeForInterfaces")
                     .unwrap_or_else(|e| {
@@ -904,9 +906,9 @@ impl crate::System::Data::Common::DataStorage {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<bool, bool, bool, bool> = unsafe {
-            cordl_method_info.invoke_unchecked((), (dataType))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Tuple_4<bool, bool, bool, bool>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (dataType))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsNull(&mut self, recordNo: i32) -> quest_hook::libil2cpp::Result<bool> {

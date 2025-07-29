@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Parties {
 impl crate::Oculus::Platform::Parties {
     pub fn GetCurrent() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -50,8 +52,10 @@ impl crate::Oculus::Platform::Parties {
                     .find_static_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::Party,
+                            crate::Oculus::Platform::Request_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::Party,
+                                >,
                             >,
                         >,
                         0usize,
@@ -65,14 +69,18 @@ impl crate::Oculus::Platform::Parties {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
+            crate::Oculus::Platform::Request_1<
+                quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Party>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn SetPartyUpdateNotificationCallback(
         callback: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::Oculus::Platform::Models::PartyUpdateNotification,
+            crate::Oculus::Platform::Message_1_Callback<
+                quest_hook::libil2cpp::Gc<
+                    crate::Oculus::Platform::Models::PartyUpdateNotification,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -82,8 +90,10 @@ impl crate::Oculus::Platform::Parties {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::Oculus::Platform::Models::PartyUpdateNotification,
+                            crate::Oculus::Platform::Message_1_Callback<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::Oculus::Platform::Models::PartyUpdateNotification,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

@@ -10,7 +10,9 @@ pub struct ArcAndObstacleHapticEffectManager {
         crate::GlobalNamespace::ObstacleSaberSparkleEffectManager,
     >,
     pub _sliderInteractionManagers: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderInteractionManager>,
+        >,
     >,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
     pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<

@@ -4,10 +4,14 @@
 pub struct SignalDeclaration {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subscriptions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
+        >,
     >,
     pub _asyncQueue: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
     >,
     pub _bindingId: crate::Zenject::BindingId,
     pub _missingHandlerResponses: crate::Zenject::SignalMissingHandlerResponses,
@@ -129,7 +133,9 @@ impl crate::Zenject::SignalDeclaration {
     pub fn FireInternal(
         &mut self,
         subscriptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::SignalSubscription>,
+            >,
         >,
         signal: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -140,8 +146,10 @@ impl crate::Zenject::SignalDeclaration {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::Zenject::SignalSubscription,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::Zenject::SignalSubscription,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -438,7 +446,7 @@ impl AsMut<crate::Zenject::ITickable> for crate::Zenject::SignalDeclaration {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration_Factory {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >,
@@ -464,7 +472,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::SignalDeclaration_Fa
 }
 #[cfg(feature = "Zenject+SignalDeclaration+Factory")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration_Factory {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::PlaceholderFactory_2<
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclarationBindInfo>,
         quest_hook::libil2cpp::Gc<crate::Zenject::SignalDeclaration>,
     >;

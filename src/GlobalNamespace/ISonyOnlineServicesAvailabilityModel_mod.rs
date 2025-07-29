@@ -46,7 +46,9 @@ impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -56,7 +58,9 @@ impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+                            crate::System::Threading::Tasks::Task_1<
+                                crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+                            >,
                         >,
                         0usize,
                     >("GetOnlineServicesAvailabilityAsync")
@@ -69,7 +73,9 @@ impl crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            crate::System::Threading::Tasks::Task_1<
+                crate::GlobalNamespace::ISonyOnlineServicesAvailabilityModel_OnlineServicesAvailability,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

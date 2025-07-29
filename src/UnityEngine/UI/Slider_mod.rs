@@ -1490,7 +1490,7 @@ unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::UI::Slider_Dir
 #[repr(C)]
 #[derive(Debug)]
 pub struct Slider_SliderEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<f32>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<f32>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+Slider+SliderEvent")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_SliderEvent {
@@ -1513,7 +1513,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Slider_Slide
 }
 #[cfg(feature = "UnityEngine+UI+Slider+SliderEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Slider_SliderEvent {
-    type Target = quest_hook::libil2cpp::Gc<f32>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<f32>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -8,11 +8,13 @@ pub struct ContentCatalogProvider {
     pub DisableCatalogUpdateOnStart: bool,
     pub IsLocalCatalogInBundle: bool,
     pub m_LocationToCatalogLoadOpMap: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        >,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+            >,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp,
+            >,
         >,
     >,
     pub m_RM: quest_hook::libil2cpp::Gc<
@@ -447,7 +449,9 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
             crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
         dependencyObjects: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
         disableCatalogUpdateOnStart: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -463,8 +467,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
                                 crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                             bool,
@@ -762,8 +768,10 @@ pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
     >,
     pub m_WebRequestTimeout: i32,
     pub OnLoaded: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            >,
         >,
     >,
 }
@@ -1049,8 +1057,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     pub fn add_OnLoaded(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1060,8 +1070,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -1117,8 +1129,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     pub fn remove_OnLoaded(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1128,8 +1142,10 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

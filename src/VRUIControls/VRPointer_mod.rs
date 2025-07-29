@@ -16,7 +16,9 @@ pub struct VRPointer {
     pub _defaultLaserPointerLength: f32,
     pub _laserPointerWidth: f32,
     pub lastUsedControllerChangedEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+        >,
     >,
     pub _currentPointerData: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::PointerEventData,
@@ -503,7 +505,9 @@ impl crate::VRUIControls::VRPointer {
     pub fn add_lastUsedControllerChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -512,8 +516,10 @@ impl crate::VRUIControls::VRPointer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::VRController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::VRController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -693,7 +699,9 @@ impl crate::VRUIControls::VRPointer {
     pub fn remove_lastUsedControllerChangedEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::VRController>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -702,8 +710,10 @@ impl crate::VRUIControls::VRPointer {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::VRController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::VRController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,

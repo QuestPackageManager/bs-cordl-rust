@@ -4,7 +4,9 @@
 pub struct UIDocumentList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AttachedUIDocuments: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIDocument>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIDocumentList")]

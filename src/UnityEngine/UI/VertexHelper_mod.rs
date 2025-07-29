@@ -3,15 +3,33 @@
 #[derive(Debug)]
 pub struct VertexHelper {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_Positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_Colors: quest_hook::libil2cpp::Gc<crate::UnityEngine::Color32>,
-    pub m_Uv0S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    pub m_Uv1S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    pub m_Uv2S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    pub m_Uv3S: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    pub m_Normals: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-    pub m_Tangents: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector4>,
-    pub m_Indices: quest_hook::libil2cpp::Gc<i32>,
+    pub m_Positions: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_Colors: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Color32>,
+    >,
+    pub m_Uv0S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Uv1S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Uv2S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Uv3S: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Normals: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
+    pub m_Tangents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
+    >,
+    pub m_Indices: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
+    >,
     pub m_ListsInitalized: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UI+VertexHelper")]
@@ -110,8 +128,12 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn AddUIVertexStream(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
-        indices: quest_hook::libil2cpp::Gc<i32>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
+        indices: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -119,8 +141,14 @@ impl crate::UnityEngine::UI::VertexHelper {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIVertex,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<i32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -140,14 +168,20 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn AddUIVertexTriangleStream(
         &mut self,
-        verts: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        verts: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIVertex,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("AddUIVertexTriangleStream")
@@ -377,14 +411,20 @@ impl crate::UnityEngine::UI::VertexHelper {
     }
     pub fn GetUIVertexStream(
         &mut self,
-        stream: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>,
+        stream: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::UIVertex>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::UIVertex>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::UIVertex,
+                            >,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("GetUIVertexStream")

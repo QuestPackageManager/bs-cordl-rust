@@ -3,10 +3,18 @@
 #[derive(Debug)]
 pub struct DetachedAllocator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_VertsPool: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Vertex>,
-    pub m_IndexPool: quest_hook::libil2cpp::Gc<u16>,
+    pub m_VertsPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<
+            crate::UnityEngine::UIElements::Vertex,
+        >,
+    >,
+    pub m_IndexPool: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::TempAllocator_1<u16>,
+    >,
     pub m_MeshWriteDataPool: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MeshWriteData>,
+        >,
     >,
     pub m_MeshWriteDataCount: i32,
     pub m_Disposed: bool,

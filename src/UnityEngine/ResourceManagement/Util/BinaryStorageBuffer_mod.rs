@@ -76,9 +76,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     pub type Writer = crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer;
     pub fn AddSerializationAdapter(
         serializationAdapters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         >,
         adapter: quest_hook::libil2cpp::Gc<
@@ -93,9 +95,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -157,9 +161,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
     }
     pub fn GetSerializationAdapter(
         serializationAdapters: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Type>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::Dictionary_2<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         >,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -176,9 +182,11 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                crate::System::Collections::Generic::Dictionary_2<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -440,8 +448,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         >,
     > {
@@ -452,8 +462,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                >,
                             >,
                         >,
                         0usize,
@@ -467,8 +479,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTy
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -515,72 +529,34 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<bool>>
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        bool,
+    >,
+>
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<bool> {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        bool,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<bool>>
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        bool,
+    >,
+>
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<bool> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<quest_hook::libil2cpp::Gc<i32>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<quest_hook::libil2cpp::Gc<i32>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i32> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsRef<quest_hook::libil2cpp::Gc<i64>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<i64> {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(
-    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
-)]
-impl AsMut<quest_hook::libil2cpp::Gc<i64>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<i64> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        bool,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -588,14 +564,116 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        crate::UnityEngine::Hash128,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        crate::UnityEngine::Hash128,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        crate::UnityEngine::Hash128,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        crate::UnityEngine::Hash128,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i32,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i32,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i32,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i32,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i64,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_ref(
+        &self,
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i64,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i64,
+    >,
+>
+for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        i64,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
+)]
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 >
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -605,14 +683,14 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTyp
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer"
 )]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >,
 >
 for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_BuiltinTypesSerializer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -872,8 +950,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         >,
     > {
@@ -884,8 +964,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                >,
                             >,
                         >,
                         0usize,
@@ -899,8 +981,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializ
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -1181,9 +1265,11 @@ pub struct BinaryStorageBuffer_Reader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
     pub m_Adapters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     >,
     pub m_Cache: crate::UnityEngine::ResourceManagement::Util::LRUCache_2<
@@ -2060,8 +2146,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         >,
     > {
@@ -2072,8 +2160,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                                >,
                             >,
                         >,
                         0usize,
@@ -2087,8 +2177,10 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSeria
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -2133,22 +2225,32 @@ impl AsMut<
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
-impl AsRef<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+impl AsRef<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+    ) -> &crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer"
 )]
-impl AsMut<quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>>>
-for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
+impl AsMut<
+    crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    >,
+> for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_TypeSerializer {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Type>> {
+    ) -> &mut crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter_1<
+        quest_hook::libil2cpp::Gc<crate::System::Type>,
+    > {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -2162,15 +2264,24 @@ pub struct BinaryStorageBuffer_Writer {
     pub totalBytes: u32,
     pub defaulChunkSize: u32,
     pub chunks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::Util::Writer_BinaryStorageBuffer_Chunk,
+            >,
         >,
     >,
-    pub existingValues: quest_hook::libil2cpp::Gc<crate::UnityEngine::Hash128, u32>,
+    pub existingValues: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            crate::UnityEngine::Hash128,
+            u32,
+        >,
+    >,
     pub serializationAdapters: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Type>,
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Type>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_ISerializationAdapter,
+            >,
         >,
     >,
 }
@@ -2651,7 +2762,9 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
     }
     pub fn WriteObjects<T>(
         &mut self,
-        objs: quest_hook::libil2cpp::Gc<T>,
+        objs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
         serizalizeTypeData: bool,
     ) -> quest_hook::libil2cpp::Result<u32>
     where
@@ -2663,7 +2776,12 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Writer {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                            bool,
+                        ),
                         u32,
                         2usize,
                     >("WriteObjects")

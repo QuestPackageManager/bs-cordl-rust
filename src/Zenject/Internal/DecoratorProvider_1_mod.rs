@@ -4,15 +4,23 @@
 pub struct DecoratorProvider_1<TContract: quest_hook::libil2cpp::Type> {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedInstances: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                >,
+            >,
         >,
     >,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    pub _factoryBindIds: quest_hook::libil2cpp::Gc<crate::System::Guid>,
+    pub _factoryBindIds: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::System::Guid>,
+    >,
     pub _decoratorFactories: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<TContract, TContract>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::Zenject::IFactory_2<TContract, TContract>>,
+        >,
     >,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
@@ -144,7 +152,9 @@ impl<
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -160,8 +170,10 @@ impl<
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),
@@ -228,7 +240,9 @@ impl<
         provider: quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
         context: quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
         buffer: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -244,8 +258,10 @@ impl<
                             quest_hook::libil2cpp::Gc<crate::Zenject::IProvider>,
                             quest_hook::libil2cpp::Gc<crate::Zenject::InjectContext>,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        quest_hook::libil2cpp::Il2CppObject,
+                                    >,
                                 >,
                             >,
                         ),

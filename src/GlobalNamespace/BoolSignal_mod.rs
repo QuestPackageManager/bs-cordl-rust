@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BoolSignal {
-    __cordl_parent: quest_hook::libil2cpp::Gc<bool>,
+    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<bool>,
 }
 #[cfg(feature = "cordl_class_BoolSignal")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoolSignal {
@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BoolSignal {
 }
 #[cfg(feature = "BoolSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::BoolSignal {
-    type Target = quest_hook::libil2cpp::Gc<bool>;
+    type Target = crate::GlobalNamespace::GenericSignal_1<bool>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

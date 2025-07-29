@@ -9,8 +9,12 @@ pub struct UnicodeLineBreakingRules {
     pub m_LeadingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub m_FollowingCharacters: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub m_UseModernHangulLineBreakingRules: bool,
-    pub m_LeadingCharactersLookup: quest_hook::libil2cpp::Gc<u32>,
-    pub m_FollowingCharactersLookup: quest_hook::libil2cpp::Gc<u32>,
+    pub m_LeadingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
+    pub m_FollowingCharactersLookup: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<u32>,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+UnicodeLineBreakingRules")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -50,14 +54,18 @@ for crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
 impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     pub fn GetCharacters(
         file: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
-                        quest_hook::libil2cpp::Gc<u32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<u32>,
+                        >,
                         1usize,
                     >("GetCharacters")
                     .unwrap_or_else(|e| {
@@ -68,9 +76,9 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = unsafe {
-            cordl_method_info.invoke_unchecked((), (file))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (file))? };
         Ok(__cordl_ret.into())
     }
     pub fn LoadLineBreakingRules_0(
@@ -185,14 +193,18 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     }
     pub fn get_followingCharactersLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<u32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<u32>,
+                        >,
                         0usize,
                     >("get_followingCharactersLookup")
                     .unwrap_or_else(|e| {
@@ -203,9 +215,9 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_leadingCharacters(
@@ -237,14 +249,18 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
     }
     pub fn get_leadingCharactersLookup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<u32>> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::HashSet_1<u32>>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<u32>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::HashSet_1<u32>,
+                        >,
                         0usize,
                     >("get_leadingCharactersLookup")
                     .unwrap_or_else(|e| {
@@ -255,9 +271,9 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<u32> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<u32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_useModernHangulLineBreakingRules(

@@ -4,11 +4,15 @@
 pub struct SafeSocketHandle {
     __cordl_parent: crate::Microsoft::Win32::SafeHandles::SafeHandleMinusOneIsInvalid,
     pub blocking_threads: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+        >,
     >,
     pub threads_stacktraces: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
-        quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
+        crate::System::Collections::Generic::Dictionary_2<
+            quest_hook::libil2cpp::Gc<crate::System::Threading::Thread>,
+            quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackTrace>,
+        >,
     >,
     pub in_cleanup: bool,
 }

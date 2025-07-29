@@ -143,7 +143,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ObservableVariable_
         Ok(__cordl_ret.into())
     }
     pub fn op_Implicit(
-        obj: quest_hook::libil2cpp::Gc<T>,
+        obj: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ObservableVariable_1<T>>,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -154,7 +154,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::ObservableVariable_
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ObservableVariable_1<T>,
+                        >),
                         T,
                         1usize,
                     >("op_Implicit")
@@ -251,16 +253,16 @@ for crate::GlobalNamespace::ObservableVariable_1<T> {
     }
 }
 #[cfg(feature = "ObservableVariable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsRef<quest_hook::libil2cpp::Gc<T>>
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::GlobalNamespace::IValue_1<T>>
 for crate::GlobalNamespace::ObservableVariable_1<T> {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<T> {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IValue_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "ObservableVariable_1")]
-impl<T: quest_hook::libil2cpp::Type> AsMut<quest_hook::libil2cpp::Gc<T>>
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::GlobalNamespace::IValue_1<T>>
 for crate::GlobalNamespace::ObservableVariable_1<T> {
-    fn as_mut(&mut self) -> &mut quest_hook::libil2cpp::Gc<T> {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IValue_1<T> {
         unsafe { std::mem::transmute(self) }
     }
 }

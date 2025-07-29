@@ -104,7 +104,9 @@ impl crate::System::Dynamic::Utils::ContractUtils {
         Ok(__cordl_ret.into())
     }
     pub fn RequiresArrayRange<T>(
-        array: quest_hook::libil2cpp::Gc<T>,
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        >,
         offset: i32,
         count: i32,
         offsetName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -120,7 +122,9 @@ impl crate::System::Dynamic::Utils::ContractUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
                             i32,
                             i32,
                             quest_hook::libil2cpp::Gc<
@@ -148,7 +152,9 @@ impl crate::System::Dynamic::Utils::ContractUtils {
         Ok(__cordl_ret.into())
     }
     pub fn RequiresNotNullItems<T>(
-        array: quest_hook::libil2cpp::Gc<T>,
+        array: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<T>,
+        >,
         arrayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -161,7 +167,9 @@ impl crate::System::Dynamic::Utils::ContractUtils {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<T>,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,

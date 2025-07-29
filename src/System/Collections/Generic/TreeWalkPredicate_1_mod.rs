@@ -62,7 +62,9 @@ impl<
 > crate::System::Collections::Generic::TreeWalkPredicate_1<T> {
     pub fn Invoke(
         &mut self,
-        node: quest_hook::libil2cpp::Gc<T>,
+        node: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::SortedSet_1_Node<T>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -73,7 +75,9 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<T>),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::SortedSet_1_Node<T>,
+                        >),
                         bool,
                         1usize,
                     >("Invoke")

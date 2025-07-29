@@ -42,7 +42,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
     pub fn CreateNotificationsPlayable_IPlayableAsset_PlayableDirector2(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         markers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            >,
         >,
         asset: quest_hook::libil2cpp::Gc<crate::UnityEngine::Playables::IPlayableAsset>,
         director: quest_hook::libil2cpp::Gc<
@@ -63,8 +65,10 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -101,7 +105,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
     pub fn CreateNotificationsPlayable_PlayableDirector0(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         markers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            >,
         >,
         director: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Playables::PlayableDirector,
@@ -121,8 +127,10 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -156,7 +164,9 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
     pub fn CreateNotificationsPlayable_TimelineAsset1(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         markers: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Timeline::IMarker>,
+            >,
         >,
         timelineAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Timeline::TimelineAsset,
@@ -176,8 +186,10 @@ impl crate::UnityEngine::Timeline::NotificationUtilities {
                         (
                             crate::UnityEngine::Playables::PlayableGraph,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::Timeline::IMarker,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::Timeline::IMarker,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<

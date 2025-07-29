@@ -4,10 +4,14 @@
 pub struct XObjectChangeAnnotation {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub changing: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
+        crate::System::EventHandler_1<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
+        >,
     >,
     pub changed: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
+        crate::System::EventHandler_1<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XObjectChangeEventArgs>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+Xml+Linq+XObjectChangeAnnotation")]

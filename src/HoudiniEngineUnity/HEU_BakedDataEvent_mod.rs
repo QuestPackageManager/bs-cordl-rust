@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_BakedDataEvent {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BakedEventData>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::HoudiniEngineUnity::HEU_BakedDataEvent {
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_BakedDataEvent")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BakedDataEvent {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BakedEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

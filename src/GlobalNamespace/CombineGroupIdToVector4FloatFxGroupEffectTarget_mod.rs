@@ -17,7 +17,9 @@ pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
     pub _didReceiveEventThisFrame: bool,
-    pub _groupIdToIndex: quest_hook::libil2cpp::Gc<i32, i32>,
+    pub _groupIdToIndex: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
     pub _propertyId: i32,
     pub _data: crate::UnityEngine::Vector4,
 }

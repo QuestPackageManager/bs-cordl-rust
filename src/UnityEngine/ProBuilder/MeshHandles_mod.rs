@@ -38,10 +38,14 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::MeshHandles {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshHandles")]
 impl crate::UnityEngine::ProBuilder::MeshHandles {
-    pub fn CreateEdgeBillboardMesh_Gc1(
+    pub fn CreateEdgeBillboardMesh_ICollection_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-        edges: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Edge>,
+        edges: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::ICollection_1<
+                crate::UnityEngine::ProBuilder::Edge,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -54,7 +58,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Edge,
+                                crate::System::Collections::Generic::ICollection_1<
+                                    crate::UnityEngine::ProBuilder::Edge,
+                                >,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -208,7 +214,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
     pub fn CreateFaceMeshFromFaces(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         faces: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
+            >,
         >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -222,8 +230,10 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::ProBuilder::Face,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ProBuilder::Face,
+                                    >,
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -244,9 +254,13 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreatePointBillboardMesh_Gc_Mesh1(
-        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+    pub fn CreatePointBillboardMesh_IList_1_Mesh1(
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -255,8 +269,14 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -276,7 +296,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         Ok(__cordl_ret.into())
     }
     pub fn CreatePointBillboardMesh_Mesh0(
-        positions: quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+        positions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<crate::UnityEngine::Vector3>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -285,7 +307,11 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    crate::UnityEngine::Vector3,
+                                >,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -308,7 +334,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         positions: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
         >,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -322,7 +350,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                                     crate::UnityEngine::Vector3,
                                 >,
                             >,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -341,10 +371,12 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateVertexMesh_Gc1(
+    pub fn CreateVertexMesh_IList_1_1(
         mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
         target: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-        indexes: quest_hook::libil2cpp::Gc<i32>,
+        indexes: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<i32>,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -356,7 +388,9 @@ impl crate::UnityEngine::ProBuilder::MeshHandles {
                                 crate::UnityEngine::ProBuilder::ProBuilderMesh,
                             >,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-                            quest_hook::libil2cpp::Gc<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<i32>,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,

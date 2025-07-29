@@ -454,6 +454,34 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::Linq::XName {
     }
 }
 #[cfg(feature = "System+Xml+Linq+XName")]
+impl AsRef<
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    >,
+> for crate::System::Xml::Linq::XName {
+    fn as_ref(
+        &self,
+    ) -> &crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Linq+XName")]
+impl AsMut<
+    crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    >,
+> for crate::System::Xml::Linq::XName {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<
+        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+Linq+XName")]
 impl AsRef<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Xml::Linq::XName {
     fn as_ref(&self) -> &crate::System::Runtime::Serialization::ISerializable {
@@ -464,30 +492,6 @@ for crate::System::Xml::Linq::XName {
 impl AsMut<crate::System::Runtime::Serialization::ISerializable>
 for crate::System::Xml::Linq::XName {
     fn as_mut(&mut self) -> &mut crate::System::Runtime::Serialization::ISerializable {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+Linq+XName")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>>,
-> for crate::System::Xml::Linq::XName {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "System+Xml+Linq+XName")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>>,
-> for crate::System::Xml::Linq::XName {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Xml::Linq::XName>,
-    > {
         unsafe { std::mem::transmute(self) }
     }
 }

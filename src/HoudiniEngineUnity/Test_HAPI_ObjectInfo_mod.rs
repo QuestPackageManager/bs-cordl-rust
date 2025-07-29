@@ -116,13 +116,13 @@ for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl AsRef<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn as_ref(
         &self,
-    ) -> &quest_hook::libil2cpp::Gc<
+    ) -> &crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     > {
         unsafe { std::mem::transmute(self) }
@@ -130,13 +130,13 @@ impl AsRef<
 }
 #[cfg(feature = "HoudiniEngineUnity+Test_HAPI_ObjectInfo")]
 impl AsMut<
-    quest_hook::libil2cpp::Gc<
+    crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     >,
 > for crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
+    ) -> &mut crate::HoudiniEngineUnity::IEquivable_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::Test_HAPI_ObjectInfo>,
     > {
         unsafe { std::mem::transmute(self) }

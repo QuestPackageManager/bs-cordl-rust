@@ -10,10 +10,14 @@ pub struct WaypointsTestMenuViewController {
         crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
     >,
     pub _previewLevels: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelSO>,
+        >,
     >,
     pub _characteristics: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCharacteristicSO>,
+        >,
     >,
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameScenesManager,

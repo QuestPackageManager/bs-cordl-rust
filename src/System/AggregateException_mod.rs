@@ -4,7 +4,9 @@
 pub struct AggregateException {
     __cordl_parent: crate::System::Exception,
     pub m_innerExceptions: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        >,
     >,
 }
 #[cfg(feature = "cordl_class_System+AggregateException")]
@@ -109,9 +111,11 @@ impl crate::System::AggregateException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc1(
+    pub fn New_IEnumerable_1_1(
         innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -120,10 +124,12 @@ impl crate::System::AggregateException {
             .invoke_void(".ctor", (innerExceptions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Gc6(
+    pub fn New_IEnumerable_1_6(
         innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -146,10 +152,12 @@ impl crate::System::AggregateException {
             .invoke_void(".ctor", (innerExceptions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Gc3(
+    pub fn New_Il2CppString_IEnumerable_1_3(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -158,23 +166,13 @@ impl crate::System::AggregateException {
             .invoke_void(".ctor", (message, innerExceptions))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Gc5(
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, innerExceptions))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_Il2CppString_Gc7(
+    pub fn New_Il2CppString_IEnumerable_1_7(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -184,11 +182,27 @@ impl crate::System::AggregateException {
             .invoke_void(".ctor", (message, innerExceptionInfos))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Gc8(
+    pub fn New_Il2CppString_IList_1_5(
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerExceptions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, innerExceptions))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_IList_1_8(
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -272,10 +286,12 @@ impl crate::System::AggregateException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc1(
+    pub fn _ctor_IEnumerable_1_1(
         &mut self,
         innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -284,7 +300,9 @@ impl crate::System::AggregateException {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -302,11 +320,13 @@ impl crate::System::AggregateException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Gc6(
+    pub fn _ctor_IEnumerable_1_6(
         &mut self,
         innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -316,8 +336,10 @@ impl crate::System::AggregateException {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -370,84 +392,12 @@ impl crate::System::AggregateException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Gc3(
+    pub fn _ctor_Il2CppString_IEnumerable_1_3(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (message, innerExceptions))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_Gc5(
-        &mut self,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerExceptions: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (message, innerExceptions))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_Il2CppString_Gc7(
-        &mut self,
-        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -461,8 +411,52 @@ impl crate::System::AggregateException {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (message, innerExceptions))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_IEnumerable_1_7(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerExceptionInfos: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -482,12 +476,12 @@ impl crate::System::AggregateException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Gc8(
+    pub fn _ctor_Il2CppString_IList_1_5(
         &mut self,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        innerExceptionInfos: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+        innerExceptions: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -501,8 +495,52 @@ impl crate::System::AggregateException {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (message, innerExceptions))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_IList_1_8(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerExceptionInfos: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IList_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
+                                    >,
                                 >,
                             >,
                         ),
@@ -599,7 +637,11 @@ impl crate::System::AggregateException {
     pub fn get_InnerExceptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Gc<crate::System::Exception>>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -608,7 +650,9 @@ impl crate::System::AggregateException {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            >,
                         >,
                         0usize,
                     >("get_InnerExceptions")
@@ -621,7 +665,9 @@ impl crate::System::AggregateException {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
+                quest_hook::libil2cpp::Gc<crate::System::Exception>,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnityScenesHelper {
 impl crate::GlobalNamespace::UnityScenesHelper {
     pub fn GetComponentsInScene<T>(
         scene: crate::UnityEngine::SceneManagement::Scene,
-        components: quest_hook::libil2cpp::Gc<T>,
+        components: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
         includeInactive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -54,7 +56,9 @@ impl crate::GlobalNamespace::UnityScenesHelper {
                     .find_static_method::<
                         (
                             crate::UnityEngine::SceneManagement::Scene,
-                            quest_hook::libil2cpp::Gc<T>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<T>,
+                            >,
                             bool,
                         ),
                         quest_hook::libil2cpp::Void,

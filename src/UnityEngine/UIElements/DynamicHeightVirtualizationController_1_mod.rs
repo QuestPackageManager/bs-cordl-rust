@@ -4,16 +4,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: quest_hook::libil2cpp::Gc<T>,
+    __cordl_parent: crate::UnityEngine::UIElements::VerticalVirtualizationController_1<
+        T,
+    >,
     pub m_HighestCachedIndex: i32,
-    pub m_ItemHeightCache: quest_hook::libil2cpp::Gc<i32, f32>,
+    pub m_ItemHeightCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, f32>,
+    >,
     pub m_ContentHeightCache: quest_hook::libil2cpp::Gc<
-        i32,
-        crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
-            T,
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
+                T,
+            >,
         >,
     >,
-    pub m_WaitingCache: quest_hook::libil2cpp::Gc<i32>,
+    pub m_WaitingCache: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
     pub m_ForcedFirstVisibleItem: i32,
     pub m_ForcedLastVisibleItem: i32,
     pub m_StickToBottom: bool,
@@ -30,7 +38,11 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
     pub m_ScrollCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_ScrollResetCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub m_GeometryChangedCallback: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::ReusableCollectionItem>,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::ReusableCollectionItem,
+            >,
+        >,
     >,
     pub m_ScheduledItem: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
@@ -41,7 +53,9 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
     pub m_ScrollResetScheduledItem: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IVisualElementScheduledItem,
     >,
-    pub m_IndexOutOfBoundsPredicate: quest_hook::libil2cpp::Gc<i32>,
+    pub m_IndexOutOfBoundsPredicate: quest_hook::libil2cpp::Gc<
+        crate::System::Predicate_1<i32>,
+    >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -85,7 +99,7 @@ for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1<T> {
 #[cfg(feature = "UnityEngine+UIElements+DynamicHeightVirtualizationController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1<T> {
-    type Target = quest_hook::libil2cpp::Gc<T>;
+    type Target = crate::UnityEngine::UIElements::VerticalVirtualizationController_1<T>;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

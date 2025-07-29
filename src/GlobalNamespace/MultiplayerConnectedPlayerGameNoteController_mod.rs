@@ -4,8 +4,10 @@
 pub struct MultiplayerConnectedPlayerGameNoteController {
     __cordl_parent: crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController,
     pub cubeNoteControllerDidInitEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            >,
         >,
     >,
     pub _noteVisualModifierType: crate::GlobalNamespace::NoteVisualModifierType,
@@ -123,8 +125,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     pub fn add_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,8 +138,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -234,8 +240,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     pub fn remove_cubeNoteControllerDidInitEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Gc<
-                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -245,8 +253,10 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+                                >,
                             >,
                         >),
                         quest_hook::libil2cpp::Void,
@@ -274,6 +284,42 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+impl AsRef<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
+    >,
+> for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
+    fn as_ref(
+        &self,
+    ) -> &crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
+impl AsMut<
+    crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
+    >,
+> for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::GlobalNamespace::ICubeNoteControllerInitializable_1<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
+        >,
+    > {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
@@ -306,47 +352,11 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
         unsafe { std::mem::transmute(self) }
     }
 }
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
-impl AsRef<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-        >,
-    >,
-> for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
-    fn as_ref(
-        &self,
-    ) -> &quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "MultiplayerConnectedPlayerGameNoteController")]
-impl AsMut<
-    quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-        >,
-    >,
-> for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController {
-    fn as_mut(
-        &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
-        >,
-    > {
-        unsafe { std::mem::transmute(self) }
-    }
-}
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerGameNoteController+Pool")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerGameNoteController_Pool {
-    __cordl_parent: quest_hook::libil2cpp::Gc<
+    __cordl_parent: crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,
@@ -375,7 +385,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
 #[cfg(feature = "MultiplayerConnectedPlayerGameNoteController+Pool")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController_Pool {
-    type Target = quest_hook::libil2cpp::Gc<
+    type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerGameNoteController,
         >,

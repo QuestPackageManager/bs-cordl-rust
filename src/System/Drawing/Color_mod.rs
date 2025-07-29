@@ -351,18 +351,18 @@ impl crate::System::Drawing::Color {
     }
 }
 #[cfg(feature = "System+Drawing+Color")]
-impl AsRef<quest_hook::libil2cpp::Gc<crate::System::Drawing::Color>>
+impl AsRef<crate::System::IEquatable_1<crate::System::Drawing::Color>>
 for crate::System::Drawing::Color {
-    fn as_ref(&self) -> &quest_hook::libil2cpp::Gc<crate::System::Drawing::Color> {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::System::Drawing::Color> {
         todo!()
     }
 }
 #[cfg(feature = "System+Drawing+Color")]
-impl AsMut<quest_hook::libil2cpp::Gc<crate::System::Drawing::Color>>
+impl AsMut<crate::System::IEquatable_1<crate::System::Drawing::Color>>
 for crate::System::Drawing::Color {
     fn as_mut(
         &mut self,
-    ) -> &mut quest_hook::libil2cpp::Gc<crate::System::Drawing::Color> {
+    ) -> &mut crate::System::IEquatable_1<crate::System::Drawing::Color> {
         todo!()
     }
 }
