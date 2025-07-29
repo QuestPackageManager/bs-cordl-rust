@@ -329,34 +329,6 @@ impl crate::System::Text::ValueStringBuilder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Insert(
-        &mut self,
-        index: i32,
-        value: char,
-        count: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, char, i32),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("Insert")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Insert",
-                            3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index, value, count))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn ToString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -437,6 +409,32 @@ impl crate::System::Text::ValueStringBuilder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (initialBuffer))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::ByRefMut<char>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::ByRefMut<char>,
+                        1usize,
+                    >("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::ByRefMut<char> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
     }

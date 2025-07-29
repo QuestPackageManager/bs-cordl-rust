@@ -69,6 +69,68 @@ impl crate::Mono::Security::ASN1 {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CompareArray(
+        &mut self,
+        array1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        array2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("CompareArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareArray", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (array1, array2))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareValue(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >),
+                        bool,
+                        1usize,
+                    >("CompareValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareValue", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Decode(
         &mut self,
         asn1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
@@ -144,6 +206,35 @@ impl crate::Mono::Security::ASN1 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (asn1, pos, tag, length, content))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Element(
+        &mut self,
+        index: i32,
+        anTag: u8,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, u8),
+                        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+                        2usize,
+                    >("Element")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Element",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index, anTag))?
         };
         Ok(__cordl_ret.into())
     }
@@ -330,6 +421,68 @@ impl crate::Mono::Security::ASN1 {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_Item(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1>,
+                        1usize,
+                    >("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Security::ASN1> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_Length")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Length", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Tag(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), u8, 0usize>("get_Tag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "get_Tag",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -357,6 +510,34 @@ impl crate::Mono::Security::ASN1 {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Value(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u8>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_Value")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Value", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
 }

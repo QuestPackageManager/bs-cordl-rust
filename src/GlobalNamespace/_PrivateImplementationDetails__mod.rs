@@ -1,18 +1,18 @@
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_229 {}
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {}
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<PrivateImplementationDetails>/__StaticArrayInitTypeSize=229";
+    const CLASS_NAME: &'static str = "<PrivateImplementationDetails>/__StaticArrayInitTypeSize=4248";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -37,10 +37,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -50,10 +50,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -66,10 +66,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
@@ -83,10 +83,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -99,10 +99,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_229"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -111,23 +111,23 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_229")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_229 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_4248")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_4248 {}
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_297 {}
+pub struct _PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {}
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "<PrivateImplementationDetails>/__StaticArrayInitTypeSize=297";
+    const CLASS_NAME: &'static str = "<PrivateImplementationDetails>/__StaticArrayInitTypeSize=6198";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -152,10 +152,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -165,10 +165,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -181,10 +181,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
@@ -198,10 +198,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -214,10 +214,10 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
     }
 }
 #[cfg(
-    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_297"
+    feature = "cordl_class__PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198"
 )]
 unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {
+for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -226,5 +226,5 @@ for crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitType
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_297")]
-impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_297 {}
+#[cfg(feature = "_PrivateImplementationDetails_+__StaticArrayInitTypeSize_6198")]
+impl crate::GlobalNamespace::_PrivateImplementationDetails____StaticArrayInitTypeSize_6198 {}
